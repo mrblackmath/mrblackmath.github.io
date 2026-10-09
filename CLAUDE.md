@@ -68,7 +68,7 @@ Trong `index.html`, khối `LINKS` khai báo đường dẫn cho từng bài, kh
 - Mua và gắn tên miền mrblackmath.vn.
 
 ## Nhật ký
-- 09/10/2026 (22h): Bật ô liên hệ ngay trên chân trang và nút "Liên hệ" trên thanh đầu: một câu "Liên hệ với thầy khi cần thiết" + nút Nhắn Zalo (0978577983, mở zalo.me) + nút Gửi Gmail (quangphonsn@gmail.com). Số và Gmail lưu dạng mã hoá trong khối `CONTACT` của index.html (đảo ngược chuỗi rồi base64).
+- 09/10/2026 (22h): Ô liên hệ nhỏ đặt ngay dưới ảnh thầy ở đầu trang (điện thoại: dưới ô tìm kiếm vì ảnh ẩn): câu "Liên hệ với thầy khi cần thiết" + 2 nút nhỏ Zalo (0978577983, mở zalo.me) và Gmail (quangphonsn@gmail.com). Số và Gmail lưu dạng mã hoá trong khối `CONTACT` của index.html (đảo ngược chuỗi rồi base64). Đã bỏ ô liên hệ to ở chân trang.
 - 09/10/2026 (22h): Gắn phiếu PDF Bài 7 (bản HS, 6 trang) từ gói `T12_Bai7_HeTrucToaDo.zip`. 3 file HTML trong gói trùng khớp bản đã lên web. Đối chiếu SGK Toán 12 tập một (trang 62, Hình 2.39): N(2; 5; 4) ĐÚNG — gỡ cảnh báo của gói. Sửa luôn nhãn đè chữ z ở bìa trên 2 artifact bài giảng Bài 7 (GV, HS) trên Claude.
 - 09/10/2026 (khuya): Đưa Bài 7 – Toán 12 (Hệ trục toạ độ trong không gian) lên web: bài giảng (chờ gắn lời giảng), tự luyện, tự kiểm tra — lấy bản HS từ các artifact trên Claude cập nhật 09/10/2026. Chưa có phiếu PDF.
   - Áp lớp sửa chung; sửa nhãn "Bản chờ hoàn thiện" đè chữ z ở bìa bài giảng; chụp ảnh xem trước; thử 3 khổ màn hình: 0 lỗi JS, không tràn ngang.
