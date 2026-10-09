@@ -1,6 +1,6 @@
 # Sổ quản lý website Mr Black NBK
 
-Cập nhật: 09/10/2026
+Cập nhật: 09/10/2026 (tối)
 
 ## Địa chỉ và nơi lưu
 - **Website:** https://mrblackmath.github.io
@@ -37,12 +37,13 @@ Trong `index.html`, khối `LINKS` khai báo đường dẫn cho từng bài, kh
 | Bài | Bài giảng | Luyện tập | Phiếu PDF | Kiểm tra |
 |---|---|---|---|---|
 | Toán 6 – Bài 16. Phép nhân số nguyên | ✅ | ✅ | ✅ | ✅ |
-| Toán 12 – Bài 6. Vectơ trong không gian | — | ✅ (app 33 câu) | — | — |
+| Toán 12 – Bài 6. Vectơ trong không gian | ✅ (bản chờ gắn lời giảng, 56 slide) | ✅ (27 nhiệm vụ + 1 thử thách) | ✅ (5 trang, bản HS) | ✅ (16 câu, đề A/B) |
 
 ## Lớp sửa chung đã áp dụng cho mọi trang bài học (áp dụng tiếp cho bài mới)
 - Bản dành cho học sinh: ẩn nút "Giáo viên", ẩn "Làm lại từ đầu" của GV.
 - iPhone: xin phiên âm thanh `playback` (dùng `navigator.audioSession`) kèm âm thanh rỗng giữ phiên, để vẫn nghe được khi máy đang ở chế độ im lặng.
-- Nút toàn màn hình: iPhone không hỗ trợ nên hiện hướng dẫn "Ẩn thanh công cụ / Thêm vào MH chính".
+- Nút toàn màn hình: iPhone không hỗ trợ nên hiện hướng dẫn "Ẩn thanh công cụ / Thêm vào MH chính" (hàm `window.mbFsHint`, gắn cuối trang cùng nút ⌂).
+- Thẻ meta ứng dụng (apple-mobile-web-app-*, apple-touch-icon `../icon.png`) trong `<head>`.
 - Khi mở như ứng dụng (standalone): có nút ⌂ về trang chủ; bài học mở ngay trong ứng dụng.
 - Đường dẫn chéo giữa các phần dùng tên file tương đối, không dùng link claude.ai.
 
@@ -51,18 +52,23 @@ Trong `index.html`, khối `LINKS` khai báo đường dẫn cho từng bài, kh
 2. Claude kiểm tra nội dung và áp lớp sửa chung.
 3. Claude đặt tên file theo quy ước, cập nhật `LINKS` trong `index.html` và chụp slide 1 làm ảnh xem trước.
 4. Claude thử trên khổ máy tính, điện thoại dọc và điện thoại ngang.
-5. Claude đóng gói `CapNhat-N.zip`.
-6. Thầy tải lên GitHub.
+5. Claude commit và đẩy thẳng lên nhánh `main`.
+6. Chờ GitHub Pages cập nhật (khoảng 1–2 phút).
 7. Claude kiểm tra web thật và báo cáo.
 
 ## Việc còn chờ
 - Chụp lại ảnh xem trước bài giảng Bài 16 (ảnh cũ còn nút "GIÁO VIÊN").
-- Bài giảng, phiếu PDF, kiểm tra của Bài 6 – Toán 12.
-  - Trên Claude có artifact "Bài 6 · Vectơ trong không gian" cập nhật 09/10/2026, chưa gắn vào web.
+- Bài 6 – Toán 12: khi thầy gửi ghi âm, chỉ thay `bai-hoc/toan12-bai6-bai-giang.html` (giữ tên) và chụp lại ảnh xem trước bài giảng.
+  - Ô bài giảng ở trang chủ ghi "Có giọng thầy giảng" nhưng Bài 6 chưa có giọng (bìa bài đã ghi "Bản chờ hoàn thiện").
+  - Bìa bài giảng: nhãn "Bản chờ hoàn thiện" đè nhẹ lên chữ B của hình hộp; sửa ở bản có ghi âm.
 - Bổ sung HSA.
 - Mua và gắn tên miền mrblackmath.vn.
 
 ## Nhật ký
+- 09/10/2026 (tối): Đưa đủ 4 phần Bài 6 – Toán 12 lên web từ gói `T12_Bai6_VectoTrongKhongGian.zip` (bản HS).
+  - Thay app luyện tập 33 câu cũ bằng bản Tự luyện mới (bản mới nhất là bản chuẩn).
+  - Áp lớp sửa chung, chụp ảnh xem trước 3 ô, thử máy tính / điện thoại dọc / ngang: 0 lỗi JS, không tràn ngang.
+  - Từ nay Claude đẩy thẳng lên GitHub, không cần gói CapNhat-N.zip.
 - 09/10/2026: Chuyển website sang GitHub Pages.
   - Đưa 4 trang bài học sang GitHub, bỏ hẳn phụ thuộc Claude, nên học sinh không còn bị bắt đăng nhập.
   - Sửa lỗi mất tiếng trên iPhone. Thêm hướng dẫn toàn màn hình và chế độ mở như ứng dụng.

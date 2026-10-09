@@ -1,6 +1,6 @@
 <!doctype html>
 <html lang="vi"><head><meta charset="utf-8"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><meta name="apple-mobile-web-app-title" content="Mr Black"><link rel="apple-touch-icon" href="../icon.png"><script>try{if(navigator.audioSession)navigator.audioSession.type='playback'}catch(e){}</script><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><style>body{margin:0}[hidden]{display:none!important}</style>
-<title>Tự luyện · Bài 6 · Vectơ trong không gian</title>
+<title>Tự kiểm tra · Bài 6 · Vectơ trong không gian</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;500;600;700&display=swap">
@@ -582,6 +582,69 @@ body.vo-on #vo-play{border-color:var(--gold);color:var(--gold)}
 .qa.tight .q{font-size:30px}
 .qa.tight .q .ach .btn{min-height:50px}
 .pres .lead{font-size:26px}
+/* ===== TỰ KIỂM TRA ===== */
+body[data-var="A"] .avar[data-var="B"],body[data-var="B"] .avar[data-var="A"]{display:none}
+.cover .cvr2{display:grid;gap:22px;align-content:center}
+.cover .rules{display:grid;gap:10px;padding:22px 28px;border-radius:18px;border:2px solid var(--panel-line);background:var(--panel);font-size:24px;font-weight:600;color:var(--muted)}
+.cover .rules b{color:var(--text)}
+.cover .rules>b{font-size:26px;color:var(--gold)}
+.abody{flex:1 1 auto;min-height:0;display:grid;grid-template-columns:1fr;align-content:center;gap:36px}
+.abody.wfig{grid-template-columns:600px 1fr;align-items:center}
+.acol{display:grid;align-content:center;gap:22px}
+.aq{font-size:38px;line-height:1.45}
+.aopts{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.aopts .opt{justify-content:flex-start;text-align:left;min-height:84px;font-size:34px;padding:8px 26px;gap:14px;text-transform:none}
+.aopts .opt b{color:var(--gold)}
+.aopts .opt[data-state="sel"]{border-color:var(--gold);background:linear-gradient(var(--gold-soft),var(--gold-soft)),var(--btn);box-shadow:0 0 0 3px var(--gold-soft)}
+.aopts .opt[data-state="ok"]{border:3px solid var(--ok)}
+.aopts .opt[data-state="ok"]::after{content:"✓";margin-left:auto;color:var(--ok);font-weight:700}
+.aopts .opt[data-state="bad"]{border:3px dashed var(--bad,#ff5a5f)}
+.aopts .opt[data-state="bad"]::after{content:"✗";margin-left:auto;color:var(--bad,#ff5a5f);font-weight:700}
+.aopts .opt:disabled{opacity:1;cursor:default}
+.anum{display:flex;align-items:center;gap:18px;font-size:34px;font-weight:700;color:var(--muted)}
+.anum input{width:300px;height:76px;font:inherit;font-size:36px;color:var(--text);background:var(--btn);border:2px solid var(--panel-line);border-radius:14px;padding:0 20px}
+.anum input:focus{outline:none;border-color:var(--gold);box-shadow:0 0 0 3px var(--gold-soft)}
+.anum[data-state="ok"] input{border:3px solid var(--ok)}
+.anum[data-state="bad"] input{border:3px dashed var(--bad,#ff5a5f)}
+.asol{padding:16px 22px;border-radius:14px;border:2px solid var(--panel-line);background:var(--panel);font-size:28px;line-height:1.5}
+.okt{color:var(--ok)} .badt{color:var(--bad,#ff5a5f)}
+.aclock{font-size:20px;font-weight:700;color:var(--muted);white-space:nowrap}
+.agrid{display:grid;grid-template-columns:repeat(8,1fr);gap:10px}
+.agrid button{height:56px;border-radius:12px;border:2px solid var(--panel-line);background:var(--btn);color:var(--text);font:inherit;font-size:24px;font-weight:700;cursor:pointer}
+.agrid button.done{border-color:var(--gold);background:linear-gradient(var(--gold-soft),var(--gold-soft)),var(--btn)}
+.agrid.big button{height:72px;font-size:30px}
+.asub{flex:1 1 auto;display:grid;align-content:center;gap:18px}
+.btn.sm{height:48px;min-height:48px;font-size:22px;padding:0 14px}
+.btn.big{height:84px;font-size:34px;padding:0 48px}
+.lead.sm{font-size:24px;color:var(--muted)}
+.ares{flex:1 1 auto;min-height:0;display:grid;grid-template-rows:auto 1fr;gap:16px}
+.rtop{display:grid;grid-template-columns:auto 1fr auto;gap:28px;align-items:center}
+.score{display:flex;align-items:baseline;gap:4px;padding:10px 28px;border-radius:18px;border:3px solid var(--gold);background:var(--panel)}
+.score b{font-size:84px;color:var(--gold);line-height:1}.score span{font-size:36px;color:var(--muted);font-weight:700}
+.verd{display:grid;gap:4px;font-size:24px;font-weight:600;color:var(--muted)}
+.verd b{font-size:40px}.verd.ok b{color:var(--ok)}.verd.bad b{color:var(--bad,#ff5a5f)}.verd.mid b{color:var(--gold)}
+.verd i{font-size:20px}
+.rgrid{min-height:0;display:grid;grid-template-columns:1fr 1fr;gap:20px}
+.rbox{min-height:0;overflow:auto;padding:16px 20px;border-radius:16px;border:2px solid var(--panel-line);background:var(--panel)}
+.rbox h4{margin:0 0 8px;font-size:24px;color:var(--gold)}
+.ritems{display:grid;grid-template-columns:repeat(8,1fr);gap:8px}
+.ritems button{height:52px;display:flex;align-items:center;justify-content:center;gap:6px;border-radius:10px;border:2px solid var(--panel-line);background:var(--btn);color:var(--text);font:inherit;font-size:22px;font-weight:700;cursor:pointer}
+.ritems button.ok{border-color:var(--ok)} .ritems button.ok i{color:var(--ok)}
+.ritems button.bad{border:2px dashed var(--bad,#ff5a5f)} .ritems button.bad i{color:var(--bad,#ff5a5f)}
+.ritems i{font-style:normal}
+.rbar{display:grid;grid-template-columns:1fr auto;gap:2px 10px;margin:6px 0;font-size:19px;font-weight:600;color:var(--muted)}
+.rbar b{color:var(--text)} .rbar em{font-style:normal;font-weight:700;color:var(--text)}
+.rbar i{grid-column:1/-1;height:8px;border-radius:4px;background:linear-gradient(90deg,var(--c) var(--p),var(--panel-line) var(--p))}
+.rbar i.ok{--c:var(--ok)} .rbar i.bad{--c:var(--bad,#ff5a5f)}
+.rweak{display:grid;gap:8px}
+.rweak>div{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:8px 12px;border-radius:12px;border:2px dashed var(--panel-line);font-size:21px;font-weight:600}
+.rweak small{display:block;font-size:17px;color:var(--muted)} .rweak em{font-style:normal;color:var(--muted)}
+.rweak .btn{height:44px;min-height:44px;font-size:19px;padding:0 14px}
+.menu .agrid{margin:0}
+.abody.wfig .fig{height:600px;position:relative}
+body[data-var="A"] .avfig[data-var="B"],body[data-var="B"] .avfig[data-var="A"]{display:none}
+.avfig{width:100%;height:100%;display:grid;place-items:center}
+.avfig>svg{width:100%;height:100%}
 </style>
 </head><body>
 </head><body>
@@ -839,7 +902,7 @@ function f3vlab(g, x, y, s){
 
 
 /* ================= KHUNG SLIDE ================= */
-const SECS = ['Bắt đầu', '1. Vectơ', '2. Tổng – hiệu', '3. Tích với số', '4. Tích vô hướng', 'Kết quả'];
+const SECS = ['Bắt đầu', 'Vectơ', 'Tổng – hiệu', 'Tích với số', 'Tích vô hướng', 'Nộp bài'];
 const SN = ['★', '1', '2', '3', '4', '★'], ST = ['Bắt đầu', 'Vectơ trong không gian', 'Tổng và hiệu của hai vectơ', 'Tích của một số với một vectơ', 'Tích vô hướng của hai vectơ', 'Kết quả'];
 const slides = [], S = {cur: 0, step: 0, teacher: false, spot: null};
 /* đề mục: số mục · tên mục · tiểu mục */
@@ -1108,329 +1171,232 @@ function svgPull(deg, what){
     ${ar2(x0, y0, X, Y, 'red')}${vl2(X + 18, Y - 26, 'F', 'red')}
     ${ar2(110, 400, 460, 400, 'blue')}${tx2(90, 410, 'M')}${tx2(486, 410, 'N')}</svg>`;
 }
-/* ================= BÌA TỰ LUYỆN ================= */
+/* ================= TỰ KIỂM TRA · BÀI 6 · VECTƠ TRONG KHÔNG GIAN =================
+   16 câu A01–A16, hai đề tương đương (A, B). Trong khi làm: không gợi ý, không lí thuyết, không phản hồi.
+   Sau khi nộp: điểm, phân tích từng câu, bản đồ kiến thức, bản đồ mục tiêu, đường ôn lại. */
+const OBJ = {
+  OBJ01: 'Nhận biết vectơ, độ dài, cùng phương – cùng hướng, hai vectơ bằng nhau, vectơ-không',
+  OBJ02: 'Cộng, trừ vectơ; quy tắc ba điểm, hình bình hành, hình hộp; vectơ đối',
+  OBJ03: 'Nhân một số với một vectơ; tính chất; trọng tâm',
+  OBJ04: 'Góc giữa hai vectơ; tích vô hướng và tính chất',
+  OBJ05: 'Vận dụng vectơ vào bài toán thực tiễn (lực, công)'};
+const REV = {K01: 'Phần 1 · Vectơ trong không gian', K02: 'Phần 1 · Hai vectơ bằng nhau', K03: 'Phần 1 · Vectơ-không', K04: 'Phần 2 · Tổng của hai vectơ', K05: 'Phần 2 · Tính chất của phép cộng', K06: 'Phần 2 · Quy tắc hình hộp', K07: 'Phần 2 · Vectơ đối', K08: 'Phần 2 · Hiệu của hai vectơ', K09: 'Phần 3 · Tích của một số với một vectơ', K10: 'Phần 3 · Tính chất của phép nhân', K11: 'Phần 3 · Ví dụ 8 (trọng tâm)', K12: 'Phần 4 · Góc giữa hai vectơ', K13: 'Phần 4 · Tích vô hướng', K14: 'Phần 4 · Tính chất của tích vô hướng'};
+const HOPS = R`Cho hình hộp ${m(R`ABCD.A'B'C'D'`)}.`, LPS = R`Cho hình lập phương ${m(R`ABCD.A'B'C'D'`)}`;
+const YN = ['Đúng', 'Sai'];
+/* mỗi câu: {id, obj, k, kind: 'choice'|'num', fig, A: {q, opts?, ans, sol}, B: {...}} */
+const ITEMS = [
+ {id: 'A01', obj: 'OBJ01', k: ['K01'], kind: 'num', fig: 'cube',
+  A: {q: R`${LPS} có cạnh bằng 2. Tính độ dài ${mv("AC'")} <i>(làm tròn đến hàng phần trăm)</i>.`, ans: 3.46, tol: 0.006, sol: m(R`AC'=\sqrt{2^2+2^2+2^2}=2\sqrt3\approx3{,}46`)},
+  B: {q: R`${LPS} có cạnh bằng 3. Tính độ dài ${mv("AC'")} <i>(làm tròn đến hàng phần trăm)</i>.`, ans: 5.2, tol: 0.006, sol: m(R`AC'=\sqrt{3^2+3^2+3^2}=3\sqrt3\approx5{,}20`)}},
+ {id: 'A02', obj: 'OBJ01', k: ['K02'], kind: 'choice', fig: 'hop',
+  A: {q: R`${HOPS} Vectơ nào bằng ${mv('AB')}?`, opts: [mv('CD'), mv("D'C'"), mv("B'A'"), mv("C'D'")], ans: 1, sol: R`${m("ABC'D'")} là hình bình hành ⇒ ${m(R`\overrightarrow{AB}=\overrightarrow{D'C'}`)}.`},
+  B: {q: R`${HOPS} Vectơ nào bằng ${mv('AD')}?`, opts: [mv('CB'), mv("B'C'"), mv("D'A'"), mv('DA')], ans: 1, sol: R`${m("ADC'B'")} là hình bình hành ⇒ ${m(R`\overrightarrow{AD}=\overrightarrow{B'C'}`)}.`}},
+ {id: 'A03', obj: 'OBJ01', k: ['K02'], kind: 'choice',
+  A: {q: R`Cho ba vectơ ${m(R`\vec a,\ \vec b,\ \vec c`)} khác ${m(R`\vec 0`)}. Mệnh đề “Nếu ${m(R`\vec a`)} và ${m(R`\vec b`)} đều ngược hướng với ${m(R`\vec c`)} thì ${m(R`\vec a`)} và ${m(R`\vec b`)} cùng hướng” là`, opts: YN, ans: 0, sol: 'Đúng: cùng ngược hướng với một vectơ thì cùng hướng với nhau.'},
+  B: {q: R`Cho ba vectơ ${m(R`\vec a,\ \vec b,\ \vec c`)} khác ${m(R`\vec 0`)}. Mệnh đề “Nếu ${m(R`\vec a`)} cùng hướng với ${m(R`\vec c`)} và ${m(R`\vec b`)} ngược hướng với ${m(R`\vec c`)} thì ${m(R`\vec a`)} và ${m(R`\vec b`)} cùng hướng” là`, opts: YN, ans: 1, sol: R`Sai: khi đó ${m(R`\vec a,\ \vec b`)} ngược hướng.`}},
+ {id: 'A04', obj: 'OBJ01', k: ['K03'], kind: 'choice',
+  A: {q: R`Cho điểm ${m('O')} và vectơ ${m(R`\vec a`)}. Số điểm ${m('M')} thoả mãn ${m(R`\overrightarrow{OM}=\vec a`)} là`, opts: ['0', '1', '2', 'vô số'], ans: 1, sol: 'Có duy nhất một điểm M.'},
+  B: {q: R`Vectơ-không ${m(R`\vec 0`)} cùng hướng với`, opts: ['mọi vectơ', 'không vectơ nào', 'chỉ vectơ-không', 'chỉ các vectơ có độ dài 1'], ans: 0, sol: 'Quy ước: vectơ-không cùng hướng với mọi vectơ.'}},
+ {id: 'A05', obj: 'OBJ02', k: ['K04', 'K05'], kind: 'choice', fig: 'hop',
+  A: {q: R`${HOPS} ${m(R`\overrightarrow{AB}+\overrightarrow{BB'}+\overrightarrow{B'C'}`)} bằng`, opts: [mv("AC'"), mv('AC'), mv("BC'"), mv("A'C")], ans: 0, sol: R`Quy tắc ba điểm hai lần: ${m(R`\overrightarrow{AB'}+\overrightarrow{B'C'}=\overrightarrow{AC'}`)}.`},
+  B: {q: R`${HOPS} ${m(R`\overrightarrow{BA}+\overrightarrow{AD}+\overrightarrow{DD'}`)} bằng`, opts: [mv("BD'"), mv('BD'), mv("AD'"), mv("B'D")], ans: 0, sol: R`${m(R`\overrightarrow{BD}+\overrightarrow{DD'}=\overrightarrow{BD'}`)}.`}},
+ {id: 'A06', obj: 'OBJ02', k: ['K06'], kind: 'choice', fig: 'hop',
+  A: {q: R`${HOPS} ${m(R`\overrightarrow{CB}+\overrightarrow{CD}+\overrightarrow{CC'}`)} bằng`, opts: [mv("CA'"), mv('CA'), mv("C'A"), mv("AC'")], ans: 0, sol: R`Quy tắc hình hộp tại đỉnh ${m('C')}: ${m(R`\overrightarrow{CA'}`)}.`},
+  B: {q: R`${HOPS} ${m(R`\overrightarrow{DA}+\overrightarrow{DC}+\overrightarrow{DD'}`)} bằng`, opts: [mv("DB'"), mv('DB'), mv("D'B"), mv("BD'")], ans: 0, sol: R`Quy tắc hình hộp tại đỉnh ${m('D')}: ${m(R`\overrightarrow{DB'}`)}.`}},
+ {id: 'A07', obj: 'OBJ02', k: ['K07', 'K08'], kind: 'choice', fig: 'pyr',
+  A: {q: R`Cho hình chóp ${m('S.ABCD')}. ${m(R`\overrightarrow{SA}-\overrightarrow{SC}`)} bằng`, opts: [mv('CA'), mv('AC'), mv('SB'), m(R`\vec 0`)], ans: 0, sol: R`${m(R`\overrightarrow{OB}-\overrightarrow{OA}=\overrightarrow{AB}`)} với ${m('O=S')}: ${m(R`\overrightarrow{SA}-\overrightarrow{SC}=\overrightarrow{CA}`)}.`},
+  B: {q: R`Cho hình chóp ${m('S.ABCD')}. ${m(R`\overrightarrow{SB}-\overrightarrow{SD}`)} bằng`, opts: [mv('DB'), mv('BD'), mv('SC'), m(R`\vec 0`)], ans: 0, sol: m(R`\overrightarrow{SB}-\overrightarrow{SD}=\overrightarrow{DB}`)}},
+ {id: 'A08', obj: 'OBJ02', k: ['K08'], kind: 'choice', fig: 'hop',
+  A: {q: R`${HOPS} ${m(R`\overrightarrow{AC'}-\overrightarrow{AB}`)} bằng`, opts: [mv("BC'"), mv("C'B"), mv('AC'), mv('BC')], ans: 0, sol: m(R`\overrightarrow{AC'}-\overrightarrow{AB}=\overrightarrow{BC'}`)},
+  B: {q: R`${HOPS} ${m(R`\overrightarrow{AC'}-\overrightarrow{AD}`)} bằng`, opts: [mv("DC'"), mv("C'D"), mv('AC'), mv('DC')], ans: 0, sol: m(R`\overrightarrow{AC'}-\overrightarrow{AD}=\overrightarrow{DC'}`)}},
+ {id: 'A09', obj: 'OBJ03', k: ['K09'], kind: 'num',
+  A: {q: R`Cho ${m('M')} là trung điểm của đoạn thẳng ${m('AB')}. Tìm số ${m('k')} sao cho ${m(R`\overrightarrow{MA}=k\overrightarrow{AB}`)}.`, ans: -0.5, sol: R`${mv('MA')} ngược hướng ${mv('AB')}, ${m(R`MA=\tfrac12AB`)} ⇒ ${m(R`k=-\tfrac12`)}.`},
+  B: {q: R`Cho ${m('M')} là trung điểm của đoạn thẳng ${m('AB')}. Tìm số ${m('k')} sao cho ${m(R`\overrightarrow{AB}=k\overrightarrow{MB}`)}.`, ans: 2, sol: R`${mv('AB')} cùng hướng ${mv('MB')}, ${m('AB=2MB')} ⇒ ${m('k=2')}.`}},
+ {id: 'A10', obj: 'OBJ03', k: ['K10'], kind: 'num',
+  A: {q: R`Biết ${m(R`3(\vec a-2\vec b)-(\vec a+\vec b)=x\vec a+y\vec b`)}. Tính ${m('x+y')}.`, ans: -5, sol: R`${m(R`2\vec a-7\vec b`)} ⇒ ${m('x+y=2-7=-5')}.`},
+  B: {q: R`Biết ${m(R`2(2\vec a+\vec b)-3(\vec a-\vec b)=x\vec a+y\vec b`)}. Tính ${m('x+y')}.`, ans: 6, sol: R`${m(R`\vec a+5\vec b`)} ⇒ ${m('x+y=1+5=6')}.`}},
+ {id: 'A11', obj: 'OBJ03', k: ['K11'], kind: 'num', fig: 'tet',
+  A: {q: R`Cho tứ diện ${m('ABCD')}, ${m('G')} là trọng tâm tam giác ${m('BCD')}. Tìm ${m('k')} sao cho ${m(R`\overrightarrow{AB}+\overrightarrow{AC}+\overrightarrow{AD}=k\overrightarrow{AG}`)}.`, ans: 3, sol: R`Chèn điểm ${m('G')}, dùng ${m(R`\overrightarrow{GB}+\overrightarrow{GC}+\overrightarrow{GD}=\vec 0`)} ⇒ ${m('k=3')}.`},
+  B: {q: R`Cho tứ diện ${m('ABCD')}, ${m('G')} là trọng tâm tam giác ${m('ACD')}. Tìm ${m('k')} sao cho ${m(R`\overrightarrow{BA}+\overrightarrow{BC}+\overrightarrow{BD}=k\overrightarrow{BG}`)}.`, ans: 3, sol: R`Chèn điểm ${m('G')}, dùng ${m(R`\overrightarrow{GA}+\overrightarrow{GC}+\overrightarrow{GD}=\vec 0`)} ⇒ ${m('k=3')}.`}},
+ {id: 'A12', obj: 'OBJ04', k: ['K12'], kind: 'num', fig: 'cube',
+  A: {q: R`${LPS}. Tính số đo góc ${m(R`(\overrightarrow{AC},\overrightarrow{B'D'})`)} (độ).`, ans: 90, sol: R`${m(R`\overrightarrow{B'D'}=\overrightarrow{BD}`)}, ${m(R`AC\perp BD`)} ⇒ ${m('90^\\circ')}.`},
+  B: {q: R`${LPS}. Tính số đo góc ${m(R`(\overrightarrow{AD},\overrightarrow{C'B'})`)} (độ).`, ans: 180, sol: R`${m(R`\overrightarrow{C'B'}=\overrightarrow{CB}=-\overrightarrow{AD}`)} ⇒ ${m('180^\\circ')}.`}},
+ {id: 'A13', obj: 'OBJ04', k: ['K13'], kind: 'num',
+  A: {q: R`Cho ${m(R`|\vec a|=3,\ |\vec b|=4`)} và ${m(R`(\vec a,\vec b)=60^\circ`)}. Tính ${m(R`\vec a\cdot\vec b`)}.`, ans: 6, sol: m(R`3\cdot4\cdot\cos60^\circ=6`)},
+  B: {q: R`Cho ${m(R`|\vec a|=2,\ |\vec b|=5`)} và ${m(R`(\vec a,\vec b)=120^\circ`)}. Tính ${m(R`\vec a\cdot\vec b`)}.`, ans: -5, sol: m(R`2\cdot5\cdot\cos120^\circ=-5`)}},
+ {id: 'A14', obj: 'OBJ04', k: ['K14', 'K13'], kind: 'num',
+  A: {q: R`Cho ${m(R`|\vec a|=|\vec b|=2`)} và ${m(R`(\vec a,\vec b)=60^\circ`)}. Tính ${m(R`(\vec a-\vec b)^2`)}.`, ans: 4, sol: m(R`\vec a^2-2\vec a\cdot\vec b+\vec b^2=4-4+4=4`)},
+  B: {q: R`Cho ${m(R`|\vec a|=1,\ |\vec b|=2`)} và ${m(R`(\vec a,\vec b)=120^\circ`)}. Tính ${m(R`(\vec a+\vec b)^2`)}.`, ans: 3, sol: m(R`\vec a^2+2\vec a\cdot\vec b+\vec b^2=1-2+4=3`)}},
+ {id: 'A15', obj: 'OBJ05', k: ['K13'], kind: 'num', fig: 'pull',
+  A: {q: R`Một lực ${m(R`\vec F`)} có độ lớn ${m(R`40\,\text{N}`)} kéo vật dịch chuyển thẳng ${m(R`5\,\text{m}`)}; giá của ${m(R`\vec F`)} hợp với hướng dịch chuyển góc ${m('60^\\circ')}. Tính công của lực (J).`, ans: 100, sol: m(R`A=40\cdot5\cdot\cos60^\circ=100`)},
+  B: {q: R`Một lực ${m(R`\vec F`)} có độ lớn ${m(R`60\,\text{N}`)} kéo vật dịch chuyển thẳng ${m(R`4\,\text{m}`)}; giá của ${m(R`\vec F`)} hợp với hướng dịch chuyển góc ${m('60^\\circ')}. Tính công của lực (J).`, ans: 120, sol: m(R`A=60\cdot4\cdot\cos60^\circ=120`)}},
+ {id: 'A16', obj: 'OBJ05', k: ['K04'], kind: 'num', fig: 'perp',
+  A: {q: R`Hai lực vuông góc với nhau, có độ lớn ${m(R`6\,\text{N}`)} và ${m(R`8\,\text{N}`)}, cùng tác dụng vào một vật. Tính độ lớn hợp lực (N).`, ans: 10, sol: m(R`\sqrt{6^2+8^2}=10`)},
+  B: {q: R`Hai lực vuông góc với nhau, có độ lớn ${m(R`5\,\text{N}`)} và ${m(R`12\,\text{N}`)}, cùng tác dụng vào một vật. Tính độ lớn hợp lực (N).`, ans: 13, sol: m(R`\sqrt{5^2+12^2}=13`)}}];
+const RULE = {n: ITEMS.length, enough: 13, pass: 12, objPct: 0.5};
+const FIGA = {pull: () => svgPull(60, 'thung'), perp: () => '<div class="avfig" data-var="A">' + svgPerp(6, 8, '6 N', '8 N') + '</div><div class="avfig" data-var="B">' + svgPerp(5, 12, '5 N', '12 N') + '</div>', cube: () => fig3d({w: 560, h: 500, P: CUBE(), faces: BOXF, aria: 'Hình lập phương'}), hop: () => fig3d({w: 560, h: 500, P: HOP(), faces: BOXF, aria: 'Hình hộp'}),
+  pyr: () => fig3d({w: 560, h: 500, P: PYR(), faces: PYRF, yaw: -6, pitch: 32, aria: 'Hình chóp S.ABCD'}), tet: () => fig3d({w: 560, h: 500, P: TET(), faces: TETF, yaw: 22, pitch: 14, aria: 'Tứ diện ABCD'})};
+/* ================= DỰNG SLIDE · TỰ KIỂM TRA ================= */
 const AVATAR = TEACHER_PHOTO ? `<img src="${TEACHER_PHOTO}" alt="Thầy Mr Black"><span class="mb">MB</span>` : LOGO;
+const SECOF = {OBJ01: 1, OBJ02: 2, OBJ03: 3, OBJ04: 4, OBJ05: 4};
+const T = {state: 'NOT_STARTED', v: 'A', ans: {}, t0: 0, tEnd: 0, attempt: 1};
 addSlide({label: 'Bìa', sec: -1, anchor: 'start', html: R`
 <div class="cover"><div>
   <div class="avatar">${AVATAR}</div>
   <p class="eb" style="margin-top:26px">Toán 12 · Kết nối tri thức · Bài 6</p>
-  <h1>Tự luyện<span>Vectơ trong<br>không gian</span></h1>
-  <p class="sig">Luyện tập <b>Mr Black NBK</b></p></div>
-  <div class="cvr2">
-    <div class="rules"><b>Cách luyện</b><span>27 nhiệm vụ theo 4 phần + 1 thử thách.</span><span>Sai: đọc lỗi → <b>📖 Xem lại</b> → làm lại. Sai 3 lần mới mở <b>💡 Lời giải</b>.</span><span>Tiến bộ được tính theo từng kiến thức, không theo số câu đã bấm.</span></div>
-    <div class="parts"><p class="pk">Chọn phần luyện</p></div></div>
-</div>`, note: 'Học sinh có thể vào thẳng từng phần. Kết quả (bảng theo kiến thức) ở cuối, chỉ lưu trên trình duyệt đang dùng.'});
-/* ================= TỰ LUYỆN · BÀI 6 · VECTƠ TRONG KHÔNG GIAN =================
-   Practice bank P01–P27 + thử thách P28. Mỗi nhiệm vụ: Knowledge ID, mức độ, trạm dừng
-   (sai → chẩn đoán lỗi → 📖 Xem lại kiến thức → làm lại; sai 3 lần mới mở 💡 Lời giải). */
-const LV = {1: 'Nhận biết', 2: 'Thông hiểu', 3: 'Vận dụng', 4: 'Thử thách'};
-const TASKS = [];
-const tagline = o => `<p class="ptl"><span class="pk">Nhiệm vụ ${o.n}</span>${o.k.map(k => `<span class="kc" title="${THEORY[k].t}">${k} · ${THEORY[k].t}</span>`).join('')}<span class="lv l${o.lv}">${LV[o.lv]}</span></p>`;
-function task(o){
-  TASKS.push(o);
-  const q = `<div class="qa${o.qs.length >= 4 ? ' tight' : ''}">${o.qs.map(([t, c, wide]) => `<div class="q"${wide ? ' style="grid-template-columns:1fr"' : ''}><span>${t}</span>${c}</div>`).join('')}</div>`;
-  const body = o.fig ? `<div class="cols" style="grid-template-columns:${o.fw || 600}px 1fr;gap:36px"><div class="fig">${o.fig}</div>${q}</div>` : q;
-  addSlide({label: `${o.n}. ${o.title}`, sec: o.sec, anchor: o.anchor, task: o, html: hd(o.sec, o.title) + tagline(o) + (o.lead ? `<p class="lead">${o.lead}</p>` : '') + body + FOOT(o.id),
-    note: o.note || '',
-    init(sec){ addStations(sec, this, [Object.assign({id: o.id, review: o.k[0], solAfter: 3, gate: o.optional ? 99 : 0}, o.st)]); }});
-}
-const cube = CUBE(), hop = HOP(), hcn = HCN(), prism = PRISM(), tet = TET(), pyr = PYR(), tetd = TET_DEU(), prd = PRISM_DEU();
-const F = (P, faces, extra) => fig3d(Object.assign({w: 580, h: 520, P, faces}, extra || {}));
-const DS = ['Đúng', 'Sai'];
+  <h1>Tự kiểm tra<span>Vectơ trong<br>không gian</span></h1>
+  <p class="sig">Đánh giá cuối bài <b>Mr Black NBK</b></p></div>
+  <div class="cvr2"><div class="rules"><b>Quy định</b>
+    <span>${ITEMS.length} câu · thời gian gợi ý 30 phút (không khoá giờ).</span>
+    <span>Trong khi làm: <b>không gợi ý, không xem lí thuyết, không báo đúng/sai</b>. Con có thể sửa đáp án trước khi nộp.</span>
+    <span>Sau khi bấm <b>Nộp bài</b>: điểm, phân tích từng câu, bản đồ kiến thức và mục tiêu, gợi ý phần cần ôn.</span>
+    <span>Đạt khi đúng từ <b>${RULE.pass}/${RULE.n}</b> câu và mỗi mục tiêu đúng ít nhất một nửa.</span>
+    <span>Nhập số: viết <b>-0,5</b> hoặc <b>-1/2</b>; số đo góc chỉ nhập số (ví dụ <b>90</b>).</span></div></div>
+</div>`, note: 'Đáp án từng câu hiện ở “Gợi ý GV” khi bật chế độ Giáo viên. Kết quả chỉ nằm trên trình duyệt đang dùng.'});
+const qHTML = (it, V) => {
+  const d = it[V], ctl = it.kind === 'choice'
+    ? `<div class="aopts" data-q="${it.id}" data-v="${V}">${d.opts.map((o, k) => `<button type="button" class="btn opt" data-k="${k}"><b>${'ABCD'[k]}.</b> ${o}</button>`).join('')}</div>`
+    : `<label class="anum" data-q="${it.id}" data-v="${V}">Đáp số: <input type="text" inputmode="text" autocomplete="off" spellcheck="false" aria-label="Đáp số câu ${it.id}"></label>`;
+  return `<div class="avar" data-var="${V}"><p class="lead aq">${d.q}</p>${ctl}<div class="asol" hidden></div></div>`;
+};
+ITEMS.forEach((it, i) => {
+  const body = `<div class="abody${it.fig ? ' wfig' : ''}">${it.fig ? `<div class="fig">${FIGA[it.fig]()}</div>` : ''}<div class="acol">${qHTML(it, 'A')}${qHTML(it, 'B')}</div></div>`;
+  addSlide({label: `Câu ${i + 1}`, sec: SECOF[it.obj], anchor: i === 0 ? 'q1' : null, item: it,
+    html: hd(SECOF[it.obj], `Câu ${i + 1} / ${ITEMS.length}`) + body,
+    note: $('#btn-gv').disabled ? '' : `Đề A: <b>${it.kind === 'choice' ? 'ABCD'[it.A.ans] : vn(it.A.ans)}</b> · Đề B: <b>${it.kind === 'choice' ? 'ABCD'[it.B.ans] : vn(it.B.ans)}</b> · ${it.k.join(', ')} · ${it.obj}`});
+});
+addSlide({label: 'Nộp bài', sec: 5, anchor: 'submit', html: hd(5, 'Kiểm tra lại và nộp bài') + `<div class="asub" id="asub"></div>`});
+addSlide({label: 'Kết quả', sec: 5, anchor: 'res', html: hd(5, 'Kết quả và phân tích') + `<div class="ares" id="ares"></div>`});
 
-/* ---------- PHẦN 1 · VECTƠ TRONG KHÔNG GIAN ---------- */
-task({id: 'p01', n: 1, sec: 1, anchor: 'm1', k: ['K01'], lv: 1, title: 'Đếm vectơ trong hình hộp',
-  lead: R`Cho hình hộp ${m(R`ABCD.A'B'C'D'`)}.`, fig: F(hop, BOXF, {aria: 'Hình hộp ABCD.A′B′C′D′', vecs: [{a: 'A', b: 'C1', c: 'gold'}]}),
-  qs: [[R`Có bao nhiêu vectơ (khác ${m(R`\vec 0`)}) có <b>điểm đầu là ${m('A')}</b> và điểm cuối là một đỉnh khác của hình hộp?`, IN('p01', 'a', 180), 1]],
-  st: {items: [{id: 'a', name: 'Số vectơ:', ans: 7, diag: v => v === 8 ? R`Con đã đếm cả ${m(R`\overrightarrow{AA}`)} — đó là vectơ-không, đề bài yêu cầu khác ${m(R`\vec 0`)}.` : v === 3 ? 'Con mới đếm các cạnh. Còn các đường chéo mặt và đường chéo hình hộp nữa.' : 'Điểm đầu cố định là A; điểm cuối là một trong các đỉnh còn lại.', sol: R`Hình hộp có 8 đỉnh; điểm cuối là một trong 7 đỉnh khác ${m('A')} ⇒ có ${m('7')} vectơ.`}]}});
-
-task({id: 'p02', n: 2, sec: 1, k: ['K01'], lv: 2, title: 'Độ dài vectơ trong hình hộp chữ nhật',
-  lead: R`Hình hộp chữ nhật ${m(R`ABCD.A'B'C'D'`)} có ${m(R`AB=3,\ AD=4,\ AA'=12`)}.`, fig: F(hcn, BOXF, {aria: 'Hình hộp chữ nhật', segs: [{a: 'B', b: 'D', cls: 'gold'}], vecs: [{a: 'B', b: 'D1', c: 'gold'}]}),
-  qs: [[R`${m(R`|\overrightarrow{BB'}|=`)}`, IN('p02', 'a', 150)], [R`${m(R`|\overrightarrow{BD}|=`)}`, IN('p02', 'b', 150)], [R`${m(R`|\overrightarrow{BD'}|=`)}`, IN('p02', 'c', 150)]],
-  st: {items: [
-    {id: 'a', name: R`${m("BB'")}:`, ans: 12, why: R`${m("BB'")} là cạnh bên, bằng ${m("AA'")}.`, sol: R`${m("BB'=AA'=12")}.`},
-    {id: 'b', name: R`${m('BD')}:`, ans: 5, diag: v => v === 7 ? 'Không cộng hai cạnh — BD là cạnh huyền của tam giác vuông ABD.' : 'Dùng định lí Pythagore trong tam giác vuông ABD.', sol: m(R`BD=\sqrt{3^2+4^2}=5`)},
-    {id: 'c', name: R`${m("BD'")}:`, ans: 13, diag: v => v === 19 ? 'Không cộng độ dài. Tam giác BDD′ vuông tại D.' : 'Tam giác BDD′ vuông tại D: dùng BD và DD′.', sol: m(R`BD'=\sqrt{BD^2+DD'^2}=\sqrt{25+144}=13`)}]}});
-
-task({id: 'p03', n: 3, sec: 1, k: ['K02'], lv: 1, title: 'Vectơ nào bằng vectơ AB?',
-  lead: R`Cho hình hộp ${m(R`ABCD.A'B'C'D'`)}. Xét tính đúng, sai:`, fig: F(hop, BOXF, {aria: 'Hình hộp với vectơ AB', vecs: [{a: 'A', b: 'B', c: 'blue'}]}),
-  qs: [[R`a) ${m(R`\overrightarrow{AB}=\overrightarrow{DC}`)}`, CH('p03', 'a', DS)], [R`b) ${m(R`\overrightarrow{AB}=\overrightarrow{CD}`)}`, CH('p03', 'b', DS)], [R`c) ${m(R`\overrightarrow{AB}=\overrightarrow{D'C'}`)}`, CH('p03', 'c', DS)], [R`d) ${m(R`\overrightarrow{AB}=\overrightarrow{B'A'}`)}`, CH('p03', 'd', DS)]],
-  st: {items: [
-    {id: 'a', name: 'a)', kind: 'choice', ans: 0, why: R`${m('ABCD')} là hình bình hành nên ${m('AB')} song song, bằng và cùng hướng với ${m('DC')}.`, sol: 'Đúng.'},
-    {id: 'b', name: 'b)', kind: 'choice', ans: 1, why: R`${mv('CD')} ngược hướng với ${mv('AB')} (đi từ C sang D). Hai vectơ bằng nhau phải <b>cùng hướng</b>.`, sol: R`Sai: ${m(R`\overrightarrow{CD}=-\overrightarrow{AB}`)}.`},
-    {id: 'c', name: 'c)', kind: 'choice', ans: 0, why: R`${m("ABC'D'")} là hình bình hành ⇒ ${m(R`\overrightarrow{AB}=\overrightarrow{D'C'}`)}.`, sol: 'Đúng.'},
-    {id: 'd', name: 'd)', kind: 'choice', ans: 1, why: R`${mv("B'A'")} đi từ B′ về A′ — ngược hướng với ${mv('AB')}.`, sol: R`Sai: ${m(R`\overrightarrow{B'A'}=-\overrightarrow{AB}`)}.`}]}});
-
-task({id: 'p04', n: 4, sec: 1, k: ['K02'], lv: 2, title: 'Cùng phương, cùng hướng',
-  lead: R`Cho ba vectơ ${m(R`\vec a,\ \vec b,\ \vec c`)} đều khác ${m(R`\vec 0`)}. Xét tính đúng, sai:`,
-  qs: [[R`a) Nếu ${m(R`\vec a,\ \vec b`)} cùng hướng với ${m(R`\vec c`)} thì ${m(R`\vec a,\ \vec b`)} cùng hướng.`, CH('p04', 'a', DS)],
-    [R`b) Nếu ${m(R`\vec a`)} ngược hướng ${m(R`\vec c`)} và ${m(R`\vec b`)} cùng hướng ${m(R`\vec c`)} thì ${m(R`\vec a,\ \vec b`)} ngược hướng.`, CH('p04', 'b', DS)],
-    [R`c) Nếu ${m(R`\vec a,\ \vec b`)} đều ngược hướng với ${m(R`\vec c`)} thì ${m(R`\vec a,\ \vec b`)} ngược hướng.`, CH('p04', 'c', DS)],
-    [R`d) Nếu ${m(R`\vec a,\ \vec b`)} đều cùng phương với ${m(R`\vec c`)} thì ${m(R`\vec a,\ \vec b`)} cùng phương.`, CH('p04', 'd', DS)]],
-  st: {items: [
-    {id: 'a', name: 'a)', kind: 'choice', ans: 0, why: R`Cùng hướng với cùng một vectơ thì cùng hướng với nhau.`, sol: 'Đúng.'},
-    {id: 'b', name: 'b)', kind: 'choice', ans: 0, why: R`${m(R`\vec b`)} đi theo hướng của ${m(R`\vec c`)}, ${m(R`\vec a`)} đi theo hướng ngược lại ⇒ ngược hướng.`, sol: 'Đúng.'},
-    {id: 'c', name: 'c)', kind: 'choice', ans: 1, why: R`Hai vectơ cùng ngược hướng với ${m(R`\vec c`)} thì chúng cùng hướng với nhau.`, sol: R`Sai: khi đó ${m(R`\vec a,\ \vec b`)} <b>cùng hướng</b>.`},
-    {id: 'd', name: 'd)', kind: 'choice', ans: 0, why: R`Giá của ${m(R`\vec a`)} và ${m(R`\vec b`)} đều song song (hoặc trùng) với giá của ${m(R`\vec c`)} nên song song hoặc trùng nhau.`, sol: 'Đúng.'}]}});
-
-task({id: 'p05', n: 5, sec: 1, k: ['K03'], lv: 1, title: 'Vectơ-không',
-  lead: R`Cho điểm ${m('O')} và vectơ ${m(R`\vec a\ne\vec 0`)}.`,
-  qs: [[R`a) Có bao nhiêu điểm ${m('M')} thoả mãn ${m(R`\overrightarrow{OM}=\vec a`)}?`, IN('p05', 'a', 150)], [R`b) ${m(R`|\overrightarrow{AA}|=`)}`, IN('p05', 'b', 150)],
-    [R`c) Vectơ-không cùng hướng với mọi vectơ.`, CH('p05', 'c', DS)]],
-  st: {items: [
-    {id: 'a', name: 'a)', ans: 1, why: R`Với mỗi điểm ${m('O')} và vectơ ${m(R`\vec a`)} cho trước có <b>duy nhất</b> một điểm ${m('M')}.`, sol: 'Có đúng 1 điểm.'},
-    {id: 'b', name: 'b)', ans: 0, why: 'Điểm đầu và điểm cuối trùng nhau.', sol: R`${m(R`|\overrightarrow{AA}|=0`)}.`},
-    {id: 'c', name: 'c)', kind: 'choice', ans: 0, why: 'Đây là quy ước trong sách giáo khoa.', sol: 'Đúng (quy ước).'}]}});
-
-/* ---------- PHẦN 2 · TỔNG VÀ HIỆU ---------- */
-task({id: 'p06', n: 6, sec: 2, anchor: 'm2', k: ['K04'], lv: 1, title: 'Quy tắc ba điểm',
-  lead: R`Cho hình hộp ${m(R`ABCD.A'B'C'D'`)}.`, fig: F(hop, BOXF, {aria: 'Hình hộp với AB và BC′', vecs: [{a: 'A', b: 'B', c: 'blue'}, {a: 'B', b: 'C1', c: 'red'}]}),
-  qs: [[R`${m(R`\overrightarrow{AB}+\overrightarrow{BC'}=`)}`, CH('p06', 'a', [mv("AC'"), mv('AC'), mv("BD'"), mv("A'C")])]],
-  st: {items: [{id: 'a', name: 'Tổng:', kind: 'choice', ans: 0, diag: v => [0, R`${mv('AC')} là tổng ${m(R`\overrightarrow{AB}+\overrightarrow{BC}`)}, không phải ${m(R`\overrightarrow{AB}+\overrightarrow{BC'}`)}.`, R`Điểm cuối của vectơ thứ nhất là điểm đầu của vectơ thứ hai (B) ⇒ tổng đi từ A đến C′.`, R`Tổng phải đi từ điểm đầu ${m('A')}.`][v], sol: R`Quy tắc ba điểm: ${m(R`\overrightarrow{AB}+\overrightarrow{BC'}=\overrightarrow{AC'}`)}.`}]}});
-
-task({id: 'p07', n: 7, sec: 2, k: ['K04', 'K02'], lv: 2, title: 'Dời vectơ rồi cộng',
-  lead: R`Cho hình lăng trụ ${m(R`ABC.A'B'C'`)}.`, fig: F(prism, PRF, {yaw: 6, pitch: 22, aria: 'Lăng trụ với AB và B′C′', vecs: [{a: 'A', b: 'B', c: 'blue'}, {a: 'B1', b: 'C1', c: 'red'}]}),
-  qs: [[R`a) ${m(R`\overrightarrow{B'C'}`)} bằng vectơ`, CH('p07', 'a', [mv('BC'), mv('CB'), mv("BC'")])], [R`b) ${m(R`\overrightarrow{AB}+\overrightarrow{B'C'}=`)}`, CH('p07', 'b', [mv('AC'), mv("AC'"), mv("B'C")])]],
-  st: {items: [
-    {id: 'a', name: 'a)', kind: 'choice', ans: 0, review: 'K02', why: R`${m("BCC'B'")} là hình bình hành ⇒ ${m("B'C'")} song song, bằng và cùng hướng với ${m('BC')}.`, sol: m(R`\overrightarrow{B'C'}=\overrightarrow{BC}`)},
-    {id: 'b', name: 'b)', kind: 'choice', ans: 0, why: R`Thay ${mv("B'C'")} bằng ${mv('BC')} rồi dùng quy tắc ba điểm.`, sol: m(R`\overrightarrow{AB}+\overrightarrow{BC}=\overrightarrow{AC}`)}]}});
-
-task({id: 'p08', n: 8, sec: 2, k: ['K06'], lv: 1, title: 'Quy tắc hình hộp',
-  lead: R`Cho hình hộp ${m(R`ABCD.A'B'C'D'`)}.`, fig: F(hop, BOXF, {aria: 'Hình hộp, ba cạnh xuất phát từ A', vecs: [{a: 'A', b: 'B', c: 'blue'}, {a: 'A', b: 'D', c: 'blue'}, {a: 'A', b: 'A1', c: 'blue'}]}),
-  qs: [[R`a) ${m(R`\overrightarrow{AB}+\overrightarrow{AD}+\overrightarrow{AA'}=`)}`, CH('p08', 'a', [mv("AC'"), mv('AC'), mv("A'C"), mv("BD'")])], [R`b) ${m(R`\overrightarrow{BA}+\overrightarrow{BC}+\overrightarrow{BB'}=`)}`, CH('p08', 'b', [mv("BD'"), mv('BD'), mv("B'D"), mv("D'B")])]],
-  st: {items: [
-    {id: 'a', name: 'a)', kind: 'choice', ans: 0, diag: v => [0, R`${mv('AC')} chỉ là ${m(R`\overrightarrow{AB}+\overrightarrow{AD}`)} — còn thiếu ${mv("AA'")}.`, 'Tổng phải xuất phát từ A.', 'Tổng phải xuất phát từ A.'][v], sol: R`Quy tắc hình hộp: ${m(R`\overrightarrow{AC'}`)}.`},
-    {id: 'b', name: 'b)', kind: 'choice', ans: 0, diag: v => [0, R`${mv('BD')} chỉ là ${m(R`\overrightarrow{BA}+\overrightarrow{BC}`)}.`, 'Tổng phải xuất phát từ B (đỉnh chung của ba vectơ).', R`${mv("D'B")} ngược hướng với tổng.`][v], sol: R`Quy tắc hình hộp tại đỉnh ${m('B')}: ${m(R`\overrightarrow{BD'}`)}.`}]}});
-
-task({id: 'p09', n: 9, sec: 2, k: ['K06', 'K01'], lv: 2, title: 'Độ dài tổng ba vectơ',
-  lead: R`Hình lập phương ${m(R`ABCD.A'B'C'D'`)} có cạnh bằng 2.`, fig: F(cube, BOXF, {aria: 'Hình lập phương, đường chéo AC′', vecs: [{a: 'A', b: 'C1', c: 'gold'}]}),
-  qs: [[R`${m(R`|\overrightarrow{AB}+\overrightarrow{AD}+\overrightarrow{AA'}|`)} ≈ <i>(làm tròn đến hàng phần trăm)</i>`, IN('p09', 'a', 180), 1]],
-  st: {items: [{id: 'a', name: 'Độ dài:', ans: 3.46, tol: 0.006, diag: v => Math.abs(v - 6) < 0.01 ? 'Không cộng độ dài ba cạnh. Tổng là vectơ đường chéo AC′.' : Math.abs(v - 2.83) < 0.02 ? 'Đó là đường chéo mặt AC. Đường chéo hình lập phương là AC′.' : R`Tổng bằng ${mv("AC'")}; ${m(R`AC'=\sqrt{AB^2+AD^2+AA'^2}`)}.`, sol: m(R`|\overrightarrow{AC'}|=\sqrt{4+4+4}=2\sqrt3\approx3{,}46`)}]}});
-
-task({id: 'p10', n: 10, sec: 2, k: ['K07'], lv: 1, title: 'Vectơ đối',
-  lead: R`Cho hình hộp ${m(R`ABCD.A'B'C'D'`)}.`, fig: F(hop, BOXF, {aria: 'Hình hộp với vectơ AD', vecs: [{a: 'A', b: 'D', c: 'blue'}]}),
-  qs: [[R`Vectơ đối của ${mv('AD')} là`, CH('p10', 'a', [mv('BC'), mv("A'D'"), mv('CB'), mv("B'C'")])]],
-  st: {items: [{id: 'a', name: 'Vectơ đối:', kind: 'choice', ans: 2, diag: v => [R`${mv('BC')} <b>bằng</b> ${mv('AD')} (cùng hướng), không phải vectơ đối.`, R`${mv("A'D'")} bằng ${mv('AD')}.`, 0, R`${mv("B'C'")} bằng ${mv('AD')}.`][v], sol: R`Vectơ đối cùng độ dài, ngược hướng: ${m(R`\overrightarrow{CB}=-\overrightarrow{AD}`)}.`}]}});
-
-task({id: 'p11', n: 11, sec: 2, k: ['K08'], lv: 1, title: 'Hiệu hai vectơ cùng điểm đầu',
-  lead: R`Cho hình chóp ${m('S.ABCD')}.`, fig: F(pyr, PYRF, {yaw: -6, pitch: 32, aria: 'Hình chóp S.ABCD', vecs: [{a: 'S', b: 'A', c: 'blue'}, {a: 'S', b: 'B', c: 'red'}]}),
-  qs: [[R`${m(R`\overrightarrow{SA}-\overrightarrow{SB}=`)}`, CH('p11', 'a', [mv('BA'), mv('AB'), mv('SC'), m(R`\vec 0`)])]],
-  st: {items: [{id: 'a', name: 'Hiệu:', kind: 'choice', ans: 0, diag: v => [0, R`Nhớ thứ tự: ${m(R`\overrightarrow{OB}-\overrightarrow{OA}=\overrightarrow{AB}`)} — vectơ hiệu đi <b>từ điểm cuối của vectơ trừ</b> đến điểm cuối của vectơ bị trừ.`, 'Không liên quan đến điểm C.', 'Hai vectơ khác nhau nên hiệu khác vectơ-không.'][v], sol: R`${m(R`\overrightarrow{SA}-\overrightarrow{SB}=\overrightarrow{BA}`)} (quy tắc ${m(R`\overrightarrow{OB}-\overrightarrow{OA}=\overrightarrow{AB}`)} với ${m('O=S')}).`}]}});
-
-task({id: 'p12', n: 12, sec: 2, k: ['K08'], lv: 2, title: 'Hiệu trong hình hộp',
-  lead: R`Cho hình hộp ${m(R`ABCD.A'B'C'D'`)}.`, fig: F(hop, BOXF, {aria: 'Hình hộp với AC′ và AA′', vecs: [{a: 'A', b: 'C1', c: 'gold'}, {a: 'A', b: 'A1', c: 'blue'}]}),
-  qs: [[R`${m(R`\overrightarrow{AC'}-\overrightarrow{AA'}=`)}`, CH('p12', 'a', [mv("A'C'"), mv('CA'), mv("C'A'"), mv("AA'")])]],
-  st: {items: [{id: 'a', name: 'Hiệu:', kind: 'choice', ans: 0, diag: v => [0, R`${mv('CA')} ngược hướng với kết quả.`, 'Thứ tự bị đảo: vectơ hiệu đi từ A′ đến C′.', 'Hiệu không thể bằng vectơ bị trừ.'][v], sol: R`${m(R`\overrightarrow{AC'}-\overrightarrow{AA'}=\overrightarrow{A'C'}`)}.`}]}});
-
-task({id: 'p13', n: 13, sec: 2, k: ['K04', 'K02', 'K05'], lv: 3, title: 'Lập luận chứng minh đẳng thức',
-  lead: R`Hình hộp ${m(R`ABCD.A'B'C'D'`)}. Chứng minh ${m(R`\overrightarrow{AB}+\overrightarrow{B'C'}+\overrightarrow{DD'}=\overrightarrow{AC'}`)} — chọn vectơ đúng cho mỗi bước:`,
-  fig: F(hop, BOXF, {aria: 'Hình hộp', vecs: [{a: 'A', b: 'B', c: 'blue'}, {a: 'B1', b: 'C1', c: 'red'}, {a: 'D', b: 'D1', c: 'green'}]}),
-  qs: [[R`Bước 1: ${m(R`\overrightarrow{B'C'}=`)}`, CH('p13', 'a', [mv('BC'), mv('CB'), mv("AD'")])], [R`Bước 2: ${m(R`\overrightarrow{DD'}=`)}`, CH('p13', 'b', [mv("CC'"), mv("C'C"), mv("D'D")])], [R`Bước 3: ${m(R`\overrightarrow{AB}+\overrightarrow{BC}+\overrightarrow{CC'}=`)}`, CH('p13', 'c', [mv("AC'"), mv('AC'), mv("BC'")])], [R`Viết tổng ba vectơ không cần dấu ngoặc là nhờ tính chất`, CH('p13', 'd', ['kết hợp', 'giao hoán', 'cộng với 0'])]],
-  st: {items: [
-    {id: 'a', name: 'Bước 1:', kind: 'choice', ans: 0, review: 'K02', why: R`${m("BCC'B'")} là hình bình hành.`, sol: m(R`\overrightarrow{B'C'}=\overrightarrow{BC}`)},
-    {id: 'b', name: 'Bước 2:', kind: 'choice', ans: 0, review: 'K02', why: R`${m("DCC'D'")} là hình bình hành ⇒ ${m("DD'")} song song, bằng, cùng hướng với ${m("CC'")}.`, sol: m(R`\overrightarrow{DD'}=\overrightarrow{CC'}`)},
-    {id: 'c', name: 'Bước 3:', kind: 'choice', ans: 0, why: 'Áp dụng quy tắc ba điểm hai lần.', sol: m(R`\overrightarrow{AB}+\overrightarrow{BC}+\overrightarrow{CC'}=\overrightarrow{AC}+\overrightarrow{CC'}=\overrightarrow{AC'}`)},
-    {id: 'd', name: 'Tính chất:', kind: 'choice', ans: 0, review: 'K05', why: R`${m(R`(\vec a+\vec b)+\vec c=\vec a+(\vec b+\vec c)`)} — đó là tính chất kết hợp.`, sol: 'Tính chất kết hợp của phép cộng vectơ.'}]}});
-
-task({id: 'p14', n: 14, sec: 2, k: ['K04'], lv: 3, title: 'Hợp lực (thực tế)', fig: svgPerp(3, 4, '3 N', '4 N'), fw: 560,
-  lead: R`Hai lực ${m(R`\vec F_1,\ \vec F_2`)} cùng tác dụng vào một vật, có giá vuông góc với nhau, độ lớn lần lượt ${m(R`3\,\text{N}`)} và ${m(R`4\,\text{N}`)}.`,
-  qs: [[R`Độ lớn hợp lực ${m(R`\vec F_1+\vec F_2`)} (đơn vị N):`, IN('p14', 'a', 160), 1]],
-  st: {items: [{id: 'a', name: 'Hợp lực:', ans: 5, diag: v => v === 7 ? 'Hai lực vuông góc: không cộng độ lớn trực tiếp. Dùng quy tắc hình bình hành (hình chữ nhật).' : v === 1 ? 'Đó là hiệu hai độ lớn, chỉ đúng khi hai lực ngược hướng.' : 'Hợp lực là đường chéo hình chữ nhật có hai cạnh 3 và 4.', sol: m(R`|\vec F_1+\vec F_2|=\sqrt{3^2+4^2}=5\ \text{(N)}`)}]}});
-
-/* ---------- PHẦN 3 · TÍCH CỦA MỘT SỐ VỚI MỘT VECTƠ ---------- */
-task({id: 'p15', n: 15, sec: 3, anchor: 'm3', k: ['K09'], lv: 1, title: 'Tìm số k',
-  lead: R`Cho ${m('M')} là trung điểm của đoạn thẳng ${m('BC')}.`,
-  qs: [[R`a) ${m(R`\overrightarrow{BC}=k\,\overrightarrow{BM}`)} với ${m('k=')}`, IN('p15', 'a', 150)], [R`b) ${m(R`\overrightarrow{MB}=k\,\overrightarrow{BC}`)} với ${m('k=')}`, IN('p15', 'b', 150)]],
-  st: {items: [
-    {id: 'a', name: 'a)', ans: 2, diag: v => v === -2 ? R`${mv('BC')} và ${mv('BM')} cùng hướng (đều đi từ B) ⇒ ${m('k>0')}.` : v === 0.5 ? 'Đảo ngược: BC dài gấp đôi BM.' : R`So sánh hướng và độ dài của ${mv('BC')} với ${mv('BM')}.`, sol: R`Cùng hướng, ${m('BC=2BM')} ⇒ ${m('k=2')}.`},
-    {id: 'b', name: 'b)', ans: -0.5, diag: v => v === 0.5 ? R`${mv('MB')} đi từ M về B, ngược hướng với ${mv('BC')} ⇒ ${m('k<0')}.` : v === -2 ? 'Đảo ngược: MB chỉ bằng một nửa BC.' : 'Xét hướng trước (dấu của k), rồi đến tỉ số độ dài.', sol: R`Ngược hướng, ${m(R`MB=\tfrac12BC`)} ⇒ ${m(R`k=-\tfrac12`)}.`}]}});
-
-task({id: 'p16', n: 16, sec: 3, k: ['K09'], lv: 2, title: 'Đọc thông tin từ a = −3b',
-  lead: R`Cho hai vectơ ${m(R`\vec a,\ \vec b`)} với ${m(R`\vec b\ne\vec 0`)} và ${m(R`\vec a=-3\vec b`)}. Xét tính đúng, sai:`,
-  qs: [[R`a) ${m(R`\vec a,\ \vec b`)} cùng phương.`, CH('p16', 'a', DS)], [R`b) ${m(R`\vec a,\ \vec b`)} cùng hướng.`, CH('p16', 'b', DS)], [R`c) ${m(R`|\vec a|=3|\vec b|`)}.`, CH('p16', 'c', DS)], [R`d) ${m(R`|\vec a|=-3|\vec b|`)}.`, CH('p16', 'd', DS)]],
-  st: {items: [
-    {id: 'a', name: 'a)', kind: 'choice', ans: 0, why: R`${m(R`\vec a=k\vec b`)} ⇒ cùng phương.`, sol: 'Đúng.'},
-    {id: 'b', name: 'b)', kind: 'choice', ans: 1, why: R`${m('k=-3<0')} ⇒ <b>ngược hướng</b>.`, sol: 'Sai: ngược hướng.'},
-    {id: 'c', name: 'c)', kind: 'choice', ans: 0, why: m(R`|k\vec b|=|k|\cdot|\vec b|`), sol: 'Đúng.'},
-    {id: 'd', name: 'd)', kind: 'choice', ans: 1, why: 'Độ dài không thể âm: phải lấy |k| = 3.', sol: R`Sai: ${m(R`|\vec a|=|-3|\cdot|\vec b|=3|\vec b|`)}.`}]}});
-
-task({id: 'p17', n: 17, sec: 3, k: ['K10'], lv: 2, title: 'Rút gọn biểu thức vectơ',
-  lead: R`Rút gọn ${m(R`2(\vec a+3\vec b)-3(\vec a-\vec b)=x\vec a+y\vec b`)}.`,
-  qs: [[R`${m('x=')}`, IN('p17', 'a', 150)], [R`${m('y=')}`, IN('p17', 'b', 150)]],
-  st: {items: [
-    {id: 'a', name: m('x:'), ans: -1, why: R`${m(R`2\vec a-3\vec a`)}.`, sol: m('x=2-3=-1')},
-    {id: 'b', name: m('y:'), ans: 9, diag: v => v === 3 ? R`Chú ý dấu: ${m(R`-3\cdot(-\vec b)=+3\vec b`)}.` : R`Phân phối: ${m(R`6\vec b+3\vec b`)}.`, sol: m('y=6+3=9')}]}});
-
-task({id: 'p18', n: 18, sec: 3, k: ['K11'], lv: 2, title: 'Trọng tâm tam giác trong tứ diện',
-  lead: R`Cho tứ diện ${m('ABCD')}, ${m('G')} là trọng tâm tam giác ${m('BCD')}.`, fig: F(tet, TETF, {yaw: 22, pitch: 14, aria: 'Tứ diện ABCD', vecs: [{a: 'A', b: 'B', c: 'blue'}, {a: 'A', b: 'C', c: 'blue'}, {a: 'A', b: 'D', c: 'blue'}]}),
-  qs: [[R`a) ${m(R`\overrightarrow{GB}+\overrightarrow{GC}+\overrightarrow{GD}=`)}`, CH('p18', 'a', [m(R`\vec 0`), mv('GA'), m(R`3\overrightarrow{AG}`)])], [R`b) ${m(R`\overrightarrow{AB}+\overrightarrow{AC}+\overrightarrow{AD}=k\,\overrightarrow{AG}`)}, ${m('k=')}`, IN('p18', 'b', 150)]],
-  st: {items: [
-    {id: 'a', name: 'a)', kind: 'choice', ans: 0, why: 'Tính chất trọng tâm tam giác.', sol: m(R`\overrightarrow{GB}+\overrightarrow{GC}+\overrightarrow{GD}=\vec 0`)},
-    {id: 'b', name: 'b)', ans: 3, diag: v => v === 1 ? 'Chèn điểm G vào từng vectơ: mỗi vectơ cho thêm một AG.' : 'Chèn điểm G: AB = AG + GB, …', sol: m(R`\overrightarrow{AB}+\overrightarrow{AC}+\overrightarrow{AD}=3\overrightarrow{AG}+(\overrightarrow{GB}+\overrightarrow{GC}+\overrightarrow{GD})=3\overrightarrow{AG}`)}]}});
-
-task({id: 'p19', n: 19, sec: 3, k: ['K09', 'K10'], lv: 3, title: 'Biểu diễn vectơ trong lăng trụ',
-  lead: R`Lăng trụ ${m(R`ABC.A'B'C'`)} có ${m(R`\overrightarrow{AA'}=\vec a,\ \overrightarrow{AB}=\vec b,\ \overrightarrow{AC}=\vec c`)}. Biết ${m(R`\overrightarrow{BC'}=x\vec a+y\vec b+z\vec c`)}.`,
-  fig: F(prism, PRF, {yaw: 6, pitch: 22, aria: 'Lăng trụ ABC.A′B′C′', vecs: [{a: 'A', b: 'A1', c: 'blue'}, {a: 'A', b: 'B', c: 'red'}, {a: 'A', b: 'C', c: 'green'}, {a: 'B', b: 'C1', c: 'gold'}]}),
-  qs: [[R`${m('x=')}`, IN('p19', 'a', 120)], [R`${m('y=')}`, IN('p19', 'b', 120)], [R`${m('z=')}`, IN('p19', 'c', 120)]],
-  st: {title: R`${m(R`\overrightarrow{BC'}=\overrightarrow{BC}+\overrightarrow{CC'}=(\vec c-\vec b)+\vec a`)}`, items: [
-    {id: 'a', name: m('x:'), ans: 1, why: R`${m(R`\overrightarrow{CC'}=\overrightarrow{AA'}=\vec a`)}.`, sol: m('x=1')},
-    {id: 'b', name: m('y:'), ans: -1, diag: v => v === 1 ? R`${m(R`\overrightarrow{BC}=\overrightarrow{AC}-\overrightarrow{AB}=\vec c-\vec b`)}: hệ số của ${m(R`\vec b`)} là âm.` : R`Viết ${m(R`\overrightarrow{BC}=\overrightarrow{AC}-\overrightarrow{AB}`)}.`, sol: m('y=-1')},
-    {id: 'c', name: m('z:'), ans: 1, why: R`${m(R`\overrightarrow{BC}=\vec c-\vec b`)}.`, sol: m('z=1')}]}});
-
-task({id: 'p20', n: 20, sec: 3, k: ['K09', 'K10'], lv: 3, title: 'Trung điểm hai cạnh đối',
-  lead: R`Tứ diện ${m('ABCD')}, ${m('M, N')} là trung điểm của ${m('AB, CD')}. Chứng minh ${m(R`\overrightarrow{MN}=k(\overrightarrow{AD}+\overrightarrow{BC})`)}.`,
-  fig: F(tet, TETF, {yaw: 22, pitch: 14, aria: 'Tứ diện, M, N trung điểm', P: Object.assign({}, tet, {M: V3.mid(tet.A, tet.B), N: V3.mid(tet.C, tet.D)}), labels: ['A', 'B', 'C', 'D', 'M', 'N'], dots: ['M', 'N'], vecs: [{a: 'M', b: 'N', c: 'gold', free: true}]}),
-  qs: [[R`${m(R`\overrightarrow{MN}=\overrightarrow{MA}+\overrightarrow{AD}+\overrightarrow{DN}`)} và ${m(R`\overrightarrow{MN}=\overrightarrow{MB}+\overrightarrow{BC}+\overrightarrow{CN}`)}. Cộng lại: ${m(R`\overrightarrow{MA}+\overrightarrow{MB}=`)}`, CH('p20', 'a', [m(R`\vec 0`), mv('AB'), m(R`2\overrightarrow{MA}`)]), 1], [R`${m('k=')}`, IN('p20', 'b', 150)]],
-  st: {items: [
-    {id: 'a', name: 'Bước:', kind: 'choice', ans: 0, why: R`${m('M')} là trung điểm ${m('AB')}: hai vectơ ${mv('MA')}, ${mv('MB')} đối nhau.`, sol: m(R`\overrightarrow{MA}+\overrightarrow{MB}=\vec 0`)},
-    {id: 'b', name: m('k:'), ans: 0.5, diag: v => v === 2 ? R`Cộng hai đẳng thức được ${m(R`2\overrightarrow{MN}`)} ở vế trái ⇒ chia cho 2.` : 'Cộng vế: 2MN = AD + BC.', sol: m(R`2\overrightarrow{MN}=\overrightarrow{AD}+\overrightarrow{BC}\Rightarrow k=\tfrac12`)}]}});
-
-/* ---------- PHẦN 4 · TÍCH VÔ HƯỚNG ---------- */
-task({id: 'p21', n: 21, sec: 4, anchor: 'm4', k: ['K12'], lv: 1, title: 'Góc giữa hai vectơ',
-  lead: R`Hình lập phương ${m(R`ABCD.A'B'C'D'`)}. Nhập số đo góc (độ):`, fig: F(cube, BOXF, {aria: 'Hình lập phương'}),
-  qs: [[R`a) ${m(R`(\overrightarrow{AB},\overrightarrow{A'D'})=`)}`, IN('p21', 'a', 140)], [R`b) ${m(R`(\overrightarrow{AC},\overrightarrow{C'A'})=`)}`, IN('p21', 'b', 140)], [R`c) ${m(R`(\overrightarrow{AD'},\overrightarrow{BC'})=`)}`, IN('p21', 'c', 140)]],
-  st: {items: [
-    {id: 'a', name: 'a)', ans: 90, why: R`${m(R`\overrightarrow{A'D'}=\overrightarrow{AD}`)} và ${m(R`AB\perp AD`)}.`, sol: m('90^\\circ')},
-    {id: 'b', name: 'b)', ans: 180, diag: v => v === 0 ? R`${mv("C'A'")} đi từ C′ về A′, <b>ngược hướng</b> với ${mv('AC')}.` : R`${m(R`\overrightarrow{C'A'}=\overrightarrow{CA}=-\overrightarrow{AC}`)}.`, sol: R`Ngược hướng ⇒ ${m('180^\\circ')}.`},
-    {id: 'c', name: 'c)', ans: 0, why: R`${m("ABC'D'")} là hình bình hành ⇒ ${m(R`\overrightarrow{BC'}=\overrightarrow{AD'}`)}.`, sol: R`Hai vectơ bằng nhau ⇒ ${m('0^\\circ')}.`}]}});
-
-task({id: 'p22', n: 22, sec: 4, k: ['K12'], lv: 3, title: 'Dời về chung điểm đầu',
-  lead: R`Hình lập phương ${m(R`ABCD.A'B'C'D'`)}. Tính góc ${m(R`(\overrightarrow{AB'},\overrightarrow{BC'})`)}.`,
-  fig: F(cube, BOXF, {aria: 'Hình lập phương với AB′, AD′, B′D′', vecs: [{a: 'A', b: 'B1', c: 'blue'}, {a: 'B', b: 'C1', c: 'red'}], segs: [{a: 'B1', b: 'D1', cls: 'gold'}]}),
-  qs: [[R`a) ${m(R`\overrightarrow{BC'}`)} bằng`, CH('p22', 'a', [mv("AD'"), mv("D'A"), mv("A'D")])], [R`b) Tam giác ${m("AB'D'")} là tam giác`, CH('p22', 'b', ['đều', 'vuông cân', 'vuông'])], [R`c) Góc cần tìm (độ):`, IN('p22', 'c', 140)]],
-  st: {items: [
-    {id: 'a', name: 'a)', kind: 'choice', ans: 0, why: R`${m("ABC'D'")} là hình bình hành.`, sol: m(R`\overrightarrow{BC'}=\overrightarrow{AD'}`)},
-    {id: 'b', name: 'b)', kind: 'choice', ans: 0, why: R`${m("AB', AD', B'D'")} đều là đường chéo của các mặt hình vuông bằng nhau.`, sol: 'Tam giác đều.'},
-    {id: 'c', name: 'c)', ans: 60, diag: v => v === 90 ? 'Hai vectơ không vuông góc: tam giác AB′D′ đều.' : v === 45 ? 'Đó là góc giữa cạnh và đường chéo mặt. Ở đây cả hai đều là đường chéo mặt.' : R`Góc ${m("B'AD'")} trong tam giác đều.`, sol: m(R`(\overrightarrow{AB'},\overrightarrow{AD'})=\widehat{B'AD'}=60^\circ`)}]}});
-
-task({id: 'p23', n: 23, sec: 4, k: ['K13'], lv: 1, title: 'Tính tích vô hướng',
-  lead: R`Cho ${m(R`|\vec a|=2,\ |\vec b|=3`)} và ${m(R`(\vec a,\vec b)=120^\circ`)}.`,
-  qs: [[R`${m(R`\vec a\cdot\vec b=`)}`, IN('p23', 'a', 160)]],
-  st: {items: [{id: 'a', name: 'Kết quả:', ans: -3, diag: v => v === 3 ? R`${m(R`\cos120^\circ=-\tfrac12`)} — kết quả mang dấu âm.` : v === 6 ? 'Còn thiếu nhân với cos của góc.' : R`${m(R`\vec a\cdot\vec b=|\vec a|\cdot|\vec b|\cdot\cos(\vec a,\vec b)`)}.`, sol: m(R`2\cdot3\cdot\cos120^\circ=6\cdot(-\tfrac12)=-3`)}]}});
-
-task({id: 'p24', n: 24, sec: 4, k: ['K13', 'K14'], lv: 2, title: 'Khai triển tích vô hướng',
-  lead: R`Cho ${m(R`|\vec a|=|\vec b|=1`)} và ${m(R`(\vec a,\vec b)=60^\circ`)}.`,
-  qs: [[R`a) ${m(R`\vec a\cdot\vec b=`)}`, IN('p24', 'a', 140)], [R`b) ${m(R`(\vec a+\vec b)^2=`)}`, IN('p24', 'b', 140)], [R`c) ${m(R`(2\vec a-\vec b)\cdot(\vec a+\vec b)=`)}`, IN('p24', 'c', 140)]],
-  st: {items: [
-    {id: 'a', name: 'a)', ans: 0.5, why: m(R`1\cdot1\cdot\cos60^\circ`), sol: m(R`\tfrac12`)},
-    {id: 'b', name: 'b)', ans: 3, diag: v => v === 2 ? R`Còn thiếu ${m(R`2\vec a\cdot\vec b`)}.` : R`${m(R`(\vec a+\vec b)^2=\vec a^2+2\vec a\cdot\vec b+\vec b^2`)}.`, sol: m(R`1+2\cdot\tfrac12+1=3`)},
-    {id: 'c', name: 'c)', ans: 1.5, diag: v => R`Phân phối: ${m(R`2\vec a^2+2\vec a\cdot\vec b-\vec b\cdot\vec a-\vec b^2`)}.`, sol: m(R`2+1-\tfrac12-1=\tfrac32`)}]}});
-
-task({id: 'p25', n: 25, sec: 4, k: ['K13', 'K14'], lv: 3, title: 'Tích vô hướng trong tứ diện đều',
-  lead: R`Tứ diện đều ${m('ABCD')} có cạnh bằng 1.`, fig: F(tetd, TETF, {yaw: 8, pitch: 12, aria: 'Tứ diện đều', vecs: [{a: 'A', b: 'B', c: 'blue'}, {a: 'C', b: 'D', c: 'red'}]}),
-  qs: [[R`a) ${m(R`\overrightarrow{AB}\cdot\overrightarrow{AC}=`)}`, IN('p25', 'a', 140)], [R`b) ${m(R`\overrightarrow{AB}\cdot\overrightarrow{CD}=`)} <i>(gợi ý: ${m(R`\overrightarrow{CD}=\overrightarrow{AD}-\overrightarrow{AC}`)})</i>`, IN('p25', 'b', 140)]],
-  st: {items: [
-    {id: 'a', name: 'a)', ans: 0.5, diag: v => v === 1 ? 'Còn nhân cos60°.' : 'Tam giác ABC đều: góc 60°.', sol: m(R`1\cdot1\cdot\cos60^\circ=\tfrac12`)},
-    {id: 'b', name: 'b)', ans: 0, why: m(R`\overrightarrow{AB}\cdot\overrightarrow{AD}-\overrightarrow{AB}\cdot\overrightarrow{AC}=\tfrac12-\tfrac12`), sol: R`${m('0')} ⇒ ${m(R`AB\perp CD`)}.`}]}});
-
-task({id: 'p26', n: 26, sec: 4, k: ['K13'], lv: 2, title: 'Tìm góc từ tích vô hướng',
-  lead: R`Cho ${m(R`|\vec a|=|\vec b|=2`)} và ${m(R`\vec a\cdot\vec b=-2`)}.`,
-  qs: [[R`a) ${m(R`\cos(\vec a,\vec b)=`)}`, IN('p26', 'a', 140)], [R`b) ${m(R`(\vec a,\vec b)=`)} (độ)`, IN('p26', 'b', 140)]],
-  st: {items: [
-    {id: 'a', name: 'a)', ans: -0.5, why: m(R`\cos(\vec a,\vec b)=\dfrac{\vec a\cdot\vec b}{|\vec a|\cdot|\vec b|}`), sol: m(R`\dfrac{-2}{4}=-\tfrac12`)},
-    {id: 'b', name: 'b)', ans: 120, diag: v => v === 60 ? 'cos âm ⇒ góc tù.' : R`Góc có ${m(R`\cos=-\tfrac12`)}.`, sol: m('120^\\circ')}]}});
-
-task({id: 'p27', n: 27, sec: 4, k: ['K13'], lv: 3, title: 'Công của lực (thực tế)', fig: svgPull(60, 'vali'), fw: 560,
-  lead: R`Một người kéo chiếc vali trượt thẳng ${m(R`10\,\text{m}`)} bằng lực ${m(R`\vec F`)} có độ lớn ${m(R`50\,\text{N}`)}, hợp với hướng di chuyển một góc ${m('60^\\circ')}. Công ${m(R`A=\vec F\cdot\overrightarrow{MN}`)}.`,
-  qs: [[R`${m('A=')} (đơn vị J)`, IN('p27', 'a', 160)]],
-  st: {items: [{id: 'a', name: 'Công:', ans: 250, diag: v => v === 500 ? 'Lực không cùng hướng chuyển động: phải nhân cos60°.' : 'A = |F|·|MN|·cos(F, MN).', sol: m(R`A=50\cdot10\cdot\cos60^\circ=250\ \text{(J)}`)}]}});
-
-/* ---------- KẾT QUẢ + THỬ THÁCH ---------- */
-addSlide({label: 'Kết quả', sec: 5, anchor: 'sum', html: hd(5, 'Kết quả tự luyện theo từng kiến thức') + `<div class="pres" id="pres"></div>`, note: 'Bảng tự cập nhật theo các nhiệm vụ học sinh đã làm. “Làm đúng ngay” = đúng ở lần kiểm tra đầu tiên.'});
-
-task({id: 'p28', n: 28, sec: 5, anchor: 'ch', k: ['K11', 'K09'], lv: 4, optional: true, title: 'Thử thách · Trọng tâm khối tứ diện',
-  lead: R`Một khối rubik (đồng chất) hình tứ diện đều ${m('ABCD')} có chiều cao ${m(R`AH=12\,\text{cm}`)} (${m('H')} là trọng tâm tam giác ${m('BCD')}). Trọng tâm ${m('I')} của khối thoả mãn ${m(R`\overrightarrow{AI}=3\overrightarrow{IH}`)}.`,
-  fig: F(tetd, TETF, {yaw: 8, pitch: 12, aria: 'Tứ diện đều với đường cao AH', P: Object.assign({}, tetd, {H: [0, 0, 0], I: [0, 0, 0.8165 / 4]}), labels: ['A', 'B', 'C', 'D', 'H', 'I'], dots: ['H', 'I'], segs: [{a: 'A', b: 'H', cls: 'gold', free: true}]}),
-  qs: [[R`Khoảng cách từ ${m('I')} đến mặt ${m('(BCD)')} (cm):`, IN('p28', 'a', 160), 1]],
-  note: 'Không bắt buộc. Liên hệ Bài tập 2.8 SGK.',
-  st: {items: [{id: 'a', name: 'Khoảng cách:', ans: 3, diag: v => v === 4 ? 'AI = 3IH nên AH chia thành 4 phần bằng nhau, không phải 3.' : v === 9 ? 'Đó là AI. Đề hỏi IH.' : 'AH = AI + IH = 4IH.', sol: m(R`AH=4IH\Rightarrow IH=3\ \text{cm}`)}]}});
-/* ================= ĐIỀU HƯỚNG · TỰ LUYỆN ================= */
+/* ================= ĐIỀU HƯỚNG ================= */
 const secsEl = $('#secs'); SECS.forEach(t => { const s = document.createElement('span'); s.textContent = t; secsEl.appendChild(s); });
-let backTo2 = -1;
 function go(n, step = 0){
   n = Math.max(0, Math.min(slides.length - 1, n));
-  spot(null);
   slides[S.cur].el.hidden = true; S.cur = n; const s = slides[n]; s.el.hidden = false; s.el.classList.remove('fade'); void s.el.offsetWidth; s.el.classList.add('fade');
   $('#nlabel').textContent = s.label; $('#ncount').textContent = `${n + 1} / ${slides.length}`;
   $('#pbar').style.width = (n / (slides.length - 1) * 100) + '%'; $('#prev').disabled = n === 0;
   [...secsEl.children].forEach((e, j) => { e.className = j === s.sec ? 'cur' : (j < s.sec ? 'done' : ''); });
   secsEl.style.visibility = s.sec < 0 ? 'hidden' : 'visible';
-  $('#menu').hidden = true; modal.hidden = true; if (backTo < 0) backBtn.hidden = true; setStep(step === 'end' ? s.max : step);
-  if (s.anchor === 'sum') renderResults();
-  if (S.cur > 0){ PR2.last = S.cur; prSave(); } else coverUI();
+  $('#menu').hidden = true; modal.hidden = true; setStep(step === 'end' ? s.max : step);
+  if (s.item && T.state === 'NOT_STARTED'){ T.state = 'IN_PROGRESS'; T.t0 = Date.now(); }
+  if (s.anchor === 'submit') renderSubmit();
+  if (s.anchor === 'res') renderRes();
+  $('#next').disabled = n === slides.length - 1 || (s.anchor === 'submit' && T.state !== 'ANALYZED');
 }
-const stepFwd = () => { if (blocked()){ lockChip.classList.remove('shake'); void lockChip.offsetWidth; lockChip.classList.add('shake'); return; } const s = slides[S.cur]; if (S.step < s.max) setStep(S.step + 1); else go(S.cur + 1); };
-const fwd = stepFwd;
-const back = () => { if (S.step > 0) setStep(S.step - 1); else if (S.cur > 0) go(S.cur - 1, 'end'); };
+const fwd = () => { if (S.cur < slides.length - 1 && !(slides[S.cur].anchor === 'submit' && T.state !== 'ANALYZED')) go(S.cur + 1); };
+const back = () => { if (S.cur > 0) go(S.cur - 1); };
 const goAnchor = a => { const k = slides.findIndex(s => s.anchor === a); if (k >= 0) go(k); };
-spotBox.addEventListener('click', e => { e.stopPropagation(); if (S.spot) stepFwd(); }, true);
 document.addEventListener('click', e => { const b = e.target.closest('[data-go]'); if (b) goAnchor(b.dataset.go); });
 $('#next').addEventListener('click', fwd); $('#prev').addEventListener('click', back);
 document.addEventListener('keydown', e => {
-  if (e.target.closest('input')) return;
-  if (['ArrowRight', 'PageDown', ' ', 'Enter'].includes(e.key) && !(e.key === 'Enter' && e.target.closest('button,[tabindex]'))){ fwd(); e.preventDefault(); }
+  if (e.target.closest('input')){ if (e.key === 'Enter'){ e.target.blur(); fwd(); } return; }
+  if (['ArrowRight', 'PageDown'].includes(e.key)){ fwd(); e.preventDefault(); }
   else if (['ArrowLeft', 'PageUp'].includes(e.key)){ back(); e.preventDefault(); }
-  else if (e.key === 'Escape'){ $('#menu').hidden = true; if (!modal.hidden) closeModal(); else spot(null); }
+  else if (e.key === 'Escape'){ $('#menu').hidden = true; if (!modal.hidden) closeModal(); }
 });
-(function(){ const mn = $('#menu'), g = h('<div class="mgrid"></div>'); mn.appendChild(g);
-  [['start', 'Bìa'], ['m1', '1. Vectơ trong không gian'], ['m2', '2. Tổng và hiệu của hai vectơ'], ['m3', '3. Tích của một số với một vectơ'], ['m4', '4. Tích vô hướng của hai vectơ'], ['sum', 'Kết quả theo kiến thức'], ['ch', 'Thử thách']].forEach(([a, t]) => g.appendChild(h(`<button type="button" data-go="${a}">${t}</button>`))); })();
-$('#btn-menu').addEventListener('click', () => { $('#menu').hidden = !$('#menu').hidden; });
+$('#btn-menu').textContent = '☰ Bảng câu hỏi';
+$('#btn-menu').addEventListener('click', () => { renderMenu(); $('#menu').hidden = !$('#menu').hidden; });
 $('#btn-fs').addEventListener('click', () => { try { if (document.fullscreenElement || document.webkitFullscreenElement) { const x = document.exitFullscreen || document.webkitExitFullscreen; const p = x.call(document); if (p && p.catch) p.catch(() => {}); } else { const r = document.documentElement, q = r.requestFullscreen || r.webkitRequestFullscreen; if (!q) { window.mbFsHint(); return; } const p = q.call(r); if (p && p.catch) p.catch(() => {}); } } catch (e) {} });
 document.addEventListener('fullscreenchange', () => setTimeout(fit, 60));
-$('#btn-gv').addEventListener('click', () => { if ($('#btn-gv').disabled) return; S.teacher = !S.teacher; document.body.classList.toggle('gv', S.teacher); $('#btn-gv').setAttribute('aria-pressed', String(S.teacher)); gateUI(); });
+$('#btn-gv').addEventListener('click', () => { if ($('#btn-gv').disabled) return; S.teacher = !S.teacher; document.body.classList.toggle('gv', S.teacher); $('#btn-gv').setAttribute('aria-pressed', String(S.teacher)); });
 let light = document.documentElement.getAttribute('data-mb') === 'light';
 const themeLabel = () => { $('#btn-theme').textContent = light ? 'Nền: Sáng' : 'Nền: Tối'; }; themeLabel();
 $('#btn-theme').addEventListener('click', () => { light = !light; if (light) document.documentElement.setAttribute('data-mb', 'light'); else document.documentElement.removeAttribute('data-mb'); themeLabel(); });
+const clock = h('<span class="aclock" aria-live="off">⏱ 00:00</span>'); $('#ncount').after(clock);
+setInterval(() => { if (T.state === 'IN_PROGRESS'){ const s = Math.floor((Date.now() - T.t0) / 1000); clock.textContent = `⏱ ${String(Math.floor(s / 60)).padStart(2, '0')}:${String(s % 60).padStart(2, '0')}`; } }, 1000);
 
-/* ---------- tiến bộ theo kiến thức (chỉ lưu trên trình duyệt đang dùng) ---------- */
-const PKEY2 = 'mb12b6-practice';
-const PR2 = (() => { try { const v = JSON.parse(localStorage.getItem(PKEY2) || '{}'); return {last: +v.last || 0, res: v.res || {}}; } catch (e) { return {last: 0, res: {}}; } })();
-const prSave = () => { try { localStorage.setItem(PKEY2, JSON.stringify(PR2)); } catch (e) {} };
-document.addEventListener('station-done', e => {
-  const id = e.detail && e.detail.id; if (!id || PR2.res[id]) { coverUI(); return; }
-  PR2.res[id] = {first: (e.detail.attempts || 0) === 0}; prSave(); coverUI();
+/* ================= BÀI LÀM ================= */
+const key = (id, V) => id + V;
+function setVariant(V){ T.v = V; document.body.dataset.var = V; }
+document.addEventListener('click', e => {
+  const b = e.target.closest('.aopts .opt'); if (!b || T.state === 'SUBMITTED' || T.state === 'ANALYZED') return;
+  const box = b.closest('.aopts'); box.querySelectorAll('.opt').forEach(x => x.removeAttribute('data-state')); b.dataset.state = 'sel';
+  T.ans[key(box.dataset.q, box.dataset.v)] = +b.dataset.k;
 });
-const CORE = TASKS.filter(t => !t.optional);
-const KS = Object.keys(THEORY).filter(k => CORE.some(t => t.k.includes(k)));
-function kState(k){
-  const ts = CORE.filter(t => t.k.includes(k)), done = ts.filter(t => PR2.res[t.id]), first = done.filter(t => PR2.res[t.id].first).length;
-  let st = 'Chưa luyện', cls = '';
-  if (done.length && done.length < ts.length){ st = 'Đang luyện'; cls = 'mid'; }
-  if (done.length === ts.length){ if (first * 3 >= 2 * ts.length){ st = '✓ Đạt'; cls = 'ok'; } else { st = 'Cần ôn lại'; cls = 'bad'; } }
-  return {ts, done: done.length, first, st, cls};
+document.addEventListener('input', e => {
+  const l = e.target.closest('.anum'); if (!l) return;
+  const raw = e.target.value.trim(); const k = key(l.dataset.q, l.dataset.v);
+  if (raw === '') delete T.ans[k]; else T.ans[k] = raw;
+});
+const given = it => T.ans[key(it.id, T.v)];
+const answered = it => given(it) !== undefined;
+function isRight(it){
+  const g = given(it), d = it[T.v]; if (g === undefined) return false;
+  if (it.kind === 'choice') return g === d.ans;
+  const x = parseNum(g); return !isNaN(x) && near(x, d.ans, d.tol ?? 1e-9);
 }
-function renderResults(){
-  const box = $('#pres'); if (!box) return;
-  const rows = KS.map(k => { const s = kState(k); return `<tr class="${s.cls}"><td><b>${k}</b> ${THEORY[k].t}</td><td>${s.done}/${s.ts.length}</td><td>${s.first}</td><td class="stt">${s.st}</td><td><button class="btn" type="button" data-rev="${k}">📖 Ôn</button> <button class="btn" type="button" data-to="${s.ts[0].id}">↻ Luyện</button></td></tr>`; }).join('');
-  const nOk = KS.filter(k => kState(k).cls === 'ok').length;
-  box.innerHTML = `<p class="lead">Đạt <b class="gold-t">${nOk}/${KS.length}</b> kiến thức. Một kiến thức <b>Đạt</b> khi đã làm hết các nhiệm vụ của nó và làm đúng ngay lần đầu ít nhất 2/3 số nhiệm vụ.</p>
-    <div class="ptab"><table><thead><tr><th>Kiến thức</th><th>Đã làm</th><th>Đúng ngay</th><th>Trạng thái</th><th></th></tr></thead><tbody>${rows}</tbody></table></div>
-    <div class="row" style="justify-content:flex-end;margin-top:14px"><button class="btn" type="button" data-a="reset">Xoá kết quả, luyện lại từ đầu</button></div>`;
+function renderMenu(){
+  const mn = $('#menu'); mn.innerHTML = `<div class="agrid">${ITEMS.map((it, i) => `<button type="button" class="${answered(it) ? 'done' : ''}" data-q="${i}">${i + 1}</button>`).join('')}</div><div class="row" style="justify-content:flex-end;gap:10px;margin-top:14px"><button type="button" class="btn" data-go="start">Bìa</button><button type="button" class="btn gold" data-go="submit">Nộp bài</button></div>`;
+  mn.querySelectorAll('[data-q]').forEach(b => b.addEventListener('click', () => go(1 + +b.dataset.q)));
+}
+function renderSubmit(){
+  const box = $('#asub'), n = ITEMS.filter(answered).length, miss = ITEMS.map((it, i) => answered(it) ? null : i + 1).filter(Boolean);
+  if (T.state === 'ANALYZED'){ box.innerHTML = `<p class="lead">Con đã nộp bài. Xem <b>Kết quả</b> ở trang sau.</p><div class="row"><button class="btn gold" type="button" data-go="res">Xem kết quả</button></div>`; return; }
+  box.innerHTML = `<p class="lead big">Đã trả lời <b class="gold-t">${n}/${ITEMS.length}</b> câu.</p>
+    ${miss.length ? `<p class="lead">Còn để trống: ${miss.map(k => `<button type="button" class="btn sm" data-q="${k - 1}">Câu ${k}</button>`).join(' ')}</p>` : '<p class="lead">Con đã trả lời đủ các câu.</p>'}
+    <div class="agrid big">${ITEMS.map((it, i) => `<button type="button" class="${answered(it) ? 'done' : ''}" data-q="${i}">${i + 1}</button>`).join('')}</div>
+    <div class="row" style="justify-content:center;margin-top:24px"><button class="btn gold big" type="button" data-a="submit">Nộp bài</button></div>
+    <p class="lead c sm" id="asubmsg"></p>`;
+  box.querySelectorAll('[data-q]').forEach(b => b.addEventListener('click', () => go(1 + +b.dataset.q)));
+  box.querySelector('[data-a=submit]').addEventListener('click', e => {
+    const b = e.currentTarget;
+    if (miss.length && !b.dataset.sure){ b.dataset.sure = 1; b.textContent = 'Vẫn nộp bài'; $('#asubmsg').textContent = `Còn ${miss.length} câu để trống. Bấm “Vẫn nộp bài” nếu con chắc chắn.`; return; }
+    submit();
+  });
+}
+function submit(){
+  T.state = 'SUBMITTED'; T.tEnd = Date.now();
+  document.querySelectorAll('.anum input').forEach(i => { i.disabled = true; });
+  document.querySelectorAll('.aopts .opt').forEach(b => { b.disabled = true; });
+  ITEMS.forEach((it, i) => {
+    const sl = slides[1 + i].el, wrap = sl.querySelector(`.avar[data-var="${T.v}"]`), ok = isRight(it), d = it[T.v];
+    if (it.kind === 'choice'){ wrap.querySelectorAll('.opt').forEach(b => { const k = +b.dataset.k; if (k === d.ans) b.dataset.state = 'ok'; else if (k === given(it)) b.dataset.state = 'bad'; }); }
+    else { const inp = wrap.querySelector('input'); inp.closest('.anum').dataset.state = ok ? 'ok' : 'bad'; }
+    const sol = wrap.querySelector('.asol'); sol.hidden = false;
+    sol.innerHTML = `<b class="${ok ? 'okt' : 'badt'}">${ok ? '✓ Đúng' : answered(it) ? '✗ Chưa đúng' : '— Bỏ trống'}</b> · Đáp án: <b>${it.kind === 'choice' ? 'ABCD'[d.ans] : vn(d.ans)}</b><br>${d.sol}`;
+    texAll(sol);
+  });
+  T.state = 'ANALYZED'; goAnchor('res');
+}
+function pct(a, b){ return b ? Math.round(100 * a / b) : 0; }
+function renderRes(){
+  const box = $('#ares');
+  if (T.state !== 'ANALYZED'){ box.innerHTML = `<p class="lead">Con chưa nộp bài.</p><div class="row"><button class="btn gold" type="button" data-go="submit">Đến trang nộp bài</button></div>`; return; }
+  const right = ITEMS.filter(isRight).length, nAns = ITEMS.filter(answered).length;
+  const objs = Object.keys(OBJ).map(o => { const its = ITEMS.filter(it => it.obj === o); return {o, n: its.length, a: its.filter(answered).length, r: its.filter(isRight).length}; });
+  const ks = Object.keys(THEORY).map(k => { const its = ITEMS.filter(it => it.k.includes(k)); return {k, n: its.length, r: its.filter(isRight).length}; }).filter(x => x.n);
+  const enough = nAns >= RULE.enough && objs.every(x => x.a > 0);
+  const pass = right >= RULE.pass && objs.every(x => x.r >= RULE.objPct * x.n);
+  const verdict = !enough ? ['CHƯA ĐỦ DỮ LIỆU', 'mid', `Con mới trả lời ${nAns}/${RULE.n} câu${objs.some(x => !x.a) ? ' và còn mục tiêu chưa có câu trả lời' : ''}. Hãy làm lại để có kết luận.`]
+    : pass ? ['ĐẠT', 'ok', 'Con đã đạt các mục tiêu của Bài 6.'] : ['CHƯA ĐẠT', 'bad', `Cần đúng từ ${RULE.pass}/${RULE.n} câu và mỗi mục tiêu đúng ít nhất một nửa. Ôn lại các kiến thức bên dưới rồi làm đề tương đương.`];
+  const weak = ks.filter(x => x.r < x.n);
+  const mins = Math.max(1, Math.round((T.tEnd - T.t0) / 60000));
+  box.innerHTML = `<div class="rtop"><div class="score"><b>${right}</b><span>/${RULE.n}</span></div><div class="verd ${verdict[1]}"><b>${verdict[0]}</b><span>${verdict[2]}</span><i>Đề ${T.v} · lần làm ${T.attempt} · khoảng ${mins} phút</i></div>
+      <div class="row" style="flex-direction:column;gap:10px"><button class="btn gold" type="button" data-a="retry">↻ Làm đề tương đương</button><button class="btn" type="button" data-q="0">Xem lại từng câu</button></div></div>
+    <div class="rgrid">
+      <div class="rbox"><h4>Từng câu</h4><div class="ritems">${ITEMS.map((it, i) => `<button type="button" data-q="${i}" class="${isRight(it) ? 'ok' : answered(it) ? 'bad' : 'skip'}" title="${it.k.join(', ')}">${i + 1}<i>${isRight(it) ? '✓' : answered(it) ? '✗' : '–'}</i></button>`).join('')}</div>
+        <h4 style="margin-top:12px">Mục tiêu</h4>${objs.map(x => `<div class="rbar"><span><b>${x.o}</b> ${OBJ[x.o]}</span><em>${x.r}/${x.n}</em><i style="--p:${pct(x.r, x.n)}%" class="${x.r >= RULE.objPct * x.n ? 'ok' : 'bad'}"></i></div>`).join('')}</div>
+      <div class="rbox"><h4>Kiến thức cần ôn ${weak.length ? '' : '— không có'}</h4>${weak.length ? `<div class="rweak">${weak.map(x => `<div><span><b>${x.k}</b> ${THEORY[x.k].t} <em>(${x.r}/${x.n})</em><small>Bài giảng: ${REV[x.k]}</small></span><button class="btn" type="button" data-rev="${x.k}">📖 Ôn</button></div>`).join('')}</div>` : '<p class="lead">Con đã làm đúng mọi câu theo từng kiến thức.</p>'}</div>
+    </div>`;
   texAll(box);
+  box.querySelectorAll('[data-q]').forEach(b => b.addEventListener('click', () => go(1 + +b.dataset.q)));
   box.querySelectorAll('[data-rev]').forEach(b => b.addEventListener('click', () => showTheory([b.dataset.rev])));
-  box.querySelectorAll('[data-to]').forEach(b => b.addEventListener('click', () => { const k = slides.findIndex(s => s.task && s.task.id === b.dataset.to); if (k >= 0) go(k); }));
-  box.querySelector('[data-a=reset]').addEventListener('click', e => { const b = e.currentTarget; if (b.dataset.sure){ PR2.res = {}; prSave(); renderResults(); coverUI(); } else { b.dataset.sure = 1; b.textContent = 'Bấm lần nữa để xác nhận xoá'; } });
+  box.querySelector('[data-a=retry]').addEventListener('click', retryTest);
 }
-/* bìa: chọn phần + luyện tiếp */
-const PARTS2 = [{sec: 1, a: 'm1', t: 'Vectơ trong không gian'}, {sec: 2, a: 'm2', t: 'Tổng và hiệu của hai vectơ'}, {sec: 3, a: 'm3', t: 'Tích của một số với một vectơ'}, {sec: 4, a: 'm4', t: 'Tích vô hướng của hai vectơ'}];
-const cards2 = [];
-(function(){ const box = slides[0].el.querySelector('.parts');
-  PARTS2.forEach((p, j) => { const k = slides.findIndex(s => s.anchor === p.a);
-    const c = h(`<button type="button" class="pcard"><span class="pn">Phần ${j + 1}</span><b>${p.t}</b><span class="pf"><span class="pst"></span></span></button>`);
-    c.addEventListener('click', () => go(k)); box.appendChild(c); cards2.push({c, p}); });
-  const cv = slides[0].el.querySelector('.cover > div');
-  const b = h('<button class="btn gold vostart" type="button">▶ Bắt đầu luyện</button>'); cv.appendChild(b); b.addEventListener('click', () => go(1));
-  const r = h('<button class="btn resume" type="button" hidden></button>'); cv.appendChild(r); r.addEventListener('click', () => go(PR2.last)); cards2.resume = r; })();
-function coverUI(){
-  cards2.forEach(({c, p}) => { const ts = CORE.filter(t => t.sec === p.sec), d = ts.filter(t => PR2.res[t.id]).length, all = d === ts.length;
-    c.classList.toggle('ok', all); c.querySelector('.pst').textContent = (all ? '✓ ' : '') + `${d}/${ts.length} nhiệm vụ`; });
-  const r = cards2.resume; if (!r) return;
-  r.hidden = !(PR2.last > 1 && PR2.last < slides.length);
-  if (!r.hidden) r.textContent = `↻ Luyện tiếp · ${slides[PR2.last].label}`;
+function retryTest(){
+  T.attempt++; T.ans = {}; T.state = 'NOT_STARTED'; T.t0 = 0; clock.textContent = '⏱ 00:00';
+  setVariant(T.v === 'A' ? 'B' : 'A');
+  document.querySelectorAll('.anum input').forEach(i => { i.disabled = false; i.value = ''; });
+  document.querySelectorAll('.anum').forEach(l => l.removeAttribute('data-state'));
+  document.querySelectorAll('.aopts .opt').forEach(b => { b.disabled = false; b.removeAttribute('data-state'); });
+  document.querySelectorAll('.asol').forEach(s => { s.hidden = true; s.innerHTML = ''; });
+  goAnchor('q1');
 }
-backBtn.addEventListener('click', () => {});
+(function(){ const cv = slides[0].el.querySelector('.cover > div');
+  const b = h('<button class="btn gold vostart" type="button">▶ Bắt đầu làm bài</button>'); cv.appendChild(b); b.addEventListener('click', () => goAnchor('q1')); })();
+setVariant('A');
 slides[0].el.hidden = false; go(0);
-window.__lesson = {go, slides, S, fwd, spot, blocked, setStep, TASKS, PR2, kState};
+window.__lesson = {go, slides, S, T, ITEMS, submit, isRight, retryTest, setStep};
 })();
 
 </script>
