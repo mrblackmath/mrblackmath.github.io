@@ -1,6 +1,6 @@
 <!doctype html>
 <html lang="vi">
-<head><meta name="apple-mobile-web-app-capable" content="yes"><meta name="mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><meta name="apple-mobile-web-app-title" content="Mr Black"><link rel="apple-touch-icon" href="icon.png">
+<head><meta name="apple-mobile-web-app-capable" content="yes"><meta name="mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><meta name="apple-mobile-web-app-title" content="Mr Black"><link rel="apple-touch-icon" href="icon.png"><link rel="manifest" href="manifest.webmanifest">
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <title>Mr Black – Toán 6 đến 12</title>
@@ -154,6 +154,13 @@ button{font:inherit;color:inherit;cursor:pointer}
 .stat b{display:block;font-size:28px;line-height:1;font-variant-numeric:tabular-nums}
 .stat span{font-size:13px;color:var(--ink-2)}
 
+.mtip{display:none;flex-wrap:wrap;align-items:center;gap:8px 14px;margin:0 0 16px;padding:12px 14px;border-radius:14px;background:#fff8e1;border:1.5px dashed var(--gold-2);color:var(--ink);font-size:15px;line-height:1.4}
+.mtip b{color:#c2410c}
+.mtip ol{display:flex;flex-wrap:wrap;gap:4px 16px;margin:0;padding:0;list-style:none}
+.mtip li::before{content:attr(data-n);display:inline-grid;place-items:center;width:20px;height:20px;margin-right:6px;border-radius:50%;background:var(--gold);color:var(--gold-ink);font-size:12px;font-weight:700}
+.mtip button{margin-left:auto;font:inherit;font-weight:700;border:0;border-radius:10px;padding:7px 14px;background:var(--ink);color:#fff;cursor:pointer}
+@media (pointer:coarse){.mtip{display:flex}}
+@media (display-mode:standalone){.mtip{display:none!important}}
 /* Khi đã chọn bài */
 .panel{background:var(--card);border:1px solid var(--line);border-radius:22px;padding:22px;box-shadow:0 20px 40px -30px rgba(13,20,51,.4);scroll-margin-top:90px}
 @media (max-width:480px){.panel{padding:14px;border-radius:18px}}
@@ -616,6 +623,7 @@ function viewLesson(x){
     '<div class="ph"><div><div class="eb">' + esc(x.course.name) + ' · ' + esc(x.chapter.name.split('.')[0]) + '</div>' +
     '<h2>' + unit(x.course) + ' ' + x.n + '. ' + esc(x.title) + '</h2><div class="sub">' + esc(x.chapter.name) + '</div></div>' +
     '<button class="x" type="button" id="btn-home">← Bảng chào</button></div>' +
+    '<div class="mtip" role="note"><b>📱 Học trên điện thoại:</b><ol><li data-n="1">Xoay ngang máy</li><li data-n="2">Chạm <b>“Bắt đầu học”</b> để nghe giọng thầy</li><li data-n="3">Bật toàn màn hình</li></ol><button type="button" id="btn-fs-help">Cách bật toàn màn hình</button></div>' +
     '<div class="tiles">' + STEPS.map((s, k) => tile(x, s, k)).join('') + '</div>' +
     '<div class="pf"><button class="btn" id="btn-done" type="button" aria-pressed="' + done + '">' + (done ? '✓ Đã học xong bài này' : 'Đánh dấu đã học') + '</button><div class="pn">' +
     (prev ? '<button class="btn" type="button" data-go="' + prev.key + '">‹ <span>' + unit(x.course) + ' ' + prev.n + '. ' + esc(prev.title) + '</span></button>' : '') +
@@ -702,6 +710,28 @@ window.addEventListener('hashchange', () => { const h = location.hash.replace(/^
 /* Mở như ứng dụng (Thêm vào MH chính): bài học mở ngay trong ứng dụng, không bật sang Safari */
 (function(){ var sa = navigator.standalone || (window.matchMedia && matchMedia('(display-mode: standalone)').matches); if (!sa) return;
   document.addEventListener('click', function(e){ var a = e.target.closest && e.target.closest('a.act'); if (a && !a.classList.contains('dl')) a.removeAttribute('target'); }, true); })();
+</script>
+<script>
+/* Hướng dẫn học toàn màn hình trên điện thoại (iPhone / Android) */
+(function(){
+  var ios = /iP(hone|ad|od)/.test(navigator.userAgent) || (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1);
+  function show(){
+    if (document.getElementById('mbfs')) return;
+    var d = document.createElement('div'); d.id = 'mbfs';
+    d.style.cssText = 'position:fixed;inset:0;z-index:100000;background:rgba(5,10,30,.72);display:flex;align-items:center;justify-content:center;padding:16px';
+    var body = ios
+      ? '<p style="margin:10px 0 6px"><b>Cách 1 (nhanh):</b> trong bài giảng, bấm biểu tượng <b>aA</b> hoặc <b>☰</b> bên trái địa chỉ web → chọn <b>Ẩn thanh công cụ</b>.</p>'
+        + '<p style="margin:6px 0 14px"><b>Cách 2 (nên dùng):</b> bấm <b>Chia sẻ ⬆</b> → <b>Thêm vào MH chính</b> → <b>Thêm</b>. Từ nay mở biểu tượng <b>Mr Black</b> trên màn hình chính là học toàn màn hình như một ứng dụng.</p>'
+      : '<p style="margin:10px 0 6px"><b>Cách 1 (nhanh):</b> trong bài giảng, bấm nút <b>⛶</b> ở góc dưới bên phải.</p>'
+        + '<p style="margin:6px 0 14px"><b>Cách 2 (nên dùng):</b> trong Chrome bấm <b>⋮</b> → <b>Thêm vào màn hình chính</b> (hoặc <b>Cài đặt ứng dụng</b>). Từ nay mở biểu tượng <b>Mr Black</b> là học như một ứng dụng.</p>';
+    d.innerHTML = '<div style="max-width:520px;background:#fff;color:#14213d;border-radius:16px;padding:20px 22px;font:16px/1.5 -apple-system,Segoe UI,sans-serif;box-shadow:0 20px 60px rgba(0,0,0,.4)">'
+      + '<b style="font-size:18px">Học toàn màn hình trên ' + (ios ? 'iPhone / iPad' : 'điện thoại Android') + '</b>' + body
+      + '<button type="button" style="font:inherit;font-weight:700;border:0;border-radius:10px;padding:8px 18px;background:#f5b301;color:#14213d">Đã hiểu</button></div>';
+    d.addEventListener('click', function(e){ if (e.target === d || e.target.tagName === 'BUTTON') d.remove(); });
+    document.body.appendChild(d);
+  }
+  document.addEventListener('click', function(e){ if (e.target.closest && e.target.closest('#btn-fs-help')) show(); });
+})();
 </script>
 </body>
 </html>
