@@ -68,3 +68,6 @@ Trong `index.html`, khối `LINKS` khai báo đường dẫn cho từng bài, kh
   - Sửa lỗi mất tiếng trên iPhone. Thêm hướng dẫn toàn màn hình và chế độ mở như ứng dụng.
   - Thêm khung "Học trên điện thoại".
   - Xóa 5 bản cũ trên Claude.
+- 09/10/2026: Làm video intro "bản chạy thử – mời góp ý" (dọc 9:16 cho TikTok, ngang 16:9 cho YouTube, 43 giây, 60 fps).
+  - YouTube: đã đăng bản ngang.
+  - TikTok: bài đầu bị chặn nhầm ("Spam"), có thể do link web trong mô tả; đã khiếu nại. Lần sau KHÔNG để link trong mô tả TikTok, chỉ để ở trang cá nhân.
