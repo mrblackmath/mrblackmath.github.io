@@ -1,6 +1,6 @@
 <!doctype html>
 <html lang="vi">
-<head>
+<head><meta name="apple-mobile-web-app-capable" content="yes"><meta name="mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><meta name="apple-mobile-web-app-title" content="Mr Black"><link rel="apple-touch-icon" href="icon.png">
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <title>Mr Black – Toán 6 đến 12</title>
@@ -698,5 +698,10 @@ window.addEventListener('hashchange', () => { const h = location.hash.replace(/^
 })();
 </script>
 
+<script>
+/* Mở như ứng dụng (Thêm vào MH chính): bài học mở ngay trong ứng dụng, không bật sang Safari */
+(function(){ var sa = navigator.standalone || (window.matchMedia && matchMedia('(display-mode: standalone)').matches); if (!sa) return;
+  document.addEventListener('click', function(e){ var a = e.target.closest && e.target.closest('a.act'); if (a && !a.classList.contains('dl')) a.removeAttribute('target'); }, true); })();
+</script>
 </body>
 </html>

@@ -1,4 +1,6 @@
-<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#faf9f5;color:#141413}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
+<!doctype html><html><head><meta charset=utf8><meta name="apple-mobile-web-app-capable" content="yes"><meta name="mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><meta name="apple-mobile-web-app-title" content="Mr Black"><link rel="apple-touch-icon" href="../icon.png"><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#faf9f5;color:#141413}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
+<script>try{if(navigator.audioSession)navigator.audioSession.type='playback'}catch(e){}</script>
+
 <title>Bài 6. Vectơ trong không gian</title>
 <meta name="description" content="Mr Black NBK — App luyện tập Bài 6. Vectơ trong không gian (Toán 12 KNTT): 4 chặng, 33 câu, phản hồi theo lỗi, lời giải từng bước.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -3508,7 +3510,7 @@ const STAGES = [STAGE1, STAGE2, STAGE3, STAGE4];
       return;
     }
     const req = root.requestFullscreen || root.webkitRequestFullscreen;
-    if (!req) { fsMsg("Thiết bị này không hỗ trợ toàn màn hình. Trên máy tính có thể nhấn F11."); return; }
+    if (!req) { window.mbFsHint(); return; }
     try {
       const r = req.call(root);
       if (r && r.catch) r.catch(() => fsMsg("Trình duyệt chưa cho phép toàn màn hình ở đây. Hãy mở file HTML offline, hoặc nhấn F11."));
@@ -3578,4 +3580,26 @@ const STAGES = [STAGE1, STAGE2, STAGE3, STAGE4];
 
 </script>
 
+<script>
+/* iPhone/iPad: hướng dẫn toàn màn hình + nút về trang chủ khi mở như ứng dụng */
+window.mbFsHint = function(){
+  if (document.getElementById('mbfs')) return;
+  var d = document.createElement('div'); d.id = 'mbfs';
+  d.style.cssText = 'position:fixed;inset:0;z-index:100000;background:rgba(5,10,30,.72);display:flex;align-items:center;justify-content:center;padding:16px';
+  d.innerHTML = '<div style="max-width:520px;background:#fff;color:#14213d;border-radius:16px;padding:20px 22px;font:16px/1.5 -apple-system,Segoe UI,sans-serif;box-shadow:0 20px 60px rgba(0,0,0,.4)">'
+    + '<b style="font-size:18px">Xem toàn màn hình trên iPhone</b>'
+    + '<p style="margin:10px 0 6px"><b>Cách 1:</b> bấm biểu tượng <b>aA</b> hoặc <b>☰</b> bên trái địa chỉ web → chọn <b>Ẩn thanh công cụ</b>.</p>'
+    + '<p style="margin:6px 0 14px"><b>Cách 2:</b> bấm <b>Chia sẻ ⬆</b> → <b>Thêm vào MH chính</b>. Mở từ biểu tượng Mr Black trên màn hình chính sẽ luôn toàn màn hình.</p>'
+    + '<button type="button" style="font:inherit;font-weight:700;border:0;border-radius:10px;padding:8px 18px;background:#f5b301;color:#14213d">Đã hiểu</button></div>';
+  d.addEventListener('click', function(e){ if (e.target === d || e.target.tagName === 'BUTTON') d.remove(); });
+  document.body.appendChild(d);
+};
+(function(){
+  var sa = navigator.standalone || (window.matchMedia && matchMedia('(display-mode: standalone)').matches);
+  if (!sa) return;
+  var a = document.createElement('a'); a.href = '../'; a.textContent = '⌂'; a.title = 'Về trang chủ'; a.setAttribute('aria-label', 'Về trang chủ');
+  a.style.cssText = 'position:fixed;left:max(8px,env(safe-area-inset-left));bottom:max(8px,env(safe-area-inset-bottom));z-index:99999;width:38px;height:38px;border-radius:12px;background:rgba(0,0,0,.55);color:#fff;font:22px/38px sans-serif;text-align:center;text-decoration:none';
+  document.body.appendChild(a);
+})();
+</script>
 </body></html>
