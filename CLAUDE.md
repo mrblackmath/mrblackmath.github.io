@@ -29,6 +29,7 @@ Trong `index.html`, khối `LINKS` khai báo đường dẫn cho từng bài, kh
 - Bài giảng chưa gắn lời giảng: thêm `chuaGiong: true` vào bài đó trong `LINKS`. Trang chủ sẽ ghi "Lời giảng của thầy đang được bổ sung" thay cho "Có giọng thầy giảng" (nguyên tắc: trang chủ phải ghi đúng tình trạng thật).
 
 ## Quy tắc của thầy
+- Lỗi trình bày, lỗi kĩ thuật phát hiện được thì Claude sửa luôn, không cần chờ thầy cho phép (thầy dặn 09/10/2026).
 - Bản mới nhất luôn là bản chuẩn. Không giữ bản cũ.
 - Chỉ phiếu PDF được tải về. Bài giảng, luyện tập, kiểm tra chỉ xem trên web.
 - Học sinh không cần đăng ký, không cần tài khoản.
@@ -62,13 +63,13 @@ Trong `index.html`, khối `LINKS` khai báo đường dẫn cho từng bài, kh
 - Chụp lại ảnh xem trước bài giảng Bài 16 (ảnh cũ còn nút "GIÁO VIÊN").
 - Bài 6 – Toán 12: khi thầy gửi ghi âm, chỉ thay `bai-hoc/toan12-bai6-bai-giang.html` (giữ tên) và chụp lại ảnh xem trước bài giảng.
   - Khi gắn ghi âm xong: xoá dòng `chuaGiong: true` của `lop12-bai6` trong `LINKS` (index.html) để trang chủ ghi lại "Có giọng thầy giảng".
-- Bài 7 – Toán 12: khi có ghi âm thì thay bài giảng và xoá `chuaGiong`. Gói gốc ghi WARNING: toạ độ N(2; 5; 4) ở Luyện tập 2 (đọc từ lưới H2.39) cần thầy đối chiếu SGK.
+- Bài 7 – Toán 12: khi có ghi âm thì thay bài giảng và xoá `chuaGiong`.
 - Ô liên hệ (Gmail + Zalo) đã có sẵn trong `index.html` nhưng đang ẩn; chờ thầy gửi Gmail riêng cho web và số Zalo để điền vào khối `CONTACT` (lưu dạng mã hoá: đảo ngược chuỗi rồi base64).
 - Bổ sung HSA.
 - Mua và gắn tên miền mrblackmath.vn.
 
 ## Nhật ký
-- 09/10/2026 (22h): Gắn phiếu PDF Bài 7 (bản HS, 6 trang) từ gói `T12_Bai7_HeTrucToaDo.zip`. 3 file HTML trong gói trùng khớp bản đã lên web. Sửa luôn nhãn đè chữ z ở bìa trên 2 artifact bài giảng Bài 7 (GV, HS) trên Claude.
+- 09/10/2026 (22h): Gắn phiếu PDF Bài 7 (bản HS, 6 trang) từ gói `T12_Bai7_HeTrucToaDo.zip`. 3 file HTML trong gói trùng khớp bản đã lên web. Đối chiếu SGK Toán 12 tập một (trang 62, Hình 2.39): N(2; 5; 4) ĐÚNG — gỡ cảnh báo của gói. Sửa luôn nhãn đè chữ z ở bìa trên 2 artifact bài giảng Bài 7 (GV, HS) trên Claude.
 - 09/10/2026 (khuya): Đưa Bài 7 – Toán 12 (Hệ trục toạ độ trong không gian) lên web: bài giảng (chờ gắn lời giảng), tự luyện, tự kiểm tra — lấy bản HS từ các artifact trên Claude cập nhật 09/10/2026. Chưa có phiếu PDF.
   - Áp lớp sửa chung; sửa nhãn "Bản chờ hoàn thiện" đè chữ z ở bìa bài giảng; chụp ảnh xem trước; thử 3 khổ màn hình: 0 lỗi JS, không tràn ngang.
   - Thêm khung ô liên hệ (đang ẩn).
