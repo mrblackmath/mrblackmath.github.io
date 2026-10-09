@@ -26,6 +26,7 @@ bai-hoc/                Các trang bài học (chỉ xem trực tuyến)
 - `hoc-lieu/toan<lớp>-bai<số>-phieu-tu-luyen.pdf`
 
 Trong `index.html`, khối `LINKS` khai báo đường dẫn cho từng bài, khóa dạng `lop<lớp>-bai<số>`. Ô nào để trống thì hiện "Sắp ra mắt".
+- Bài giảng chưa gắn lời giảng: thêm `chuaGiong: true` vào bài đó trong `LINKS`. Trang chủ sẽ ghi "Lời giảng của thầy đang được bổ sung" thay cho "Có giọng thầy giảng" (nguyên tắc: trang chủ phải ghi đúng tình trạng thật).
 
 ## Quy tắc của thầy
 - Bản mới nhất luôn là bản chuẩn. Không giữ bản cũ.
@@ -59,8 +60,7 @@ Trong `index.html`, khối `LINKS` khai báo đường dẫn cho từng bài, kh
 ## Việc còn chờ
 - Chụp lại ảnh xem trước bài giảng Bài 16 (ảnh cũ còn nút "GIÁO VIÊN").
 - Bài 6 – Toán 12: khi thầy gửi ghi âm, chỉ thay `bai-hoc/toan12-bai6-bai-giang.html` (giữ tên) và chụp lại ảnh xem trước bài giảng.
-  - Ô bài giảng ở trang chủ ghi "Có giọng thầy giảng" nhưng Bài 6 chưa có giọng (bìa bài đã ghi "Bản chờ hoàn thiện").
-  - Bìa bài giảng: nhãn "Bản chờ hoàn thiện" đè nhẹ lên chữ B của hình hộp; sửa ở bản có ghi âm.
+  - Khi gắn ghi âm xong: xoá dòng `chuaGiong: true` của `lop12-bai6` trong `LINKS` (index.html) để trang chủ ghi lại "Có giọng thầy giảng".
 - Bổ sung HSA.
 - Mua và gắn tên miền mrblackmath.vn.
 
@@ -69,6 +69,8 @@ Trong `index.html`, khối `LINKS` khai báo đường dẫn cho từng bài, kh
   - Thay app luyện tập 33 câu cũ bằng bản Tự luyện mới (bản mới nhất là bản chuẩn).
   - Áp lớp sửa chung, chụp ảnh xem trước 3 ô, thử máy tính / điện thoại dọc / ngang: 0 lỗi JS, không tràn ngang.
   - Từ nay Claude đẩy thẳng lên GitHub, không cần gói CapNhat-N.zip.
+  - Sửa theo yêu cầu "phải trung thực": ô bài giảng Bài 6 ở trang chủ ghi "Lời giảng của thầy đang được bổ sung" (cờ `chuaGiong`); bỏ câu "để nghe giọng thầy" ở khung hướng dẫn điện thoại của bài này.
+  - Sửa bìa bài giảng Bài 6 (cả bản GV và HS): nhãn "Bản chờ hoàn thiện" không còn đè lên chữ B của hình hộp; chụp lại ảnh xem trước.
 - 09/10/2026: Chuyển website sang GitHub Pages.
   - Đưa 4 trang bài học sang GitHub, bỏ hẳn phụ thuộc Claude, nên học sinh không còn bị bắt đăng nhập.
   - Sửa lỗi mất tiếng trên iPhone. Thêm hướng dẫn toàn màn hình và chế độ mở như ứng dụng.
