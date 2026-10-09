@@ -39,6 +39,7 @@ Trong `index.html`, khối `LINKS` khai báo đường dẫn cho từng bài, kh
 |---|---|---|---|---|
 | Toán 6 – Bài 16. Phép nhân số nguyên | ✅ | ✅ | ✅ | ✅ |
 | Toán 12 – Bài 6. Vectơ trong không gian | ✅ (bản chờ gắn lời giảng, 56 slide) | ✅ (27 nhiệm vụ + 1 thử thách) | ✅ (5 trang, bản HS) | ✅ (16 câu, đề A/B) |
+| Toán 12 – Bài 7. Hệ trục toạ độ trong không gian | ✅ (bản chờ gắn lời giảng, 29 slide) | ✅ (20 nhiệm vụ + 1 thử thách) | — (chưa có phiếu) | ✅ (16 câu) |
 
 ## Lớp sửa chung đã áp dụng cho mọi trang bài học (áp dụng tiếp cho bài mới)
 - Bản dành cho học sinh: ẩn nút "Giáo viên", ẩn "Làm lại từ đầu" của GV.
@@ -61,10 +62,15 @@ Trong `index.html`, khối `LINKS` khai báo đường dẫn cho từng bài, kh
 - Chụp lại ảnh xem trước bài giảng Bài 16 (ảnh cũ còn nút "GIÁO VIÊN").
 - Bài 6 – Toán 12: khi thầy gửi ghi âm, chỉ thay `bai-hoc/toan12-bai6-bai-giang.html` (giữ tên) và chụp lại ảnh xem trước bài giảng.
   - Khi gắn ghi âm xong: xoá dòng `chuaGiong: true` của `lop12-bai6` trong `LINKS` (index.html) để trang chủ ghi lại "Có giọng thầy giảng".
+- Bài 7 – Toán 12: chờ phiếu PDF (bản HS) để gắn vào `hoc-lieu/toan12-bai7-phieu-tu-luyen.pdf`; khi có ghi âm thì thay bài giảng và xoá `chuaGiong`.
+- Ô liên hệ (Gmail + Zalo) đã có sẵn trong `index.html` nhưng đang ẩn; chờ thầy gửi Gmail riêng cho web và số Zalo để điền vào khối `CONTACT` (lưu dạng mã hoá: đảo ngược chuỗi rồi base64).
 - Bổ sung HSA.
 - Mua và gắn tên miền mrblackmath.vn.
 
 ## Nhật ký
+- 09/10/2026 (khuya): Đưa Bài 7 – Toán 12 (Hệ trục toạ độ trong không gian) lên web: bài giảng (chờ gắn lời giảng), tự luyện, tự kiểm tra — lấy bản HS từ các artifact trên Claude cập nhật 09/10/2026. Chưa có phiếu PDF.
+  - Áp lớp sửa chung; sửa nhãn "Bản chờ hoàn thiện" đè chữ z ở bìa bài giảng; chụp ảnh xem trước; thử 3 khổ màn hình: 0 lỗi JS, không tràn ngang.
+  - Thêm khung ô liên hệ (đang ẩn).
 - 09/10/2026 (tối): Đưa đủ 4 phần Bài 6 – Toán 12 lên web từ gói `T12_Bai6_VectoTrongKhongGian.zip` (bản HS).
   - Thay app luyện tập 33 câu cũ bằng bản Tự luyện mới (bản mới nhất là bản chuẩn).
   - Áp lớp sửa chung, chụp ảnh xem trước 3 ô, thử máy tính / điện thoại dọc / ngang: 0 lỗi JS, không tràn ngang.
