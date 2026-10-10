@@ -979,4 +979,19 @@ window.mbFsHint = function(){
   document.body.appendChild(a);
 })();
 </script>
+<script>
+/* Xoay máy: co giãn lại sân khấu nhiều nhịp sau khi xoay (iPhone/Android báo kích thước mới trễ, nhất là trang nặng) */
+(function(){
+  var last = '';
+  function refit(){ try { window.dispatchEvent(new Event('resize')); } catch (e) {} }
+  function burst(){ [0, 120, 300, 600, 1000, 1600].forEach(function(t){ setTimeout(refit, t); }); }
+  function check(){ var vv = window.visualViewport, k = (vv ? vv.width + 'x' + vv.height : innerWidth + 'x' + innerHeight); if (k !== last){ last = k; burst(); } }
+  window.addEventListener('orientationchange', burst);
+  try { if (screen.orientation && screen.orientation.addEventListener) screen.orientation.addEventListener('change', burst); } catch (e) {}
+  try { var mq = matchMedia('(orientation: portrait)'); if (mq.addEventListener) mq.addEventListener('change', burst); else if (mq.addListener) mq.addListener(burst); } catch (e) {}
+  try { if (window.ResizeObserver) new ResizeObserver(check).observe(document.documentElement); } catch (e) {}
+  document.addEventListener('visibilitychange', function(){ if (!document.hidden) burst(); });
+  window.addEventListener('pageshow', burst);
+})();
+</script>
 </body></html>

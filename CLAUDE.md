@@ -57,6 +57,7 @@ Trong `index.html`, khối `LINKS` khai báo đường dẫn cho từng bài, kh
 - Thẻ meta ứng dụng (apple-mobile-web-app-*, apple-touch-icon `../icon.png`) trong `<head>`.
 - Khi mở như ứng dụng (standalone): có nút ⌂ về trang chủ; bài học mở ngay trong ứng dụng.
 - Đường dẫn chéo giữa các phần dùng tên file tương đối, không dùng link claude.ai.
+- Xoay máy: cuối mọi trang bài học có khối "Xoay máy: co giãn lại sân khấu…" (bắt orientationchange, screen.orientation, matchMedia, ResizeObserver; co giãn lại nhiều nhịp 0–1,6 giây). Áp tiếp cho bài mới.
 - Thống kê truy cập: mọi trang (kể cả `index.html`) nạp `thong-ke.js` trong `<head>` (`<script src="../thong-ke.js" defer>` với trang bài học). Mã Google Analytics 4 chỉ điền một chỗ trong `thong-ke.js`.
 
 ## Quy trình thêm một bài mới
@@ -76,6 +77,7 @@ Trong `index.html`, khối `LINKS` khai báo đường dẫn cho từng bài, kh
 - Mua và gắn tên miền mrblackmath.vn.
 
 ## Nhật ký
+- 10/10/2026 (22h30): Thầy báo bài giảng Toán 12 (trừ Bài 16 – Toán 6) trên điện thoại không quay ngang được. Giả lập iPhone 13 / Pixel 7 (Chromium): cả 18 trang đều xoay và co giãn đúng, chưa tái hiện được lỗi; mã xoay/co giãn của Toán 12 giống Bài 16, không trang nào khoá hướng màn hình. Đã: (1) thêm khối co giãn lại nhiều nhịp sau khi xoay cho cả 18 trang; (2) bỏ thẻ `</head><body>` bị lặp trong 15 trang Toán 12. Chờ thầy cho biết máy/trình duyệt và hiện tượng cụ thể để thử lại.
 - 10/10/2026 (22h): Đưa đủ 4 phần Bài 9 (Khoảng biến thiên và khoảng tứ phân vị) và Bài 10 (Phương sai và độ lệch chuẩn) – Toán 12 lên web từ gói `T12_Bai9.zip`, `T12_Bai10.zip` (bản HS). Kiểm tra độc lập bằng Python các đáp án Phần III của 2 phiếu (Bài 9: 5 câu + Nâng cao 1; Bài 10: 9 câu): khớp hết; phiếu HS không lộ đáp án. Áp lớp sửa chung (bản HS đã sẵn ẩn nút GV); ảnh xem trước; thử 3 khổ màn hình: 0 lỗi JS, không tràn ngang. Cả 2 bài chưa có lời giảng (`chuaGiong`).
 - 10/10/2026 (22h): Theo lời thầy, ô 4 của bài Ôn tập chương đổi thành "Tự kiểm tra cuối chương" (bài thường vẫn "Tự kiểm tra cuối bài").
 - 10/10/2026 (17h30): Theo yêu cầu thầy, thêm bài "Ôn tập chương x" cuối mỗi chương cho tất cả các lớp (6–12; 63 chương). Có trong menu chương (dưới bài cuối, ngăn bằng nét đứt), tìm kiếm ("ôn tập" lên đầu), nút bài trước/sau. Ô 1 đổi thành "Tổng hợp kiến thức Chương x". Hiện cả 4 ô đều "Sắp ra mắt". Thử 3 khổ màn hình: 0 lỗi JS, không tràn ngang.
