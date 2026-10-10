@@ -1,6 +1,6 @@
 # Sổ quản lý website Mr Black NBK
 
-Cập nhật: 09/10/2026 (tối)
+Cập nhật: 10/10/2026 (17h30)
 
 ## Địa chỉ và nơi lưu
 - **Website:** https://mrblackmath.github.io
@@ -24,8 +24,13 @@ bai-hoc/                Các trang bài học (chỉ xem trực tuyến)
 - `bai-hoc/toan<lớp>-bai<số>-luyen-tap.html`
 - `bai-hoc/toan<lớp>-bai<số>-kiem-tra.html`
 - `hoc-lieu/toan<lớp>-bai<số>-phieu-tu-luyen.pdf`
+- Bài Ôn tập chương (số chương viết bằng chữ số Ả Rập):
+  - `bai-hoc/toan<lớp>-on-tap-chuong<số>-tong-hop.html` (ô 1: Tổng hợp kiến thức Chương x)
+  - `bai-hoc/toan<lớp>-on-tap-chuong<số>-luyen-tap.html`, `…-kiem-tra.html`
+  - `hoc-lieu/toan<lớp>-on-tap-chuong<số>-phieu-tu-luyen.pdf`
 
 Trong `index.html`, khối `LINKS` khai báo đường dẫn cho từng bài, khóa dạng `lop<lớp>-bai<số>`. Ô nào để trống thì hiện "Sắp ra mắt".
+- Bài Ôn tập chương: mọi lớp, cuối mỗi chương có 1 mục "Ôn tập chương x" (trang chủ tự sinh). Khóa trong `LINKS` là `lop<lớp>-ontap<số thứ tự chương>` (vd `lop6-ontap3` = Ôn tập chương III Toán 6). Vẫn 4 ô; ô 1 ghi "Tổng hợp kiến thức Chương x" và dùng khóa `giang`; 3 ô còn lại (luyen, pdf, kiemtra) như bài thường. Số "bài" ở cột trái và bảng chào chỉ đếm bài học, không đếm Ôn tập chương.
 - Bài giảng chưa gắn lời giảng: thêm `chuaGiong: true` vào bài đó trong `LINKS`. Trang chủ sẽ ghi "Lời giảng của thầy đang được bổ sung" thay cho "Có giọng thầy giảng" (nguyên tắc: trang chủ phải ghi đúng tình trạng thật).
 
 ## Quy tắc của thầy
@@ -69,6 +74,7 @@ Trong `index.html`, khối `LINKS` khai báo đường dẫn cho từng bài, kh
 - Mua và gắn tên miền mrblackmath.vn.
 
 ## Nhật ký
+- 10/10/2026 (17h30): Theo yêu cầu thầy, thêm bài "Ôn tập chương x" cuối mỗi chương cho tất cả các lớp (6–12; 64 chương). Có trong menu chương (dưới bài cuối, ngăn bằng nét đứt), tìm kiếm ("ôn tập" lên đầu), nút bài trước/sau. Ô 1 đổi thành "Tổng hợp kiến thức Chương x". Hiện cả 4 ô đều "Sắp ra mắt". Thử 3 khổ màn hình: 0 lỗi JS, không tràn ngang.
 - 10/10/2026 (17h): Báo cáo Google Analytics ngày đầu (10/10, số liệu trong ngày, chưa chốt): 35 người dùng, 42 phiên, 52 lượt xem, thời gian tương tác TB 43 giây/người. Nguồn: Organic Social 28 phiên (TB 17 giây/phiên), Direct 14 phiên (TB 1 phút 12 giây). Trang: trang chủ 42 lượt; bài giảng Bài 6 – Toán 12: 7 lượt (5 người, TB 1 phút); bài giảng Bài 16 – Toán 6: 2; kiểm tra Bài 6 – Toán 12: 1. Chưa ai mở luyện tập. Có lẫn 1 lượt thử của Claude lúc 7h31.
 - 10/10/2026 (7h30): Bật thống kê Google Analytics 4, mã đo lường G-SHEVYZQC9S (tài khoản Gmail của thầy). Xem tại analytics.google.com hoặc ứng dụng Google Analytics.
   - Claude đọc báo cáo qua trình duyệt tích hợp của ứng dụng Claude trên máy thầy (đã đăng nhập sẵn Google). Tài sản: a411389003p558315789. Khi thầy hỏi "báo cáo" thì vào đó lấy số liệu.

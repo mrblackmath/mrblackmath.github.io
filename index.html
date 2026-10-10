@@ -120,6 +120,7 @@ button{font:inherit;color:inherit;cursor:pointer}
 .lr input:focus-visible + .box{outline:3px solid var(--gold-2);outline-offset:2px}
 .lr:has(input:checked){background:color-mix(in srgb,var(--c) 16%,#fff)}
 .lr .dn{font-size:11px;font-weight:700;color:var(--ok)}
+.lr.rv{margin-top:4px;border-top:1px dashed color-mix(in srgb,var(--c) 40%,#fff);border-radius:0 0 10px 10px;color:color-mix(in srgb,var(--c) 75%,#000)}
 .soon{padding:12px;border-radius:10px;border:1px dashed var(--line);font-size:14px;color:var(--ink-2);background:#fbfdff;width:240px}
 
 /* Tên bài hiện theo chuột */
@@ -433,6 +434,8 @@ const COURSES = [
      anh     : (tuỳ chọn) ảnh chụp slide 1 thật của từng mục, ví dụ
                anh:{ giang:'anh/lop12-bai6-giang.jpg', luyen:'…', kiemtra:'…' }
                Không có ảnh → web tự dựng bìa (slide 1) theo khung Mr Black.
+     Bài Ôn tập chương: khóa "<id lớp>-ontap<số thứ tự chương>", ví dụ 'lop6-ontap3' = Ôn tập chương III Toán 6;
+               ô 1 ("Tổng hợp kiến thức Chương x") dùng khóa giang, 3 ô còn lại như bài thường.
    ===================================================================== */
 const LINKS = {
   'lop6-bai16': {
@@ -473,6 +476,10 @@ const STEPS = [
   {key:'pdf',     k:'var(--k3)', title:'Phiếu bài tập PDF', eb:'Phiếu bài tập', desc:'Tải về, in ra giấy và làm để luyện cách trình bày.', btn:'⬇ Tải phiếu PDF'},
   {key:'kiemtra', k:'var(--k4)', title:'Tự kiểm tra cuối bài', eb:'Tự kiểm tra cuối bài', desc:'Làm bài tổng hợp, nộp bài để biết điểm và phần còn hổng.', btn:'Làm bài ↗'}
 ];
+/* Bài "Ôn tập chương x": vẫn 4 ô, riêng ô 1 là "Tổng hợp kiến thức Chương x" (dùng khóa 'giang' trong LINKS) */
+const stepsOf = x => x.review ? STEPS.map(s => s.key !== 'giang' ? s : Object.assign({}, s, {
+  title:'Tổng hợp kiến thức Chương ' + chapNo(x.chapter), eb:'Tổng hợp kiến thức',
+  desc:'Hệ thống lại toàn bộ kiến thức trọng tâm của chương.', btn:'Xem tổng hợp ↗', foot:'Kiến thức trọng tâm cả chương · Slide 1'})) : STEPS;
 
 /* =====================================================================
    4. THƯƠNG HIỆU
@@ -496,7 +503,14 @@ const store = {
   set(k, v){ try { localStorage.setItem(k, JSON.stringify(v)); } catch(e){} }
 };
 const ALL = [];
-COURSES.forEach(c => c.chapters.forEach(ch => ch.lessons.forEach(([n, t]) => ALL.push({course:c, chapter:ch, n, title:t, key:c.id + '-bai' + n}))));
+/* Cuối mỗi chương (mọi lớp) có thêm 1 mục "Ôn tập chương x", khóa "<id lớp>-ontap<số thứ tự chương>" */
+const chapNo = ch => ch.name.split('.')[0].replace(/^Chương\s+/, '');   // "Chương III. …" → "III"
+COURSES.forEach(c => c.chapters.forEach((ch, ci) => {
+  ch.lessons.forEach(([n, t]) => ALL.push({course:c, chapter:ch, n, title:t, key:c.id + '-bai' + n}));
+  ALL.push({course:c, chapter:ch, n:ci + 1, review:true, title:'Ôn tập chương ' + chapNo(ch), key:c.id + '-ontap' + (ci + 1)});
+}));
+const LESSONS = ALL.filter(x => !x.review);                 // chỉ các bài học (không tính Ôn tập chương)
+const lbl = x => x.review ? esc(x.title) : unit(x.course) + ' ' + x.n + '. ' + esc(x.title);   // nhãn đầy đủ, đã thoát HTML
 const unit = c => c.unit || 'Bài';
 const linksOf = key => LINKS[key] || {};
 const level = c => c.id === 'hsa' ? 'LUYỆN THI HSA' : (+c.short <= 9 ? 'TOÁN THCS' : 'TOÁN THPT');
@@ -510,7 +524,7 @@ const menu = { cat: null, chap: null };          // lớp và chương đang m�
 function renderCats(){
   const selCourse = state.sel ? state.sel.split('-')[0] : '';
   $('#cats').innerHTML = COURSES.map(c => {
-    const n = ALL.filter(x => x.course === c).length;
+    const n = LESSONS.filter(x => x.course === c).length;
     return '<button class="cat' + (menu.cat === c.id ? ' on' : '') + (selCourse === c.id ? ' has-sel' : '') + '" type="button" style="--c:' + c.color + '" data-cat="' + c.id + '" aria-haspopup="true" aria-expanded="' + (menu.cat === c.id) + '">' +
       '<span class="tag' + (c.short.length > 2 ? ' sm' : '') + '">' + c.short + '</span>' +
       '<span><b>' + (c.id === 'hsa' ? 'HSA' : 'TOÁN ' + c.short) + '</b><small>' + (n ? n + ' bài' : 'Sắp ra mắt') + '</small></span>' +
@@ -552,10 +566,10 @@ function openChap(i){
   menu.chap = i; hideTip();
   m2.querySelectorAll('.mi').forEach(el => el.classList.toggle('on', el === item));
   m3.style.setProperty('--c', c.color);
-  m3.innerHTML = '<div class="menu-h">' + esc(ch.name.split('.')[0]) + '</div>' + ch.lessons.map(([num, t]) => {
-    const key = c.id + '-bai' + num;
-    return '<label class="lr" data-key="' + key + '"><input type="radio" name="lesson" value="' + key + '" aria-label="' + unit(c) + ' ' + num + '. ' + esc(t) + '"' + (state.sel === key ? ' checked' : '') + '>' +
-      '<span class="box">' + CHECK + '</span><span>' + unit(c) + ' ' + num + '</span>' + (state.done.has(key) ? '<span class="dn">✓</span>' : '<span></span>') + '</label>';
+  m3.innerHTML = '<div class="menu-h">' + esc(ch.name.split('.')[0]) + '</div>' + ALL.filter(x => x.chapter === ch).map(x => {
+    const key = x.key;
+    return '<label class="lr' + (x.review ? ' rv' : '') + '" data-key="' + key + '"><input type="radio" name="lesson" value="' + key + '" aria-label="' + lbl(x) + '"' + (state.sel === key ? ' checked' : '') + '>' +
+      '<span class="box">' + CHECK + '</span><span>' + (x.review ? esc(x.title) : unit(c) + ' ' + x.n) + '</span>' + (state.done.has(key) ? '<span class="dn">✓</span>' : '<span></span>') + '</label>';
   }).join('');
   place(m3, item);
 }
@@ -607,7 +621,7 @@ m3.addEventListener('pointermove', e => {
   if (e.pointerType === 'touch') return;
   const l = e.target.closest('.lr'); if (!l){ hideTip(); return; }
   const x = ALL.find(v => v.key === l.dataset.key); if (!x) return;
-  if (tip.dataset.key !== x.key){ tip.dataset.key = x.key; tip.innerHTML = '<b>' + esc(x.course.name) + ' · ' + esc(x.chapter.name.split('.')[0]) + '</b>' + unit(x.course) + ' ' + x.n + '. ' + esc(x.title); }
+  if (tip.dataset.key !== x.key){ tip.dataset.key = x.key; tip.innerHTML = '<b>' + esc(x.course.name) + ' · ' + esc(x.chapter.name.split('.')[0]) + '</b>' + lbl(x); }
   tip.hidden = false;
   const w = tip.offsetWidth, h = tip.offsetHeight;
   let left = e.clientX + 16, top = e.clientY + 18;
@@ -635,7 +649,7 @@ function viewWelcome(){
     '</div></div>' +
     '<div class="stats">' +
       '<div class="stat"><b>' + grades + '</b><span>lớp: Toán 6 → Toán 12</span></div>' +
-      '<div class="stat"><b>' + ALL.length + '</b><span>bài học theo SGK</span></div>' +
+      '<div class="stat"><b>' + LESSONS.length + '</b><span>bài học theo SGK</span></div>' +
       '<div class="stat"><b>4</b><span>học liệu cho mỗi bài</span></div>' +
       '<div class="stat"><b>0đ</b><span>miễn phí, không đăng ký</span></div>' +
     '</div>';
@@ -655,9 +669,9 @@ const FOOT = {
 function coverSlide(x, s){
   const photo = s.key === 'giang' && TEACHER_PHOTO ? '<img alt="" draggable="false" src="' + TEACHER_PHOTO + '">' : '<div class="ic">' + ICONS[s.key] + '</div>';
   return '<div class="sl" aria-hidden="true"><div class="sl-top">' + LOGO + '<b>Mr Black</b><i>' + level(x.course) + '</i></div>' +
-    '<div class="sl-mid"><span class="sl-eb">' + s.eb + '</span><div class="sl-t">' + unit(x.course) + ' ' + x.n + '. ' + esc(x.title) + '</div><div class="sl-s">' + esc(x.course.name) + ' · ' + esc(x.chapter.name) + '</div></div>' +
+    '<div class="sl-mid"><span class="sl-eb">' + s.eb + '</span><div class="sl-t">' + lbl(x) + '</div><div class="sl-s">' + esc(x.course.name) + ' · ' + esc(x.chapter.name) + '</div></div>' +
     '<div class="sl-ph">' + photo + '</div>' +
-    '<div class="sl-foot">' + ICONS[s.key] + '<span>' + (s.key === 'giang' && linksOf(x.key).chuaGiong ? 'Lời giảng đang được bổ sung · Slide 1' : FOOT[s.key]) + '</span><span class="bar"></span></div>' +
+    '<div class="sl-foot">' + ICONS[s.key] + '<span>' + (s.foot || (s.key === 'giang' && linksOf(x.key).chuaGiong ? 'Lời giảng đang được bổ sung · Slide 1' : FOOT[s.key])) + '</span><span class="bar"></span></div>' +
     '<div class="sl-wm">Mr Black</div></div>';
 }
 // Hình minh hoạ phiếu PDF — cố ý không hiện nội dung đề
@@ -679,7 +693,7 @@ function tile(x, s, i){
   if (!url) act = '<span class="act off" aria-disabled="true">Sắp ra mắt</span>';
   else if (s.key === 'pdf') act = '<a class="act dl" href="' + esc(url) + '" download target="_blank" rel="noopener">' + s.btn + '</a>';
   else act = '<a class="act" href="' + esc(url) + '" target="_blank" rel="noopener" aria-label="' + s.title + ' (mở tab mới)">' + s.btn + '</a>';
-  const desc = (s.key === 'giang' && L.chuaGiong) ? 'Đi từng bước từ ý tưởng đến ví dụ. <b>Lời giảng của thầy đang được bổ sung.</b>' : s.desc;
+  const desc = (s.key === 'giang' && L.chuaGiong && !x.review) ? 'Đi từng bước từ ý tưởng đến ví dụ. <b>Lời giảng của thầy đang được bổ sung.</b>' : s.desc;
   return '<article class="tile' + (url ? ' live' : '') + '" style="--k:' + s.k + '"><div class="pv"><span class="num">' + (i + 1) + '</span>' +
     (url ? '' : '<span class="soonb">Sắp ra mắt</span>') + pv + '</div>' +
     '<div class="bd"><h3>' + s.title + '</h3><p>' + desc + '</p>' + act + '</div></article>';
@@ -690,13 +704,13 @@ function viewLesson(x){
   const next = ALL[i + 1] && ALL[i + 1].course === x.course ? ALL[i + 1] : null;
   return '<div class="panel" id="panel" style="--c:' + x.course.color + '">' +
     '<div class="ph"><div><div class="eb">' + esc(x.course.name) + ' · ' + esc(x.chapter.name.split('.')[0]) + '</div>' +
-    '<h2>' + unit(x.course) + ' ' + x.n + '. ' + esc(x.title) + '</h2><div class="sub">' + esc(x.chapter.name) + '</div></div>' +
+    '<h2>' + lbl(x) + '</h2><div class="sub">' + esc(x.chapter.name) + '</div></div>' +
     '<button class="x" type="button" id="btn-home">← Bảng chào</button></div>' +
-    '<div class="mtip" role="note"><b>📱 Học trên điện thoại:</b><ol><li data-n="1">Xoay ngang máy</li><li data-n="2">Chạm <b>“Bắt đầu học”</b>' + (linksOf(x.key).chuaGiong ? '' : ' để nghe giọng thầy') + '</li><li data-n="3">Bật toàn màn hình</li></ol><button type="button" id="btn-fs-help">Cách bật toàn màn hình</button></div>' +
-    '<div class="tiles">' + STEPS.map((s, k) => tile(x, s, k)).join('') + '</div>' +
+    '<div class="mtip" role="note"><b>📱 Học trên điện thoại:</b><ol><li data-n="1">Xoay ngang máy</li><li data-n="2">Chạm <b>“Bắt đầu học”</b>' + (linksOf(x.key).chuaGiong || x.review ? '' : ' để nghe giọng thầy') + '</li><li data-n="3">Bật toàn màn hình</li></ol><button type="button" id="btn-fs-help">Cách bật toàn màn hình</button></div>' +
+    '<div class="tiles">' + stepsOf(x).map((s, k) => tile(x, s, k)).join('') + '</div>' +
     '<div class="pf"><button class="btn" id="btn-done" type="button" aria-pressed="' + done + '">' + (done ? '✓ Đã học xong bài này' : 'Đánh dấu đã học') + '</button><div class="pn">' +
-    (prev ? '<button class="btn" type="button" data-go="' + prev.key + '">‹ <span>' + unit(x.course) + ' ' + prev.n + '. ' + esc(prev.title) + '</span></button>' : '') +
-    (next ? '<button class="btn" type="button" data-go="' + next.key + '"><span>' + unit(x.course) + ' ' + next.n + '. ' + esc(next.title) + '</span> ›</button>' : '') +
+    (prev ? '<button class="btn" type="button" data-go="' + prev.key + '">‹ <span>' + lbl(prev) + '</span></button>' : '') +
+    (next ? '<button class="btn" type="button" data-go="' + next.key + '"><span>' + lbl(next) + '</span> ›</button>' : '') +
     '</div></div></div>';
 }
 function renderMain(){
@@ -752,9 +766,10 @@ q.addEventListener('input', () => {
   const t = norm(q.value.trim());
   if (t.length < 2){ box.hidden = true; return; }
   const words = t.split(/\s+/);
-  const hits = ALL.filter(x => { const s = norm(x.title + ' ' + x.chapter.name + ' ' + x.course.name); return words.every(w => s.includes(w)); }).slice(0, 12);
+  const hits = ALL.filter(x => { const s = norm(x.title + ' ' + x.chapter.name + ' ' + x.course.name); return words.every(w => s.includes(w)); })
+    .sort((a, b) => words.every(w => norm(b.title).includes(w)) - words.every(w => norm(a.title).includes(w))).slice(0, 12);   // khớp ngay tên bài/Ôn tập lên trước
   box.innerHTML = hits.length
-    ? hits.map(x => '<a href="#' + x.key + '" data-key="' + x.key + '"><span class="g">' + esc(x.course.name) + '</span><span>' + unit(x.course) + ' ' + x.n + '. ' + esc(x.title) + '</span></a>').join('')
+    ? hits.map(x => '<a href="#' + x.key + '" data-key="' + x.key + '"><span class="g">' + esc(x.course.name) + '</span><span>' + lbl(x) + '</span></a>').join('')
     : '<div class="empty">Chưa tìm thấy bài phù hợp. Thử từ khóa khác, ví dụ "đạo hàm".</div>';
   box.hidden = false;
 });
