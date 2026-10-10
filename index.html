@@ -476,10 +476,13 @@ const STEPS = [
   {key:'pdf',     k:'var(--k3)', title:'Phiếu bài tập PDF', eb:'Phiếu bài tập', desc:'Tải về, in ra giấy và làm để luyện cách trình bày.', btn:'⬇ Tải phiếu PDF'},
   {key:'kiemtra', k:'var(--k4)', title:'Tự kiểm tra cuối bài', eb:'Tự kiểm tra cuối bài', desc:'Làm bài tổng hợp, nộp bài để biết điểm và phần còn hổng.', btn:'Làm bài ↗'}
 ];
-/* Bài "Ôn tập chương x": vẫn 4 ô, riêng ô 1 là "Tổng hợp kiến thức Chương x" (dùng khóa 'giang' trong LINKS) */
-const stepsOf = x => x.review ? STEPS.map(s => s.key !== 'giang' ? s : Object.assign({}, s, {
-  title:'Tổng hợp kiến thức Chương ' + chapNo(x.chapter), eb:'Tổng hợp kiến thức',
-  desc:'Hệ thống lại toàn bộ kiến thức trọng tâm của chương.', btn:'Xem tổng hợp ↗', foot:'Kiến thức trọng tâm cả chương · Slide 1'})) : STEPS;
+/* Bài "Ôn tập chương x": vẫn 4 ô; ô 1 là "Tổng hợp kiến thức Chương x" (khóa 'giang'), ô 4 là "Tự kiểm tra cuối chương" (khóa 'kiemtra') */
+const REVIEW_STEPS = {
+  giang:   x => ({title:'Tổng hợp kiến thức Chương ' + chapNo(x.chapter), eb:'Tổng hợp kiến thức',
+                  desc:'Hệ thống lại toàn bộ kiến thức trọng tâm của chương.', btn:'Xem tổng hợp ↗', foot:'Kiến thức trọng tâm cả chương · Slide 1'}),
+  kiemtra: x => ({title:'Tự kiểm tra cuối chương', eb:'Tự kiểm tra cuối chương'})
+};
+const stepsOf = x => x.review ? STEPS.map(s => REVIEW_STEPS[s.key] ? Object.assign({}, s, REVIEW_STEPS[s.key](x)) : s) : STEPS;
 
 /* =====================================================================
    4. THƯƠNG HIỆU
