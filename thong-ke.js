@@ -2,7 +2,7 @@
    Chỉ cần điền mã đo lường dạng G-XXXXXXXXXX vào ID dưới đây; để trống thì không đếm.
    Không bật Google Signals và quảng cáo cá nhân hoá; không thu tên, số điện thoại của học sinh. */
 (function () {
-  var ID = '';
+  var ID = 'G-SHEVYZQC9S';
   if (!ID) return;
   var s = document.createElement('script');
   s.async = true;

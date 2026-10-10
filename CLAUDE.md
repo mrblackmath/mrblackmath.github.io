@@ -65,11 +65,11 @@ Trong `index.html`, khối `LINKS` khai báo đường dẫn cho từng bài, kh
 - Bài 6 – Toán 12: khi thầy gửi ghi âm, chỉ thay `bai-hoc/toan12-bai6-bai-giang.html` (giữ tên) và chụp lại ảnh xem trước bài giảng.
   - Khi gắn ghi âm xong: xoá dòng `chuaGiong: true` của `lop12-bai6` trong `LINKS` (index.html) để trang chủ ghi lại "Có giọng thầy giảng".
 - Bài 7, Bài 8 – Toán 12: khi có ghi âm thì thay bài giảng và xoá `chuaGiong`.
-- Thống kê truy cập: chờ thầy tạo Google Analytics (bằng Gmail của thầy) và gửi mã đo lường G-XXXXXXXXXX để điền vào `thong-ke.js`.
 - Bổ sung HSA.
 - Mua và gắn tên miền mrblackmath.vn.
 
 ## Nhật ký
+- 10/10/2026 (7h30): Bật thống kê Google Analytics 4, mã đo lường G-SHEVYZQC9S (tài khoản Gmail của thầy). Xem tại analytics.google.com hoặc ứng dụng Google Analytics.
 - 10/10/2026 (7h): Thầy chọn Google Analytics để đếm lượt truy cập và thời gian truy cập. Đã gắn `thong-ke.js` vào trang chủ và 12 trang bài học (chưa đếm vì chưa có mã). Đã thử với mã giả: trang gọi đúng Google Analytics, 0 lỗi.
 - 10/10/2026 (7h): Kiểm tra định kì: 4 bài, 16/16 đường dẫn (12 trang bài học + 4 phiếu PDF) đều mở được, trang chủ 0 lỗi, ô liên hệ hiển thị. Chụp lại ảnh xem trước bài giảng Bài 16 (bỏ ảnh cũ còn nút "GIÁO VIÊN").
 - 10/10/2026 (0h): Đưa đủ 4 phần Bài 8 – Toán 12 (Biểu thức toạ độ của các phép toán vectơ) lên web từ gói `T12_Bai8_BieuThucToaDo.zip` (bản HS). Áp lớp sửa chung; nới khoảng cách để nhãn "Bản chờ hoàn thiện" không sát chữ z ở bìa (cả bản GV, HS trong gói); ảnh xem trước; thử 3 khổ màn hình: 0 lỗi JS, không tràn ngang.
