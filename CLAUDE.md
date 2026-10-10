@@ -1,6 +1,6 @@
 # Sổ quản lý website Mr Black NBK
 
-Cập nhật: 10/10/2026 (17h30)
+Cập nhật: 10/10/2026 (22h)
 
 ## Địa chỉ và nơi lưu
 - **Website:** https://mrblackmath.github.io
@@ -47,6 +47,8 @@ Trong `index.html`, khối `LINKS` khai báo đường dẫn cho từng bài, kh
 | Toán 12 – Bài 6. Vectơ trong không gian | ✅ (bản chờ gắn lời giảng, 56 slide) | ✅ (27 nhiệm vụ + 1 thử thách) | ✅ (5 trang, bản HS) | ✅ (16 câu, đề A/B) |
 | Toán 12 – Bài 7. Hệ trục toạ độ trong không gian | ✅ (bản chờ gắn lời giảng, 29 slide) | ✅ (20 nhiệm vụ + 1 thử thách) | ✅ (6 trang, bản HS) | ✅ (16 câu, đề A/B) |
 | Toán 12 – Bài 8. Biểu thức toạ độ của các phép toán vectơ | ✅ (bản chờ gắn lời giảng, 30 slide) | ✅ (20 nhiệm vụ + 1 thử thách) | ✅ (11 trang, bản HS) | ✅ (16 câu, đề A/B) |
+| Toán 12 – Bài 9. Khoảng biến thiên và khoảng tứ phân vị | ✅ (bản chờ gắn lời giảng, 22 slide) | ✅ (14 nhiệm vụ + 1 thử thách) | ✅ (9 trang, bản HS) | ✅ (13 câu, đề A/B) |
+| Toán 12 – Bài 10. Phương sai và độ lệch chuẩn | ✅ (bản chờ gắn lời giảng, 19 slide) | ✅ (11 nhiệm vụ + 1 thử thách) | ✅ (9 trang, bản HS) | ✅ (13 câu, đề A/B) |
 
 ## Lớp sửa chung đã áp dụng cho mọi trang bài học (áp dụng tiếp cho bài mới)
 - Bản dành cho học sinh: ẩn nút "Giáo viên", ẩn "Làm lại từ đầu" của GV.
@@ -69,11 +71,12 @@ Trong `index.html`, khối `LINKS` khai báo đường dẫn cho từng bài, kh
 ## Việc còn chờ
 - Bài 6 – Toán 12: khi thầy gửi ghi âm, chỉ thay `bai-hoc/toan12-bai6-bai-giang.html` (giữ tên) và chụp lại ảnh xem trước bài giảng.
   - Khi gắn ghi âm xong: xoá dòng `chuaGiong: true` của `lop12-bai6` trong `LINKS` (index.html) để trang chủ ghi lại "Có giọng thầy giảng".
-- Bài 7, Bài 8 – Toán 12: khi có ghi âm thì thay bài giảng và xoá `chuaGiong`.
+- Bài 7, 8, 9, 10 – Toán 12: khi có ghi âm thì thay bài giảng và xoá `chuaGiong`.
 - Bổ sung HSA.
 - Mua và gắn tên miền mrblackmath.vn.
 
 ## Nhật ký
+- 10/10/2026 (22h): Đưa đủ 4 phần Bài 9 (Khoảng biến thiên và khoảng tứ phân vị) và Bài 10 (Phương sai và độ lệch chuẩn) – Toán 12 lên web từ gói `T12_Bai9.zip`, `T12_Bai10.zip` (bản HS). Kiểm tra độc lập bằng Python các đáp án Phần III của 2 phiếu (Bài 9: 5 câu + Nâng cao 1; Bài 10: 9 câu): khớp hết; phiếu HS không lộ đáp án. Áp lớp sửa chung (bản HS đã sẵn ẩn nút GV); ảnh xem trước; thử 3 khổ màn hình: 0 lỗi JS, không tràn ngang. Cả 2 bài chưa có lời giảng (`chuaGiong`).
 - 10/10/2026 (22h): Theo lời thầy, ô 4 của bài Ôn tập chương đổi thành "Tự kiểm tra cuối chương" (bài thường vẫn "Tự kiểm tra cuối bài").
 - 10/10/2026 (17h30): Theo yêu cầu thầy, thêm bài "Ôn tập chương x" cuối mỗi chương cho tất cả các lớp (6–12; 63 chương). Có trong menu chương (dưới bài cuối, ngăn bằng nét đứt), tìm kiếm ("ôn tập" lên đầu), nút bài trước/sau. Ô 1 đổi thành "Tổng hợp kiến thức Chương x". Hiện cả 4 ô đều "Sắp ra mắt". Thử 3 khổ màn hình: 0 lỗi JS, không tràn ngang.
 - 10/10/2026 (17h): Báo cáo Google Analytics ngày đầu (10/10, số liệu trong ngày, chưa chốt): 35 người dùng, 42 phiên, 52 lượt xem, thời gian tương tác TB 43 giây/người. Nguồn: Organic Social 28 phiên (TB 17 giây/phiên), Direct 14 phiên (TB 1 phút 12 giây). Trang: trang chủ 42 lượt; bài giảng Bài 6 – Toán 12: 7 lượt (5 người, TB 1 phút); bài giảng Bài 16 – Toán 6: 2; kiểm tra Bài 6 – Toán 12: 1. Chưa ai mở luyện tập. Có lẫn 1 lượt thử của Claude lúc 7h31.
