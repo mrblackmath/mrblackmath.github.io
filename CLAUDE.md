@@ -72,6 +72,7 @@ Trong `index.html`, khối `LINKS` khai báo đường dẫn cho từng bài, kh
 - 10/10/2026 (7h30): Bật thống kê Google Analytics 4, mã đo lường G-SHEVYZQC9S (tài khoản Gmail của thầy). Xem tại analytics.google.com hoặc ứng dụng Google Analytics.
   - Claude đọc báo cáo qua trình duyệt tích hợp của ứng dụng Claude trên máy thầy (đã đăng nhập sẵn Google). Tài sản: a411389003p558315789. Khi thầy hỏi "báo cáo" thì vào đó lấy số liệu.
   - 7h31: Thời gian thực ghi nhận 1 người dùng (Việt Nam) – lượt thử của Claude. Báo cáo chuẩn có số sau khoảng 24 giờ.
+  - 7h35: Theo lời thầy, đổi "Giữ lại dữ liệu" sự kiện từ 2 tháng lên 14 tháng (dữ liệu người dùng vốn 14 tháng). Có hiệu lực sau 24 giờ.
 - 10/10/2026 (7h): Thầy chọn Google Analytics để đếm lượt truy cập và thời gian truy cập. Đã gắn `thong-ke.js` vào trang chủ và 12 trang bài học (chưa đếm vì chưa có mã). Đã thử với mã giả: trang gọi đúng Google Analytics, 0 lỗi.
 - 10/10/2026 (7h): Kiểm tra định kì: 4 bài, 16/16 đường dẫn (12 trang bài học + 4 phiếu PDF) đều mở được, trang chủ 0 lỗi, ô liên hệ hiển thị. Chụp lại ảnh xem trước bài giảng Bài 16 (bỏ ảnh cũ còn nút "GIÁO VIÊN").
 - 10/10/2026 (0h): Đưa đủ 4 phần Bài 8 – Toán 12 (Biểu thức toạ độ của các phép toán vectơ) lên web từ gói `T12_Bai8_BieuThucToaDo.zip` (bản HS). Áp lớp sửa chung; nới khoảng cách để nhãn "Bản chờ hoàn thiện" không sát chữ z ở bìa (cả bản GV, HS trong gói); ảnh xem trước; thử 3 khổ màn hình: 0 lỗi JS, không tràn ngang.
