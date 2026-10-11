@@ -1,6 +1,6 @@
 # Sổ quản lý website Mr Black NBK
 
-Cập nhật: 11/10/2026 (13h)
+Cập nhật: 11/10/2026 (14h30)
 
 ## Địa chỉ và nơi lưu
 - **Website:** https://mrblackmath.github.io
@@ -48,6 +48,23 @@ Trong `index.html`, khối `LINKS` khai báo đường dẫn cho từng bài, kh
 | Toán 6 – Bài 18. Hình tam giác đều. Hình vuông. Hình lục giác đều | ✅ (bản chờ gắn lời giảng, 17 slide) | ✅ (16 nhiệm vụ + 1 thử thách) | ✅ (2 trang, bản HS) | ✅ (12 câu) |
 | Toán 6 – Bài 19. Hình chữ nhật. Hình thoi. Hình bình hành. Hình thang cân | ✅ (bản chờ gắn lời giảng, 18 slide) | ✅ (16 nhiệm vụ + 1 thử thách) | ✅ (2 trang, bản HS) | ✅ (12 câu) |
 | Toán 6 – Bài 20. Chu vi và diện tích của một số tứ giác đã học | ✅ (bản chờ gắn lời giảng, 20 slide) | ✅ (16 nhiệm vụ + 1 thử thách) | ✅ (2 trang, bản HS) | ✅ (12 câu) |
+| Toán 6 – Ôn tập Chương III. Số nguyên | ✅ Tổng hợp kiến thức | ✅ | ✅ (3 trang, bản HS) | ✅ |
+| Toán 6 – Ôn tập Chương IV. Một số hình phẳng trong thực tiễn | ✅ Tổng hợp kiến thức | ✅ | ✅ (4 trang, bản HS) | ✅ |
+| Toán 7 – Bài 7. Tập hợp các số thực | ✅ Bài giảng (chờ gắn lời giảng) | ✅ | ✅ (3 trang, bản HS) | ✅ |
+| Toán 7 – Bài 8. Góc ở vị trí đặc biệt. Tia phân giác của một góc | ✅ Bài giảng (chờ gắn lời giảng) | ✅ | ✅ (4 trang, bản HS) | ✅ |
+| Toán 7 – Bài 9. Hai đường thẳng song song và dấu hiệu nhận biết | ✅ Bài giảng (chờ gắn lời giảng) | ✅ | ✅ (6 trang, bản HS) | ✅ |
+| Toán 7 – Bài 10. Tiên đề Euclid. Tính chất của hai đường thẳng song song | ✅ Bài giảng (chờ gắn lời giảng) | ✅ | ✅ (5 trang, bản HS) | ✅ |
+| Toán 7 – Bài 11. Định lí và chứng minh định lí | ✅ Bài giảng (chờ gắn lời giảng) | ✅ | ✅ (5 trang, bản HS) | ✅ |
+| Toán 8 – Bài 10. Tứ giác | ✅ Bài giảng (chờ gắn lời giảng) | ✅ | ✅ (6 trang, bản HS, đã sửa 1 lỗi) | ✅ |
+| Toán 8 – Bài 11. Hình thang cân | ✅ Bài giảng (chờ gắn lời giảng) | ✅ | ✅ (7 trang, bản HS) | ✅ |
+| Toán 8 – Bài 12. Hình bình hành | ✅ Bài giảng (chờ gắn lời giảng) | ✅ | ✅ (7 trang, bản HS) | ✅ |
+| Toán 8 – Bài 13. Hình chữ nhật | ✅ Bài giảng (chờ gắn lời giảng) | ✅ | ✅ (7 trang, bản HS) | ✅ |
+| Toán 8 – Bài 14. Hình thoi và hình vuông | ✅ Bài giảng (chờ gắn lời giảng) | ✅ | ✅ (7 trang, bản HS, đã sửa 1 lỗi) | ✅ |
+| Toán 9 – Bài 11. Tỉ số lượng giác của góc nhọn | ✅ Bài giảng (chờ gắn lời giảng) | ✅ | ✅ (4 trang, bản HS) | ✅ |
+| Toán 9 – Bài 12. Một số hệ thức giữa cạnh, góc trong tam giác vuông và ứng dụng | ✅ Bài giảng (chờ gắn lời giảng) | ✅ | ✅ (4 trang, bản HS) | ✅ |
+| Toán 9 – Ôn tập Chương IV. Hệ thức lượng trong tam giác vuông | ✅ Tổng hợp kiến thức | ✅ | ✅ (4 trang, bản HS) | ✅ |
+| Toán 11 – Ôn tập Chương IV. Quan hệ song song trong không gian | ✅ Tổng hợp kiến thức | ✅ | ✅ (11 trang, bản HS) | ✅ |
+| Toán 12 – Ôn tập Chương III. Các số đặc trưng đo mức độ phân tán | ✅ Tổng hợp kiến thức | ✅ | ✅ (9 trang, bản HS, đã sửa 1 lỗi) | ✅ |
 | Toán 11 – Bài 10. Đường thẳng và mặt phẳng trong không gian | ✅ (bản chờ gắn lời giảng, 37 slide) | ✅ (21 nhiệm vụ + 1 thử thách) | ✅ (11 trang, bản HS) | ✅ (16 câu, đề A/B) |
 | Toán 11 – Bài 11. Hai đường thẳng song song | ✅ (bản chờ gắn lời giảng, 25 slide) | ✅ (20 nhiệm vụ + 1 thử thách) | ✅ (13 trang, bản HS) | ✅ (16 câu, đề A/B) |
 | Toán 11 – Bài 12. Đường thẳng và mặt phẳng song song | ✅ (bản chờ gắn lời giảng, 23 slide) | ✅ (20 nhiệm vụ + 1 thử thách) | ✅ (12 trang, bản HS) | ✅ (16 câu, đề A/B) |
@@ -85,12 +102,18 @@ Trong `index.html`, khối `LINKS` khai báo đường dẫn cho từng bài, kh
 - Bài 6 – Toán 12: khi thầy gửi ghi âm, chỉ thay `bai-hoc/toan12-bai6-bai-giang.html` (giữ tên) và chụp lại ảnh xem trước bài giảng.
   - Khi gắn ghi âm xong: xoá dòng `chuaGiong: true` của `lop12-bai6` trong `LINKS` (index.html) để trang chủ ghi lại "Có giọng thầy giảng".
 - Bài 7, 8, 9, 10 – Toán 12: khi có ghi âm thì thay bài giảng và xoá `chuaGiong`.
+- Bài 7–11 – Toán 7; Bài 10–14 – Toán 8; Bài 11, 12 – Toán 9: khi có ghi âm thì thay bài giảng (giữ tên file), chụp lại ảnh xem trước và xoá `chuaGiong`.
 - Bài 10–16 – Toán 11: khi có ghi âm thì thay bài giảng (giữ tên file), chụp lại ảnh xem trước và xoá `chuaGiong`.
 - Bài 17, 18, 19, 20 – Toán 6: khi có ghi âm thì thay bài giảng (giữ tên file), chụp lại ảnh xem trước và xoá `chuaGiong`.
 - Bổ sung HSA.
 - Mua và gắn tên miền mrblackmath.vn.
 
 ## Nhật ký
+- 11/10/2026 (14h30): Lô 17 gói gửi chiều 11/10, qua Pull Request: Toán 6 Ôn tập Chương III, IV; Toán 7 Bài 7–11; Toán 8 Bài 10–14; Toán 9 Bài 11, 12, Ôn tập Chương IV; Toán 11 Ôn tập Chương IV; Toán 12 Ôn tập Chương III (bản HS). Gói T6 Ôn tập C4 và T7 Bài 11 thầy gửi lại trùng khớp gói trước. (Trước đó, theo lời thầy, đã bỏ hẳn một bản dựng Toán 7 Bài 7–11 chưa đẩy lên, và xoá nhánh trùng `claude/amazing-johnson-6ekzu2`.)
+  - Bài Ôn tập: khoá `lop<lớp>-ontap<số chương>`, file `…-on-tap-chuong<số>-tong-hop/luyen-tap/kiem-tra.html`; không có cờ `chuaGiong` (không có lời giảng). Đổi link claude.ai (T6 C3, C4) và đường dẫn thư mục `../01_…` (T9 C4) sang tên file trên web. T11 C4 có lớp vỏ claude.ai: bỏ vỏ, giữ CSS. Tiêu đề tab "Tự kiểm tra Chương X · Chương X ·" sửa thành "Tự kiểm tra cuối chương · Ôn tập Chương X ·".
+  - Kiểm độc lập toàn bộ 17 phiếu GV: không đáp án tính toán nào sai; 3 lỗi bắt buộc, thầy đồng ý cho sửa (sửa .tex HS + GV, XeLaTeX ×2: 0 lỗi, số trang giữ nguyên): T8 Bài 10 NC1 câu 2 khung diều dữ kiện mâu thuẫn (BD = 61,28 theo ABD, 59,17 theo CBD) → CB = CD = 72,5 cm; T8 Bài 14 Phần I câu 13 có 3 phương án đúng → A "hình bình hành không phải hình chữ nhật", B "hình chữ nhật không phải hình vuông"; T12 Ôn tập C3 Phần I câu 3 `R\'` in thành "Ŕ" → R′.
+  - Ghi nhận "nên sửa" (chưa sửa): T6 C3 câu B7, B8 hình vẽ lộ đáp số, B8 thiếu quy ước tầng trệt là tầng 0; T6 C4 câu A1b (120°) có thể vượt phạm vi chương; T7 Bài 9 A1c, A2c dùng "góc trong cùng phía" (cần đối chiếu SGK); T7 Bài 10 A1d diễn đạt hai nghĩa, C1/D1 chưa khai báo A ∈ xx′, B ∈ yy′; T7 Bài 11 A2 phần Chú ý phản ví dụ chưa khớp; T8 Bài 13 II.1c, NC1.5d cần "AB > BC"; T8 Bài 14 I.1, I.3, I.8 nên thêm "Theo định nghĩa"/"không là hình vuông"; T8 Bài 12 III.7, Bài 13 NC2.4 hình lệch tỉ lệ; T9 Bài 11 D2 hình ghi sẵn 15°; T11 C4 PII câu 9, 11 nên thêm "luôn"; T12 C3 III.3 (162,3) và NC2.1 (17,08) quá 4 kí tự, NC1.1b "khoảng 75%" dễ tranh cãi, NC2.4 cột "?" vẽ trùng vạch 12.
+  - Áp lớp sửa chung; ảnh xem trước 51 ô; thử 3 khổ màn hình (153 lượt): 0 lỗi JS, không tràn ngang, nút GV ẩn; trang chủ 34 mục LINKS, mọi đường dẫn có file, cú pháp hợp lệ.
 - 11/10/2026 (13h): Đưa đủ 4 phần Bài 14 – Toán 11 (Phép chiếu song song) từ gói `T11_Bai14.zip` (bản HS), qua Pull Request. Kiểm độc lập 132 câu/ý phiếu GV: phát hiện 2 lỗi, thầy đồng ý cho sửa: (1) NC1 câu 1d "A′C′ = AC" phiếu ghi Sai — đường chéo AC nằm ngang, song song với sàn nên đúng phải là Đúng; sửa ý d) thành "Đường chéo AC nằm ngang như hình vẽ. Khi đó A′C′ = AC" [Đúng]; (2) NC2 câu 5 cho A′B′ = 1,5 m mâu thuẫn (AB nằm ngang nên A′B′ = AB = 1,2 m); đổi thành A′D′ = 1,5 m, hỏi về A′D′ (đáp án vẫn 0,5). Sửa cả .tex HS và GV, biên dịch XeLaTeX ×2: 0 lỗi, 0 thiếu kí tự, 0 Overfull, số trang giữ nguyên (HS 12, GV 17); web dùng PDF HS đã sửa. Ghi nhận thêm (chưa sửa): NC2 câu 3 cách hiểu "tiếp xúc mép vạch" ngược với NC1 câu 2c–d; NC1 câu 1b nên thêm chữ "luôn". Áp lớp sửa chung; ảnh xem trước; thử 3 khổ màn hình: 0 lỗi JS, không tràn ngang, nút GV ẩn.
 - 11/10/2026 (12h30): Đưa đủ 4 phần Bài 12, Bài 13 (Chương IV) và Bài 16 (Chương V) – Toán 11 từ gói `T11_Bai12.zip`, `T11_Bai13.zip`, `T11B16_GoiBaiHoc.zip` (bản HS); thay trang tự luyện Bài 11 bằng bản mới trong gói `T11_Bai11.zip` gửi 8h17 (chỉ khác nhiệm vụ p05 được thu gọn cho khỏi tràn; các file khác trùng bản đã lên). Kiểm độc lập toàn bộ đáp án 3 phiếu GV (Bài 12: 110 câu/ý; Bài 13: 101; Bài 16: 100): không câu nào sai; phiếu HS không lộ đáp án; mọi đáp án trả lời ngắn ≤ 4 kí tự. Ghi nhận điểm nên sửa ở bản gốc (chưa sửa): Bài 12 – NC2 câu 3 nên ghi "AB ∥ CD", chân thang AB vẽ nét đứt nên đổi nét liền; NC1 câu 1 chữ "mặt đất" đè nhãn M. Bài 13 – NC2 câu 2 hình sàn ba tầng ngược tỉ lệ số liệu; hình câu 16 (dùng lại ở câu 17, 18) vẽ AB dài hơn BC trái dữ kiện; Phần III câu 4 hình thừa nhãn C₁, C₂. Bài 16 – NC1 câu 5 đồ thị bắt đầu từ O trong khi h(0) = 0,5 (rất nhỏ). Áp lớp sửa chung; bỏ lớp vỏ claude.ai và giữ CSS giao diện trong vỏ; nới khoảng cách nhãn "Bản chờ hoàn thiện" với trục y ở bìa Bài 16. Ảnh xem trước; thử 3 khổ màn hình (36 lượt): 0 lỗi JS, không tràn ngang, nút GV ẩn. Gửi qua Pull Request #1; thầy duyệt, đã gộp 12h25, web thật 16/16 đường dẫn mở được.
 - 11/10/2026 (8h30): Đưa đủ 4 phần Bài 10, Bài 11 (Chương IV) và Bài 15 (Chương V) – Toán 11 lên web từ gói `T11_Bai10.zip`, `T11_Bai11.zip`, `T11B15_GoiBaiHoc.zip` (gói Bài 15 thầy gửi lại lúc 7h58 trùng khớp nội dung gói trước, chỉ thêm LINKS.txt). Kiểm độc lập toàn bộ đáp án 3 phiếu GV (Bài 10: 82 câu/ý; Bài 11: 98; Bài 15: 122; câu tính kiểm lại bằng toạ độ/tính số Python): không câu nào sai đáp án; phiếu HS không lộ đáp án. Ghi nhận các điểm nên sửa ở bản gốc (chưa sửa vì là PDF của thầy): Bài 10 – NC2 câu 2 đề ghi "từ M qua N kéo dài chạm đất" phải là "từ N qua M"; Phần I câu 18 phương án A "đường thẳng qua S cắt a" cũng thoả nên dễ tranh cãi; hình Phần III câu 7 vẽ M gần trung điểm SA (đề SM = 2MA). Bài 11 – NC2 câu 4 hình bể kính vẽ CD ngắn trái số liệu CD = 50, DA = 12; Phần II câu 12c nên thêm AB ≠ CD. Bài 15 – 3 đáp án trả lời ngắn dài quá 4 kí tự (III.10: 54,63; NC2.1: 100,53; NC2.4: 16,36). Áp lớp sửa chung; bỏ lớp vỏ claude.ai và giữ CSS giao diện trong vỏ; bỏ "· Bản Học sinh"/"· HS" ở tiêu đề tab; nới khoảng cách nhãn "Bản chờ hoàn thiện" với chữ S ở bìa Bài 10. Ảnh xem trước; thử 3 khổ màn hình (27 lượt): 0 lỗi JS, không tràn ngang, nút GV ẩn. Cả 3 bài chưa có lời giảng (`chuaGiong`).
