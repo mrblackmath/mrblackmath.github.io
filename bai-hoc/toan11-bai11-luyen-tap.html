@@ -1437,7 +1437,7 @@ const TASKS = [];
 const tagline = o => `<p class="ptl"><span class="pk">Nhiệm vụ ${o.n}</span>${o.k.map((k, j) => j ? `<span class="kc id" title="${THEORY[k].t}">${k}</span>` : `<span class="kc" title="${THEORY[k].t}">${k} · ${THEORY[k].t}</span>`).join('')}<span class="lv l${o.lv}">${LV[o.lv]}</span></p>`;
 function task(o){
   TASKS.push(o);
-  const q = `<div class="qa${o.qs.length >= 4 ? ' tight' : ''}">${o.qs.map(([t, c, wide]) => `<div class="q"${wide ? ' style="grid-template-columns:1fr"' : ''}><span>${t}</span>${c}</div>`).join('')}</div>`;
+  const q = `<div class="qa${o.qs.length >= 4 || o.tight ? ' tight' : ''}">${o.qs.map(([t, c, wide]) => `<div class="q"${wide ? ' style="grid-template-columns:1fr"' : ''}><span>${t}</span>${c}</div>`).join('')}</div>`;
   const lead = o.lead ? DE(o.lead, o.its || [], 'sm') : '';
   const body = o.fig ? `<div class="cols" style="grid-template-columns:${o.fw || 600}px 1fr;gap:32px"><div class="fig">${o.fig}</div><div class="side rcol">${lead}${q}</div></div>` : `<div class="rcol" style="flex:1 1 auto">${lead}${q}</div>`;
   addSlide({label: `${o.n}. ${o.title}`, sec: o.sec, anchor: o.anchor, task: o, html: hd(o.sec, o.title) + tagline(o) + body + FOOT(o.id),
@@ -1512,7 +1512,7 @@ task({id: 'p04', n: 4, sec: 1, k: ['K02', 'K01'], lv: 2, title: 'Hình chóp: đ
     {id: 'c', name: 'c)', kind: 'choice', ans: 0, why: R`Trong tam giác ${m('SAD')}, ${m('MN')} nối trung điểm hai cạnh ${m('SA, SD')}.`, sol: R`Đúng: ${m('MN')} là đường trung bình của tam giác ${m('SAD')} nên ${m(R`MN\parallel AD`)}.`},
     {id: 'd', name: 'd)', kind: 'choice', ans: 1, review: 'K03', why: R`Bật mặt phẳng ${m('(SAD)')}: ${m('MN')} nằm trong đó, còn ${m('AB')} chỉ có một điểm ${m('A')} thuộc ${m('(SAD)')}, mà ${m('A\\notin MN')}.`, sol: R`Sai: ${m('MN')} và ${m('AB')} không có điểm chung và không đồng phẳng (chéo nhau).`}]}});
 
-task({id: 'p05', n: 5, sec: 1, k: ['K03'], lv: 2, title: 'Chứng minh chéo nhau bằng phản chứng', fw: 600,
+task({id: 'p05', n: 5, sec: 1, k: ['K03'], lv: 2, title: 'Chứng minh chéo nhau bằng phản chứng', fw: 540, tight: true,
   fig: pyr({segs: [{a: 'S', b: 'C', cls: 'gold thick'}, {a: 'A', b: 'B', cls: 'blue thick'}]}),
   lead: R`${SPC} Chứng minh rằng hai đường thẳng ${m('SC')} và ${m('AB')} chéo nhau.`,
   qs: [[R`Bước 1. Giả sử:`, CH('p05', 'a', [R`${m('SC, AB')} cùng nằm trong một mặt phẳng ${m('(P)')}`, R`${m('SC, AB')} không có điểm chung`, R`${m('SC, AB')} chéo nhau`], 'col'), 1],
