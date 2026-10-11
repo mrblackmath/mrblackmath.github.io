@@ -1,6 +1,6 @@
 # Sổ quản lý website Mr Black NBK
 
-Cập nhật: 11/10/2026 (18h10)
+Cập nhật: 11/10/2026 (19h)
 
 ## Địa chỉ và nơi lưu
 - **Website:** https://mrblackmath.github.io
@@ -41,6 +41,7 @@ Trong `index.html`, khối `LINKS` khai báo đường dẫn cho từng bài, kh
 - Mục lục bám SGK Kết nối tri thức. HSA bổ sung sau.
 - Mọi báo cáo gửi thầy luôn ghi tổng số bài đã có trên web, kể cả các bài Ôn tập chương (thầy dặn 11/10/2026).
 - Từ 11/10/2026 (chiều) mỗi lần đưa bài lên đều qua Pull Request; thầy nhắn "gộp" thì mới gộp vào `main`.
+- Khi kiểm phiếu thấy chỗ "nên sửa" (đáp án trả lời ngắn quá 4 kí tự, hình lộ đáp số, diễn đạt chưa chặt, hình sai tỉ lệ, nhãn đè…) thì sửa luôn cả .tex bản HS và GV, biên dịch lại, rồi báo trong báo cáo; không để thầy tự sửa (thầy dặn 11/10/2026). Lỗi làm sai đáp án/đề vẫn hỏi thầy trước khi sửa.
 
 ## Các bài đã có
 | Bài | Bài giảng | Luyện tập | Phiếu PDF | Kiểm tra |
@@ -113,6 +114,7 @@ Trong `index.html`, khối `LINKS` khai báo đường dẫn cho từng bài, kh
 - Mua và gắn tên miền mrblackmath.vn.
 
 ## Nhật ký
+- 11/10/2026 (19h): Theo lời thầy, sửa toàn bộ các chỗ "nên sửa" đã ghi ở 23 phiếu (T6 ÔT C3, C4; T7 Bài 8–11; T8 Bài 10, 12, 13, 14; T9 Bài 11, 12, ÔT C4; T11 Bài 10–17, ÔT C4, C5; T12 ÔT C3): đáp án ngắn quá 4 kí tự → thêm yêu cầu làm tròn/đổi đại lượng hỏi (T11 B15: 54,6; 101; 16,4 · T11 B17: 12m = −2 · T11 ÔT C5: 133 · T12 ÔT C3: 162; 17,1); bỏ nhãn/điểm lộ đáp số ở hình bản HS (T6 ÔT C3 B7, B8; T9 B11 D2; T11 ÔT C5 NC2 câu 1, 2, 4); vẽ lại hình sai tỉ lệ (T11 B11 bể kính; T11 B13 câu 16, sàn ba tầng; T11 ÔT C4 PII.9, NC2.2, NC2.4; T8 B12 I.2, II.1, III.6, III.7; T8 B13 NC2.4; T7 B8 B6); diễn đạt chặt chẽ hơn (thêm "luôn", "theo định nghĩa", AB > BC, AB ≠ CD, B nằm giữa A và C, tầng trệt là tầng 0, định nghĩa góc trong cùng phía…); T11 B10 NC2 câu 2 sửa "từ N qua M"; T7 B10 A1d viết lại ([Đúng]). Mỗi thư mục có CHANGES.md chi tiết. Biên dịch XeLaTeX ×2: 0 lỗi, 0 thiếu kí tự, 0 Overfull, số trang giữ nguyên. Kiểm định độc lập toàn bộ thay đổi: không có lỗi phải sửa. Thay 21 phiếu HS trên web (T11 B16, T7 B11, T9 ÔT C4 bản HS không đổi). Gửi thầy gói `PhieuDaSua_11-10.zip` (tex + pdf GV, HS).
 - 11/10/2026 (18h10): Báo cáo website. Trên web 36 mục = 30 bài học + 6 Ôn tập chương (T6: 5 bài + ÔT C3, C4; T7: 5 bài; T8: 5 bài; T9: 2 bài + ÔT C4; T11: 8 bài + ÔT C4, C5; T12: 5 bài + ÔT C3); 1 bài có lời giảng (T6 Bài 16). Google Analytics, 7 ngày đến hết 10/10 (thực chất là ngày 10/10): 41 người dùng, 61 phiên, 78 lượt xem; nguồn: Zalo 30 phiên, trực tiếp 26, Google 1; Hà Nội 34 người dùng; trang xem nhiều: trang chủ 63, bài giảng T12 Bài 6: 9, T6 Bài 16: 3, T12 Bài 8: 2. Thời gian thực lúc 18h: 12 người dùng trong 30 phút (10 người mới).
 - 11/10/2026 (18h): Đưa Ôn tập Chương V – Toán 11 (`lop11-ontap5`) từ gói `T11C5_GoiOnTapChuong.zip` (bản HS), qua Pull Request. Kiểm độc lập 109 câu/ý phiếu GV: không lỗi toán; phiếu HS không có lời giải. Ghi nhận (chưa sửa): Nâng cao 2 câu 1 đáp án 133,3 dài 5 kí tự và hình HS ghi sẵn 400/3; câu 2 hình HS đánh dấu sẵn (16; 40); câu 4 hình HS vẽ sẵn các bước chia đôi. Thử 3 khổ màn hình: 0 lỗi JS, không tràn ngang, nút GV ẩn.
 - 11/10/2026 (17h45): Đưa Bài 17 – Toán 11 (Hàm số liên tục) từ gói `T11B17_GoiBaiHoc.zip` (bản HS), qua Pull Request. Kiểm độc lập 103 câu/ý phiếu GV: không đáp án nào sai; phiếu HS không lộ đáp án. Ghi nhận (chưa sửa): Phần III câu 3 đáp án −0,17 dài 5 kí tự; bản GV có khoảng trắng lớn ở trang đầu Nâng cao 1. Thử 3 khổ màn hình: 0 lỗi JS, không tràn ngang, nút GV ẩn. Cùng lúc thầy gửi lại gói Bài 15, 16 – Toán 11 (17h33) và gói Ôn tập T12 C3, T11 C4, T9 C4 (17h29): trùng khớp bản đã lên, không thay (riêng phiếu T12 C3 web giữ bản đã sửa R′).
