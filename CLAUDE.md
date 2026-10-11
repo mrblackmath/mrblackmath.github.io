@@ -1,6 +1,6 @@
 # Sổ quản lý website Mr Black NBK
 
-Cập nhật: 11/10/2026 (14h30)
+Cập nhật: 11/10/2026 (17h45)
 
 ## Địa chỉ và nơi lưu
 - **Website:** https://mrblackmath.github.io
@@ -63,6 +63,7 @@ Trong `index.html`, khối `LINKS` khai báo đường dẫn cho từng bài, kh
 | Toán 9 – Bài 11. Tỉ số lượng giác của góc nhọn | ✅ Bài giảng (chờ gắn lời giảng) | ✅ | ✅ (4 trang, bản HS) | ✅ |
 | Toán 9 – Bài 12. Một số hệ thức giữa cạnh, góc trong tam giác vuông và ứng dụng | ✅ Bài giảng (chờ gắn lời giảng) | ✅ | ✅ (4 trang, bản HS) | ✅ |
 | Toán 9 – Ôn tập Chương IV. Hệ thức lượng trong tam giác vuông | ✅ Tổng hợp kiến thức | ✅ | ✅ (4 trang, bản HS) | ✅ |
+| Toán 11 – Bài 17. Hàm số liên tục | ✅ Bài giảng (chờ gắn lời giảng) | ✅ | ✅ (12 trang, bản HS) | ✅ |
 | Toán 11 – Ôn tập Chương IV. Quan hệ song song trong không gian | ✅ Tổng hợp kiến thức | ✅ | ✅ (11 trang, bản HS) | ✅ |
 | Toán 12 – Ôn tập Chương III. Các số đặc trưng đo mức độ phân tán | ✅ Tổng hợp kiến thức | ✅ | ✅ (9 trang, bản HS, đã sửa 1 lỗi) | ✅ |
 | Toán 11 – Bài 10. Đường thẳng và mặt phẳng trong không gian | ✅ (bản chờ gắn lời giảng, 37 slide) | ✅ (21 nhiệm vụ + 1 thử thách) | ✅ (11 trang, bản HS) | ✅ (16 câu, đề A/B) |
@@ -103,12 +104,13 @@ Trong `index.html`, khối `LINKS` khai báo đường dẫn cho từng bài, kh
   - Khi gắn ghi âm xong: xoá dòng `chuaGiong: true` của `lop12-bai6` trong `LINKS` (index.html) để trang chủ ghi lại "Có giọng thầy giảng".
 - Bài 7, 8, 9, 10 – Toán 12: khi có ghi âm thì thay bài giảng và xoá `chuaGiong`.
 - Bài 7–11 – Toán 7; Bài 10–14 – Toán 8; Bài 11, 12 – Toán 9: khi có ghi âm thì thay bài giảng (giữ tên file), chụp lại ảnh xem trước và xoá `chuaGiong`.
-- Bài 10–16 – Toán 11: khi có ghi âm thì thay bài giảng (giữ tên file), chụp lại ảnh xem trước và xoá `chuaGiong`.
+- Bài 10–17 – Toán 11: khi có ghi âm thì thay bài giảng (giữ tên file), chụp lại ảnh xem trước và xoá `chuaGiong`.
 - Bài 17, 18, 19, 20 – Toán 6: khi có ghi âm thì thay bài giảng (giữ tên file), chụp lại ảnh xem trước và xoá `chuaGiong`.
 - Bổ sung HSA.
 - Mua và gắn tên miền mrblackmath.vn.
 
 ## Nhật ký
+- 11/10/2026 (17h45): Đưa Bài 17 – Toán 11 (Hàm số liên tục) từ gói `T11B17_GoiBaiHoc.zip` (bản HS), qua Pull Request. Kiểm độc lập 103 câu/ý phiếu GV: không đáp án nào sai; phiếu HS không lộ đáp án. Ghi nhận (chưa sửa): Phần III câu 3 đáp án −0,17 dài 5 kí tự; bản GV có khoảng trắng lớn ở trang đầu Nâng cao 1. Thử 3 khổ màn hình: 0 lỗi JS, không tràn ngang, nút GV ẩn. Cùng lúc thầy gửi lại gói Bài 15, 16 – Toán 11 (17h33) và gói Ôn tập T12 C3, T11 C4, T9 C4 (17h29): trùng khớp bản đã lên, không thay (riêng phiếu T12 C3 web giữ bản đã sửa R′).
 - 11/10/2026 (14h30): Lô 17 gói gửi chiều 11/10, qua Pull Request: Toán 6 Ôn tập Chương III, IV; Toán 7 Bài 7–11; Toán 8 Bài 10–14; Toán 9 Bài 11, 12, Ôn tập Chương IV; Toán 11 Ôn tập Chương IV; Toán 12 Ôn tập Chương III (bản HS). Gói T6 Ôn tập C4 và T7 Bài 11 thầy gửi lại trùng khớp gói trước. (Trước đó, theo lời thầy, đã bỏ hẳn một bản dựng Toán 7 Bài 7–11 chưa đẩy lên, và xoá nhánh trùng `claude/amazing-johnson-6ekzu2`.)
   - Bài Ôn tập: khoá `lop<lớp>-ontap<số chương>`, file `…-on-tap-chuong<số>-tong-hop/luyen-tap/kiem-tra.html`; không có cờ `chuaGiong` (không có lời giảng). Đổi link claude.ai (T6 C3, C4) và đường dẫn thư mục `../01_…` (T9 C4) sang tên file trên web. T11 C4 có lớp vỏ claude.ai: bỏ vỏ, giữ CSS. Tiêu đề tab "Tự kiểm tra Chương X · Chương X ·" sửa thành "Tự kiểm tra cuối chương · Ôn tập Chương X ·".
   - Kiểm độc lập toàn bộ 17 phiếu GV: không đáp án tính toán nào sai; 3 lỗi bắt buộc, thầy đồng ý cho sửa (sửa .tex HS + GV, XeLaTeX ×2: 0 lỗi, số trang giữ nguyên): T8 Bài 10 NC1 câu 2 khung diều dữ kiện mâu thuẫn (BD = 61,28 theo ABD, 59,17 theo CBD) → CB = CD = 72,5 cm; T8 Bài 14 Phần I câu 13 có 3 phương án đúng → A "hình bình hành không phải hình chữ nhật", B "hình chữ nhật không phải hình vuông"; T12 Ôn tập C3 Phần I câu 3 `R\'` in thành "Ŕ" → R′.
