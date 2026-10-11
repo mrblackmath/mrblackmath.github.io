@@ -1,6 +1,6 @@
 # Sổ quản lý website Mr Black NBK
 
-Cập nhật: 11/10/2026 (19h)
+Cập nhật: 11/10/2026 (22h45)
 
 ## Địa chỉ và nơi lưu
 - **Website:** https://mrblackmath.github.io
@@ -69,6 +69,7 @@ Trong `index.html`, khối `LINKS` khai báo đường dẫn cho từng bài, kh
 | Toán 11 – Bài 17. Hàm số liên tục | ✅ Bài giảng (chờ gắn lời giảng) | ✅ | ✅ (12 trang, bản HS) | ✅ |
 | Toán 11 – Ôn tập Chương IV. Quan hệ song song trong không gian | ✅ Tổng hợp kiến thức | ✅ | ✅ (11 trang, bản HS) | ✅ |
 | Toán 12 – Ôn tập Chương III. Các số đặc trưng đo mức độ phân tán | ✅ Tổng hợp kiến thức | ✅ | ✅ (9 trang, bản HS, đã sửa 1 lỗi) | ✅ |
+| Toán 10 – Ôn tập Chương II. Bất phương trình và hệ bất phương trình bậc nhất hai ẩn | ✅ Tổng hợp kiến thức | ✅ | ✅ (11 trang, bản HS, đã sửa 4 chỗ) | ✅ |
 | Toán 11 – Bài 10. Đường thẳng và mặt phẳng trong không gian | ✅ (bản chờ gắn lời giảng, 37 slide) | ✅ (21 nhiệm vụ + 1 thử thách) | ✅ (11 trang, bản HS) | ✅ (16 câu, đề A/B) |
 | Toán 11 – Bài 11. Hai đường thẳng song song | ✅ (bản chờ gắn lời giảng, 25 slide) | ✅ (20 nhiệm vụ + 1 thử thách) | ✅ (13 trang, bản HS) | ✅ (16 câu, đề A/B) |
 | Toán 11 – Bài 12. Đường thẳng và mặt phẳng song song | ✅ (bản chờ gắn lời giảng, 23 slide) | ✅ (20 nhiệm vụ + 1 thử thách) | ✅ (12 trang, bản HS) | ✅ (16 câu, đề A/B) |
@@ -114,6 +115,7 @@ Trong `index.html`, khối `LINKS` khai báo đường dẫn cho từng bài, kh
 - Mua và gắn tên miền mrblackmath.vn.
 
 ## Nhật ký
+- 11/10/2026 (22h45): Đưa Ôn tập Chương II – Toán 10 (`lop10-ontap2`, mục đầu tiên của Toán 10) từ gói `T10C2_OnTapChuongII.zip` (bản HS); thầy dặn "đưa lên web, làm xong gửi báo cáo" nên tạo Pull Request rồi gộp luôn. Kiểm độc lập 98 câu/ý phiếu GV: không lỗi sai. Theo quy tắc mới, sửa luôn 4 chỗ nên sửa (cả .tex GV và HS): I.21 phương án A "một trong các đỉnh của đa giác"; nới vùng gạch hình I.10, I.11, I.18, II.5 phủ hết phần không thuộc miền nghiệm; I.19, I.20, II.7, II.8 ghi "(miền tô màu)"; II.5 bỏ mốc 3 và 6 trên trục (lộ đáp số ý a, d). XeLaTeX ×2: 0 lỗi, số trang giữ nguyên (GV 15, HS 11). Thử 3 khổ màn hình: 0 lỗi JS, không tràn ngang, nút GV ẩn. Trên web: 37 mục (30 bài học + 7 ôn tập chương).
 - 11/10/2026 (19h): Theo lời thầy, sửa toàn bộ các chỗ "nên sửa" đã ghi ở 23 phiếu (T6 ÔT C3, C4; T7 Bài 8–11; T8 Bài 10, 12, 13, 14; T9 Bài 11, 12, ÔT C4; T11 Bài 10–17, ÔT C4, C5; T12 ÔT C3): đáp án ngắn quá 4 kí tự → thêm yêu cầu làm tròn/đổi đại lượng hỏi (T11 B15: 54,6; 101; 16,4 · T11 B17: 12m = −2 · T11 ÔT C5: 133 · T12 ÔT C3: 162; 17,1); bỏ nhãn/điểm lộ đáp số ở hình bản HS (T6 ÔT C3 B7, B8; T9 B11 D2; T11 ÔT C5 NC2 câu 1, 2, 4); vẽ lại hình sai tỉ lệ (T11 B11 bể kính; T11 B13 câu 16, sàn ba tầng; T11 ÔT C4 PII.9, NC2.2, NC2.4; T8 B12 I.2, II.1, III.6, III.7; T8 B13 NC2.4; T7 B8 B6); diễn đạt chặt chẽ hơn (thêm "luôn", "theo định nghĩa", AB > BC, AB ≠ CD, B nằm giữa A và C, tầng trệt là tầng 0, định nghĩa góc trong cùng phía…); T11 B10 NC2 câu 2 sửa "từ N qua M"; T7 B10 A1d viết lại ([Đúng]). Mỗi thư mục có CHANGES.md chi tiết. Biên dịch XeLaTeX ×2: 0 lỗi, 0 thiếu kí tự, 0 Overfull, số trang giữ nguyên. Kiểm định độc lập toàn bộ thay đổi: không có lỗi phải sửa. Thay 21 phiếu HS trên web (T11 B16, T7 B11, T9 ÔT C4 bản HS không đổi). Gửi thầy gói `PhieuDaSua_11-10.zip` (tex + pdf GV, HS).
 - 11/10/2026 (18h10): Báo cáo website. Trên web 36 mục = 30 bài học + 6 Ôn tập chương (T6: 5 bài + ÔT C3, C4; T7: 5 bài; T8: 5 bài; T9: 2 bài + ÔT C4; T11: 8 bài + ÔT C4, C5; T12: 5 bài + ÔT C3); 1 bài có lời giảng (T6 Bài 16). Google Analytics, 7 ngày đến hết 10/10 (thực chất là ngày 10/10): 41 người dùng, 61 phiên, 78 lượt xem; nguồn: Zalo 30 phiên, trực tiếp 26, Google 1; Hà Nội 34 người dùng; trang xem nhiều: trang chủ 63, bài giảng T12 Bài 6: 9, T6 Bài 16: 3, T12 Bài 8: 2. Thời gian thực lúc 18h: 12 người dùng trong 30 phút (10 người mới).
 - 11/10/2026 (18h): Đưa Ôn tập Chương V – Toán 11 (`lop11-ontap5`) từ gói `T11C5_GoiOnTapChuong.zip` (bản HS), qua Pull Request. Kiểm độc lập 109 câu/ý phiếu GV: không lỗi toán; phiếu HS không có lời giải. Ghi nhận (chưa sửa): Nâng cao 2 câu 1 đáp án 133,3 dài 5 kí tự và hình HS ghi sẵn 400/3; câu 2 hình HS đánh dấu sẵn (16; 40); câu 4 hình HS vẽ sẵn các bước chia đôi. Thử 3 khổ màn hình: 0 lỗi JS, không tràn ngang, nút GV ẩn.
