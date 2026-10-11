@@ -1,6 +1,6 @@
 # Sổ quản lý website Mr Black NBK
 
-Cập nhật: 11/10/2026 (18h)
+Cập nhật: 11/10/2026 (18h10)
 
 ## Địa chỉ và nơi lưu
 - **Website:** https://mrblackmath.github.io
@@ -39,6 +39,8 @@ Trong `index.html`, khối `LINKS` khai báo đường dẫn cho từng bài, kh
 - Chỉ phiếu PDF được tải về. Bài giảng, luyện tập, kiểm tra chỉ xem trên web.
 - Học sinh không cần đăng ký, không cần tài khoản.
 - Mục lục bám SGK Kết nối tri thức. HSA bổ sung sau.
+- Mọi báo cáo gửi thầy luôn ghi tổng số bài đã có trên web, kể cả các bài Ôn tập chương (thầy dặn 11/10/2026).
+- Từ 11/10/2026 (chiều) mỗi lần đưa bài lên đều qua Pull Request; thầy nhắn "gộp" thì mới gộp vào `main`.
 
 ## Các bài đã có
 | Bài | Bài giảng | Luyện tập | Phiếu PDF | Kiểm tra |
@@ -111,6 +113,7 @@ Trong `index.html`, khối `LINKS` khai báo đường dẫn cho từng bài, kh
 - Mua và gắn tên miền mrblackmath.vn.
 
 ## Nhật ký
+- 11/10/2026 (18h10): Báo cáo website. Trên web 36 mục = 30 bài học + 6 Ôn tập chương (T6: 5 bài + ÔT C3, C4; T7: 5 bài; T8: 5 bài; T9: 2 bài + ÔT C4; T11: 8 bài + ÔT C4, C5; T12: 5 bài + ÔT C3); 1 bài có lời giảng (T6 Bài 16). Google Analytics, 7 ngày đến hết 10/10 (thực chất là ngày 10/10): 41 người dùng, 61 phiên, 78 lượt xem; nguồn: Zalo 30 phiên, trực tiếp 26, Google 1; Hà Nội 34 người dùng; trang xem nhiều: trang chủ 63, bài giảng T12 Bài 6: 9, T6 Bài 16: 3, T12 Bài 8: 2. Thời gian thực lúc 18h: 12 người dùng trong 30 phút (10 người mới).
 - 11/10/2026 (18h): Đưa Ôn tập Chương V – Toán 11 (`lop11-ontap5`) từ gói `T11C5_GoiOnTapChuong.zip` (bản HS), qua Pull Request. Kiểm độc lập 109 câu/ý phiếu GV: không lỗi toán; phiếu HS không có lời giải. Ghi nhận (chưa sửa): Nâng cao 2 câu 1 đáp án 133,3 dài 5 kí tự và hình HS ghi sẵn 400/3; câu 2 hình HS đánh dấu sẵn (16; 40); câu 4 hình HS vẽ sẵn các bước chia đôi. Thử 3 khổ màn hình: 0 lỗi JS, không tràn ngang, nút GV ẩn.
 - 11/10/2026 (17h45): Đưa Bài 17 – Toán 11 (Hàm số liên tục) từ gói `T11B17_GoiBaiHoc.zip` (bản HS), qua Pull Request. Kiểm độc lập 103 câu/ý phiếu GV: không đáp án nào sai; phiếu HS không lộ đáp án. Ghi nhận (chưa sửa): Phần III câu 3 đáp án −0,17 dài 5 kí tự; bản GV có khoảng trắng lớn ở trang đầu Nâng cao 1. Thử 3 khổ màn hình: 0 lỗi JS, không tràn ngang, nút GV ẩn. Cùng lúc thầy gửi lại gói Bài 15, 16 – Toán 11 (17h33) và gói Ôn tập T12 C3, T11 C4, T9 C4 (17h29): trùng khớp bản đã lên, không thay (riêng phiếu T12 C3 web giữ bản đã sửa R′).
 - 11/10/2026 (14h30): Lô 17 gói gửi chiều 11/10, qua Pull Request: Toán 6 Ôn tập Chương III, IV; Toán 7 Bài 7–11; Toán 8 Bài 10–14; Toán 9 Bài 11, 12, Ôn tập Chương IV; Toán 11 Ôn tập Chương IV; Toán 12 Ôn tập Chương III (bản HS). Gói T6 Ôn tập C4 và T7 Bài 11 thầy gửi lại trùng khớp gói trước. (Trước đó, theo lời thầy, đã bỏ hẳn một bản dựng Toán 7 Bài 7–11 chưa đẩy lên, và xoá nhánh trùng `claude/amazing-johnson-6ekzu2`.)
