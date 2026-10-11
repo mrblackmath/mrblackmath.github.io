@@ -1,6 +1,6 @@
 # Sổ quản lý website Mr Black NBK
 
-Cập nhật: 11/10/2026 (8h30)
+Cập nhật: 11/10/2026 (12h30)
 
 ## Địa chỉ và nơi lưu
 - **Website:** https://mrblackmath.github.io
@@ -50,7 +50,10 @@ Trong `index.html`, khối `LINKS` khai báo đường dẫn cho từng bài, kh
 | Toán 6 – Bài 20. Chu vi và diện tích của một số tứ giác đã học | ✅ (bản chờ gắn lời giảng, 20 slide) | ✅ (16 nhiệm vụ + 1 thử thách) | ✅ (2 trang, bản HS) | ✅ (12 câu) |
 | Toán 11 – Bài 10. Đường thẳng và mặt phẳng trong không gian | ✅ (bản chờ gắn lời giảng, 37 slide) | ✅ (21 nhiệm vụ + 1 thử thách) | ✅ (11 trang, bản HS) | ✅ (16 câu, đề A/B) |
 | Toán 11 – Bài 11. Hai đường thẳng song song | ✅ (bản chờ gắn lời giảng, 25 slide) | ✅ (20 nhiệm vụ + 1 thử thách) | ✅ (13 trang, bản HS) | ✅ (16 câu, đề A/B) |
+| Toán 11 – Bài 12. Đường thẳng và mặt phẳng song song | ✅ (bản chờ gắn lời giảng, 23 slide) | ✅ (20 nhiệm vụ + 1 thử thách) | ✅ (12 trang, bản HS) | ✅ (16 câu, đề A/B) |
+| Toán 11 – Bài 13. Hai mặt phẳng song song | ✅ (bản chờ gắn lời giảng, 36 slide) | ✅ (20 nhiệm vụ + 1 thử thách) | ✅ (11 trang, bản HS) | ✅ (16 câu, đề A/B) |
 | Toán 11 – Bài 15. Giới hạn của dãy số | ✅ (bản chờ gắn lời giảng, 38 slide) | ✅ (18 nhiệm vụ + 1 thử thách) | ✅ (9 trang, bản HS) | ✅ (15 câu, đề A/B) |
+| Toán 11 – Bài 16. Giới hạn của hàm số | ✅ (bản chờ gắn lời giảng, 44 slide) | ✅ (16 nhiệm vụ + 1 thử thách) | ✅ (9 trang, bản HS) | ✅ (15 câu, đề A/B) |
 | Toán 12 – Bài 6. Vectơ trong không gian | ✅ (bản chờ gắn lời giảng, 56 slide) | ✅ (27 nhiệm vụ + 1 thử thách) | ✅ (5 trang, bản HS) | ✅ (16 câu, đề A/B) |
 | Toán 12 – Bài 7. Hệ trục toạ độ trong không gian | ✅ (bản chờ gắn lời giảng, 29 slide) | ✅ (20 nhiệm vụ + 1 thử thách) | ✅ (6 trang, bản HS) | ✅ (16 câu, đề A/B) |
 | Toán 12 – Bài 8. Biểu thức toạ độ của các phép toán vectơ | ✅ (bản chờ gắn lời giảng, 30 slide) | ✅ (20 nhiệm vụ + 1 thử thách) | ✅ (11 trang, bản HS) | ✅ (16 câu, đề A/B) |
@@ -81,12 +84,13 @@ Trong `index.html`, khối `LINKS` khai báo đường dẫn cho từng bài, kh
 - Bài 6 – Toán 12: khi thầy gửi ghi âm, chỉ thay `bai-hoc/toan12-bai6-bai-giang.html` (giữ tên) và chụp lại ảnh xem trước bài giảng.
   - Khi gắn ghi âm xong: xoá dòng `chuaGiong: true` của `lop12-bai6` trong `LINKS` (index.html) để trang chủ ghi lại "Có giọng thầy giảng".
 - Bài 7, 8, 9, 10 – Toán 12: khi có ghi âm thì thay bài giảng và xoá `chuaGiong`.
-- Bài 10, 11, 15 – Toán 11: khi có ghi âm thì thay bài giảng (giữ tên file), chụp lại ảnh xem trước và xoá `chuaGiong`.
+- Bài 10, 11, 12, 13, 15, 16 – Toán 11: khi có ghi âm thì thay bài giảng (giữ tên file), chụp lại ảnh xem trước và xoá `chuaGiong`.
 - Bài 17, 18, 19, 20 – Toán 6: khi có ghi âm thì thay bài giảng (giữ tên file), chụp lại ảnh xem trước và xoá `chuaGiong`.
 - Bổ sung HSA.
 - Mua và gắn tên miền mrblackmath.vn.
 
 ## Nhật ký
+- 11/10/2026 (12h30): Đưa đủ 4 phần Bài 12, Bài 13 (Chương IV) và Bài 16 (Chương V) – Toán 11 từ gói `T11_Bai12.zip`, `T11_Bai13.zip`, `T11B16_GoiBaiHoc.zip` (bản HS); thay trang tự luyện Bài 11 bằng bản mới trong gói `T11_Bai11.zip` gửi 8h17 (chỉ khác nhiệm vụ p05 được thu gọn cho khỏi tràn; các file khác trùng bản đã lên). Kiểm độc lập toàn bộ đáp án 3 phiếu GV (Bài 12: 110 câu/ý; Bài 13: 101; Bài 16: 100): không câu nào sai; phiếu HS không lộ đáp án; mọi đáp án trả lời ngắn ≤ 4 kí tự. Ghi nhận điểm nên sửa ở bản gốc (chưa sửa): Bài 12 – NC2 câu 3 nên ghi "AB ∥ CD", chân thang AB vẽ nét đứt nên đổi nét liền; NC1 câu 1 chữ "mặt đất" đè nhãn M. Bài 13 – NC2 câu 2 hình sàn ba tầng ngược tỉ lệ số liệu; hình câu 16 (dùng lại ở câu 17, 18) vẽ AB dài hơn BC trái dữ kiện; Phần III câu 4 hình thừa nhãn C₁, C₂. Bài 16 – NC1 câu 5 đồ thị bắt đầu từ O trong khi h(0) = 0,5 (rất nhỏ). Áp lớp sửa chung; bỏ lớp vỏ claude.ai và giữ CSS giao diện trong vỏ; nới khoảng cách nhãn "Bản chờ hoàn thiện" với trục y ở bìa Bài 16. Ảnh xem trước; thử 3 khổ màn hình (36 lượt): 0 lỗi JS, không tràn ngang, nút GV ẩn. Gửi qua Pull Request theo yêu cầu thầy (xem trước rồi mới gộp vào `main`).
 - 11/10/2026 (8h30): Đưa đủ 4 phần Bài 10, Bài 11 (Chương IV) và Bài 15 (Chương V) – Toán 11 lên web từ gói `T11_Bai10.zip`, `T11_Bai11.zip`, `T11B15_GoiBaiHoc.zip` (gói Bài 15 thầy gửi lại lúc 7h58 trùng khớp nội dung gói trước, chỉ thêm LINKS.txt). Kiểm độc lập toàn bộ đáp án 3 phiếu GV (Bài 10: 82 câu/ý; Bài 11: 98; Bài 15: 122; câu tính kiểm lại bằng toạ độ/tính số Python): không câu nào sai đáp án; phiếu HS không lộ đáp án. Ghi nhận các điểm nên sửa ở bản gốc (chưa sửa vì là PDF của thầy): Bài 10 – NC2 câu 2 đề ghi "từ M qua N kéo dài chạm đất" phải là "từ N qua M"; Phần I câu 18 phương án A "đường thẳng qua S cắt a" cũng thoả nên dễ tranh cãi; hình Phần III câu 7 vẽ M gần trung điểm SA (đề SM = 2MA). Bài 11 – NC2 câu 4 hình bể kính vẽ CD ngắn trái số liệu CD = 50, DA = 12; Phần II câu 12c nên thêm AB ≠ CD. Bài 15 – 3 đáp án trả lời ngắn dài quá 4 kí tự (III.10: 54,63; NC2.1: 100,53; NC2.4: 16,36). Áp lớp sửa chung; bỏ lớp vỏ claude.ai và giữ CSS giao diện trong vỏ; bỏ "· Bản Học sinh"/"· HS" ở tiêu đề tab; nới khoảng cách nhãn "Bản chờ hoàn thiện" với chữ S ở bìa Bài 10. Ảnh xem trước; thử 3 khổ màn hình (27 lượt): 0 lỗi JS, không tràn ngang, nút GV ẩn. Cả 3 bài chưa có lời giảng (`chuaGiong`).
 - 11/10/2026 (8h): Đưa đủ 4 phần Bài 17, 18, 19, 20 – Toán 6 (Chương III: Bài 17; Chương IV: Bài 18–20) lên web từ gói `T6_Bai17-20_TronBo.zip` (bản HS; bài kiểm tra dùng chung 1 bản). Kiểm tra độc lập đáp án cả 4 phiếu bản GV (Phần A–D): đều đúng; phiếu HS (2 trang) không lộ đáp án. Áp lớp sửa chung: thẻ meta ứng dụng + `audioSession`, `thong-ke.js`, nút toàn màn hình có dự phòng `mbFsHint`, nút ⌂, khối xoay máy; đổi 3 link claude.ai trong luyện tập/kiểm tra sang tên file tương đối; bỏ thẻ `</head><body>` lặp ở 4 bài giảng. Cả 4 bài chưa có lời giảng (`chuaGiong`). Ảnh xem trước 12 ô; thử 3 khổ màn hình (36 lượt): 0 lỗi JS, không tràn ngang, nút GV ẩn.
 - 10/10/2026 (22h30): Thầy báo bài giảng Toán 12 (trừ Bài 16 – Toán 6) trên điện thoại không quay ngang được. Giả lập iPhone 13 / Pixel 7 (Chromium): cả 18 trang đều xoay và co giãn đúng, chưa tái hiện được lỗi; mã xoay/co giãn của Toán 12 giống Bài 16, không trang nào khoá hướng màn hình. Đã: (1) thêm khối co giãn lại nhiều nhịp sau khi xoay cho cả 18 trang; (2) bỏ thẻ `</head><body>` bị lặp trong 15 trang Toán 12. Chờ thầy cho biết máy/trình duyệt và hiện tượng cụ thể để thử lại.
