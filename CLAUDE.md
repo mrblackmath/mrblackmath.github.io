@@ -1,6 +1,6 @@
 # Sổ quản lý website Mr Black NBK
 
-Cập nhật: 11/10/2026 (17h45)
+Cập nhật: 11/10/2026 (18h)
 
 ## Địa chỉ và nơi lưu
 - **Website:** https://mrblackmath.github.io
@@ -73,6 +73,7 @@ Trong `index.html`, khối `LINKS` khai báo đường dẫn cho từng bài, kh
 | Toán 11 – Bài 14. Phép chiếu song song | ✅ (bản chờ gắn lời giảng, 25 slide) | ✅ (20 nhiệm vụ + 1 thử thách) | ✅ (12 trang, bản HS, đã sửa 2 lỗi) | ✅ (16 câu, đề A/B) |
 | Toán 11 – Bài 15. Giới hạn của dãy số | ✅ (bản chờ gắn lời giảng, 38 slide) | ✅ (18 nhiệm vụ + 1 thử thách) | ✅ (9 trang, bản HS) | ✅ (15 câu, đề A/B) |
 | Toán 11 – Bài 16. Giới hạn của hàm số | ✅ (bản chờ gắn lời giảng, 44 slide) | ✅ (16 nhiệm vụ + 1 thử thách) | ✅ (9 trang, bản HS) | ✅ (15 câu, đề A/B) |
+| Toán 11 – Ôn tập Chương V. Giới hạn. Hàm số liên tục | ✅ Tổng hợp kiến thức | ✅ | ✅ (9 trang, bản HS) | ✅ |
 | Toán 12 – Bài 6. Vectơ trong không gian | ✅ (bản chờ gắn lời giảng, 56 slide) | ✅ (27 nhiệm vụ + 1 thử thách) | ✅ (5 trang, bản HS) | ✅ (16 câu, đề A/B) |
 | Toán 12 – Bài 7. Hệ trục toạ độ trong không gian | ✅ (bản chờ gắn lời giảng, 29 slide) | ✅ (20 nhiệm vụ + 1 thử thách) | ✅ (6 trang, bản HS) | ✅ (16 câu, đề A/B) |
 | Toán 12 – Bài 8. Biểu thức toạ độ của các phép toán vectơ | ✅ (bản chờ gắn lời giảng, 30 slide) | ✅ (20 nhiệm vụ + 1 thử thách) | ✅ (11 trang, bản HS) | ✅ (16 câu, đề A/B) |
@@ -110,6 +111,7 @@ Trong `index.html`, khối `LINKS` khai báo đường dẫn cho từng bài, kh
 - Mua và gắn tên miền mrblackmath.vn.
 
 ## Nhật ký
+- 11/10/2026 (18h): Đưa Ôn tập Chương V – Toán 11 (`lop11-ontap5`) từ gói `T11C5_GoiOnTapChuong.zip` (bản HS), qua Pull Request. Kiểm độc lập 109 câu/ý phiếu GV: không lỗi toán; phiếu HS không có lời giải. Ghi nhận (chưa sửa): Nâng cao 2 câu 1 đáp án 133,3 dài 5 kí tự và hình HS ghi sẵn 400/3; câu 2 hình HS đánh dấu sẵn (16; 40); câu 4 hình HS vẽ sẵn các bước chia đôi. Thử 3 khổ màn hình: 0 lỗi JS, không tràn ngang, nút GV ẩn.
 - 11/10/2026 (17h45): Đưa Bài 17 – Toán 11 (Hàm số liên tục) từ gói `T11B17_GoiBaiHoc.zip` (bản HS), qua Pull Request. Kiểm độc lập 103 câu/ý phiếu GV: không đáp án nào sai; phiếu HS không lộ đáp án. Ghi nhận (chưa sửa): Phần III câu 3 đáp án −0,17 dài 5 kí tự; bản GV có khoảng trắng lớn ở trang đầu Nâng cao 1. Thử 3 khổ màn hình: 0 lỗi JS, không tràn ngang, nút GV ẩn. Cùng lúc thầy gửi lại gói Bài 15, 16 – Toán 11 (17h33) và gói Ôn tập T12 C3, T11 C4, T9 C4 (17h29): trùng khớp bản đã lên, không thay (riêng phiếu T12 C3 web giữ bản đã sửa R′).
 - 11/10/2026 (14h30): Lô 17 gói gửi chiều 11/10, qua Pull Request: Toán 6 Ôn tập Chương III, IV; Toán 7 Bài 7–11; Toán 8 Bài 10–14; Toán 9 Bài 11, 12, Ôn tập Chương IV; Toán 11 Ôn tập Chương IV; Toán 12 Ôn tập Chương III (bản HS). Gói T6 Ôn tập C4 và T7 Bài 11 thầy gửi lại trùng khớp gói trước. (Trước đó, theo lời thầy, đã bỏ hẳn một bản dựng Toán 7 Bài 7–11 chưa đẩy lên, và xoá nhánh trùng `claude/amazing-johnson-6ekzu2`.)
   - Bài Ôn tập: khoá `lop<lớp>-ontap<số chương>`, file `…-on-tap-chuong<số>-tong-hop/luyen-tap/kiem-tra.html`; không có cờ `chuaGiong` (không có lời giảng). Đổi link claude.ai (T6 C3, C4) và đường dẫn thư mục `../01_…` (T9 C4) sang tên file trên web. T11 C4 có lớp vỏ claude.ai: bỏ vỏ, giữ CSS. Tiêu đề tab "Tự kiểm tra Chương X · Chương X ·" sửa thành "Tự kiểm tra cuối chương · Ôn tập Chương X ·".
