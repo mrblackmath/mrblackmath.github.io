@@ -1,6 +1,6 @@
 # Sổ quản lý website Mr Black NBK
 
-Cập nhật: 10/10/2026 (22h)
+Cập nhật: 11/10/2026 (8h)
 
 ## Địa chỉ và nơi lưu
 - **Website:** https://mrblackmath.github.io
@@ -44,6 +44,10 @@ Trong `index.html`, khối `LINKS` khai báo đường dẫn cho từng bài, kh
 | Bài | Bài giảng | Luyện tập | Phiếu PDF | Kiểm tra |
 |---|---|---|---|---|
 | Toán 6 – Bài 16. Phép nhân số nguyên | ✅ | ✅ | ✅ | ✅ |
+| Toán 6 – Bài 17. Phép chia hết. Ước và bội của một số nguyên | ✅ (bản chờ gắn lời giảng, 18 slide) | ✅ (17 nhiệm vụ + 1 thử thách) | ✅ (2 trang, bản HS) | ✅ (12 câu) |
+| Toán 6 – Bài 18. Hình tam giác đều. Hình vuông. Hình lục giác đều | ✅ (bản chờ gắn lời giảng, 17 slide) | ✅ (16 nhiệm vụ + 1 thử thách) | ✅ (2 trang, bản HS) | ✅ (12 câu) |
+| Toán 6 – Bài 19. Hình chữ nhật. Hình thoi. Hình bình hành. Hình thang cân | ✅ (bản chờ gắn lời giảng, 18 slide) | ✅ (16 nhiệm vụ + 1 thử thách) | ✅ (2 trang, bản HS) | ✅ (12 câu) |
+| Toán 6 – Bài 20. Chu vi và diện tích của một số tứ giác đã học | ✅ (bản chờ gắn lời giảng, 20 slide) | ✅ (16 nhiệm vụ + 1 thử thách) | ✅ (2 trang, bản HS) | ✅ (12 câu) |
 | Toán 12 – Bài 6. Vectơ trong không gian | ✅ (bản chờ gắn lời giảng, 56 slide) | ✅ (27 nhiệm vụ + 1 thử thách) | ✅ (5 trang, bản HS) | ✅ (16 câu, đề A/B) |
 | Toán 12 – Bài 7. Hệ trục toạ độ trong không gian | ✅ (bản chờ gắn lời giảng, 29 slide) | ✅ (20 nhiệm vụ + 1 thử thách) | ✅ (6 trang, bản HS) | ✅ (16 câu, đề A/B) |
 | Toán 12 – Bài 8. Biểu thức toạ độ của các phép toán vectơ | ✅ (bản chờ gắn lời giảng, 30 slide) | ✅ (20 nhiệm vụ + 1 thử thách) | ✅ (11 trang, bản HS) | ✅ (16 câu, đề A/B) |
@@ -73,10 +77,12 @@ Trong `index.html`, khối `LINKS` khai báo đường dẫn cho từng bài, kh
 - Bài 6 – Toán 12: khi thầy gửi ghi âm, chỉ thay `bai-hoc/toan12-bai6-bai-giang.html` (giữ tên) và chụp lại ảnh xem trước bài giảng.
   - Khi gắn ghi âm xong: xoá dòng `chuaGiong: true` của `lop12-bai6` trong `LINKS` (index.html) để trang chủ ghi lại "Có giọng thầy giảng".
 - Bài 7, 8, 9, 10 – Toán 12: khi có ghi âm thì thay bài giảng và xoá `chuaGiong`.
+- Bài 17, 18, 19, 20 – Toán 6: khi có ghi âm thì thay bài giảng (giữ tên file), chụp lại ảnh xem trước và xoá `chuaGiong`.
 - Bổ sung HSA.
 - Mua và gắn tên miền mrblackmath.vn.
 
 ## Nhật ký
+- 11/10/2026 (8h): Đưa đủ 4 phần Bài 17, 18, 19, 20 – Toán 6 (Chương III: Bài 17; Chương IV: Bài 18–20) lên web từ gói `T6_Bai17-20_TronBo.zip` (bản HS; bài kiểm tra dùng chung 1 bản). Kiểm tra độc lập đáp án cả 4 phiếu bản GV (Phần A–D): đều đúng; phiếu HS (2 trang) không lộ đáp án. Áp lớp sửa chung: thẻ meta ứng dụng + `audioSession`, `thong-ke.js`, nút toàn màn hình có dự phòng `mbFsHint`, nút ⌂, khối xoay máy; đổi 3 link claude.ai trong luyện tập/kiểm tra sang tên file tương đối; bỏ thẻ `</head><body>` lặp ở 4 bài giảng. Cả 4 bài chưa có lời giảng (`chuaGiong`). Ảnh xem trước 12 ô; thử 3 khổ màn hình (36 lượt): 0 lỗi JS, không tràn ngang, nút GV ẩn.
 - 10/10/2026 (22h30): Thầy báo bài giảng Toán 12 (trừ Bài 16 – Toán 6) trên điện thoại không quay ngang được. Giả lập iPhone 13 / Pixel 7 (Chromium): cả 18 trang đều xoay và co giãn đúng, chưa tái hiện được lỗi; mã xoay/co giãn của Toán 12 giống Bài 16, không trang nào khoá hướng màn hình. Đã: (1) thêm khối co giãn lại nhiều nhịp sau khi xoay cho cả 18 trang; (2) bỏ thẻ `</head><body>` bị lặp trong 15 trang Toán 12. Chờ thầy cho biết máy/trình duyệt và hiện tượng cụ thể để thử lại.
 - 10/10/2026 (22h): Đưa đủ 4 phần Bài 9 (Khoảng biến thiên và khoảng tứ phân vị) và Bài 10 (Phương sai và độ lệch chuẩn) – Toán 12 lên web từ gói `T12_Bai9.zip`, `T12_Bai10.zip` (bản HS). Kiểm tra độc lập bằng Python các đáp án Phần III của 2 phiếu (Bài 9: 5 câu + Nâng cao 1; Bài 10: 9 câu): khớp hết; phiếu HS không lộ đáp án. Áp lớp sửa chung (bản HS đã sẵn ẩn nút GV); ảnh xem trước; thử 3 khổ màn hình: 0 lỗi JS, không tràn ngang. Cả 2 bài chưa có lời giảng (`chuaGiong`).
 - 10/10/2026 (22h): Theo lời thầy, ô 4 của bài Ôn tập chương đổi thành "Tự kiểm tra cuối chương" (bài thường vẫn "Tự kiểm tra cuối bài").
