@@ -1,6 +1,6 @@
 # Sổ quản lý website Mr Black NBK
 
-Cập nhật: 12/10/2026 (17h15)
+Cập nhật: 12/10/2026 (18h35)
 
 ## Địa chỉ và nơi lưu
 - **Website:** https://mrblackmath.github.io
@@ -87,6 +87,11 @@ Trong `index.html`, khối `LINKS` khai báo đường dẫn cho từng bài, kh
 | Toán 12 – Bài 12. Tích phân | ✅ (bản chờ gắn lời giảng, 25 slide) | ✅ (14 nhiệm vụ + 1 thử thách) | ✅ (8 trang, bản HS, đã sửa 2 chỗ) | ✅ (16 câu, đề A/B) |
 | Toán 12 – Bài 13. Ứng dụng hình học của tích phân | ✅ (bản chờ gắn lời giảng, 26 slide) | ✅ (14 nhiệm vụ + 1 thử thách) | ✅ (7 trang, bản HS, đã sửa 5 nhãn hình) | ✅ (16 câu, đề A/B) |
 | Toán 12 – Ôn tập Chương IV. Nguyên hàm và tích phân | ✅ Tổng hợp kiến thức (14 slide) | ✅ (16 nhiệm vụ + 1 thử thách) | ✅ (8 trang, bản HS, đã sửa 7 chỗ) | ✅ (20 câu, đề A/B) |
+| Toán 12 – Bài 14. Phương trình mặt phẳng | ✅ (bản chờ gắn lời giảng, 49 slide) | ✅ (14 nhiệm vụ + 1 thử thách) | ✅ (7 trang, bản HS, đã sửa 4 chỗ) | ✅ (16 câu, đề A/B) |
+| Toán 12 – Bài 15. Phương trình đường thẳng trong không gian | ✅ (bản chờ gắn lời giảng, 41 slide) | ✅ (14 nhiệm vụ + 1 thử thách) | ✅ (7 trang, bản HS, đã sửa 5 chỗ) | ✅ (16 câu, đề A/B) |
+| Toán 12 – Bài 16. Công thức tính góc trong không gian | ✅ (bản chờ gắn lời giảng, 23 slide) | ✅ (14 nhiệm vụ + 1 thử thách) | ✅ (7 trang, bản HS, đã sửa 4 nhãn hình) | ✅ (16 câu, đề A/B) |
+| Toán 12 – Bài 17. Phương trình mặt cầu | ✅ (bản chờ gắn lời giảng, 27 slide) | ✅ (14 nhiệm vụ + 1 thử thách) | ✅ (7 trang, bản HS, đã sửa 9 chỗ) | ✅ (16 câu, đề A/B) |
+| Toán 12 – Ôn tập Chương V. Phương pháp toạ độ trong không gian | ✅ Tổng hợp kiến thức (15 slide) | ✅ (16 nhiệm vụ + 1 thử thách) | ✅ (7 trang, bản HS, đã sửa 3 chỗ) | ✅ (20 câu, đề A/B) |
 
 ## Lớp sửa chung đã áp dụng cho mọi trang bài học (áp dụng tiếp cho bài mới)
 - Bản dành cho học sinh: ẩn nút "Giáo viên", ẩn "Làm lại từ đầu" của GV.
@@ -111,14 +116,18 @@ Trong `index.html`, khối `LINKS` khai báo đường dẫn cho từng bài, kh
 ## Việc còn chờ
 - Bài 6 – Toán 12: khi thầy gửi ghi âm, chỉ thay `bai-hoc/toan12-bai6-bai-giang.html` (giữ tên) và chụp lại ảnh xem trước bài giảng.
   - Khi gắn ghi âm xong: xoá dòng `chuaGiong: true` của `lop12-bai6` trong `LINKS` (index.html) để trang chủ ghi lại "Có giọng thầy giảng".
-- Bài 7, 8, 9, 10, 11, 12, 13 – Toán 12: khi có ghi âm thì thay bài giảng (giữ tên file), chụp lại ảnh xem trước và xoá `chuaGiong`.
+- Bài 7–17 – Toán 12: khi có ghi âm thì thay bài giảng (giữ tên file), chụp lại ảnh xem trước và xoá `chuaGiong`.
 - Bài 7–11 – Toán 7; Bài 10–14 – Toán 8; Bài 11, 12 – Toán 9: khi có ghi âm thì thay bài giảng (giữ tên file), chụp lại ảnh xem trước và xoá `chuaGiong`.
 - Bài 10–17 – Toán 11: khi có ghi âm thì thay bài giảng (giữ tên file), chụp lại ảnh xem trước và xoá `chuaGiong`.
 - Bài 17, 18, 19, 20 – Toán 6: khi có ghi âm thì thay bài giảng (giữ tên file), chụp lại ảnh xem trước và xoá `chuaGiong`.
+- Bài giảng Bài 15 (BT 5.15) và Bài 16 (BT 5.20) – Toán 12: gói tự hiểu tử số thứ hai "(x+1)" in trong SGK là "(y+1)"; chờ thầy đối chiếu SGK — nếu gói hiểu sai thì thay 2 trang bài giảng.
 - Bổ sung HSA.
 - Mua và gắn tên miền mrblackmath.vn.
 
 ## Nhật ký
+- 12/10/2026 (18h35): Lô Toán 12 Chương V từ gói `T12_Bai14_PhuongTrinhMatPhang.zip`, `T12_Bai15_PhuongTrinhDuongThang.zip`, `T12_Bai16_CongThucTinhGoc.zip`, `T12_Bai17_PhuongTrinhMatCau.zip`, `T12_OnTapChuong5.zip` (bản HS): Bài 14–17 (`lop12-bai14..17`, `chuaGiong`) và Ôn tập Chương V (`lop12-ontap5`), qua Pull Request. Kiểm độc lập 5 phiếu GV (485 câu/ý; Bài 16 tính lại toàn bộ góc bằng Python): không đáp án nào sai.
+  - Sửa luôn (cả .tex HS + GV): 13 đáp án TLN quá 4 kí tự hoặc lệch yêu cầu làm tròn → đổi yêu cầu làm tròn (B14 III.9 1,6, NC2.5 12,6; B15 NC2.1 6,4, NC2.3 102; B17 III.8 6672, III.9 3336, NC2.1 452, NC2.2 20,8, NC2.3 5004, NC2.5 50,3; ÔT C5 III.10 1668, NC2.4 51, NC2.5 5004); B17 II.8c 10 007,6 → 10 007,5 và NC1.3c 1 111,7 → 1 112 (số liệu lệch do làm tròn radian giữa chừng, đáp án Đúng giữ nguyên); hình lộ đáp số: B15 NC1.1 (bỏ D trong tấm bìa), NC1.2 (bỏ điểm gặp C, vẽ vectơ vận tốc); hình sai/thừa: B15 NC2.2 bỏ tấm bìa thừa, B17 NC2.4 vẽ lại vùng phủ sóng đúng bán kính 5; nhãn: B14 NC1.3 "S = 24" (sát nét đứt của S = 27), NC1.1 C, B16 nhãn C bể kính, "tia nắng", A. XeLaTeX ×2: 0 lỗi, số trang giữ nguyên. Ghi nhận: B15 NC2.2 trùng dữ liệu Phần II câu 10.
+  - Áp lớp sửa chung; ảnh xem trước 15 ô; thử 3 khổ màn hình (45 lượt): 0 lỗi JS, không tràn ngang, nút GV ẩn. Trang chủ: 46 mục LINKS (37 bài học + 9 ôn tập chương), 184 đường dẫn đủ file, 0 lỗi JS.
 - 12/10/2026 (17h15): Lô Toán 12 Chương IV từ gói `T12_Bai11_NguyenHam.zip`, `T12_Bai12_TichPhan.zip`, `T12_Bai13_UngDungHinhHocTichPhan.zip`, `T12_OnTapChuong4.zip` (bản HS): Bài 11, 12, 13 (`lop12-bai11/12/13`, `chuaGiong`) và Ôn tập Chương IV (`lop12-ontap4`), qua Pull Request. Kiểm độc lập 4 phiếu GV (388 câu/ý); mọi đáp án TLN ≤ 4 kí tự.
   - Lỗi đáp án (thầy đồng ý sửa 15h42, chỉ bản GV): Bài 13 Phần II câu 7d "thể tích bằng 16π/3" ghi [Đúng] → [Sai] (V = 8π, ý c đã ghi 8π Đúng).
   - Sửa luôn các chỗ nên sửa (cả .tex HS + GV): B11 bỏ mốc lộ đáp số ở NC1 câu 1 (14), 3 (8000), 4 (550, 1250), 5 (29, 6), NC2 câu 1 (85, 4); B12 Phần II câu 9d viết lại "(T(0)+T(6))/2 = 32" (đáp án giữ Sai), NC1 câu 4 bỏ mốc 28; B13 dời nhãn y = x² (NC1 câu 2, dễ nhầm nhánh √x), "vườn cỏ"/mốc 4 (NC1 câu 1), mốc 3 (NC1 câu 5), mốc 2 (NC2 câu 1); ÔT C4 Phần III câu 10 "phần trăm" → "phần mười" (đáp án 3,9), bỏ mốc 10 (NC1 câu 1), 20 ở hai trục (NC1 câu 5), 4 (NC2 câu 1), dời nhãn "mặt cắt"/mốc 4 (NC1 câu 2), mốc ±4 (NC2 câu 3). XeLaTeX ×2: 0 lỗi, 0 thiếu kí tự, 0 Overfull, số trang giữ nguyên.
