@@ -1,6 +1,6 @@
 # Sổ quản lý website Mr Black NBK
 
-Cập nhật: 12/10/2026 (18h35)
+Cập nhật: 12/10/2026 (21h40)
 
 ## Địa chỉ và nơi lưu
 - **Website:** https://mrblackmath.github.io
@@ -120,11 +120,11 @@ Trong `index.html`, khối `LINKS` khai báo đường dẫn cho từng bài, kh
 - Bài 7–11 – Toán 7; Bài 10–14 – Toán 8; Bài 11, 12 – Toán 9: khi có ghi âm thì thay bài giảng (giữ tên file), chụp lại ảnh xem trước và xoá `chuaGiong`.
 - Bài 10–17 – Toán 11: khi có ghi âm thì thay bài giảng (giữ tên file), chụp lại ảnh xem trước và xoá `chuaGiong`.
 - Bài 17, 18, 19, 20 – Toán 6: khi có ghi âm thì thay bài giảng (giữ tên file), chụp lại ảnh xem trước và xoá `chuaGiong`.
-- Bài giảng Bài 15 (BT 5.15) và Bài 16 (BT 5.20) – Toán 12: gói tự hiểu tử số thứ hai "(x+1)" in trong SGK là "(y+1)"; chờ thầy đối chiếu SGK — nếu gói hiểu sai thì thay 2 trang bài giảng.
 - Bổ sung HSA.
 - Mua và gắn tên miền mrblackmath.vn.
 
 ## Nhật ký
+- 12/10/2026 (21h40): Thầy xác nhận BT 5.15 (Bài 15) và 5.20 (Bài 16) – Toán 12 tập hai: tử số thứ hai là "(y+1)" — cách hiểu của gói đúng, không phải sửa. (Trên web, bài giảng chỉ giao 5.20 làm bài tập về nhà, không in đề.) Xoá khỏi Việc còn chờ.
 - 12/10/2026 (18h35): Lô Toán 12 Chương V từ gói `T12_Bai14_PhuongTrinhMatPhang.zip`, `T12_Bai15_PhuongTrinhDuongThang.zip`, `T12_Bai16_CongThucTinhGoc.zip`, `T12_Bai17_PhuongTrinhMatCau.zip`, `T12_OnTapChuong5.zip` (bản HS): Bài 14–17 (`lop12-bai14..17`, `chuaGiong`) và Ôn tập Chương V (`lop12-ontap5`), qua Pull Request. Kiểm độc lập 5 phiếu GV (485 câu/ý; Bài 16 tính lại toàn bộ góc bằng Python): không đáp án nào sai.
   - Sửa luôn (cả .tex HS + GV): 13 đáp án TLN quá 4 kí tự hoặc lệch yêu cầu làm tròn → đổi yêu cầu làm tròn (B14 III.9 1,6, NC2.5 12,6; B15 NC2.1 6,4, NC2.3 102; B17 III.8 6672, III.9 3336, NC2.1 452, NC2.2 20,8, NC2.3 5004, NC2.5 50,3; ÔT C5 III.10 1668, NC2.4 51, NC2.5 5004); B17 II.8c 10 007,6 → 10 007,5 và NC1.3c 1 111,7 → 1 112 (số liệu lệch do làm tròn radian giữa chừng, đáp án Đúng giữ nguyên); hình lộ đáp số: B15 NC1.1 (bỏ D trong tấm bìa), NC1.2 (bỏ điểm gặp C, vẽ vectơ vận tốc); hình sai/thừa: B15 NC2.2 bỏ tấm bìa thừa, B17 NC2.4 vẽ lại vùng phủ sóng đúng bán kính 5; nhãn: B14 NC1.3 "S = 24" (sát nét đứt của S = 27), NC1.1 C, B16 nhãn C bể kính, "tia nắng", A. XeLaTeX ×2: 0 lỗi, số trang giữ nguyên. Ghi nhận: B15 NC2.2 trùng dữ liệu Phần II câu 10.
   - Áp lớp sửa chung; ảnh xem trước 15 ô; thử 3 khổ màn hình (45 lượt): 0 lỗi JS, không tràn ngang, nút GV ẩn. Trang chủ: 46 mục LINKS (37 bài học + 9 ôn tập chương), 184 đường dẫn đủ file, 0 lỗi JS.
