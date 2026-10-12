@@ -717,11 +717,11 @@ const LINKS = {
     kiemtra: 'bai-hoc/toan12-on-tap-chuong4-kiem-tra.html'          // 20 câu, đề A/B
   },
   'lop12-bai14': {
-    giang:   'bai-hoc/toan12-bai14-bai-giang.html',  // Bài giảng tương tác (bản chờ gắn lời giảng, 49 slide)
+    giang:   'bai-hoc/toan12-bai14-bai-giang.html',  // Bài giảng tương tác, 49 slide, lời giảng giọng AI mô phỏng giọng thầy (13/10/2026)
     luyen:   'bai-hoc/toan12-bai14-luyen-tap.html',  // Luyện tập 14 nhiệm vụ + 1 thử thách
     pdf:     'hoc-lieu/toan12-bai14-phieu-tu-luyen.pdf',            // Phiếu luyện tập (tải về, 7 trang)
     kiemtra: 'bai-hoc/toan12-bai14-kiem-tra.html',   // Tự kiểm tra cuối bài, 16 câu, đề A/B
-    chuaGiong: true
+    giongAI: true
   },
   'lop12-bai15': {
     giang:   'bai-hoc/toan12-bai15-bai-giang.html',  // Bài giảng tương tác (bản chờ gắn lời giảng, 41 slide)
@@ -959,7 +959,7 @@ function coverSlide(x, s){
   return '<div class="sl" aria-hidden="true"><div class="sl-top">' + LOGO + '<b>Mr Black</b><i>' + level(x.course) + '</i></div>' +
     '<div class="sl-mid"><span class="sl-eb">' + s.eb + '</span><div class="sl-t">' + lbl(x) + '</div><div class="sl-s">' + esc(x.course.name) + ' · ' + esc(x.chapter.name) + '</div></div>' +
     '<div class="sl-ph">' + photo + '</div>' +
-    '<div class="sl-foot">' + ICONS[s.key] + '<span>' + (s.foot || (s.key === 'giang' && linksOf(x.key).chuaGiong ? 'Lời giảng đang được bổ sung · Slide 1' : FOOT[s.key])) + '</span><span class="bar"></span></div>' +
+    '<div class="sl-foot">' + ICONS[s.key] + '<span>' + (s.foot || (s.key === 'giang' && linksOf(x.key).chuaGiong ? 'Lời giảng đang được bổ sung · Slide 1' : s.key === 'giang' && linksOf(x.key).giongAI ? 'Giọng AI mô phỏng giọng thầy · Slide 1' : FOOT[s.key])) + '</span><span class="bar"></span></div>' +
     '<div class="sl-wm">Mr Black</div></div>';
 }
 // Hình minh hoạ phiếu PDF — cố ý không hiện nội dung đề
@@ -981,7 +981,7 @@ function tile(x, s, i){
   if (!url) act = '<span class="act off" aria-disabled="true">Sắp ra mắt</span>';
   else if (s.key === 'pdf') act = '<a class="act dl" href="' + esc(url) + '" download target="_blank" rel="noopener">' + s.btn + '</a>';
   else act = '<a class="act" href="' + esc(url) + '" target="_blank" rel="noopener" aria-label="' + s.title + ' (mở tab mới)">' + s.btn + '</a>';
-  const desc = (s.key === 'giang' && L.chuaGiong && !x.review) ? 'Đi từng bước từ ý tưởng đến ví dụ. <b>Lời giảng của thầy đang được bổ sung.</b>' : s.desc;
+  const desc = (s.key === 'giang' && L.chuaGiong && !x.review) ? 'Đi từng bước từ ý tưởng đến ví dụ. <b>Lời giảng của thầy đang được bổ sung.</b>' : (s.key === 'giang' && L.giongAI && !x.review) ? 'Đi từng bước từ ý tưởng đến ví dụ. <b>Lời giảng bằng giọng AI mô phỏng giọng thầy.</b>' : s.desc;
   return '<article class="tile' + (url ? ' live' : '') + '" style="--k:' + s.k + '"><div class="pv"><span class="num">' + (i + 1) + '</span>' +
     (url ? '' : '<span class="soonb">Sắp ra mắt</span>') + pv + '</div>' +
     '<div class="bd"><h3>' + s.title + '</h3><p>' + desc + '</p>' + act + '</div></article>';
@@ -994,7 +994,7 @@ function viewLesson(x){
     '<div class="ph"><div><div class="eb">' + esc(x.course.name) + ' · ' + esc(x.chapter.name.split('.')[0]) + '</div>' +
     '<h2>' + lbl(x) + '</h2><div class="sub">' + esc(x.chapter.name) + '</div></div>' +
     '<button class="x" type="button" id="btn-home">← Bảng chào</button></div>' +
-    '<div class="mtip" role="note"><b>📱 Học trên điện thoại:</b><ol><li data-n="1">Xoay ngang máy</li><li data-n="2">Chạm <b>“Bắt đầu học”</b>' + (linksOf(x.key).chuaGiong || x.review ? '' : ' để nghe giọng thầy') + '</li><li data-n="3">Bật toàn màn hình</li></ol><button type="button" id="btn-fs-help">Cách bật toàn màn hình</button></div>' +
+    '<div class="mtip" role="note"><b>📱 Học trên điện thoại:</b><ol><li data-n="1">Xoay ngang máy</li><li data-n="2">Chạm <b>“Bắt đầu học”</b>' + (linksOf(x.key).chuaGiong || x.review ? '' : linksOf(x.key).giongAI ? ' để nghe lời giảng' : ' để nghe giọng thầy') + '</li><li data-n="3">Bật toàn màn hình</li></ol><button type="button" id="btn-fs-help">Cách bật toàn màn hình</button></div>' +
     '<div class="tiles">' + stepsOf(x).map((s, k) => tile(x, s, k)).join('') + '</div>' +
     '<div class="pf"><button class="btn" id="btn-done" type="button" aria-pressed="' + done + '">' + (done ? '✓ Đã học xong bài này' : 'Đánh dấu đã học') + '</button><div class="pn">' +
     (prev ? '<button class="btn" type="button" data-go="' + prev.key + '">‹ <span>' + lbl(prev) + '</span></button>' : '') +
