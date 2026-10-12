@@ -1,6 +1,6 @@
 # Sổ quản lý website Mr Black NBK
 
-Cập nhật: 12/10/2026 (21h40)
+Cập nhật: 12/10/2026 (22h)
 
 ## Địa chỉ và nơi lưu
 - **Website:** https://mrblackmath.github.io
@@ -124,6 +124,7 @@ Trong `index.html`, khối `LINKS` khai báo đường dẫn cho từng bài, kh
 - Mua và gắn tên miền mrblackmath.vn.
 
 ## Nhật ký
+- 12/10/2026 (22h): Báo cáo website. Trên web 46 mục = 37 bài học + 9 Ôn tập chương (T6: 5 bài + ÔT C3, C4; T7: 5 bài; T8: 5 bài; T9: 2 bài + ÔT C4; T10: ÔT C2; T11: 8 bài + ÔT C4, C5; T12: 12 bài + ÔT C3, C4, C5); 184/184 đường dẫn có file, mọi trang nạp `thong-ke.js`; 1 bài có lời giảng (T6 Bài 16), 36 bài `chuaGiong`. Google Analytics 10–11/10 (12/10 chưa xử lí xong): 107 người dùng, 161 phiên, 215 lượt xem; 11/10: 71 người dùng, 100 phiên, 137 lượt xem. Nguồn: mạng xã hội 85 phiên (TB 27 giây), trực tiếp 73 (TB 1 phút 54 giây), video 2, Google 1. Trang chủ 162 lượt (75%, TB 29 giây/người); bài giảng T12 Bài 6: 32 lượt/21 người (TB 3 phút 41 giây); luyện tập T12 Bài 6: 5 lượt/3 người (TB 12 phút); bài giảng T6 Bài 16: 4. Thời gian thực 21h55: 6 người dùng/30 phút (5 người mới), đang xem T12 Bài 6. Thầy nhắn "gộp" (22h01): đã gộp PR #11 (sổ quản lý BT 5.15, 5.20) và PR #12 (báo cáo này).
 - 12/10/2026 (21h40): Thầy xác nhận BT 5.15 (Bài 15) và 5.20 (Bài 16) – Toán 12 tập hai: tử số thứ hai là "(y+1)" — cách hiểu của gói đúng, không phải sửa. (Trên web, bài giảng chỉ giao 5.20 làm bài tập về nhà, không in đề.) Xoá khỏi Việc còn chờ.
 - 12/10/2026 (18h35): Lô Toán 12 Chương V từ gói `T12_Bai14_PhuongTrinhMatPhang.zip`, `T12_Bai15_PhuongTrinhDuongThang.zip`, `T12_Bai16_CongThucTinhGoc.zip`, `T12_Bai17_PhuongTrinhMatCau.zip`, `T12_OnTapChuong5.zip` (bản HS): Bài 14–17 (`lop12-bai14..17`, `chuaGiong`) và Ôn tập Chương V (`lop12-ontap5`), qua Pull Request. Kiểm độc lập 5 phiếu GV (485 câu/ý; Bài 16 tính lại toàn bộ góc bằng Python): không đáp án nào sai.
   - Sửa luôn (cả .tex HS + GV): 13 đáp án TLN quá 4 kí tự hoặc lệch yêu cầu làm tròn → đổi yêu cầu làm tròn (B14 III.9 1,6, NC2.5 12,6; B15 NC2.1 6,4, NC2.3 102; B17 III.8 6672, III.9 3336, NC2.1 452, NC2.2 20,8, NC2.3 5004, NC2.5 50,3; ÔT C5 III.10 1668, NC2.4 51, NC2.5 5004); B17 II.8c 10 007,6 → 10 007,5 và NC1.3c 1 111,7 → 1 112 (số liệu lệch do làm tròn radian giữa chừng, đáp án Đúng giữ nguyên); hình lộ đáp số: B15 NC1.1 (bỏ D trong tấm bìa), NC1.2 (bỏ điểm gặp C, vẽ vectơ vận tốc); hình sai/thừa: B15 NC2.2 bỏ tấm bìa thừa, B17 NC2.4 vẽ lại vùng phủ sóng đúng bán kính 5; nhãn: B14 NC1.3 "S = 24" (sát nét đứt của S = 27), NC1.1 C, B16 nhãn C bể kính, "tia nắng", A. XeLaTeX ×2: 0 lỗi, số trang giữ nguyên. Ghi nhận: B15 NC2.2 trùng dữ liệu Phần II câu 10.
