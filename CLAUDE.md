@@ -1,6 +1,6 @@
 # Sổ quản lý website Mr Black NBK
 
-Cập nhật: 11/10/2026 (22h45)
+Cập nhật: 12/10/2026 (17h15)
 
 ## Địa chỉ và nơi lưu
 - **Website:** https://mrblackmath.github.io
@@ -83,6 +83,10 @@ Trong `index.html`, khối `LINKS` khai báo đường dẫn cho từng bài, kh
 | Toán 12 – Bài 8. Biểu thức toạ độ của các phép toán vectơ | ✅ (bản chờ gắn lời giảng, 30 slide) | ✅ (20 nhiệm vụ + 1 thử thách) | ✅ (11 trang, bản HS) | ✅ (16 câu, đề A/B) |
 | Toán 12 – Bài 9. Khoảng biến thiên và khoảng tứ phân vị | ✅ (bản chờ gắn lời giảng, 22 slide) | ✅ (14 nhiệm vụ + 1 thử thách) | ✅ (9 trang, bản HS) | ✅ (13 câu, đề A/B) |
 | Toán 12 – Bài 10. Phương sai và độ lệch chuẩn | ✅ (bản chờ gắn lời giảng, 19 slide) | ✅ (11 nhiệm vụ + 1 thử thách) | ✅ (9 trang, bản HS) | ✅ (13 câu, đề A/B) |
+| Toán 12 – Bài 11. Nguyên hàm | ✅ (bản chờ gắn lời giảng, 27 slide) | ✅ (14 nhiệm vụ + 1 thử thách) | ✅ (7 trang, bản HS, đã sửa 5 hình) | ✅ (16 câu, đề A/B) |
+| Toán 12 – Bài 12. Tích phân | ✅ (bản chờ gắn lời giảng, 25 slide) | ✅ (14 nhiệm vụ + 1 thử thách) | ✅ (8 trang, bản HS, đã sửa 2 chỗ) | ✅ (16 câu, đề A/B) |
+| Toán 12 – Bài 13. Ứng dụng hình học của tích phân | ✅ (bản chờ gắn lời giảng, 26 slide) | ✅ (14 nhiệm vụ + 1 thử thách) | ✅ (7 trang, bản HS, đã sửa 5 nhãn hình) | ✅ (16 câu, đề A/B) |
+| Toán 12 – Ôn tập Chương IV. Nguyên hàm và tích phân | ✅ Tổng hợp kiến thức (14 slide) | ✅ (16 nhiệm vụ + 1 thử thách) | ✅ (8 trang, bản HS, đã sửa 7 chỗ) | ✅ (20 câu, đề A/B) |
 
 ## Lớp sửa chung đã áp dụng cho mọi trang bài học (áp dụng tiếp cho bài mới)
 - Bản dành cho học sinh: ẩn nút "Giáo viên", ẩn "Làm lại từ đầu" của GV.
@@ -107,7 +111,7 @@ Trong `index.html`, khối `LINKS` khai báo đường dẫn cho từng bài, kh
 ## Việc còn chờ
 - Bài 6 – Toán 12: khi thầy gửi ghi âm, chỉ thay `bai-hoc/toan12-bai6-bai-giang.html` (giữ tên) và chụp lại ảnh xem trước bài giảng.
   - Khi gắn ghi âm xong: xoá dòng `chuaGiong: true` của `lop12-bai6` trong `LINKS` (index.html) để trang chủ ghi lại "Có giọng thầy giảng".
-- Bài 7, 8, 9, 10 – Toán 12: khi có ghi âm thì thay bài giảng và xoá `chuaGiong`.
+- Bài 7, 8, 9, 10, 11, 12, 13 – Toán 12: khi có ghi âm thì thay bài giảng (giữ tên file), chụp lại ảnh xem trước và xoá `chuaGiong`.
 - Bài 7–11 – Toán 7; Bài 10–14 – Toán 8; Bài 11, 12 – Toán 9: khi có ghi âm thì thay bài giảng (giữ tên file), chụp lại ảnh xem trước và xoá `chuaGiong`.
 - Bài 10–17 – Toán 11: khi có ghi âm thì thay bài giảng (giữ tên file), chụp lại ảnh xem trước và xoá `chuaGiong`.
 - Bài 17, 18, 19, 20 – Toán 6: khi có ghi âm thì thay bài giảng (giữ tên file), chụp lại ảnh xem trước và xoá `chuaGiong`.
@@ -115,6 +119,10 @@ Trong `index.html`, khối `LINKS` khai báo đường dẫn cho từng bài, kh
 - Mua và gắn tên miền mrblackmath.vn.
 
 ## Nhật ký
+- 12/10/2026 (17h15): Lô Toán 12 Chương IV từ gói `T12_Bai11_NguyenHam.zip`, `T12_Bai12_TichPhan.zip`, `T12_Bai13_UngDungHinhHocTichPhan.zip`, `T12_OnTapChuong4.zip` (bản HS): Bài 11, 12, 13 (`lop12-bai11/12/13`, `chuaGiong`) và Ôn tập Chương IV (`lop12-ontap4`), qua Pull Request. Kiểm độc lập 4 phiếu GV (388 câu/ý); mọi đáp án TLN ≤ 4 kí tự.
+  - Lỗi đáp án (thầy đồng ý sửa 15h42, chỉ bản GV): Bài 13 Phần II câu 7d "thể tích bằng 16π/3" ghi [Đúng] → [Sai] (V = 8π, ý c đã ghi 8π Đúng).
+  - Sửa luôn các chỗ nên sửa (cả .tex HS + GV): B11 bỏ mốc lộ đáp số ở NC1 câu 1 (14), 3 (8000), 4 (550, 1250), 5 (29, 6), NC2 câu 1 (85, 4); B12 Phần II câu 9d viết lại "(T(0)+T(6))/2 = 32" (đáp án giữ Sai), NC1 câu 4 bỏ mốc 28; B13 dời nhãn y = x² (NC1 câu 2, dễ nhầm nhánh √x), "vườn cỏ"/mốc 4 (NC1 câu 1), mốc 3 (NC1 câu 5), mốc 2 (NC2 câu 1); ÔT C4 Phần III câu 10 "phần trăm" → "phần mười" (đáp án 3,9), bỏ mốc 10 (NC1 câu 1), 20 ở hai trục (NC1 câu 5), 4 (NC2 câu 1), dời nhãn "mặt cắt"/mốc 4 (NC1 câu 2), mốc ±4 (NC2 câu 3). XeLaTeX ×2: 0 lỗi, 0 thiếu kí tự, 0 Overfull, số trang giữ nguyên.
+  - Áp lớp sửa chung (bỏ thẻ `</head><body>` lặp, nút GV vốn ẩn); ảnh xem trước 12 ô; thử 3 khổ màn hình (36 lượt): 0 lỗi JS, không tràn ngang, nút GV ẩn. Trang chủ: 41 mục LINKS (33 bài học + 8 ôn tập chương), 164 đường dẫn đủ file, 0 lỗi JS.
 - 11/10/2026 (22h45): Đưa Ôn tập Chương II – Toán 10 (`lop10-ontap2`, mục đầu tiên của Toán 10) từ gói `T10C2_OnTapChuongII.zip` (bản HS); thầy dặn "đưa lên web, làm xong gửi báo cáo" nên tạo Pull Request rồi gộp luôn. Kiểm độc lập 98 câu/ý phiếu GV: không lỗi sai. Theo quy tắc mới, sửa luôn 4 chỗ nên sửa (cả .tex GV và HS): I.21 phương án A "một trong các đỉnh của đa giác"; nới vùng gạch hình I.10, I.11, I.18, II.5 phủ hết phần không thuộc miền nghiệm; I.19, I.20, II.7, II.8 ghi "(miền tô màu)"; II.5 bỏ mốc 3 và 6 trên trục (lộ đáp số ý a, d). XeLaTeX ×2: 0 lỗi, số trang giữ nguyên (GV 15, HS 11). Thử 3 khổ màn hình: 0 lỗi JS, không tràn ngang, nút GV ẩn. Trên web: 37 mục (30 bài học + 7 ôn tập chương).
 - 11/10/2026 (19h): Theo lời thầy, sửa toàn bộ các chỗ "nên sửa" đã ghi ở 23 phiếu (T6 ÔT C3, C4; T7 Bài 8–11; T8 Bài 10, 12, 13, 14; T9 Bài 11, 12, ÔT C4; T11 Bài 10–17, ÔT C4, C5; T12 ÔT C3): đáp án ngắn quá 4 kí tự → thêm yêu cầu làm tròn/đổi đại lượng hỏi (T11 B15: 54,6; 101; 16,4 · T11 B17: 12m = −2 · T11 ÔT C5: 133 · T12 ÔT C3: 162; 17,1); bỏ nhãn/điểm lộ đáp số ở hình bản HS (T6 ÔT C3 B7, B8; T9 B11 D2; T11 ÔT C5 NC2 câu 1, 2, 4); vẽ lại hình sai tỉ lệ (T11 B11 bể kính; T11 B13 câu 16, sàn ba tầng; T11 ÔT C4 PII.9, NC2.2, NC2.4; T8 B12 I.2, II.1, III.6, III.7; T8 B13 NC2.4; T7 B8 B6); diễn đạt chặt chẽ hơn (thêm "luôn", "theo định nghĩa", AB > BC, AB ≠ CD, B nằm giữa A và C, tầng trệt là tầng 0, định nghĩa góc trong cùng phía…); T11 B10 NC2 câu 2 sửa "từ N qua M"; T7 B10 A1d viết lại ([Đúng]). Mỗi thư mục có CHANGES.md chi tiết. Biên dịch XeLaTeX ×2: 0 lỗi, 0 thiếu kí tự, 0 Overfull, số trang giữ nguyên. Kiểm định độc lập toàn bộ thay đổi: không có lỗi phải sửa. Thay 21 phiếu HS trên web (T11 B16, T7 B11, T9 ÔT C4 bản HS không đổi). Gửi thầy gói `PhieuDaSua_11-10.zip` (tex + pdf GV, HS).
 - 11/10/2026 (18h10): Báo cáo website. Trên web 36 mục = 30 bài học + 6 Ôn tập chương (T6: 5 bài + ÔT C3, C4; T7: 5 bài; T8: 5 bài; T9: 2 bài + ÔT C4; T11: 8 bài + ÔT C4, C5; T12: 5 bài + ÔT C3); 1 bài có lời giảng (T6 Bài 16). Google Analytics, 7 ngày đến hết 10/10 (thực chất là ngày 10/10): 41 người dùng, 61 phiên, 78 lượt xem; nguồn: Zalo 30 phiên, trực tiếp 26, Google 1; Hà Nội 34 người dùng; trang xem nhiều: trang chủ 63, bài giảng T12 Bài 6: 9, T6 Bài 16: 3, T12 Bài 8: 2. Thời gian thực lúc 18h: 12 người dùng trong 30 phút (10 người mới).
