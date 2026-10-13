@@ -1,6 +1,6 @@
 # Sổ quản lý website Mr Black NBK
 
-Cập nhật: 12/10/2026 (22h)
+Cập nhật: 13/10/2026 (14h30)
 
 ## Địa chỉ và nơi lưu
 - **Website:** https://mrblackmath.github.io
@@ -125,6 +125,7 @@ Trong `index.html`, khối `LINKS` khai báo đường dẫn cho từng bài, kh
 - Mua và gắn tên miền mrblackmath.vn.
 
 ## Nhật ký
+- 13/10/2026 (14h30): Báo cáo thống kê. Google Analytics 6–12/10 (thực tế 10–12/10; 13/10 chưa xử lí): 139 người dùng (đều mới), 222 phiên, 305 lượt xem, TB 1 phút 55 giây/người, 9 lượt tải phiếu PDF (8 người). Nguồn người dùng: Zalo 73 (zalo 68 + chat.zalo.me 5), trực tiếp 60, Facebook 4, YouTube 1, Google 1. Trang chủ 215 lượt/128 người; bài giảng T12 Bài 6: 49 lượt/29 người; phiếu tự luyện T12 Bài 6: 7/5; T6 Bài 16: 7/6; T11 Bài 10: 4/3; T9 Bài 12: 3/1; T11 Bài 12: 2/2. Thành phố: Hà Nội 110, TP HCM 10, Hải Phòng 8. Thời gian thực 14h30: 0 người/30 phút. Trên web 46 mục = 37 bài học + 9 Ôn tập chương; PR #13 (giọng AI Bài 14) chờ gộp.
 - 13/10/2026 (0h50): Gắn lời giảng giọng AI mô phỏng giọng thầy cho Bài 14 – Toán 12 (`toan12-bai14-bai-giang.html`): 49/49 slide, 156 câu, 16,2 phút; 19 slide có đoạn nhận xét sau trạm dừng (a1End/a2Start); 84 mốc ▶. Giọng huấn luyện LoRA từ 125 câu (17,1 phút) thầy thu Toán 6; thầy chấm 8/10. Thầy nghe kiểm 19 câu đáng ngờ, chọn đọc lại 6 câu (chọn bản 1B 4D 8D 9B 11C 14D). `LINKS.lop12-bai14`: `chuaGiong` → `giongAI`. Trên web vẫn 46 mục = 37 bài học + 9 Ôn tập chương.
 - 12/10/2026 (22h): Báo cáo website. Trên web 46 mục = 37 bài học + 9 Ôn tập chương (T6: 5 bài + ÔT C3, C4; T7: 5 bài; T8: 5 bài; T9: 2 bài + ÔT C4; T10: ÔT C2; T11: 8 bài + ÔT C4, C5; T12: 12 bài + ÔT C3, C4, C5); 184/184 đường dẫn có file, mọi trang nạp `thong-ke.js`; 1 bài có lời giảng (T6 Bài 16), 36 bài `chuaGiong`. Google Analytics 10–11/10 (12/10 chưa xử lí xong): 107 người dùng, 161 phiên, 215 lượt xem; 11/10: 71 người dùng, 100 phiên, 137 lượt xem. Nguồn: mạng xã hội 85 phiên (TB 27 giây), trực tiếp 73 (TB 1 phút 54 giây), video 2, Google 1. Trang chủ 162 lượt (75%, TB 29 giây/người); bài giảng T12 Bài 6: 32 lượt/21 người (TB 3 phút 41 giây); luyện tập T12 Bài 6: 5 lượt/3 người (TB 12 phút); bài giảng T6 Bài 16: 4. Thời gian thực 21h55: 6 người dùng/30 phút (5 người mới), đang xem T12 Bài 6. Thầy nhắn "gộp" (22h01): đã gộp PR #11 (sổ quản lý BT 5.15, 5.20) và PR #12 (báo cáo này).
 - 12/10/2026 (21h40): Thầy xác nhận BT 5.15 (Bài 15) và 5.20 (Bài 16) – Toán 12 tập hai: tử số thứ hai là "(y+1)" — cách hiểu của gói đúng, không phải sửa. (Trên web, bài giảng chỉ giao 5.20 làm bài tập về nhà, không in đề.) Xoá khỏi Việc còn chờ.
