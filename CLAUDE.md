@@ -1,6 +1,6 @@
 # Sổ quản lý website Mr Black NBK
 
-Cập nhật: 12/10/2026 (22h)
+Cập nhật: 13/10/2026 (20h)
 
 ## Địa chỉ và nơi lưu
 - **Website:** https://mrblackmath.github.io
@@ -78,6 +78,10 @@ Trong `index.html`, khối `LINKS` khai báo đường dẫn cho từng bài, kh
 | Toán 11 – Bài 15. Giới hạn của dãy số | ✅ (bản chờ gắn lời giảng, 38 slide) | ✅ (18 nhiệm vụ + 1 thử thách) | ✅ (9 trang, bản HS) | ✅ (15 câu, đề A/B) |
 | Toán 11 – Bài 16. Giới hạn của hàm số | ✅ (bản chờ gắn lời giảng, 44 slide) | ✅ (16 nhiệm vụ + 1 thử thách) | ✅ (9 trang, bản HS) | ✅ (15 câu, đề A/B) |
 | Toán 11 – Ôn tập Chương V. Giới hạn. Hàm số liên tục | ✅ Tổng hợp kiến thức | ✅ | ✅ (9 trang, bản HS) | ✅ |
+| Toán 11 – Bài 5. Dãy số | ✅ (bản chờ gắn lời giảng, 33 slide) | ✅ (14 nhiệm vụ + 1 thử thách) | ✅ (8 trang, bản HS, đã sửa 2 chỗ) | ✅ (14 câu) |
+| Toán 11 – Bài 6. Cấp số cộng | ✅ (bản chờ gắn lời giảng, 27 slide) | ✅ (14 nhiệm vụ + 1 thử thách) | ✅ (8 trang, bản HS, đã sửa 2 hình) | ✅ (14 câu) |
+| Toán 11 – Bài 7. Cấp số nhân | ✅ (bản chờ gắn lời giảng, 27 slide) | ✅ (14 nhiệm vụ + 1 thử thách) | ✅ (8 trang, bản HS, đã sửa 2 chỗ) | ✅ (14 câu) |
+| Toán 11 – Ôn tập Chương II. Dãy số. Cấp số cộng và cấp số nhân | ✅ Tổng hợp kiến thức | ✅ (20 nhiệm vụ + 1 thử thách) | ✅ (8 trang, bản HS, đã sửa 1 hình) | ✅ (21 câu) |
 | Toán 12 – Bài 6. Vectơ trong không gian | ✅ (bản chờ gắn lời giảng, 56 slide) | ✅ (27 nhiệm vụ + 1 thử thách) | ✅ (5 trang, bản HS) | ✅ (16 câu, đề A/B) |
 | Toán 12 – Bài 7. Hệ trục toạ độ trong không gian | ✅ (bản chờ gắn lời giảng, 29 slide) | ✅ (20 nhiệm vụ + 1 thử thách) | ✅ (6 trang, bản HS) | ✅ (16 câu, đề A/B) |
 | Toán 12 – Bài 8. Biểu thức toạ độ của các phép toán vectơ | ✅ (bản chờ gắn lời giảng, 30 slide) | ✅ (20 nhiệm vụ + 1 thử thách) | ✅ (11 trang, bản HS) | ✅ (16 câu, đề A/B) |
@@ -118,12 +122,15 @@ Trong `index.html`, khối `LINKS` khai báo đường dẫn cho từng bài, kh
   - Khi gắn ghi âm xong: xoá dòng `chuaGiong: true` của `lop12-bai6` trong `LINKS` (index.html) để trang chủ ghi lại "Có giọng thầy giảng".
 - Bài 7–17 – Toán 12: khi có ghi âm thì thay bài giảng (giữ tên file), chụp lại ảnh xem trước và xoá `chuaGiong`.
 - Bài 7–11 – Toán 7; Bài 10–14 – Toán 8; Bài 11, 12 – Toán 9: khi có ghi âm thì thay bài giảng (giữ tên file), chụp lại ảnh xem trước và xoá `chuaGiong`.
-- Bài 10–17 – Toán 11: khi có ghi âm thì thay bài giảng (giữ tên file), chụp lại ảnh xem trước và xoá `chuaGiong`.
+- Bài 5–7, 10–17 – Toán 11: khi có ghi âm thì thay bài giảng (giữ tên file), chụp lại ảnh xem trước và xoá `chuaGiong`.
 - Bài 17, 18, 19, 20 – Toán 6: khi có ghi âm thì thay bài giảng (giữ tên file), chụp lại ảnh xem trước và xoá `chuaGiong`.
 - Bổ sung HSA.
 - Mua và gắn tên miền mrblackmath.vn.
 
 ## Nhật ký
+- 13/10/2026 (20h): Lô Toán 11 Chương II từ gói `T11B5_GoiBaiHoc.zip`, `T11B6_GoiBaiHoc.zip`, `T11B7_GoiBaiHoc.zip`, `T11C2_GoiOnTapChuong.zip` (bản HS): Bài 5, 6, 7 (`lop11-bai5/6/7`, `chuaGiong`) và Ôn tập Chương II (`lop11-ontap2`), qua Pull Request. Kiểm độc lập 4 phiếu GV (418 câu/ý: B5 99, B6 101, B7 119, ÔT C2 99; câu tính kiểm bằng Python): không lỗi làm sai đáp án/đề; phiếu HS không lộ đáp án.
+  - Sửa luôn (cả .tex HS + GV): B5 III.10 đáp án 0,125 quá 4 kí tự → đổi $u_n=n/(n^2+4)$, đáp án 0,25; B5 NC2.1 112,65 → hỏi tiền lãi, làm tròn hàng phần mười, đáp án 12,6; B7 III.6 370368 → rút còn $3+33+333+3\,333$, đáp án 3702; B7 NC2.2 61,99 → làm tròn hàng phần mười, đáp án 62,0; B6 I.12 nhãn "15 viên" đè đường nền (dời nhãn); B6 NC1.3 hình ghi sẵn 204; 186; 168 lộ ý a (bỏ 3 nhãn); ÔT C2 NC2.1 nhãn "5 cm" đè nét lõi cáp (vẽ lại mũi tên bán kính). XeLaTeX ×2: 0 lỗi, 0 thiếu kí tự, 0 Overfull, số trang giữ nguyên (HS 8 trang cả 4 phiếu).
+  - Áp lớp sửa chung (meta ứng dụng + `audioSession`, `thong-ke.js`, nút toàn màn hình có `mbFsHint`, nút ⌂, khối xoay máy; bỏ "· HS" ở tiêu đề tab; nút GV vốn ẩn; gói không có lớp vỏ claude.ai, không có link chéo); ảnh xem trước 12 ô; thử 3 khổ màn hình (36 lượt): 0 lỗi JS, không tràn ngang, nút GV ẩn. Trang chủ: 50 mục LINKS (40 bài học + 10 ôn tập chương), 200 đường dẫn đủ file, 0 lỗi JS. Pull Request #14; thầy nhắn "gộp" (14/10, 8h35): đã gộp vào `main`.
 - 12/10/2026 (22h): Báo cáo website. Trên web 46 mục = 37 bài học + 9 Ôn tập chương (T6: 5 bài + ÔT C3, C4; T7: 5 bài; T8: 5 bài; T9: 2 bài + ÔT C4; T10: ÔT C2; T11: 8 bài + ÔT C4, C5; T12: 12 bài + ÔT C3, C4, C5); 184/184 đường dẫn có file, mọi trang nạp `thong-ke.js`; 1 bài có lời giảng (T6 Bài 16), 36 bài `chuaGiong`. Google Analytics 10–11/10 (12/10 chưa xử lí xong): 107 người dùng, 161 phiên, 215 lượt xem; 11/10: 71 người dùng, 100 phiên, 137 lượt xem. Nguồn: mạng xã hội 85 phiên (TB 27 giây), trực tiếp 73 (TB 1 phút 54 giây), video 2, Google 1. Trang chủ 162 lượt (75%, TB 29 giây/người); bài giảng T12 Bài 6: 32 lượt/21 người (TB 3 phút 41 giây); luyện tập T12 Bài 6: 5 lượt/3 người (TB 12 phút); bài giảng T6 Bài 16: 4. Thời gian thực 21h55: 6 người dùng/30 phút (5 người mới), đang xem T12 Bài 6. Thầy nhắn "gộp" (22h01): đã gộp PR #11 (sổ quản lý BT 5.15, 5.20) và PR #12 (báo cáo này).
 - 12/10/2026 (21h40): Thầy xác nhận BT 5.15 (Bài 15) và 5.20 (Bài 16) – Toán 12 tập hai: tử số thứ hai là "(y+1)" — cách hiểu của gói đúng, không phải sửa. (Trên web, bài giảng chỉ giao 5.20 làm bài tập về nhà, không in đề.) Xoá khỏi Việc còn chờ.
 - 12/10/2026 (18h35): Lô Toán 12 Chương V từ gói `T12_Bai14_PhuongTrinhMatPhang.zip`, `T12_Bai15_PhuongTrinhDuongThang.zip`, `T12_Bai16_CongThucTinhGoc.zip`, `T12_Bai17_PhuongTrinhMatCau.zip`, `T12_OnTapChuong5.zip` (bản HS): Bài 14–17 (`lop12-bai14..17`, `chuaGiong`) và Ôn tập Chương V (`lop12-ontap5`), qua Pull Request. Kiểm độc lập 5 phiếu GV (485 câu/ý; Bài 16 tính lại toàn bộ góc bằng Python): không đáp án nào sai.
