@@ -1,6 +1,6 @@
 # Sổ quản lý website Mr Black NBK
 
-Cập nhật: 13/10/2026 (20h)
+Cập nhật: 16/10/2026 (14h)
 
 ## Địa chỉ và nơi lưu
 - **Website:** https://mrblackmath.github.io
@@ -66,6 +66,12 @@ Trong `index.html`, khối `LINKS` khai báo đường dẫn cho từng bài, kh
 | Toán 9 – Bài 11. Tỉ số lượng giác của góc nhọn | ✅ Bài giảng (chờ gắn lời giảng) | ✅ | ✅ (4 trang, bản HS) | ✅ |
 | Toán 9 – Bài 12. Một số hệ thức giữa cạnh, góc trong tam giác vuông và ứng dụng | ✅ Bài giảng (chờ gắn lời giảng) | ✅ | ✅ (4 trang, bản HS) | ✅ |
 | Toán 9 – Ôn tập Chương IV. Hệ thức lượng trong tam giác vuông | ✅ Tổng hợp kiến thức | ✅ | ✅ (4 trang, bản HS) | ✅ |
+| Toán 9 – Bài 13. Mở đầu về đường tròn | ✅ (bản chờ gắn lời giảng, 18 slide) | ✅ (12 nhiệm vụ + 1 thử thách) | ✅ (3 trang, bản HS, đã sửa 5 chỗ) | ✅ (11 câu, đề A/B) |
+| Toán 9 – Bài 14. Cung và dây của một đường tròn | ✅ (bản chờ gắn lời giảng, 17 slide) | ✅ (12 nhiệm vụ + 1 thử thách) | ✅ (3 trang, bản HS, đã sửa 2 chỗ) | ✅ (11 câu, đề A/B) |
+| Toán 9 – Bài 15. Độ dài của cung tròn. Diện tích hình quạt tròn và hình vành khuyên | ✅ (bản chờ gắn lời giảng, 17 slide) | ✅ (12 nhiệm vụ + 1 thử thách) | ✅ (2 trang, bản HS, đã sửa 4 chỗ) | ✅ (12 câu, đề A/B) |
+| Toán 9 – Bài 16. Vị trí tương đối của đường thẳng và đường tròn | ✅ (bản chờ gắn lời giảng, 16 slide) | ✅ (12 nhiệm vụ + 1 thử thách) | ✅ (3 trang, bản HS, đã sửa 5 chỗ) | ✅ (11 câu, đề A/B) |
+| Toán 9 – Bài 17. Vị trí tương đối của hai đường tròn | ✅ (bản chờ gắn lời giảng, 14 slide) | ✅ (12 nhiệm vụ + 1 thử thách) | ✅ (3 trang, bản HS, đã sửa 4 chỗ) | ✅ (11 câu, đề A/B) |
+| Toán 9 – Ôn tập Chương V. Đường tròn | ✅ Tổng hợp kiến thức (13 slide) | ✅ (20 nhiệm vụ + 1 thử thách) | ✅ (3 trang, bản HS, đã sửa 3 chỗ) | ✅ (16 câu, đề A/B) |
 | Toán 11 – Bài 17. Hàm số liên tục | ✅ Bài giảng (chờ gắn lời giảng) | ✅ | ✅ (12 trang, bản HS) | ✅ |
 | Toán 11 – Ôn tập Chương IV. Quan hệ song song trong không gian | ✅ Tổng hợp kiến thức | ✅ | ✅ (11 trang, bản HS) | ✅ |
 | Toán 12 – Ôn tập Chương III. Các số đặc trưng đo mức độ phân tán | ✅ Tổng hợp kiến thức | ✅ | ✅ (9 trang, bản HS, đã sửa 1 lỗi) | ✅ |
@@ -121,13 +127,17 @@ Trong `index.html`, khối `LINKS` khai báo đường dẫn cho từng bài, kh
 - Bài 6 – Toán 12: khi thầy gửi ghi âm, chỉ thay `bai-hoc/toan12-bai6-bai-giang.html` (giữ tên) và chụp lại ảnh xem trước bài giảng.
   - Khi gắn ghi âm xong: xoá dòng `chuaGiong: true` của `lop12-bai6` trong `LINKS` (index.html) để trang chủ ghi lại "Có giọng thầy giảng".
 - Bài 7–17 – Toán 12: khi có ghi âm thì thay bài giảng (giữ tên file), chụp lại ảnh xem trước và xoá `chuaGiong`.
-- Bài 7–11 – Toán 7; Bài 10–14 – Toán 8; Bài 11, 12 – Toán 9: khi có ghi âm thì thay bài giảng (giữ tên file), chụp lại ảnh xem trước và xoá `chuaGiong`.
+- Bài 7–11 – Toán 7; Bài 10–14 – Toán 8; Bài 11–17 – Toán 9: khi có ghi âm thì thay bài giảng (giữ tên file), chụp lại ảnh xem trước và xoá `chuaGiong`.
 - Bài 5–7, 10–17 – Toán 11: khi có ghi âm thì thay bài giảng (giữ tên file), chụp lại ảnh xem trước và xoá `chuaGiong`.
 - Bài 17, 18, 19, 20 – Toán 6: khi có ghi âm thì thay bài giảng (giữ tên file), chụp lại ảnh xem trước và xoá `chuaGiong`.
 - Bổ sung HSA.
 - Mua và gắn tên miền mrblackmath.vn.
 
 ## Nhật ký
+- 16/10/2026 (14h): Lô Toán 9 Chương V từ gói `T9_Bai13_MoDauVeDuongTron_TongHop.zip`, `T9_Bai14_CungVaDay_TongHop.zip`, `T9_Bai15_DoDaiCungDienTichQuat_TongHop.zip`, `T9_Bai16_ViTriDuongThangDuongTron_TongHop.zip`, `T9_Bai17_ViTriHaiDuongTron_TongHop.zip`, `T9_OnTapChuong5_TongHop.zip` (bản HS): Bài 13–17 (`lop9-bai13..17`, `chuaGiong`) và Ôn tập Chương V (`lop9-ontap5`), qua Pull Request (nhánh `claude/toan9-chuong5`). Kiểm độc lập 6 phiếu GV (81 câu, 194 ý; câu tính và làm tròn với π kiểm bằng Python): không lỗi làm sai đáp án/đề; phiếu HS không lộ đáp án.
+  - Sửa luôn (cả .tex HS + GV, 22 chỗ): B13 hình B1, B3 vẽ sẵn đường tròn lộ kết luận (bỏ), B2 bỏ nhãn H thừa, D2 "M và H nằm cùng phía đối với O" + dời nhãn H, N, đáp án GV B3c bỏ "chẳng hạn"; B14 dời nhãn H (B1), lời giải GV C2a thêm trường hợp M ≡ A, B; B15 dời nhãn "10 cm" (B2), C3 vẽ riêng bán kính 5, 10 + thêm "viết kết quả theo π", D2 viết lại câu mô tả phần tô màu; B16 vẽ lại đúng tỉ lệ B1 (4 hình tròn chồng nhau), B3 (góc AMB 60°), C2 (AC : BD = 4 : 9), D1 (R : OM = 3 : 5) + đề D1 "(O; R)"; B17 B1 bỏ kí hiệu vuông lộ OO′ ⊥ AB, B2 vẽ lại AB = 8, AC = 4 + "(B, C khác A)", C3 vẽ lại AD = 12; ÔT C5 C2 nêu rõ vị trí M, lời giải GV C3b, D2c thêm bước trung gian. XeLaTeX ×2: 0 lỗi, 0 thiếu kí tự, 0 Overfull, số trang giữ nguyên (HS 3, 3, 2, 3, 3, 3).
+  - Áp lớp sửa chung (meta ứng dụng + `audioSession`, `thong-ke.js`, nút toàn màn hình có `mbFsHint`, nút ⌂, khối xoay máy; bỏ thẻ `</head><body>` lặp ở cả 18 trang; ÔT C5 đổi link `../01_TongHopKienThuc/…`, `../02_LuyenTapTongHop/…` sang tên file trên web; nút GV vốn ẩn; không có link claude.ai); ảnh xem trước 18 ô; thử 3 khổ màn hình (57 lượt kể cả trang chủ): 0 lỗi JS, không tràn ngang, nút GV ẩn. Trang chủ: 56 mục LINKS (45 bài học + 11 ôn tập chương), 224 đường dẫn đủ file, 0 lỗi JS.
+- 16/10/2026 (13h30): Báo cáo website theo lớp: 50 mục = 40 bài học + 10 ôn tập chương (T6 7, T7 5, T8 5, T9 3, T10 1, T11 14, T12 15); 200/200 đường dẫn có file. Thiếu so với SGK: T10 chỉ có ÔT C2 (chưa có Bài 3, 4); T6 Chương III thiếu Bài 13–15; chưa có ÔT T7 C2, C3, T8 C3, T12 C2.
 - 13/10/2026 (20h): Lô Toán 11 Chương II từ gói `T11B5_GoiBaiHoc.zip`, `T11B6_GoiBaiHoc.zip`, `T11B7_GoiBaiHoc.zip`, `T11C2_GoiOnTapChuong.zip` (bản HS): Bài 5, 6, 7 (`lop11-bai5/6/7`, `chuaGiong`) và Ôn tập Chương II (`lop11-ontap2`), qua Pull Request. Kiểm độc lập 4 phiếu GV (418 câu/ý: B5 99, B6 101, B7 119, ÔT C2 99; câu tính kiểm bằng Python): không lỗi làm sai đáp án/đề; phiếu HS không lộ đáp án.
   - Sửa luôn (cả .tex HS + GV): B5 III.10 đáp án 0,125 quá 4 kí tự → đổi $u_n=n/(n^2+4)$, đáp án 0,25; B5 NC2.1 112,65 → hỏi tiền lãi, làm tròn hàng phần mười, đáp án 12,6; B7 III.6 370368 → rút còn $3+33+333+3\,333$, đáp án 3702; B7 NC2.2 61,99 → làm tròn hàng phần mười, đáp án 62,0; B6 I.12 nhãn "15 viên" đè đường nền (dời nhãn); B6 NC1.3 hình ghi sẵn 204; 186; 168 lộ ý a (bỏ 3 nhãn); ÔT C2 NC2.1 nhãn "5 cm" đè nét lõi cáp (vẽ lại mũi tên bán kính). XeLaTeX ×2: 0 lỗi, 0 thiếu kí tự, 0 Overfull, số trang giữ nguyên (HS 8 trang cả 4 phiếu).
   - Áp lớp sửa chung (meta ứng dụng + `audioSession`, `thong-ke.js`, nút toàn màn hình có `mbFsHint`, nút ⌂, khối xoay máy; bỏ "· HS" ở tiêu đề tab; nút GV vốn ẩn; gói không có lớp vỏ claude.ai, không có link chéo); ảnh xem trước 12 ô; thử 3 khổ màn hình (36 lượt): 0 lỗi JS, không tràn ngang, nút GV ẩn. Trang chủ: 50 mục LINKS (40 bài học + 10 ôn tập chương), 200 đường dẫn đủ file, 0 lỗi JS. Pull Request #14; thầy nhắn "gộp" (14/10, 8h35): đã gộp vào `main`.
