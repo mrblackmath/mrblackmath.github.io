@@ -44,6 +44,7 @@ Trong `index.html`, khối `LINKS` khai báo đường dẫn cho từng bài, kh
 - Mục lục bám bộ SGK Toán dùng chung (cùng mục lục bộ cũ). Trên web KHÔNG ghi tên bộ sách "Kết nối tri thức"/"KNTT" ở bất cứ đâu: bìa, tiêu đề, mô tả, phiếu PDF, ảnh (thầy dặn 17/10/2026, vì nay dùng chung một bộ sách). HSA bổ sung sau.
 - Mọi báo cáo gửi thầy luôn ghi tổng số bài đã có trên web, kể cả các bài Ôn tập chương (thầy dặn 11/10/2026).
 - Từ 11/10/2026 (chiều) mỗi lần đưa bài lên đều qua Pull Request; thầy nhắn "gộp" thì mới gộp vào `main`.
+- Mẫu phiếu luyện tập duy nhất (thầy chốt 17/10/2026): mọi phiếu theo `website/MAU-PHIEU-LUYEN-TAP.tex` trong Project (gốc là T12B11_Luyentaphs.tex): đầu phiếu logo MB + "Mr Black / TOÁN THPT" (lớp 6–9: "TOÁN THCS") bên trái, tên phiếu + "Created by Mr Black" ở giữa, vạch vàng; chân trang "Mr Black • TOÁN THPT/THCS"; thêm chữ chìm "MR BLACK" chéo giữa trang; "PHẦN NÂNG CAO", "HẾT" như mẫu. Bản đăng web KHÔNG có trang ĐÁP ÁN. Chỉ đổi hình thức, không thêm/bớt nội dung (không tự thêm Phần tự luận).
 - Khi kiểm phiếu thấy chỗ "nên sửa" (đáp án trả lời ngắn quá 4 kí tự, hình lộ đáp số, diễn đạt chưa chặt, hình sai tỉ lệ, nhãn đè…) thì sửa luôn cả .tex bản HS và GV, biên dịch lại, rồi báo trong báo cáo; không để thầy tự sửa (thầy dặn 11/10/2026). Lỗi làm sai đáp án/đề vẫn hỏi thầy trước khi sửa.
 
 ## Các bài đã có
