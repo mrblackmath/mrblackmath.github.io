@@ -17,6 +17,7 @@ icon.png, icon-192.png, icon-512.png, manifest.webmanifest   Biểu tượng khi
 .nojekyll, README.md
 hoc-lieu/               Phiếu PDF (được phép tải về)
 bai-hoc/                Các trang bài học (chỉ xem trực tuyến)
+chung/                  Thư viện dùng chung cho mọi trang bài học: `katex-0.16.45.css` (kèm phông), `katex-0.16.45.js`
 anh/                    Ảnh xem trước slide 1 (`lop<lớp>-<bài>-<giang|luyen|kiemtra>.webp`, 800×450) và ảnh thầy `thay.jpg`
 ```
 
@@ -119,6 +120,7 @@ Trong `index.html`, khối `LINKS` khai báo đường dẫn cho từng bài, kh
 - Đường dẫn chéo giữa các phần dùng tên file tương đối, không dùng link claude.ai.
 - File tải từ claude.ai có thể bọc trong 1 lớp vỏ (`<!doctype html><html><head><meta charset=utf8>…<style>…</style></head><body>` rồi mới đến tài liệu thật). Bỏ vỏ, NHƯNG phải giữ phần CSS của bài nằm sau quy tắc `[hidden]…display:none!important}` trong `<style>` của vỏ (đặt lại vào đầu `<head>` tài liệu thật) — luyện tập/kiểm tra Toán 11 để CSS giao diện ở đó.
 - Xoay máy: cuối mọi trang bài học có khối "Xoay máy: co giãn lại sân khấu…" (bắt orientationchange, screen.orientation, matchMedia, ResizeObserver; co giãn lại nhiều nhịp 0–1,6 giây). Áp tiếp cho bài mới.
+- Thư viện KaTeX dùng chung (từ 17/10/2026): bài mới có khối `<style data-lib="katex-0.16.45">…</style>` và `<script data-lib="katex-0.16.45">…</script>` nhúng sẵn thì thay bằng `<link rel="stylesheet" href="../chung/katex-0.16.45.css" data-lib="katex-0.16.45">` và `<script src="../chung/katex-0.16.45.js" data-lib="katex-0.16.45"></script>` (giữ đúng vị trí). Nếu gói dùng phiên bản KaTeX khác thì thêm file mới vào `chung/`, không ghi đè.
 - Thống kê truy cập: mọi trang (kể cả `index.html`) nạp `thong-ke.js` trong `<head>` (`<script src="../thong-ke.js" defer>` với trang bài học). Mã Google Analytics 4 chỉ điền một chỗ trong `thong-ke.js`.
 
 ## Quy trình thêm một bài mới
