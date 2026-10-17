@@ -18,7 +18,8 @@ icon.png, icon-192.png, icon-512.png, manifest.webmanifest   Biểu tượng khi
 hoc-lieu/               Phiếu PDF (được phép tải về)
 bai-hoc/                Các trang bài học (chỉ xem trực tuyến)
 chung/                  Thư viện dùng chung cho mọi trang bài học: `katex-0.16.45.css` (kèm phông), `katex-0.16.45.js`
-anh/                    Ảnh xem trước slide 1 (`lop<lớp>-<bài>-<giang|luyen|kiemtra>.webp`, 800×450) và ảnh thầy `thay.jpg`
+anh/                    Ảnh xem trước slide 1 (`lop<lớp>-<bài>-<giang|luyen|kiemtra>.webp`, 800×450), ảnh thầy `thay.jpg`, ảnh chia sẻ `chia-se.jpg` (1200×630, hiện khi gửi link qua Zalo/Facebook)
+sitemap.xml, robots.txt  Cho Google tìm bài (sitemap liệt kê trang chủ, mọi trang bài học và phiếu PDF)
 ```
 
 ## Quy ước đặt tên file
@@ -127,10 +128,11 @@ Trong `index.html`, khối `LINKS` khai báo đường dẫn cho từng bài, kh
 1. Thầy gửi các file mới nhất của bài.
 2. Claude kiểm tra nội dung và áp lớp sửa chung.
 3. Claude đặt tên file theo quy ước, cập nhật `LINKS` trong `index.html` và chụp slide 1 làm ảnh xem trước: lưu file `anh/<khoá>-<giang|luyen|kiemtra>.webp` (800×450, WebP chất lượng 80) rồi ghi đường dẫn vào khối `ANH`. KHÔNG nhúng ảnh base64 vào `index.html` (từ 17/10/2026, để trang chủ nhẹ).
-4. Claude thử trên khổ máy tính, điện thoại dọc và điện thoại ngang.
-5. Claude commit và đẩy thẳng lên nhánh `main`.
-6. Chờ GitHub Pages cập nhật (khoảng 1–2 phút).
-7. Claude kiểm tra web thật và báo cáo.
+4. Gắn thẻ chia sẻ/tìm kiếm cho trang mới (giống các trang đã có): `<meta name="description">`, `canonical`, `og:title/description/url/image` (ảnh `anh/chia-se.jpg`), `twitter:card`; tiêu đề tab có "· Toán <lớp> · Mr Black"; thêm đường dẫn trang và phiếu PDF mới vào `sitemap.xml`.
+5. Claude thử trên khổ máy tính, điện thoại dọc và điện thoại ngang.
+6. Claude commit, mở Pull Request; thầy nhắn "gộp" thì gộp vào `main`.
+7. Chờ GitHub Pages cập nhật (khoảng 1–2 phút).
+8. Claude kiểm tra web thật và báo cáo.
 
 ## Việc còn chờ
 - Bài 6 – Toán 12: khi thầy gửi ghi âm, chỉ thay `bai-hoc/toan12-bai6-bai-giang.html` (giữ tên) và chụp lại ảnh xem trước bài giảng.
