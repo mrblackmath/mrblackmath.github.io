@@ -1,6 +1,6 @@
 # Sổ quản lý website Mr Black NBK
 
-Cập nhật: 16/10/2026 (14h)
+Cập nhật: 17/10/2026 (22h)
 
 ## Địa chỉ và nơi lưu
 - **Website:** https://mrblackmath.github.io
@@ -76,6 +76,9 @@ Trong `index.html`, khối `LINKS` khai báo đường dẫn cho từng bài, kh
 | Toán 11 – Ôn tập Chương IV. Quan hệ song song trong không gian | ✅ Tổng hợp kiến thức | ✅ | ✅ (11 trang, bản HS) | ✅ |
 | Toán 12 – Ôn tập Chương III. Các số đặc trưng đo mức độ phân tán | ✅ Tổng hợp kiến thức | ✅ | ✅ (9 trang, bản HS, đã sửa 1 lỗi) | ✅ |
 | Toán 10 – Ôn tập Chương II. Bất phương trình và hệ bất phương trình bậc nhất hai ẩn | ✅ Tổng hợp kiến thức | ✅ | ✅ (11 trang, bản HS, đã sửa 4 chỗ) | ✅ |
+| Toán 10 – Bài 5. Giá trị lượng giác của một góc từ 0° đến 180° | ✅ (bản chờ gắn lời giảng, 22 slide) | ✅ (15 nhiệm vụ + 1 thử thách) | ✅ (7 trang, bản HS, đã sửa 5 chỗ) | ✅ (15 câu, đề A/B) |
+| Toán 10 – Bài 6. Hệ thức lượng trong tam giác | ✅ (bản chờ gắn lời giảng, 32 slide) | ✅ (17 nhiệm vụ + 1 thử thách) | ✅ (8 trang, bản HS, đã sửa 1 chỗ) | ✅ (15 câu, đề A/B) |
+| Toán 10 – Ôn tập Chương III. Hệ thức lượng trong tam giác | ✅ Tổng hợp kiến thức (17 slide) | ✅ (17 nhiệm vụ + 1 thử thách) | ✅ (8 trang, bản HS, đã sửa 4 chỗ) | ✅ (21 câu, đề A/B) |
 | Toán 11 – Bài 10. Đường thẳng và mặt phẳng trong không gian | ✅ (bản chờ gắn lời giảng, 37 slide) | ✅ (21 nhiệm vụ + 1 thử thách) | ✅ (11 trang, bản HS) | ✅ (16 câu, đề A/B) |
 | Toán 11 – Bài 11. Hai đường thẳng song song | ✅ (bản chờ gắn lời giảng, 25 slide) | ✅ (20 nhiệm vụ + 1 thử thách) | ✅ (13 trang, bản HS) | ✅ (16 câu, đề A/B) |
 | Toán 11 – Bài 12. Đường thẳng và mặt phẳng song song | ✅ (bản chờ gắn lời giảng, 23 slide) | ✅ (20 nhiệm vụ + 1 thử thách) | ✅ (12 trang, bản HS) | ✅ (16 câu, đề A/B) |
@@ -130,10 +133,14 @@ Trong `index.html`, khối `LINKS` khai báo đường dẫn cho từng bài, kh
 - Bài 7–11 – Toán 7; Bài 10–14 – Toán 8; Bài 11–17 – Toán 9: khi có ghi âm thì thay bài giảng (giữ tên file), chụp lại ảnh xem trước và xoá `chuaGiong`.
 - Bài 5–7, 10–17 – Toán 11: khi có ghi âm thì thay bài giảng (giữ tên file), chụp lại ảnh xem trước và xoá `chuaGiong`.
 - Bài 17, 18, 19, 20 – Toán 6: khi có ghi âm thì thay bài giảng (giữ tên file), chụp lại ảnh xem trước và xoá `chuaGiong`.
+- Bài 5, 6 – Toán 10: khi có ghi âm thì thay bài giảng (giữ tên file), chụp lại ảnh xem trước và xoá `chuaGiong`.
 - Bổ sung HSA.
 - Mua và gắn tên miền mrblackmath.vn.
 
 ## Nhật ký
+- 17/10/2026 (22h): Lô Toán 10 Chương III từ gói `T10B5.zip`, `T10B6.zip`, `T10C3.zip` (bản HS): Bài 5, 6 (`lop10-bai5/6`, `chuaGiong`) và Ôn tập Chương III (`lop10-ontap3`), qua Pull Request (nhánh `claude/toan10-chuong3`). Kiểm độc lập 3 phiếu GV (B5 53 câu, B6 53, ÔT C3 52; câu tính kiểm bằng Python): không lỗi làm sai đáp án/đề; phiếu HS không lộ đáp án, hình HS trùng GV.
+  - Sửa luôn (cả .tex HS + GV, 10 câu): đáp án TLN quá 4 kí tự → đổi yêu cầu làm tròn (B5 III.4 −0,9; B6 NC2.3 572; ÔT C3 III.2 −0,4, III.7 42,4, III.10 34,6); hình sai tỉ lệ: B5 NC1.2, NC2.2 chân cần cẩu (2 m/20 m, 3 m/25 m, dời nhãn O), NC2.5 thang (góc vẽ 65° → 72,5°); hình chưa khớp đề: B5 NC2.3 kim phút chỉ số 10 + đề nêu hệ trục, bỏ α thừa; ÔT C3 NC1.4 mốc 1/−1 → 50/−50, nhãn "50 cm" dọc cần, đề ghi đơn vị cm. XeLaTeX ×2: 0 lỗi, 0 thiếu kí tự, 0 Overfull, số trang giữ nguyên (HS 7, 8, 8; GV 13, 13, 12).
+  - Áp lớp sửa chung (meta ứng dụng + `audioSession`, `thong-ke.js`, nút toàn màn hình có `mbFsHint`, nút ⌂, khối xoay máy; nút GV vốn ẩn; không có lớp vỏ claude.ai, không có link chéo); tiêu đề tab ÔT C3 kiểm tra sửa thành "Tự kiểm tra cuối chương · …"; ảnh xem trước 9 ô; thử 3 khổ màn hình (30 lượt kể cả trang chủ): 0 lỗi JS, không tràn ngang, nút GV ẩn. Trang chủ: 59 mục LINKS (47 bài học + 12 ôn tập chương), 236 đường dẫn đủ file.
 - 16/10/2026 (14h): Lô Toán 9 Chương V từ gói `T9_Bai13_MoDauVeDuongTron_TongHop.zip`, `T9_Bai14_CungVaDay_TongHop.zip`, `T9_Bai15_DoDaiCungDienTichQuat_TongHop.zip`, `T9_Bai16_ViTriDuongThangDuongTron_TongHop.zip`, `T9_Bai17_ViTriHaiDuongTron_TongHop.zip`, `T9_OnTapChuong5_TongHop.zip` (bản HS): Bài 13–17 (`lop9-bai13..17`, `chuaGiong`) và Ôn tập Chương V (`lop9-ontap5`), qua Pull Request (nhánh `claude/toan9-chuong5`). Kiểm độc lập 6 phiếu GV (81 câu, 194 ý; câu tính và làm tròn với π kiểm bằng Python): không lỗi làm sai đáp án/đề; phiếu HS không lộ đáp án.
   - Sửa luôn (cả .tex HS + GV, 22 chỗ): B13 hình B1, B3 vẽ sẵn đường tròn lộ kết luận (bỏ), B2 bỏ nhãn H thừa, D2 "M và H nằm cùng phía đối với O" + dời nhãn H, N, đáp án GV B3c bỏ "chẳng hạn"; B14 dời nhãn H (B1), lời giải GV C2a thêm trường hợp M ≡ A, B; B15 dời nhãn "10 cm" (B2), C3 vẽ riêng bán kính 5, 10 + thêm "viết kết quả theo π", D2 viết lại câu mô tả phần tô màu; B16 vẽ lại đúng tỉ lệ B1 (4 hình tròn chồng nhau), B3 (góc AMB 60°), C2 (AC : BD = 4 : 9), D1 (R : OM = 3 : 5) + đề D1 "(O; R)"; B17 B1 bỏ kí hiệu vuông lộ OO′ ⊥ AB, B2 vẽ lại AB = 8, AC = 4 + "(B, C khác A)", C3 vẽ lại AD = 12; ÔT C5 C2 nêu rõ vị trí M, lời giải GV C3b, D2c thêm bước trung gian. XeLaTeX ×2: 0 lỗi, 0 thiếu kí tự, 0 Overfull, số trang giữ nguyên (HS 3, 3, 2, 3, 3, 3).
   - Áp lớp sửa chung (meta ứng dụng + `audioSession`, `thong-ke.js`, nút toàn màn hình có `mbFsHint`, nút ⌂, khối xoay máy; bỏ thẻ `</head><body>` lặp ở cả 18 trang; ÔT C5 đổi link `../01_TongHopKienThuc/…`, `../02_LuyenTapTongHop/…` sang tên file trên web; nút GV vốn ẩn; không có link claude.ai); ảnh xem trước 18 ô; thử 3 khổ màn hình (57 lượt kể cả trang chủ): 0 lỗi JS, không tràn ngang, nút GV ẩn. Trang chủ: 56 mục LINKS (45 bài học + 11 ôn tập chương), 224 đường dẫn đủ file, 0 lỗi JS.
