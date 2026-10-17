@@ -1,6 +1,6 @@
 # Sổ quản lý website Mr Black NBK
 
-Cập nhật: 17/10/2026 (22h)
+Cập nhật: 17/10/2026 (22h45)
 
 ## Địa chỉ và nơi lưu
 - **Website:** https://mrblackmath.github.io
@@ -105,6 +105,9 @@ Trong `index.html`, khối `LINKS` khai báo đường dẫn cho từng bài, kh
 | Toán 12 – Bài 16. Công thức tính góc trong không gian | ✅ (bản chờ gắn lời giảng, 23 slide) | ✅ (14 nhiệm vụ + 1 thử thách) | ✅ (7 trang, bản HS, đã sửa 4 nhãn hình) | ✅ (16 câu, đề A/B) |
 | Toán 12 – Bài 17. Phương trình mặt cầu | ✅ (bản chờ gắn lời giảng, 27 slide) | ✅ (14 nhiệm vụ + 1 thử thách) | ✅ (7 trang, bản HS, đã sửa 9 chỗ) | ✅ (16 câu, đề A/B) |
 | Toán 12 – Ôn tập Chương V. Phương pháp toạ độ trong không gian | ✅ Tổng hợp kiến thức (15 slide) | ✅ (16 nhiệm vụ + 1 thử thách) | ✅ (7 trang, bản HS, đã sửa 3 chỗ) | ✅ (20 câu, đề A/B) |
+| Toán 12 – Bài 18. Xác suất có điều kiện | ✅ (bản chờ gắn lời giảng, 29 slide) | ✅ (14 nhiệm vụ + 1 thử thách) | ✅ (8 trang, bản HS) | ✅ (16 câu, đề A/B) |
+| Toán 12 – Bài 19. Công thức xác suất toàn phần và công thức Bayes | ✅ (bản chờ gắn lời giảng, 24 slide) | ✅ (14 nhiệm vụ + 1 thử thách) | ✅ (7 trang, bản HS) | ✅ (16 câu, đề A/B) |
+| Toán 12 – Ôn tập Chương VI. Xác suất có điều kiện | ✅ Tổng hợp kiến thức (14 slide) | ✅ (17 nhiệm vụ + 1 thử thách) | ✅ (8 trang, bản HS, đã sửa 3 chỗ) | ✅ (20 câu, đề A/B) |
 
 ## Lớp sửa chung đã áp dụng cho mọi trang bài học (áp dụng tiếp cho bài mới)
 - Bản dành cho học sinh: ẩn nút "Giáo viên", ẩn "Làm lại từ đầu" của GV.
@@ -129,7 +132,7 @@ Trong `index.html`, khối `LINKS` khai báo đường dẫn cho từng bài, kh
 ## Việc còn chờ
 - Bài 6 – Toán 12: khi thầy gửi ghi âm, chỉ thay `bai-hoc/toan12-bai6-bai-giang.html` (giữ tên) và chụp lại ảnh xem trước bài giảng.
   - Khi gắn ghi âm xong: xoá dòng `chuaGiong: true` của `lop12-bai6` trong `LINKS` (index.html) để trang chủ ghi lại "Có giọng thầy giảng".
-- Bài 7–17 – Toán 12: khi có ghi âm thì thay bài giảng (giữ tên file), chụp lại ảnh xem trước và xoá `chuaGiong`.
+- Bài 7–19 – Toán 12: khi có ghi âm thì thay bài giảng (giữ tên file), chụp lại ảnh xem trước và xoá `chuaGiong`.
 - Bài 7–11 – Toán 7; Bài 10–14 – Toán 8; Bài 11–17 – Toán 9: khi có ghi âm thì thay bài giảng (giữ tên file), chụp lại ảnh xem trước và xoá `chuaGiong`.
 - Bài 5–7, 10–17 – Toán 11: khi có ghi âm thì thay bài giảng (giữ tên file), chụp lại ảnh xem trước và xoá `chuaGiong`.
 - Bài 17, 18, 19, 20 – Toán 6: khi có ghi âm thì thay bài giảng (giữ tên file), chụp lại ảnh xem trước và xoá `chuaGiong`.
@@ -138,6 +141,9 @@ Trong `index.html`, khối `LINKS` khai báo đường dẫn cho từng bài, kh
 - Mua và gắn tên miền mrblackmath.vn.
 
 ## Nhật ký
+- 17/10/2026 (22h45): Lô Toán 12 Chương VI từ gói `T12_Bai18_XacSuatCoDieuKien.zip`, `T12_Bai19_XacSuatToanPhan_Bayes.zip`, `T12_OnTapChuong6.zip` (bản HS; phiếu đã gắn thương hiệu Mr Black: logo, vạch vàng, chữ chìm): Bài 18, 19 (`lop12-bai18/19`, `chuaGiong`) và Ôn tập Chương VI (`lop12-ontap6`). Thầy nhắn "gộp" (22h23) trước khi có Pull Request nên làm xong thì tạo Pull Request rồi gộp luôn. Kiểm độc lập 3 phiếu GV (câu tính kiểm bằng Python): không lỗi làm sai đáp án/đề; mọi đáp án TLN ≤ 4 kí tự; phiếu HS không lộ đáp án, hình HS trùng GV.
+  - Sửa luôn (ÔT C6, cả .tex HS + GV, 3 câu): NC2.3 diễn đạt "Trong số khách là học sinh, có 30% gọi trà sữa…" + nhãn cây Gọi/Không gọi; NC2.5 nhãn cây "Hỏng" → "Móp" (khớp "móp méo"); NC1.5 Ô cửa bí mật "dê" → "con lừa" cho khớp SGK và Bài 18. XeLaTeX ×2: 0 lỗi, 0 thiếu kí tự, 0 Overfull, số trang giữ nguyên (HS 8, GV 13). Ghi chú của gói: SGK BT 6.17 đáp số 4/15 không có trong các phương án SGK (slide ÔT có ghi chú, luyện tập dùng dạng nhập số).
+  - Áp lớp sửa chung (meta ứng dụng + `audioSession`, `thong-ke.js`, nút toàn màn hình có `mbFsHint`, nút ⌂, khối xoay máy; bỏ thẻ `</head><body>` lặp ở cả 9 trang; nút GV vốn ẩn; không link claude.ai, không link chéo). Hình Ô cửa bí mật (cả 9 trang dùng chung): bỏ biểu tượng con dê vì nhãn ghi "con lừa"; bìa Bài 18 ẩn nhãn "người chơi chọn" (đè tiêu đề "Chọn phần học", cửa chọn đã có viền vàng). Ảnh xem trước 9 ô; thử 3 khổ màn hình (30 lượt kể cả trang chủ): 0 lỗi JS, không tràn ngang, nút GV ẩn. Trang chủ: 62 mục LINKS (49 bài học + 13 ôn tập chương), 248 đường dẫn đủ file.
 - 17/10/2026 (22h): Lô Toán 10 Chương III từ gói `T10B5.zip`, `T10B6.zip`, `T10C3.zip` (bản HS): Bài 5, 6 (`lop10-bai5/6`, `chuaGiong`) và Ôn tập Chương III (`lop10-ontap3`), qua Pull Request (nhánh `claude/toan10-chuong3`). Kiểm độc lập 3 phiếu GV (B5 53 câu, B6 53, ÔT C3 52; câu tính kiểm bằng Python): không lỗi làm sai đáp án/đề; phiếu HS không lộ đáp án, hình HS trùng GV.
   - Sửa luôn (cả .tex HS + GV, 10 câu): đáp án TLN quá 4 kí tự → đổi yêu cầu làm tròn (B5 III.4 −0,9; B6 NC2.3 572; ÔT C3 III.2 −0,4, III.7 42,4, III.10 34,6); hình sai tỉ lệ: B5 NC1.2, NC2.2 chân cần cẩu (2 m/20 m, 3 m/25 m, dời nhãn O), NC2.5 thang (góc vẽ 65° → 72,5°); hình chưa khớp đề: B5 NC2.3 kim phút chỉ số 10 + đề nêu hệ trục, bỏ α thừa; ÔT C3 NC1.4 mốc 1/−1 → 50/−50, nhãn "50 cm" dọc cần, đề ghi đơn vị cm. XeLaTeX ×2: 0 lỗi, 0 thiếu kí tự, 0 Overfull, số trang giữ nguyên (HS 7, 8, 8; GV 13, 13, 12).
   - Áp lớp sửa chung (meta ứng dụng + `audioSession`, `thong-ke.js`, nút toàn màn hình có `mbFsHint`, nút ⌂, khối xoay máy; nút GV vốn ẩn; không có lớp vỏ claude.ai, không có link chéo); tiêu đề tab ÔT C3 kiểm tra sửa thành "Tự kiểm tra cuối chương · …"; ảnh xem trước 9 ô; thử 3 khổ màn hình (30 lượt kể cả trang chủ): 0 lỗi JS, không tràn ngang, nút GV ẩn. Trang chủ: 59 mục LINKS (47 bài học + 12 ôn tập chương), 236 đường dẫn đủ file. Pull Request #17; thầy nhắn "gộp" (17/10, 22h09): đã gộp vào `main`.
