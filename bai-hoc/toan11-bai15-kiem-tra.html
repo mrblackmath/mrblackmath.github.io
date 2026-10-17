@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="vi"><head><meta charset="utf-8"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><meta name="apple-mobile-web-app-title" content="Mr Black"><link rel="apple-touch-icon" href="../icon.png"><script>try{if(navigator.audioSession)navigator.audioSession.type='playback'}catch(e){}</script><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><style>body{margin:0}[hidden]{display:none!important}</style>
 <title>Tự kiểm tra · Bài 15 · Giới hạn của dãy số · Toán 11 · Mr Black</title>
-<meta name="description" content="Tự kiểm tra Bài 15. Giới hạn của dãy số – Toán 11 (SGK Kết nối tri thức). Tự kiểm tra, chấm điểm ngay và chỉ ra kiến thức cần xem lại. Miễn phí, không cần đăng ký – Mr Black."><link rel="canonical" href="https://mrblackmath.github.io/bai-hoc/toan11-bai15-kiem-tra.html"><meta property="og:type" content="website"><meta property="og:site_name" content="Mr Black – Toán 6 đến 12"><meta property="og:locale" content="vi_VN"><meta property="og:title" content="Tự kiểm tra · Bài 15. Giới hạn của dãy số · Toán 11"><meta property="og:description" content="Tự kiểm tra Bài 15. Giới hạn của dãy số – Toán 11 (SGK Kết nối tri thức). Tự kiểm tra, chấm điểm ngay và chỉ ra kiến thức cần xem lại. Miễn phí, không cần đăng ký – Mr Black."><meta property="og:url" content="https://mrblackmath.github.io/bai-hoc/toan11-bai15-kiem-tra.html"><meta property="og:image" content="https://mrblackmath.github.io/anh/chia-se.jpg"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta property="og:image:alt" content="Mr Black – Học Toán miễn phí từ lớp 6 đến lớp 12"><meta name="twitter:card" content="summary_large_image"><meta name="theme-color" content="#0d1433">
+<meta name="description" content="Tự kiểm tra Bài 15. Giới hạn của dãy số – Toán 11. Tự kiểm tra, chấm điểm ngay và chỉ ra kiến thức cần xem lại. Miễn phí, không cần đăng ký – Mr Black."><link rel="canonical" href="https://mrblackmath.github.io/bai-hoc/toan11-bai15-kiem-tra.html"><meta property="og:type" content="website"><meta property="og:site_name" content="Mr Black – Toán 6 đến 12"><meta property="og:locale" content="vi_VN"><meta property="og:title" content="Tự kiểm tra · Bài 15. Giới hạn của dãy số · Toán 11"><meta property="og:description" content="Tự kiểm tra Bài 15. Giới hạn của dãy số – Toán 11. Tự kiểm tra, chấm điểm ngay và chỉ ra kiến thức cần xem lại. Miễn phí, không cần đăng ký – Mr Black."><meta property="og:url" content="https://mrblackmath.github.io/bai-hoc/toan11-bai15-kiem-tra.html"><meta property="og:image" content="https://mrblackmath.github.io/anh/chia-se.jpg"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta property="og:image:alt" content="Mr Black – Học Toán miễn phí từ lớp 6 đến lớp 12"><meta name="twitter:card" content="summary_large_image"><meta name="theme-color" content="#0d1433">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;500;600;700&display=swap">
@@ -1181,7 +1181,7 @@ function f3vlab(g, x, y, s){
 const SECS = ['Bắt đầu', 'Giới hạn hữu hạn', 'Quy tắc tính', 'CSN lùi vô hạn', 'Giới hạn vô cực', 'Nộp bài'];
 const SN = ['★', '1', '2', '3', '4', '★'], ST = ['Bắt đầu', 'Giới hạn hữu hạn của dãy số', 'Định lí về giới hạn hữu hạn', 'Tổng của cấp số nhân lùi vô hạn', 'Giới hạn vô cực của dãy số', 'Kết quả'];
 const MENU = [], LKEY = 'mb11b15a';
-const AMETA = {eb: 'Toán 11 · Kết nối tri thức · Bài 15', t: 'Giới hạn<br>của dãy số', min: 30, bai: 'Bài 15'};
+const AMETA = {eb: 'Toán 11 · Bài 15', t: 'Giới hạn<br>của dãy số', min: 30, bai: 'Bài 15'};
 const SECOF = {OBJ01: 1, OBJ02: 2, OBJ03: 3, OBJ04: 4};
 
 
@@ -1492,8 +1492,8 @@ const TIP = o => `<div class="tip">
   <div class="tip-r">${o.calc.join('')}<div class="tip-warn" data-step="4"><b class="bad-t">⚠ Lưu ý</b> ${o.warn}</div></div>
 </div>`;
 const TTV = (rows, o = {}) => `<table class="tbl${o.cls ? ' ' + o.cls : ''}">${rows.map((r, i) => `<tr>${r.map(c => i === 0 ? `<th>${c}</th>` : `<td>${c}</td>`).join('')}</tr>`).join('')}</table>`;
-/* ================= BÀI 15 · GIỚI HẠN CỦA DÃY SỐ (Toán 11 · KNTT · Chương V) =================
-   Nguồn: SGK Toán 11 tập một (KNTT) trang 104–109. Mã kiến thức K01…K07 khớp Blueprint T11-B15. */
+/* ================= BÀI 15 · GIỚI HẠN CỦA DÃY SỐ (Toán 11 · Chương V) =================
+   Nguồn: SGK Toán 11 tập một trang 104–109. Mã kiến thức K01…K07 khớp Blueprint T11-B15. */
 const LIM = R`\lim\limits_{n\to+\infty}`;
 const THEORY = {
   K01: {t: 'Dãy số có giới hạn 0', slide: '1. Giới hạn 0', items: [

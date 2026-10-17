@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="vi"><head><meta charset="utf-8"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><meta name="apple-mobile-web-app-title" content="Mr Black"><link rel="apple-touch-icon" href="../icon.png"><script>try{if(navigator.audioSession)navigator.audioSession.type='playback'}catch(e){}</script><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><style>body{margin:0}[hidden]{display:none!important}</style>
 <title>Bài 14 · Cung và dây của một đường tròn · Toán 9 · Mr Black</title>
-<meta name="description" content="Bài giảng tương tác Bài 14. Cung và dây của một đường tròn – Toán 9 (SGK Kết nối tri thức). Bài giảng tương tác từng bước, có trạm dừng kiểm tra hiểu bài. Miễn phí, không cần đăng ký – Mr Black."><link rel="canonical" href="https://mrblackmath.github.io/bai-hoc/toan9-bai14-bai-giang.html"><meta property="og:type" content="website"><meta property="og:site_name" content="Mr Black – Toán 6 đến 12"><meta property="og:locale" content="vi_VN"><meta property="og:title" content="Bài giảng tương tác · Bài 14. Cung và dây của một đường tròn · Toán 9"><meta property="og:description" content="Bài giảng tương tác Bài 14. Cung và dây của một đường tròn – Toán 9 (SGK Kết nối tri thức). Bài giảng tương tác từng bước, có trạm dừng kiểm tra hiểu bài. Miễn phí, không cần đăng ký – Mr Black."><meta property="og:url" content="https://mrblackmath.github.io/bai-hoc/toan9-bai14-bai-giang.html"><meta property="og:image" content="https://mrblackmath.github.io/anh/chia-se.jpg"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta property="og:image:alt" content="Mr Black – Học Toán miễn phí từ lớp 6 đến lớp 12"><meta name="twitter:card" content="summary_large_image"><meta name="theme-color" content="#0d1433">
+<meta name="description" content="Bài giảng tương tác Bài 14. Cung và dây của một đường tròn – Toán 9. Bài giảng tương tác từng bước, có trạm dừng kiểm tra hiểu bài. Miễn phí, không cần đăng ký – Mr Black."><link rel="canonical" href="https://mrblackmath.github.io/bai-hoc/toan9-bai14-bai-giang.html"><meta property="og:type" content="website"><meta property="og:site_name" content="Mr Black – Toán 6 đến 12"><meta property="og:locale" content="vi_VN"><meta property="og:title" content="Bài giảng tương tác · Bài 14. Cung và dây của một đường tròn · Toán 9"><meta property="og:description" content="Bài giảng tương tác Bài 14. Cung và dây của một đường tròn – Toán 9. Bài giảng tương tác từng bước, có trạm dừng kiểm tra hiểu bài. Miễn phí, không cần đăng ký – Mr Black."><meta property="og:url" content="https://mrblackmath.github.io/bai-hoc/toan9-bai14-bai-giang.html"><meta property="og:image" content="https://mrblackmath.github.io/anh/chia-se.jpg"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta property="og:image:alt" content="Mr Black – Học Toán miễn phí từ lớp 6 đến lớp 12"><meta name="twitter:card" content="summary_large_image"><meta name="theme-color" content="#0d1433">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;500;600;700&display=swap">
@@ -1182,7 +1182,7 @@ function gateUI(){
   $('#next').disabled = b || (S.cur === slides.length - 1 && S.step >= s.max);
 }
 /* =====================================================================
-   BÀI 14 · CUNG VÀ DÂY CỦA MỘT ĐƯỜNG TRÒN — Toán 9 KNTT, tập một, Chương V (tr. 87–90)
+   BÀI 14 · CUNG VÀ DÂY CỦA MỘT ĐƯỜNG TRÒN — Toán 9, tập một, Chương V (tr. 87–90)
    Knowledge IDs: K01 Dây, dây cung, đường kính (= 2R) · K02 Đường kính là dây lớn nhất
    K03 Góc ở tâm, cung, cung nhỏ, cung lớn, nửa đường tròn, góc chắn cung · K04 Số đo của một cung
    K05 Cộng số đo cung, hai cung bằng nhau · K06 Tính số đo cung trong bài toán (hình, thực tế)
@@ -1215,7 +1215,7 @@ const CO = [380, 200];
 addSlide({label: 'Bìa', sec: -1, anchor: 'start', html: R`
 <div class="cover"><div>
   <div class="avatar">${AVATAR}</div>
-  <p class="eb" style="margin-top:26px">Toán 9 · Kết nối tri thức · Chương V</p>
+  <p class="eb" style="margin-top:26px">Toán 9 · Chương V</p>
   <h1 style="font-size:100px">Bài 14<span>Cung và dây của<br>một đường tròn</span></h1>
   <p class="sig">Bài giảng <b>Mr Black NBK</b></p></div>
   <div class="cvr"><div class="fig">${svg2(760, 400, cpath(CO, 170) + apath(CO, 170, 20, 110, 'arcS') + sg2(CO, onC(CO, 170, 20), 'thin') + sg2(CO, onC(CO, 170, 110), 'thin') + sg2(onC(CO, 170, 160), onC(CO, 170, 290)) + ag2(CO, onC(CO, 170, 20), onC(CO, 170, 110), 40, 'α') + dt2(CO) + lab(CO, 'O', 0, 40) + labC(CO, 170, 20, 'A') + labC(CO, 170, 110, 'B'), 'Đường tròn tâm O, góc ở tâm AOB chắn cung nhỏ AB và một dây')}</div>

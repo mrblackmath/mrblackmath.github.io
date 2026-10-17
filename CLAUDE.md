@@ -41,7 +41,7 @@ Trong `index.html`, khối `LINKS` khai báo đường dẫn cho từng bài, kh
 - Bản mới nhất luôn là bản chuẩn. Không giữ bản cũ.
 - Chỉ phiếu PDF được tải về. Bài giảng, luyện tập, kiểm tra chỉ xem trên web.
 - Học sinh không cần đăng ký, không cần tài khoản.
-- Mục lục bám SGK Kết nối tri thức. HSA bổ sung sau.
+- Mục lục bám bộ SGK Toán dùng chung (cùng mục lục bộ cũ). Trên web KHÔNG ghi tên bộ sách "Kết nối tri thức"/"KNTT" ở bất cứ đâu: bìa, tiêu đề, mô tả, phiếu PDF, ảnh (thầy dặn 17/10/2026, vì nay dùng chung một bộ sách). HSA bổ sung sau.
 - Mọi báo cáo gửi thầy luôn ghi tổng số bài đã có trên web, kể cả các bài Ôn tập chương (thầy dặn 11/10/2026).
 - Từ 11/10/2026 (chiều) mỗi lần đưa bài lên đều qua Pull Request; thầy nhắn "gộp" thì mới gộp vào `main`.
 - Khi kiểm phiếu thấy chỗ "nên sửa" (đáp án trả lời ngắn quá 4 kí tự, hình lộ đáp số, diễn đạt chưa chặt, hình sai tỉ lệ, nhãn đè…) thì sửa luôn cả .tex bản HS và GV, biên dịch lại, rồi báo trong báo cáo; không để thầy tự sửa (thầy dặn 11/10/2026). Lỗi làm sai đáp án/đề vẫn hỏi thầy trước khi sửa.
@@ -122,6 +122,7 @@ Trong `index.html`, khối `LINKS` khai báo đường dẫn cho từng bài, kh
 - File tải từ claude.ai có thể bọc trong 1 lớp vỏ (`<!doctype html><html><head><meta charset=utf8>…<style>…</style></head><body>` rồi mới đến tài liệu thật). Bỏ vỏ, NHƯNG phải giữ phần CSS của bài nằm sau quy tắc `[hidden]…display:none!important}` trong `<style>` của vỏ (đặt lại vào đầu `<head>` tài liệu thật) — luyện tập/kiểm tra Toán 11 để CSS giao diện ở đó.
 - Xoay máy: cuối mọi trang bài học có khối "Xoay máy: co giãn lại sân khấu…" (bắt orientationchange, screen.orientation, matchMedia, ResizeObserver; co giãn lại nhiều nhịp 0–1,6 giây). Áp tiếp cho bài mới.
 - Thư viện KaTeX dùng chung (từ 17/10/2026): bài mới có khối `<style data-lib="katex-0.16.45">…</style>` và `<script data-lib="katex-0.16.45">…</script>` nhúng sẵn thì thay bằng `<link rel="stylesheet" href="../chung/katex-0.16.45.css" data-lib="katex-0.16.45">` và `<script src="../chung/katex-0.16.45.js" data-lib="katex-0.16.45"></script>` (giữ đúng vị trí). Nếu gói dùng phiên bản KaTeX khác thì thêm file mới vào `chung/`, không ghi đè.
+- Bỏ tên bộ sách: bài mới có "Toán N · Kết nối tri thức · …", "· KNTT ·", "(SGK Kết nối tri thức)"… thì bỏ phần tên bộ sách (vd thành "Toán N · Chương III"); kiểm lại không còn chữ nào trước khi đưa lên.
 - Thống kê truy cập: mọi trang (kể cả `index.html`) nạp `thong-ke.js` trong `<head>` (`<script src="../thong-ke.js" defer>` với trang bài học). Mã Google Analytics 4 chỉ điền một chỗ trong `thong-ke.js`.
 
 ## Quy trình thêm một bài mới

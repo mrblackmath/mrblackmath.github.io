@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="vi"><head><meta charset="utf-8"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><meta name="apple-mobile-web-app-title" content="Mr Black"><link rel="apple-touch-icon" href="../icon.png"><script>try{if(navigator.audioSession)navigator.audioSession.type='playback'}catch(e){}</script><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><style>body{margin:0}[hidden]{display:none!important}</style>
 <title>Luyện tập · Bài 18 · Xác suất có điều kiện · Toán 12 · Mr Black</title>
-<meta name="description" content="Luyện tập có lời giải Bài 18. Xác suất có điều kiện – Toán 12 (SGK Kết nối tri thức). Luyện tập từng nhiệm vụ, có gợi ý khi vướng và lời giải chi tiết. Miễn phí, không cần đăng ký – Mr Black."><link rel="canonical" href="https://mrblackmath.github.io/bai-hoc/toan12-bai18-luyen-tap.html"><meta property="og:type" content="website"><meta property="og:site_name" content="Mr Black – Toán 6 đến 12"><meta property="og:locale" content="vi_VN"><meta property="og:title" content="Luyện tập có lời giải · Bài 18. Xác suất có điều kiện · Toán 12"><meta property="og:description" content="Luyện tập có lời giải Bài 18. Xác suất có điều kiện – Toán 12 (SGK Kết nối tri thức). Luyện tập từng nhiệm vụ, có gợi ý khi vướng và lời giải chi tiết. Miễn phí, không cần đăng ký – Mr Black."><meta property="og:url" content="https://mrblackmath.github.io/bai-hoc/toan12-bai18-luyen-tap.html"><meta property="og:image" content="https://mrblackmath.github.io/anh/chia-se.jpg"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta property="og:image:alt" content="Mr Black – Học Toán miễn phí từ lớp 6 đến lớp 12"><meta name="twitter:card" content="summary_large_image"><meta name="theme-color" content="#0d1433">
+<meta name="description" content="Luyện tập có lời giải Bài 18. Xác suất có điều kiện – Toán 12. Luyện tập từng nhiệm vụ, có gợi ý khi vướng và lời giải chi tiết. Miễn phí, không cần đăng ký – Mr Black."><link rel="canonical" href="https://mrblackmath.github.io/bai-hoc/toan12-bai18-luyen-tap.html"><meta property="og:type" content="website"><meta property="og:site_name" content="Mr Black – Toán 6 đến 12"><meta property="og:locale" content="vi_VN"><meta property="og:title" content="Luyện tập có lời giải · Bài 18. Xác suất có điều kiện · Toán 12"><meta property="og:description" content="Luyện tập có lời giải Bài 18. Xác suất có điều kiện – Toán 12. Luyện tập từng nhiệm vụ, có gợi ý khi vướng và lời giải chi tiết. Miễn phí, không cần đăng ký – Mr Black."><meta property="og:url" content="https://mrblackmath.github.io/bai-hoc/toan12-bai18-luyen-tap.html"><meta property="og:image" content="https://mrblackmath.github.io/anh/chia-se.jpg"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta property="og:image:alt" content="Mr Black – Học Toán miễn phí từ lớp 6 đến lớp 12"><meta name="twitter:card" content="summary_large_image"><meta name="theme-color" content="#0d1433">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;500;600;700&display=swap">
@@ -1604,7 +1604,7 @@ function task(o){
     note: o.note || '',
     init(sec){ addStations(sec, this, [Object.assign({id: o.id, review: o.k[0], solAfter: 3, gate: o.optional ? 99 : 0}, o.st)]); }});
 }
-/* ================= LUYỆN TẬP · BÀI 18 · XÁC SUẤT CÓ ĐIỀU KIỆN (Loại A · Toán 12 · KNTT) =================
+/* ================= LUYỆN TẬP · BÀI 18 · XÁC SUẤT CÓ ĐIỀU KIỆN (Loại A · Toán 12) =================
    Practice bank LP01–LP14 + thử thách LP15. Knowledge K01–K06 của Blueprint T12-B18.
    Sai → chẩn đoán lỗi → 📖 Xem lại (trỏ về slide bài giảng) → làm lại; sai 3 lần mới mở 💡 Lời giải. Đáp số kiểm trong verify_p2p4.py. */
 /* Đảo vị trí phương án (giữ nguyên data-v gốc nên chấm & chẩn đoán không đổi) */
@@ -1612,7 +1612,7 @@ const CHR = (st, it, opts, cls) => { if (opts === DS || opts.length < 2) return 
   const h = [...(st + it)].reduce((a, c) => a + c.charCodeAt(0), 0) % opts.length;
   const idx = opts.map((o, k) => k); const ord = idx.slice(h).concat(idx.slice(0, h));
   return `<span class="ach${cls ? ' ' + cls : ''}" data-it="${st}:${it}" role="group">${ord.map(k => `<button type="button" class="btn" data-v="${k}">${opts[k]}</button>`).join('')}<i class="mk" aria-hidden="true"></i></span>`; };
-pCover({eb: 'Toán 12 · KNTT · Bài 18', title: 'Luyện tập<span>Xác suất có điều kiện</span>', count: '14 nhiệm vụ theo 3 phần + 1 thử thách. Nhập phân số dạng <b>7/11</b>.'});
+pCover({eb: 'Toán 12 · Bài 18', title: 'Luyện tập<span>Xác suất có điều kiện</span>', count: '14 nhiệm vụ theo 3 phần + 1 thử thách. Nhập phân số dạng <b>7/11</b>.'});
 const FR = '<small class="muted">(phân số, ví dụ 7/11)</small>';
 const nr = (v, x, e = 0.003) => Math.abs(v - x) < e;
 const swap = x => v => nr(v, x) ? R`Con đang tính xác suất “ngược”: biến cố đứng sau dấu ${m('\\mid')} mới là điều kiện (mẫu số).` : null;

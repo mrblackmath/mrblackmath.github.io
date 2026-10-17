@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="vi"><head><meta charset="utf-8"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><meta name="apple-mobile-web-app-title" content="Mr Black"><link rel="apple-touch-icon" href="../icon.png"><script>try{if(navigator.audioSession)navigator.audioSession.type='playback'}catch(e){}</script><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><style>body{margin:0}[hidden]{display:none!important}</style>
 <title>Tự kiểm tra · Toán 7 · Bài 8 · Góc ở vị trí đặc biệt. Tia phân giác của một góc · Mr Black</title>
-<meta name="description" content="Tự kiểm tra Bài 8. Góc ở vị trí đặc biệt. Tia phân giác của một góc – Toán 7 (SGK Kết nối tri thức). Tự kiểm tra, chấm điểm ngay và chỉ ra kiến thức cần xem lại. Miễn phí, không cần đăng ký – Mr Black."><link rel="canonical" href="https://mrblackmath.github.io/bai-hoc/toan7-bai8-kiem-tra.html"><meta property="og:type" content="website"><meta property="og:site_name" content="Mr Black – Toán 6 đến 12"><meta property="og:locale" content="vi_VN"><meta property="og:title" content="Tự kiểm tra · Bài 8. Góc ở vị trí đặc biệt. Tia phân giác của một góc · Toán 7"><meta property="og:description" content="Tự kiểm tra Bài 8. Góc ở vị trí đặc biệt. Tia phân giác của một góc – Toán 7 (SGK Kết nối tri thức). Tự kiểm tra, chấm điểm ngay và chỉ ra kiến thức cần xem lại. Miễn phí, không cần đăng ký – Mr Black."><meta property="og:url" content="https://mrblackmath.github.io/bai-hoc/toan7-bai8-kiem-tra.html"><meta property="og:image" content="https://mrblackmath.github.io/anh/chia-se.jpg"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta property="og:image:alt" content="Mr Black – Học Toán miễn phí từ lớp 6 đến lớp 12"><meta name="twitter:card" content="summary_large_image"><meta name="theme-color" content="#0d1433">
+<meta name="description" content="Tự kiểm tra Bài 8. Góc ở vị trí đặc biệt. Tia phân giác của một góc – Toán 7. Tự kiểm tra, chấm điểm ngay và chỉ ra kiến thức cần xem lại. Miễn phí, không cần đăng ký – Mr Black."><link rel="canonical" href="https://mrblackmath.github.io/bai-hoc/toan7-bai8-kiem-tra.html"><meta property="og:type" content="website"><meta property="og:site_name" content="Mr Black – Toán 6 đến 12"><meta property="og:locale" content="vi_VN"><meta property="og:title" content="Tự kiểm tra · Bài 8. Góc ở vị trí đặc biệt. Tia phân giác của một góc · Toán 7"><meta property="og:description" content="Tự kiểm tra Bài 8. Góc ở vị trí đặc biệt. Tia phân giác của một góc – Toán 7. Tự kiểm tra, chấm điểm ngay và chỉ ra kiến thức cần xem lại. Miễn phí, không cần đăng ký – Mr Black."><meta property="og:url" content="https://mrblackmath.github.io/bai-hoc/toan7-bai8-kiem-tra.html"><meta property="og:image" content="https://mrblackmath.github.io/anh/chia-se.jpg"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta property="og:image:alt" content="Mr Black – Học Toán miễn phí từ lớp 6 đến lớp 12"><meta name="twitter:card" content="summary_large_image"><meta name="theme-color" content="#0d1433">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;500;600;700&display=swap">
@@ -1504,7 +1504,7 @@ function gateUI(){
   lockChip.hidden = !b;
   $('#next').disabled = b || (S.cur === slides.length - 1 && S.step >= s.max);
 }
-/* ================= BÀI 8 · GÓC Ở VỊ TRÍ ĐẶC BIỆT. TIA PHÂN GIÁC CỦA MỘT GÓC (Toán 7 – KNTT, tr. 40–45) ================= */
+/* ================= BÀI 8 · GÓC Ở VỊ TRÍ ĐẶC BIỆT. TIA PHÂN GIÁC CỦA MỘT GÓC (Toán 7, tr. 40–45) ================= */
 /* ---------- KIẾN THỨC ĐỂ XEM LẠI (trích đúng nội dung ghi vở) — khoá theo mã kiến thức K01…K06 ---------- */
 const THEORY = {
   K01: {t: 'Hai góc kề bù', slide: '1. Định nghĩa kề bù', items: [R`Hai góc có <b class="kw">một cạnh chung</b>, hai cạnh còn lại là <b class="kw">hai tia đối nhau</b> được gọi là hai góc kề bù.`, R`- Tính chất: hai góc kề bù có tổng số đo bằng <b class="kw">180°</b>.`]},
@@ -1546,7 +1546,7 @@ const rd = (rows, cls) => `<div class="meas${cls ? ' ' + cls : ''}">${rows.map((
 const rdSet = (sec, vals) => Object.entries(vals).forEach(([k, v]) => { const e = sec.querySelector(`[data-r="${k}"]`); if (e) e.textContent = v; });
 const figOf = (sec) => FIG2.find(f => sec.contains(f.box));
 
-const PP = {"name": "Bài 8", "title_html": "Góc ở vị trí đặc biệt.<br>Tia phân giác của một góc", "count": "18 nhiệm vụ theo 3 phần + 1 thử thách.", "minutes": 30, "ch": true, "book": "Toán 7 · Kết nối tri thức · Bài 8"};
+const PP = {"name": "Bài 8", "title_html": "Góc ở vị trí đặc biệt.<br>Tia phân giác của một góc", "count": "18 nhiệm vụ theo 3 phần + 1 thử thách.", "minutes": 30, "ch": true, "book": "Toán 7 · Bài 8"};
 /* ================= BÀI 8 · TỰ KIỂM TRA (16 câu · đề A / đề B tương đương) ================= */
 const OBJ = {
   OBJ1: 'Nhận biết hai góc kề bù; dùng tính chất tổng 180° và tia nằm giữa',

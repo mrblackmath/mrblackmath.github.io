@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="vi"><head><meta charset="utf-8"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><meta name="apple-mobile-web-app-title" content="Mr Black"><link rel="apple-touch-icon" href="../icon.png"><script>try{if(navigator.audioSession)navigator.audioSession.type='playback'}catch(e){}</script><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <title>Ôn tập Chương II · Toán 10 · Mr Black</title>
-<meta name="description" content="Tổng hợp kiến thức Ôn tập Chương II. Bất phương trình và hệ bất phương trình bậc nhất hai ẩn – Toán 10 (SGK Kết nối tri thức). Tổng hợp kiến thức cả chương: sơ đồ, dạng toán, lỗi hay gặp. Miễn phí, không cần đăng ký – Mr Black."><link rel="canonical" href="https://mrblackmath.github.io/bai-hoc/toan10-on-tap-chuong2-tong-hop.html"><meta property="og:type" content="website"><meta property="og:site_name" content="Mr Black – Toán 6 đến 12"><meta property="og:locale" content="vi_VN"><meta property="og:title" content="Tổng hợp kiến thức · Ôn tập Chương II. Bất phương trình và hệ bất phương trình bậc nhất hai ẩn · Toán 10"><meta property="og:description" content="Tổng hợp kiến thức Ôn tập Chương II. Bất phương trình và hệ bất phương trình bậc nhất hai ẩn – Toán 10 (SGK Kết nối tri thức). Tổng hợp kiến thức cả chương: sơ đồ, dạng toán, lỗi hay gặp. Miễn phí, không cần đăng ký – Mr Black."><meta property="og:url" content="https://mrblackmath.github.io/bai-hoc/toan10-on-tap-chuong2-tong-hop.html"><meta property="og:image" content="https://mrblackmath.github.io/anh/chia-se.jpg"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta property="og:image:alt" content="Mr Black – Học Toán miễn phí từ lớp 6 đến lớp 12"><meta name="twitter:card" content="summary_large_image"><meta name="theme-color" content="#0d1433">
+<meta name="description" content="Tổng hợp kiến thức Ôn tập Chương II. Bất phương trình và hệ bất phương trình bậc nhất hai ẩn – Toán 10. Tổng hợp kiến thức cả chương: sơ đồ, dạng toán, lỗi hay gặp. Miễn phí, không cần đăng ký – Mr Black."><link rel="canonical" href="https://mrblackmath.github.io/bai-hoc/toan10-on-tap-chuong2-tong-hop.html"><meta property="og:type" content="website"><meta property="og:site_name" content="Mr Black – Toán 6 đến 12"><meta property="og:locale" content="vi_VN"><meta property="og:title" content="Tổng hợp kiến thức · Ôn tập Chương II. Bất phương trình và hệ bất phương trình bậc nhất hai ẩn · Toán 10"><meta property="og:description" content="Tổng hợp kiến thức Ôn tập Chương II. Bất phương trình và hệ bất phương trình bậc nhất hai ẩn – Toán 10. Tổng hợp kiến thức cả chương: sơ đồ, dạng toán, lỗi hay gặp. Miễn phí, không cần đăng ký – Mr Black."><meta property="og:url" content="https://mrblackmath.github.io/bai-hoc/toan10-on-tap-chuong2-tong-hop.html"><meta property="og:image" content="https://mrblackmath.github.io/anh/chia-se.jpg"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta property="og:image:alt" content="Mr Black – Học Toán miễn phí từ lớp 6 đến lớp 12"><meta name="twitter:card" content="summary_large_image"><meta name="theme-color" content="#0d1433">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;500;600;700&display=swap">
 <link rel="stylesheet" href="../chung/katex-0.16.45.css" data-lib="katex-0.16.45">
@@ -419,7 +419,7 @@ const strict = k => k.op === '<' || k.op === '>';
 const leSide = k => k.op === '<=' || k.op === '<';
 
 /* ================= ĐỒ THỊ MẶT PHẲNG TOẠ ĐỘ (SVG) =================
-   Quy ước SGK KNTT: GẠCH BỎ phần không là nghiệm; miền nghiệm là phần KHÔNG bị gạch.
+   Quy ước SGK: GẠCH BỎ phần không là nghiệm; miền nghiệm là phần KHÔNG bị gạch.
    Bờ ứng với dấu <, > vẽ nét đứt (không thuộc miền nghiệm). */
 function clip(poly, a, b, c){ /* giữ phần a x + b y ≤ c */
   const out = [], n = poly.length;
@@ -517,7 +517,7 @@ function setStep(k){
   if (s.onStep) s.onStep(k);
   $('#next').disabled = S.cur === slides.length - 1 && k >= s.max;
 }
-/* ================= NỘI DUNG P1 — ÔN TẬP CHƯƠNG II (Toán 10 KNTT) =================
+/* ================= NỘI DUNG P1 — ÔN TẬP CHƯƠNG II (Toán 10) =================
    Mọi mục truy về Knowledge ID K01–K09 của blueprint/knowledge.json. Không có câu hỏi chấm điểm. */
 const flip = (front, cls, back, o = {}) => `<button type="button" class="flip" aria-label="Lật thẻ"><span class="in"><span class="fa${o.w ? ' w' : ''}">${o.small ? `<small>${o.small}</small>` : ''}<span>${front}</span></span><span class="fb ${cls}">${back}</span></span></button>`;
 /* thẻ kiến thức luôn hiện (không đóng/mở để học sinh không bỏ sót) */
@@ -535,7 +535,7 @@ const CMENU = [['map', '★ Toàn cảnh · Sơ đồ chương', 'Hai bài và c
 addSlide({label: 'Bìa · chọn mục', sec: 0, anchor: 'start', html: R`
 <div class="cover"><div>
   <div class="avatar">${AVATAR}</div>
-  <p class="eb">Toán 10 · Kết nối tri thức · Chương II</p>
+  <p class="eb">Toán 10 · Chương II</p>
   <h1>Ôn tập Chương II<span>Bất phương trình và hệ bất phương trình bậc nhất hai ẩn</span></h1>
   <div class="chips"><span>Bài 3 · BPT bậc nhất hai ẩn</span><span>Bài 4 · Hệ BPT bậc nhất hai ẩn</span><span>Bài tập cuối chương II</span></div>
   <p class="sig">Hệ thống tổng hợp kiến thức · <b>Mr Black NBK</b></p></div>
@@ -612,7 +612,7 @@ addSlide({label: '2. Miền nghiệm · nửa mặt phẳng', sec: 2, anchor: 's
     <div class="row"><span class="muted" style="font-size:24px;font-weight:700">Tô thử:</span><button class="btn sm" type="button" data-h="1">nửa ${m('x-2y>-2')}</button><button class="btn sm" type="button" data-h="2">nửa ${m('x-2y<-2')}</button></div>
     <div class="box" style="font-size:28px;font-weight:600"><span class="ttl">Quy ước của SGK</span><ul class="dot"><li><b class="kw">Gạch bỏ</b> phần không là nghiệm ⇒ miền nghiệm là phần <b>không bị gạch</b>.</li><li>Dấu ${m(R`\le,\ \ge`)}: lấy cả bờ ${m('d')} — <b>nét liền</b>.</li><li>Dấu ${m('<,\\ >')}: bỏ bờ ${m('d')} — <b>nét đứt</b>.</li></ul></div>
   </div>
-</div>`, note: 'Bấm hai nút “Tô thử” để học sinh thấy mỗi nửa mặt phẳng ứng với một dấu. Nhấn mạnh quy ước gạch bỏ của SGK KNTT (đọc kĩ chú thích hình khi làm trắc nghiệm, vì có tài liệu tô miền nghiệm).',
+</div>`, note: 'Bấm hai nút “Tô thử” để học sinh thấy mỗi nửa mặt phẳng ứng với một dấu. Nhấn mạnh quy ước gạch bỏ của SGK (đọc kĩ chú thích hình khi làm trắc nghiệm, vì có tài liệu tô miền nghiệm).',
   init(sec){ plH.mount(sec); let hl = 0;
     const draw = () => { plH.clear('hp', 'lines', 'top', 'marks');
       const up = clip(plH.rect, -1, 2, 2), dn = clip(plH.rect, 1, -2, -2); /* up: x − 2y ≤ −2 ⇔ phía trên d */

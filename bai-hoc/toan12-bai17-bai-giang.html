@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="vi"><head><meta charset="utf-8"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><meta name="apple-mobile-web-app-title" content="Mr Black"><link rel="apple-touch-icon" href="../icon.png"><script>try{if(navigator.audioSession)navigator.audioSession.type='playback'}catch(e){}</script><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><style>body{margin:0}[hidden]{display:none!important}</style>
 <title>Bài 17 · Phương trình mặt cầu · Toán 12 · Mr Black</title>
-<meta name="description" content="Bài giảng tương tác Bài 17. Phương trình mặt cầu – Toán 12 (SGK Kết nối tri thức). Bài giảng tương tác từng bước, có trạm dừng kiểm tra hiểu bài. Miễn phí, không cần đăng ký – Mr Black."><link rel="canonical" href="https://mrblackmath.github.io/bai-hoc/toan12-bai17-bai-giang.html"><meta property="og:type" content="website"><meta property="og:site_name" content="Mr Black – Toán 6 đến 12"><meta property="og:locale" content="vi_VN"><meta property="og:title" content="Bài giảng tương tác · Bài 17. Phương trình mặt cầu · Toán 12"><meta property="og:description" content="Bài giảng tương tác Bài 17. Phương trình mặt cầu – Toán 12 (SGK Kết nối tri thức). Bài giảng tương tác từng bước, có trạm dừng kiểm tra hiểu bài. Miễn phí, không cần đăng ký – Mr Black."><meta property="og:url" content="https://mrblackmath.github.io/bai-hoc/toan12-bai17-bai-giang.html"><meta property="og:image" content="https://mrblackmath.github.io/anh/chia-se.jpg"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta property="og:image:alt" content="Mr Black – Học Toán miễn phí từ lớp 6 đến lớp 12"><meta name="twitter:card" content="summary_large_image"><meta name="theme-color" content="#0d1433">
+<meta name="description" content="Bài giảng tương tác Bài 17. Phương trình mặt cầu – Toán 12. Bài giảng tương tác từng bước, có trạm dừng kiểm tra hiểu bài. Miễn phí, không cần đăng ký – Mr Black."><link rel="canonical" href="https://mrblackmath.github.io/bai-hoc/toan12-bai17-bai-giang.html"><meta property="og:type" content="website"><meta property="og:site_name" content="Mr Black – Toán 6 đến 12"><meta property="og:locale" content="vi_VN"><meta property="og:title" content="Bài giảng tương tác · Bài 17. Phương trình mặt cầu · Toán 12"><meta property="og:description" content="Bài giảng tương tác Bài 17. Phương trình mặt cầu – Toán 12. Bài giảng tương tác từng bước, có trạm dừng kiểm tra hiểu bài. Miễn phí, không cần đăng ký – Mr Black."><meta property="og:url" content="https://mrblackmath.github.io/bai-hoc/toan12-bai17-bai-giang.html"><meta property="og:image" content="https://mrblackmath.github.io/anh/chia-se.jpg"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta property="og:image:alt" content="Mr Black – Học Toán miễn phí từ lớp 6 đến lớp 12"><meta name="twitter:card" content="summary_large_image"><meta name="theme-color" content="#0d1433">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;500;600;700&display=swap">
@@ -1468,8 +1468,8 @@ const GEO = (a, b) => [Math.cos(a * Math.PI / 180) * Math.cos(b * Math.PI / 180)
 const GC = (p, q, o = {}) => { const d = p[0] * q[0] + p[1] * q[1] + p[2] * q[2], w0 = q.map((v, i) => v - d * p[i]), n = Math.hypot(...w0), w = w0.map(v => v / n), th = Math.acos(d) * 180 / Math.PI;
   return {t: [0, th], ...o, f: t => p.map((v, i) => v * Math.cos(t) + w[i] * Math.sin(t))}; };
 const SHIFT3 = (c, r, f) => t => f(t).map((v, i) => c[i] + r * v);
-/* ================= BÀI 17 · PHƯƠNG TRÌNH MẶT CẦU (Toán 12 · KNTT · Chương V) =================
-   Nguồn: SGK Toán 12 tập hai (KNTT) trang 54–60. Mã kiến thức K01…K06 khớp Blueprint T12-B17. */
+/* ================= BÀI 17 · PHƯƠNG TRÌNH MẶT CẦU (Toán 12 · Chương V) =================
+   Nguồn: SGK Toán 12 tập hai trang 54–60. Mã kiến thức K01…K06 khớp Blueprint T12-B17. */
 const THEORY = {
   K01: {t: 'Mặt cầu; điểm nằm trong, nằm ngoài mặt cầu', slide: '1. Mặt cầu', items: [
     R`Mặt cầu tâm ${m('I')} bán kính ${m('R')} ${m('(R > 0)')} là tập hợp các điểm ${m('M')} trong không gian cách ${m('I')} một khoảng ${m('R')}.`,
@@ -1497,7 +1497,7 @@ const earthOD = (o = {}) => SPH({w: o.w || 560, h: o.h || 460, s: o.s || 190, L:
 addSlide({label: 'Bìa', sec: -1, anchor: 'start', html: R`
 <div class="cover"><div>
   <div class="avatar">${AVATAR}</div>
-  <p class="eb" style="margin-top:26px">Toán 12 · Kết nối tri thức · Chương V</p>
+  <p class="eb" style="margin-top:26px">Toán 12 · Chương V</p>
   <h1 style="font-size:90px">Bài 17<span>Phương trình mặt cầu</span></h1>
   <p class="sig">Bài giảng <b>Mr Black NBK</b></p></div>
   <div class="cvr"><div class="fig">${SPH({w: 520, h: 400, s: 160, axes: false, curves: GRID.concat([LAT(0, {cls: 'blue'}), MER(0, {cls: 'gold'})]), aria: 'Mặt cầu'})}</div>

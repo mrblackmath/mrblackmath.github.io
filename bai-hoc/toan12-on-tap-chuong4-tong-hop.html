@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="vi"><head><meta charset="utf-8"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><meta name="apple-mobile-web-app-title" content="Mr Black"><link rel="apple-touch-icon" href="../icon.png"><script>try{if(navigator.audioSession)navigator.audioSession.type='playback'}catch(e){}</script><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><style>body{margin:0}[hidden]{display:none!important}</style>
 <title>Ôn tập chương IV · Nguyên hàm và tích phân · Toán 12 · Mr Black</title>
-<meta name="description" content="Tổng hợp kiến thức Ôn tập Chương IV. Nguyên hàm và tích phân – Toán 12 (SGK Kết nối tri thức). Tổng hợp kiến thức cả chương: sơ đồ, dạng toán, lỗi hay gặp. Miễn phí, không cần đăng ký – Mr Black."><link rel="canonical" href="https://mrblackmath.github.io/bai-hoc/toan12-on-tap-chuong4-tong-hop.html"><meta property="og:type" content="website"><meta property="og:site_name" content="Mr Black – Toán 6 đến 12"><meta property="og:locale" content="vi_VN"><meta property="og:title" content="Tổng hợp kiến thức · Ôn tập Chương IV. Nguyên hàm và tích phân · Toán 12"><meta property="og:description" content="Tổng hợp kiến thức Ôn tập Chương IV. Nguyên hàm và tích phân – Toán 12 (SGK Kết nối tri thức). Tổng hợp kiến thức cả chương: sơ đồ, dạng toán, lỗi hay gặp. Miễn phí, không cần đăng ký – Mr Black."><meta property="og:url" content="https://mrblackmath.github.io/bai-hoc/toan12-on-tap-chuong4-tong-hop.html"><meta property="og:image" content="https://mrblackmath.github.io/anh/chia-se.jpg"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta property="og:image:alt" content="Mr Black – Học Toán miễn phí từ lớp 6 đến lớp 12"><meta name="twitter:card" content="summary_large_image"><meta name="theme-color" content="#0d1433">
+<meta name="description" content="Tổng hợp kiến thức Ôn tập Chương IV. Nguyên hàm và tích phân – Toán 12. Tổng hợp kiến thức cả chương: sơ đồ, dạng toán, lỗi hay gặp. Miễn phí, không cần đăng ký – Mr Black."><link rel="canonical" href="https://mrblackmath.github.io/bai-hoc/toan12-on-tap-chuong4-tong-hop.html"><meta property="og:type" content="website"><meta property="og:site_name" content="Mr Black – Toán 6 đến 12"><meta property="og:locale" content="vi_VN"><meta property="og:title" content="Tổng hợp kiến thức · Ôn tập Chương IV. Nguyên hàm và tích phân · Toán 12"><meta property="og:description" content="Tổng hợp kiến thức Ôn tập Chương IV. Nguyên hàm và tích phân – Toán 12. Tổng hợp kiến thức cả chương: sơ đồ, dạng toán, lỗi hay gặp. Miễn phí, không cần đăng ký – Mr Black."><meta property="og:url" content="https://mrblackmath.github.io/bai-hoc/toan12-on-tap-chuong4-tong-hop.html"><meta property="og:image" content="https://mrblackmath.github.io/anh/chia-se.jpg"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta property="og:image:alt" content="Mr Black – Học Toán miễn phí từ lớp 6 đến lớp 12"><meta name="twitter:card" content="summary_large_image"><meta name="theme-color" content="#0d1433">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;500;600;700&display=swap">
@@ -1597,8 +1597,8 @@ document.addEventListener('click', e => { const b = e.target.closest('.rv'); if 
 const NHAN = (sign, know) => `<div class="nhan"><div class="nc"><em>Dấu hiệu nhận biết</em>${sign}</div><div class="nc k"><em>Kiến thức cần nhớ</em>${know}</div></div>`;
 /* chuỗi bước giải (thầy làm mẫu): mỗi dòng hiện theo ▶ */
 const STEPS = (rows, o = {}) => `<div class="calc3${o.sm ? ' sm' : ''}">${rows.map((r, i) => `<div class="cr"${(o.from ?? 1) + i >= 0 ? ` data-step="${(o.from ?? 1) + i}"` : ''}><span>${Array.isArray(r) ? r[0] : r}</span>${Array.isArray(r) && r[1] ? `<span class="why">${r[1]}</span>` : ''}</div>`).join('')}</div>`;
-/* ================= ÔN TẬP CHƯƠNG IV · NGUYÊN HÀM VÀ TÍCH PHÂN (Toán 12 · KNTT) =================
-   Loại B (CHAPTER_REVIEW). Nguồn: SGK Toán 12 tập hai (KNTT) tr. 4–28. Knowledge K01…K10 của Blueprint T12-C4,
+/* ================= ÔN TẬP CHƯƠNG IV · NGUYÊN HÀM VÀ TÍCH PHÂN (Toán 12) =================
+   Loại B (CHAPTER_REVIEW). Nguồn: SGK Toán 12 tập hai tr. 4–28. Knowledge K01…K10 của Blueprint T12-C4,
    truy vết về T12-B11, T12-B12, T12-B13. "slide" = tên mục trong P1 (Slide tổng hợp kiến thức chương). */
 const REVIEW_HINT = 'Xem lại trong Slide tổng hợp kiến thức chương: mục';
 const J = (a, b, s) => m('\\displaystyle\\int_{' + a + '}^{' + b + '} ' + s);
@@ -1639,7 +1639,7 @@ const ELL = list => (X, Y, sx, sy, st, f2) => list.map(e => `<ellipse class="pl-
 addSlide({label: 'Bìa', sec: -1, anchor: 'start', html: R`
 <div class="cover hubc"><div>
   <div class="avatar">${AVATAR}</div>
-  <p class="eb" style="margin-top:26px">Toán 12 · Kết nối tri thức<br>Chương IV</p>
+  <p class="eb" style="margin-top:26px">Toán 12<br>Chương IV</p>
   <h1>Ôn tập<span>chương IV</span></h1>
   <p class="lead" style="margin-top:14px;font-size:28px">Nguyên hàm và tích phân</p>
   <p class="sig">Slide tổng hợp kiến thức<br><b>Mr Black NBK</b></p></div>

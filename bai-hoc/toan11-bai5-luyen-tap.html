@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="vi"><head><meta charset="utf-8"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><meta name="apple-mobile-web-app-title" content="Mr Black"><link rel="apple-touch-icon" href="../icon.png"><script>try{if(navigator.audioSession)navigator.audioSession.type='playback'}catch(e){}</script><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><style>body{margin:0}[hidden]{display:none!important}</style>
 <title>Tự luyện · Bài 5 · Dãy số · Toán 11 · Mr Black</title>
-<meta name="description" content="Luyện tập có lời giải Bài 5. Dãy số – Toán 11 (SGK Kết nối tri thức). Luyện tập từng nhiệm vụ, có gợi ý khi vướng và lời giải chi tiết. Miễn phí, không cần đăng ký – Mr Black."><link rel="canonical" href="https://mrblackmath.github.io/bai-hoc/toan11-bai5-luyen-tap.html"><meta property="og:type" content="website"><meta property="og:site_name" content="Mr Black – Toán 6 đến 12"><meta property="og:locale" content="vi_VN"><meta property="og:title" content="Luyện tập có lời giải · Bài 5. Dãy số · Toán 11"><meta property="og:description" content="Luyện tập có lời giải Bài 5. Dãy số – Toán 11 (SGK Kết nối tri thức). Luyện tập từng nhiệm vụ, có gợi ý khi vướng và lời giải chi tiết. Miễn phí, không cần đăng ký – Mr Black."><meta property="og:url" content="https://mrblackmath.github.io/bai-hoc/toan11-bai5-luyen-tap.html"><meta property="og:image" content="https://mrblackmath.github.io/anh/chia-se.jpg"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta property="og:image:alt" content="Mr Black – Học Toán miễn phí từ lớp 6 đến lớp 12"><meta name="twitter:card" content="summary_large_image"><meta name="theme-color" content="#0d1433">
+<meta name="description" content="Luyện tập có lời giải Bài 5. Dãy số – Toán 11. Luyện tập từng nhiệm vụ, có gợi ý khi vướng và lời giải chi tiết. Miễn phí, không cần đăng ký – Mr Black."><link rel="canonical" href="https://mrblackmath.github.io/bai-hoc/toan11-bai5-luyen-tap.html"><meta property="og:type" content="website"><meta property="og:site_name" content="Mr Black – Toán 6 đến 12"><meta property="og:locale" content="vi_VN"><meta property="og:title" content="Luyện tập có lời giải · Bài 5. Dãy số · Toán 11"><meta property="og:description" content="Luyện tập có lời giải Bài 5. Dãy số – Toán 11. Luyện tập từng nhiệm vụ, có gợi ý khi vướng và lời giải chi tiết. Miễn phí, không cần đăng ký – Mr Black."><meta property="og:url" content="https://mrblackmath.github.io/bai-hoc/toan11-bai5-luyen-tap.html"><meta property="og:image" content="https://mrblackmath.github.io/anh/chia-se.jpg"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta property="og:image:alt" content="Mr Black – Học Toán miễn phí từ lớp 6 đến lớp 12"><meta name="twitter:card" content="summary_large_image"><meta name="theme-color" content="#0d1433">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;500;600;700&display=swap">
@@ -1129,7 +1129,7 @@ const MENU = [], LKEY = 'mb11b5p';
 const PARTS_CFG = [{sec: 1, a: 'm1', t: 'Định nghĩa dãy số'}, {sec: 2, a: 'm2', t: 'Các cách cho một dãy số'}, {sec: 3, a: 'm3', t: 'Tăng, giảm, bị chặn'}];
 const MENU2 = [['start', 'Bìa'], ['m1', '1. Định nghĩa dãy số'], ['m2', '2. Các cách cho một dãy số'], ['m3', '3. Tăng, giảm, bị chặn'], ['sum', 'Kết quả theo kiến thức'], ['ch', 'Thử thách']];
 const PKEY = 'mb11b5-practice';
-const PMETA = {eb: 'Toán 11 · Kết nối tri thức · Bài 5', t: 'Dãy số', count: '14 nhiệm vụ theo 3 phần + 1 thử thách.'};
+const PMETA = {eb: 'Toán 11 · Bài 5', t: 'Dãy số', count: '14 nhiệm vụ theo 3 phần + 1 thử thách.'};
 
 
 const slides = [], S = {cur: 0, step: 0, teacher: false, spot: null};
@@ -1439,8 +1439,8 @@ const TIP = o => `<div class="tip">
   <div class="tip-r">${o.calc.join('')}<div class="tip-warn" data-step="4"><b class="bad-t">⚠ Lưu ý</b> ${o.warn}</div></div>
 </div>`;
 const TTV = (rows, o = {}) => `<table class="tbl${o.cls ? ' ' + o.cls : ''}">${rows.map((r, i) => `<tr>${r.map(c => i === 0 ? `<th>${c}</th>` : `<td>${c}</td>`).join('')}</tr>`).join('')}</table>`;
-/* ================= BÀI 5 · DÃY SỐ (Toán 11 · KNTT · Chương II) =================
-   Nguồn: SGK Toán 11 tập một (KNTT) trang 42–47 (chép: /home/claude/work/SGK_NOTES_B5.md). Mã kiến thức K01…K05 khớp Blueprint T11-B5. */
+/* ================= BÀI 5 · DÃY SỐ (Toán 11 · Chương II) =================
+   Nguồn: SGK Toán 11 tập một trang 42–47 (chép: /home/claude/work/SGK_NOTES_B5.md). Mã kiến thức K01…K05 khớp Blueprint T11-B5. */
 const THEORY = {
   K01: {t: 'Dãy số vô hạn', slide: '1. Định nghĩa', items: [
     R`Mỗi hàm số ${m('u')} xác định trên tập các số nguyên dương ${m(R`\mathbb N^*`)} được gọi là một <b class="kw">dãy số vô hạn</b> (gọi tắt là dãy số), kí hiệu ${m('u=u(n)')}.`,
