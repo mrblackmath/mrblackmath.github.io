@@ -689,6 +689,12 @@ const LINKS = {
     kiemtra: 'bai-hoc/toan8-bai14-kiem-tra.html',
     chuaGiong: true
   },
+  'lop8-ontap3': {
+    giang:   'bai-hoc/toan8-on-tap-chuong3-tong-hop.html',
+    luyen:   'bai-hoc/toan8-on-tap-chuong3-luyen-tap.html',
+    pdf:     'hoc-lieu/toan8-on-tap-chuong3-phieu-tu-luyen.pdf',   // phiếu 8 trang
+    kiemtra: 'bai-hoc/toan8-on-tap-chuong3-kiem-tra.html'
+  },
   'lop8-bai18': {
     giang:   'bai-hoc/toan8-bai18-bai-giang.html',
     luyen:   'bai-hoc/toan8-bai18-luyen-tap.html',
@@ -1190,6 +1196,7 @@ const ANH = {
   "lop8-bai12": {"giang": "anh/lop8-bai12-giang.webp", "luyen": "anh/lop8-bai12-luyen.webp", "kiemtra": "anh/lop8-bai12-kiemtra.webp"},
   "lop8-bai13": {"giang": "anh/lop8-bai13-giang.webp", "luyen": "anh/lop8-bai13-luyen.webp", "kiemtra": "anh/lop8-bai13-kiemtra.webp"},
   "lop8-bai14": {"giang": "anh/lop8-bai14-giang.webp", "luyen": "anh/lop8-bai14-luyen.webp", "kiemtra": "anh/lop8-bai14-kiemtra.webp"},
+  "lop8-ontap3": {"giang": "anh/lop8-ontap3-giang.webp", "luyen": "anh/lop8-ontap3-luyen.webp", "kiemtra": "anh/lop8-ontap3-kiemtra.webp"},
   "lop8-bai18": {"giang": "anh/lop8-bai18-giang.webp", "luyen": "anh/lop8-bai18-luyen.webp", "kiemtra": "anh/lop8-bai18-kiemtra.webp"},
   "lop8-bai19": {"giang": "anh/lop8-bai19-giang.webp", "luyen": "anh/lop8-bai19-luyen.webp", "kiemtra": "anh/lop8-bai19-kiemtra.webp"},
   "lop8-bai20": {"giang": "anh/lop8-bai20-giang.webp", "luyen": "anh/lop8-bai20-luyen.webp", "kiemtra": "anh/lop8-bai20-kiemtra.webp"},
@@ -1579,7 +1586,7 @@ document.addEventListener('click', e => { if (!e.target.closest('.search')) box.
 
 /* Học ngay: thẻ bài đã có, chạm 1 lần là vào học */
 const HOT = ['lop12-bai6', 'lop11-bai5', 'lop12-bai11', 'lop6-bai16', 'lop11-bai12', 'lop12-bai7'];        // nhiều bạn học (Google Analytics 10–17/10)
-const NEW = ['lop7-bai17', 'lop7-bai18', 'lop7-bai19', 'lop7-ontap5', 'lop6-bai21', 'lop6-ontap5'];     // mới cập nhật
+const NEW = ['lop8-ontap3', 'lop7-bai17', 'lop7-bai18', 'lop7-ontap5', 'lop6-bai21', 'lop6-ontap5'];     // mới cập nhật
 const byKey = k => ALL.find(x => x.key === k);
 const chipList = [{id:'noibat', name:'Nổi bật'}].concat(COURSES.filter(c => AVAIL.some(x => x.course === c)).map(c => ({id:c.id, name:'Toán ' + c.short})));
 let chipSel = 'noibat';
