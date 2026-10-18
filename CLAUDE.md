@@ -1,6 +1,6 @@
 # Sổ quản lý website Mr Black NBK
 
-Cập nhật: 18/10/2026 (9h20)
+Cập nhật: 18/10/2026 (9h35)
 
 ## Địa chỉ và nơi lưu
 - **Website:** https://mrblackmath.github.io
@@ -20,6 +20,7 @@ bai-hoc/                Các trang bài học (chỉ xem trực tuyến)
 chung/                  Thư viện dùng chung cho mọi trang bài học: `katex-0.16.45.css` (kèm phông), `katex-0.16.45.js`
 anh/                    Ảnh xem trước slide 1 (`lop<lớp>-<bài>-<giang|luyen|kiemtra>.webp`, 800×450), ảnh thầy `thay.jpg`, ảnh chia sẻ `chia-se.jpg` (1200×630, hiện khi gửi link qua Zalo/Facebook)
 sitemap.xml, robots.txt  Cho Google tìm bài (sitemap liệt kê trang chủ, mọi trang bài học và phiếu PDF)
+googlef81bf90d3247f186.html  Tệp xác minh Google Search Console — KHÔNG được xoá
 ```
 
 ## Quy ước đặt tên file
@@ -144,11 +145,11 @@ Trong `index.html`, khối `LINKS` khai báo đường dẫn cho từng bài, kh
 - Bài 5–7, 10–17 – Toán 11: khi có ghi âm thì thay bài giảng (giữ tên file), chụp lại ảnh xem trước và xoá `chuaGiong`.
 - Bài 17, 18, 19, 20 – Toán 6: khi có ghi âm thì thay bài giảng (giữ tên file), chụp lại ảnh xem trước và xoá `chuaGiong`.
 - Bài 5, 6 – Toán 10: khi có ghi âm thì thay bài giảng (giữ tên file), chụp lại ảnh xem trước và xoá `chuaGiong`.
-- Đăng ký Google Search Console (Gmail của thầy) và gửi `sitemap.xml` — làm qua trình duyệt tích hợp trên máy thầy.
 - Bổ sung HSA.
 - Mua và gắn tên miền mrblackmath.vn.
 
 ## Nhật ký
+- 18/10/2026 (9h35): Thầy nhắn "gộp" (9h03): đã gộp PR #19; web thật đã cập nhật (trang chủ bản nhẹ, sitemap, robots, phiếu theo mẫu). Đăng ký Google Search Console bằng tài khoản quangphonsn@gmail.com (trình duyệt tích hợp trên máy thầy): thuộc tính "Tiền tố URL" https://mrblackmath.github.io/; xác minh bằng Google Analytics không được (mã nạp qua `thong-ke.js`, không nằm thẳng trong trang chủ) → thêm tệp `googlef81bf90d3247f186.html` (PR #20, thầy nhắn "gộp" 9h14) → đã xác minh. Đã gửi `sitemap.xml` (lúc gửi Search Console báo "Không thể tìm nạp" — thường gặp với thuộc tính vừa xác minh, Google sẽ đọc lại; kiểm tra lại sau 1–2 ngày) và yêu cầu lập chỉ mục trang chủ. Xem tại search.google.com/search-console.
 - 18/10/2026 (9h20): Pull Request nhánh `claude/lam-nhe-web` (17–18/10) gồm 5 việc:
   - Làm nhẹ web: 186 ảnh xem trước tách ra `anh/*.webp` (trang chủ 12,7 MB → 104 KB); thư viện KaTeX dùng chung `chung/` (trang bài học TB 856 KB → 233 KB). Đo trên 4G chậm (4 Mbit/s, trễ 150 ms, khổ điện thoại): trang chủ 26,7 giây/13 MB → 0,6 giây/0,14 MB; bài thứ hai mở 2,1 giây/0,81 MB → 0,8 giây/0,17 MB (thư viện đã có trong bộ nhớ đệm).
   - Chia sẻ, tìm kiếm: ảnh `anh/chia-se.jpg`, thẻ description/canonical/og/twitter cho 187 trang, `sitemap.xml` (249 địa chỉ), `robots.txt`.
