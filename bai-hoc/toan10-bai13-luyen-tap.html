@@ -1,0 +1,1240 @@
+<!doctype html>
+<html lang="vi" data-mb-brand="Mr Black NBK" data-mb-id="MB-F41DE47D40"><head><meta charset="utf-8"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><meta name="apple-mobile-web-app-title" content="Mr Black"><link rel="apple-touch-icon" href="../icon.png"><script>try{if(navigator.audioSession)navigator.audioSession.type='playback'}catch(e){}</script>
+<!-- © Mr Black NBK · Created by Mr Black · Toán THPT · T10B13_LuyenTap_HS · MB-F41DE47D40 [MRBLACK-NBK] — tài liệu thuộc bản quyền Mr Black -->
+<meta name="author" content="Mr Black"><meta name="copyright" content="© Mr Black NBK"><meta name="generator" content="Mr Black NBK"><meta name="mb-id" content="MB-F41DE47D40"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Tự luyện · Bài 13 · Các số đặc trưng đo xu thế trung tâm · Toán 10 · Mr Black</title>
+<meta name="description" content="Luyện tập có lời giải Bài 13. Các số đặc trưng đo xu thế trung tâm – Toán 10. Luyện tập từng nhiệm vụ, có gợi ý khi vướng và lời giải chi tiết. Miễn phí, không cần đăng ký – Mr Black.">
+<link rel="canonical" href="https://mrblackmath.github.io/bai-hoc/toan10-bai13-luyen-tap.html">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Mr Black – Toán 6 đến 12">
+<meta property="og:locale" content="vi_VN">
+<meta property="og:title" content="Luyện tập có lời giải · Bài 13. Các số đặc trưng đo xu thế trung tâm · Toán 10">
+<meta property="og:description" content="Luyện tập có lời giải Bài 13. Các số đặc trưng đo xu thế trung tâm – Toán 10. Luyện tập từng nhiệm vụ, có gợi ý khi vướng và lời giải chi tiết. Miễn phí, không cần đăng ký – Mr Black.">
+<meta property="og:url" content="https://mrblackmath.github.io/bai-hoc/toan10-bai13-luyen-tap.html">
+<meta property="og:image" content="https://mrblackmath.github.io/anh/chia-se.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Mr Black – Học Toán miễn phí từ lớp 6 đến lớp 12">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#0d1433">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;500;600;700&display=swap">
+<link rel="stylesheet" href="../chung/katex-0.16.45.css" data-lib="katex-0.16.45">
+<style>
+/* MR BLACK NBK — HỆ THỐNG SLIDE TỔNG HỢP KIẾN THỨC CHƯƠNG (Loại B · P1)
+   Kế thừa token & bố cục sân khấu 1920×1080 của bài giảng T12-B7 (Design System v1.0). */
+:root{
+  --stage-a:#070d24; --stage-b:#13245e;
+  --panel:#0f1a3f; --panel-2:#16245a; --panel-line:#2f4488;
+  --text:#f5f7fc; --muted:#b4c0e2; --dim:#7f8db8;
+  --gold:#ffc83d; --gold-2:#ff9f1c; --gold-ink:#1a1204; --gold-soft:rgba(255,200,61,.14);
+  --blue:#4c8eff; --blue-soft:rgba(76,142,255,.16);
+  --ok:#2fd27a; --ok-soft:rgba(47,210,122,.16); --bad:#ff5a5f; --bad-soft:rgba(255,90,95,.16);
+  --fig-ink:#f5f7fc; --fig-dim:#9fb0da; --fig-faint:#26386f; --hatch:#8fa3d9;
+  --sol:rgba(76,142,255,.22); --sol-line:#5aa8ff;
+  --btn:#1b2a63; --btn-line:#3a55a8; --input-bg:#060b1f;
+  --font:"Chakra Petch","Bahnschrift","Segoe UI",system-ui,-apple-system,Roboto,"Noto Sans",sans-serif;
+  --h:42px; --tx:32px; --sm:25px; --line:1.42;
+  color-scheme:dark;
+}
+:root[data-mb="light"]{
+  --stage-a:#e9eefb; --stage-b:#f8f9fe;
+  --panel:#ffffff; --panel-2:#f2f5fd; --panel-line:#c6d1ee;
+  --text:#0d1433; --muted:#3c4870; --dim:#6b7699;
+  --gold:#b87a00; --gold-2:#a86400; --gold-ink:#ffffff; --gold-soft:rgba(201,136,0,.12);
+  --blue:#1d4ed8; --blue-soft:rgba(29,78,216,.1);
+  --ok:#0f8a44; --ok-soft:rgba(15,138,68,.12); --bad:#c62828; --bad-soft:rgba(198,40,40,.1);
+  --fig-ink:#0d1433; --fig-dim:#5b6892; --fig-faint:#dfe5f5; --hatch:#7d8bb3;
+  --sol:rgba(29,78,216,.14); --sol-line:#1d6fe0;
+  --btn:#ffffff; --btn-line:#b9c6ea; --input-bg:#ffffff;
+  color-scheme:light;
+}
+*,*::before,*::after{box-sizing:border-box}
+[hidden]{display:none!important}
+html,body{height:100%;margin:0}
+body{background:var(--stage-a);color:var(--text);font-family:var(--font);overflow:hidden}
+button{font:inherit;color:inherit;cursor:pointer}
+:focus-visible{outline:4px solid var(--gold);outline-offset:3px}
+#viewport{position:fixed;inset:0;overflow:hidden;background:radial-gradient(ellipse at 50% -10%,var(--stage-b),var(--stage-a) 70%)}
+#canvas{position:absolute;left:0;top:0;width:1920px;height:1080px;transform-origin:0 0;font-size:var(--tx);line-height:var(--line)}
+.katex{font-size:1.04em}
+b{font-weight:700}
+.gold-t{color:var(--gold)} .ok-t{color:var(--ok)} .bad-t{color:var(--bad)} .blue-t{color:var(--blue)} .muted{color:var(--muted)}
+.gold-t .katex{color:var(--gold)}
+
+/* ---------- thanh trên ---------- */
+.topbar{position:absolute;left:48px;right:48px;top:22px;height:66px;display:flex;align-items:center;gap:22px;z-index:3}
+.brand{display:flex;align-items:center;gap:14px;background:none;border:0;padding:0;text-align:left;flex:0 0 auto}
+.brand .logo{width:60px;height:60px;position:relative}
+.brand .logo svg{width:60px;height:60px;display:block}
+.brand .logo img{position:absolute;inset:4px;width:52px;height:52px;object-fit:cover;border-radius:10px}
+.brand b{display:block;font-size:var(--sm);line-height:1}
+.brand small{display:block;margin-top:5px;font-size:15px;font-weight:700;letter-spacing:.24em;text-transform:uppercase;color:var(--gold)}
+.mb{position:absolute;right:-8px;bottom:-6px;padding:1px 5px;border-radius:6px;font-size:13px;font-weight:700;line-height:1.2;color:var(--gold-ink);background:linear-gradient(180deg,var(--gold),var(--gold-2));box-shadow:0 0 0 2px var(--stage-a)}
+.brand:not(.has-photo) .mb{display:none}
+.secs{margin-left:auto;display:flex;align-items:center}
+.secs button{position:relative;height:46px;padding:0 13px;display:inline-flex;align-items:center;font-size:19px;font-weight:700;color:var(--dim);border:0;border-bottom:3px solid var(--panel-line);background:none;white-space:nowrap}
+.secs button:hover{color:var(--text)}
+.secs button.seen{color:var(--muted)}
+.secs button.seen::after{content:"";position:absolute;right:4px;top:8px;width:7px;height:7px;border-radius:50%;background:var(--ok)}
+.secs button.cur{color:var(--gold);border-bottom-color:var(--gold)}
+
+.stage{position:absolute;left:48px;right:48px;top:106px;bottom:108px;z-index:2}
+.slide{position:absolute;inset:0;display:flex;flex-direction:column;gap:22px}
+.watermark{position:absolute;right:0;bottom:-6px;font-size:100px;font-weight:700;color:var(--text);opacity:.045;pointer-events:none;line-height:1}
+
+/* đề mục */
+.hd{flex:0 0 auto;display:flex;align-items:stretch;border-radius:16px;overflow:hidden;border:2px solid var(--gold);background:var(--panel)}
+.hd .sn{flex:0 0 auto;min-width:88px;padding:0 20px;display:grid;place-items:center;font-size:var(--h);font-weight:700;color:var(--gold-ink);background:linear-gradient(180deg,var(--gold),var(--gold-2))}
+.hd .st{flex:0 0 auto;padding:12px 26px;font-size:var(--h);font-weight:700;letter-spacing:.03em;text-transform:uppercase;color:var(--gold);display:flex;align-items:center}
+.hd .ss{flex:1 1 auto;padding:12px 26px;font-size:var(--h);font-weight:700;display:flex;align-items:center;border-left:2px solid var(--panel-line)}
+.hd .kid{flex:0 0 auto;display:flex;align-items:center;gap:8px;padding:0 18px}
+.kchip{display:inline-flex;align-items:center;height:34px;padding:0 12px;border-radius:999px;border:2px solid var(--panel-line);font-size:18px;font-weight:700;color:var(--muted)}
+
+.cols{flex:1 1 auto;min-height:0;display:grid;gap:30px}
+.cols>*{min-width:0;min-height:0}
+.box{border-radius:18px;border:2px solid var(--panel-line);background:var(--panel);padding:18px 26px}
+.kbox{border-radius:18px;border:2px solid var(--gold);background:linear-gradient(var(--gold-soft),var(--gold-soft)),var(--panel);padding:18px 26px;font-weight:600}
+.kbox .kw,.kw{color:var(--gold)}
+.ttl{display:block;font-size:var(--sm);font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--gold);margin-bottom:6px}
+.de{border-radius:18px;border:3px solid var(--gold);background:var(--panel);padding:14px 24px;font-size:var(--tx);font-weight:600}
+.de .tag{display:inline-block;margin-right:10px;padding:0 12px;border-radius:9px;background:linear-gradient(180deg,var(--gold),var(--gold-2));color:var(--gold-ink);font-size:var(--sm);font-weight:700}
+ul.dot{list-style:none;margin:0;padding:0;display:grid;gap:8px}
+ul.dot li{position:relative;padding-left:32px}
+ul.dot li::before{content:"";position:absolute;left:4px;top:.55em;width:13px;height:13px;border-radius:4px;background:var(--gold)}
+ul.dot li.l2{padding-left:70px;font-weight:500}
+ul.dot li.l2::before{left:38px;top:.7em;width:20px;height:4px;border-radius:2px;background:var(--muted)}
+.vstack{display:flex;flex-direction:column;gap:16px;min-height:0}
+.fill{flex:1 1 auto;min-height:0}
+
+/* nút */
+.btn{min-height:56px;padding:6px 22px;border-radius:12px;border:2px solid var(--btn-line);background:var(--btn);font-size:var(--sm);font-weight:700;display:inline-flex;align-items:center;justify-content:center;gap:8px;line-height:1.2}
+.btn:hover:not(:disabled){border-color:var(--gold)}
+.btn:disabled{opacity:.4;cursor:default}
+.btn.gold{background:linear-gradient(180deg,var(--gold),var(--gold-2));border-color:var(--gold);color:var(--gold-ink)}
+.btn.sm{min-height:46px;font-size:21px;padding:4px 16px}
+.btn[aria-pressed="true"],.btn.on{border-color:var(--gold);background:var(--gold-soft);color:var(--gold)}
+.row{display:flex;gap:12px;align-items:center;flex-wrap:wrap}
+.seg{display:inline-flex;flex-wrap:wrap;gap:8px}
+
+/* thanh dưới */
+.bottombar{position:absolute;left:48px;right:48px;bottom:22px;height:64px;display:flex;align-items:center;gap:12px;z-index:7}
+.nbtn{height:58px;min-width:58px;padding:0 16px;border-radius:10px;border:2px solid var(--btn-line);background:var(--btn);font-size:19px;font-weight:700;text-transform:uppercase;display:inline-flex;align-items:center;justify-content:center;gap:8px;white-space:nowrap}
+.nbtn:hover:not(:disabled){border-color:var(--gold)}
+.nbtn:disabled{opacity:.35;cursor:default}
+.nbtn.go{background:linear-gradient(180deg,var(--gold),var(--gold-2));border-color:var(--gold);color:var(--gold-ink);min-width:104px;font-size:var(--sm)}
+.nbtn[aria-pressed="true"]{border-color:var(--gold);color:var(--gold)}
+.nlabel{font-size:20px;font-weight:700;width:420px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;color:var(--muted)}
+.progress{flex:1;height:10px;border-radius:999px;background:var(--panel-2);border:1px solid var(--panel-line);overflow:hidden}
+.progress i{display:block;height:100%;width:0;background:linear-gradient(90deg,var(--blue),var(--gold));transition:width .3s}
+.ncount{font-size:20px;font-weight:700;color:var(--muted);min-width:70px;text-align:right;font-variant-numeric:tabular-nums}
+.pips{display:flex;gap:6px}
+.pips i{width:12px;height:12px;border-radius:50%;border:2px solid var(--gold)}
+.pips i.on{background:var(--gold)}
+.menu{position:absolute;left:50%;bottom:100px;transform:translateX(-50%);width:1500px;z-index:9;padding:22px;border-radius:18px;border:2px solid var(--panel-line);background:var(--panel);box-shadow:0 30px 80px rgba(0,0,0,.45)}
+.menu .mgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}
+.menu button{text-align:left;padding:12px 16px;border-radius:12px;border:2px solid var(--panel-line);background:var(--btn);font-size:21px;font-weight:700}
+.menu button:hover{border-color:var(--gold)}
+.menu button.cur{border-color:var(--gold);color:var(--gold)}
+.gvnote{position:absolute;left:0;right:0;bottom:-6px;z-index:8;display:none;padding:10px 18px;border-radius:14px;border:2px dashed var(--gold);background:var(--panel);font-size:20px;font-weight:600;color:var(--muted);line-height:1.4}
+body.gv .gvnote{display:block}
+#nojs{position:fixed;inset:0;z-index:999;display:flex;align-items:center;justify-content:center;background:#0b1024;color:#fff;font:600 18px system-ui,sans-serif}
+.js #nojs{display:none}
+#rotate{position:fixed;inset:0;z-index:998;display:none;flex-direction:column;gap:18px;align-items:center;justify-content:center;background:rgba(6,9,20,.94);color:#fff;font:600 19px system-ui,sans-serif;text-align:center;padding:28px}
+#rotate button{font:700 16px system-ui,sans-serif;background:#ffc83d;border:0;border-radius:10px;padding:10px 18px;color:#0a0c12}
+@media (orientation:portrait) and (max-width:900px){.js:not(.keep-portrait) #rotate{display:flex}}
+.fade{animation:fd .35s ease-out}
+@keyframes fd{from{opacity:0}to{opacity:1}}
+@keyframes shake{0%,100%{transform:translateX(0)}20%{transform:translateX(-10px)}40%{transform:translateX(8px)}60%{transform:translateX(-5px)}80%{transform:translateX(3px)}}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
+[data-step]:not(.on){visibility:hidden}
+
+/* ---------- bìa ---------- */
+.cover{flex:1;display:grid;grid-template-columns:820px 1fr;gap:56px;align-items:center}
+.avatar{position:relative;width:180px;height:180px;border-radius:28px;padding:6px;background:linear-gradient(180deg,#ffe28a,var(--gold) 45%,var(--gold-2));box-shadow:0 0 50px rgba(255,200,61,.35)}
+.avatar img{display:block;width:100%;height:100%;object-fit:cover;border-radius:22px}
+.avatar svg{width:100%;height:100%}
+.avatar .mb{right:-14px;bottom:-12px;font-size:24px;padding:3px 12px;border-radius:10px;box-shadow:0 0 0 4px var(--stage-a)}
+.cover .eb{margin:26px 0 0;font-size:var(--sm);font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:var(--gold)}
+.cover h1{margin:12px 0 0;font-size:92px;line-height:1.02;letter-spacing:-.02em}
+.cover h1 span{display:block;font-size:54px;line-height:1.15;margin-top:12px;background:linear-gradient(180deg,#ffe28a,var(--gold) 50%,var(--gold-2));-webkit-background-clip:text;background-clip:text;color:transparent}
+:root[data-mb="light"] .cover h1 span{background:none;color:var(--gold)}
+.cover .chips{display:flex;flex-wrap:wrap;gap:10px;margin-top:22px}
+.cover .chips span{height:42px;padding:0 16px;display:inline-flex;align-items:center;border-radius:999px;border:2px solid var(--panel-line);background:var(--panel);font-size:20px;font-weight:700;color:var(--muted)}
+.cover .sig{margin-top:22px;font-size:var(--sm);font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:var(--dim)}
+.cover .sig b{color:var(--gold)}
+.cmenu{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.cmenu .pk{grid-column:1/-1;margin:0;font-size:var(--sm);font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:var(--gold)}
+.ccard{display:grid;gap:4px;text-align:left;padding:14px 20px;border-radius:16px;border:2px solid var(--panel-line);background:var(--panel);cursor:pointer}
+.ccard:hover,.ccard:focus-visible{border-color:var(--gold);outline:none}
+.ccard .pn{font-size:18px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--gold)}
+.ccard b{font-size:27px;line-height:1.2}
+.ccard small{font-size:19px;color:var(--muted);font-weight:600}
+.ccard.wide{grid-column:1/-1;border-color:var(--gold);background:linear-gradient(var(--gold-soft),var(--gold-soft)),var(--panel)}
+
+/* ---------- sơ đồ chương ---------- */
+.cmap{position:relative;flex:1 1 auto;min-height:0}
+.cmap>svg{position:absolute;inset:0;width:100%;height:100%;overflow:visible}
+.cmap .arw{stroke:var(--gold);stroke-width:4;fill:none}
+.cmap .arh{fill:var(--gold)}
+.cmap .alab{font-family:var(--font);font-size:21px;font-weight:700;fill:var(--muted);paint-order:stroke;stroke:var(--stage-a);stroke-width:7px}
+.node{position:absolute;display:flex;flex-direction:column;gap:6px;padding:16px 22px;border-radius:18px;border:2px solid var(--panel-line);background:var(--panel);cursor:pointer;text-align:left}
+.node:hover,.node:focus-visible{border-color:var(--gold);outline:none;box-shadow:0 0 0 6px var(--gold-soft)}
+.node .nn{display:flex;align-items:center;gap:12px;font-size:28px;font-weight:700}
+.node .nn i{font-style:normal;width:44px;height:44px;flex:0 0 auto;border-radius:12px;display:grid;place-items:center;font-size:24px;color:var(--gold-ink);background:linear-gradient(180deg,var(--gold),var(--gold-2))}
+.node .nf{font-size:26px;font-weight:600;color:var(--muted)}
+.node .go{margin-top:auto;font-size:19px;font-weight:700;color:var(--gold);letter-spacing:.08em}
+
+/* ---------- thẻ mở rộng ---------- */
+.acc{border-radius:16px;border:2px solid var(--panel-line);background:var(--panel);overflow:hidden}
+.acc>button{width:100%;display:flex;align-items:center;gap:14px;padding:12px 20px;border:0;background:none;text-align:left;font-size:var(--tx);font-weight:700}
+.acc>button::after{content:"+";margin-left:auto;font-size:34px;color:var(--gold);line-height:1}
+.acc.open>button::after{content:"–"}
+.acc.open{border-color:var(--gold)}
+.acc .ab{display:none;padding:0 22px 16px;font-size:30px;font-weight:600}
+.acc.open .ab{display:block}
+
+/* ---------- lật thẻ ---------- */
+.flips{display:grid;gap:16px}
+.flip{position:relative;perspective:1200px;border:0;padding:0;background:none;min-height:150px;text-align:center}
+.flip .in{position:absolute;inset:0;transition:transform .5s;transform-style:preserve-3d}
+.flip.on .in{transform:rotateY(180deg)}
+.flip .fa,.flip .fb{position:absolute;inset:0;backface-visibility:hidden;-webkit-backface-visibility:hidden;border-radius:16px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:6px;padding:10px 16px}
+.flip .fa{border:2px solid var(--btn-line);background:var(--panel);font-size:32px;font-weight:600}
+.flip .fa small{font-size:18px;font-weight:700;letter-spacing:.12em;color:var(--dim)}
+.flip:hover .fa{border-color:var(--gold)}
+.flip .fb{transform:rotateY(180deg);font-size:24px;font-weight:600;line-height:1.3}
+.flip .fb.y{border:3px solid var(--ok);background:linear-gradient(var(--ok-soft),var(--ok-soft)),var(--panel)}
+.flip .fb.n{border:3px dashed var(--bad);background:linear-gradient(var(--bad-soft),var(--bad-soft)),var(--panel)}
+.flip .fb b{font-size:28px}
+.flip .fb.y b{color:var(--ok)} .flip .fb.n b{color:var(--bad)}
+.flip .fb.w{border:3px dashed var(--bad);background:linear-gradient(var(--bad-soft),var(--bad-soft)),var(--panel)}
+.flip .fa.w{border:2px dashed var(--bad);font-size:26px;line-height:1.3}
+.flip .fa.w small{color:var(--bad)}
+.flip .fb.r{border:3px solid var(--ok);background:linear-gradient(var(--ok-soft),var(--ok-soft)),var(--panel);font-size:23px;text-align:left;align-items:flex-start}
+.flip .fb.r b{color:var(--ok);font-size:22px;letter-spacing:.1em}
+
+/* ---------- đồ thị ---------- */
+.plot{position:relative;min-height:0;display:grid;place-items:center}
+.plot svg{display:block;width:100%;height:100%;overflow:visible;user-select:none;-webkit-user-select:none;touch-action:none}
+.pg .gl{stroke:var(--fig-faint);stroke-width:1.5}
+.pg .ax{stroke:var(--fig-ink);stroke-width:3}
+.pg .axh{fill:var(--fig-ink)}
+.pg .tk{font-family:KaTeX_Main,"Times New Roman",serif;font-size:24px;fill:var(--muted);paint-order:stroke;stroke:var(--stage-a);stroke-width:6px}
+.pg .al{font-family:KaTeX_Math,"Times New Roman",serif;font-style:italic;font-size:32px;fill:var(--text);paint-order:stroke;stroke:var(--stage-a);stroke-width:7px}
+.pg .ln{stroke:#ff6b6b;stroke-width:4;stroke-linecap:round}
+.pg .ln.dash{stroke-dasharray:14 10}
+.pg .ln.c1{stroke:#ff6b6b} .pg .ln.c2{stroke:#5aa8ff} .pg .ln.c3{stroke:#2fd27a} .pg .ln.c4{stroke:#c08bff}
+.pg .ll{font-family:KaTeX_Main,"Times New Roman",serif;font-size:27px;paint-order:stroke;stroke:var(--stage-a);stroke-width:7px;fill:#ff8f8f}
+.pg .ll.c2{fill:#7ab9ff} .pg .ll.c3{fill:#45dd8a} .pg .ll.c4{fill:#cfa3ff}
+.pg .ht{stroke:none}
+.pg .sol{fill:var(--sol);stroke:none}
+.pg .pt{fill:var(--gold);stroke:var(--stage-a);stroke-width:3}
+.pg .pt.ok{fill:var(--ok)} .pg .pt.bad{fill:none;stroke:var(--bad);stroke-width:4}
+.pg .pl{font-family:KaTeX_Main,"Times New Roman",serif;font-size:26px;font-weight:700;fill:var(--gold);paint-order:stroke;stroke:var(--stage-a);stroke-width:7px}
+.pg .pl.ok{fill:var(--ok)} .pg .pl.bad{fill:var(--bad)} .pg .pl.ink{fill:var(--text)}
+.pg .side{font-family:KaTeX_Main,"Times New Roman",serif;font-size:30px;fill:var(--text);paint-order:stroke;stroke:var(--stage-a);stroke-width:7px}
+.pg .hp1{fill:rgba(255,200,61,.16)} .pg .hp2{fill:rgba(76,142,255,.16)}
+.pg .drag{cursor:grab}
+.pg .hit{fill:transparent;cursor:crosshair}
+.pg .vx{fill:var(--sol-line);stroke:var(--stage-a);stroke-width:3}
+.pg .best{fill:var(--gold)}
+:root[data-mb="light"] .pg .tk,:root[data-mb="light"] .pg .al,:root[data-mb="light"] .pg .ll,:root[data-mb="light"] .pg .pl,:root[data-mb="light"] .pg .side,:root[data-mb="light"] .cmap .alab{stroke:#f4f6fd}
+:root[data-mb="light"] .pg .ln.c1{stroke:#d63031} :root[data-mb="light"] .pg .ll{fill:#c0262a}
+:root[data-mb="light"] .pg .ln.c2{stroke:#1d6fe0} :root[data-mb="light"] .pg .ll.c2{fill:#1d5fc0}
+:root[data-mb="light"] .pg .ln.c3{stroke:#0f8a44} :root[data-mb="light"] .pg .ll.c3{fill:#0f7a3d}
+:root[data-mb="light"] .pg .ln.c4{stroke:#7b3fd1} :root[data-mb="light"] .pg .ll.c4{fill:#6b30c0}
+
+/* bảng log / bước */
+.steps{display:grid;gap:10px;counter-reset:st}
+.stp{display:grid;grid-template-columns:52px 1fr;gap:14px;align-items:start;padding:10px 18px;border-radius:14px;border:2px solid var(--panel-line);background:var(--panel);font-size:29px;font-weight:600;line-height:1.38}
+.stp>i{font-style:normal;width:46px;height:46px;border-radius:50%;display:grid;place-items:center;font-size:24px;font-weight:700;color:var(--gold-ink);background:linear-gradient(180deg,var(--gold),var(--gold-2))}
+.stp.dim{opacity:.38}
+.stp.cur{border-color:var(--gold);box-shadow:0 0 0 5px var(--gold-soft)}
+.stp small{display:block;font-size:24px;color:var(--muted);font-weight:600}
+.readout{font-size:30px;font-weight:600;padding:12px 20px;border-radius:14px;border:2px solid var(--panel-line);background:var(--panel);min-height:64px}
+.readout.ok{border-color:var(--ok);background:var(--ok-soft)}
+.readout.bad{border:2px dashed var(--bad);background:var(--bad-soft)}
+.readout b.ok-t::before{content:"✓ "} .readout b.bad-t::before{content:"✗ "}
+table.ct{border-collapse:separate;border-spacing:0;width:100%;font-size:28px;font-weight:600}
+table.ct th,table.ct td{padding:8px 14px;border-bottom:2px solid var(--panel-line);text-align:left}
+table.ct th{font-size:21px;letter-spacing:.1em;text-transform:uppercase;color:var(--gold)}
+table.ct tr.mx td{background:var(--ok-soft)} table.ct tr.mn td{background:var(--blue-soft)}
+table.ct td.tag{font-size:21px;font-weight:700}
+.stepper{display:inline-flex;align-items:center;gap:6px;font-size:28px;font-weight:700}
+.stepper button{width:44px;height:44px;border-radius:10px;border:2px solid var(--btn-line);background:var(--btn);font-size:26px;font-weight:700;line-height:1;padding:0}
+.stepper output{min-width:44px;text-align:center;font-variant-numeric:tabular-nums}
+.custom{display:flex;flex-wrap:wrap;align-items:center;gap:10px 18px;padding:10px 16px;border-radius:14px;border:2px dashed var(--panel-line)}
+.chk{display:flex;align-items:center;gap:14px;padding:8px 16px;border-radius:14px;border:2px solid var(--panel-line);background:var(--panel);font-size:29px;font-weight:600;cursor:pointer;text-align:left;width:100%}
+.chk .bx{flex:0 0 auto;width:34px;height:34px;border-radius:9px;border:3px solid var(--btn-line);display:grid;place-items:center;font-size:22px}
+.chk[aria-pressed="true"]{border-color:var(--gold)}
+.chk[aria-pressed="true"] .bx{border-color:var(--gold);background:var(--gold);color:var(--gold-ink)}
+.chk[aria-pressed="true"] .bx::after{content:"✓"}
+.chk .sw{flex:0 0 auto;width:26px;height:6px;border-radius:3px}
+.chk .res{margin-left:auto;font-size:24px;font-weight:700}
+
+/* ghép dạng toán */
+.match{flex:1 1 auto;min-height:0;display:grid;grid-template-columns:1fr 1fr;gap:16px 40px;align-content:start}
+.match .colh{font-size:var(--sm);font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--gold)}
+.mcol{display:grid;gap:10px;align-content:start}
+.mi{display:flex;align-items:center;gap:14px;min-height:76px;padding:8px 18px;border-radius:14px;border:2px solid var(--btn-line);background:var(--btn);font-size:24px;font-weight:600;text-align:left;line-height:1.28}
+.mi i{font-style:normal;flex:0 0 auto;width:42px;height:42px;border-radius:10px;display:grid;place-items:center;font-size:21px;font-weight:700;color:var(--gold-ink);background:linear-gradient(180deg,var(--gold),var(--gold-2))}
+.mi.sel{border-color:var(--gold);box-shadow:0 0 0 5px var(--gold-soft)}
+.mi.ok{border-color:var(--ok);background:var(--ok-soft);cursor:default}
+.mi.ok::after{content:"✓";margin-left:auto;font-size:28px;color:var(--ok);font-weight:700}
+.mi.bad{border-style:dashed;border-color:var(--bad);animation:shake .45s}
+.mi .tg{flex:0 0 auto;margin-left:auto;font-size:18px;font-weight:700;color:var(--ok);white-space:nowrap}
+.mfb{min-height:56px;font-size:26px;font-weight:600;padding:8px 18px;border-radius:14px;border:2px solid transparent}
+.mfb.ok{border-color:var(--ok);background:var(--ok-soft)} .mfb.bad{border:2px dashed var(--bad);background:var(--bad-soft)}
+table.nd{border-collapse:separate;border-spacing:0 8px;width:100%;font-size:25px;font-weight:600}
+table.nd th{font-size:20px;letter-spacing:.12em;text-transform:uppercase;color:var(--gold);text-align:left;padding:0 14px}
+table.nd td{padding:10px 14px;background:var(--panel);border-top:2px solid var(--panel-line);border-bottom:2px solid var(--panel-line);vertical-align:middle;line-height:1.3}
+table.nd td:first-child{border-left:2px solid var(--panel-line);border-radius:12px 0 0 12px;width:540px}
+table.nd td:last-child{border-right:2px solid var(--panel-line);border-radius:0 12px 12px 0;width:150px;text-align:right}
+table.nd.hide td.pp{color:transparent;background:repeating-linear-gradient(135deg,var(--panel-2) 0 12px,var(--panel) 12px 24px)}
+table.nd.hide td.pp *{visibility:hidden}
+
+/* máy tính mô phỏng */
+.calc{border-radius:24px;border:3px solid var(--panel-line);background:linear-gradient(180deg,#1b2440,#0d1328);padding:18px 20px 20px;display:grid;gap:12px;color:#e9eefc}
+:root[data-mb="light"] .calc{background:linear-gradient(180deg,#2a3354,#151c36)}
+.calc .sim{justify-self:end;font-size:16px;font-weight:700;letter-spacing:.18em;color:#ffd166;border:2px dashed #ffd166;border-radius:8px;padding:0 10px}
+.calc .scr{border-radius:12px;background:#c9d6b8;color:#16210f;padding:12px 18px;font-family:"Consolas","Courier New",monospace;font-size:30px;font-weight:700;line-height:1.35;min-height:150px}
+.calc .scr .r{text-align:right;font-size:36px}
+.calc .keys{display:flex;flex-wrap:wrap;gap:8px;align-items:center;font-size:22px;font-weight:700}
+.key{display:inline-flex;align-items:center;justify-content:center;min-width:52px;height:44px;padding:0 10px;border-radius:9px;background:#3a4568;border-bottom:4px solid #222a44;color:#fff;font-size:20px}
+.key.y{background:#c98a00;border-bottom-color:#7a5300}
+.calc .ar{color:#ffd166}
+.tipwhen{font-size:28px;font-weight:600;padding:10px 20px;border-left:6px solid var(--gold);border-radius:0 14px 14px 0;background:var(--panel)}
+.tipstep{border-radius:16px;border:2px solid var(--panel-line);background:var(--panel);padding:12px 22px;font-size:28px;font-weight:600;line-height:1.38}
+.tipstep .h{display:block;font-size:21px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--gold);margin-bottom:2px}
+.tipstep.warn{border:2px dashed var(--bad)}
+.tipstep.warn .h{color:var(--bad)}
+.badge-tip{display:inline-flex;align-items:center;height:36px;padding:0 14px;border-radius:999px;border:2px dashed var(--gold);color:var(--gold);font-size:18px;font-weight:700;letter-spacing:.08em}
+.sum4{flex:1 1 auto;display:grid;grid-template-columns:1fr 1fr;grid-template-rows:1fr 1fr;gap:20px}
+.sum4 .box{display:flex;flex-direction:column;gap:6px;font-size:28px;font-weight:600;line-height:1.36}
+.sum4 .box .ttl{font-size:26px}
+
+.pg .vx.open{fill:var(--stage-a);stroke:var(--sol-line);stroke-width:4}
+table.nd td{padding:8px 14px}
+table.nd td:last-child{width:120px}
+
+.cmenu{gap:10px}
+.ccard{padding:11px 20px}
+
+table.dtab{border-collapse:collapse;margin:8px 0;font-size:.92em;width:100%}
+table.dtab th,table.dtab td{border:2px solid var(--panel-line);padding:4px 12px;text-align:center;font-weight:600}
+table.dtab th{color:var(--gold)}
+table.dtab td:first-child{text-align:left}
+
+#sysList .chk{font-size:26px;padding:4px 14px}
+#sysList .chk .bx{width:30px;height:30px}
+#sysRd{min-height:52px;padding:8px 18px}
+#fTab td{padding:4px 14px;font-size:26px}
+#fTab th{padding:4px 14px}
+.kcard{border-radius:16px;border:2px solid var(--panel-line);background:var(--panel);padding:10px 20px 12px;flex:0 0 auto}
+.kcard .kt{display:block;font-size:26px;font-weight:700;color:var(--gold);margin-bottom:4px}
+.kcard .kb{font-size:27px;font-weight:600;line-height:1.36}
+.kcard .kb .kbox{padding:8px 18px}
+/* ---------- bảng GTLG ---------- */
+table.gt{border-collapse:separate;border-spacing:0;font-size:34px;font-weight:600;border:2px solid var(--panel-line);border-radius:16px;overflow:hidden;background:var(--panel)}
+table.gt th,table.gt td{padding:8px 18px;text-align:center;border-right:2px solid var(--panel-line);border-bottom:2px solid var(--panel-line);min-width:110px}
+table.gt tr>*:last-child{border-right:0} table.gt tr:last-child>*{border-bottom:0}
+table.gt th{color:var(--gold);background:var(--panel-2)}
+table.gt td.h{color:var(--gold)}
+table.gt .hl{background:var(--gold-soft)}
+
+/* ---------- HÌNH 2D (SVG) ---------- */
+.g2 .ln{stroke:var(--fig-ink);stroke-width:3.4;fill:none;stroke-linecap:round;stroke-linejoin:round}
+.g2 .ln.th{stroke-width:2.2}
+.g2 .ln.dash{stroke:var(--fig-dim);stroke-width:2.6;stroke-dasharray:10 8}
+.g2 .ln.gold{stroke:var(--gold)} .g2 .ln.blue{stroke:var(--c-blue)} .g2 .ln.red{stroke:var(--c-red)} .g2 .ln.green{stroke:var(--c-green)} .g2 .ln.violet{stroke:var(--c-violet)}
+.g2 .ln.w5{stroke-width:5}
+.g2 .ax{stroke:var(--fig-ink);stroke-width:2.6}
+.g2 .axh{fill:var(--fig-ink)}
+.g2 .grid{stroke:var(--fig-faint);stroke-width:1.5}
+.g2 .arc{fill:none;stroke:var(--gold);stroke-width:3.4}
+.g2 .arc.blue{stroke:var(--c-blue)} .g2 .arc.green{stroke:var(--c-green)} .g2 .arc.red{stroke:var(--c-red)}
+.g2 .fill{fill:var(--gold-soft);stroke:none} .g2 .fill.blue{fill:var(--blue-soft)} .g2 .fill.green{fill:var(--ok-soft)} .g2 .fill.red{fill:var(--bad-soft)}
+.g2 .pt{fill:var(--gold);stroke:var(--stage-a);stroke-width:2.5}
+.g2 .pt.blue{fill:var(--c-blue)} .g2 .pt.red{fill:var(--c-red)} .g2 .pt.green{fill:var(--c-green)} .g2 .pt.ink{fill:var(--fig-ink)}
+.g2 .lab{font-family:KaTeX_Math,"Times New Roman",serif;font-style:italic;font-size:34px;fill:var(--text);paint-order:stroke;stroke:var(--stage-a);stroke-width:7px;stroke-linejoin:round}
+.g2 .lab.up{font-style:normal;font-family:KaTeX_Main,"Times New Roman",serif}
+.g2 .tx{font-family:var(--font);font-size:27px;font-weight:700;fill:var(--gold);paint-order:stroke;stroke:var(--stage-a);stroke-width:6px;stroke-linejoin:round}
+.g2 .tx.mut{fill:var(--muted)} .g2 .tx.ink{fill:var(--text)} .g2 .tx.blue{fill:var(--c-blue)} .g2 .tx.green{fill:var(--c-green)} .g2 .tx.red{fill:var(--c-red)}
+.g2 .tx.sm{font-size:22px}
+:root[data-mb="light"] .g2 .lab,:root[data-mb="light"] .g2 .tx{stroke:#f4f6fd}
+.g2 .ar{fill:var(--gold)} .g2 .ar.ink{fill:var(--fig-ink)} .g2 .ar.blue{fill:var(--c-blue)} .g2 .ar.red{fill:var(--c-red)} .g2 .ar.green{fill:var(--c-green)}
+.g2 .water{fill:rgba(90,168,255,.14);stroke:none} .g2 .land{fill:rgba(47,210,122,.10);stroke:none}
+.g2 .bld{fill:var(--panel-2);stroke:var(--fig-ink);stroke-width:2.6}
+.g2 .hit{fill:transparent;cursor:grab}
+.g2 .drag{cursor:grab}
+.g2 .handle{fill:var(--gold);stroke:var(--stage-a);stroke-width:3;cursor:grab}
+.ctl{display:flex;align-items:center;justify-content:center;gap:18px;font-size:var(--sm);font-weight:700;color:var(--muted)}
+.ctl input[type=range]{width:520px;height:34px;accent-color:var(--gold)}
+.ctl output{min-width:120px;color:var(--gold);font-variant-numeric:tabular-nums}
+.coordbox{display:grid;gap:6px;font-size:32px;font-weight:600}
+.coordbox .v{color:var(--gold)}
+.tip{display:inline-block;padding:2px 14px;border-radius:10px;border:2px solid var(--blue);color:var(--blue);font-size:22px;font-weight:700;letter-spacing:.06em}
+.tipbox{border-radius:18px;border:2px dashed var(--blue);background:var(--blue-soft);padding:14px 24px;font-size:30px;font-weight:600}
+.tipbox>b:first-child{color:var(--blue);display:block;font-size:24px;letter-spacing:.12em;text-transform:uppercase;margin-bottom:4px}
+.keys{display:inline-flex;flex-wrap:wrap;gap:8px;vertical-align:middle}
+.key{display:inline-flex;align-items:center;justify-content:center;min-width:64px;height:48px;padding:0 12px;border-radius:10px;border:2px solid var(--fig-dim);border-bottom-width:5px;background:var(--panel-2);font-size:24px;font-weight:700;color:var(--text)}
+.key.sh{color:var(--gold);border-color:var(--gold)}
+
+.bubble{position:relative;padding:12px 20px;border-radius:18px;border:2px dashed var(--blue);background:var(--blue-soft);font-size:var(--sm);font-weight:600;color:var(--text)}
+.bubble::before{content:"💬 "}
+:root{--c-red:#ff6b6b;--c-blue:#5aa8ff;--c-green:#2fd27a;--c-violet:#c08bff}
+:root[data-mb="light"]{--c-red:#d63031;--c-blue:#1d6fe0;--c-green:#0f8a44;--c-violet:#7b3fd1}
+.fig2{position:relative;min-height:0;min-width:0;height:100%}
+.fig2>svg{position:absolute;inset:0;margin:auto;width:100%;height:100%}
+.slide .katex{display:inline-block}
+.solv{display:grid;gap:10px;font-size:28px;font-weight:600}
+.solv .inrow{display:flex;flex-wrap:wrap;gap:10px 18px;align-items:center}
+.solv label{display:inline-flex;align-items:center;gap:8px}
+.solv input{width:110px;height:52px;border-radius:10px;border:2px solid var(--btn-line);background:var(--btn);color:var(--text);font:inherit;font-size:28px;text-align:center}
+.solv .res{border:2px solid var(--gold);border-radius:14px;padding:10px 18px;background:var(--gold-soft)}
+ul.dot li{margin:6px 0}
+.g2 .ar.violet{fill:var(--c-violet)} .g2 .ar.mut{fill:var(--fig-dim)} .g2 .ln.mut{stroke:var(--fig-dim)}
+.g2 .tx.violet{fill:var(--c-violet)}
+.g2 .road{fill:var(--panel-2);stroke:none} .g2 .lane{stroke:var(--fig-dim);stroke-width:3;stroke-dasharray:22 18} .g2 .mid{stroke:var(--gold);stroke-width:4}
+.g2 .car{fill:var(--panel);stroke:var(--fig-ink);stroke-width:2.6}
+.vstat{border-radius:16px;border:2px solid var(--panel-line);background:var(--panel);padding:12px 22px;font-size:30px;font-weight:700;min-height:64px}
+.vstat.ok{border-color:var(--c-green);color:var(--c-green)} .vstat.bad{border-color:var(--c-red);color:var(--c-red)} .vstat.gold{border-color:var(--gold);color:var(--gold)}
+.qa .q.inl>span{display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+.qa .q.inl .ain{margin-right:30px}
+.opts.c3{grid-template-columns:repeat(3,auto)} .opts.c3 .opt{font-size:26px;min-height:58px}
+.g2 .ar.violet{fill:var(--c-violet)} .g2 .ar.mut{fill:var(--fig-dim)} .g2 .ln.mut{stroke:var(--fig-dim)}
+.g2 .tx.violet{fill:var(--c-violet)}
+.g2 .road{fill:var(--panel-2);stroke:none} .g2 .lane{stroke:var(--fig-dim);stroke-width:3;stroke-dasharray:22 18} .g2 .mid{stroke:var(--gold);stroke-width:4}
+.g2 .car{fill:var(--panel);stroke:var(--fig-ink);stroke-width:2.6}
+.vstat{border-radius:16px;border:2px solid var(--panel-line);background:var(--panel);padding:12px 22px;font-size:30px;font-weight:700;min-height:64px}
+.vstat.ok{border-color:var(--c-green);color:var(--c-green)} .vstat.bad{border-color:var(--c-red);color:var(--c-red)} .vstat.gold{border-color:var(--gold);color:var(--gold)}
+.qa .q.inl>span{display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+.qa .q.inl .ain{margin-right:30px}
+.de.xs{font-size:22px} .de.xs .it{font-size:22px}
+.seq{display:flex;flex-wrap:wrap;gap:10px;font-size:32px;font-weight:700}
+.seq>span{min-width:62px;padding:6px 12px;text-align:center;border-radius:10px;border:2px solid var(--panel-line);background:var(--panel)}
+.seq>span.hl{border-color:var(--gold);background:var(--gold-soft);color:var(--gold)}
+.seq.sm{font-size:26px;gap:8px} .seq.sm>span{min-width:52px;padding:4px 8px}
+.g2 .cyl{fill:none;stroke:var(--fig-ink);stroke-width:4}
+.g2 .tick{stroke:var(--fig-ink);stroke-width:2.4} .g2 .tick.f{stroke-width:1.4}
+.g2 .wtr{fill:rgba(90,168,255,.30);stroke:none} .g2 .wtop{stroke:var(--blue);stroke-width:3}
+.g2 .lens{fill:var(--panel);stroke:var(--fig-ink);stroke-width:8} .g2 .hdl{stroke:var(--gold);stroke-width:22;stroke-linecap:round}
+.g2 .rul{fill:var(--gold-soft);stroke:var(--gold);stroke-width:2.4} .g2 .obj{fill:var(--blue-soft);stroke:var(--blue);stroke-width:3}
+.g2 .band{fill:var(--gold-soft);stroke:var(--gold);stroke-width:3} .g2 .band.blue{fill:var(--blue-soft);stroke:var(--blue)}
+.g2 .mtn{fill:var(--panel-2);stroke:var(--fig-ink);stroke-width:3} .g2 .snow{fill:var(--text);opacity:.85;stroke:none}
+.chip{display:inline-block;padding:2px 12px;border-radius:999px;border:2px solid var(--gold);color:var(--gold);font-weight:700}
+
+/* ===== TỰ LUYỆN (P2) ===== */
+.ptl{flex:0 0 auto;display:flex;flex-wrap:wrap;gap:10px;align-items:center;margin:-8px 0 -6px;font-size:21px;font-weight:700}
+.ptl .pk{padding:4px 14px;border-radius:10px;background:var(--gold);color:var(--gold-ink)}
+.ptl .kc{padding:3px 12px;border-radius:10px;border:2px solid var(--panel-line);color:var(--muted)}
+.ptl .lv{margin-left:auto;padding:3px 12px;border-radius:10px;border:2px dashed var(--gold);color:var(--gold)}
+.ptl .lv.l4{border-style:solid}
+.pcols{flex:1 1 auto;min-height:0;display:grid;gap:28px}
+.pcols>*{min-width:0;min-height:0}
+.pfig{overflow:hidden;padding:6px;border-radius:18px;border:2px solid var(--panel-line);background:var(--panel)}
+.pfig svg.pg{max-height:100%}
+.rcol{flex:1 1 auto;min-height:0;display:flex;flex-direction:column;justify-content:center;gap:14px}
+.pde{flex:0 0 auto;line-height:1.4}
+.qs{display:flex;flex-direction:column;gap:12px;margin-top:16px;padding-top:14px;border-top:2px dashed var(--panel-line);font-weight:500}
+.dst{line-height:1.4}
+.q{display:grid;grid-template-columns:minmax(0,1fr) auto;align-items:center;gap:6px 18px}
+.q .qt:empty{display:none}
+.q .qt:empty+*{grid-column:1/-1}
+.q .fb{grid-column:1/-1;min-height:0;font-size:23px;font-weight:600;line-height:1.35}
+.q .fb:empty{display:none}
+.q .fb.ok{color:var(--ok)} .q .fb.bad{color:var(--bad)}
+.q .fb.bad .katex,.q .fb.ok .katex{color:inherit}
+.opts{display:grid;gap:12px}
+.opts.c1{grid-template-columns:1fr}
+.opts.c2{grid-template-columns:1fr 1fr}
+.opts.c4{grid-template-columns:repeat(4,1fr)}
+.opts.tf{grid-template-columns:auto auto}
+.opts.tf .opt{min-width:120px}
+.opts .opt{justify-content:flex-start;text-align:left;min-height:62px;font-size:28px;font-weight:600;padding:6px 20px;gap:10px}
+.opts.tf .opt{justify-content:center;font-size:24px}
+.opts .opt b{color:var(--gold)}
+.opts .opt[data-state="sel"]{border-color:var(--gold);background:linear-gradient(var(--gold-soft),var(--gold-soft)),var(--btn);box-shadow:0 0 0 3px var(--gold-soft)}
+.opts .opt[data-state="ok"]{border:3px solid var(--ok);background:linear-gradient(var(--ok-soft),var(--ok-soft)),var(--btn)}
+.opts .opt[data-state="bad"]{border:3px dashed var(--bad)}
+.opts .opt:disabled{opacity:1;cursor:default}
+.opts .opt:disabled:not([data-state="ok"]){opacity:.55}
+.opts.pick{grid-column:1/-1;grid-template-columns:repeat(3,1fr);gap:22px}
+.opts.pick .gopt{position:relative;display:block;padding:8px;min-height:0;border-radius:16px}
+.opts.pick .gopt .gl{position:absolute;left:14px;top:8px;font-size:30px;z-index:2}
+.opts.pick .gopt svg{display:block;width:100%;height:auto;pointer-events:none}
+.num{display:inline-flex;align-items:center;gap:14px;font-size:28px;font-weight:700;color:var(--muted)}
+.num input{width:200px;height:62px;font:inherit;font-size:30px;color:var(--text);background:var(--input-bg);border:2px solid var(--btn-line);border-radius:12px;padding:0 16px}
+.num input:focus{outline:none;border-color:var(--gold);box-shadow:0 0 0 3px var(--gold-soft)}
+.num[data-state="ok"] input{border:3px solid var(--ok)} .num[data-state="bad"] input{border:3px dashed var(--bad)}
+.ptsbar{display:flex;align-items:center;gap:16px;font-size:24px;font-weight:600;color:var(--muted)}
+.ptsbar b{color:var(--gold)}
+.stfoot{flex:0 0 auto;display:flex;align-items:center;gap:14px;padding-top:4px}
+.stfoot .btn small{font-size:16px;font-weight:600;opacity:.8}
+.stmsg{flex:1 1 auto;font-size:22px;font-weight:600;color:var(--muted);text-align:right;line-height:1.3}
+.stmsg.ok{color:var(--ok)} .stmsg.warn{color:var(--gold)}
+.modal{position:absolute;inset:0;z-index:50;display:grid;place-items:center;background:rgba(3,6,18,.62)}
+.mbox{width:1280px;max-height:860px;display:flex;flex-direction:column;border-radius:20px;border:2px solid var(--gold);background:var(--panel);box-shadow:0 30px 80px rgba(0,0,0,.5)}
+.mbox header{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:14px 22px;border-bottom:2px solid var(--panel-line)}
+.mbox header .mt{font-size:30px;color:var(--gold)}
+.mbody{padding:18px 26px 22px;overflow:auto;font-size:28px;line-height:1.45;display:grid;gap:18px}
+.th h4{margin:0 0 8px;font-size:28px;display:flex;align-items:center;gap:12px;flex-wrap:wrap}
+.th h4 small{font-size:20px;color:var(--muted);font-weight:600}
+.sol{font-size:28px}
+.cover .rules{display:grid;gap:6px;margin-top:22px;padding:16px 22px;border-radius:16px;border:2px solid var(--panel-line);background:var(--panel);font-size:22px;font-weight:600;color:var(--muted)}
+.cover .rules b{color:var(--text)} .cover .rules>b{font-size:24px;color:var(--gold)}
+.ccard.ok{border-color:var(--ok)}
+.ccard.ok .pst{color:var(--ok)}
+.pres{flex:1 1 auto;min-height:0;display:flex;flex-direction:column;gap:12px}
+.pres .lead{margin:0;font-size:25px;font-weight:600;color:var(--muted)}
+.ptab{flex:1 1 auto;min-height:0;overflow:auto;border-radius:16px;border:2px solid var(--panel-line)}
+.ptab table{width:100%;border-collapse:collapse;font-size:22px}
+.ptab th{position:sticky;top:0;background:var(--panel-2);text-align:left;padding:8px 14px;color:var(--muted);font-weight:700}
+.ptab td{padding:4px 14px;border-top:1px solid var(--panel-line)}
+.ptab tr.ok .stt{color:var(--ok);font-weight:700} .ptab tr.bad .stt{color:var(--bad);font-weight:700} .ptab tr.mid .stt{color:var(--gold);font-weight:700}
+.ptab td .btn{min-height:40px;font-size:18px;padding:0 12px}
+svg.scene{width:100%;height:auto;display:block}
+.scene .sc-b{fill:var(--panel-2);stroke:var(--fig-ink);stroke-width:3}
+.scene .sc-w{fill:var(--blue-soft);stroke:var(--fig-ink);stroke-width:2}
+.scene .sc-k{fill:var(--fig-dim);stroke:var(--fig-ink);stroke-width:3}
+.scene .sc-a{fill:rgba(255,200,61,.35);stroke:var(--gold);stroke-width:3}
+.scene .sc-c{fill:rgba(76,142,255,.3);stroke:var(--blue);stroke-width:3}
+.scene .sc-t{font:700 30px var(--font);fill:var(--text);text-anchor:middle}
+.scene .sc-l{font:700 28px var(--font);fill:var(--gold);text-anchor:middle}
+.scene .sc-s{font:600 24px var(--font);fill:var(--muted);text-anchor:middle}
+
+.cover h1{font-size:74px}
+.cover .avatar{width:150px;height:150px}
+.cover h1 span{font-size:44px}
+.pde{font-size:35px}
+.pde .tag{font-size:24px}
+.pde .opts .opt{font-size:32px;min-height:70px}
+.pde .num{font-size:32px}
+.pde .num input{height:66px;font-size:32px;width:220px}
+.q{padding:2px 0 6px}
+.pfig .pg{width:100%;height:100%}
+
+.pfig svg.g2{position:static;width:100%;height:100%;max-height:100%}
+.pfig{display:grid;place-items:center}
+.opts .opt .katex{font-size:1.02em}
+</style>
+<script src="../thong-ke.js" defer></script>
+</head><body>
+<div id="viewport">
+ <div id="nojs">Hệ thống luyện tập cần JavaScript để chạy.</div>
+ <div id="rotate"><div>Xoay ngang thiết bị để xem rõ nhất</div><button type="button" id="keep-portrait">Vẫn xem dọc</button></div>
+ <div id="canvas">
+  <header class="topbar"><button class="brand" id="brand" type="button" title="Bấm để đặt ảnh của thầy/cô"></button><input type="file" id="photo-input" accept="image/*" hidden aria-label="Chọn ảnh giáo viên"><nav class="secs" id="secs" aria-label="Các mục"></nav></header>
+  <main class="stage" id="stage"></main>
+  <nav class="bottombar" aria-label="Điều hướng">
+    <button class="nbtn" id="prev" type="button" aria-label="Lùi">◀</button>
+    <span class="nlabel" id="nlabel"></span>
+    <div class="progress" aria-hidden="true"><i id="pbar"></i></div>
+    <span class="ncount" id="ncount"></span>
+    <div class="pips" id="pips" aria-hidden="true"></div>
+    <button class="nbtn" id="btn-menu" type="button">☰ Mục lục</button>
+    <button class="nbtn" id="btn-gv" type="button" aria-pressed="false" hidden disabled>Giáo viên</button>
+    <button class="nbtn" id="btn-theme" type="button">Nền: Tối</button>
+    <button class="nbtn" id="btn-fs" type="button" aria-label="Toàn màn hình">⛶</button>
+    <button class="nbtn go" id="next" type="button" aria-label="Tiếp">▶</button>
+  </nav>
+  <div class="menu" id="menu" hidden></div>
+ </div>
+</div>
+<script src="../chung/katex-0.16.45.js" data-lib="katex-0.16.45"></script>
+<script>
+const HSMODE = true;
+const CFG = {"title": "Luyện tập · Bài 13 · Các số đặc trưng đo xu thế trung tâm · Toán 10", "file": "T10B13_LuyenTap", "pkey": "mb10b13-practice", "eb": "Toán 10 · Chương V · Bài 13", "h1": "Luyện tập Bài 13", "h1s": "Các số đặc trưng đo xu thế trung tâm", "rules": ["16 nhiệm vụ theo 3 phần + 1 thử thách (không bắt buộc).", "Làm xong bấm <b>✔ Kiểm tra</b>. Sai: đọc nhận xét → <b>📖 Xem lại kiến thức</b> → sửa. Sai 3 lần mới mở <b>💡 Lời giải</b>.", "Số thập phân dùng dấu phẩy (ví dụ <b>7,05</b>); làm tròn theo yêu cầu của câu. Được dùng máy tính cầm tay.", "Tiến bộ tính theo từng kiến thức K06 – K10."], "secs": ["Bắt đầu", "1. Trung bình · trung vị", "2. Tứ phân vị", "3. Mốt · chọn số đặc trưng", "Kết quả"], "sn": ["★", "1", "2", "3", "✓"], "st": ["Luyện tập", "Số trung bình và trung vị", "Tứ phân vị", "Mốt · chọn số đặc trưng", "Kết quả"], "parts": [{"sec": 1, "a": "m1", "t": "Trung bình · trung vị", "s": "Bảng tần số · giá trị bất thường"}, {"sec": 2, "a": "m2", "t": "Tứ phân vị", "s": "n chẵn, n lẻ · bảng tần số · ý nghĩa"}, {"sec": 3, "a": "m3", "t": "Mốt · chọn số đặc trưng", "s": "Nhiều mốt · không có mốt · so sánh hai mẫu"}], "testname": "Tự kiểm tra cuối Bài 13"};
+(function(){
+"use strict";
+/* ================= LÕI (kế thừa bài giảng Mr Black NBK) ================= */
+const $ = (s, r = document) => r.querySelector(s);
+const $$ = (s, r = document) => [...r.querySelectorAll(s)];
+const NS = 'http://www.w3.org/2000/svg';
+const R = String.raw;
+document.documentElement.classList.add('js');
+$('#keep-portrait').addEventListener('click', () => document.documentElement.classList.add('keep-portrait'));
+function fit(){
+  const vv = window.visualViewport, vw = vv ? vv.width : innerWidth, vh = vv ? vv.height : innerHeight;
+  const s = Math.min(vw / 1920, vh / 1080), c = $('#canvas');
+  c.style.transform = `scale(${s})`; c.style.left = ((vw - 1920 * s) / 2) + 'px'; c.style.top = ((vh - 1080 * s) / 2) + 'px';
+}
+addEventListener('resize', fit); addEventListener('orientationchange', () => setTimeout(fit, 250));
+if (window.visualViewport) visualViewport.addEventListener('resize', fit);
+fit();
+const LOGO = '<svg viewBox="0 0 48 48" aria-hidden="true"><defs><linearGradient id="lg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffe28a"/><stop offset=".5" stop-color="#ffc83d"/><stop offset="1" stop-color="#ff9f1c"/></linearGradient></defs>' +
+  '<rect x="1.5" y="1.5" width="45" height="45" rx="11" fill="#0a0c12" stroke="url(#lg)" stroke-width="1.6"/>' +
+  '<path d="M9 34V14h4.2l5.3 9.4 5.3-9.4H28v20h-4v-12.6l-4.2 7.4h-2.6l-4.2-7.4V34z" fill="url(#lg)"/>' +
+  '<path d="M30.5 14h6.6c3.6 0 5.7 1.8 5.7 4.8 0 1.9-1 3.3-2.6 3.9 2.1.5 3.4 2.1 3.4 4.3 0 3.2-2.3 5-6.2 5h-6.9zm4 7.7h2.2c1.5 0 2.3-.7 2.3-1.9s-.8-1.9-2.3-1.9h-2.2zm0 8.4h2.6c1.7 0 2.6-.8 2.6-2.1s-.9-2.1-2.6-2.1h-2.6z" fill="url(#lg)"/>' +
+  '<rect x="9" y="38" width="33.8" height="2.4" rx="1.2" fill="url(#lg)" opacity=".6"/></svg>';
+const TEACHER_PHOTO = 'data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAYEBAUEBAYFBQUGBgYHCQ4JCQgICRINDQoOFRIWFhUSFBQXGiEcFxgfGRQUHScdHyIjJSUlFhwpLCgkKyEkJST/2wBDAQYGBgkICREJCREkGBQYJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCT/wAARCADwAPADASIAAhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwDEJGOtMJ5pM0Zp3POFD4PPSlYA9Kbkf3aDT3AAcUFiaQt7UmeakY9eeKbIdtOj6mo5WycVQgQKT8xIHtUbEZIHSkLYGDSZouAd6f0qIuBSqxJ9qQWJCRSbucVGSQfalHXOKGwHnmg0Yx1OKUAscKCT6Ci5XKRk4ppapRbzPyInI6cCk+x3R/5d5P8Avmkg5X2ICc0hOKm+yzB9hTD/AN0nBpjwyRsUkQqw7EUcwckuxHksfSmkVJtxxQyjFCZJFRS4oqmCEoooqWMTFLiilxxRYQUEYoANOxkc1SQGjikpTQpAPNKwCdKM0rEZppbHWgYGm9s0wnd60qelAh27AOKhYnNSE4ph5oYDSc0nal7VDcXUdqu6VwnoD3qRpNuyJNrN0Bok2xEB3VGPABODWWNSe43EyiCIdGHVqrfaEBWW1sZrqU9JXOVP58GjmOiOH01OkhhgVd88xZfSEbvzPA/Wp4PKnz5UUqp/f4bH49K5w2mo3rCW8WYDriSQRxKPYCtGyg065Ub9Rllx2RDGij3Y8GlzM2jSijVjgiUbpBLLk88j+hq7G0aLmOLyyf4d5Vv1ArLi8qA5tJN65wGM2U+mcfzrTD6mIAZYonUDdljuP4UjWyWxWuru/HEVi0qD+JLjcV/IisSXU7a3nzqdjqMUwPy7nkAP48ite8W5dgLT7PIzcYcbSPxFZrN4ltwfKsp5QcnMNwsgHsVbtQD1NKHWZprdXEV00J5y8SSKB6nv+NObVYXQBrR1TGd65Mf5HP8AOsm18V/2c23UYJbUn1t2Rh78ZWtN761uGjvLSZbaRgCtwgBRs/309PekKxVnktpR5sEmY843fw/n2PsahI61YuJrO5MtyskWm6mfkLod0N3nsynoPpTba4t72DYUFtdw582IcpjpuB7irictWl1RDHAzn2pJE2cVKZtgwODVdmLHJqtTmGtntRRSigAFO2nI9KQCgZPNMAOB060bhSquTzSlaAL2aQvikDhfxppGRSsAFyxx2oJI7UnAp1MBrnccgAfSkXOc0vA49aB1wOlAAfWmmnHJ4xWVd6tslNvAokfuT0FTJlQi5PQnu9RhtActlgM+w+tc9JqDXswaOIzSE9+i/wBFH1pl3KrHM8gZ88gHCj/GoFnRhsDII+uFPGf61LO6FNRNKaS0QhbmaO5n7QQ5KL7E9/oKY2p3E0ocJI2OFTaERfYCoraa0hkVgsbOo4V14zWtZXWmFR5xhkk/uqeSak0L+ly6rdxLvtLKFSMLISNx9/Snav4ZuLuIGS5mnbBPlFhtP0x0qU3bbAI7E/MMeYj/ADD2qxb30xX5ZWi45WUcg+x6U0BxNtrl94c1J7cxTNEp2yCVt20f7S45FdAmrSby1m65ADmLfnA9R6g+oq3qGJJEleCOSZQVLDB3qRyD6n/61YE1pCX2AGKRBlR90geq+h9R0psC+3i6RiY7pHLk5G9dpGPQ9xT7bxU0MpZ8iNu6ZHPvnpWLdXRQ+TczfaIVGUlYfOp9DRBewKjBEilXqUdT849OvUUkB003iONF3MEurQn5kYcj8Kz4pbGd3/s5wkZOdmMY/D/DpWM9pbXcTS2TtG6tiSEnr6Y/WoprWNDGUcRy8OJSeDwMEiqsiWW5lvElcQANDCSHRhkEZqbTbwXU/nRTGOZAQFZuvqvPrUZvLofvnVoZ4/lljUfe9/oRWfcwKZi1sArg7gNxwe/4UxHbbUuLUSxkqR95D2qoTzWeL+407bJKqiNzliB90A8n8K05o/KYcgq3zK4+64PcUHJWp21QylFHaj60kznuLnFKeue9NoJqkxjwaUkAVHyBmlPI5obsBbwfWlOccU0E4NHamMT608OAOmajzQTipbAdnI5ozTc1DdTmCM7RlyOBRcaV3ZFbWddh06LG9VY8Fm42/T1rlJNYnvQVgKxRt1kxlmq+dJa4vBPdRebvx8z87ee1TlLaJXURISpwWUcrUtnfTpqKMRrZcB5S8ijvtwFqRfJZMgbuOMHkfWr51CKUeWV3jOcEEYPvUKBpM/JHGPRcdKVzVRI7GB2fzEWKWMcHdgj/ABrS2iMBljjVOm5XKtn0zUMVomN6j5h1BXg/Q1HKbqElofmBHKt1H+NTdFcjsS/boLNiz5B6HE2c/iKk/te2nAEe9ZMcN9oOM/QVlC7ZWJMaq3cbAMflUM9zbuhAAV85DIoH1BHrVIjY1ZNcuGzDJtV1+5LED27Zpn9ppPH/AKT80o+7KG5BrIjimv1kEEhMsQ3bR1K9/rVq0hNyQJFzjjIGOKGylFsjvZ45wcsS3t3rMWRo3DAnOeeav3+nSWjZGSvY1nMy+YexIpxIkrOxqwTlU81Sd+MYzwc/1zVgq008fm7VDqBj14zms3TYpJnZd37tRkn8R/jWleyJGkCybgEcEP3xj0p31F0N1rcSQmTcfOVAWzzlegA/I1WgCw2TNKv3gyBse2R/hWbJqcsARUYlUQJk9+anM8jwW9ujmM4A3MeCMHg/XimIntL54xNJlpYMBCGGQpJHHtyfyNbFhN5QezZS0eCYm3Z2EDp/OuWtRIks0nzNb3CmFxn5XbGfzwD+VW7a5+xXq3CzhQ4Q5YZ5Bx/9agUo3R0O6nA5qSRTLH5pCjdzlelRL9alnnyjZ2HClptKKCRe2KKKKQFhWPNKTTRk9KOe1WJAc0gJoYnvS7SKC7igknjrVm/05UtI5MCUuu4g5AHpzUEJAcE9M1ui8gmspLVwpkKDy+2R3A96ls2oWbPO9W1G/XqwjRBsIC7h7Gshbvz5Bti3P0ynGfwrb1iWS1eVmKyRMNrBhw3p9Kh0lNPk8wyW7I7D7m7kHHBpHdGJmSzPKmQyjb1U+lbGgaWt3KSxIbHAx/Wq8lmqzFkZJCOqkgEfnV3Sr5rOdR86c9SeKzqbWR0UkubU6IeHmDZKnaOuBTh4eSUE4Bz2re0fUmvY/Kn5B5yhHNbtrYW5bEafKeTuNcEptOzPWhSjJbHl2p+EDKp8rKkdCO9c1eeGbqNSXQkjrxg178+kx85VT6cdKp3GgRzIRtH0xVRxTjuKpgVLY8G0SGWHUVZFYNC4J7naevHevWrbwbb3tqJ4rcW77fwb8KvWPg61tb8XAi2gDB211luG+zrAExgYB9KVXEczuiqGD5V7x5VrnhjZZybo+QMggda88m0UPdsrJwASccV9B6/pjPaNtBJxz3ryjVrYW9/jaRnhh6jr/n6Vth6lzjxlBLU5D7C1le8NmLAYj1XtV06d50ilHby2Pylh93OTWrNp5Zuv7vuR6dRQFdUO4qw28D36ZFddzhUDHukVcZjCljkqf4cjHSomkaYk5b9wVK47irk8LECRssckEfypGkUxt5aAE4yw6qvpVIlxKf257G3mjZd8dwUZ89VbOQV9CP8AH1pZl+0RxYj27XOx2GPwqG6YG1uo5WVGiQSoCeX+bBUe4ByPxq3aSi40lBKxLLhhk8j0/wAKuJkzpNIvPOsfIfG+LjGeR9anBxWJokvmyySEglhy3c1tYwBUvzOKuveuSA8Um7ikAPakIxUmA4HNG6mg4peDQBczmgcim5ozViEf7wpxam0UAJuI6VX1K/8As8CMDiQuAv1/pU5qrfQrPbsGAwvOalmtF2kZd5qCXt5EMHzSyowIyr9qvav4cubRPMigaNgPm2DgH39/esXTEVdZtxwM3CZP/AhXvE1h50RCKvzDkbc5rGpU5D3cLR9qmfPVzPcW8v8ApAY89SvSrtjqURwQ4Ygj5GHB/GvX7nwlBcMTJBEpz/dGadH4M05ACtujn/dFYvEo6o4GV73OX8K3y+YvmQgKxAHBOPxr0a0QzbdkbBcH5s9Kh0jQ7dbjyhbqoHPAxXQw6f5JAC7RXDVqJvQ9SjRcVqUljYjBBJ9RUkdqzAkgge9af2YJgnHSpooxIQoXIrJu+x02tuYj2Y3bsZA54p6Rt5ZU5AJycV1CafagYbaSe2KjlsokUhI+fek7kKonocrc2XnQsCh5zzmvKvE2mutyx2YKEHBr26W2G7bIQv0rj9f0RZnLKoz/AHu5ralV5WYV6POjyWQMhOW+XGAO9ZEtwT5mCcKNoz9a7XV9Bl3EIo4OSa4i6iZHkUjljmvTpzUtTxa1NwZG90qxsuTu9jVa2kCs3IyVwPamSp8zLjnAqFm2kHGOK2WpyNlu/hgmkiOAFA2scdPeoofLy0SkYYY4/h9KaspaBwRnK46e4qKKQrcA4yrEA1aM2aGgM0VwY9ykD0rpVJx2rmtJ2NqjCM5C+3auk7UpbnFiNx5YmjrSA0u4AVJziheKcFFNVsj0pQeaAJ80UYxQKsQGgmlzSHrzQA09ajcE5HYjmpSD3ph5fFTuNaHNzj7NdLIQAyyBwce9fROk5mSJ1fKuAwOMdRXz9rkQ89SOBjOK9y8N6jaWOl2Mt05I+zoeD/siubErY+ky+SSZvajHB0hXLZySar2kCC4UPwp6nFZd5440eHe5zx0DMKx7r4i2lyojt0VADy2etcUoM9eFaPc7hZrawnaR9pG8R59M960Ga0kTzGuY41HXJrzGbxAdW066jjYkkYO3qD2rjL3xHqRgMUyukinlg3De+O1TGjzPUupX5VdHuOoeMvD+ihsyiRxxzg1zl/8AFy12/wChRx+5A5rwq8a8uZi8k5RCe/Sm2V1p9qwefUZEYHPBI5roWHR58sU7nu9j48upv3qRlwegAyTWhF4lvrmZN0RiXvvyK8Tt/HWj2pAE8shP91W5rXtfiNpjEoILgbhguqMCPxBqJUbmlPEN9T2UaxBc5EWWYcFiOPw9aZNbfaELSnYMdW4Feb6D8R3lj8iy0q6uL5BsN1cqqRnHAYc5/Sty3l8Q6rOr3eqxIgCgxWsIXnHJy2TyfyrmlSaep3wrcy0Rp3mnxSRsgUPkdQM14/4s09bLUJxwASSa9gl0NJE2XM93KMf8tJm2/TAxXnPjXw7bb5Ps0aogXv2NbYadpWObG0+aF7Hm88h8xmJjXJ6s4FU9jzzLHGyyPj7qZOfxrqhokEFjjyU3GQgnbk9Aa2vBHhOFbmS8m+baSoHpXpSqKKueJChKcrGDpfgfV9VtoJAgit5NpMgbccHrivQD4X+G+hwR2F7Yz3lyQPMlR23qfXOcA/St63ihsdMljgITaxKZ6KahvLCLUdJD/Z1aSMfeUYNcE68m9z3MPg6cNGrnnOt+EI/DeuR3Gn3Elzpl5GXglYYbryjf7Q4+ooBxXXi3W98KalbPgmydbmM4+7xhh+IzXHKfWu6hV546nzmb0PZVtNmPpR0pu4UbgK0PJHA4NBb0pMgigUDLmaBSZpe1MSAj3pKKQnFACk1HnDZNKSTTGdUufKZlc7c7VOaAK2o2Ju1AiQGRsKCTiumv7q5Onw26QiPykVeu7OB7VkacjXOrWaPGY4jMgd2ONq55NbHi3WR9rNrpUQvJzwiKOD7n0FY1nZo9nA6wZxuoafeurPPKYoxySSBWVFeRQgiG7M+P4VPX6Vs3Pg3XdYYPql2I88iIcqv4U1PCEdjKgkuZHIIzgCpTj3OtwmtUjT8NaokJASRpUk+bCoWbpVrVE83WIQUcIYWf50xyGA/HiqPg1orkDTopZVeOSRCGGAVVyCd34j8a6XxfozWlgk9kczwqXRieemCPxH9KwbSnY7opunc5rULHzQ3l4Ldge5rMs/CrTMxuZwA/Dqnp6Vf8G6gNUeazm3G5j+fLMXyG7ZPp6V1VvoMQJLqevODVylykRoqormPp/h7RLABIrRXY4AGNzE10lj4Na72M8P2aIn7q/M2PfHArV0nSIl+VFAB6nufxrrrCBYQDtCkc4Uda5pVGd1LDxS1Rzem+GLC2vLmwWRIiIopY9/fOQc/iorpNO0mPToy7mInsFHP51Uim8vXbyYxq4W1hVg3TJZyP0q0+rfaAW2ogHGFrmqSbep0xiktBbr94SzE/N0GOlcz4msFms3+UcsMtit1p2bscdjVW+lhZChwTjkA9KKd07k1LOLR5lc2EhQkIQisWJ9uK6rwnp5Fg2Ry0hzSS2IZJRzhugre0SJba3ddvVt1dk6j5TgpUbTucr4svb/RDE0FsXjaTJyOCo61Y0LxRLeS2w8tAJDt2jpzXSa21rdaXJ9qAURHcnH3j0xWVp/gyVdQtL6KFrez3eY7uQOMZrl5lY71HUn1jTRpket+WmIZbRiw9D/k15WoAyPSvYfFl1GPCmsXi8Cb91GSeSCQK8dLA8iu/BP3Gz5vP3epFeQ4Y9KU49KaDikJzXYfPj+MUuaYD2pwNAFoAjvTiKTpRmgBKQiloJxQA0jBFRJHHDOsqIoJ4JHoakJoAB60AWICftsAHBMq4/wC+hXoUmihXdzCyXLMQBCgGE9Sa47w1ELrVdPU8kXCBvzr2eVUaFgq4c+3X2rkxUmmrH0WTwThJnml1o9yG8tplHtt5FJb+HYoX3yEuSRy1dZqGnpbbpZNseDzuOP51z2oamGH2bTw1xcygxxmNSyqxGM+59hXOpHsuCsN+DPgpro3es3tsVjkkKW6MOHBdnLD2OR+Vel+KvCUF9ZmN40iOPlIHQ1Y0G0Xw9oemafGu14owXBPIOAAPrWrd3dre2+yacRsO5FRKSb8zKHNG1lofOn9hJ4T8SPLcqscLhhvQcZJ7/wCyfXsa6rT7ywkY77q2VfVpV/xrsPEHhLTdYj+TUtk6nKMnY+h9a82ufD39k6m0dzBDvXkFUGGHqKrnclqdEKfL8Ox10Op6TFgRztO3ZLdDIT+I4/WtBbifUEKpb/YkHRnYSS/gB8o/Emues7tBwgX0rTjv5EYFTgdMVk7dTpQ+aD7AjeWZHMh3OZDuZz6k/wCcVQa5Ea42HnuDVyS73cnms92DMWAxmpsmTJiLcyjlZGAPbNO+0BlKjkn71VZ3AIC4x6GpLVACT3NVHQyZOIxhcZ+lXoF2x02NPlBFWFUlSKbdwiktStHBFqc6xXE0UcUZOQ/8X0ro5VXULYxHARAFQJ0Nc8ltYP8APdSbHQ8VS1jxRYeFbJ7+a43IgIjjLcyv2QfWs3GUnZGjnGMXJvYx/iXqiQW9rokH8P76UA9PQfqTXnw7/Wkk1K91qeW/vTmedt7c9B2A9hSrnPNexRp8kOU+Hx+J9vWcuguaM0UhGe9aHGOBBp2RTAPelAzQBepKAc9qM80AFNJpTnBAplACNmhTxSkH1pAMCgCSKaW2lWWCWSKQchkbBBr1rRXTU9Jt7xbm5+dBuzO5+bv39a8jPSux+H2t+UZtJkbiUGSHPr3H5c1z4iHNG/Y9XKMQqdXklszoL/TLJsvJ5kjdcuScfmapaNfWmhX01/HEXlSIhAOSuepHvirOpODuy3Tt61i6aBPPcMSSAdgAHWuNH10uW1zoLDx/Dq8XmW9xJGy/ejkXay/ga5vxl461i1t2TSYmurl8hXb7kfufX6VBeafEko8tiARwRwfeoRo8O5ZH8yTP95s04wSd2jmlVbVkcr4ZufiNPq63t9qrRW27c8crKyuPQIOn1r1K0stR1ydLmaNo4I+AXGC/09qh0y2ihkxHHHk4A+XJB9ea6dL4wr+9ZUPbj/OKKk02VRfIrNnL32m3FjMzohKZot7wuuBniuiuriGRGLNu9utYE1mPO82H5T3APDVhI250ydJCVJwfpTWjIAOKs2ymRPunPWpXjwADnPfNS3YTMt4mL4xnNPihIcAbjip5gQ/FS26HcGyAKLsRZiDBAMVPCeoPeomYAcc0kMwDgcjNXC9xN2Od8QRSS6+UyRBFGi4HALHk1wnxX0kSzaLeovyjzIWx0HRgcV6TrigagWH8SKT+Vcx48tPtOg2kmOYroH80I/pXfSSUkeZjU3Rkcbbf6pR6AVJmkjG1MUgPJrrZ8ox1ApCcUZxSEKOKWmjpmloAvmkoop2ACcCmU5j2plIAzRTT1pwOaAFPSn2ty9jcx3EJxJG24H3plMYUWuNOzuj0xLmLVdNS9i4DryMfdbuPzrHtJmt5jCULZLPgcFj6Vl+CNXFtePpszgQ3R+XJ4VwOD+PT8q3ry0NpqaSvlVViQP6H2rzqkeSVj67DYv2+HUuvUtyWFjAUE84ikYbgjtytRSXmlaYu+eQXBx8qRnIP1rhtf8TCwleefDyF8DJ4GT79qkhmt7u3dv7WsonQjckatIc4yQPWq9n1Zsq0VodavjHTEbe1lMp6ZwODUX/CT2d5IVFxIHz91uMVxF2t0bCeVBOJYF81t20ps/vYHNYzJqU7AJ5hPl7hhBgH0zSVJMJVm+h6fLqBBADjHTKmrVleyzxKu3kNjJOa4Twto3iCZyb14TAo42nktXbadplxbuHcEqOgrGpaOhdNSepuW7mFuSOfSp5W3MpJrNuAysOCcUkN7zhuD29qwaudJeljwxbIxUaybBz0qvNeZ4z9arT3PYOaEhM02uF28Zz9agSYiYHnrVD7XtXqKZDejzOcZropIwnI0NZIaeM99gFY3ieLzfDjkciOaNj+o/rV64kM77iSQBig2q32l3lpnmSM7T6HqP1FdMH75zYiPNTkjzQnGfTpTAcdKe6FW+YFTnp71HwCa7D5B72FznrSkrnmgYI4pBjv1oEAbnA6U7Psaagzmng0AXqaetFFMA6A03NKaSkAwt7U5elIaA3FAClsU007G7A9a0dX0+1sIbdobpZZJFyygdKA3MgM0coZGwynIPofWvTrK8TxBo8cxGJmBVs9mHX868zrY8La/wD2Re7Jj/o8xAb/AGD2NZV6fNG63PQy7FKjU5ZbMtax8OtN12SO51AXEaoxMqQttLr2pLfwNpFlEYtNu7yG3Ulgj4+8Rz+Fegyqk0GVGcrx7iuN1ueVG2xK5Y5AzziuNVOjPp1TjuivNpu5tzzzXJCCL5pAAVHQEDrU1rpSO+6dkUA8RrwKxIo9V805fIJ44xita3sr6QhnbAHpRKdldGkUux0GnmOMqFx8vAwK2tysuSpH1rN0rSpI4lLk+vNaMqrFy2R7VyT1Z0RVjPu5l5ABrIBYufQVqX88KxkkkfhWHNertO01SVyG7Ftpgqk1n3N98x5qnc6gEUjd+tYN9q+WIU5PtWkKd9TnqVDcl1MLxmltbwu/ymuctw8x3Mxwe1b2lxgSDPOOfxq3ZER1OmQ7bdc9SM0sF4sL8HBqtcTCKFnY7QBznpXnmveNmZ3g07rkq0/Yey/41rQhKcvdIr1YU17wvijUDaeIrqCGJPIyHDls/eGSMdsGo4nEqbx0Nc0srO+XYszHJJOSa2tLmBTy89K9h0rQ8z5bEQTblEvUoPHSkNJXM0cwoOKcKZTgcUgL9FBGKQ0CA00nFKaYc0xisRTRQTSCkFxxPApCc8k5pCfemkj1pkCM1ROcjpmnbucYzU8KKc7gaaYjvfAGsm905rCdj51v90nklP8A61dFc6ZbTnzH479K8t02+k0q9iuIgTt4IH8Q7iu/g1+C9s/Nik3jqR3B9DXnYim1K62PqsrxcalNQk9UNuILOOYbOeecDvWlZPaqcNtBHPIrmn1JFlLHBwc1RvNaB4DMqk8jNc7jdHq+0SO4bUoS22N1OPSsnUtUiQ8sfzrkpvEMVsm4SAsawL7xJJcMQoGPU0o02wliEdFf6yJJCA2fbNYt1rCop4yT71iS6hIxwvGe9VHZiMuST61vGmlucsqrZdudRknOEyoot4iW5yc1VhikfGAcHvWtZRnPPpVSaWiFG7epftY9qg1r2hWEGRmVFQbmZjgKPU1mNLFbxGSVxHGgyzscBRXFeIfFEmsk21tujsAc4PDSn1b29qKVCVV2QVq8aUddzU8W+MDq7NZ2DOloOGcH/WfT2rmkC9BwB2qAMAMAinKxJwOTXtUqUaa5YnhVasqkuaRbQDOc1espPKkVj2rNUle9WIpSCO9bbmUldHS/eAYHINIQSOtV7KXfDjuP0qftXFUjZnHJWdgAOetOA9/0pBSisyTQP1pv1pxPJpM0AMZe+abT2plAmBxScHtRSE0ybgQB0ppNKTxSIm76UCEjX5s1aj5NQoMnFWo0VaC0hrdMVEs0ls++F2Rvbv8AWpXx1qu7ZpNX0ZcZOLuh819POx3SBM9cA1XaGdl+W4yPYc01jkgU9GMYGDis5Uk1odlLH1Iv3tSpJEi8uzMfeqrgluOldK9il9pyXUaqJASj/X1rJm0+Rc8Yrlb5XY96nLnipIzSQBgDmp7e2LvkjPtViDTGd8sRVq5KW6qFAJ6D3qXPsaKPckt7VcfdxTb+/ttGtzPcOEHQDux9AKydW8UQaTGYkJmuiMhB91P941xd1e3Wo3JuLyUyyHpnovsB2rajhXN3kc1fGKnpDc0dY1651qXEn7u3Rsxwg8fU+pqnkAcCokXApS2OM16sIqCtE8qUnN3kSBtzACrcQ2DJ61WhT5h71LJLtU56dz6VaIHtMN2Bk8damsYbi+lVIQyx5+aUj+XrVPT7R9XkOGMdsh5YdX9vpXURTR2SqkQ2R8AFTjYfb2qkgLdrBFY2/khwuOSdu9iferAeGRVCh0fOMkYDUWl9LIQjWEE8mDkn5Sw9atw6vbxkiSyaI4wRt3DNW4KSIlBMoFWRjkdKerd8VeuGs9RKtAUilHG3GA3+BqlNC9s+yUbT71xVKLizmnBouHqaKRjhqAc1iQIxGKbQx5NJ9KAA0wtTiSfSo3ycAdaaIY4AsfapSAowKREK0jZx1oEIPvZqdW96qrkmpFGBSLTJWOAarOwz1qRhx3qBwM0DELDNP4IyenvUQAzWN4p1r+z7UwRcSuOT6CqirlRi5PQtWXjq20zxClhJ81nNiKVhyVYnhvwP6Gut1Bo4iVwOPXvXgUzuzmTnJ5/GvWb/AMZaXJpNlcsHmvnhQSRDjDAc5Nc9ei5NNI97A1VTg4yZdnv1iVnyqooyzHgAVx+seKJZpGis/lBGDKRz+FZuqa1c6lJmVwEzlY14UVQHJrSlhlHWRNfGOWkQ7k5LMTkk8k1MnPBqIcVIgOa7EcBMBTo493JFJHVlBtXPQetVFDFCjpwPc1XjtzqshUMVtUOHk/v+wqwIjdhdwKW/5NJ/gKvwQs21FTai8BR0xVpCLEKpHEIoE2RrwFFWYbcscMSF96kt7baB8vFXERAeV3HsK0QxkUckaDPmtGo+WRPvp/iPete1v3IXbtuwOrqSCv1WqH2rayxY3y/wonP51ZS8SxyWO+duu3+H2FUiWbcUNjMA8hhZXGVeMZ5/pVk6XCi7Ra+fH3Im/oaxrRpmcziOVIDzKEH/AI8B/Otu28qMhWnDgrlXBzuFUlfcLH//2Q==';
+$('#brand').innerHTML = '<span class="logo">' + LOGO + '<span class="mb">MB</span></span><span><b>Mr Black</b><small>Toán THPT</small></span>';
+function setPhoto(src){
+  const logo = $('#brand .logo'); let img = logo.querySelector('img');
+  if (!src){ if (img) img.remove(); $('#brand').classList.remove('has-photo'); return; }
+  if (!img){ img = document.createElement('img'); img.alt = 'Ảnh giáo viên'; logo.appendChild(img); }
+  img.src = src; $('#brand').classList.add('has-photo');
+}
+(function(){ let saved = ''; try { saved = localStorage.getItem('mrblack-photo') || ''; } catch (e) {} setPhoto(saved || TEACHER_PHOTO); })();
+$('#brand').addEventListener('click', () => $('#photo-input').click());
+$('#photo-input').addEventListener('change', e => {
+  const f = e.target.files && e.target.files[0]; if (!f) return;
+  const rd = new FileReader();
+  rd.onload = () => { const im = new Image(); im.onload = () => { const S0 = 200, cv = document.createElement('canvas'); cv.width = S0; cv.height = S0;
+    const s = Math.min(im.width, im.height); cv.getContext('2d').drawImage(im, (im.width - s) / 2, (im.height - s) / 2, s, s, 0, 0, S0, S0);
+    const url = cv.toDataURL('image/jpeg', .85); setPhoto(url); try { localStorage.setItem('mrblack-photo', url); } catch (err) {} }; im.src = rd.result; };
+  rd.readAsDataURL(f); e.target.value = '';
+});
+function texAll(root){
+  if (!window.katex) return;
+  root.querySelectorAll('.m:not([data-k]),.md:not([data-k])').forEach(e => {
+    try { katex.render(e.textContent, e, {displayMode: e.classList.contains('md'), throwOnError: false, strict: false}); e.dataset.k = '1'; } catch (err) {}
+  });
+}
+function h(html){ const t = document.createElement('template'); t.innerHTML = html.trim(); return t.content.firstElementChild; }
+function mk(tag, attrs, parent){ const e = document.createElementNS(NS, tag); for (const k in attrs) e.setAttribute(k, attrs[k]); if (parent) parent.appendChild(e); return e; }
+const m = t => `<span class="m">${esc(t)}</span>`;
+const md = t => `<span class="md">${esc(t)}</span>`;
+const esc = s => String(s).replace(/[&<>]/g, c => ({'&': '&amp;', '<': '&lt;', '>': '&gt;'})[c]);
+/* số kiểu Việt Nam: dấu phẩy thập phân, dấu trừ dài */
+const vn = x => { const r = Math.round(x * 100) / 100; return (Object.is(r, -0) ? 0 : r).toString().replace('.', ',').replace('-', '−'); };
+const pt = (x, y) => `(${vn(x)}; ${vn(y)})`;
+const vt = x => vn(x).replace(',', '{,}').replace('−', '-');
+
+/* ================= BIỂU THỨC BẬC NHẤT ================= */
+const OPS = {'<=': ['≤', R`\le`], '<': ['<', '<'], '>=': ['≥', R`\ge`], '>': ['>', '>']};
+function linTerms(a, b, tex){
+  const t = [];
+  const one = (k, v) => { if (!k) return; const s = k < 0 ? '−' : '+', A = Math.abs(k), c = A === 1 ? '' : vn(A);
+    t.push({s, c: c + v}); };
+  one(a, 'x'); one(b, 'y');
+  return t.map((u, i) => i === 0 ? (u.s === '−' ? (tex ? '-' : '−') : '') + u.c : ` ${tex && u.s === '−' ? '-' : u.s} ${u.c}`).join('') || '0';
+}
+/* chuỗi hiển thị: SVG (unicode) hoặc TeX */
+const ineq = (k, tex) => `${linTerms(k.a, k.b, tex)} ${OPS[k.op][tex ? 1 : 0]} ${tex ? String(k.c).replace('-', '-') : vn(k.c)}`;
+const eqs = (k, tex) => `${linTerms(k.a, k.b, tex)} = ${tex ? k.c : vn(k.c)}`;
+const sat = (k, x, y, eps = 1e-9) => { const v = k.a * x + k.b * y; return k.op === '<=' ? v <= k.c + eps : k.op === '<' ? v < k.c - eps : k.op === '>=' ? v >= k.c - eps : v > k.c + eps; };
+const strict = k => k.op === '<' || k.op === '>';
+const leSide = k => k.op === '<=' || k.op === '<';
+
+/* ================= ĐỒ THỊ MẶT PHẲNG TOẠ ĐỘ (SVG) =================
+   Quy ước SGK: GẠCH BỎ phần không là nghiệm; miền nghiệm là phần KHÔNG bị gạch.
+   Bờ ứng với dấu <, > vẽ nét đứt (không thuộc miền nghiệm). */
+function clip(poly, a, b, c){ /* giữ phần a x + b y ≤ c */
+  const out = [], n = poly.length;
+  for (let i = 0; i < n; i++){ const P = poly[i], Q = poly[(i + 1) % n], fp = a * P[0] + b * P[1] - c, fq = a * Q[0] + b * Q[1] - c;
+    if (fp <= 1e-12) out.push(P);
+    if ((fp < -1e-12 && fq > 1e-12) || (fp > 1e-12 && fq < -1e-12)){ const t = fp / (fp - fq); out.push([P[0] + t * (Q[0] - P[0]), P[1] + t * (Q[1] - P[1])]); } }
+  return out;
+}
+const solPoly = (poly, k) => leSide(k) ? clip(poly, k.a, k.b, k.c) : clip(poly, -k.a, -k.b, -k.c);
+const badPoly = (poly, k) => leSide(k) ? clip(poly, -k.a, -k.b, -k.c) : clip(poly, k.a, k.b, k.c);
+let PID = 0;
+function Plot(o){
+  const P = Object.assign({W: 900, H: 760, pad: 46, step: 1, lab: 1, grid: true}, o);
+  P.id = 'pl' + (++PID);
+  const sx = (P.W - 2 * P.pad) / (P.xmax - P.xmin), sy = (P.H - 2 * P.pad) / (P.ymax - P.ymin);
+  const s = P.equal === false ? null : Math.min(sx, sy);
+  P.sx = s || sx; P.sy = s || sy;
+  P.ox = (P.W - P.sx * (P.xmax - P.xmin)) / 2; P.oy = (P.H - P.sy * (P.ymax - P.ymin)) / 2;
+  P.X = x => P.ox + (x - P.xmin) * P.sx; P.Y = y => P.H - P.oy - (y - P.ymin) * P.sy;
+  P.inv = (px, py) => [P.xmin + (px - P.ox) / P.sx, P.ymin + (P.H - P.oy - py) / P.sy];
+  P.rect = [[P.xmin, P.ymin], [P.xmax, P.ymin], [P.xmax, P.ymax], [P.xmin, P.ymax]];
+  P.html = () => `<svg class="pg" id="${P.id}" viewBox="0 0 ${P.W} ${P.H}" role="img" aria-label="${esc(P.aria || 'Mặt phẳng toạ độ Oxy')}"></svg>`;
+  P.mount = root => { P.svg = root.querySelector('#' + P.id); P.draw(); return P; };
+  P.pts = poly => poly.map(p => P.X(p[0]).toFixed(1) + ',' + P.Y(p[1]).toFixed(1)).join(' ');
+  P.layers = {};
+  P.draw = () => {
+    const g = P.svg; g.innerHTML = '';
+    const defs = mk('defs', {}, g);
+    [45, -45, 0, 90, 22].forEach((ang, i) => { const p = mk('pattern', {id: `${P.id}h${i}`, patternUnits: 'userSpaceOnUse', width: 16, height: 16, patternTransform: `rotate(${ang})`}, defs);
+      mk('line', {x1: 0, y1: 0, x2: 0, y2: 16, stroke: 'var(--hatch)', 'stroke-width': 2.4}, p); });
+    const cp = mk('clipPath', {id: P.id + 'c'}, defs); mk('rect', {x: P.X(P.xmin), y: P.Y(P.ymax), width: P.X(P.xmax) - P.X(P.xmin), height: P.Y(P.ymin) - P.Y(P.ymax)}, cp);
+    const grid = mk('g', {}, g);
+    if (P.grid){ for (let x = Math.ceil(P.xmin / P.step) * P.step; x <= P.xmax + 1e-9; x += P.step) mk('line', {x1: P.X(x), y1: P.Y(P.ymin), x2: P.X(x), y2: P.Y(P.ymax), class: 'gl'}, grid);
+      for (let y = Math.ceil(P.ymin / P.step) * P.step; y <= P.ymax + 1e-9; y += P.step) mk('line', {x1: P.X(P.xmin), y1: P.Y(y), x2: P.X(P.xmax), y2: P.Y(y), class: 'gl'}, grid); }
+    ['hp', 'sol', 'hatch', 'axes', 'lines', 'marks', 'top'].forEach(k => { P.layers[k] = mk('g', k === 'axes' || k === 'top' || k === 'marks' ? {} : {'clip-path': `url(#${P.id}c)`}, g); });
+    const A = P.layers.axes, x0 = P.X(0), y0 = P.Y(0), L = 4;
+    if (P.ymin <= 0 && P.ymax >= 0){ mk('line', {x1: P.X(P.xmin) - L, y1: y0, x2: P.X(P.xmax) + 14, y2: y0, class: 'ax'}, A); mk('polygon', {points: `${P.X(P.xmax) + 30},${y0} ${P.X(P.xmax) + 10},${y0 - 9} ${P.X(P.xmax) + 10},${y0 + 9}`, class: 'axh'}, A);
+      const t = mk('text', {x: P.X(P.xmax) + 22, y: y0 + 40, class: 'al', 'text-anchor': 'middle'}, A); t.textContent = 'x'; }
+    if (P.xmin <= 0 && P.xmax >= 0){ mk('line', {x1: x0, y1: P.Y(P.ymin) + L, x2: x0, y2: P.Y(P.ymax) - 14, class: 'ax'}, A); mk('polygon', {points: `${x0},${P.Y(P.ymax) - 30} ${x0 - 9},${P.Y(P.ymax) - 10} ${x0 + 9},${P.Y(P.ymax) - 10}`, class: 'axh'}, A);
+      const t = mk('text', {x: x0 - 26, y: P.Y(P.ymax) - 8, class: 'al', 'text-anchor': 'middle'}, A); t.textContent = 'y'; }
+    const tO = mk('text', {x: x0 - 18, y: y0 + 32, class: 'tk', 'text-anchor': 'middle'}, A); tO.textContent = 'O';
+    const tk = (v, isX) => { const t = mk('text', isX ? {x: P.X(v), y: y0 + 32, class: 'tk', 'text-anchor': 'middle'} : {x: x0 - 12, y: P.Y(v) + 8, class: 'tk', 'text-anchor': 'end'}, A); t.textContent = vn(v);
+      mk('line', isX ? {x1: P.X(v), y1: y0 - 6, x2: P.X(v), y2: y0 + 6, class: 'ax'} : {x1: x0 - 6, y1: P.Y(v), x2: x0 + 6, y2: P.Y(v), class: 'ax'}, A); };
+    (P.xticks || []).forEach(v => tk(v, true)); (P.yticks || []).forEach(v => tk(v, false));
+    if (!P.xticks) for (let x = Math.ceil(P.xmin / P.lab) * P.lab; x <= P.xmax; x += P.lab) if (Math.abs(x) > 1e-9) tk(x, true);
+    if (!P.yticks) for (let y = Math.ceil(P.ymin / P.lab) * P.lab; y <= P.ymax; y += P.lab) if (Math.abs(y) > 1e-9) tk(y, false);
+    if (P.after) P.after(P);
+  };
+  /* đoạn của đường thẳng a x + b y = c nằm trong khung */
+  P.seg = k => { const ps = []; const [x0, x1, y0, y1] = [P.xmin, P.xmax, P.ymin, P.ymax];
+    if (Math.abs(k.b) > 1e-12){ [x0, x1].forEach(x => { const y = (k.c - k.a * x) / k.b; if (y >= y0 - 1e-9 && y <= y1 + 1e-9) ps.push([x, y]); }); }
+    if (Math.abs(k.a) > 1e-12){ [y0, y1].forEach(y => { const x = (k.c - k.b * y) / k.a; if (x >= x0 - 1e-9 && x <= x1 + 1e-9) ps.push([x, y]); }); }
+    ps.sort((p, q) => p[0] - q[0] || p[1] - q[1]); return ps.length >= 2 ? [ps[0], ps[ps.length - 1]] : null; };
+  P.line = (k, o = {}) => { const s = P.seg(k); if (!s) return; const g = P.layers.lines;
+    mk('line', {x1: P.X(s[0][0]), y1: P.Y(s[0][1]), x2: P.X(s[1][0]), y2: P.Y(s[1][1]), class: `ln ${o.c || 'c1'}${strict(k) ? ' dash' : ''}`}, g);
+    if (o.label){ const t = o.t ?? 0.82, x = s[0][0] + t * (s[1][0] - s[0][0]), y = s[0][1] + t * (s[1][1] - s[0][1]);
+      const e = mk('text', {x: P.X(x) + (o.dx ?? 14), y: P.Y(y) + (o.dy ?? -14), class: `ll ${o.c || 'c1'}`, 'text-anchor': o.anchor || 'start'}, P.layers.top); e.textContent = o.label; } };
+  P.hatch = (k, i = 0) => { const pl = badPoly(P.rect, k); if (pl.length > 2) mk('polygon', {points: P.pts(pl), fill: `url(#${P.id}h${i % 5})`, class: 'ht'}, P.layers.hatch); };
+  P.sol = ks => { let pl = P.rect; ks.forEach(k => { pl = solPoly(pl, k); }); if (pl.length > 2) mk('polygon', {points: P.pts(pl), class: 'sol'}, P.layers.sol); return pl; };
+  P.dot = (x, y, cls = '', lab, o = {}) => { mk('circle', {cx: P.X(x), cy: P.Y(y), r: o.r || 9, class: 'pt ' + cls}, P.layers.marks);
+    if (lab){ const e = mk('text', {x: P.X(x) + (o.dx ?? 14), y: P.Y(y) + (o.dy ?? -14), class: 'pl ' + (o.lc || cls), 'text-anchor': o.anchor || 'start'}, P.layers.top); e.textContent = lab; } };
+  P.text = (x, y, s, cls = 'side', o = {}) => { const e = mk('text', {x: P.X(x) + (o.dx || 0), y: P.Y(y) + (o.dy || 0), class: cls, 'text-anchor': o.anchor || 'middle'}, P.layers.top); e.textContent = s; return e; };
+  P.clear = (...ks) => ks.forEach(k => { P.layers[k].innerHTML = ''; });
+  /* toạ độ con trỏ → toạ độ toán */
+  P.evt = e => { const pt0 = P.svg.createSVGPoint(); pt0.x = e.clientX; pt0.y = e.clientY; const q = pt0.matrixTransform(P.svg.getScreenCTM().inverse()); return P.inv(q.x, q.y); };
+  return P;
+}
+/* đỉnh của miền nghiệm (đa giác) = giao từng cặp đường bờ thoả mọi BPT (không xét dấu nghiêm ngặt) */
+function vertices(ks){
+  const V = [];
+  for (let i = 0; i < ks.length; i++) for (let j = i + 1; j < ks.length; j++){ const A = ks[i], B = ks[j], D = A.a * B.b - B.a * A.b; if (Math.abs(D) < 1e-12) continue;
+    const x = (A.c * B.b - B.c * A.b) / D, y = (A.a * B.c - B.a * A.c) / D;
+    if (ks.every(k => sat(Object.assign({}, k, {op: leSide(k) ? '<=' : '>='}), x, y, 1e-7)) && !V.some(v => Math.abs(v[0] - x) < 1e-7 && Math.abs(v[1] - y) < 1e-7)) V.push([x, y]); }
+  return V;
+}
+
+/* ================= KHUNG SLIDE ================= */
+const SECS = ["Bắt đầu", "1. Trung bình · trung vị", "2. Tứ phân vị", "3. Mốt · chọn số đặc trưng", "Kết quả"];
+const SN = ["★", "1", "2", "3", "✓"];
+const ST = ["Luyện tập", "Số trung bình và trung vị", "Tứ phân vị", "Mốt · chọn số đặc trưng", "Kết quả"];
+const slides = [], S = {cur: 0, step: 0, teacher: false}, seen = new Set();
+const hd = (sec, sub, ks) => `<header class="hd"><span class="sn">${SN[sec]}</span><span class="st">${ST[sec]}</span>${sub ? `<span class="ss">${sub}</span>` : ''}${ks ? `<span class="kid">${ks.map(k => `<span class="kchip">${k}</span>`).join('')}</span>` : ''}</header>`;
+function addSlide(o){
+  const sec = document.createElement('section'); sec.className = 'slide'; sec.hidden = true;
+  sec.innerHTML = o.html + (o.note ? `<div class="gvnote"><b class="gold-t">Gợi ý GV:</b> ${o.note}</div>` : '') + '<div class="watermark" aria-hidden="true">Mr Black</div>';
+  if (o.anchor) sec.dataset.anchor = o.anchor;
+  $('#stage').appendChild(sec); texAll(sec);
+  o.el = sec; o.max = Math.max(0, ...[...sec.querySelectorAll('[data-step]')].map(e => +e.dataset.step));
+  slides.push(o); if (o.init) o.init(sec, o);
+}
+function setStep(k){
+  const s = slides[S.cur]; S.step = k;
+  s.el.querySelectorAll('[data-step]').forEach(e => e.classList.toggle('on', +e.dataset.step <= k));
+  const p = $('#pips'); p.innerHTML = ''; for (let i = 1; i <= s.max; i++){ const d = document.createElement('i'); if (i <= k) d.className = 'on'; p.appendChild(d); }
+  if (s.onStep) s.onStep(k);
+  $('#next').disabled = S.cur === slides.length - 1 && k >= s.max;
+}
+/* ================= HÌNH PHẲNG 2D (SVG chuỗi) =================
+   Toạ độ màn hình (px, y hướng xuống). Hàm F(ox, oy, s) đổi toạ độ toán (y hướng lên) → màn hình.
+   Mỗi hàm trả về chuỗi SVG; tham số o.step bọc phần tử vào nhóm hiện theo bước ▶. */
+const deg = a => a * Math.PI / 180;
+const F = (ox, oy, s) => ({X: x => ox + s * x, Y: y => oy - s * y, P: (x, y) => [ox + s * x, oy - s * y], s});
+const n1 = v => Math.round(v * 10) / 10;
+const wrap = (o, inner, cls) => (o && (o.step || o.unstep || cls)) ? `<g${cls ? ` class="${cls}"` : ''}${o && o.step ? ` data-step="${o.step}"` : ''}${o && o.unstep ? ` data-unstep="${o.unstep}"` : ''}>${inner}</g>` : inner;
+const SV = (w, h, inner, aria, cls) => `<svg class="g2${cls ? ' ' + cls : ''}" viewBox="0 0 ${w} ${h}" role="img" aria-label="${esc(aria || 'Hình vẽ')}">${inner}</svg>`;
+const L = (p, q, cls = '', o) => wrap(o, `<line class="ln ${cls}" x1="${n1(p[0])}" y1="${n1(p[1])}" x2="${n1(q[0])}" y2="${n1(q[1])}"/>`);
+const PL = (pts, cls = '', o, closed) => wrap(o, `<${closed ? 'polygon' : 'polyline'} class="ln ${cls}" points="${pts.map(p => n1(p[0]) + ',' + n1(p[1])).join(' ')}"/>`);
+const PG = (pts, cls = 'fill', o) => wrap(o, `<polygon class="${cls}" points="${pts.map(p => n1(p[0]) + ',' + n1(p[1])).join(' ')}"/>`);
+const CI = (c, r, cls = 'ln', o) => wrap(o, `<circle class="${cls}" cx="${n1(c[0])}" cy="${n1(c[1])}" r="${n1(r)}"/>`);
+const DOT = (p, cls = '', o) => wrap(o, `<circle class="pt ${cls}" cx="${n1(p[0])}" cy="${n1(p[1])}" r="${(o && o.r) || 8}"/>`);
+/* nhãn: chữ nghiêng kiểu toán (lab) hoặc chữ thường (tx) */
+const TX = (p, s, cls = 'lab', o = {}) => wrap(o, `<text class="${cls}" x="${n1(p[0] + (o.dx || 0))}" y="${n1(p[1] + (o.dy || 0))}" text-anchor="${o.a || 'middle'}">${s}</text>`);
+/* cung tròn tâm c bán kính r từ góc a0 tới a1 (độ, chiều dương ngược kim đồng hồ, trục x hướng phải) */
+function arcPath(c, r, a0, a1){
+  const P = a => [c[0] + r * Math.cos(deg(a)), c[1] - r * Math.sin(deg(a))], p0 = P(a0), p1 = P(a1), big = Math.abs(a1 - a0) > 180 ? 1 : 0, sw = a1 > a0 ? 0 : 1;
+  return `M${n1(p0[0])} ${n1(p0[1])} A${r} ${r} 0 ${big} ${sw} ${n1(p1[0])} ${n1(p1[1])}`;
+}
+const ARC = (c, r, a0, a1, cls = 'arc', o) => wrap(o, `<path class="${cls}" d="${arcPath(c, r, a0, a1)}"/>`);
+/* góc tại đỉnh V giữa hai tia V→A, V→B (toạ độ màn hình); nhãn đặt trên phân giác */
+function ANG(V, A, B, r = 40, lab, cls = 'arc', o = {}){
+  const a = Math.atan2(V[1] - A[1], A[0] - V[0]) * 180 / Math.PI, b = Math.atan2(V[1] - B[1], B[0] - V[0]) * 180 / Math.PI;
+  let a0 = a, a1 = b; let d = a1 - a0; while (d > 180) d -= 360; while (d < -180) d += 360; a1 = a0 + d;
+  const mid = deg(a0 + d / 2), lr = o.lr || r + 26;
+  return wrap(o, `<path class="${cls}" d="${arcPath(V, r, a0, a1)}"/>` + (lab ? `<text class="${o.lc || 'tx'}" x="${n1(V[0] + lr * Math.cos(mid))}" y="${n1(V[1] - lr * Math.sin(mid) + 10)}" text-anchor="middle">${lab}</text>` : ''));
+}
+/* kí hiệu góc vuông tại V */
+function RA(V, A, B, s = 22, o){
+  const u = (P) => { const L0 = Math.hypot(P[0] - V[0], P[1] - V[1]) || 1; return [(P[0] - V[0]) / L0, (P[1] - V[1]) / L0]; }, a = u(A), b = u(B);
+  return wrap(o, `<polyline class="ln th" points="${n1(V[0] + a[0] * s)},${n1(V[1] + a[1] * s)} ${n1(V[0] + (a[0] + b[0]) * s)},${n1(V[1] + (a[1] + b[1]) * s)} ${n1(V[0] + b[0] * s)},${n1(V[1] + b[1] * s)}"/>`);
+}
+/* mũi tên p → q */
+function ARW(p, q, cls = 'gold', o = {}){
+  const Lq = Math.hypot(q[0] - p[0], q[1] - p[1]) || 1, ux = (q[0] - p[0]) / Lq, uy = (q[1] - p[1]) / Lq, hl = o.hl || 22, hw = o.hw || 9, bx = q[0] - ux * hl, by = q[1] - uy * hl;
+  return wrap(o, `<line class="ln ${cls}${o.w ? ' w5' : ''}${o.dash ? ' dash' : ''}" x1="${n1(p[0])}" y1="${n1(p[1])}" x2="${n1(bx + ux * 2)}" y2="${n1(by + uy * 2)}"/><polygon class="ar ${cls}" points="${n1(q[0])},${n1(q[1])} ${n1(bx - uy * hw)},${n1(by + ux * hw)} ${n1(bx + uy * hw)},${n1(by - ux * hw)}"/>`);
+}
+/* hệ trục toạ độ (khung F), có nhãn x, y, O; vạch chia tuỳ chọn */
+function AXES(f, x0, x1, y0, y1, o = {}){
+  const A = f.P(x0, 0), B = f.P(x1, 0), C = f.P(0, y0), D = f.P(0, y1);
+  let s = `<line class="ax" x1="${A[0]}" y1="${A[1]}" x2="${B[0]}" y2="${B[1]}"/><polygon class="axh" points="${B[0] + 16},${B[1]} ${B[0] - 2},${B[1] - 8} ${B[0] - 2},${B[1] + 8}"/>` +
+    `<line class="ax" x1="${C[0]}" y1="${C[1]}" x2="${D[0]}" y2="${D[1]}"/><polygon class="axh" points="${D[0]},${D[1] - 16} ${D[0] - 8},${D[1] + 2} ${D[0] + 8},${D[1] + 2}"/>`;
+  s += TX([B[0] + 6, B[1] + 38], 'x') + TX([D[0] - 24, D[1] + 4], 'y') + TX(f.P(0, 0), 'O', 'lab', {dx: -22, dy: 34});
+  (o.xt || []).forEach(([v, lab, dy]) => { const p = f.P(v, 0); s += `<line class="ax" x1="${p[0]}" y1="${p[1] - 7}" x2="${p[0]}" y2="${p[1] + 7}"/>` + TX(p, lab, 'lab up', {dy: dy || 38}); });
+  (o.yt || []).forEach(([v, lab, dx]) => { const p = f.P(0, v); s += `<line class="ax" x1="${p[0] - 7}" y1="${p[1]}" x2="${p[0] + 7}" y2="${p[1]}"/>` + TX(p, lab, 'lab up', {dx: dx || -26, dy: 11, a: 'end'}); });
+  return s;
+}
+/* tam giác ABC từ toạ độ màn hình, nhãn đỉnh đẩy ra xa trọng tâm */
+function TRI(P, names, o = {}){
+  const G = [(P[0][0] + P[1][0] + P[2][0]) / 3, (P[0][1] + P[1][1] + P[2][1]) / 3];
+  let s = PL(P, o.cls || '', null, true);
+  names.forEach((nm, i) => { if (!nm) return; const d = [P[i][0] - G[0], P[i][1] - G[1]], Ld = Math.hypot(d[0], d[1]) || 1, r = o.lr || 32; s += TX([P[i][0] + d[0] / Ld * r, P[i][1] + d[1] / Ld * r + 11], nm); });
+  return s;
+}
+/* nhãn cạnh: đặt ở trung điểm PQ, lệch ra phía ngoài (so với điểm trong I) */
+function SIDE(Pp, Q, I, s, cls = 'tx', o = {}){
+  const M = [(Pp[0] + Q[0]) / 2, (Pp[1] + Q[1]) / 2]; let nx = -(Q[1] - Pp[1]), ny = Q[0] - Pp[0]; const Ln = Math.hypot(nx, ny) || 1; nx /= Ln; ny /= Ln;
+  if ((I[0] - M[0]) * nx + (I[1] - M[1]) * ny > 0){ nx = -nx; ny = -ny; }
+  const r = o.r || 30; return TX([M[0] + nx * r, M[1] + ny * r + 10], s, cls, o);
+}
+/* giải tam giác bằng toạ độ: đặt B tại gốc, C trên trục x (toạ độ toán), trả về 3 điểm toán */
+function triPts(a, b, c){ const x = (a * a + c * c - b * b) / (2 * a), y = Math.sqrt(Math.max(0, c * c - x * x)); return {A: [x, y], B: [0, 0], C: [a, 0]}; }
+/* khung hình vừa bao các điểm: trả về F đã căn giữa */
+function fitF(pts, W, H, pad = 60){
+  const xs = pts.map(p => p[0]), ys = pts.map(p => p[1]), x0 = Math.min(...xs), x1 = Math.max(...xs), y0 = Math.min(...ys), y1 = Math.max(...ys);
+  const s = Math.min((W - 2 * pad) / ((x1 - x0) || 1), (H - 2 * pad) / ((y1 - y0) || 1));
+  return F(W / 2 - s * (x0 + x1) / 2, H / 2 + s * (y0 + y1) / 2, s);
+}
+/* ===== công cụ chung Chương IV (vectơ) ===== */
+const V = s => R`\overrightarrow{${s}}`, mv = s => m(V(s));
+/* ---------- công cụ hình ---------- */
+/* nhãn vectơ trong SVG: chữ + mũi tên nhỏ phía trên */
+const VL = (p, s, col = 'ink', o = {}) => { const w = 17 * s.replace('_', '').length + 12, x = p[0] + (o.dx || 0), y = p[1] + (o.dy || 0), lc = col === 'ink' ? '' : col, yy = y - 33;
+  const [s0, sub] = s.split('_'), body = sub ? `${s0}<tspan class="sb" dy="9" style="font-size:24px">${sub}</tspan>` : s0;
+  return wrap(o, TX([x, y], body, 'lab') + `<line class="ln th ${lc}" x1="${n1(x - w / 2)}" y1="${yy}" x2="${n1(x + w / 2 - 6)}" y2="${yy}"/><polygon class="ar ${col}" points="${n1(x + w / 2 + 4)},${yy} ${n1(x + w / 2 - 8)},${yy - 6} ${n1(x + w / 2 - 8)},${yy + 6}"/>`); };
+/* vectơ p → q (toạ độ màn hình) có nhãn đặt lệch sang trái (side = 1) hoặc phải (side = −1) so với chiều vectơ */
+function VEC(p, q, lab, col = 'gold', o = {}){
+  const d = [q[0] - p[0], q[1] - p[1]], Ld = Math.hypot(d[0], d[1]) || 1, sd = o.side ?? 1, r = o.r ?? 30, t = o.t ?? 0.5, M = [p[0] + d[0] * t, p[1] + d[1] * t];
+  const nx = d[1] / Ld * sd, ny = -d[0] / Ld * sd;
+  return wrap(o, ARW(p, q, col, {w: o.w, hl: o.hl, hw: o.hw}) + (lab ? VL([M[0] + nx * r, M[1] + ny * r + 12], lab, col) : ''));
+}
+function GRID(f, x0, x1, y0, y1){ let g = ''; for (let x = x0; x <= x1; x++) g += L(f.P(x, y0), f.P(x, y1), 'grid'); for (let y = y0; y <= y1; y++) g += L(f.P(x0, y), f.P(x1, y), 'grid'); return g; }
+function COMPASS(c, r = 44){ return ARW(c, [c[0], c[1] - r], 'ink', {hl: 14, hw: 6}) + TX([c[0], c[1] - r - 10], 'B', 'tx ink sm') + L([c[0], c[1]], [c[0], c[1] + r * .8], 'th') + L([c[0] - r * .8, c[1]], [c[0] + r * .8, c[1]], 'th') + TX([c[0] + r + 8, c[1] + 8], 'Đ', 'tx ink sm', {a: 'start'}) + TX([c[0], c[1] + r + 22], 'N', 'tx ink sm') + TX([c[0] - r - 8, c[1] + 8], 'T', 'tx ink sm', {a: 'end'}); }
+
+const AVATAR_C4 = TEACHER_PHOTO ? `<img src="${TEACHER_PHOTO}" alt="Thầy Mr Black"><span class="mb">MB</span>` : LOGO;
+
+/* thanh trượt + liên kết */
+const SLIDER = (id, lab, min, max, step, val, unit = '') => `<label class="ctl">${lab} <input type="range" min="${min}" max="${max}" step="${step}" value="${val}" id="${id}" aria-label="${esc(lab.replace(/<[^>]+>/g, ''))}"><output id="${id}o">${val}${unit}</output></label>`;
+function bindRange(sec, id, fn, unit = ''){ const r = sec.querySelector('#' + id), o = sec.querySelector('#' + id + 'o'); const f = () => { if (o) o.textContent = String(r.value).replace('.', ',') + unit; fn(+r.value); }; r.addEventListener('input', f); r.addEventListener('keydown', e => e.stopPropagation()); f(); }
+/* kéo các điểm điều khiển (data-h = khoá) trong một SVG; pts: {khoá: [x, y]}; snap: bước lưới; clamp(k, p) → p */
+function dragPts(svg, pts, draw, o = {}){
+  let cur = null; const snap = o.snap || 20, cl = o.clamp || ((k, p) => p);
+  const pos = e => { const p = svg.createSVGPoint(); p.x = e.clientX; p.y = e.clientY; const q = p.matrixTransform(svg.getScreenCTM().inverse()); return [Math.round(q.x / snap) * snap, Math.round(q.y / snap) * snap]; };
+  svg.addEventListener('pointerdown', e => { const t = e.target.closest('[data-h]'); if (!t) return; cur = t.dataset.h; svg.setPointerCapture(e.pointerId); });
+  svg.addEventListener('pointermove', e => { if (cur === null) return; pts[cur] = cl(cur, pos(e)); draw(); });
+  const up = () => { cur = null; }; svg.addEventListener('pointerup', up); svg.addEventListener('pointercancel', up); draw();
+}
+const HANDLE = (p, k, r = 14) => `<circle class="handle" data-h="${k}" cx="${n1(p[0])}" cy="${n1(p[1])}" r="${r}"/>`;
+const GRIDPX = (W, H, c = 40) => { let g = ''; for (let x = 0; x <= W; x += c) g += L([x, 0], [x, H], 'grid'); for (let y = 0; y <= H; y += c) g += L([0, y], [W, y], 'grid'); return g; };
+const add = (p, v, k = 1) => [p[0] + k * v[0], p[1] + k * v[1]];
+/* hệ trục: khung F + lưới + trục, nhãn số */
+function plane(f, x0, x1, y0, y1, o = {}){
+  let g = o.grid === false ? '' : GRID(f, x0, x1, y0, y1);
+  const xt = [], yt = []; for (let x = x0; x <= x1; x++) if (x && (!o.xs || o.xs.includes(x))) xt.push([x, String(x).replace('-', '−')]); for (let y = y0; y <= y1; y++) if (y && (!o.ys || o.ys.includes(y))) yt.push([y, String(y).replace('-', '−')]);
+  return g + AXES(f, x0 - 0.4, x1 + 0.4, y0 - 0.4, y1 + 0.4, {xt: o.noTicks ? [] : xt, yt: o.noTicks ? [] : yt});
+}
+const PT = (f, p, nm, o = {}) => DOT(f.P(...p), o.cls || '') + (nm ? TX(f.P(...p), nm, 'lab', {dx: o.dx ?? 16, dy: o.dy ?? -12, a: o.a || 'start'}) : '');
+
+/* ================= CHƯƠNG V · THỐNG KÊ — tiện ích dùng chung (Mr Black) ================= */
+const vnn = (x, k = 2) => { const r = Math.round(x * 10 ** k) / 10 ** k; let s = (Object.is(r, -0) ? 0 : r).toString(); const [a, b] = s.replace('-', '').split('.'); const g = a.replace(/\B(?=(\d{3})+(?!\d))/g, ' '); return (r < 0 ? '−' : '') + g + (b ? ',' + b : ''); };
+const mc = s => m(String(s).replace(/(\d),(\d)/g, '$1{,}$2'));   /* công thức có số thập phân dấu phẩy */
+/* trục số ngang: x0..x1 → px [L, Rr] tại tung độ y */
+function NLINE(x0, x1, L0, R0, y, o = {}){
+  const X = v => L0 + (v - x0) / (x1 - x0) * (R0 - L0);
+  let g = L([L0 - 20, y], [R0 + 20, y], 'th') + `<polygon class="axh" points="${R0 + 36},${y} ${R0 + 18},${y - 8} ${R0 + 18},${y + 8}"/>`;
+  (o.ticks || []).forEach(t => { const v = Array.isArray(t) ? t[0] : t, lab = Array.isArray(t) ? t[1] : vnn(v, 4); g += L([X(v), y - 9], [X(v), y + 9], 'th') + (lab ? TX([X(v), y + 40], lab, 'tx') : ''); });
+  return {X, g};
+}
+/* bảng tần số / bảng dữ liệu: head = [nhãn hàng 1, ...], rows = [[nhãn, ...], ...] */
+const TBL = (rows, cls = '') => `<table class="gt ${cls}">${rows.map((r, i) => `<tr>${r.map((c, j) => j === 0 ? `<th>${c}</th>` : `<td>${c}</td>`).join('')}</tr>`).join('')}</table>`;
+/* dãy số liệu dạng ô (có thể tô nổi một số vị trí) */
+const SEQ = (arr, hl = [], cls = '') => `<div class="seq ${cls}">${arr.map((v, i) => `<span class="${hl.includes(i) ? 'hl' : ''}">${typeof v === 'number' ? vnn(v, 4) : v}</span>`).join('')}</div>`;
+/* ================= KIẾN THỨC XEM LẠI · BÀI 13 (K06–K10 — bản đồ kiến thức Chương V) ================= */
+const THEORY = {
+  K06: {t: 'Số trung bình', p: 'Bài giảng · 1a. Số trung bình', html: R`<ul class="dot">
+    <li>${m(R`\overline x=\dfrac{x_1+x_2+\dots+x_n}{n}`)}; với bảng tần số: ${m(R`\overline x=\dfrac{m_1x_1+m_2x_2+\dots+m_kx_k}{n}`)}, ${m('n=m_1+\\dots+m_k')} (tổng các tần số).</li>
+    <li>Cho biết vị trí trung tâm, đại diện cho mẫu; <b>bị ảnh hưởng</b> bởi giá trị bất thường.</li></ul>`},
+  K07: {t: 'Trung vị', p: 'Bài giảng · 1b. Trung vị', html: R`<ul class="dot">
+    <li>Sắp xếp mẫu theo thứ tự <b>không giảm</b>. ${m('n')} lẻ: giá trị chính giữa (thứ ${m(R`\tfrac{n+1}2`)}); ${m('n')} chẵn: trung bình cộng hai giá trị chính giữa (thứ ${m(R`\tfrac n2`)} và ${m(R`\tfrac n2+1`)}).</li>
+    <li>Trung vị <b>không bị ảnh hưởng</b> bởi giá trị bất thường.</li></ul>`},
+  K08: {t: 'Tứ phân vị', p: 'Bài giảng · 2. Tứ phân vị', html: R`<ul class="dot">
+    <li>${m('Q_2')} = trung vị; ${m('Q_1')}, ${m('Q_3')} là trung vị của nửa bên trái, nửa bên phải ${m('Q_2')} (<b>không gồm ${m('Q_2')} nếu ${m('n')} lẻ</b>).</li>
+    <li>${m('Q_1, Q_2, Q_3')} chia mẫu đã sắp xếp thành 4 phần, mỗi phần chứa 25% giá trị. Bảng tần số: cộng dồn tần số để tìm vị trí.</li></ul>`},
+  K09: {t: 'Mốt', p: 'Bài giảng · 3. Mốt', html: R`<ul class="dot">
+    <li>Mốt là giá trị xuất hiện với <b>tần số lớn nhất</b>.</li>
+    <li>Có thể có nhiều mốt; mọi giá trị cùng tần số thì không có mốt; dùng được cho dữ liệu không phải số.</li></ul>`},
+  K10: {t: 'Chọn số đặc trưng · rút ra kết luận', p: 'Bài giảng · Chọn số đặc trưng, Vận dụng', html: R`<ul class="dot">
+    <li>Không có giá trị bất thường: <b>số trung bình</b>; có giá trị bất thường: <b>trung vị</b>; nhiều giá trị trùng / dữ liệu không phải số: <b>mốt</b>.</li>
+    <li>So sánh hai mẫu: so sánh các số đặc trưng tương ứng rồi kết luận.</li></ul>`}};
+
+/* ================= ENGINE TỰ LUYỆN (P2) · MR BLACK NBK (dùng chung các gói Chương III Toán 10) =================
+   Trạm dừng: Kiểm tra → sai: chẩn đoán lỗi + 📖 Xem lại kiến thức → làm lại; sai 3 lần (mỗi ý) mới mở 💡 Lời giải.
+   Tiến bộ tính theo Knowledge ID của blueprint (không theo số lần bấm). Kết quả chỉ lưu trên trình duyệt đang dùng. */
+const LV = {1: 'Nhận biết', 2: 'Thông hiểu', 3: 'Vận dụng', 4: 'Thử thách'};
+const TASKS = [];
+const pnum = s => { const t = String(s).trim().replace(/\s/g, '').replace(/[−–]/g, '-').replace(/[°º%]/g, '').replace(/,/g, '.'); if (t === '') return NaN;
+  const q = t.match(/^([-+]?(?:\d+\.?\d*|\.\d+))\/([-+]?(?:\d+\.?\d*|\.\d+))$/); if (q) return +q[1] / +q[2];
+  return /^[-+]?(\d+\.?\d*|\.\d+)$/.test(t) ? +t : NaN; };
+const K = (a, b, c, op) => ({a, b, c, op});
+const sys = (...rows) => m(R`\begin{cases}` + rows.join(R`\\`) + R`\end{cases}`);
+
+/* ---------- dựng câu hỏi ---------- */
+function ctl(t, it){
+  const id = `${t.id}-${it.id}`;
+  if (it.kind === 'mc' || it.kind === 'tf'){
+    const opts = it.kind === 'tf' ? ['Đúng', 'Sai'] : it.opts;
+    return `<div class="opts ${it.kind}${it.cols ? ' c' + it.cols : ''}" data-it="${it.id}">${opts.map((o, k) => `<button type="button" class="btn opt" data-k="${k}">${it.kind === 'tf' ? '' : `<b>${'ABCD'[k]}.</b>`}<span>${o}</span></button>`).join('')}</div>`;
+  }
+  if (it.kind === 'pick') return `<div class="opts pick" data-it="${it.id}">${it.plots.map((p, k) => `<button type="button" class="btn opt gopt" data-k="${k}"><b class="gl">${'ABCD'[k]}</b>${p.html()}</button>`).join('')}</div>`;
+  if (it.kind === 'num') return `<label class="num" data-it="${it.id}">${it.pre || ''}<input type="text" inputmode="decimal" autocomplete="off" spellcheck="false" aria-label="${esc(it.aria || 'Đáp số')}" id="${id}"></label>`;
+  if (it.kind === 'points') return `<div class="ptsbar" data-it="${it.id}"><span class="pchosen">Đã chọn <b>0/${it.n}</b>: —</span><button type="button" class="btn sm" data-a="clr">Xoá các điểm</button></div>`;
+  return '';
+}
+function task(o){
+  TASKS.push(o);
+  const tag = `<p class="ptl"><span class="pk">Nhiệm vụ ${o.n}</span>${o.k.map(k => `<span class="kc">${k} · ${THEORY[k].t}</span>`).join('')}<span class="lv l${o.lv}">${LV[o.lv]}</span></p>`;
+  const rows = o.items.map(it => `<div class="q${it.wide ? ' wide' : ''}" data-q="${it.id}"><div class="qt">${it.q || ''}</div>${ctl(o, it)}<div class="fb" aria-live="polite"></div></div>`).join('');
+  const de = `<div class="de pde"><div class="dst"><span class="tag">Đề bài</span>${o.de}</div><div class="qs">${rows}</div></div>`;
+  const foot = `<div class="stfoot"><button type="button" class="btn gold" data-a="chk">✔ Kiểm tra</button><button type="button" class="btn" data-a="rev">📖 Xem lại kiến thức</button><button type="button" class="btn" data-a="sol" disabled>💡 Lời giải <small>(sau 3 lần sai)</small></button><span class="stmsg" aria-live="polite"></span></div>`;
+  const body = o.fig ? `<div class="pcols" style="grid-template-columns:${o.fw || 700}px 1fr"><div class="plot pfig">${o.fig.html()}</div><div class="rcol">${de}</div></div>`
+    : `<div class="rcol">${de}</div>`;
+  addSlide({label: `${o.n}. ${o.title}`, sec: o.sec, anchor: o.anchor, task: o, html: hd(o.sec, o.title) + tag + body + foot,
+    note: HSMODE ? '' : 'Đáp án: ' + o.items.map(it => `${it.name || it.id}: <b>${ansText(it)}</b>`).join(' · ') + (o.note ? ' — ' + o.note : ''),
+    init(sec){ station(sec, o); }});
+}
+function ansText(it){
+  if (it.kind === 'tf') return it.ans === 0 ? 'Đúng' : 'Sai';
+  if (it.kind === 'mc' || it.kind === 'pick') return 'ABCD'[it.ans];
+  if (it.kind === 'num') return vn(it.ans);
+  if (it.kind === 'points') return `${it.n} điểm nguyên thoả ${it.cond}`;
+  return '';
+}
+
+/* ---------- trạm dừng ---------- */
+const PR = (() => { try { const v = JSON.parse(localStorage.getItem(CFG.pkey) || '{}'); return {last: +v.last || 0, res: v.res || {}}; } catch (e) { return {last: 0, res: {}}; } })();
+const prSave = () => { try { localStorage.setItem(CFG.pkey, JSON.stringify(PR)); } catch (e) {} };
+function station(sec, o){
+  const st = {checks: 0, done: false, att: {}, ok: {}, val: {}, pts: []};
+  o.st = st;
+  if (o.fig) { o.fig.mount(sec); }
+  o.items.forEach(it => { st.att[it.id] = 0; if (it.kind === 'pick') it.plots.forEach(p => p.mount(sec)); });
+  texAll(sec);
+  /* chọn phương án */
+  sec.querySelectorAll('.opts').forEach(box => box.addEventListener('click', e => {
+    const b = e.target.closest('.opt'); if (!b || b.disabled) return;
+    box.querySelectorAll('.opt').forEach(x => x.removeAttribute('data-state')); b.dataset.state = 'sel';
+    st.val[box.dataset.it] = +b.dataset.k; clearFb(sec, box.dataset.it);
+  }));
+  sec.querySelectorAll('.num input').forEach(inp => inp.addEventListener('input', () => { const it = inp.closest('.num').dataset.it; st.val[it] = inp.value; clearFb(sec, it); inp.closest('.num').removeAttribute('data-state'); }));
+  sec.querySelectorAll('.num input').forEach(inp => inp.addEventListener('keydown', e => { if (e.key === 'Enter'){ e.preventDefault(); check(sec, o); } }));
+  /* chọn điểm trên hình */
+  const pit = o.items.find(it => it.kind === 'points');
+  if (pit){
+    const P = o.fig, hit = P.svg;
+    const redraw = () => { P.clear('marks'); st.pts.forEach(([x, y]) => P.dot(x, y, st.ok[pit.id] ? 'ok' : '', null, {r: 11}));
+      sec.querySelector('.pchosen').innerHTML = `Đã chọn <b>${st.pts.length}/${pit.n}</b>: ${st.pts.map(p => pt(...p)).join(', ') || '—'}`; };
+    hit.addEventListener('click', e => { if (st.ok[pit.id]) return; const [x, y] = P.evt(e), X = Math.round(x), Y = Math.round(y);
+      if (Math.hypot(x - X, y - Y) > 0.45 || X < P.xmin || X > P.xmax || Y < P.ymin || Y > P.ymax) return;
+      const i = st.pts.findIndex(p => p[0] === X && p[1] === Y);
+      if (i >= 0) st.pts.splice(i, 1); else if (st.pts.length < pit.n) st.pts.push([X, Y]);
+      clearFb(sec, pit.id); redraw(); });
+    sec.querySelector('[data-a=clr]').addEventListener('click', () => { if (st.ok[pit.id]) return; st.pts = []; clearFb(sec, pit.id); redraw(); });
+    o.redraw = redraw;
+  }
+  sec.querySelector('[data-a=chk]').addEventListener('click', () => check(sec, o));
+  sec.querySelector('[data-a=rev]').addEventListener('click', () => showTheory(o.k));
+  sec.querySelector('[data-a=sol]').addEventListener('click', () => showSol(o));
+}
+function clearFb(sec, id){ const q = sec.querySelector(`.q[data-q="${id}"] .fb`); if (q && !q.classList.contains('ok')){ q.innerHTML = ''; q.className = 'fb'; } }
+function judge(o, it){
+  const st = o.st, v = st.val[it.id];
+  if (it.kind === 'points'){
+    if (st.pts.length < it.n) return {empty: true};
+    const bad = st.pts.find(p => !it.test(p[0], p[1]));
+    return bad ? {ok: false, msg: it.diag(bad[0], bad[1])} : {ok: true};
+  }
+  if (v === undefined || v === '') return {empty: true};
+  if (it.kind === 'num'){ const x = pnum(v); if (isNaN(x)) return {ok: false, msg: 'Con nhập một số (dấu phẩy cho số thập phân, ví dụ 2,5; được nhập phân số, ví dụ 3/11).'};
+    if (Math.abs(x - it.ans) < (it.tol || 1e-9)) return {ok: true}; return {ok: false, msg: (it.diag && it.diag(x)) || it.why}; }
+  if (v === it.ans) return {ok: true};
+  return {ok: false, msg: (it.diag && it.diag(v)) || it.why};
+}
+function check(sec, o){
+  const st = o.st; if (st.done) return;
+  const res = o.items.map(it => st.ok[it.id] ? {ok: true, kept: true} : judge(o, it));
+  const empty = o.items.filter((it, i) => res[i].empty);
+  const msg = sec.querySelector('.stmsg');
+  if (empty.length){ msg.className = 'stmsg warn'; msg.textContent = `Con chưa trả lời: ${empty.map(it => it.name || it.id).join(', ')}.`; return; }
+  st.checks++;
+  let anyBad = false;
+  o.items.forEach((it, i) => {
+    const r = res[i]; if (r.kept) return;
+    const q = sec.querySelector(`.q[data-q="${it.id}"]`), fb = q.querySelector('.fb');
+    if (r.ok){
+      st.ok[it.id] = true; fb.className = 'fb ok'; fb.innerHTML = '✓ Đúng' + (it.okmsg ? ' — ' + it.okmsg : '');
+      q.querySelectorAll('.opt').forEach(b => { b.disabled = true; if (+b.dataset.k === it.ans) b.dataset.state = 'ok'; });
+      q.querySelectorAll('input').forEach(x => { x.disabled = true; x.closest('.num').dataset.state = 'ok'; });
+      if (it.kind === 'points' && o.redraw) o.redraw();
+    } else {
+      anyBad = true; st.att[it.id]++; fb.className = 'fb bad'; fb.innerHTML = '✗ ' + r.msg;
+      q.querySelectorAll('.opt[data-state=sel]').forEach(b => { b.dataset.state = 'bad'; });
+      q.querySelectorAll('.num').forEach(x => { x.dataset.state = 'bad'; });
+    }
+    texAll(fb);
+  });
+  if (o.items.some(it => st.att[it.id] >= 3)) sec.querySelector('[data-a=sol]').disabled = false;
+  if (!anyBad && o.items.every(it => st.ok[it.id])){
+    st.done = true; msg.className = 'stmsg ok';
+    msg.textContent = st.checks === 1 ? 'Hoàn thành ngay lần đầu. Bấm ▶ để sang nhiệm vụ tiếp theo.' : 'Hoàn thành. Bấm ▶ để sang nhiệm vụ tiếp theo.';
+    sec.querySelector('[data-a=sol]').disabled = false; sec.querySelector('[data-a=chk]').disabled = true;
+    if (!PR.res[o.id]){ PR.res[o.id] = {first: st.checks === 1}; prSave(); }
+    if (typeof coverUI === 'function') coverUI();
+  } else { msg.className = 'stmsg'; msg.textContent = 'Đọc nhận xét ở từng ý, bấm 📖 Xem lại nếu cần, rồi sửa và bấm Kiểm tra lại.'; }
+}
+/* ---------- hộp thoại: lí thuyết / lời giải ---------- */
+const modal = h(`<div class="modal" hidden role="dialog" aria-modal="true"><div class="mbox"><header><b class="mt"></b><button type="button" class="btn sm" data-a="x">Đóng ✕</button></header><div class="mbody"></div></div></div>`);
+$('#canvas').appendChild(modal);
+modal.addEventListener('click', e => { if (e.target === modal || e.target.closest('[data-a=x]')) closeModal(); });
+function closeModal(){ modal.hidden = true; }
+function openModal(title, html){ modal.querySelector('.mt').innerHTML = title; const b = modal.querySelector('.mbody'); b.innerHTML = html; texAll(b); modal.hidden = false; }
+function showTheory(ks){ openModal('📖 Xem lại kiến thức', ks.map(k => `<section class="th"><h4><span class="kchip">${k}</span> ${THEORY[k].t} <small>${THEORY[k].p}</small></h4>${THEORY[k].html}</section>`).join('')); }
+function showSol(o){ openModal(`💡 Lời giải · Nhiệm vụ ${o.n}`, `<div class="sol">${o.sol}</div>`); }
+
+/* ================= BÌA · TỰ LUYỆN ================= */
+const AVATAR = TEACHER_PHOTO ? `<img src="${TEACHER_PHOTO}" alt="Thầy Mr Black"><span class="mb">MB</span>` : LOGO;
+addSlide({label: 'Bìa · chọn phần', sec: 0, anchor: 'start', html: R`
+<div class="cover"><div>
+  <div class="avatar">${AVATAR}</div>
+  <p class="eb">${CFG.eb}</p>
+  <h1>${CFG.h1}<span>${CFG.h1s}</span></h1>
+  <div class="rules"><b>Cách luyện</b>${CFG.rules.map(r => `<span>${r}</span>`).join('')}</div>
+  <p class="sig">Luyện tập · <b>Mr Black NBK</b></p></div>
+  <nav class="cmenu" aria-label="Chọn phần"><p class="pk">Chọn phần luyện</p></nav>
+</div>`, note: 'Học sinh có thể vào thẳng từng phần. Kết quả theo kiến thức chỉ lưu trên trình duyệt của máy đang dùng (không có tài khoản, không gửi về máy chủ).'});
+/* ================= NGÂN HÀNG TỰ LUYỆN BÀI 13 · P01–P17 (đáp án kiểm chứng: verify_p2.py) ================= */
+const nr = (a, b, t) => Math.abs(a - b) <= (t ?? 1e-9);
+
+/* ---------- PHẦN 1 · TRUNG BÌNH · TRUNG VỊ ---------- */
+task({id: 'p01', n: 1, sec: 1, anchor: 'm1', k: ['K06'], lv: 1, title: 'Tính số trung bình',
+  de: 'Tính số trung bình của mỗi mẫu số liệu sau.',
+  items: [{id: 'a', name: 'Mẫu 1', q: 'Số giờ tự học của 5 bạn: 7 9 6 8 10. Số trung bình:', kind: 'num', ans: 8, why: 'Tổng 40 chia 5.'},
+    {id: 'b', name: 'Mẫu 2', q: 'Điểm của 6 bạn: 12 15 11 14 13 18. Số trung bình (làm tròn đến hàng phần trăm):', kind: 'num', ans: 83 / 6, tol: 0.006, why: 'Tổng 83 chia 6.', diag: v => nr(v, 13.5) ? '13,5 là trung vị (giá trị giữa), không phải số trung bình.' : null}],
+  sol: R`${m(R`\dfrac{40}5=8`)}; ${m(R`\dfrac{83}6\approx13{,}83`)}.`});
+
+task({id: 'p02', n: 2, sec: 1, k: ['K06'], lv: 1, title: 'Số trung bình từ bảng tần số',
+  de: R`Điểm kiểm tra của một nhóm học sinh: ${TBL([['Điểm', '5', '6', '7', '8', '9'], ['Số học sinh', '2', '4', '7', '5', '2']])}`,
+  items: [{id: 'a', name: 'n', q: R`Cỡ mẫu ${m('n=')}`, kind: 'num', ans: 20, why: 'Cộng các tần số.', diag: v => nr(v, 5) ? 'n là tổng số học sinh, không phải số cột.' : null},
+    {id: 'b', name: 'x̄', q: 'Điểm trung bình:', kind: 'num', ans: 7.05, why: R`${m(R`\dfrac{2\cdot5+4\cdot6+7\cdot7+5\cdot8+2\cdot9}{20}`)}.`, diag: v => nr(v, 7) ? '7 là trung bình của 5 giá trị 5…9, chưa tính tần số.' : null}],
+  sol: R`${m('n=20')}; ${m(R`\overline x=\dfrac{10+24+49+40+18}{20}=\dfrac{141}{20}=7{,}05`)}.`});
+
+task({id: 'p03', n: 3, sec: 1, k: ['K07'], lv: 1, title: 'Tìm trung vị',
+  de: 'Tìm trung vị của mỗi mẫu số liệu sau.',
+  items: [{id: 'a', name: 'n lẻ', q: '5 3 9 7 4. Trung vị:', kind: 'num', ans: 5, why: 'Sắp xếp: 3 4 5 7 9; lấy giá trị chính giữa.', diag: v => nr(v, 9) ? 'Chưa sắp xếp: 9 là giá trị đứng giữa dãy ban đầu.' : null},
+    {id: 'b', name: 'n chẵn', q: '12 8 15 10. Trung vị:', kind: 'num', ans: 11, why: 'Sắp xếp: 8 10 12 15; trung bình cộng hai giá trị giữa.', diag: v => nr(v, 11.25) ? 'Đó là số trung bình. Trung vị: TB của 10 và 12.' : nr(v, 10) || nr(v, 12) ? 'n chẵn: lấy trung bình cộng của hai giá trị chính giữa.' : null}],
+  sol: '3 4 <b>5</b> 7 9 ⇒ Me = 5; 8 <b>10 12</b> 15 ⇒ Me = 11.'});
+
+task({id: 'p04', n: 4, sec: 1, k: ['K07', 'K06'], lv: 2, title: 'Trung vị từ bảng tần số',
+  de: R`Số anh chị em ruột của các bạn trong một tổ: ${TBL([['Số anh chị em', '0', '1', '2', '3'], ['Số bạn', '4', '9', '5', '2']])}`,
+  items: [{id: 'a', name: 'Me', q: 'Trung vị:', kind: 'num', ans: 1, why: R`${m('n=20')}: trung vị là TB của giá trị thứ 10 và 11; cộng dồn: 0 (vị trí 1–4), 1 (5–13).`, diag: v => nr(v, 1.5) ? 'Không lấy trung vị của các giá trị 0, 1, 2, 3 — phải đếm theo tần số.' : null},
+    {id: 'b', name: 'x̄', q: 'Số trung bình:', kind: 'num', ans: 1.25, why: R`${m(R`\dfrac{0\cdot4+1\cdot9+2\cdot5+3\cdot2}{20}`)}.`}],
+  sol: R`Giá trị thứ 10 và 11 đều bằng 1 ⇒ Me = 1; ${m(R`\overline x=\dfrac{25}{20}=1{,}25`)}.`});
+
+task({id: 'p05', n: 5, sec: 1, k: ['K07', 'K10'], lv: 2, title: 'Đúng – sai: giá trị bất thường',
+  de: 'Cho mẫu số liệu: 2 3 3 4 28. Mỗi khẳng định sau đúng hay sai?',
+  items: [
+    {id: 'a', name: 'a)', kind: 'tf', q: R`a) Số trung bình ${m(R`\overline x=8`)}.`, ans: 0, why: 'Tổng 40 chia 5.'},
+    {id: 'b', name: 'b)', kind: 'tf', q: 'b) Trung vị bằng 3.', ans: 0, why: 'Giá trị chính giữa của dãy đã sắp xếp.'},
+    {id: 'c', name: 'c)', kind: 'tf', q: 'c) Số trung bình đại diện cho mẫu tốt hơn trung vị.', ans: 1, why: 'Giá trị 28 bất thường kéo số trung bình lên 8 — lớn hơn 4/5 số giá trị.'},
+    {id: 'd', name: 'd)', kind: 'tf', q: 'd) Nếu bỏ giá trị 28 thì trung vị không thay đổi.', ans: 0, why: R`2 3 3 4: ${m('Me=(3+3):2=3')}.`}],
+  sol: 'a) Đúng. b) Đúng. c) Sai (có giá trị bất thường 28 ⇒ dùng trung vị). d) Đúng.'});
+
+task({id: 'p06', n: 6, sec: 1, k: ['K06'], lv: 3, title: 'Vận dụng số trung bình',
+  de: 'Giải các bài toán sau.',
+  items: [{id: 'a', name: 'Bài 5', q: 'Điểm trung bình 4 bài kiểm tra của An là 7,5. An cần bao nhiêu điểm ở bài thứ 5 để điểm trung bình 5 bài là 8?', kind: 'num', ans: 10, why: R`Tổng 5 bài phải là ${m(R`5\cdot8`)}; tổng 4 bài là ${m(R`4\cdot7{,}5`)}.`, diag: v => nr(v, 8.5) ? 'Không lấy 8 + 0,5. Hãy tính theo tổng điểm.' : null},
+    {id: 'b', name: 'Thêm số', q: 'Số trung bình của 10 số là 6. Thêm số 17 vào mẫu. Số trung bình mới:', kind: 'num', ans: 7, why: R`Tổng mới ${m(R`60+17=77`)}, chia 11.`, diag: v => nr(v, 11.5) ? 'Không lấy trung bình của 6 và 17. Tổng 10 số là 60.' : null}],
+  sol: R`${m(R`40-30=10`)}; ${m(R`\dfrac{60+17}{11}=7`)}.`});
+
+/* ---------- PHẦN 2 · TỨ PHÂN VỊ ---------- */
+task({id: 'p07', n: 7, sec: 2, anchor: 'm2', k: ['K08'], lv: 1, title: 'Tứ phân vị khi n chẵn',
+  de: 'Cho mẫu số liệu đã sắp xếp: 3 5 6 8 9 11 12 15.',
+  items: [{id: 'a', name: 'Q₁', q: R`${m('Q_1=')}`, kind: 'num', ans: 5.5, why: 'Nửa trái 3 5 6 8: TB hai giá trị giữa.'},
+    {id: 'b', name: 'Q₂', q: R`${m('Q_2=')}`, kind: 'num', ans: 8.5, why: 'TB của giá trị thứ 4 và 5.'},
+    {id: 'c', name: 'Q₃', q: R`${m('Q_3=')}`, kind: 'num', ans: 11.5, why: 'Nửa phải 9 11 12 15: TB hai giá trị giữa.'}],
+  sol: R`${m('Q_1=(5+6):2=5{,}5')}; ${m('Q_2=(8+9):2=8{,}5')}; ${m('Q_3=(11+12):2=11{,}5')}.`});
+
+task({id: 'p08', n: 8, sec: 2, k: ['K08'], lv: 2, title: 'Tứ phân vị khi n lẻ',
+  de: 'Thời gian (phút) đi từ nhà đến trường của 11 bạn: 21 25 18 30 27 22 35 19 24 28 26.',
+  items: [{id: 'a', name: 'Q₂', q: R`${m('Q_2=')}`, kind: 'num', ans: 25, why: 'Sắp xếp rồi lấy giá trị thứ 6.'},
+    {id: 'b', name: 'Q₁', q: R`${m('Q_1=')}`, kind: 'num', ans: 21, why: 'Nửa trái gồm 5 giá trị đầu (không gồm Q₂).', diag: v => nr(v, 21.5) ? 'n lẻ: KHÔNG đưa Q₂ vào nửa trái. Nửa trái 18 19 21 22 24.' : null},
+    {id: 'c', name: 'Q₃', q: R`${m('Q_3=')}`, kind: 'num', ans: 28, why: 'Nửa phải gồm 5 giá trị cuối.', diag: v => nr(v, 27.5) ? 'n lẻ: KHÔNG đưa Q₂ vào nửa phải. Nửa phải 26 27 28 30 35.' : null}],
+  sol: R`Sắp xếp: 18 19 21 22 24 <b>25</b> 26 27 28 30 35 ⇒ ${m('Q_2=25,\\ Q_1=21,\\ Q_3=28')}.`});
+
+task({id: 'p09', n: 9, sec: 2, k: ['K08'], lv: 2, title: 'Ý nghĩa của tứ phân vị',
+  de: R`Điểm thi của một trường có ${m('Q_1=5{,}5')}, ${m('Q_2=6{,}75')}, ${m('Q_3=8')}.`,
+  items: [{id: 'a', name: 'Giữa', q: R`Khoảng bao nhiêu phần trăm số học sinh có điểm từ ${m('Q_1')} đến ${m('Q_3')}?`, kind: 'mc', cols: 4, opts: ['25%', '50%', '75%', '100%'], ans: 1, why: 'Mỗi phần giữa hai tứ phân vị liên tiếp chứa 25% giá trị.'},
+    {id: 'b', name: 'Trên Q₃', q: 'Khoảng bao nhiêu phần trăm số học sinh có điểm từ 8 trở lên?', kind: 'mc', cols: 4, opts: ['25%', '50%', '75%', '8%'], ans: 0, why: R`8 là ${m('Q_3')}.`},
+    {id: 'c', name: 'Dưới Q₂', q: 'Khoảng bao nhiêu phần trăm số học sinh có điểm không quá 6,75?', kind: 'mc', cols: 4, opts: ['25%', '50%', '75%', '67,5%'], ans: 1, why: R`6,75 là ${m('Q_2')} (trung vị).`}],
+  sol: '50%; 25%; 50%.'});
+
+task({id: 'p10', n: 10, sec: 2, k: ['K08'], lv: 3, title: 'Tứ phân vị từ bảng tần số',
+  de: R`Số lần đến thư viện trong một tháng của 24 học sinh: ${TBL([['Số lần', '1', '2', '3', '4', '5'], ['Số học sinh', '3', '6', '8', '5', '2']])}`,
+  items: [{id: 'a', name: 'Q₂', q: R`${m('Q_2=')}`, kind: 'num', ans: 3, why: 'TB giá trị thứ 12 và 13; cộng dồn: 1 (1–3), 2 (4–9), 3 (10–17), 4 (18–22), 5 (23–24).'},
+    {id: 'b', name: 'Q₁', q: R`${m('Q_1=')}`, kind: 'num', ans: 2, why: 'Nửa trái 12 giá trị: TB giá trị thứ 6 và 7.'},
+    {id: 'c', name: 'Q₃', q: R`${m('Q_3=')}`, kind: 'num', ans: 4, why: 'Nửa phải: giá trị thứ 13 đến 24; TB giá trị thứ 18 và 19.', diag: v => nr(v, 3.5) ? 'Giá trị thứ 18 và 19 đều bằng 4 (vị trí 18–22).' : null}],
+  sol: R`${m('Q_2=3')}; ${m('Q_1=2')}; ${m('Q_3=4')}.`});
+
+/* ---------- PHẦN 3 · MỐT · CHỌN SỐ ĐẶC TRƯNG ---------- */
+task({id: 'p11', n: 11, sec: 3, anchor: 'm3', k: ['K09'], lv: 1, title: 'Tìm mốt',
+  de: 'Tìm mốt của mỗi mẫu số liệu.',
+  items: [{id: 'a', name: 'Mẫu số', q: '4 7 7 2 9 7 4. Mốt:', kind: 'num', ans: 7, why: 'Giá trị xuất hiện nhiều lần nhất.'},
+    {id: 'b', name: 'Cỡ áo', q: R`Số áo bán được: ${TBL([['Cỡ áo', 'S', 'M', 'L', 'XL'], ['Số áo', '12', '25', '18', '5']], 'sm')} Mốt là cỡ`, kind: 'mc', cols: 4, opts: ['S', 'M', 'L', 'XL'], ans: 1, why: 'Cỡ có số lượng lớn nhất.', diag: v => v === 3 ? 'Mốt là giá trị có tần số LỚN nhất.' : null}],
+  sol: '7 (3 lần); cỡ M (25 áo).'});
+
+task({id: 'p12', n: 12, sec: 3, k: ['K09'], lv: 2, title: 'Nhiều mốt · không có mốt',
+  de: 'Chọn kết luận đúng về mốt.',
+  items: [{id: 'a', name: 'Mẫu 1', q: '3 5 5 6 8 8 9 có mốt là', kind: 'mc', cols: 4, opts: ['5', '8', '5 và 8', 'không có mốt'], ans: 2, why: '5 và 8 cùng xuất hiện 2 lần.'},
+    {id: 'b', name: 'Mẫu 2', q: '1 2 3 4 5 có mốt là', kind: 'mc', cols: 4, opts: ['1', '3', '5', 'không có mốt'], ans: 3, why: 'Mọi giá trị có cùng tần số.', diag: v => v === 1 ? '3 là trung vị. Ở đây mọi giá trị cùng xuất hiện 1 lần.' : null}],
+  sol: 'Mẫu 1: hai mốt 5 và 8. Mẫu 2: không có mốt.'});
+
+task({id: 'p13', n: 13, sec: 3, k: ['K10'], lv: 2, title: 'Chọn số đặc trưng đại diện',
+  de: 'Chọn số đặc trưng phù hợp nhất để đại diện cho mỗi mẫu số liệu.',
+  items: [{id: 'a', name: 'Thu nhập', q: 'Thu nhập của 10 hộ gia đình, trong đó có 1 hộ thu nhập rất cao:', kind: 'mc', cols: 3, opts: ['Số trung bình', 'Trung vị', 'Mốt'], ans: 1, why: 'Có giá trị bất thường.'},
+    {id: 'b', name: 'Màu sơn', q: 'Màu sơn được khách hàng chọn trong một tháng:', kind: 'mc', cols: 3, opts: ['Số trung bình', 'Trung vị', 'Mốt'], ans: 2, why: 'Dữ liệu không phải là số.'},
+    {id: 'c', name: 'Điểm thi', q: 'Điểm thi của 40 học sinh, các điểm khá đều nhau:', kind: 'mc', cols: 3, opts: ['Số trung bình', 'Trung vị', 'Mốt'], ans: 0, why: 'Không có giá trị bất thường.'}],
+  sol: 'Trung vị; mốt; số trung bình.'});
+
+task({id: 'p14', n: 14, sec: 3, k: ['K10', 'K07'], lv: 3, title: 'So sánh hai cửa hàng',
+  de: 'Doanh thu (triệu đồng) trong 7 ngày của hai cửa hàng: A: 12 15 14 13 16 15 13; B: 10 11 12 12 13 14 26.',
+  items: [{id: 'a', name: 'TB', q: 'Số trung bình của hai cửa hàng (bằng nhau) là:', kind: 'num', ans: 14, why: 'Tổng mỗi cửa hàng là 98.'},
+    {id: 'b', name: 'Me B', q: 'Trung vị doanh thu của cửa hàng B:', kind: 'num', ans: 12, why: 'Giá trị thứ 4 của dãy đã sắp xếp.'},
+    {id: 'c', name: 'Kết luận', q: 'Dựa trên trung vị, cửa hàng nào thường có doanh thu cao hơn?', kind: 'mc', cols: 2, opts: ['Cửa hàng A', 'Cửa hàng B'], ans: 0, why: 'Trung vị A là 14 > 12; doanh thu 26 của B là bất thường.'}],
+  sol: 'Cùng TB = 14; Me(A) = 14, Me(B) = 12. B có ngày 26 bất thường kéo TB lên ⇒ thường ngày A bán tốt hơn.'});
+
+task({id: 'p15', n: 15, sec: 3, k: ['K06', 'K07', 'K08'], lv: 3, title: 'Đúng – sai: tổng hợp',
+  de: 'Cho mẫu số liệu: 2 4 4 5 6 7 8 9 10 12. Mỗi khẳng định sau đúng hay sai?',
+  items: [
+    {id: 'a', name: 'a)', kind: 'tf', q: R`a) ${m(R`\overline x=6{,}7`)}.`, ans: 0, why: 'Tổng 67 chia 10.'},
+    {id: 'b', name: 'b)', kind: 'tf', q: 'b) Trung vị bằng 6,5.', ans: 0, why: 'TB của 6 và 7.'},
+    {id: 'c', name: 'c)', kind: 'tf', q: R`c) ${m('Q_1=4')}.`, ans: 0, why: 'Nửa trái 2 4 4 5 6: giá trị giữa là 4.'},
+    {id: 'd', name: 'd)', kind: 'tf', q: R`d) ${m('Q_3=10')}.`, ans: 1, why: 'Nửa phải 7 8 9 10 12: giá trị giữa là 9.'}],
+  sol: 'a) Đúng. b) Đúng. c) Đúng. d) Sai (Q₃ = 9).'});
+
+task({id: 'p16', n: 16, sec: 3, k: ['K10', 'K06', 'K07'], lv: 3, title: 'Lương đại diện',
+  de: 'Lương tháng (triệu đồng) của 8 nhân viên một cửa hàng: 7 7 8 8 9 10 11 40.',
+  items: [{id: 'a', name: 'x̄', q: 'Số trung bình:', kind: 'num', ans: 12.5, why: 'Tổng 100 chia 8.'},
+    {id: 'b', name: 'Me', q: 'Trung vị:', kind: 'num', ans: 8.5, why: 'TB của giá trị thứ 4 và 5.'},
+    {id: 'c', name: 'Đại diện', q: 'Số nào phản ánh tốt hơn mức lương phổ biến?', kind: 'mc', cols: 2, opts: ['Số trung bình', 'Trung vị'], ans: 1, why: '40 là giá trị bất thường; 7/8 nhân viên có lương dưới 12,5.'}],
+  sol: R`${m(R`\overline x=12{,}5`)}; Me = 8,5; dùng trung vị.`});
+
+task({id: 'p17', n: 17, sec: 3, k: ['K06', 'K07', 'K09'], lv: 4, optional: true, title: 'Thử thách · tìm mẫu số liệu',
+  de: 'Một mẫu gồm 5 số nguyên dương có số trung bình bằng 6, trung vị bằng 5 và có duy nhất một mốt là 3.',
+  items: [{id: 'a', name: 'Tổng', q: 'Tổng 5 số bằng:', kind: 'num', ans: 30, why: '5 · 6.'},
+    {id: 'b', name: 'Lớn nhất', q: 'Giá trị lớn nhất có thể của số lớn nhất trong mẫu:', kind: 'num', ans: 13, why: 'Mốt 3 ⇒ hai số nhỏ nhất là 3, 3; số thứ ba là 5; hai số còn lại khác nhau, lớn hơn 5, có tổng 19.', diag: v => nr(v, 14) ? 'Nếu số thứ tư bằng 5 thì 5 cũng xuất hiện 2 lần: mốt không còn duy nhất.' : null}],
+  sol: R`Sắp xếp: 3, 3, 5, ${m('d')}, ${m('e')} với ${m('d+e=19')}, ${m('5<d<e')} (để 3 là mốt duy nhất). ${m('e')} lớn nhất khi ${m('d=6')}: ${m('e=13')}.`});
+
+/* ================= KẾT QUẢ + ĐIỀU HƯỚNG · TỰ LUYỆN ================= */
+addSlide({label: 'Kết quả theo kiến thức', sec: SECS.length - 1, anchor: 'sum', html: hd(SECS.length - 1, 'Tiến bộ theo từng kiến thức') + `<div class="pres" id="pres"></div>`,
+  note: 'Bảng tự cập nhật theo các nhiệm vụ học sinh đã hoàn thành. “Đúng ngay” = đúng tất cả các ý ở lần Kiểm tra đầu tiên. Nhiệm vụ thử thách không tính.'});
+const CORE = TASKS.filter(t => !t.optional);
+const KS = Object.keys(THEORY).filter(k => CORE.some(t => t.k.includes(k)));
+function kState(k){
+  const ts = CORE.filter(t => t.k.includes(k)), done = ts.filter(t => PR.res[t.id]), first = done.filter(t => PR.res[t.id].first).length;
+  let st = 'Chưa luyện', cls = '';
+  if (done.length && done.length < ts.length){ st = 'Đang luyện'; cls = 'mid'; }
+  if (done.length === ts.length){ if (first * 3 >= 2 * ts.length){ st = '✓ Vững'; cls = 'ok'; } else { st = 'Cần ôn lại'; cls = 'bad'; } }
+  return {ts, done: done.length, first, st, cls};
+}
+function renderResults(){
+  const box = $('#pres'); if (!box) return;
+  const rows = KS.map(k => { const s = kState(k); return `<tr class="${s.cls}"><td><b>${k}</b> ${THEORY[k].t}</td><td>${s.done}/${s.ts.length}</td><td>${s.first}</td><td class="stt">${s.st}</td><td><button class="btn sm" type="button" data-rev="${k}">📖 Xem lại</button> <button class="btn sm" type="button" data-to="${s.ts.find(t => !PR.res[t.id])?.id || s.ts[0].id}">↻ Luyện</button></td></tr>`; }).join('');
+  const nOk = KS.filter(k => kState(k).cls === 'ok').length;
+  box.innerHTML = `<p class="lead">Vững <b class="gold-t">${nOk}/${KS.length}</b> kiến thức. Một kiến thức <b>Vững</b> khi con đã làm hết các nhiệm vụ của nó và đúng ngay lần đầu ở ít nhất 2/3 số nhiệm vụ. Đây là kết quả luyện tập, chưa phải kết luận đạt/chưa đạt (xem bài ${CFG.testname}).</p>
+    <div class="ptab"><table><thead><tr><th>Kiến thức</th><th>Đã làm</th><th>Đúng ngay</th><th>Trạng thái</th><th></th></tr></thead><tbody>${rows}</tbody></table></div>
+    <div class="row" style="justify-content:flex-end"><button class="btn sm" type="button" data-a="reset">Xoá kết quả, luyện lại từ đầu</button></div>`;
+  box.querySelectorAll('[data-rev]').forEach(b => b.addEventListener('click', () => showTheory([b.dataset.rev])));
+  box.querySelectorAll('[data-to]').forEach(b => b.addEventListener('click', () => { const k = slides.findIndex(s => s.task && s.task.id === b.dataset.to); if (k >= 0) go(k); }));
+  box.querySelector('[data-a=reset]').addEventListener('click', e => { const b = e.currentTarget; if (b.dataset.sure){ PR.res = {}; prSave(); renderResults(); coverUI(); } else { b.dataset.sure = 1; b.textContent = 'Bấm lần nữa để xác nhận xoá'; } });
+}
+/* bìa: chọn phần + luyện tiếp */
+const PARTS = CFG.parts;
+const cards = [];
+(function(){ const box = slides[0].el.querySelector('.cmenu');
+  PARTS.forEach((p, j) => { const c = h(`<button type="button" class="ccard"><span class="pn">Phần ${j + 1}</span><b>${p.t}</b><small>${p.s} · <span class="pst"></span></small></button>`);
+    c.addEventListener('click', () => goAnchor(p.a)); box.appendChild(c); cards.push({c, p}); });
+  const r = h('<button type="button" class="ccard wide"><span class="pn">Kết quả</span><b>Tiến bộ theo kiến thức</b><small>Xem kiến thức nào đã vững, kiến thức nào cần ôn</small></button>');
+  r.addEventListener('click', () => goAnchor('sum')); box.appendChild(r);
+  const cv = slides[0].el.querySelector('.cover > div');
+  const b = h('<div class="row" style="margin-top:26px"><button class="btn gold" type="button" data-a="start">▶ Bắt đầu luyện</button><button class="btn" type="button" data-a="resume" hidden></button></div>'); cv.appendChild(b);
+  b.querySelector('[data-a=start]').addEventListener('click', () => go(1)); b.querySelector('[data-a=resume]').addEventListener('click', () => go(PR.last)); cards.resume = b.querySelector('[data-a=resume]'); })();
+function coverUI(){
+  cards.forEach(({c, p}) => { const ts = CORE.filter(t => t.sec === p.sec), d = ts.filter(t => PR.res[t.id]).length, all = d === ts.length;
+    c.classList.toggle('ok', all); c.querySelector('.pst').textContent = (all ? '✓ ' : '') + `${d}/${ts.length} nhiệm vụ`; });
+  const r = cards.resume; r.hidden = !(PR.last > 1 && PR.last < slides.length); if (!r.hidden) r.textContent = `↻ Luyện tiếp · ${slides[PR.last].label}`;
+}
+const secsEl = $('#secs');
+const secFirst = SECS.map((_, i) => slides.findIndex(s => s.sec === i));
+SECS.forEach((t, i) => { const b = document.createElement('button'); b.type = 'button'; b.textContent = t; b.addEventListener('click', () => go(secFirst[i])); secsEl.appendChild(b); });
+function go(n, step = 0){
+  n = Math.max(0, Math.min(slides.length - 1, n));
+  slides[S.cur].el.hidden = true; S.cur = n; const s = slides[n]; s.el.hidden = false; s.el.classList.remove('fade'); void s.el.offsetWidth; s.el.classList.add('fade');
+  $('#nlabel').textContent = s.label; $('#ncount').textContent = `${n + 1} / ${slides.length}`;
+  $('#pbar').style.width = (n / (slides.length - 1) * 100) + '%'; $('#prev').disabled = n === 0;
+  [...secsEl.children].forEach((e, j) => { e.classList.toggle('cur', j === s.sec); e.setAttribute('aria-current', j === s.sec ? 'true' : 'false'); });
+  $$('#menu [data-n]').forEach(b => b.classList.toggle('cur', +b.dataset.n === n));
+  $('#menu').hidden = true; closeModal(); setStep(0);
+  if (s.anchor === 'sum') renderResults();
+  if (n > 0){ PR.last = n; prSave(); } else coverUI();
+}
+const fwd = () => go(S.cur + 1), back = () => go(S.cur - 1);
+const goAnchor = a => { const k = slides.findIndex(s => s.anchor === a); if (k >= 0) go(k); };
+document.addEventListener('click', e => { const b = e.target.closest('[data-go]'); if (b) goAnchor(b.dataset.go); });
+$('#next').addEventListener('click', fwd); $('#prev').addEventListener('click', back);
+document.addEventListener('keydown', e => {
+  if (e.target.closest('input,select,textarea')) return;
+  if (['ArrowRight', 'PageDown'].includes(e.key)){ fwd(); e.preventDefault(); }
+  else if (['ArrowLeft', 'PageUp'].includes(e.key)){ back(); e.preventDefault(); }
+  else if (e.key === 'Escape'){ $('#menu').hidden = true; closeModal(); }
+});
+(function(){ const mn = $('#menu'), g = h('<div class="mgrid"></div>'); mn.appendChild(g);
+  slides.forEach((s, i) => g.appendChild(h(`<button type="button" data-n="${i}">${i ? i + '. ' : ''}${esc(s.label.replace(/^\d+\.\s*/, ''))}</button>`)));
+  g.addEventListener('click', e => { const b = e.target.closest('[data-n]'); if (b) go(+b.dataset.n); }); })();
+$('#btn-menu').addEventListener('click', () => { $('#menu').hidden = !$('#menu').hidden; });
+$('#btn-fs').addEventListener('click', () => { try { if (document.fullscreenElement || document.webkitFullscreenElement) { const x = document.exitFullscreen || document.webkitExitFullscreen; const p = x.call(document); if (p && p.catch) p.catch(() => {}); } else { const r = document.documentElement, q = r.requestFullscreen || r.webkitRequestFullscreen; if (!q) { window.mbFsHint(); return; } const p = q.call(r); if (p && p.catch) p.catch(() => {}); } } catch (e) {} });
+document.addEventListener('fullscreenchange', () => setTimeout(fit, 60));
+$('#btn-gv').addEventListener('click', () => { if ($('#btn-gv').disabled) return; S.teacher = !S.teacher; document.body.classList.toggle('gv', S.teacher); $('#btn-gv').setAttribute('aria-pressed', String(S.teacher)); });
+let light = false;
+$('#btn-theme').addEventListener('click', () => { light = !light; if (light) document.documentElement.setAttribute('data-mb', 'light'); else document.documentElement.removeAttribute('data-mb'); $('#btn-theme').textContent = light ? 'Nền: Sáng' : 'Nền: Tối'; });
+slides[0].el.hidden = false; go(0); coverUI();
+window.__deck = {go, slides, S, TASKS, PR, kState, check};
+})();
+
+</script>
+<script>
+/* iPhone/iPad: hướng dẫn toàn màn hình + nút về trang chủ khi mở như ứng dụng */
+window.mbFsHint = function(){
+  if (document.getElementById('mbfs')) return;
+  var d = document.createElement('div'); d.id = 'mbfs';
+  d.style.cssText = 'position:fixed;inset:0;z-index:100000;background:rgba(5,10,30,.72);display:flex;align-items:center;justify-content:center;padding:16px';
+  d.innerHTML = '<div style="max-width:520px;background:#fff;color:#14213d;border-radius:16px;padding:20px 22px;font:16px/1.5 -apple-system,Segoe UI,sans-serif;box-shadow:0 20px 60px rgba(0,0,0,.4)">'
+    + '<b style="font-size:18px">Xem toàn màn hình trên iPhone</b>'
+    + '<p style="margin:10px 0 6px"><b>Cách 1:</b> bấm biểu tượng <b>aA</b> hoặc <b>☰</b> bên trái địa chỉ web → chọn <b>Ẩn thanh công cụ</b>.</p>'
+    + '<p style="margin:6px 0 14px"><b>Cách 2:</b> bấm <b>Chia sẻ ⬆</b> → <b>Thêm vào MH chính</b>. Mở từ biểu tượng Mr Black trên màn hình chính sẽ luôn toàn màn hình.</p>'
+    + '<button type="button" style="font:inherit;font-weight:700;border:0;border-radius:10px;padding:8px 18px;background:#f5b301;color:#14213d">Đã hiểu</button></div>';
+  d.addEventListener('click', function(e){ if (e.target === d || e.target.tagName === 'BUTTON') d.remove(); });
+  document.body.appendChild(d);
+};
+(function(){
+  var sa = navigator.standalone || (window.matchMedia && matchMedia('(display-mode: standalone)').matches);
+  if (!sa) return;
+  var a = document.createElement('a'); a.href = '../'; a.textContent = '⌂'; a.title = 'Về trang chủ'; a.setAttribute('aria-label', 'Về trang chủ');
+  a.style.cssText = 'position:fixed;left:max(8px,env(safe-area-inset-left));bottom:max(8px,env(safe-area-inset-bottom));z-index:99999;width:38px;height:38px;border-radius:12px;background:rgba(0,0,0,.55);color:#fff;font:22px/38px sans-serif;text-align:center;text-decoration:none';
+  document.body.appendChild(a);
+})();
+</script>
+<script>
+/* Xoay máy: co giãn lại sân khấu nhiều nhịp sau khi xoay (iPhone/Android báo kích thước mới trễ, nhất là trang nặng) */
+(function(){
+  var last = '';
+  function refit(){ try { window.dispatchEvent(new Event('resize')); } catch (e) {} }
+  function burst(){ [0, 120, 300, 600, 1000, 1600].forEach(function(t){ setTimeout(refit, t); }); }
+  function check(){ var vv = window.visualViewport, k = (vv ? vv.width + 'x' + vv.height : innerWidth + 'x' + innerHeight); if (k !== last){ last = k; burst(); } }
+  window.addEventListener('orientationchange', burst);
+  try { if (screen.orientation && screen.orientation.addEventListener) screen.orientation.addEventListener('change', burst); } catch (e) {}
+  try { var mq = matchMedia('(orientation: portrait)'); if (mq.addEventListener) mq.addEventListener('change', burst); else if (mq.addListener) mq.addListener(burst); } catch (e) {}
+  try { if (window.ResizeObserver) new ResizeObserver(check).observe(document.documentElement); } catch (e) {}
+  document.addEventListener('visibilitychange', function(){ if (!document.hidden) burst(); });
+  window.addEventListener('pageshow', burst);
+})();
+</script>
+</body></html>
