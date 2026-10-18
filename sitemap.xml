@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://mrblackmath.github.io/</loc><lastmod>2026-10-18</lastmod><changefreq>daily</changefreq><priority>1.0</priority></url>
+  <url><loc>https://mrblackmath.github.io/</loc><lastmod>2026-10-19</lastmod><changefreq>daily</changefreq><priority>1.0</priority></url>
   <url><loc>https://mrblackmath.github.io/bai-hoc/toan10-bai5-bai-giang.html</loc><lastmod>2026-10-17</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://mrblackmath.github.io/bai-hoc/toan10-bai5-kiem-tra.html</loc><lastmod>2026-10-17</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://mrblackmath.github.io/bai-hoc/toan10-bai5-luyen-tap.html</loc><lastmod>2026-10-17</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
@@ -286,6 +286,18 @@
   <url><loc>https://mrblackmath.github.io/bai-hoc/toan6-on-tap-chuong5-kiem-tra.html</loc><lastmod>2026-10-18</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://mrblackmath.github.io/bai-hoc/toan6-on-tap-chuong5-luyen-tap.html</loc><lastmod>2026-10-18</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://mrblackmath.github.io/bai-hoc/toan6-on-tap-chuong5-tong-hop.html</loc><lastmod>2026-10-18</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://mrblackmath.github.io/bai-hoc/toan7-bai17-bai-giang.html</loc><lastmod>2026-10-19</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://mrblackmath.github.io/bai-hoc/toan7-bai17-kiem-tra.html</loc><lastmod>2026-10-19</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://mrblackmath.github.io/bai-hoc/toan7-bai17-luyen-tap.html</loc><lastmod>2026-10-19</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://mrblackmath.github.io/bai-hoc/toan7-bai18-bai-giang.html</loc><lastmod>2026-10-19</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://mrblackmath.github.io/bai-hoc/toan7-bai18-kiem-tra.html</loc><lastmod>2026-10-19</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://mrblackmath.github.io/bai-hoc/toan7-bai18-luyen-tap.html</loc><lastmod>2026-10-19</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://mrblackmath.github.io/bai-hoc/toan7-bai19-bai-giang.html</loc><lastmod>2026-10-19</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://mrblackmath.github.io/bai-hoc/toan7-bai19-kiem-tra.html</loc><lastmod>2026-10-19</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://mrblackmath.github.io/bai-hoc/toan7-bai19-luyen-tap.html</loc><lastmod>2026-10-19</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://mrblackmath.github.io/bai-hoc/toan7-on-tap-chuong5-kiem-tra.html</loc><lastmod>2026-10-19</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://mrblackmath.github.io/bai-hoc/toan7-on-tap-chuong5-luyen-tap.html</loc><lastmod>2026-10-19</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://mrblackmath.github.io/bai-hoc/toan7-on-tap-chuong5-tong-hop.html</loc><lastmod>2026-10-19</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://mrblackmath.github.io/hoc-lieu/toan10-bai5-phieu-tu-luyen.pdf</loc><lastmod>2026-10-17</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
   <url><loc>https://mrblackmath.github.io/hoc-lieu/toan10-bai6-phieu-tu-luyen.pdf</loc><lastmod>2026-10-17</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
   <url><loc>https://mrblackmath.github.io/hoc-lieu/toan10-on-tap-chuong2-phieu-tu-luyen.pdf</loc><lastmod>2026-10-17</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
@@ -381,4 +393,8 @@
   <url><loc>https://mrblackmath.github.io/hoc-lieu/toan6-bai21-phieu-tu-luyen.pdf</loc><lastmod>2026-10-18</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
   <url><loc>https://mrblackmath.github.io/hoc-lieu/toan6-bai22-phieu-tu-luyen.pdf</loc><lastmod>2026-10-18</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
   <url><loc>https://mrblackmath.github.io/hoc-lieu/toan6-on-tap-chuong5-phieu-tu-luyen.pdf</loc><lastmod>2026-10-18</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://mrblackmath.github.io/hoc-lieu/toan7-bai17-phieu-tu-luyen.pdf</loc><lastmod>2026-10-19</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://mrblackmath.github.io/hoc-lieu/toan7-bai18-phieu-tu-luyen.pdf</loc><lastmod>2026-10-19</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://mrblackmath.github.io/hoc-lieu/toan7-bai19-phieu-tu-luyen.pdf</loc><lastmod>2026-10-19</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://mrblackmath.github.io/hoc-lieu/toan7-on-tap-chuong5-phieu-tu-luyen.pdf</loc><lastmod>2026-10-19</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
 </urlset>
