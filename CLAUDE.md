@@ -1,6 +1,6 @@
 # Sổ quản lý website Mr Black NBK
 
-Cập nhật: 19/10/2026 (0h10)
+Cập nhật: 18/10/2026 (23h58)
 
 ## Địa chỉ và nơi lưu
 - **Website:** https://mrblackmath.github.io
@@ -182,7 +182,7 @@ Trong `index.html`, khối `LINKS` khai báo đường dẫn cho từng bài, kh
 - Mua và gắn tên miền mrblackmath.vn.
 
 ## Nhật ký
-- 19/10/2026 (0h10): Gói Toán 6 thầy gửi 23h46: `T6_Bai17-20_TronBo.zip`, `T6_OnTapChuong3.zip`, `T6_OnTapChuong4.zip` là bản ngày 11/10 (đã có trên web, .tex trùng) → không thay. Mới: Toán 6 Chương V từ `T6_Chuong5_TronBo.zip` (bản HS): Bài 21, 22 (`lop6-bai21/22`, `chuaGiong`) và Ôn tập Chương V (`lop6-ontap5`), qua Pull Request (nhánh `claude/toan6-chuong5`). Kiểm độc lập 3 phiếu GV (khoảng 96 ý; kiểm phép đối xứng trục/tâm trên toạ độ mọi hình TikZ, đo độ chồng khít chữ in): không lỗi làm sai đáp án/đề; đề HS trùng GV, HS không lộ đáp án.
+- 18/10/2026 (23h58): Gói Toán 6 thầy gửi 23h46: `T6_Bai17-20_TronBo.zip`, `T6_OnTapChuong3.zip`, `T6_OnTapChuong4.zip` là bản ngày 11/10 (đã có trên web, .tex trùng) → không thay. Mới: Toán 6 Chương V từ `T6_Chuong5_TronBo.zip` (bản HS): Bài 21, 22 (`lop6-bai21/22`, `chuaGiong`) và Ôn tập Chương V (`lop6-ontap5`), qua Pull Request (nhánh `claude/toan6-chuong5`). Kiểm độc lập 3 phiếu GV (khoảng 96 ý; kiểm phép đối xứng trục/tâm trên toạ độ mọi hình TikZ, đo độ chồng khít chữ in): không lỗi làm sai đáp án/đề; đề HS trùng GV, HS không lộ đáp án.
   - Sửa luôn (cả .tex HS + GV): B21 A3 nhãn A, C bị nét đứt đè; A4b "Nếp gấp ở câu a) cắt AB tại M" (đoạn thẳng có hai trục đối xứng); A2e "hình thang cân (không phải hình chữ nhật)"; B22 B3 vẽ lại nét cắt cho khớp bông hoa 4 cánh khi mở ra, C3 nhãn O, B1 "tô thêm ít ô nhất", A3 hình bình hành đúng tỉ lệ AC : BD = 8 : 6; ÔT C5 A3a (trục đối xứng cắt AB), A2f (hình thang cân không phải hình chữ nhật), B3, B4 "ít ô nhất". Ghi nhận (không sửa): chữ S, X, V in bằng phông không đối xứng tuyệt đối (giống SGK, coi như chữ in cân đối); thử vẽ chữ bằng đa giác thì S giống số 5 nên giữ phông. 3 phiếu theo mẫu duy nhất; XeLaTeX ×2: 0 lỗi, 0 thiếu kí tự, 0 Overfull, số trang giữ nguyên (HS 3, 3, 3).
   - Áp lớp sửa chung cho 9 trang (bỏ thẻ `</head><body>` lặp; bỏ "Kết nối tri thức"/"KNTT"; đổi link chéo `1_BaiGiang_Bai21_HocSinh.html`, `2_LuyenTap…`, `4_TuKiemTra…`, `1_TongHopKienThuc_C5_HocSinh.html`… sang tên file trên web). Ảnh xem trước 9 ô; `NEW` = T6 Bài 21, 22, ÔT C5, T8 Bài 18, ÔT C5, T10 Bài 7. Sitemap 381 địa chỉ. Thử 3 khổ màn hình (30 lượt kể cả trang chủ): 0 lỗi JS, 0 lỗi KaTeX, không tràn ngang, nút GV ẩn; 666 đường dẫn trong `index.html` và 381 địa chỉ sitemap đều có file. Trên web: 95 mục = 74 bài học + 21 ôn tập chương.
 - 18/10/2026 (23h55): Thầy gửi lại `T7_TatCa_Chuong3_Chuong4_1.zip` — trùng hệt gói đã lên (PR #25), không có gì mới. Lô Toán 8 Chương V từ gói `T8_Chuong5_TronBo.zip` (bản HS): Bài 18, 19, 20 (`lop8-bai18..20`, `chuaGiong`) và Ôn tập Chương V (`lop8-ontap5`), qua Pull Request (nhánh `claude/toan8-chuong5`). Kiểm độc lập 4 phiếu GV (khoảng 250 ý; tính lại %, góc quạt, đọc biểu đồ, so cột/điểm với vạch chia): không lỗi làm sai đáp án/đề; đề HS trùng GV, HS không lộ đáp án.
