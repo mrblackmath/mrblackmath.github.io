@@ -1,6 +1,6 @@
 # Sổ quản lý website Mr Black NBK
 
-Cập nhật: 17/10/2026 (22h45)
+Cập nhật: 18/10/2026 (9h20)
 
 ## Địa chỉ và nơi lưu
 - **Website:** https://mrblackmath.github.io
@@ -44,7 +44,7 @@ Trong `index.html`, khối `LINKS` khai báo đường dẫn cho từng bài, kh
 - Mục lục bám bộ SGK Toán dùng chung (cùng mục lục bộ cũ). Trên web KHÔNG ghi tên bộ sách "Kết nối tri thức"/"KNTT" ở bất cứ đâu: bìa, tiêu đề, mô tả, phiếu PDF, ảnh (thầy dặn 17/10/2026, vì nay dùng chung một bộ sách). HSA bổ sung sau.
 - Mọi báo cáo gửi thầy luôn ghi tổng số bài đã có trên web, kể cả các bài Ôn tập chương (thầy dặn 11/10/2026).
 - Từ 11/10/2026 (chiều) mỗi lần đưa bài lên đều qua Pull Request; thầy nhắn "gộp" thì mới gộp vào `main`.
-- Mẫu phiếu luyện tập duy nhất (thầy chốt 17/10/2026): mọi phiếu theo `website/MAU-PHIEU-LUYEN-TAP.tex` trong Project (gốc là T12B11_Luyentaphs.tex): đầu phiếu logo MB + "Mr Black / TOÁN THPT" (lớp 6–9: "TOÁN THCS") bên trái, tên phiếu + "Created by Mr Black" ở giữa, vạch vàng; chân trang "Mr Black • TOÁN THPT/THCS"; thêm chữ chìm "MR BLACK" chéo giữa trang; "PHẦN NÂNG CAO", "HẾT" như mẫu. Bản đăng web KHÔNG có trang ĐÁP ÁN. Chỉ đổi hình thức, không thêm/bớt nội dung (không tự thêm Phần tự luận).
+- Mẫu phiếu luyện tập duy nhất (thầy chốt 17/10/2026): mọi phiếu theo `website/MAU-PHIEU-LUYEN-TAP.tex` trong Project (gốc là T12B11_Luyentaphs.tex): đầu phiếu logo MB + "Mr Black / TOÁN THPT" (lớp 6–9: "TOÁN THCS") bên trái, tên phiếu + "Created by Mr Black" ở giữa, vạch vàng; chân trang "Mr Black • TOÁN THPT/THCS"; thêm chữ chìm "MR BLACK" chéo giữa trang; "PHẦN NÂNG CAO", "HẾT" như mẫu. Bản đăng web KHÔNG có trang ĐÁP ÁN. Chỉ đổi hình thức, không thêm/bớt nội dung (không tự thêm Phần tự luận). Riêng T12 Bài 11 dùng bản mới CÓ Phần tự luận (thầy chốt 18/10/2026). Từ 18/10/2026 cả 62 phiếu đã theo mẫu; phiếu mới phải theo mẫu trước khi lên web.
 - Khi kiểm phiếu thấy chỗ "nên sửa" (đáp án trả lời ngắn quá 4 kí tự, hình lộ đáp số, diễn đạt chưa chặt, hình sai tỉ lệ, nhãn đè…) thì sửa luôn cả .tex bản HS và GV, biên dịch lại, rồi báo trong báo cáo; không để thầy tự sửa (thầy dặn 11/10/2026). Lỗi làm sai đáp án/đề vẫn hỏi thầy trước khi sửa.
 
 ## Các bài đã có
@@ -86,10 +86,10 @@ Trong `index.html`, khối `LINKS` khai báo đường dẫn cho từng bài, kh
 | Toán 11 – Bài 10. Đường thẳng và mặt phẳng trong không gian | ✅ (bản chờ gắn lời giảng, 37 slide) | ✅ (21 nhiệm vụ + 1 thử thách) | ✅ (11 trang, bản HS) | ✅ (16 câu, đề A/B) |
 | Toán 11 – Bài 11. Hai đường thẳng song song | ✅ (bản chờ gắn lời giảng, 25 slide) | ✅ (20 nhiệm vụ + 1 thử thách) | ✅ (13 trang, bản HS) | ✅ (16 câu, đề A/B) |
 | Toán 11 – Bài 12. Đường thẳng và mặt phẳng song song | ✅ (bản chờ gắn lời giảng, 23 slide) | ✅ (20 nhiệm vụ + 1 thử thách) | ✅ (12 trang, bản HS) | ✅ (16 câu, đề A/B) |
-| Toán 11 – Bài 13. Hai mặt phẳng song song | ✅ (bản chờ gắn lời giảng, 36 slide) | ✅ (20 nhiệm vụ + 1 thử thách) | ✅ (11 trang, bản HS) | ✅ (16 câu, đề A/B) |
+| Toán 11 – Bài 13. Hai mặt phẳng song song | ✅ (bản chờ gắn lời giảng, 36 slide) | ✅ (20 nhiệm vụ + 1 thử thách) | ✅ (12 trang, bản HS) | ✅ (16 câu, đề A/B) |
 | Toán 11 – Bài 14. Phép chiếu song song | ✅ (bản chờ gắn lời giảng, 25 slide) | ✅ (20 nhiệm vụ + 1 thử thách) | ✅ (12 trang, bản HS, đã sửa 2 lỗi) | ✅ (16 câu, đề A/B) |
 | Toán 11 – Bài 15. Giới hạn của dãy số | ✅ (bản chờ gắn lời giảng, 38 slide) | ✅ (18 nhiệm vụ + 1 thử thách) | ✅ (9 trang, bản HS) | ✅ (15 câu, đề A/B) |
-| Toán 11 – Bài 16. Giới hạn của hàm số | ✅ (bản chờ gắn lời giảng, 44 slide) | ✅ (16 nhiệm vụ + 1 thử thách) | ✅ (9 trang, bản HS) | ✅ (15 câu, đề A/B) |
+| Toán 11 – Bài 16. Giới hạn của hàm số | ✅ (bản chờ gắn lời giảng, 44 slide) | ✅ (16 nhiệm vụ + 1 thử thách) | ✅ (10 trang, bản HS) | ✅ (15 câu, đề A/B) |
 | Toán 11 – Ôn tập Chương V. Giới hạn. Hàm số liên tục | ✅ Tổng hợp kiến thức | ✅ | ✅ (9 trang, bản HS) | ✅ |
 | Toán 11 – Bài 5. Dãy số | ✅ (bản chờ gắn lời giảng, 33 slide) | ✅ (14 nhiệm vụ + 1 thử thách) | ✅ (8 trang, bản HS, đã sửa 2 chỗ) | ✅ (14 câu) |
 | Toán 11 – Bài 6. Cấp số cộng | ✅ (bản chờ gắn lời giảng, 27 slide) | ✅ (14 nhiệm vụ + 1 thử thách) | ✅ (8 trang, bản HS, đã sửa 2 hình) | ✅ (14 câu) |
@@ -100,7 +100,7 @@ Trong `index.html`, khối `LINKS` khai báo đường dẫn cho từng bài, kh
 | Toán 12 – Bài 8. Biểu thức toạ độ của các phép toán vectơ | ✅ (bản chờ gắn lời giảng, 30 slide) | ✅ (20 nhiệm vụ + 1 thử thách) | ✅ (11 trang, bản HS) | ✅ (16 câu, đề A/B) |
 | Toán 12 – Bài 9. Khoảng biến thiên và khoảng tứ phân vị | ✅ (bản chờ gắn lời giảng, 22 slide) | ✅ (14 nhiệm vụ + 1 thử thách) | ✅ (9 trang, bản HS) | ✅ (13 câu, đề A/B) |
 | Toán 12 – Bài 10. Phương sai và độ lệch chuẩn | ✅ (bản chờ gắn lời giảng, 19 slide) | ✅ (11 nhiệm vụ + 1 thử thách) | ✅ (9 trang, bản HS) | ✅ (13 câu, đề A/B) |
-| Toán 12 – Bài 11. Nguyên hàm | ✅ (bản chờ gắn lời giảng, 27 slide) | ✅ (14 nhiệm vụ + 1 thử thách) | ✅ (7 trang, bản HS, đã sửa 5 hình) | ✅ (16 câu, đề A/B) |
+| Toán 12 – Bài 11. Nguyên hàm | ✅ (bản chờ gắn lời giảng, 27 slide) | ✅ (14 nhiệm vụ + 1 thử thách) | ✅ (8 trang, bản HS có Phần tự luận, đã sửa 5 hình) | ✅ (16 câu, đề A/B) |
 | Toán 12 – Bài 12. Tích phân | ✅ (bản chờ gắn lời giảng, 25 slide) | ✅ (14 nhiệm vụ + 1 thử thách) | ✅ (8 trang, bản HS, đã sửa 2 chỗ) | ✅ (16 câu, đề A/B) |
 | Toán 12 – Bài 13. Ứng dụng hình học của tích phân | ✅ (bản chờ gắn lời giảng, 26 slide) | ✅ (14 nhiệm vụ + 1 thử thách) | ✅ (7 trang, bản HS, đã sửa 5 nhãn hình) | ✅ (16 câu, đề A/B) |
 | Toán 12 – Ôn tập Chương IV. Nguyên hàm và tích phân | ✅ Tổng hợp kiến thức (14 slide) | ✅ (16 nhiệm vụ + 1 thử thách) | ✅ (8 trang, bản HS, đã sửa 7 chỗ) | ✅ (20 câu, đề A/B) |
@@ -144,10 +144,18 @@ Trong `index.html`, khối `LINKS` khai báo đường dẫn cho từng bài, kh
 - Bài 5–7, 10–17 – Toán 11: khi có ghi âm thì thay bài giảng (giữ tên file), chụp lại ảnh xem trước và xoá `chuaGiong`.
 - Bài 17, 18, 19, 20 – Toán 6: khi có ghi âm thì thay bài giảng (giữ tên file), chụp lại ảnh xem trước và xoá `chuaGiong`.
 - Bài 5, 6 – Toán 10: khi có ghi âm thì thay bài giảng (giữ tên file), chụp lại ảnh xem trước và xoá `chuaGiong`.
+- Đăng ký Google Search Console (Gmail của thầy) và gửi `sitemap.xml` — làm qua trình duyệt tích hợp trên máy thầy.
 - Bổ sung HSA.
 - Mua và gắn tên miền mrblackmath.vn.
 
 ## Nhật ký
+- 18/10/2026 (9h20): Pull Request nhánh `claude/lam-nhe-web` (17–18/10) gồm 5 việc:
+  - Làm nhẹ web: 186 ảnh xem trước tách ra `anh/*.webp` (trang chủ 12,7 MB → 104 KB); thư viện KaTeX dùng chung `chung/` (trang bài học TB 856 KB → 233 KB). Đo trên 4G chậm (4 Mbit/s, trễ 150 ms, khổ điện thoại): trang chủ 26,7 giây/13 MB → 0,6 giây/0,14 MB; bài thứ hai mở 2,1 giây/0,81 MB → 0,8 giây/0,17 MB (thư viện đã có trong bộ nhớ đệm).
+  - Chia sẻ, tìm kiếm: ảnh `anh/chia-se.jpg`, thẻ description/canonical/og/twitter cho 187 trang, `sitemap.xml` (249 địa chỉ), `robots.txt`.
+  - Bỏ tên bộ sách "Kết nối tri thức" khỏi toàn bộ web (trang, ảnh xem trước, 13 PDF).
+  - 62/62 phiếu PDF theo mẫu duy nhất (đầu phiếu logo MB + TOÁN THCS/THPT, chữ chìm MR BLACK, không trang đáp án). Dựng lại từ .tex thầy gửi (bản gốc) và áp lại mọi chỗ đã sửa trên web; so chữ bản HS với PDF cũ: khớp hoàn toàn; XeLaTeX ×2: 0 lỗi, 0 thiếu kí tự, 0 Overfull. T12 Bài 11 dùng bản mới có Phần tự luận (7 bài; đã giải kiểm lại đáp án; phương án C câu 10 thay x⁰/0 + C bằng x ln x + C). Số trang đổi: T11 B13 11 → 12 (hình câu 16 vẽ lại đúng tỉ lệ), T11 B16 9 → 10 (đầu phiếu cao hơn), T12 B11 7 → 8 (thêm tự luận).
+  - Vẽ lại/sửa thêm khi áp lại: T11 B13 câu 16 (giãn ba mặt phẳng); T11 ÔT C4 NC2.2, NC2.4 dựng lại theo phép chiếu; T12 B17 NC2.4 vùng phủ sóng đúng bán kính 5; T9 B16 B1, B3, C2, D1; T9 B17 B2, C3; T10 ÔT C2 vùng gạch 4 hình.
+  - Thử 3 khổ màn hình (18 lượt, trang chủ + 5 trang bài học các lớp): 0 lỗi JS, 0 lỗi KaTeX, không tràn ngang, nút GV ẩn; 436 đường dẫn trong `index.html` và 249 địa chỉ sitemap đều có file. Trên web: 62 mục = 49 bài học + 13 ôn tập chương.
 - 17/10/2026 (22h45): Lô Toán 12 Chương VI từ gói `T12_Bai18_XacSuatCoDieuKien.zip`, `T12_Bai19_XacSuatToanPhan_Bayes.zip`, `T12_OnTapChuong6.zip` (bản HS; phiếu đã gắn thương hiệu Mr Black: logo, vạch vàng, chữ chìm): Bài 18, 19 (`lop12-bai18/19`, `chuaGiong`) và Ôn tập Chương VI (`lop12-ontap6`). Thầy nhắn "gộp" (22h23) trước khi có Pull Request nên làm xong thì tạo Pull Request rồi gộp luôn. Kiểm độc lập 3 phiếu GV (câu tính kiểm bằng Python): không lỗi làm sai đáp án/đề; mọi đáp án TLN ≤ 4 kí tự; phiếu HS không lộ đáp án, hình HS trùng GV.
   - Sửa luôn (ÔT C6, cả .tex HS + GV, 3 câu): NC2.3 diễn đạt "Trong số khách là học sinh, có 30% gọi trà sữa…" + nhãn cây Gọi/Không gọi; NC2.5 nhãn cây "Hỏng" → "Móp" (khớp "móp méo"); NC1.5 Ô cửa bí mật "dê" → "con lừa" cho khớp SGK và Bài 18. XeLaTeX ×2: 0 lỗi, 0 thiếu kí tự, 0 Overfull, số trang giữ nguyên (HS 8, GV 13). Ghi chú của gói: SGK BT 6.17 đáp số 4/15 không có trong các phương án SGK (slide ÔT có ghi chú, luyện tập dùng dạng nhập số).
   - Áp lớp sửa chung (meta ứng dụng + `audioSession`, `thong-ke.js`, nút toàn màn hình có `mbFsHint`, nút ⌂, khối xoay máy; bỏ thẻ `</head><body>` lặp ở cả 9 trang; nút GV vốn ẩn; không link claude.ai, không link chéo). Hình Ô cửa bí mật (cả 9 trang dùng chung): bỏ biểu tượng con dê vì nhãn ghi "con lừa"; bìa Bài 18 ẩn nhãn "người chơi chọn" (đè tiêu đề "Chọn phần học", cửa chọn đã có viền vàng). Ảnh xem trước 9 ô; thử 3 khổ màn hình (30 lượt kể cả trang chủ): 0 lỗi JS, không tràn ngang, nút GV ẩn. Trang chủ: 62 mục LINKS (49 bài học + 13 ôn tập chương), 248 đường dẫn đủ file. Pull Request #18; đã gộp vào `main` theo lời thầy.
