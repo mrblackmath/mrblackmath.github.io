@@ -525,6 +525,26 @@ const LINKS = {
     pdf:     'hoc-lieu/toan6-on-tap-chuong4-phieu-tu-luyen.pdf',   // phiếu 4 trang
     kiemtra: 'bai-hoc/toan6-on-tap-chuong4-kiem-tra.html'
   },
+  'lop6-bai21': {
+    giang:   'bai-hoc/toan6-bai21-bai-giang.html',
+    luyen:   'bai-hoc/toan6-bai21-luyen-tap.html',
+    pdf:     'hoc-lieu/toan6-bai21-phieu-tu-luyen.pdf',   // phiếu 3 trang
+    kiemtra: 'bai-hoc/toan6-bai21-kiem-tra.html',
+    chuaGiong: true
+  },
+  'lop6-bai22': {
+    giang:   'bai-hoc/toan6-bai22-bai-giang.html',
+    luyen:   'bai-hoc/toan6-bai22-luyen-tap.html',
+    pdf:     'hoc-lieu/toan6-bai22-phieu-tu-luyen.pdf',   // phiếu 3 trang
+    kiemtra: 'bai-hoc/toan6-bai22-kiem-tra.html',
+    chuaGiong: true
+  },
+  'lop6-ontap5': {
+    giang:   'bai-hoc/toan6-on-tap-chuong5-tong-hop.html',
+    luyen:   'bai-hoc/toan6-on-tap-chuong5-luyen-tap.html',
+    pdf:     'hoc-lieu/toan6-on-tap-chuong5-phieu-tu-luyen.pdf',   // phiếu 3 trang
+    kiemtra: 'bai-hoc/toan6-on-tap-chuong5-kiem-tra.html'
+  },
   'lop7-bai7': {
     giang:   'bai-hoc/toan7-bai7-bai-giang.html',
     luyen:   'bai-hoc/toan7-bai7-luyen-tap.html',
@@ -1146,6 +1166,9 @@ const ANH = {
   "lop9-bai11": {"giang": "anh/lop9-bai11-giang.webp", "luyen": "anh/lop9-bai11-luyen.webp", "kiemtra": "anh/lop9-bai11-kiemtra.webp"},
   "lop9-bai12": {"giang": "anh/lop9-bai12-giang.webp", "luyen": "anh/lop9-bai12-luyen.webp", "kiemtra": "anh/lop9-bai12-kiemtra.webp"},
   "lop6-ontap4": {"giang": "anh/lop6-ontap4-giang.webp", "luyen": "anh/lop6-ontap4-luyen.webp", "kiemtra": "anh/lop6-ontap4-kiemtra.webp"},
+  "lop6-bai21": {"giang": "anh/lop6-bai21-giang.webp", "luyen": "anh/lop6-bai21-luyen.webp", "kiemtra": "anh/lop6-bai21-kiemtra.webp"},
+  "lop6-bai22": {"giang": "anh/lop6-bai22-giang.webp", "luyen": "anh/lop6-bai22-luyen.webp", "kiemtra": "anh/lop6-bai22-kiemtra.webp"},
+  "lop6-ontap5": {"giang": "anh/lop6-ontap5-giang.webp", "luyen": "anh/lop6-ontap5-luyen.webp", "kiemtra": "anh/lop6-ontap5-kiemtra.webp"},
   "lop9-ontap4": {"giang": "anh/lop9-ontap4-giang.webp", "luyen": "anh/lop9-ontap4-luyen.webp", "kiemtra": "anh/lop9-ontap4-kiemtra.webp"},
   "lop6-ontap3": {"giang": "anh/lop6-ontap3-giang.webp", "luyen": "anh/lop6-ontap3-luyen.webp", "kiemtra": "anh/lop6-ontap3-kiemtra.webp"},
   "lop11-ontap4": {"giang": "anh/lop11-ontap4-giang.webp", "luyen": "anh/lop11-ontap4-luyen.webp", "kiemtra": "anh/lop11-ontap4-kiemtra.webp"},
@@ -1525,7 +1548,7 @@ document.addEventListener('click', e => { if (!e.target.closest('.search')) box.
 
 /* Học ngay: thẻ bài đã có, chạm 1 lần là vào học */
 const HOT = ['lop12-bai6', 'lop11-bai5', 'lop12-bai11', 'lop6-bai16', 'lop11-bai12', 'lop12-bai7'];        // nhiều bạn học (Google Analytics 10–17/10)
-const NEW = ['lop8-bai18', 'lop8-bai19', 'lop8-bai20', 'lop8-ontap5', 'lop10-bai7', 'lop10-ontap4'];     // mới cập nhật
+const NEW = ['lop6-bai21', 'lop6-bai22', 'lop6-ontap5', 'lop8-bai18', 'lop8-ontap5', 'lop10-bai7'];     // mới cập nhật
 const byKey = k => ALL.find(x => x.key === k);
 const chipList = [{id:'noibat', name:'Nổi bật'}].concat(COURSES.filter(c => AVAIL.some(x => x.course === c)).map(c => ({id:c.id, name:'Toán ' + c.short})));
 let chipSel = 'noibat';
