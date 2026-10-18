@@ -1,0 +1,1265 @@
+<!doctype html>
+<html lang="vi" data-mb-brand="Mr Black NBK" data-mb-id="MB-FE7B696DEC"><head><meta charset="utf-8"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><meta name="apple-mobile-web-app-title" content="Mr Black"><link rel="apple-touch-icon" href="../icon.png"><script>try{if(navigator.audioSession)navigator.audioSession.type='playback'}catch(e){}</script>
+<!-- © Mr Black NBK · Created by Mr Black · Toán THPT · T10B12_BaiGiang_HS · MB-FE7B696DEC [MRBLACK-NBK] — tài liệu thuộc bản quyền Mr Black -->
+<meta name="author" content="Mr Black"><meta name="copyright" content="© Mr Black NBK"><meta name="generator" content="Mr Black NBK"><meta name="mb-id" content="MB-FE7B696DEC"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Bài 12 · Số gần đúng và sai số · Toán 10 · Mr Black</title>
+<meta name="description" content="Bài giảng tương tác Bài 12. Số gần đúng và sai số – Toán 10. Bài giảng tương tác từng bước, có trạm dừng kiểm tra hiểu bài. Miễn phí, không cần đăng ký – Mr Black.">
+<link rel="canonical" href="https://mrblackmath.github.io/bai-hoc/toan10-bai12-bai-giang.html">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Mr Black – Toán 6 đến 12">
+<meta property="og:locale" content="vi_VN">
+<meta property="og:title" content="Bài giảng tương tác · Bài 12. Số gần đúng và sai số · Toán 10">
+<meta property="og:description" content="Bài giảng tương tác Bài 12. Số gần đúng và sai số – Toán 10. Bài giảng tương tác từng bước, có trạm dừng kiểm tra hiểu bài. Miễn phí, không cần đăng ký – Mr Black.">
+<meta property="og:url" content="https://mrblackmath.github.io/bai-hoc/toan10-bai12-bai-giang.html">
+<meta property="og:image" content="https://mrblackmath.github.io/anh/chia-se.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Mr Black – Học Toán miễn phí từ lớp 6 đến lớp 12">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#0d1433">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;500;600;700&display=swap">
+<link rel="stylesheet" href="../chung/katex-0.16.45.css" data-lib="katex-0.16.45">
+<style>
+/* MR BLACK NBK — BÀI GIẢNG TƯƠNG TÁC LOẠI A (2D) · Toán 10 Chương III
+   Kế thừa Design System bài giảng T12-B7: sân khấu 1920×1080 co giãn · nền xanh đêm + ánh vàng · Chakra Petch · KaTeX nhúng.
+   Thành phần: đề mục · khung đề vàng (đề SGK chép đủ) · GHI VỞ (phóng giữa màn hình) · TRẠM DỪNG (đúng mới đi tiếp) · khung lời giảng (bản GV). */
+:root{
+  --stage-a:#070d24; --stage-b:#13245e;
+  --panel:#0f1a3f; --panel-2:#16245a; --panel-line:#2f4488;
+  --text:#f5f7fc; --muted:#b4c0e2; --dim:#7f8db8;
+  --gold:#ffc83d; --gold-2:#ff9f1c; --gold-ink:#1a1204; --gold-soft:rgba(255,200,61,.14);
+  --blue:#4c8eff; --blue-soft:rgba(76,142,255,.16);
+  --ok:#2fd27a; --ok-soft:rgba(47,210,122,.16); --bad:#ff5a5f; --bad-soft:rgba(255,90,95,.16);
+  --fig-ink:#f5f7fc; --fig-dim:#9fb0da; --fig-faint:#2a3d7a;
+  --c-red:#ff6b6b; --c-blue:#5aa8ff; --c-green:#2fd27a; --c-violet:#c08bff;
+  --btn:#1b2a63; --btn-line:#3a55a8; --input-bg:#060b1f;
+  --font:"Chakra Petch","Bahnschrift","Segoe UI",system-ui,-apple-system,Roboto,"Noto Sans",sans-serif;
+  --h:42px; --tx:34px; --sm:26px; --line:1.42;
+  color-scheme:dark;
+}
+:root[data-mb="light"]{
+  --stage-a:#e9eefb; --stage-b:#f8f9fe;
+  --panel:#ffffff; --panel-2:#f2f5fd; --panel-line:#c6d1ee;
+  --text:#0d1433; --muted:#3c4870; --dim:#6b7699;
+  --gold:#b87a00; --gold-2:#a86400; --gold-ink:#ffffff; --gold-soft:rgba(201,136,0,.12);
+  --blue:#1d4ed8; --blue-soft:rgba(29,78,216,.1);
+  --ok:#0f8a44; --ok-soft:rgba(15,138,68,.12); --bad:#c62828; --bad-soft:rgba(198,40,40,.1);
+  --fig-ink:#0d1433; --fig-dim:#5b6892; --fig-faint:#d5ddf2;
+  --c-red:#d63031; --c-blue:#1d6fe0; --c-green:#0f8a44; --c-violet:#7b3fd1;
+  --btn:#ffffff; --btn-line:#b9c6ea; --input-bg:#ffffff;
+  color-scheme:light;
+}
+*,*::before,*::after{box-sizing:border-box}
+[hidden]{display:none!important}
+html,body{height:100%;margin:0}
+body{background:var(--stage-a);color:var(--text);font-family:var(--font);overflow:hidden}
+button{font:inherit;color:inherit;cursor:pointer}
+:focus-visible{outline:4px solid var(--gold);outline-offset:3px}
+#viewport{position:fixed;inset:0;overflow:hidden;background:radial-gradient(ellipse at 50% -10%,var(--stage-b),var(--stage-a) 70%)}
+#canvas{position:absolute;left:0;top:0;width:1920px;height:1080px;transform-origin:0 0;font-size:var(--tx);line-height:var(--line)}
+.katex{font-size:1.04em}
+.katex .mbin,.katex .mrel{margin-left:.06em;margin-right:.06em}
+b{font-weight:700}
+.gold-t{color:var(--gold)} .ok-t{color:var(--ok)} .bad-t{color:var(--bad)} .blue-t{color:var(--blue)} .muted{color:var(--muted)}
+.gold-t .katex,.ok-t .katex,.bad-t .katex{color:inherit}
+
+/* ---------- thanh trên ---------- */
+.topbar{position:absolute;left:48px;right:48px;top:24px;height:64px;display:flex;align-items:center;gap:28px;z-index:3;transition:opacity .3s,filter .3s}
+.brand{display:flex;align-items:center;gap:14px;background:none;border:0;padding:0;text-align:left;flex:0 0 auto}
+.brand .logo{width:60px;height:60px;position:relative}
+.brand .logo svg{width:60px;height:60px;display:block}
+.brand .logo img{position:absolute;inset:4px;width:52px;height:52px;object-fit:cover;border-radius:10px}
+.brand b{display:block;font-size:var(--sm);line-height:1}
+.brand small{display:block;margin-top:5px;font-size:16px;font-weight:700;letter-spacing:.24em;text-transform:uppercase;color:var(--gold)}
+.mb{position:absolute;right:-8px;bottom:-6px;padding:1px 5px;border-radius:6px;font-size:13px;font-weight:700;line-height:1.2;color:var(--gold-ink);background:linear-gradient(180deg,var(--gold),var(--gold-2));box-shadow:0 0 0 2px var(--stage-a)}
+.brand:not(.has-photo) .mb{display:none}
+.secs{margin-left:auto;display:flex;align-items:center}
+.secs span{height:44px;padding:0 18px;display:inline-flex;align-items:center;font-size:20px;font-weight:700;color:var(--dim);border-bottom:3px solid var(--panel-line);white-space:nowrap}
+.secs span.done{color:var(--muted)}
+.secs span.cur{color:var(--gold);border-bottom-color:var(--gold)}
+
+/* ---------- sân khấu ---------- */
+.stage{position:absolute;left:48px;right:48px;top:112px;bottom:112px;z-index:2}
+.slide{position:absolute;inset:0;display:flex;flex-direction:column;gap:22px}
+.watermark{position:absolute;right:0;bottom:0;font-size:110px;font-weight:700;color:var(--text);opacity:.045;pointer-events:none;line-height:1}
+.hd{flex:0 0 auto;display:flex;align-items:stretch;border-radius:16px;overflow:hidden;border:2px solid var(--gold);background:var(--panel)}
+.hd .sn{flex:0 0 auto;min-width:92px;padding:0 22px;display:grid;place-items:center;font-size:var(--h);font-weight:700;color:var(--gold-ink);background:linear-gradient(180deg,var(--gold),var(--gold-2))}
+.hd .st{flex:0 0 auto;padding:12px 28px;font-size:var(--h);font-weight:700;letter-spacing:.03em;text-transform:uppercase;color:var(--gold);display:flex;align-items:center}
+.hd .ss{flex:1 1 auto;padding:12px 28px;font-size:var(--h);font-weight:700;color:var(--text);display:flex;align-items:center;border-left:2px solid var(--panel-line)}
+.lead{margin:0;font-size:var(--tx);font-weight:600;color:var(--muted);flex:0 0 auto}
+.lead b{color:var(--text)}
+.cols{flex:1 1 auto;min-height:0;display:grid;gap:40px;align-items:center;grid-template-rows:minmax(0,1fr)}
+.cols>*{min-width:0;min-height:0}
+.fig{position:relative;min-height:0;min-width:0;height:100%;display:grid;place-items:center}
+.fig>svg{display:block;width:100%;height:100%;max-height:100%;overflow:visible}
+.stack{display:flex;flex-direction:column;gap:18px;min-height:0;justify-content:center}
+.box{border-radius:18px;border:2px solid var(--panel-line);background:var(--panel);padding:18px 26px}
+.kbox{border-radius:18px;border:2px solid var(--gold);background:linear-gradient(var(--gold-soft),var(--gold-soft)),var(--panel);padding:16px 26px;font-weight:600}
+.kw{color:var(--gold)}
+.kw .katex{color:inherit}
+
+/* ---------- KHUNG ĐỀ VÀNG: đề SGK chép đủ ---------- */
+.de{flex:0 0 auto;border-radius:18px;border:3px solid var(--gold);background:linear-gradient(var(--gold-soft),var(--gold-soft)),var(--panel);padding:14px 26px;font-size:36px;font-weight:600;line-height:1.42}
+.de .tag{display:inline-block;margin-right:12px;padding:0 14px;border-radius:9px;background:linear-gradient(180deg,var(--gold),var(--gold-2));color:var(--gold-ink);font-size:var(--sm);font-weight:700;vertical-align:.12em}
+.de .src{float:right;margin-left:14px;font-size:20px;font-weight:700;color:var(--dim)}
+.de .it{display:block;padding-left:44px;text-indent:-40px}
+.de .it b.lb{color:var(--gold);display:inline-block;width:40px;text-indent:0}
+.de.sm{font-size:32px}
+
+/* ---------- lời dẫn / các bước ---------- */
+.say{display:grid;gap:14px;align-content:center}
+.say>div{font-size:var(--tx);font-weight:600;padding:12px 24px;border-left:6px solid var(--gold);border-radius:0 14px 14px 0;background:var(--panel)}
+.calc3{display:grid;gap:10px;align-content:center}
+.calc3 .cr{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:20px;align-items:center;font-size:36px;font-weight:600;padding:6px 18px;border-radius:12px}
+.calc3 .cr .why{font-size:24px;color:var(--ok);font-weight:600;max-width:340px}
+.calc3 .cr .why .katex{color:var(--ok)}
+.calc3.sm .cr{font-size:32px}
+.calc3 .cr.res{border:2px solid var(--gold);background:var(--gold-soft)}
+.bubble{position:relative;padding:14px 22px;border-radius:18px;border:2px dashed var(--blue);background:var(--blue-soft);font-size:var(--sm);font-weight:600;color:var(--text)}
+.bubble::before{content:"💬 ";}
+[data-step]:not(.on){visibility:hidden}
+[data-unstep].gone{visibility:hidden}
+
+/* ---------- GHI VỞ ---------- */
+.ghi{position:relative;flex:0 0 auto;margin-top:44px;padding:20px 32px 16px;border-radius:0 18px 18px 18px;border:3px solid var(--gold);cursor:pointer;
+  background:repeating-linear-gradient(180deg,transparent 0 45px,rgba(255,200,61,.07) 45px 46px),var(--panel)}
+.ghi::before{content:"📝  GHI VỞ";position:absolute;left:-3px;top:-44px;height:44px;padding:0 22px;display:flex;align-items:center;border-radius:12px 12px 0 0;font-size:var(--sm);font-weight:700;letter-spacing:.12em;color:var(--gold-ink);background:linear-gradient(180deg,var(--gold),var(--gold-2))}
+.ghi ul,.spotbox ul{list-style:none;margin:0;padding:0;display:grid;gap:6px}
+.ghi li{font-size:32px;font-weight:600;line-height:1.42;padding-left:36px;position:relative}
+.ghi li::before{content:"";position:absolute;left:6px;top:.6em;width:14px;height:14px;border-radius:4px;background:var(--gold)}
+.ghi li.l2{padding-left:84px}
+.ghi li.l2::before{left:48px;top:.72em;width:20px;height:4px;border-radius:2px;background:var(--muted)}
+.ghi li.nodash::before,.spotbox li.nodash::before{display:none}
+.dimmer{position:absolute;inset:-112px -48px;z-index:5;background:rgba(3,6,18,.82);backdrop-filter:blur(5px);-webkit-backdrop-filter:blur(5px);opacity:0;pointer-events:none;transition:opacity .35s}
+:root[data-mb="light"] .dimmer{background:rgba(230,235,248,.85)}
+.slide.focus .dimmer{opacity:1;pointer-events:auto}
+body.focus .topbar,body.focus .bottombar>:not(#next):not(#prev){opacity:.18;filter:blur(2px)}
+.spotbox{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);z-index:6;width:1720px;max-height:820px;padding:56px 64px 46px;border:4px solid var(--gold);border-radius:28px;cursor:pointer;
+  background:repeating-linear-gradient(180deg,transparent 0 69px,rgba(255,200,61,.08) 69px 70px),var(--panel);box-shadow:0 0 0 12px var(--gold-soft),0 40px 120px rgba(0,0,0,.55)}
+.spotbox .tab{position:absolute;left:-4px;top:-60px;height:60px;padding:0 30px;display:flex;align-items:center;border-radius:16px 16px 0 0;font-size:var(--h);font-weight:700;letter-spacing:.1em;color:var(--gold-ink);background:linear-gradient(180deg,var(--gold),var(--gold-2))}
+.spotbox ul{gap:16px}
+.spotbox li{font-size:44px;font-weight:700;line-height:1.35;padding-left:56px;position:relative}
+.spotbox li::before{content:"";position:absolute;left:6px;top:.5em;width:22px;height:22px;border-radius:6px;background:var(--gold)}
+.spotbox li.l2{padding-left:130px;font-weight:600}
+.spotbox li.l2::before{left:70px;top:.66em;width:32px;height:6px;border-radius:3px;background:var(--muted)}
+.spotbox .kw{color:var(--gold)}
+.spotbox.pop{animation:pop .4s cubic-bezier(.2,.9,.3,1.2)}
+@keyframes pop{from{opacity:0;transform:translate(-50%,-46%) scale(.92)}to{opacity:1;transform:translate(-50%,-50%) scale(1)}}
+.ghi table,.spotbox table{border-collapse:collapse;margin:6px 0 0 36px}
+.ghi td,.ghi th{border:2px solid var(--panel-line);padding:2px 16px;text-align:center;font-size:30px}
+.spotbox td,.spotbox th{border:2px solid var(--panel-line);padding:4px 22px;text-align:center;font-size:38px}
+
+/* ---------- thanh dưới ---------- */
+.bottombar{position:absolute;left:48px;right:48px;bottom:24px;height:64px;display:flex;align-items:center;gap:12px;z-index:7}
+.bottombar>*{transition:opacity .3s,filter .3s}
+.nbtn{height:58px;min-width:58px;padding:0 16px;border-radius:10px;border:2px solid var(--btn-line);background:var(--btn);font-size:19px;font-weight:700;text-transform:uppercase;display:inline-flex;align-items:center;justify-content:center;gap:8px;white-space:nowrap}
+.nbtn:hover:not(:disabled){border-color:var(--gold)}
+.nbtn:disabled{opacity:.35;cursor:default}
+.nbtn.go{background:linear-gradient(180deg,var(--gold),var(--gold-2));border-color:var(--gold);color:var(--gold-ink);min-width:110px;font-size:var(--sm)}
+.nbtn[aria-pressed="true"]{border-color:var(--gold);color:var(--gold)}
+.nlabel{font-size:20px;font-weight:700;width:230px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;color:var(--muted)}
+.progress{flex:1;height:10px;border-radius:999px;background:var(--panel-2);border:1px solid var(--panel-line);overflow:hidden}
+.progress i{display:block;height:100%;width:0;background:linear-gradient(90deg,var(--blue),var(--gold));transition:width .3s}
+.ncount{font-size:20px;font-weight:700;color:var(--muted);min-width:76px;text-align:right;font-variant-numeric:tabular-nums}
+.pips{display:flex;gap:6px;min-width:60px}
+.pips i{width:12px;height:12px;border-radius:50%;border:2px solid var(--gold)}
+.pips i.on{background:var(--gold)}
+.nomic{height:44px;padding:0 14px;display:inline-flex;align-items:center;border-radius:10px;font-size:18px;font-weight:700;color:var(--dim);border:2px dashed var(--panel-line);white-space:nowrap}
+.menu{position:absolute;left:50%;bottom:110px;transform:translateX(-50%);width:1300px;z-index:9;padding:24px;border-radius:18px;border:2px solid var(--panel-line);background:var(--panel)}
+.menu .mgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}
+.menu button{text-align:left;padding:14px 18px;border-radius:12px;border:2px solid var(--panel-line);background:var(--btn);font-size:22px;font-weight:700}
+.menu button:hover{border-color:var(--gold)}
+.gvnote{position:absolute;left:0;right:0;bottom:-8px;z-index:8;display:none;padding:10px 18px;border-radius:14px;border:2px dashed var(--gold);background:var(--panel);font-size:20px;font-weight:600;color:var(--muted)}
+body.gv .gvnote{display:block}
+#nojs{position:fixed;inset:0;z-index:999;display:flex;align-items:center;justify-content:center;background:#0b1024;color:#fff;font:600 18px system-ui,sans-serif}
+.js #nojs{display:none}
+#rotate{position:fixed;inset:0;z-index:998;display:none;flex-direction:column;gap:18px;align-items:center;justify-content:center;background:rgba(6,9,20,.94);color:#fff;font:600 19px system-ui,sans-serif;text-align:center;padding:28px}
+#rotate button{font:700 16px system-ui,sans-serif;background:#ffc83d;border:0;border-radius:10px;padding:10px 18px;color:#0a0c12}
+@media (orientation:portrait) and (max-width:900px){.js:not(.keep-portrait) #rotate{display:flex}}
+.fade{animation:fd .4s ease-out}
+@keyframes fd{from{opacity:0}to{opacity:1}}
+@keyframes shake{0%,100%{transform:translateX(0)}20%{transform:translateX(-12px)}40%{transform:translateX(10px)}60%{transform:translateX(-7px)}80%{transform:translateX(4px)}}
+@keyframes pls{0%,100%{box-shadow:0 0 0 0 var(--gold-soft)}50%{box-shadow:0 0 0 10px var(--gold-soft)}}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
+
+/* ---------- nút & trạm dừng ---------- */
+.btn{height:60px;padding:0 26px;border-radius:12px;border:2px solid var(--btn-line);background:var(--btn);font-size:var(--sm);font-weight:700}
+.btn:hover:not(:disabled){border-color:var(--gold)}
+.btn.gold{background:linear-gradient(180deg,var(--gold),var(--gold-2));border-color:var(--gold);color:var(--gold-ink)}
+.btn .m,.btn .katex,.btn .katex *{pointer-events:none}
+.row{display:flex;gap:16px;align-items:center;flex-wrap:wrap}
+.qa{display:grid;gap:14px;align-content:center}
+.qa .q{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:20px;align-items:center;padding:12px 58px 12px 26px;border-radius:14px;border:2px solid var(--panel-line);background:var(--panel);font-size:var(--tx);font-weight:600}
+.qa .q.one{grid-template-columns:1fr}
+.qa.tight{gap:10px} .qa.tight .q{padding-top:8px;padding-bottom:8px}
+.ain{--w:220px;position:relative;display:inline-flex;align-items:center;justify-self:end}
+.ain input{width:var(--w);height:66px;border-radius:14px;border:3px solid var(--panel-line);background:var(--input-bg);color:var(--text);font:inherit;font-size:38px;font-weight:700;text-align:center;font-variant-numeric:tabular-nums}
+.ain input:focus{outline:none;border-color:var(--gold);box-shadow:0 0 0 6px var(--gold-soft)}
+.ain input:disabled{opacity:1}
+.ain[data-state="ok"] input{border-color:var(--ok);background:var(--ok-soft)}
+.ain[data-state="bad"] input{border-color:var(--bad);border-style:dashed;background:var(--bad-soft);animation:shake .45s}
+.mk{position:absolute;right:-36px;font-style:normal;font-size:32px;font-weight:700}
+.ain[data-state="ok"] .mk,.ach[data-state="ok"] .mk{color:var(--ok)} .ain[data-state="bad"] .mk,.ach[data-state="bad"] .mk{color:var(--bad)}
+.ach{position:relative;display:inline-flex;flex-wrap:wrap;gap:12px;justify-self:end}
+.ach .btn{height:auto;min-height:62px;min-width:120px;padding:6px 20px;line-height:1.25;font-size:30px}
+.ach .btn[data-state="sel"]{border-color:var(--gold);background:var(--gold-soft);color:var(--gold)}
+.ach .btn[data-state="ok"]{border-color:var(--ok);background:var(--ok-soft)}
+.ach .btn[data-state="bad"]{border-color:var(--bad);border-style:dashed;background:var(--bad-soft);animation:shake .45s}
+.ach .btn:disabled{cursor:default}
+.ach .btn:disabled:not([data-state]){opacity:.5}
+.ach.wide{justify-self:stretch}
+.stfoot{flex:0 0 auto;display:flex;flex-wrap:wrap;align-items:center;gap:12px 16px}
+.stfoot .btn{height:60px}
+.stfoot .btn:disabled{opacity:.38;cursor:default}
+.stbadge{height:44px;padding:0 16px;display:inline-flex;align-items:center;border-radius:10px;font-size:20px;font-weight:700;letter-spacing:.12em;color:var(--gold);border:2px solid var(--gold);background:var(--gold-soft)}
+.stfb{flex:1 1 100%;margin:0;min-height:54px;padding:8px 20px;border-radius:14px;font-size:27px;font-weight:600;line-height:1.35;color:var(--muted);border:2px solid transparent}
+.stfb.ok{color:var(--text);background:var(--ok-soft);border-color:var(--ok)} .stfb.ok b{color:var(--ok)}
+.stfb.bad{color:var(--text);background:var(--bad-soft);border:2px dashed var(--bad)}
+.stfb .why{display:block} .stfb .why b:first-child{color:var(--bad)} .stfb .why.go b{color:var(--gold)}
+.btn.pulse{border-color:var(--gold);color:var(--gold);animation:pls 1.2s infinite}
+.lockchip{height:44px;padding:0 14px;display:inline-flex;align-items:center;border-radius:10px;font-size:18px;font-weight:700;color:var(--gold);border:2px dashed var(--gold);white-space:nowrap}
+.lockchip.shake{animation:shake .45s}
+.modal{position:absolute;inset:0;z-index:30;display:grid;place-items:center;background:rgba(3,6,18,.82);backdrop-filter:blur(5px);-webkit-backdrop-filter:blur(5px)}
+:root[data-mb="light"] .modal{background:rgba(230,235,248,.85)}
+.mbox{position:relative;width:1500px;max-height:880px;overflow:auto;padding:36px 64px 44px;border:4px solid var(--gold);border-radius:28px;background:var(--panel);box-shadow:0 0 0 12px var(--gold-soft),0 40px 120px rgba(0,0,0,.55);animation:fd .3s}
+.mbox .tab{display:inline-flex;margin:0 0 18px;height:56px;padding:0 28px;align-items:center;border-radius:14px;font-size:30px;font-weight:700;letter-spacing:.08em;color:var(--gold-ink);background:linear-gradient(180deg,var(--gold),var(--gold-2))}
+.mbox h3{margin:10px 0 16px;font-size:42px}
+.mbox ul{list-style:none;margin:0;padding:0;display:grid;gap:12px}
+.mbox li{font-size:36px;font-weight:600;line-height:1.4;padding-left:50px;position:relative}
+.mbox li::before{content:"";position:absolute;left:6px;top:.5em;width:20px;height:20px;border-radius:5px;background:var(--gold)}
+.mbox li.l2{padding-left:110px;font-weight:500}
+.mbox li.l2::before{left:62px;top:.68em;width:28px;height:5px;border-radius:3px;background:var(--muted)}
+.backq{position:absolute;right:48px;bottom:120px;z-index:25;box-shadow:0 10px 30px rgba(0,0,0,.4)}
+
+/* ---------- bìa ---------- */
+.cover{flex:1;display:grid;grid-template-columns:860px 1fr;gap:50px;align-items:center}
+.avatar{position:relative;width:170px;height:170px;border-radius:28px;padding:6px;background:linear-gradient(180deg,#ffe28a,var(--gold) 45%,var(--gold-2));box-shadow:0 0 50px rgba(255,200,61,.35)}
+.avatar img{display:block;width:100%;height:100%;object-fit:cover;border-radius:22px}
+.avatar svg{width:100%;height:100%}
+.avatar .mb{right:-14px;bottom:-12px;font-size:24px;padding:3px 12px;border-radius:10px;box-shadow:0 0 0 4px var(--stage-a)}
+.cover .eb{margin:26px 0 0;font-size:var(--sm);font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:var(--gold)}
+.cover h1{margin:12px 0 0;font-size:88px;line-height:1.02;letter-spacing:-.02em}
+.cover h1 span{display:block;font-size:54px;line-height:1.15;margin-top:12px;color:var(--gold)}
+.cover .sig{margin-top:22px;font-size:var(--sm);font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:var(--dim)}
+.cover .sig b{color:var(--gold)}
+.cover .cvr{display:grid;gap:14px;align-content:center;min-width:0}
+.cover .cvr .fig{height:360px}
+.cover .pending{justify-self:end;margin:0;padding:6px 16px;border-radius:12px;border:2px dashed var(--gold);font-size:22px;font-weight:700;color:var(--gold);background:var(--gold-soft)}
+.parts{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.parts .pk{grid-column:1/-1;margin:0 0 2px;font-size:var(--sm);font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:var(--gold)}
+.pcard{display:grid;gap:4px;justify-items:start;align-content:start;text-align:left;padding:14px 20px 12px;border-radius:16px;border:2px solid var(--panel-line);background:var(--panel);color:var(--text);cursor:pointer;font:inherit}
+.pcard:hover,.pcard:focus-visible{border-color:var(--gold);outline:none}
+.pcard .pn{font-size:20px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--gold)}
+.pcard b{font-size:27px;line-height:1.2}
+.pcard .pf{display:flex;flex-wrap:wrap;gap:4px 14px;font-size:20px;font-weight:600;color:var(--muted)}
+.pcard .pneed{color:var(--dim)}
+.pcard.ok{border-color:var(--ok)} .pcard.ok .pst{color:var(--ok);font-weight:700}
+.vostart{margin-top:30px;height:84px;font-size:34px;padding:0 44px;box-shadow:0 10px 30px rgba(255,160,28,.35)}
+.cover .btn.resume{margin-top:16px;margin-left:16px;height:auto;min-height:78px;padding:10px 26px;font-size:30px;border:2px solid var(--gold);background:var(--panel);color:var(--text)}
+
+/* ---------- tổng kết ---------- */
+.map{position:relative;flex:1 1 auto;min-height:0;display:grid;grid-template-columns:1fr 440px 1fr;grid-template-rows:1fr 1fr;gap:26px 36px;align-items:center}
+.map>svg{position:absolute;inset:0;width:100%;height:100%;z-index:0}
+.node{position:relative;z-index:1;border-radius:18px;border:2px solid var(--panel-line);background:var(--panel);padding:16px 24px;font-size:28px;font-weight:600;line-height:1.5}
+.node b{display:block;font-size:32px;color:var(--gold);margin-bottom:4px}
+.node.c{grid-column:2;grid-row:1/3;align-self:center;text-align:center;border:4px solid var(--gold);background:linear-gradient(var(--gold-soft),var(--gold-soft)),var(--panel);font-size:var(--h);font-weight:700;padding:34px 20px}
+
+/* ---------- bảng GTLG ---------- */
+table.gt{border-collapse:separate;border-spacing:0;font-size:34px;font-weight:600;border:2px solid var(--panel-line);border-radius:16px;overflow:hidden;background:var(--panel)}
+table.gt th,table.gt td{padding:8px 18px;text-align:center;border-right:2px solid var(--panel-line);border-bottom:2px solid var(--panel-line);min-width:110px}
+table.gt tr>*:last-child{border-right:0} table.gt tr:last-child>*{border-bottom:0}
+table.gt th{color:var(--gold);background:var(--panel-2)}
+table.gt td.h{color:var(--gold)}
+table.gt .hl{background:var(--gold-soft)}
+
+/* ---------- HÌNH 2D (SVG) ---------- */
+.g2 .ln{stroke:var(--fig-ink);stroke-width:3.4;fill:none;stroke-linecap:round;stroke-linejoin:round}
+.g2 .ln.th{stroke-width:2.2}
+.g2 .ln.dash{stroke:var(--fig-dim);stroke-width:2.6;stroke-dasharray:10 8}
+.g2 .ln.gold{stroke:var(--gold)} .g2 .ln.blue{stroke:var(--c-blue)} .g2 .ln.red{stroke:var(--c-red)} .g2 .ln.green{stroke:var(--c-green)} .g2 .ln.violet{stroke:var(--c-violet)}
+.g2 .ln.w5{stroke-width:5}
+.g2 .ax{stroke:var(--fig-ink);stroke-width:2.6}
+.g2 .axh{fill:var(--fig-ink)}
+.g2 .grid{stroke:var(--fig-faint);stroke-width:1.5}
+.g2 .arc{fill:none;stroke:var(--gold);stroke-width:3.4}
+.g2 .arc.blue{stroke:var(--c-blue)} .g2 .arc.green{stroke:var(--c-green)} .g2 .arc.red{stroke:var(--c-red)}
+.g2 .fill{fill:var(--gold-soft);stroke:none} .g2 .fill.blue{fill:var(--blue-soft)} .g2 .fill.green{fill:var(--ok-soft)} .g2 .fill.red{fill:var(--bad-soft)}
+.g2 .pt{fill:var(--gold);stroke:var(--stage-a);stroke-width:2.5}
+.g2 .pt.blue{fill:var(--c-blue)} .g2 .pt.red{fill:var(--c-red)} .g2 .pt.green{fill:var(--c-green)} .g2 .pt.ink{fill:var(--fig-ink)}
+.g2 .lab{font-family:KaTeX_Math,"Times New Roman",serif;font-style:italic;font-size:34px;fill:var(--text);paint-order:stroke;stroke:var(--stage-a);stroke-width:7px;stroke-linejoin:round}
+.g2 .lab.up{font-style:normal;font-family:KaTeX_Main,"Times New Roman",serif}
+.g2 .tx{font-family:var(--font);font-size:27px;font-weight:700;fill:var(--gold);paint-order:stroke;stroke:var(--stage-a);stroke-width:6px;stroke-linejoin:round}
+.g2 .tx.mut{fill:var(--muted)} .g2 .tx.ink{fill:var(--text)} .g2 .tx.blue{fill:var(--c-blue)} .g2 .tx.green{fill:var(--c-green)} .g2 .tx.red{fill:var(--c-red)}
+.g2 .tx.sm{font-size:22px}
+:root[data-mb="light"] .g2 .lab,:root[data-mb="light"] .g2 .tx{stroke:#f4f6fd}
+.g2 .ar{fill:var(--gold)} .g2 .ar.ink{fill:var(--fig-ink)} .g2 .ar.blue{fill:var(--c-blue)} .g2 .ar.red{fill:var(--c-red)} .g2 .ar.green{fill:var(--c-green)}
+.g2 .water{fill:rgba(90,168,255,.14);stroke:none} .g2 .land{fill:rgba(47,210,122,.10);stroke:none}
+.g2 .bld{fill:var(--panel-2);stroke:var(--fig-ink);stroke-width:2.6}
+.g2 .hit{fill:transparent;cursor:grab}
+.g2 .drag{cursor:grab}
+.g2 .handle{fill:var(--gold);stroke:var(--stage-a);stroke-width:3;cursor:grab}
+.ctl{display:flex;align-items:center;justify-content:center;gap:18px;font-size:var(--sm);font-weight:700;color:var(--muted)}
+.ctl input[type=range]{width:520px;height:34px;accent-color:var(--gold)}
+.ctl output{min-width:120px;color:var(--gold);font-variant-numeric:tabular-nums}
+.coordbox{display:grid;gap:6px;font-size:32px;font-weight:600}
+.coordbox .v{color:var(--gold)}
+.tip{display:inline-block;padding:2px 14px;border-radius:10px;border:2px solid var(--blue);color:var(--blue);font-size:22px;font-weight:700;letter-spacing:.06em}
+.tipbox{border-radius:18px;border:2px dashed var(--blue);background:var(--blue-soft);padding:14px 24px;font-size:30px;font-weight:600}
+.tipbox>b:first-child{color:var(--blue);display:block;font-size:24px;letter-spacing:.12em;text-transform:uppercase;margin-bottom:4px}
+.keys{display:inline-flex;flex-wrap:wrap;gap:8px;vertical-align:middle}
+.key{display:inline-flex;align-items:center;justify-content:center;min-width:64px;height:48px;padding:0 12px;border-radius:10px;border:2px solid var(--fig-dim);border-bottom-width:5px;background:var(--panel-2);font-size:24px;font-weight:700;color:var(--text)}
+.key.sh{color:var(--gold);border-color:var(--gold)}
+/* hình luôn nằm gọn trong ô hình */
+.fig>svg{position:absolute;inset:0;margin:auto}
+.stack>.fig{min-height:0}
+table.gt.big{font-size:40px} table.gt.big th,table.gt.big td{padding:6px 22px;min-width:130px}
+.ghi table.gt{margin:4px 0 0}
+.spotbox table.gt{font-size:44px}
+.de .it:first-of-type:empty{display:none}
+/* công thức có phân số không đè dòng trên/dưới */
+.slide .katex,.spotbox .katex,.mbox .katex{display:inline-block}
+.slide .katex-display .katex{display:inline-block}
+.de .it *{text-indent:0}
+.de .it{margin:8px 0}
+.de .it b.lb{width:auto;min-width:40px;margin-right:8px}
+.stfb{flex:1 1 560px}
+.g2 .ar.violet{fill:var(--c-violet)} .g2 .ar.mut{fill:var(--fig-dim)} .g2 .ln.mut{stroke:var(--fig-dim)}
+.g2 .tx.violet{fill:var(--c-violet)}
+.g2 .road{fill:var(--panel-2);stroke:none} .g2 .lane{stroke:var(--fig-dim);stroke-width:3;stroke-dasharray:22 18} .g2 .mid{stroke:var(--gold);stroke-width:4}
+.g2 .car{fill:var(--panel);stroke:var(--fig-ink);stroke-width:2.6}
+.vstat{border-radius:16px;border:2px solid var(--panel-line);background:var(--panel);padding:12px 22px;font-size:30px;font-weight:700;min-height:64px}
+.vstat.ok{border-color:var(--c-green);color:var(--c-green)} .vstat.bad{border-color:var(--c-red);color:var(--c-red)} .vstat.gold{border-color:var(--gold);color:var(--gold)}
+.qa .q.inl>span{display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+.qa .q.inl .ain{margin-right:30px}
+.de.xs{font-size:22px} .de.xs .it{font-size:22px}
+.seq{display:flex;flex-wrap:wrap;gap:10px;font-size:32px;font-weight:700}
+.seq>span{min-width:62px;padding:6px 12px;text-align:center;border-radius:10px;border:2px solid var(--panel-line);background:var(--panel)}
+.seq>span.hl{border-color:var(--gold);background:var(--gold-soft);color:var(--gold)}
+.seq.sm{font-size:26px;gap:8px} .seq.sm>span{min-width:52px;padding:4px 8px}
+.g2 .cyl{fill:none;stroke:var(--fig-ink);stroke-width:4}
+.g2 .tick{stroke:var(--fig-ink);stroke-width:2.4} .g2 .tick.f{stroke-width:1.4}
+.g2 .wtr{fill:rgba(90,168,255,.30);stroke:none} .g2 .wtop{stroke:var(--blue);stroke-width:3}
+.g2 .lens{fill:var(--panel);stroke:var(--fig-ink);stroke-width:8} .g2 .hdl{stroke:var(--gold);stroke-width:22;stroke-linecap:round}
+.g2 .rul{fill:var(--gold-soft);stroke:var(--gold);stroke-width:2.4} .g2 .obj{fill:var(--blue-soft);stroke:var(--blue);stroke-width:3}
+.g2 .band{fill:var(--gold-soft);stroke:var(--gold);stroke-width:3} .g2 .band.blue{fill:var(--blue-soft);stroke:var(--blue)}
+.g2 .mtn{fill:var(--panel-2);stroke:var(--fig-ink);stroke-width:3} .g2 .snow{fill:var(--text);opacity:.85;stroke:none}
+.chip{display:inline-block;padding:2px 12px;border-radius:999px;border:2px solid var(--gold);color:var(--gold);font-weight:700}
+</style>
+<script src="../thong-ke.js" defer></script>
+</head><body>
+<div id="viewport">
+ <div id="nojs">Bài giảng cần JavaScript để chạy.</div>
+ <div id="rotate"><div>Xoay ngang thiết bị để xem bài giảng rõ nhất</div><button type="button" id="keep-portrait">Vẫn xem dọc</button></div>
+ <div id="canvas">
+  <header class="topbar"><button class="brand" id="brand" type="button" title="Bấm để đặt ảnh của thầy/cô"></button><input type="file" id="photo-input" accept="image/*" hidden aria-label="Chọn ảnh giáo viên"><div class="secs" id="secs" aria-label="Đề mục"></div></header>
+  <main class="stage" id="stage"></main>
+  <nav class="bottombar" aria-label="Điều hướng">
+    <button class="nbtn" id="prev" type="button" aria-label="Lùi">◀</button>
+    <span class="nlabel" id="nlabel"></span>
+    <div class="progress" aria-hidden="true"><i id="pbar"></i></div>
+    <span class="ncount" id="ncount"></span>
+    <div class="pips" id="pips" aria-hidden="true"></div>
+    <button class="nbtn" id="btn-menu" type="button">☰ Mục lục</button>
+    <button class="nbtn" id="btn-gv" type="button" aria-pressed="false" hidden disabled>Giáo viên</button>
+    <button class="nbtn" id="btn-theme" type="button">Nền: Tối</button>
+    <button class="nbtn" id="btn-fs" type="button" aria-label="Toàn màn hình">⛶</button>
+    <button class="nbtn go" id="next" type="button" aria-label="Tiếp">▶</button>
+  </nav>
+  <div class="menu" id="menu" hidden></div>
+ </div>
+</div>
+<script src="../chung/katex-0.16.45.js" data-lib="katex-0.16.45"></script>
+<script>const VO_SRC={};
+const VO_DATA={};
+</script>
+<script>
+(function(){
+"use strict";
+/* ================= LÕI: tiện ích, co giãn sân khấu, thương hiệu (kế thừa LESSON_ENGINE_B7) ================= */
+const $ = (s, r = document) => r.querySelector(s);
+const $$ = (s, r = document) => [...r.querySelectorAll(s)];
+const NS = 'http://www.w3.org/2000/svg';
+const R = String.raw;
+document.documentElement.classList.add('js');
+$('#keep-portrait').addEventListener('click', () => document.documentElement.classList.add('keep-portrait'));
+function fit(){
+  const vv = window.visualViewport, vw = vv ? vv.width : window.innerWidth, vh0 = vv ? vv.height : window.innerHeight;
+  const rb = window.__fitReserve || 0, vh = vh0 - rb;
+  const s = Math.min(vw / 1920, vh / 1080), c = $('#canvas');
+  c.style.transform = `scale(${s})`; c.style.left = ((vw - 1920 * s) / 2) + 'px'; c.style.top = (rb ? 0 : (vh - 1080 * s) / 2) + 'px';
+}
+window.addEventListener('resize', fit); window.addEventListener('orientationchange', () => setTimeout(fit, 250));
+if (window.visualViewport) visualViewport.addEventListener('resize', fit);
+fit();
+const LOGO = '<svg viewBox="0 0 48 48" aria-hidden="true"><defs><linearGradient id="lg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffe28a"/><stop offset=".5" stop-color="#ffc83d"/><stop offset="1" stop-color="#ff9f1c"/></linearGradient></defs>' +
+  '<rect x="1.5" y="1.5" width="45" height="45" rx="11" fill="#0a0c12" stroke="url(#lg)" stroke-width="1.6"/>' +
+  '<path d="M9 34V14h4.2l5.3 9.4 5.3-9.4H28v20h-4v-12.6l-4.2 7.4h-2.6l-4.2-7.4V34z" fill="url(#lg)"/>' +
+  '<path d="M30.5 14h6.6c3.6 0 5.7 1.8 5.7 4.8 0 1.9-1 3.3-2.6 3.9 2.1.5 3.4 2.1 3.4 4.3 0 3.2-2.3 5-6.2 5h-6.9zm4 7.7h2.2c1.5 0 2.3-.7 2.3-1.9s-.8-1.9-2.3-1.9h-2.2zm0 8.4h2.6c1.7 0 2.6-.8 2.6-2.1s-.9-2.1-2.6-2.1h-2.6z" fill="url(#lg)"/>' +
+  '<rect x="9" y="38" width="33.8" height="2.4" rx="1.2" fill="url(#lg)" opacity=".6"/></svg>';
+const TEACHER_PHOTO = 'data:image/jpeg;base64,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';
+$('#brand').innerHTML = '<span class="logo">' + LOGO + '<span class="mb">MB</span></span><span><b>Mr Black</b><small>Toán THPT</small></span>';
+function setPhoto(src){
+  const logo = $('#brand .logo'); let img = logo.querySelector('img');
+  if (!src){ if (img) img.remove(); $('#brand').classList.remove('has-photo'); return; }
+  if (!img){ img = document.createElement('img'); img.alt = 'Ảnh giáo viên'; logo.appendChild(img); }
+  img.src = src; $('#brand').classList.add('has-photo');
+}
+(function(){ let saved = ''; try { saved = localStorage.getItem('mrblack-photo') || ''; } catch (e) {} setPhoto(saved || TEACHER_PHOTO); })();
+$('#brand').addEventListener('click', () => $('#photo-input').click());
+$('#photo-input').addEventListener('change', e => {
+  const f = e.target.files && e.target.files[0]; if (!f) return;
+  const rd = new FileReader();
+  rd.onload = () => { const im = new Image(); im.onload = () => { const S0 = 200, cv = document.createElement('canvas'); cv.width = S0; cv.height = S0;
+    const s = Math.min(im.width, im.height); cv.getContext('2d').drawImage(im, (im.width - s) / 2, (im.height - s) / 2, s, s, 0, 0, S0, S0);
+    const url = cv.toDataURL('image/jpeg', .85); setPhoto(url); try { localStorage.setItem('mrblack-photo', url); } catch (err) {} }; im.src = rd.result; };
+  rd.readAsDataURL(f); e.target.value = '';
+});
+function texAll(root){
+  if (!window.katex) return;
+  root.querySelectorAll('.m:not([data-k]),.md:not([data-k])').forEach(e => {
+    try { katex.render(e.textContent, e, {displayMode: e.classList.contains('md'), throwOnError: false, strict: false}); e.dataset.k = '1'; } catch (err) {}
+  });
+}
+/* đọc số học sinh nhập: 3/11, -1/2, 0,75, 127,5, 45° … */
+function parseNum(str){
+  let s = String(str || '').trim().toLowerCase().replace(/[°º%]|độ|km|m\b/g, '').replace(/[−–]/g, '-').replace(/\s+/g, '').replace(',', '.');
+  if (s === '' || s === '+' || s === '-') return NaN;
+  const q = s.match(/^([+-]?\d*\.?\d+)\/([+-]?\d*\.?\d+)$/);
+  if (q) return parseFloat(q[1]) / parseFloat(q[2]);
+  if (/^[+-]?\d*\.?\d+$/.test(s)) return parseFloat(s);
+  return NaN;
+}
+function h(html){ const t = document.createElement('template'); t.innerHTML = html.trim(); return t.content.firstElementChild; }
+function mk(tag, attrs, parent){ const e = document.createElementNS(NS, tag); for (const k in attrs) e.setAttribute(k, attrs[k]); if (parent) parent.appendChild(e); return e; }
+const esc = t => String(t).replace(/[&<>]/g, c => ({'&': '&amp;', '<': '&lt;', '>': '&gt;'})[c]);
+const m = t => `<span class="m">${t}</span>`;
+const md = t => `<span class="md">${t}</span>`;
+const vn = x => { const r = Math.round(x * 100) / 100; return (Object.is(r, -0) ? 0 : r).toString().replace('.', ',').replace('-', '−'); };
+const near = (a, b, tol) => Math.abs(a - b) <= (tol ?? 1e-9);
+
+const META = {"title": "Bài 12 · Số gần đúng và sai số · Toán 10", "file": "T10B12_BaiGiang", "pkey": "mb10b12", "secs": ["Khởi động", "1. Số gần đúng", "2. Sai số", "3. Quy tròn", "Tổng kết"], "sn": ["★", "1", "2", "3", "★"], "st": ["Khởi động", "Số gần đúng", "Sai số tuyệt đối và sai số tương đối", "Quy tròn số gần đúng", "Tổng kết"], "menu": [["start", "Mở đầu"], ["k", "Khởi động"], ["m1", "1. Số gần đúng"], ["m2", "2. Sai số tuyệt đối và sai số tương đối"], ["m3", "3. Quy tròn số gần đúng"], ["sum", "Tổng kết & Exit ticket"]], "parts": [{"sec": 1, "a": "m1", "t": "Số gần đúng", "need": ""}, {"sec": 2, "a": "m2", "t": "Sai số tuyệt đối và sai số tương đối", "need": "Nên học sau Phần 1"}, {"sec": 3, "a": "m3", "t": "Quy tròn số gần đúng", "need": "Nên học sau Phần 2"}]};
+
+/* ================= KHUNG SLIDE ================= */
+const SECS = META.secs, SN = META.sn, ST = META.st;
+const slides = [], S = {cur: 0, step: 0, teacher: false, spot: null};
+const hd = (sec, sub) => `<header class="hd"><span class="sn">${SN[sec]}</span><span class="st">${ST[sec]}</span>${sub ? `<span class="ss">${sub}</span>` : ''}</header>`;
+/* khung đề vàng: tag (VD "Ví dụ 1"), nội dung; các ý a), b)… mỗi ý một dòng */
+const de = (tag, html, o = {}) => `<div class="de${o.cls ? ' ' + o.cls : ''}"${o.step ? ` data-step="${o.step}"` : ''}>${o.src ? `<span class="src">${o.src}</span>` : ''}${tag ? `<span class="tag">${tag}</span>` : ''}${html}${(o.items || []).map(([l, t]) => `<span class="it"><b class="lb">${l}</b>${t}</span>`).join('')}</div>`;
+/* thẻ GHI VỞ: "-" ý con, "~" dòng tiếp không gạch */
+const ghi = (step, items) => `<section class="ghi" data-step="${step}" data-ghi="${step}" tabindex="0" aria-label="Phần ghi vở"><ul>${items.map(t => t.startsWith('-') ? `<li class="l2">${t.slice(1).trim()}</li>` : t.startsWith('~') ? `<li class="l2 nodash">${t.slice(1).trim()}</li>` : `<li>${t}</li>`).join('')}</ul></section>`;
+function addSlide(o){
+  const sec = document.createElement('section'); sec.className = 'slide'; sec.hidden = true;
+  sec.innerHTML = o.html + '<div class="dimmer" aria-hidden="true"></div>' + (o.note ? `<div class="gvnote"><b class="gold-t">Gợi ý GV:</b> ${o.note}</div>` : '') + '<div class="watermark" aria-hidden="true">Mr Black</div>';
+  if (o.anchor) sec.dataset.anchor = o.anchor;
+  $('#stage').appendChild(sec); texAll(sec);
+  const steps = [...sec.querySelectorAll('[data-step]')].map(e => +e.dataset.step), gs = [...sec.querySelectorAll('[data-ghi]')].map(e => +e.dataset.ghi + 1);
+  o.el = sec; o.max = Math.max(0, ...steps, ...gs);
+  sec.querySelectorAll('.ghi').forEach(g => { const t = () => spot(S.spot === g ? null : g); g.addEventListener('click', t); g.addEventListener('keydown', e => { if (e.key === 'Enter') t(); }); });
+  sec.querySelector('.dimmer').addEventListener('click', () => { if (S.spot) stepFwd(); });
+  slides.push(o); if (o.init) o.init(sec);
+}
+const spotBox = h('<section class="spotbox" aria-live="polite" hidden></section>');
+$('#stage').appendChild(spotBox);
+function spot(g){
+  const s = slides[S.cur].el; S.spot = g;
+  s.querySelectorAll('.ghi').forEach(x => x.classList.toggle('spot', x === g));
+  s.classList.toggle('focus', !!g); document.body.classList.toggle('focus', !!g);
+  if (g){ spotBox.innerHTML = '<div class="tab">📝 GHI VỞ</div>' + [...g.children].map(c => c.outerHTML).join(''); spotBox.hidden = false; spotBox.classList.remove('pop'); void spotBox.offsetWidth; spotBox.classList.add('pop'); }
+  else spotBox.hidden = true;
+}
+function setStep(k){
+  const s = slides[S.cur]; S.step = k;
+  s.el.querySelectorAll('[data-step]').forEach(e => e.classList.toggle('on', +e.dataset.step <= k));
+  s.el.querySelectorAll('[data-unstep]').forEach(e => e.classList.toggle('gone', +e.dataset.unstep <= k));
+  spot([...s.el.querySelectorAll('[data-ghi]')].find(g => +g.dataset.ghi === k) || null);
+  const p = $('#pips'); p.innerHTML = ''; for (let i = 1; i <= s.max; i++){ const d = document.createElement('i'); if (i <= k) d.className = 'on'; p.appendChild(d); }
+  if (s.onStep) s.onStep(k, s.el);
+  gateUI();
+  drawSync(s, k);
+  if (typeof promptSync === 'function') promptSync();
+  if (typeof voAfterStep === 'function' && typeof VO !== 'undefined') voAfterStep();
+}
+/* ===== HIỆU ỨNG VẼ HÌNH: nét vẽ dần khi vào slide / khi bấm ▶ hiện bước mới ===== */
+const DRAW = {slide: -1, step: 0, on: !(window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches)};
+function drawSync(s, k){
+  const fresh = DRAW.slide !== S.cur, prev = DRAW.step; DRAW.slide = S.cur; DRAW.step = k;
+  if (!DRAW.on) return;
+  if (fresh){ if (k === 0) drawIn(s.el, null); return; }
+  if (k > prev) drawIn(s.el, [prev, k]);
+}
+function drawCat(e){ if (e.matches('.fill,.water,.land,.bld')) return 2; if (e.tagName === 'text') return 1; if (e.matches('.pt,.ar,.handle')) return 3; return 0; }
+function drawLen(e){
+  const n = e.tagName;
+  if (n === 'line') return Math.hypot(e.x2.baseVal.value - e.x1.baseVal.value, e.y2.baseVal.value - e.y1.baseVal.value);
+  if (n === 'polyline' || n === 'path'){ try { return e.getTotalLength(); } catch (err) { return 0; } }
+  return 0;
+}
+function drawIn(root, range){
+  const items = [];
+  root.querySelectorAll('.fig svg.g2:not(.nodraw)').forEach(svg => svg.querySelectorAll('line, polyline, path, polygon, circle, text, rect, ellipse').forEach(e => {
+    if (e.matches('.grid,.hit')) return;
+    const st = e.closest('[data-step]');
+    if (st && !st.classList.contains('on')) return;
+    if (range){ if (!st) return; const v = +st.dataset.step; if (!(v > range[0] && v <= range[1])) return; }
+    items.push({e, c: drawCat(e)});
+  }));
+  if (!items.length) return;
+  items.sort((a, b) => a.c - b.c);
+  const cnt = [0, 0, 0, 0]; items.forEach(i => cnt[i.c]++);
+  const gap = [Math.min(0.12, 1.4 / Math.max(1, cnt[0])), Math.min(0.05, 0.6 / Math.max(1, cnt[1])), 0.12, 0.1];
+  let t = 0; const start = [];
+  [0, 2, 1, 3].forEach(c => { start[c] = t; if (cnt[c]) t += gap[c] * (cnt[c] - 1) + 0.45; });
+  const seen = [0, 0, 0, 0], ms = x => Math.round(x * 1000);
+  items.forEach(({e, c}) => {
+    const d = start[c] + gap[c] * seen[c]++, L = drawLen(e), dashed = e.classList.contains('dash');
+    if (L > 4 && !dashed && c === 0) e.animate([{strokeDasharray: `${L} ${L}`, strokeDashoffset: L}, {strokeDasharray: `${L} ${L}`, strokeDashoffset: 0}], {duration: 450, delay: ms(d), fill: 'backwards', easing: 'ease-in-out'});
+    else e.animate([{opacity: 0}, {opacity: 1}], {duration: c === 2 ? 600 : 350, delay: ms(d), fill: 'backwards', easing: 'ease-out'});
+  });
+}
+
+/* ================= TRẠM DỪNG: học sinh tự làm, đúng mới đi tiếp ================= */
+const IN = (st, it, w) => `<span class="ain" data-it="${st}:${it}"${w ? ` style="--w:${w}px"` : ''}><input type="text" inputmode="text" autocomplete="off" spellcheck="false" aria-label="Đáp số"><i class="mk" aria-hidden="true"></i></span>`;
+const CH = (st, it, opts, cls) => `<span class="ach${cls ? ' ' + cls : ''}" data-it="${st}:${it}" role="group">${opts.map((o, k) => `<button type="button" class="btn" data-v="${k}">${o}</button>`).join('')}<i class="mk" aria-hidden="true"></i></span>`;
+const FOOT = st => `<div class="stfoot" data-st="${st}"><span class="stbadge">✍ TRẠM DỪNG</span><button class="btn gold" type="button" data-a="chk">Kiểm tra</button><button class="btn" type="button" data-a="rev" disabled>📖 Xem lại</button><button class="btn" type="button" data-a="sol" disabled>💡 Lời giải chi tiết</button><p class="stfb" aria-live="polite">Làm xong, bấm <b>Kiểm tra</b>.</p></div>`;
+const modal = h('<div class="modal" hidden><div class="mbox" role="dialog" aria-modal="true"></div></div>');
+$('#canvas').appendChild(modal);
+const backBtn = h('<button class="nbtn go backq" type="button" hidden>↩ Về trạm dừng</button>');
+$('#canvas').appendChild(backBtn);
+let backTo = -1, modalClose = null;
+backBtn.addEventListener('click', () => { const k = backTo; backTo = -1; backBtn.hidden = true; if (k >= 0) go(k); });
+function closeModal(){ modal.hidden = true; const f = modalClose; modalClose = null; if (f) f(); }
+modal.addEventListener('click', e => { if (e.target === modal) closeModal(); });
+function openModal(html, onClose){
+  const box = modal.querySelector('.mbox'); box.innerHTML = html; texAll(box); modal.hidden = false; modalClose = onClose || null;
+  box.querySelectorAll('[data-a=close]').forEach(b => b.addEventListener('click', closeModal));
+  return box;
+}
+const lis = arr => '<ul>' + arr.map(t => t.startsWith('-') ? `<li class="l2">${t.slice(1).trim()}</li>` : `<li>${t}</li>`).join('') + '</ul>';
+function showTheory(keys, onDone){
+  const ks = [...new Set(keys)].filter(k => THEORY[k]);
+  const box = openModal(`<div class="tab">📖 XEM LẠI KIẾN THỨC</div>${ks.map(k => `<h3>${THEORY[k].t}</h3>${lis(THEORY[k].items)}`).join('')}
+    <div class="row" style="justify-content:flex-end;margin-top:26px"><button class="btn" type="button" data-a="slide">▶ Mở lại slide bài giảng</button><button class="btn gold" type="button" data-a="close">Đã hiểu, làm lại ✓</button></div>`, onDone);
+  const k = slides.findIndex(s => s.label === THEORY[ks[0]].slide);
+  if (k < 0) box.querySelector('[data-a=slide]').remove(); else
+  box.querySelector('[data-a=slide]').addEventListener('click', () => { modalClose = null; modal.hidden = true; if (onDone) onDone(); backTo = S.cur; go(k, 'end'); backBtn.hidden = false; });
+}
+function station(sec, cfg){
+  const st = {id: cfg.id, gate: cfg.gate || 0, done: false, attempts: 0, review: false, items: {}, cfg};
+  const foot = sec.querySelector(`.stfoot[data-st="${cfg.id}"]`), fb = foot.querySelector('.stfb');
+  const B = a => foot.querySelector(`[data-a=${a}]`);
+  cfg.items.forEach(it => {
+    const el = sec.querySelector(`[data-it="${cfg.id}:${it.id}"]`), I = {cfg: it, el, ok: false, bad: false, val: null};
+    st.items[it.id] = I;
+    if (it.kind === 'choice'){
+      el.querySelectorAll('button').forEach(b => b.addEventListener('click', () => { if (I.ok || I.bad) return; el.querySelectorAll('button').forEach(x => x.removeAttribute('data-state')); b.dataset.state = 'sel'; I.val = +b.dataset.v; }));
+    } else {
+      const inp = el.querySelector('input');
+      inp.addEventListener('keydown', e => { if (e.key === 'Enter'){ e.preventDefault(); check(); } e.stopPropagation(); });
+      inp.addEventListener('input', () => { el.removeAttribute('data-state'); });
+    }
+  });
+  const setMark = (I, s) => { if (s) I.el.dataset.state = s; else I.el.removeAttribute('data-state'); I.el.querySelector('.mk').textContent = s === 'ok' ? '✓' : s === 'bad' ? '✗' : ''; };
+  const lock = (I, on) => { if (I.cfg.kind === 'choice') I.el.querySelectorAll('button').forEach(b => { b.disabled = on; }); else I.el.querySelector('input').disabled = on; };
+  const diag = (I, v) => (I.cfg.diag && I.cfg.diag(v)) || I.cfg.why || 'Chưa đúng.';
+  const isOk = I => I.cfg.kind === 'choice' ? I.val === I.cfg.ans : near(I.val, I.cfg.ans, I.cfg.tol);
+  function check(){
+    if (st.done || st.review) return;
+    const open = Object.values(st.items).filter(I => !I.ok);
+    let empty = false;
+    open.forEach(I => { if (I.cfg.kind === 'choice'){ if (I.val === null) empty = true; } else { const raw = I.el.querySelector('input').value; I.val = parseNum(raw); if (raw.trim() === '') empty = true; } });
+    if (empty){ fb.className = 'stfb'; fb.innerHTML = 'Con hoàn thành đủ tất cả các ô rồi bấm <b>Kiểm tra</b> nhé.'; return; }
+    if (open.find(I => I.cfg.kind !== 'choice' && isNaN(I.val))){ fb.className = 'stfb'; fb.innerHTML = 'Có ô chưa phải là một số. Ví dụ cách viết: <b>45</b>, <b>3/11</b> hoặc <b>127,5</b>.'; return; }
+    const wrong = [];
+    open.forEach(I => {
+      if (isOk(I)){ I.ok = true; setMark(I, 'ok'); lock(I, true); if (I.cfg.kind === 'choice') I.el.querySelector(`[data-v="${I.val}"]`).dataset.state = 'ok'; }
+      else { I.bad = true; setMark(I, 'bad'); lock(I, true); if (I.cfg.kind === 'choice') I.el.querySelector(`[data-v="${I.val}"]`).dataset.state = 'bad'; wrong.push(I); }
+    });
+    if (!wrong.length){
+      st.done = true; fb.className = 'stfb ok'; fb.innerHTML = '<b>✓ Chính xác!</b> Bấm ▶ để học tiếp.';
+      B('chk').disabled = true; B('rev').disabled = true; B('rev').classList.remove('pulse'); B('sol').disabled = false;
+      if (cfg.onDone) cfg.onDone(sec); gateUI(); document.dispatchEvent(new CustomEvent('station-done', {detail: {id: cfg.id, attempts: st.attempts}})); return;
+    }
+    st.attempts++; st.review = true;
+    fb.className = 'stfb bad'; fb.innerHTML = wrong.map(I => `<span class="why"><b>${I.cfg.name}</b> ${diag(I, I.val)}</span>`).join('') + '<span class="why go">Bấm <b>📖 Xem lại</b>, đọc lại kiến thức rồi làm lại các ô màu đỏ.</span>';
+    texAll(fb);
+    B('chk').disabled = true; B('rev').disabled = false; B('rev').classList.add('pulse');
+  }
+  function retry(){
+    st.review = false; B('rev').classList.remove('pulse'); B('rev').disabled = true; B('chk').disabled = false;
+    if (st.attempts >= (cfg.solAfter || 2)) B('sol').disabled = false;
+    let first = null;
+    Object.values(st.items).forEach(I => { if (!I.bad) return; I.bad = false; I.val = null; setMark(I, null); lock(I, false);
+      if (I.cfg.kind === 'choice') I.el.querySelectorAll('button').forEach(b => b.removeAttribute('data-state')); else { const inp = I.el.querySelector('input'); inp.value = ''; first = first || inp; } });
+    fb.className = 'stfb'; fb.innerHTML = 'Làm lại các ô màu đỏ rồi bấm <b>Kiểm tra</b>.' + (st.attempts >= (cfg.solAfter || 2) ? ' Cần thì mở <b>💡 Lời giải chi tiết</b>.' : '');
+    if (first) setTimeout(() => first.focus(), 50);
+  }
+  B('chk').addEventListener('click', check);
+  B('rev').addEventListener('click', () => { const keys = Object.values(st.items).filter(I => I.bad).map(I => I.cfg.review || cfg.review); showTheory(keys, retry); });
+  B('sol').addEventListener('click', () => openModal(`<div class="tab">💡 LỜI GIẢI CHI TIẾT</div>${cfg.title ? `<h3>${cfg.title}</h3>` : ''}${lis(cfg.items.map(it => cfg.solNoName ? it.sol : `<b class="kw">${it.name}</b> ${it.sol}`))}<div class="row" style="justify-content:flex-end;margin-top:26px"><button class="btn gold" type="button" data-a="close">Đóng</button></div>`));
+  return st;
+}
+function addStations(sec, o, list){ o.stations = list.map(c => station(sec, c)); }
+const blocked = () => { if (S.teacher) return false; const s = slides[S.cur]; return !!(s.stations && s.stations.some(t => !t.done && S.step >= t.gate)); };
+const lockChip = h('<span class="lockchip" hidden>🔒 Làm đúng trạm dừng để đi tiếp</span>');
+$('#next').before(lockChip);
+function gateUI(){
+  const s = slides[S.cur], b = blocked();
+  lockChip.hidden = !b;
+  $('#next').disabled = b || (S.cur === slides.length - 1 && S.step >= s.max);
+}
+/* ================= HÌNH PHẲNG 2D (SVG chuỗi) =================
+   Toạ độ màn hình (px, y hướng xuống). Hàm F(ox, oy, s) đổi toạ độ toán (y hướng lên) → màn hình.
+   Mỗi hàm trả về chuỗi SVG; tham số o.step bọc phần tử vào nhóm hiện theo bước ▶. */
+const deg = a => a * Math.PI / 180;
+const F = (ox, oy, s) => ({X: x => ox + s * x, Y: y => oy - s * y, P: (x, y) => [ox + s * x, oy - s * y], s});
+const n1 = v => Math.round(v * 10) / 10;
+const wrap = (o, inner, cls) => (o && (o.step || o.unstep || cls)) ? `<g${cls ? ` class="${cls}"` : ''}${o && o.step ? ` data-step="${o.step}"` : ''}${o && o.unstep ? ` data-unstep="${o.unstep}"` : ''}>${inner}</g>` : inner;
+const SV = (w, h, inner, aria, cls) => `<svg class="g2${cls ? ' ' + cls : ''}" viewBox="0 0 ${w} ${h}" role="img" aria-label="${esc(aria || 'Hình vẽ')}">${inner}</svg>`;
+const L = (p, q, cls = '', o) => wrap(o, `<line class="ln ${cls}" x1="${n1(p[0])}" y1="${n1(p[1])}" x2="${n1(q[0])}" y2="${n1(q[1])}"/>`);
+const PL = (pts, cls = '', o, closed) => wrap(o, `<${closed ? 'polygon' : 'polyline'} class="ln ${cls}" points="${pts.map(p => n1(p[0]) + ',' + n1(p[1])).join(' ')}"/>`);
+const PG = (pts, cls = 'fill', o) => wrap(o, `<polygon class="${cls}" points="${pts.map(p => n1(p[0]) + ',' + n1(p[1])).join(' ')}"/>`);
+const CI = (c, r, cls = 'ln', o) => wrap(o, `<circle class="${cls}" cx="${n1(c[0])}" cy="${n1(c[1])}" r="${n1(r)}"/>`);
+const DOT = (p, cls = '', o) => wrap(o, `<circle class="pt ${cls}" cx="${n1(p[0])}" cy="${n1(p[1])}" r="${(o && o.r) || 8}"/>`);
+/* nhãn: chữ nghiêng kiểu toán (lab) hoặc chữ thường (tx) */
+const TX = (p, s, cls = 'lab', o = {}) => wrap(o, `<text class="${cls}" x="${n1(p[0] + (o.dx || 0))}" y="${n1(p[1] + (o.dy || 0))}" text-anchor="${o.a || 'middle'}">${s}</text>`);
+/* cung tròn tâm c bán kính r từ góc a0 tới a1 (độ, chiều dương ngược kim đồng hồ, trục x hướng phải) */
+function arcPath(c, r, a0, a1){
+  const P = a => [c[0] + r * Math.cos(deg(a)), c[1] - r * Math.sin(deg(a))], p0 = P(a0), p1 = P(a1), big = Math.abs(a1 - a0) > 180 ? 1 : 0, sw = a1 > a0 ? 0 : 1;
+  return `M${n1(p0[0])} ${n1(p0[1])} A${r} ${r} 0 ${big} ${sw} ${n1(p1[0])} ${n1(p1[1])}`;
+}
+const ARC = (c, r, a0, a1, cls = 'arc', o) => wrap(o, `<path class="${cls}" d="${arcPath(c, r, a0, a1)}"/>`);
+/* góc tại đỉnh V giữa hai tia V→A, V→B (toạ độ màn hình); nhãn đặt trên phân giác */
+function ANG(V, A, B, r = 40, lab, cls = 'arc', o = {}){
+  const a = Math.atan2(V[1] - A[1], A[0] - V[0]) * 180 / Math.PI, b = Math.atan2(V[1] - B[1], B[0] - V[0]) * 180 / Math.PI;
+  let a0 = a, a1 = b; let d = a1 - a0; while (d > 180) d -= 360; while (d < -180) d += 360; a1 = a0 + d;
+  const mid = deg(a0 + d / 2), lr = o.lr || r + 26;
+  return wrap(o, `<path class="${cls}" d="${arcPath(V, r, a0, a1)}"/>` + (lab ? `<text class="${o.lc || 'tx'}" x="${n1(V[0] + lr * Math.cos(mid))}" y="${n1(V[1] - lr * Math.sin(mid) + 10)}" text-anchor="middle">${lab}</text>` : ''));
+}
+/* kí hiệu góc vuông tại V */
+function RA(V, A, B, s = 22, o){
+  const u = (P) => { const L0 = Math.hypot(P[0] - V[0], P[1] - V[1]) || 1; return [(P[0] - V[0]) / L0, (P[1] - V[1]) / L0]; }, a = u(A), b = u(B);
+  return wrap(o, `<polyline class="ln th" points="${n1(V[0] + a[0] * s)},${n1(V[1] + a[1] * s)} ${n1(V[0] + (a[0] + b[0]) * s)},${n1(V[1] + (a[1] + b[1]) * s)} ${n1(V[0] + b[0] * s)},${n1(V[1] + b[1] * s)}"/>`);
+}
+/* mũi tên p → q */
+function ARW(p, q, cls = 'gold', o = {}){
+  const Lq = Math.hypot(q[0] - p[0], q[1] - p[1]) || 1, ux = (q[0] - p[0]) / Lq, uy = (q[1] - p[1]) / Lq, hl = o.hl || 22, hw = o.hw || 9, bx = q[0] - ux * hl, by = q[1] - uy * hl;
+  return wrap(o, `<line class="ln ${cls}${o.w ? ' w5' : ''}${o.dash ? ' dash' : ''}" x1="${n1(p[0])}" y1="${n1(p[1])}" x2="${n1(bx + ux * 2)}" y2="${n1(by + uy * 2)}"/><polygon class="ar ${cls}" points="${n1(q[0])},${n1(q[1])} ${n1(bx - uy * hw)},${n1(by + ux * hw)} ${n1(bx + uy * hw)},${n1(by - ux * hw)}"/>`);
+}
+/* hệ trục toạ độ (khung F), có nhãn x, y, O; vạch chia tuỳ chọn */
+function AXES(f, x0, x1, y0, y1, o = {}){
+  const A = f.P(x0, 0), B = f.P(x1, 0), C = f.P(0, y0), D = f.P(0, y1);
+  let s = `<line class="ax" x1="${A[0]}" y1="${A[1]}" x2="${B[0]}" y2="${B[1]}"/><polygon class="axh" points="${B[0] + 16},${B[1]} ${B[0] - 2},${B[1] - 8} ${B[0] - 2},${B[1] + 8}"/>` +
+    `<line class="ax" x1="${C[0]}" y1="${C[1]}" x2="${D[0]}" y2="${D[1]}"/><polygon class="axh" points="${D[0]},${D[1] - 16} ${D[0] - 8},${D[1] + 2} ${D[0] + 8},${D[1] + 2}"/>`;
+  s += TX([B[0] + 6, B[1] + 38], 'x') + TX([D[0] - 24, D[1] + 4], 'y') + TX(f.P(0, 0), 'O', 'lab', {dx: -22, dy: 34});
+  (o.xt || []).forEach(([v, lab, dy]) => { const p = f.P(v, 0); s += `<line class="ax" x1="${p[0]}" y1="${p[1] - 7}" x2="${p[0]}" y2="${p[1] + 7}"/>` + TX(p, lab, 'lab up', {dy: dy || 38}); });
+  (o.yt || []).forEach(([v, lab, dx]) => { const p = f.P(0, v); s += `<line class="ax" x1="${p[0] - 7}" y1="${p[1]}" x2="${p[0] + 7}" y2="${p[1]}"/>` + TX(p, lab, 'lab up', {dx: dx || -26, dy: 11, a: 'end'}); });
+  return s;
+}
+/* tam giác ABC từ toạ độ màn hình, nhãn đỉnh đẩy ra xa trọng tâm */
+function TRI(P, names, o = {}){
+  const G = [(P[0][0] + P[1][0] + P[2][0]) / 3, (P[0][1] + P[1][1] + P[2][1]) / 3];
+  let s = PL(P, o.cls || '', null, true);
+  names.forEach((nm, i) => { if (!nm) return; const d = [P[i][0] - G[0], P[i][1] - G[1]], Ld = Math.hypot(d[0], d[1]) || 1, r = o.lr || 32; s += TX([P[i][0] + d[0] / Ld * r, P[i][1] + d[1] / Ld * r + 11], nm); });
+  return s;
+}
+/* nhãn cạnh: đặt ở trung điểm PQ, lệch ra phía ngoài (so với điểm trong I) */
+function SIDE(Pp, Q, I, s, cls = 'tx', o = {}){
+  const M = [(Pp[0] + Q[0]) / 2, (Pp[1] + Q[1]) / 2]; let nx = -(Q[1] - Pp[1]), ny = Q[0] - Pp[0]; const Ln = Math.hypot(nx, ny) || 1; nx /= Ln; ny /= Ln;
+  if ((I[0] - M[0]) * nx + (I[1] - M[1]) * ny > 0){ nx = -nx; ny = -ny; }
+  const r = o.r || 30; return TX([M[0] + nx * r, M[1] + ny * r + 10], s, cls, o);
+}
+/* giải tam giác bằng toạ độ: đặt B tại gốc, C trên trục x (toạ độ toán), trả về 3 điểm toán */
+function triPts(a, b, c){ const x = (a * a + c * c - b * b) / (2 * a), y = Math.sqrt(Math.max(0, c * c - x * x)); return {A: [x, y], B: [0, 0], C: [a, 0]}; }
+/* khung hình vừa bao các điểm: trả về F đã căn giữa */
+function fitF(pts, W, H, pad = 60){
+  const xs = pts.map(p => p[0]), ys = pts.map(p => p[1]), x0 = Math.min(...xs), x1 = Math.max(...xs), y0 = Math.min(...ys), y1 = Math.max(...ys);
+  const s = Math.min((W - 2 * pad) / ((x1 - x0) || 1), (H - 2 * pad) / ((y1 - y0) || 1));
+  return F(W / 2 - s * (x0 + x1) / 2, H / 2 + s * (y0 + y1) / 2, s);
+}
+/* ===== công cụ chung Chương IV (vectơ) ===== */
+const V = s => R`\overrightarrow{${s}}`, mv = s => m(V(s));
+/* ---------- công cụ hình ---------- */
+/* nhãn vectơ trong SVG: chữ + mũi tên nhỏ phía trên */
+const VL = (p, s, col = 'ink', o = {}) => { const w = 17 * s.replace('_', '').length + 12, x = p[0] + (o.dx || 0), y = p[1] + (o.dy || 0), lc = col === 'ink' ? '' : col, yy = y - 33;
+  const [s0, sub] = s.split('_'), body = sub ? `${s0}<tspan class="sb" dy="9" style="font-size:24px">${sub}</tspan>` : s0;
+  return wrap(o, TX([x, y], body, 'lab') + `<line class="ln th ${lc}" x1="${n1(x - w / 2)}" y1="${yy}" x2="${n1(x + w / 2 - 6)}" y2="${yy}"/><polygon class="ar ${col}" points="${n1(x + w / 2 + 4)},${yy} ${n1(x + w / 2 - 8)},${yy - 6} ${n1(x + w / 2 - 8)},${yy + 6}"/>`); };
+/* vectơ p → q (toạ độ màn hình) có nhãn đặt lệch sang trái (side = 1) hoặc phải (side = −1) so với chiều vectơ */
+function VEC(p, q, lab, col = 'gold', o = {}){
+  const d = [q[0] - p[0], q[1] - p[1]], Ld = Math.hypot(d[0], d[1]) || 1, sd = o.side ?? 1, r = o.r ?? 30, t = o.t ?? 0.5, M = [p[0] + d[0] * t, p[1] + d[1] * t];
+  const nx = d[1] / Ld * sd, ny = -d[0] / Ld * sd;
+  return wrap(o, ARW(p, q, col, {w: o.w, hl: o.hl, hw: o.hw}) + (lab ? VL([M[0] + nx * r, M[1] + ny * r + 12], lab, col) : ''));
+}
+function GRID(f, x0, x1, y0, y1){ let g = ''; for (let x = x0; x <= x1; x++) g += L(f.P(x, y0), f.P(x, y1), 'grid'); for (let y = y0; y <= y1; y++) g += L(f.P(x0, y), f.P(x1, y), 'grid'); return g; }
+function COMPASS(c, r = 44){ return ARW(c, [c[0], c[1] - r], 'ink', {hl: 14, hw: 6}) + TX([c[0], c[1] - r - 10], 'B', 'tx ink sm') + L([c[0], c[1]], [c[0], c[1] + r * .8], 'th') + L([c[0] - r * .8, c[1]], [c[0] + r * .8, c[1]], 'th') + TX([c[0] + r + 8, c[1] + 8], 'Đ', 'tx ink sm', {a: 'start'}) + TX([c[0], c[1] + r + 22], 'N', 'tx ink sm') + TX([c[0] - r - 8, c[1] + 8], 'T', 'tx ink sm', {a: 'end'}); }
+
+const AVATAR = TEACHER_PHOTO ? `<img src="${TEACHER_PHOTO}" alt="Thầy Mr Black"><span class="mb">MB</span>` : LOGO;
+
+/* thanh trượt + liên kết */
+const SLIDER = (id, lab, min, max, step, val, unit = '') => `<label class="ctl">${lab} <input type="range" min="${min}" max="${max}" step="${step}" value="${val}" id="${id}" aria-label="${esc(lab.replace(/<[^>]+>/g, ''))}"><output id="${id}o">${val}${unit}</output></label>`;
+function bindRange(sec, id, fn, unit = ''){ const r = sec.querySelector('#' + id), o = sec.querySelector('#' + id + 'o'); const f = () => { if (o) o.textContent = String(r.value).replace('.', ',') + unit; fn(+r.value); }; r.addEventListener('input', f); r.addEventListener('keydown', e => e.stopPropagation()); f(); }
+/* kéo các điểm điều khiển (data-h = khoá) trong một SVG; pts: {khoá: [x, y]}; snap: bước lưới; clamp(k, p) → p */
+function dragPts(svg, pts, draw, o = {}){
+  let cur = null; const snap = o.snap || 20, cl = o.clamp || ((k, p) => p);
+  const pos = e => { const p = svg.createSVGPoint(); p.x = e.clientX; p.y = e.clientY; const q = p.matrixTransform(svg.getScreenCTM().inverse()); return [Math.round(q.x / snap) * snap, Math.round(q.y / snap) * snap]; };
+  svg.addEventListener('pointerdown', e => { const t = e.target.closest('[data-h]'); if (!t) return; cur = t.dataset.h; svg.setPointerCapture(e.pointerId); });
+  svg.addEventListener('pointermove', e => { if (cur === null) return; pts[cur] = cl(cur, pos(e)); draw(); });
+  const up = () => { cur = null; }; svg.addEventListener('pointerup', up); svg.addEventListener('pointercancel', up); draw();
+}
+const HANDLE = (p, k, r = 14) => `<circle class="handle" data-h="${k}" cx="${n1(p[0])}" cy="${n1(p[1])}" r="${r}"/>`;
+const GRIDPX = (W, H, c = 40) => { let g = ''; for (let x = 0; x <= W; x += c) g += L([x, 0], [x, H], 'grid'); for (let y = 0; y <= H; y += c) g += L([0, y], [W, y], 'grid'); return g; };
+const add = (p, v, k = 1) => [p[0] + k * v[0], p[1] + k * v[1]];
+/* hệ trục: khung F + lưới + trục, nhãn số */
+function plane(f, x0, x1, y0, y1, o = {}){
+  let g = o.grid === false ? '' : GRID(f, x0, x1, y0, y1);
+  const xt = [], yt = []; for (let x = x0; x <= x1; x++) if (x && (!o.xs || o.xs.includes(x))) xt.push([x, String(x).replace('-', '−')]); for (let y = y0; y <= y1; y++) if (y && (!o.ys || o.ys.includes(y))) yt.push([y, String(y).replace('-', '−')]);
+  return g + AXES(f, x0 - 0.4, x1 + 0.4, y0 - 0.4, y1 + 0.4, {xt: o.noTicks ? [] : xt, yt: o.noTicks ? [] : yt});
+}
+const PT = (f, p, nm, o = {}) => DOT(f.P(...p), o.cls || '') + (nm ? TX(f.P(...p), nm, 'lab', {dx: o.dx ?? 16, dy: o.dy ?? -12, a: o.a || 'start'}) : '');
+
+/* ================= CHƯƠNG V · THỐNG KÊ — tiện ích dùng chung (Mr Black) ================= */
+const vnn = (x, k = 2) => { const r = Math.round(x * 10 ** k) / 10 ** k; let s = (Object.is(r, -0) ? 0 : r).toString(); const [a, b] = s.replace('-', '').split('.'); const g = a.replace(/\B(?=(\d{3})+(?!\d))/g, ' '); return (r < 0 ? '−' : '') + g + (b ? ',' + b : ''); };
+const mc = s => m(String(s).replace(/(\d),(\d)/g, '$1{,}$2'));   /* công thức có số thập phân dấu phẩy */
+/* trục số ngang: x0..x1 → px [L, Rr] tại tung độ y */
+function NLINE(x0, x1, L0, R0, y, o = {}){
+  const X = v => L0 + (v - x0) / (x1 - x0) * (R0 - L0);
+  let g = L([L0 - 20, y], [R0 + 20, y], 'th') + `<polygon class="axh" points="${R0 + 36},${y} ${R0 + 18},${y - 8} ${R0 + 18},${y + 8}"/>`;
+  (o.ticks || []).forEach(t => { const v = Array.isArray(t) ? t[0] : t, lab = Array.isArray(t) ? t[1] : vnn(v, 4); g += L([X(v), y - 9], [X(v), y + 9], 'th') + (lab ? TX([X(v), y + 40], lab, 'tx') : ''); });
+  return {X, g};
+}
+/* bảng tần số / bảng dữ liệu: head = [nhãn hàng 1, ...], rows = [[nhãn, ...], ...] */
+const TBL = (rows, cls = '') => `<table class="gt ${cls}">${rows.map((r, i) => `<tr>${r.map((c, j) => j === 0 ? `<th>${c}</th>` : `<td>${c}</td>`).join('')}</tr>`).join('')}</table>`;
+/* dãy số liệu dạng ô (có thể tô nổi một số vị trí) */
+const SEQ = (arr, hl = [], cls = '') => `<div class="seq ${cls}">${arr.map((v, i) => `<span class="${hl.includes(i) ? 'hl' : ''}">${typeof v === 'number' ? vnn(v, 4) : v}</span>`).join('')}</div>`;
+/* ================= BÀI 12 · SỐ GẦN ĐÚNG VÀ SAI SỐ (Toán 10, tr.73–77) ================= */
+const THEORY = {
+  K01: {t: 'Số đúng và số gần đúng', slide: '1. Số gần đúng', items: [
+    R`Ta thường không biết hoặc khó biết <b>số đúng</b> (kí hiệu ${m(R`\overline a`)}), chỉ tìm được một giá trị xấp xỉ nó: <b>số gần đúng</b>, kí hiệu ${m('a')}.`,
+    R`- Kết quả đo đạc (cân, đo, đếm ước lượng) và các số làm tròn của số vô tỉ (${m(R`\pi\approx3{,}14`)}, ${m(R`\sqrt2\approx1{,}41`)}) là số gần đúng.`]},
+  K02: {t: 'Sai số tuyệt đối · độ chính xác', slide: '2a. Sai số tuyệt đối', items: [
+    R`${m(R`\Delta_a=|a-\overline a|`)} là <b>sai số tuyệt đối</b> của số gần đúng ${m('a')}.`,
+    R`Nếu ${m(R`\Delta_a\le d`)} thì ${m(R`a-d\le\overline a\le a+d`)}, viết ${m(R`\overline a=a\pm d`)}: số đúng nằm trong đoạn ${m('[a-d;\\,a+d]')}. ${m('d')} là <b>độ chính xác</b>.`,
+    R`- Trong phép đo, ${m('d')} bằng <b>một nửa đơn vị</b> của thước đo.`]},
+  K03: {t: 'Sai số tương đối', slide: '2b. Sai số tương đối', items: [
+    R`${m(R`\delta_a=\dfrac{\Delta_a}{|a|}`)}; nếu ${m(R`\overline a=a\pm d`)} thì ${m(R`\delta_a\le\dfrac{d}{|a|}`)}, thường viết dạng phần trăm.`,
+    R`- So sánh hai phép đo có độ lớn khác nhau: dùng <b>sai số tương đối</b> (nhỏ hơn thì chính xác hơn), không dùng sai số tuyệt đối.`]},
+  K04: {t: 'Số quy tròn', slide: '3. Quy tròn số gần đúng', items: [
+    R`Chữ số hàng làm tròn: giữ nguyên nếu chữ số ngay bên phải nhỏ hơn 5; tăng 1 nếu chữ số đó lớn hơn hoặc bằng 5. Chữ số sau hàng làm tròn: bỏ đi (phần thập phân) hoặc thay bằng 0 (phần nguyên).`,
+    R`- Sai số tuyệt đối của số quy tròn không vượt quá <b>nửa đơn vị</b> của hàng làm tròn.`,
+    R`- Cho ${m(R`a\pm d`)}, không nói rõ hàng: làm tròn ${m('a')} đến <b>hàng thấp nhất mà ${m('d')} nhỏ hơn 1 đơn vị của hàng đó</b>.`]},
+  K05: {t: 'Máy tính cầm tay', slide: '1. Chú ý · MTCT', items: [
+    R`Nhập biểu thức chứa ${m(R`\pi,\ \sqrt a,\ \sqrt[3]a`)} như bình thường; muốn lấy ${m('n')} chữ số thập phân: ${'<span class="keys"><span class="key sh">SHIFT</span><span class="key">MODE</span><span class="key">6</span><span class="key">n</span></span>'} (chế độ Fix, máy tự làm tròn).`]}};
+
+/* ---------- hình vẽ ---------- */
+/* ống đong: vạch 10..15 cm³; fine = có vạch 0,1; lv = mực nước */
+function cyl(x0, fine, lv, o = {}){
+  const Y = v => 400 - (v - 10) * 62, W = 140;
+  let g = `<rect class="wtr" x="${x0}" y="${Y(lv)}" width="${W}" height="${430 - Y(lv)}"/>` + L([x0, Y(lv)], [x0 + W, Y(lv)], 'wtop');
+  g += L([x0, 40], [x0, 430], 'cyl') + L([x0 + W, 40], [x0 + W, 430], 'cyl');
+  for (let v = 10; v <= 15; v++){ g += L([x0 + W - 60, Y(v)], [x0 + W, Y(v)], 'tick') + TX([x0 + W - 70, Y(v) + 10], String(v), 'tx', {a: 'end'}); }
+  if (fine) for (let k = 0; k <= 50; k++) if (k % 10) g += L([x0 + W - 22 - (k % 5 ? 0 : 10), Y(10 + k / 10)], [x0 + W, Y(10 + k / 10)], 'tick f');
+  g += TX([x0 + 30, 30], 'cm³', 'tx');
+  return g;
+}
+const fig51 = (lv = 13.08) => SV(520, 450, cyl(40, false, lv) + cyl(320, true, lv) + TX([110, 446], 'Trang', 'tx', {dy: 0}) + TX([390, 446], 'Hoà', 'tx'), 'Hình 5.1: hai ống đong, ống trái chia vạch 1 cm³, ống phải chia vạch 0,1 cm³');
+/* kính lúp HĐ3: vạch 13 và 13,1, mực nước ā */
+function fig52(lv = 13.07, o = {}){
+  const C = [330, 210], r = 160, Y = v => 320 - (v - 13) * 1800;
+  let g = `<defs><clipPath id="lup"><circle cx="${C[0]}" cy="${C[1]}" r="${r}"/></clipPath></defs>` + `<circle cx="${C[0]}" cy="${C[1]}" r="${r}" style="fill:var(--panel)"/>`;
+  g += `<g clip-path="url(#lup)"><rect class="wtr" x="${C[0] - r}" y="${Y(lv)}" width="${2 * r}" height="${400}"/>` + L([C[0] - r, Y(lv)], [C[0] + r, Y(lv)], 'wtop') + L([C[0] - 40, Y(13)], [C[0] + r, Y(13)], 'tick') + L([C[0] - 40, Y(13.1)], [C[0] + r, Y(13.1)], 'tick') + `</g>`;
+  g += `<circle cx="${C[0]}" cy="${C[1]}" r="${r}" class="lens" style="fill:none"/>` + L([C[0] + r * .72, C[1] + r * .72], [C[0] + r * 1.25, C[1] + r * 1.25], 'hdl');
+  [[13, '13'], [13.1, '13,1']].forEach(([v, s]) => { g += L([70, Y(v)], [C[0] - 40, Y(v)], 'mut dash') + TX([60, Y(v) + 10], s, 'tx', {a: 'end'}); });
+  g += L([70, Y(lv)], [C[0] - r + 10, Y(lv)], 'blue dash') + TX([60, Y(lv) + 10], 'ā', 'lab', {a: 'end'});
+  if (o.show){ g += ARW([110, Y(lv)], [110, Y(13.1)], 'green', {hl: 12, hw: 6}) + ARW([110, Y(13.1)], [110, Y(lv)], 'green', {hl: 12, hw: 6}) + ARW([150, Y(lv)], [150, Y(13)], 'red', {hl: 14, hw: 7}) + ARW([150, Y(13)], [150, Y(lv)], 'red', {hl: 14, hw: 7}); }
+  return SV(560, 420, g, 'Hình 5.2: kính lúp phóng to mực nước giữa vạch 13 và vạch 13,1');
+}
+/* đoạn [a − d; a + d] trên trục số */
+function ivl(a, d, x0, x1, step, o = {}){
+  const ticks = [], lab = o.lab || 0.5; for (let v = x0; v <= x1 + 1e-9; v += step){ const w = Math.round(v * 1000) / 1000; ticks.push([w, Math.abs(w / lab - Math.round(w / lab)) < 1e-6 && Math.abs(w - a) > 1e-6 ? vnn(w, 3) : '']); }
+  const N = NLINE(x0, x1, 60, 700, 150, {ticks}), X = N.X;
+  let g = `<rect class="band" x="${X(a - d)}" y="122" width="${X(a + d) - X(a - d)}" height="56" rx="8"/>` + N.g;
+  g += L([X(a - d), 104], [X(a - d), 196], 'gold th') + L([X(a + d), 104], [X(a + d), 196], 'gold th') + DOT([X(a), 150], 'gold');
+  g += TX([X(a - d), 94], vnn(a - d, 3), 'tx gold') + TX([X(a + d), 94], vnn(a + d, 3), 'tx gold') + TX([X(a), 236], 'a = ' + vnn(a, 3), 'tx gold');
+  if (o.bar != null){ const xb = X(o.bar); g += DOT([xb, 150], 'blue') + TX([xb, 284], 'ā', 'lab'); }
+  return SV(760, 300, g, 'Số đúng ā nằm trong đoạn [a − d; a + d]');
+}
+/* thước kẻ chia cm, vật dài t (cm) */
+function ruler(t){
+  const X = v => 50 + v * 66;
+  let g = `<rect class="rul" x="${X(0) - 20}" y="150" width="${X(10) - X(0) + 40}" height="90" rx="8"/>`;
+  for (let v = 0; v <= 10; v++) g += L([X(v), 150], [X(v), v % 5 ? 182 : 194], 'tick') + TX([X(v), 228], String(v), 'tx');
+  g += `<rect class="obj" x="${X(0)}" y="96" width="${X(t) - X(0)}" height="44" rx="6"/>`;
+  const rd = Math.round(t); g += L([X(rd), 70], [X(rd), 150], 'gold dash') + TX([X(rd), 60], 'đọc: ' + rd + ' cm', 'tx gold');
+  g += `<rect class="band blue" x="${X(rd - 0.5)}" y="244" width="${X(rd + .5) - X(rd - .5)}" height="20" rx="4"/>`;
+  return SV(760, 280, g, 'Thước chia vạch đến centimét');
+}
+/* làm tròn đến hàng chục trên trục số */
+function rnd10(x){
+  const N = NLINE(2340, 2370, 60, 700, 140, {ticks: [2340, 2350, 2360, 2370].map(v => [v, vnn(v)])}), X = N.X, r = Math.round(x / 10) * 10;
+  let g = N.g; [2345, 2355, 2365].forEach(v => { g += L([X(v), 110], [X(v), 170], 'mut dash'); });
+  g += `<rect class="band" x="${X(r - 5)}" y="118" width="${X(r + 5) - X(r - 5)}" height="44" rx="8" style="opacity:.55"/>` + DOT([X(x), 140], 'blue') + TX([X(x), 100], vnn(x, 1), 'tx blue');
+  if (Math.abs(x - r) > 0.6) g += ARW([X(x), 214], [X(r), 214], 'gold', {hl: 14, hw: 7});
+  g += DOT([X(r), 140], 'gold') + TX([X(r), 262], '≈ ' + vnn(r), 'tx gold');
+  return SV(760, 280, g, 'Làm tròn đến hàng chục: về mốc chục gần nhất');
+}
+/* đỉnh núi (bìa, mở đầu) */
+const everest = () => SV(560, 400, PG([[20, 380], [200, 150], [260, 200], [330, 70], [420, 180], [540, 380]], 'mtn') + PG([[300, 112], [330, 70], [362, 118], [340, 108], [326, 122]], 'snow') + L([330, 70], [470, 70], 'gold dash') + TX([480, 78], '8 848,86 m ?', 'tx gold', {a: 'start'}), 'Đỉnh Everest');
+
+/* ================= BÌA ================= */
+addSlide({label: 'Bìa', sec: -1, anchor: 'start', html: R`
+<div class="cover"><div>
+  <div class="avatar">${AVATAR}</div>
+  <p class="eb">Toán 10 · Chương V. Các số đặc trưng của mẫu số liệu không ghép nhóm</p>
+  <h1>Bài 12<span>Số gần đúng và sai số</span></h1>
+  <p class="sig">Bài giảng <b>Mr Black NBK</b></p></div>
+  <div class="cvr"><div class="fig">${fig51()}</div>
+  <div class="parts"><p class="pk">Chọn phần học</p></div></div>
+</div>`, note: 'Ba thẻ bên phải: bấm để vào thẳng một phần. Hình động trong bài: kính lúp đọc mực nước, đoạn [a − d; a + d] theo độ chính xác d, thước đo cm, làm tròn trên trục số.'});
+
+/* ================= KHỞI ĐỘNG ================= */
+addSlide({label: 'Mở đầu', sec: 0, anchor: 'k', html: hd(0, 'Đỉnh Everest cao bao nhiêu?') + R`
+${de('Mở đầu', R`Đỉnh Everest được mệnh danh là “nóc nhà của thế giới”, bởi đây là đỉnh núi cao nhất trên Trái Đất so với mực nước biển. Có rất nhiều con số khác nhau đã từng được công bố về chiều cao của đỉnh Everest: <b>8 848 m; 8 848,13 m; 8 844,43 m; 8 850 m;…</b> Vì sao lại có nhiều kết quả khác nhau như vậy và đâu là con số chính xác?`, {src: 'SGK tr.73', cls: 'sm'})}
+<div class="cols" style="grid-template-columns:560px 1fr;gap:26px">
+  <div class="fig">${everest()}</div>
+  <div class="stack"><div class="bubble" data-step="1">Mỗi lần đo dùng một phương pháp, một thiết bị, ở một thời điểm khác nhau… nên mỗi con số chỉ <b>xấp xỉ</b> chiều cao thật. Bài học hôm nay: <b>số gần đúng</b> và <b>sai số</b>.</div>
+  <div class="say" data-step="1"><div>Thống kê là cơ sở của khoa học. — Karl Pearson (1857 – 1936)</div></div></div>
+</div>`, note: 'Mở đầu SGK tr.73 và câu trích mở chương (Karl Pearson). Câu hỏi “đâu là con số chính xác?” được trả lời dần trong bài: ta không biết số đúng, chỉ biết số gần đúng cùng độ chính xác của nó.'});
+
+/* ================= 1. SỐ GẦN ĐÚNG ================= */
+addSlide({label: '1. HĐ1', sec: 1, anchor: 'm1', html: hd(1, 'HĐ1 · Con số nào gần nhất?') + R`
+${de('HĐ1', R`Ngày 8-12-2020, Trung Quốc và Nepal ra thông cáo chung khẳng định chiều cao mới đo được của đỉnh núi cao nhất thế giới Everest là <b>8 848,86 m</b>. (Theo <i>Tuoitre.vn</i>) Trong các số được đưa ra ở tình huống mở đầu, số nào gần nhất với số được công bố ở trên?`, {src: 'SGK tr.74'})}
+<div class="qa tight"><div class="q"><span>Số gần nhất với 8 848,86 m:</span>${CH('hd1', 'a', ['8 848 m', '8 848,13 m', '8 844,43 m', '8 850 m'])}</div></div>${FOOT('hd1')}
+<div class="calc3 sm" data-step="1"><div class="cr"><span>Khoảng cách tới 8 848,86: 0,86; <b>0,73</b>; 4,43; 1,14 (m).</span><span class="why">so sánh |x − 8 848,86|</span></div></div>`, note: 'Trạm dừng. |8 848 − 8 848,86| = 0,86; |8 848,13 − 8 848,86| = 0,73; |8 844,43 − 8 848,86| = 4,43; |8 850 − 8 848,86| = 1,14 ⇒ 8 848,13 m gần nhất. Bước 1 (sau trạm): bảng khoảng cách — đây là ý tưởng của “sai số tuyệt đối” ở Phần 2.',
+  init(sec){ addStations(sec, this, [{id: 'hd1', review: 'K01', items: [
+    {id: 'a', name: 'Gần nhất:', kind: 'choice', ans: 1, why: 'So sánh khoảng cách |x − 8 848,86| của từng số.', diag: v => v === 0 ? '8 848 cách 8 848,86 là 0,86 m; còn 8 848,13 chỉ cách 0,73 m.' : v === 3 ? '8 850 cách 8 848,86 là 1,14 m — chưa phải gần nhất.' : null, sol: '8 848,13 m (cách 0,73 m).'}]}]); }});
+
+addSlide({label: '1. HĐ2', sec: 1, html: hd(1, 'HĐ2 · Đo thể tích cốc nước') + R`
+<div class="cols" style="grid-template-columns:520px 1fr;gap:26px">
+  <div class="fig">${fig51()}</div>
+  <div class="stack">${de('HĐ2', 'Trang và Hoà thực hiện đo thể tích một cốc nước bằng hai ống đong có vạch chia được kết quả như Hình 5.1. Hãy cho biết số đo thể tích trên mỗi ống.', {src: 'SGK tr.74'})}
+    <div class="say" data-step="1"><div>Ống của Trang chia vạch <b>1 cm³</b>: đọc được khoảng <b>13 cm³</b>.</div><div>Ống của Hoà chia vạch <b>0,1 cm³</b>: mực nước gần vạch 13,1 nhất — đọc được <b>13,1 cm³</b> (HĐ3 sẽ phóng to: mực nước nằm giữa 13 và 13,1, sát 13,1).</div></div>
+    <div class="bubble" data-step="2">Cả hai kết quả đều chỉ <b>xấp xỉ</b> thể tích thật của cốc nước — ta không biết chính xác thể tích thật.</div>
+  </div>
+</div>`, note: 'HĐ2 SGK tr.74 (thầy hướng dẫn). Hình 5.1 của SGK in nhỏ: mực nước sát vạch 13; ống phải có vạch 0,1 nên đọc được chi tiết hơn (HĐ3 dùng kính lúp). Thông điệp: số đo chỉ là giá trị xấp xỉ.'});
+
+addSlide({label: '1. Số gần đúng', sec: 1, html: hd(1, 'Số đúng · Số gần đúng') + ghi(1, [R`Trong nhiều trường hợp, ta không biết hoặc khó biết số đúng (kí hiệu là ${m(R`\overline a`)}) mà chỉ tìm được giá trị khác xấp xỉ nó. Giá trị này được gọi là <b class="kw">số gần đúng</b>, kí hiệu là ${m('a')}.`, R`- Chẳng hạn, các số đo khác nhau về chiều cao của đỉnh Everest trong tình huống mở đầu đều là các số gần đúng.`]) + R`
+<div class="qa tight" data-step="2"><div class="q one"><span>? Hãy lấy một ví dụ khác về số gần đúng. Trong các số sau, số nào là <b>số gần đúng</b>?</span>${CH('sgd', 'a', ['Lớp 10A có 40 học sinh', 'Bạn An đo chiều cao được 1,62 m', 'Một tuần có 7 ngày'])}</div></div><div data-step="2">${FOOT('sgd')}</div>
+<div class="bubble" data-step="3">Số đo (cân, đo, ước lượng) và số làm tròn của số vô tỉ (${m(R`\pi\approx3{,}14`)}) thường là số gần đúng; số đếm chính xác và số theo định nghĩa là số đúng.</div>`, note: 'Khung SGK tr.74 (ghi vở, bước 1). Câu hỏi “?” SGK (bước 2, trạm dừng dạng chọn): kết quả đo chiều cao là số gần đúng; 40 học sinh (đếm) và 7 ngày (định nghĩa) là số đúng. Bước 3: chốt cách nhận biết.',
+  init(sec){ addStations(sec, this, [{id: 'sgd', gate: 2, review: 'K01', items: [
+    {id: 'a', name: '?', kind: 'choice', ans: 1, why: 'Kết quả của một phép <b>đo</b> chỉ xấp xỉ giá trị thật.', diag: v => v === 0 ? 'Đếm số học sinh cho kết quả chính xác — đó là số đúng.' : v === 2 ? '7 ngày là theo định nghĩa của tuần — số đúng.' : null, sol: 'Kết quả đo 1,62 m là số gần đúng.'}]}]); }});
+
+addSlide({label: '1. Ví dụ 1 · Luyện tập 1', sec: 1, html: hd(1, 'Ví dụ 1 · Luyện tập 1') + R`
+${de('Ví dụ 1', R`Gọi ${m('d')} là độ dài đường chéo của hình vuông cạnh bằng 1. Trong hai số ${m(R`\sqrt2`)} và 1,41, số nào là số đúng, số nào là số gần đúng của ${m('d')}?`, {src: 'SGK tr.74'})}
+<div class="cols" style="grid-template-columns:360px 1fr;gap:26px">
+  <div class="fig">${SV(360, 300, PL([[60, 260], [300, 260], [300, 20], [60, 20]], 'th', null, true) + L([60, 260], [300, 20], 'gold w5') + TX([180, 292], '1', 'tx') + TX([326, 150], '1', 'tx') + TX([164, 128], 'd', 'lab gold'), 'Hình vuông cạnh 1, đường chéo d')}</div>
+  <div class="calc3 sm"><div class="cr" data-step="1"><span>${m(R`d=1\cdot\sqrt2=\sqrt2`)}: ${m(R`\sqrt2`)} là <b>số đúng</b>;</span></div><div class="cr res" data-step="1"><span>1,41 là <b>số gần đúng</b> của ${m('d')}.</span></div></div>
+</div>
+${de('Luyện tập 1', R`Gọi ${m('P')} là chu vi của đường tròn bán kính 1 cm. Hãy tìm một giá trị gần đúng của ${m('P')}.`, {src: 'SGK tr.74', step: 2})}
+<div class="qa tight" data-step="2"><div class="q"><span>${m(R`P\approx`)} (cm, lấy 2 chữ số thập phân)</span>${IN('lt1', 'a', 150)}</div></div><div data-step="2">${FOOT('lt1')}</div>`, note: 'Ví dụ 1 (bước 1). Luyện tập 1 là trạm dừng (bước 2): P = 2π·1 = 2π (số đúng) ≈ 6,28 cm (số gần đúng). Nhận 6,28 hoặc 6,3 (sai lệch ≤ 0,02).',
+  init(sec){ addStations(sec, this, [{id: 'lt1', gate: 2, review: 'K01', items: [
+    {id: 'a', name: 'P ≈', ans: 2 * Math.PI, tol: 0.02, why: R`Chu vi đường tròn: ${m(R`P=2\pi R`)} với ${m('R=1')}.`, diag: v => near(v, Math.PI, 0.02) ? 'Đó là π. Chu vi là 2πR = 2π.' : null, sol: R`${m(R`P=2\pi\approx6{,}28`)} cm.`}]}]); }});
+
+addSlide({label: '1. Chú ý · Máy tính cầm tay', sec: 1, html: hd(1, 'Chú ý · Tính với số gần đúng bằng máy tính cầm tay') + R`
+<div class="kbox sm" style="font-size:26px"><b class="kw">Chú ý.</b> Ta có thể sử dụng máy tính cầm tay để tìm giá trị gần đúng của các biểu thức chứa các số vô tỉ như ${m(R`\pi,\ \sqrt a,\ \sqrt[3]a,\dots`)} Chẳng hạn, tính ${m(R`2^9\cdot\sqrt3`)}, bấm các phím:</div>
+<div class="keys" style="font-size:28px;margin:6px 0 0 20px"><span class="key">2</span><span class="key">x<sup>■</sup></span><span class="key">9</span><span class="key">▶</span><span class="key">×</span><span class="key">√■</span><span class="key">3</span><span class="key sh" data-step="1">SHIFT</span><span class="key sh" data-step="1">MODE</span><span class="key sh" data-step="1">6</span><span class="key sh" data-step="1">3</span><span class="key">=</span></div>
+<div class="cols" style="grid-template-columns:1fr 1fr;gap:24px">
+  <div class="say" data-step="1"><div><b class="gold-t">SHIFT MODE 6 3</b>: chế độ <b>Fix</b> — lấy 3 chữ số thập phân. Kết quả: <b>886,810</b>.</div></div>
+  <div class="qa tight" data-step="2"><div class="q"><span>Tính ${m(R`\sqrt3+\pi`)} (lấy 3 chữ số thập phân):</span>${IN('mt', 'a', 150)}</div></div>
+</div><div data-step="2">${FOOT('mt')}</div>`, note: 'Chú ý SGK tr.74; trình tự phím theo SGK (dòng máy fx-570VN Plus). Bước 1: giải thích SHIFT MODE 6 3 (Fix 3). Trạm dừng (bước 2): √3 + π = 1,7320508… + 3,1415926… = 4,8736… ≈ 4,874. Trình tự phím đúng như SGK tr.74 (fx-570VN Plus); dòng fx-580VN X đặt Fix ở SETUP (SHIFT MENU).',
+  init(sec){ addStations(sec, this, [{id: 'mt', gate: 2, review: 'K05', items: [
+    {id: 'a', name: 'Kết quả:', ans: 4.874, tol: 0.0004, why: 'Nhập √3 + π rồi để máy ở chế độ Fix 3.', diag: v => near(v, 4.87, 0.001) || near(v, 4.8736, 0.0001) ? 'Cần đúng 3 chữ số thập phân: 4,874.' : null, sol: '√3 + π ≈ 4,874'}]}]); }});
+
+/* ================= 2. SAI SỐ ================= */
+addSlide({label: '2. HĐ3 · Kính lúp', sec: 2, anchor: 'm2', html: hd(2, 'HĐ3 · Số đo nào gần hơn?') + R`
+<div class="cols" style="grid-template-columns:560px 1fr;gap:26px">
+  <div class="stack"><div class="fig" id="lpf" style="flex:0 0 420px;height:420px">${fig52()}</div></div>
+  <div class="stack">${de('HĐ3', R`Trong HĐ2, Hoà dùng kính lúp để quan sát mực nước trên ống đo thứ hai được hình ảnh như Hình 5.2. Kí hiệu ${m(R`\overline a`)} (cm³) là số đo thể tích của nước. Quan sát hình vẽ để so sánh ${m(R`|13-\overline a|`)} và ${m(R`|13{,}1-\overline a|`)} rồi cho biết trong hai số đo thể tích 13 cm³ và 13,1 cm³, số đo nào gần với thể tích của cốc nước hơn.`, {src: 'SGK tr.74', cls: 'sm'})}
+    <div class="qa tight"><div class="q"><span>${m(R`|13-\overline a|`)} … ${m(R`|13{,}1-\overline a|`)}</span>${CH('hd3', 'a', ['<', '>', '='])}</div>
+    <div class="q"><span>Số đo gần hơn:</span>${CH('hd3', 'b', ['13 cm³', '13,1 cm³'])}</div></div>
+  </div>
+</div>${FOOT('hd3')}`, note: 'Trạm dừng. Qua kính lúp: mực nước ā nằm giữa vạch 13 và 13,1, gần vạch 13,1 hơn ⇒ |13 − ā| > |13,1 − ā|; 13,1 cm³ gần hơn. Sau trạm: hình hiện hai đoạn (xanh lá: |13,1 − ā|, đỏ: |13 − ā|).',
+  init(sec){ addStations(sec, this, [{id: 'hd3', review: 'K02', onDone: s => { s.querySelector('#lpf').innerHTML = fig52(13.07, {show: 1}); }, items: [
+    {id: 'a', name: 'So sánh:', kind: 'choice', ans: 1, why: 'Đo khoảng cách từ mực nước ā tới từng vạch trên hình.', sol: '|13 − ā| > |13,1 − ā|'},
+    {id: 'b', name: 'Gần hơn:', kind: 'choice', ans: 1, why: 'Số đo nào có khoảng cách tới ā nhỏ hơn thì gần hơn.', sol: '13,1 cm³'}]}]); }});
+
+addSlide({label: '2. Sai số tuyệt đối', sec: 2, html: hd(2, 'Sai số tuyệt đối · Độ chính xác') + ghi(1, [R`Giá trị ${m(R`\Delta_a=|a-\overline a|`)} phản ánh mức độ sai lệch giữa số đúng ${m(R`\overline a`)} và số gần đúng ${m('a')}, được gọi là <b class="kw">sai số tuyệt đối</b> của số gần đúng ${m('a')}.`]) + R`
+<div class="cols" style="grid-template-columns:760px 1fr;gap:24px">
+  <div class="stack" data-step="2"><div class="fig" id="ivf" style="flex:0 0 300px;height:300px">${ivl(5, 0.2, 4.5, 5.5, 0.1)}</div>${SLIDER('ivd', 'Độ chính xác d', 0.1, 0.4, 0.1, 0.2)}</div>
+  <div class="kbox sm" data-step="2" style="font-size:23px"><b class="kw">Chú ý.</b> • Thực tế thường không biết ${m(R`\overline a`)} nên không biết ${m(R`\Delta_a`)}, nhưng có thể đánh giá ${m(R`\Delta_a`)} không vượt quá một số dương ${m('d')}. Ở HĐ3: ${m(R`|13{,}1-\overline a|<|13{,}1-13|=0{,}1`)}.<br>• Nếu ${m(R`\Delta_a\le d`)} thì ${m(R`a-d\le\overline a\le a+d`)}, ta viết ${m(R`\overline a=a\pm d`)}: số đúng nằm trong đoạn ${m('[a-d;\\,a+d]')}. Vì ${m('d')} càng nhỏ thì ${m('a')} càng gần ${m(R`\overline a`)} nên ${m('d')} được gọi là <b>độ chính xác</b> của số gần đúng.</div>
+</div>`, note: 'Khung SGK tr.74 (ghi vở, bước 1) + Chú ý tr.75 (bước 2). Hình động: a = 5, kéo d — đoạn vàng [a − d; a + d] là nơi chứa số đúng; d càng nhỏ, đoạn càng hẹp, a càng “chắc”.',
+  init(sec){ const f = sec.querySelector('#ivf'); bindRange(sec, 'ivd', v => { f.innerHTML = ivl(5, v, 4.5, 5.5, 0.1); }); }});
+
+addSlide({label: '2. Ví dụ 2', sec: 2, html: hd(2, 'Ví dụ 2 · Bao gạo 5 ± 0,2 kg') + R`
+${de('Ví dụ 2', R`Một công ty sử dụng dây chuyền A để đóng gạo vào bao với khối lượng mong muốn là 5 kg. Trên bao bì ghi thông tin khối lượng là <b>5 ± 0,2 kg</b>. Gọi ${m(R`\overline a`)} là khối lượng thực của một bao gạo do dây chuyền A đóng gói.`, {src: 'SGK tr.75', cls: 'sm', items: [['a)', 'Xác định số đúng, số gần đúng và độ chính xác.'], ['b)', R`Giá trị của ${m(R`\overline a`)} nằm trong đoạn nào?`]]})}
+<div class="cols" style="grid-template-columns:760px 1fr;gap:24px">
+  <div class="fig" data-step="2">${ivl(5, 0.2, 4.5, 5.5, 0.1)}</div>
+  <div class="calc3 sm"><div class="cr" data-step="1"><span>a) Số đúng: khối lượng thực ${m(R`\overline a`)}; số gần đúng: 5 (kg); độ chính xác ${m('d=0{,}2')} (kg).</span></div>
+  <div class="cr res" data-step="2"><span>b) ${m(R`\overline a\in[5-0{,}2;\,5+0{,}2]`)} hay ${m('[4{,}8;\\,5{,}2]')}.</span></div></div>
+</div>`, note: 'Lời giải SGK tr.75. Ta không biết khối lượng thực ā nhưng xem khối lượng bao là 5 kg nên 5 là số gần đúng.'});
+
+addSlide({label: '2. Luyện tập 2 · Thước đo', sec: 2, html: hd(2, 'Luyện tập 2 · Độ chính xác của phép đo') + R`
+${de('Luyện tập 2', 'Một phép đo đường kính nhân tế bào cho kết quả là 5 ± 0,3 µm. Đường kính thực của nhân tế bào thuộc đoạn nào?', {src: 'SGK tr.75'})}
+<div class="qa tight"><div class="q one inl"><span>Đoạn [ ${IN('lt2', 'a', 110)} ; ${IN('lt2', 'b', 110)} ] (µm)</span></div></div>${FOOT('lt2')}
+<div class="cols" data-step="1" style="grid-template-columns:760px 1fr;gap:24px">
+  <div class="stack"><div class="fig" id="rlf" style="flex:0 0 280px;height:280px">${ruler(6.8)}</div>${SLIDER('rlt', 'Độ dài thật', 6, 8, 0.1, 6.8, ' cm')}</div>
+  <div class="kbox sm" style="font-size:23px"><b class="kw">Chú ý.</b> Trong các phép đo, độ chính xác ${m('d')} của số gần đúng bằng <b>một nửa đơn vị</b> của thước đo. Thước chia vạch đến centimét thì mọi giá trị đo nằm giữa 6,5 cm và 7,5 cm đều được coi là 7 cm. Thước đo có thang đo càng nhỏ thì cho giá trị đo càng chính xác.</div>
+</div>`, note: 'Trạm dừng: [5 − 0,3; 5 + 0,3] = [4,7; 5,3] µm. Bước 1 (sau trạm): Chú ý SGK tr.75 kèm hình động thước chia cm — kéo độ dài thật, số đọc là vạch gần nhất; dải xanh dưới thước là [đọc − 0,5; đọc + 0,5].',
+  init(sec){ const f = sec.querySelector('#rlf'); bindRange(sec, 'rlt', v => { f.innerHTML = ruler(v); }, ' cm');
+    addStations(sec, this, [{id: 'lt2', review: 'K02', items: [
+      {id: 'a', name: 'Đầu trái:', ans: 4.7, why: 'a − d = 5 − 0,3.', diag: v => near(v, 4.8) ? '0,2 là độ chính xác của bao gạo; ở đây d = 0,3.' : null, sol: '4,7'},
+      {id: 'b', name: 'Đầu phải:', ans: 5.3, why: 'a + d = 5 + 0,3.', sol: '5,3 — đường kính thực thuộc [4,7; 5,3] µm.'}]}]); }});
+
+addSlide({label: '2. HĐ4 · Sai số tương đối', sec: 2, html: hd(2, 'HĐ4 · Dây chuyền nào tốt hơn?') + R`
+${de('HĐ4', 'Công ty (trong Ví dụ 2) cũng sử dụng dây chuyền B để đóng gạo với khối lượng mong muốn là 20 kg. Trên bao bì ghi thông tin khối lượng là 20 ± 0,5 kg. Khẳng định “Dây chuyền A tốt hơn dây chuyền B” là đúng hay sai?', {src: 'SGK tr.75', cls: 'sm'})}
+<div class="qa tight"><div class="q"><span>Khẳng định “A tốt hơn B” (vì 0,2 &lt; 0,5):</span>${CH('hd4', 'a', ['Đúng', 'Sai'])}</div></div>${FOOT('hd4')}
+<div class="say" data-step="1"><div>Độ chính xác của dây chuyền A nhỏ hơn, nhưng bao gạo của B nặng hơn nhiều, nên ta không dựa vào sai số tuyệt đối mà dựa vào <b>sai số tương đối</b> để so sánh.</div></div>` + ghi(2, [R`<b class="kw">Sai số tương đối</b> của số gần đúng ${m('a')}, kí hiệu là ${m(R`\delta_a`)}, là tỉ số giữa sai số tuyệt đối và ${m('|a|')}, tức là ${m(R`\delta_a=\dfrac{\Delta_a}{|a|}`)}.`]), note: 'Trạm dừng: “Sai”. Lí do (bước 1, đoạn SGK tr.75): bao B nặng gấp 4 lần nên sai lệch 0,5 kg “nhỏ” hơn so với 20 kg. Khung định nghĩa (ghi vở, bước 2).',
+  init(sec){ addStations(sec, this, [{id: 'hd4', review: 'K03', items: [
+    {id: 'a', name: 'Khẳng định:', kind: 'choice', ans: 1, why: 'Sai lệch 0,5 kg trên bao 20 kg so với sai lệch 0,2 kg trên bao 5 kg: phải so <b>tỉ lệ</b> sai lệch, không so riêng 0,2 và 0,5.', sol: 'Sai — cần so sánh sai số tương đối.'}]}]); }});
+
+function relBars(){
+  const X = p => 260 + p * 100; let g = '';
+  [[0, 'tx', '0%'], [1, 'tx', '1%'], [2, 'tx', '2%'], [3, 'tx', '3%'], [4, 'tx', '4%'], [5, 'tx', '5%']].forEach(([p, c, s]) => { g += L([X(p), 40], [X(p), 210], 'grid') + TX([X(p), 240], s, c); });
+  g += `<rect class="band" x="${X(0)}" y="60" width="${X(4) - X(0)}" height="50" rx="8"/>` + TX([240, 96], 'A: 0,2/5', 'tx', {a: 'end'}) + TX([X(4) + 14, 96], '4%', 'tx gold', {a: 'start'});
+  g += `<rect class="band blue" x="${X(0)}" y="140" width="${X(2.5) - X(0)}" height="50" rx="8"/>` + TX([240, 176], 'B: 0,5/20', 'tx', {a: 'end'}) + TX([X(2.5) + 14, 176], '2,5%', 'tx blue', {a: 'start'});
+  return SV(820, 260, g, 'So sánh sai số tương đối của hai dây chuyền');
+}
+addSlide({label: '2. Ví dụ 3', sec: 2, html: hd(2, 'Nhận xét · Ví dụ 3 · Dân số một tỉnh') + R`
+<div class="kbox sm" style="font-size:23px"><b class="kw">Nhận xét.</b> Nếu ${m(R`\overline a=a\pm d`)} thì ${m(R`\Delta_a\le d`)}, do đó ${m(R`\delta_a\le\dfrac{d}{|a|}`)}. Nếu ${m(R`\dfrac d{|a|}`)} càng nhỏ thì chất lượng của phép đo hay tính toán càng cao. Người ta thường viết sai số tương đối dưới dạng phần trăm.</div>
+${de('Ví dụ 3', 'Trong một cuộc điều tra dân số, người ta viết dân số của một tỉnh là: 3 574 625 người ± 50 000 người. Hãy đánh giá sai số tương đối của số gần đúng này.', {src: 'SGK tr.76', cls: 'sm'})}
+<div class="calc3 sm"><div class="cr res" data-step="1"><span>${m(R`\delta_a\le\dfrac{d}{|a|}=\dfrac{50\,000}{3\,574\,625}\approx1{,}4\%`)}.</span></div></div>`, note: 'Nhận xét + Ví dụ 3 SGK tr.76: δ ≤ 50 000/3 574 625 ≈ 0,01399 ≈ 1,4%.'});
+
+addSlide({label: '2. Luyện tập 3', sec: 2, html: hd(2, 'Luyện tập 3 · So sánh hai dây chuyền') + R`
+${de('Luyện tập 3', 'Đánh giá sai số tương đối của khối lượng bao gạo được đóng gói theo hai dây chuyền A, B ở Ví dụ 2 và HĐ4. Dựa trên tiêu chí này, dây chuyền nào tốt hơn?', {src: 'SGK tr.76'})}
+<div class="qa tight"><div class="q"><span>${m(R`\delta_A\le`)} (%)</span>${IN('lt3', 'a', 110)}</div><div class="q"><span>${m(R`\delta_B\le`)} (%)</span>${IN('lt3', 'b', 110)}</div><div class="q"><span>Tốt hơn:</span>${CH('lt3', 'c', ['Dây chuyền A', 'Dây chuyền B'])}</div></div>${FOOT('lt3')}
+<div class="fig" data-step="1" style="flex:0 0 170px;height:170px">${relBars()}</div>`, note: 'Trạm dừng: δA ≤ 0,2/5 = 4%; δB ≤ 0,5/20 = 2,5% ⇒ B tốt hơn. Bước 1 (sau trạm): thanh so sánh hai tỉ lệ. Nhận 4 hoặc 4% (ô nhập chấp nhận kí hiệu %).',
+  init(sec){ addStations(sec, this, [{id: 'lt3', review: 'K03', items: [
+    {id: 'a', name: 'δA:', ans: 4, tol: 0.001, why: R`${m(R`\dfrac{0{,}2}{5}=0{,}04`)} — viết dạng phần trăm.`, diag: v => near(v, 0.04) ? 'Đúng tỉ số 0,04 — đổi sang phần trăm: 4.' : null, sol: '0,2 : 5 = 4%'},
+    {id: 'b', name: 'δB:', ans: 2.5, tol: 0.001, why: R`${m(R`\dfrac{0{,}5}{20}`)}.`, diag: v => near(v, 0.025) ? 'Đổi 0,025 sang phần trăm: 2,5.' : null, sol: '0,5 : 20 = 2,5%'},
+    {id: 'c', name: 'Tốt hơn:', kind: 'choice', ans: 1, why: 'Sai số tương đối nhỏ hơn thì chất lượng cao hơn.', sol: 'Dây chuyền B (2,5% < 4%).'}]}]); }});
+
+/* ================= 3. QUY TRÒN ================= */
+addSlide({label: '3. Số quy tròn', sec: 3, anchor: 'm3', html: hd(3, 'Quy tròn số gần đúng') + R`
+<div class="say" style="font-size:24px"><div>Trong thực tế đo đạc và tính toán, nhiều khi ta chỉ cần biết giá trị gần đúng của một đại lượng với độ chính xác nào đó (kể cả khi biết được giá trị đúng của nó). Khi đó, để cho gọn, các số thường được làm tròn (còn gọi là quy tròn).</div></div>` + ghi(1, [R`Số thu được sau khi thực hiện làm tròn số được gọi là <b class="kw">số quy tròn</b>. Số quy tròn là một số gần đúng của số ban đầu.`, R`- Chữ số hàng làm tròn: <b>giữ nguyên</b> nếu chữ số ngay bên phải nó nhỏ hơn 5; <b>tăng 1 đơn vị</b> nếu chữ số ngay bên phải nó lớn hơn hoặc bằng 5.`, R`- Chữ số sau hàng làm tròn: <b>bỏ đi</b> nếu ở phần thập phân; <b>thay bởi các chữ số 0</b> nếu ở phần số nguyên.`]) + R`
+`, note: 'Đoạn dẫn + khung + quy tắc làm tròn SGK tr.76 (ghi vở).'});
+
+addSlide({label: '3. Ví dụ 4', sec: 3, html: hd(3, 'Ví dụ 4 · Thầy trò cùng làm') + R`
+${de('Ví dụ 4', '', {src: 'SGK tr.76', cls: 'sm xs', items: [['a)', R`Làm tròn số 2 359,3 đến hàng chục, số 18,693 đến hàng phần trăm và số đúng ${m(R`d\in[5{,}5;\,6{,}5)`)} đến hàng đơn vị. Đánh giá sai số tuyệt đối của phép làm tròn số đúng ${m('d')}.`], ['b)', R`Cho số gần đúng ${m('a=2{,}53')} với độ chính xác ${m('d=0{,}01')}. Số đúng ${m(R`\overline a`)} thuộc đoạn nào? Nếu làm tròn số ${m('a')} thì nên làm tròn đến hàng nào? Vì sao?`]]})}
+<div class="qa tight"><div class="q"><span>2 359,3 → hàng chục:</span>${IN('vd4', 'a', 150)}</div><div class="q"><span>18,693 → hàng phần trăm:</span>${IN('vd4', 'b', 150)}</div></div>${FOOT('vd4')}
+<div class="calc3 sm"><div class="cr" data-step="1"><span>Mọi ${m(R`d\in[5{,}5;\,6{,}5)`)} làm tròn đến hàng đơn vị đều được <b>6</b>, sai số ${m(R`|d-6|\le0{,}5`)}.</span></div>
+<div class="cr res" data-step="2"><span>b) ${m(R`\overline a\in[2{,}52;\,2{,}54]`)}. Nên làm tròn đến <b>hàng phần chục</b> vì chữ số hàng phần trăm của ${m('a')} là chữ số <b>không chắc chắn đúng</b>.</span></div></div>`, note: 'Hướng dẫn thực hành (thầy trò cùng làm): học sinh làm hai phép làm tròn đầu của Ví dụ 4a (trạm dừng): 2 359,3 → 2 360; 18,693 → 18,69. Thầy chốt phần còn lại (bước 1, 2) theo lời giải SGK tr.76: 2,52 ≤ ā ≤ 2,54 nên chữ số 3 (hàng phần trăm) có thể là 2, 3 hoặc 4.',
+  init(sec){ addStations(sec, this, [{id: 'vd4', review: 'K04', items: [
+    {id: 'a', name: 'Hàng chục:', ans: 2360, why: 'Chữ số hàng chục là 5, ngay bên phải là 9 ≥ 5 ⇒ tăng 1; phần sau thay bằng 0.', diag: v => near(v, 2350) ? 'Chữ số bên phải hàng chục là 9 ≥ 5 nên phải tăng lên.' : near(v, 2359) ? 'Đó là làm tròn đến hàng đơn vị.' : null, sol: '2 360'},
+    {id: 'b', name: 'Hàng phần trăm:', ans: 18.69, why: 'Chữ số ngay sau hàng phần trăm là 3 < 5 ⇒ giữ nguyên, bỏ phần sau.', diag: v => near(v, 18.7) ? '18,7 là làm tròn đến hàng phần chục.' : null, sol: '18,69'}]}]); }});
+
+addSlide({label: '3. Nhận xét · nửa đơn vị', sec: 3, html: hd(3, 'Sai số của số quy tròn') + ghi(1, [R`<b class="kw">Nhận xét.</b> Khi thay số đúng bởi số quy tròn đến một hàng nào đó thì sai số tuyệt đối của số quy tròn <b>không vượt quá nửa đơn vị</b> của hàng làm tròn.`]) + R`
+<div class="cols" data-step="2" style="grid-template-columns:760px 1fr;gap:24px">
+  <div class="stack"><div class="fig" id="r10f" style="flex:0 0 280px;height:280px">${rnd10(2359.3)}</div>${SLIDER('r10', 'Số cần làm tròn', 2340, 2369.9, 0.1, 2359.3)}</div>
+  <div class="stack"><div class="vstat gold" id="r10s" style="font-size:28px"></div><div class="bubble">Làm tròn đến hàng chục = về <b>mốc chục gần nhất</b>; khoảng cách tới mốc đó không quá <b>5</b> (nửa đơn vị hàng chục).</div></div>
+</div>`, note: 'Nhận xét thứ nhất SGK tr.76 (ghi vở, bước 1). Hình động (bước 2): kéo số cần làm tròn; vạch đứt là các điểm “…5”; dải vàng là các số có cùng số quy tròn; sai số luôn ≤ 5.',
+  init(sec){ const f = sec.querySelector('#r10f'), o = sec.querySelector('#r10s'); bindRange(sec, 'r10', v => { f.innerHTML = rnd10(v); const r = Math.round(v / 10) * 10; o.innerHTML = `${vnn(v, 1)} ≈ <b>${vnn(r)}</b><br>sai số ${vnn(Math.abs(v - r), 1)} ≤ 5`; }); }});
+
+addSlide({label: '3. Ví dụ 5', sec: 3, html: hd(3, 'Làm tròn theo độ chính xác') + ghi(1, [R`Cho số gần đúng ${m('a')} với độ chính xác ${m('d')}. Khi được yêu cầu làm tròn số ${m('a')} mà không nói rõ làm tròn đến hàng nào thì ta làm tròn số ${m('a')} đến <b>hàng thấp nhất mà ${m('d')} nhỏ hơn 1 đơn vị của hàng đó</b>.`]) + R`
+${de('Ví dụ 5', R`Cho số gần đúng ${m('a=581\\,268')} với độ chính xác ${m('d=200')}. Hãy viết số quy tròn của số ${m('a')}.`, {src: 'SGK tr.76', step: 2})}
+<div class="cols" style="grid-template-columns:1fr 1fr;gap:24px">
+  <div class="calc3 sm"><div class="cr" data-step="3"><span>${m('d=200')}: độ chính xác đến hàng trăm; ${m('200<1000')} ⇒ làm tròn đến <b>hàng nghìn</b>.</span></div><div class="cr res" data-step="4"><span>Số quy tròn của ${m('a')}: <b>581 000</b>.</span></div></div>
+  <div class="fig" data-step="3">${TBL([['Hàng', 'trăm', 'nghìn'], ['1 đơn vị', '100', '1 000'], ['d = 200 nhỏ hơn?', '✗', '✓']])}</div>
+</div>`, note: 'Nhận xét thứ hai SGK tr.76 (ghi vở, bước 1). Ví dụ 5 (bước 2–4): hàng thấp nhất mà 200 nhỏ hơn 1 đơn vị là hàng nghìn (200 không nhỏ hơn 100).'});
+
+addSlide({label: '3. Luyện tập 4', sec: 3, html: hd(3, 'Luyện tập 4 · Viết số quy tròn') + R`
+${de('Luyện tập 4', 'Hãy viết số quy tròn của số gần đúng trong những trường hợp sau:', {src: 'SGK tr.76', items: [['a)', '11 251 900 ± 300;'], ['b)', '18,2857 ± 0,01.']]})}
+<div class="qa tight"><div class="q"><span>a) Số quy tròn:</span>${IN('lt4', 'a', 200)}</div><div class="q"><span>b) Số quy tròn:</span>${IN('lt4', 'b', 200)}</div></div>${FOOT('lt4')}
+<div class="calc3 sm"><div class="cr" data-step="1"><span>a) ${m('300<1000')} ⇒ hàng nghìn: 11 25<b>1</b> 900 → <b>11 252 000</b>.</span></div><div class="cr res" data-step="1"><span>b) ${m('0{,}01<0{,}1')} ⇒ hàng phần chục: 18,<b>2</b>857 → <b>18,3</b>.</span></div></div>`, note: 'Trạm dừng. a) d = 300 < 1 000 ⇒ làm tròn đến hàng nghìn: 11 252 000. b) d = 0,01 < 0,1 ⇒ làm tròn đến hàng phần chục: 18,3.',
+  init(sec){ addStations(sec, this, [{id: 'lt4', review: 'K04', items: [
+    {id: 'a', name: 'a)', ans: 11252000, why: 'Hàng thấp nhất mà 300 nhỏ hơn 1 đơn vị của hàng đó là hàng nghìn.', diag: v => near(v, 11251900) || near(v, 11252000 - 100) ? 'Hàng trăm chưa được: 300 không nhỏ hơn 100. Làm tròn đến hàng nghìn.' : near(v, 11250000) ? 'Hàng chục nghìn là quá thô; chọn hàng thấp nhất có thể (hàng nghìn).' : null, sol: '11 252 000'},
+    {id: 'b', name: 'b)', ans: 18.3, why: 'Hàng thấp nhất mà 0,01 nhỏ hơn 1 đơn vị là hàng phần chục.', diag: v => near(v, 18.29) ? 'Hàng phần trăm chưa được: 0,01 không nhỏ hơn 0,01.' : null, sol: '18,3'}]}]); }});
+
+addSlide({label: '3. Vận dụng', sec: 3, html: hd(3, 'Vận dụng · Tuổi của vũ trụ') + R`
+${de('Vận dụng', 'Các nhà vật lí sử dụng hai phương pháp khác nhau để đo tuổi của vũ trụ (đơn vị tỉ năm) lần lượt cho hai kết quả là: 13,807 ± 0,026 và 13,799 ± 0,021. Hãy đánh giá sai số tương đối của mỗi phương pháp. Căn cứ trên tiêu chí này, phương pháp nào cho kết quả chính xác hơn?', {src: 'SGK tr.77'})}
+<div class="qa tight"><div class="q"><span>${m(R`\delta_1\le`)} (%, làm tròn đến hàng phần trăm)</span>${IN('vd', 'a', 120)}</div><div class="q"><span>${m(R`\delta_2\le`)} (%, làm tròn đến hàng phần trăm)</span>${IN('vd', 'b', 120)}</div><div class="q"><span>Chính xác hơn:</span>${CH('vd', 'c', ['Phương pháp 1', 'Phương pháp 2'])}</div></div>${FOOT('vd')}
+<div class="bubble" data-step="1">Trở lại câu hỏi mở đầu: các con số về chiều cao Everest đều là <b>số gần đúng</b> (đo ở những thời điểm, phương pháp khác nhau). Ta không nói được “con số chính xác”, chỉ so sánh được độ chính xác của các phép đo.</div>`, note: 'Trạm dừng. δ1 ≤ 0,026/13,807 ≈ 0,19%; δ2 ≤ 0,021/13,799 ≈ 0,15% ⇒ phương pháp 2 chính xác hơn. Bước 1: trả lời câu hỏi mở đầu bài.',
+  init(sec){ addStations(sec, this, [{id: 'vd', review: 'K03', items: [
+    {id: 'a', name: 'δ1:', ans: 0.19, tol: 0.006, why: R`${m(R`\dfrac{0{,}026}{13{,}807}`)} rồi đổi sang phần trăm.`, diag: v => near(v, 0.0019, 0.0001) ? 'Đổi sang phần trăm: nhân 100.' : null, sol: '0,026 : 13,807 ≈ 0,19%'},
+    {id: 'b', name: 'δ2:', ans: 0.15, tol: 0.006, why: R`${m(R`\dfrac{0{,}021}{13{,}799}`)} rồi đổi sang phần trăm.`, sol: '0,021 : 13,799 ≈ 0,15%'},
+    {id: 'c', name: 'Kết luận:', kind: 'choice', ans: 1, why: 'Sai số tương đối nhỏ hơn thì chính xác hơn.', sol: 'Phương pháp 2.'}]}]); }});
+
+/* ================= MẸO ================= */
+addSlide({label: 'Mẹo nhìn nhanh', sec: 3, html: hd(3, '⚡ Mẹo nhìn nhanh · bấm máy · đề xuất') + R`
+<div class="stack" style="gap:18px">
+  <div class="tipbox" data-step="1"><b>⚡ Mẹo 1 · Đọc nhanh a ± d</b>${m(R`\overline a=a\pm d`)} ⇔ số đúng nằm trong đoạn “tâm ${m('a')}, bán kính ${m('d')}”: ${m('[a-d;\\,a+d]')}.</div>
+  <div class="tipbox" data-step="2"><b>⚡ Mẹo 2 · Chọn hàng làm tròn</b>Nhìn chữ số khác 0 đầu tiên của ${m('d')}: nó ở hàng nào thì làm tròn ${m('a')} đến <b>hàng ngay trên</b>. ${m('d=300')} (trăm) → hàng nghìn; ${m('d=0{,}01')} (phần trăm) → hàng phần chục.</div>
+  <div class="tipbox" data-step="3"><b>⚡ Mẹo 3 · So sánh hai phép đo</b>Khác độ lớn ⇒ so ${m(R`\dfrac d{|a|}`)}. Nhẩm: ${m(R`\dfrac{0{,}2}{5}=\dfrac{4}{100}`)}, ${m(R`\dfrac{0{,}5}{20}=\dfrac{2{,}5}{100}`)}.</div>
+  <div class="tipbox" data-step="4"><b>⚡ Bấm máy</b><span class="keys"><span class="key sh">SHIFT</span><span class="key">MODE</span><span class="key">6</span><span class="key">n</span></span> (Fix ${m('n')}): máy tự làm tròn kết quả đến ${m('n')} chữ số thập phân. Về chế độ thường: <span class="keys"><span class="key sh">SHIFT</span><span class="key">MODE</span><span class="key">8</span></span> (Norm). Dòng fx-580VN X: vào SETUP (SHIFT MENU) → định dạng số → Fix.</div>
+</div>`, note: 'Các mẹo là ĐỀ XUẤT của Mr Black (không có trong SGK) — thầy chọn giữ/bỏ. Mẹo 2 tương đương quy tắc SGK “hàng thấp nhất mà d nhỏ hơn 1 đơn vị của hàng đó”. Phím Norm (SHIFT MODE 8, fx-570VN Plus) và menu fx-580VN X (SETUP = SHIFT MENU, mục định dạng số Fix/Sci/Norm) theo Hướng dẫn sử dụng CASIO; thao tác trên máy thật NOT_CHECKED.'});
+
+/* ================= TỔNG KẾT ================= */
+addSlide({label: 'Tổng kết', sec: 4, anchor: 'sum', html: hd(4, 'Bài 12 trên một trang vở') + R`
+<div class="map"><svg aria-hidden="true" preserveAspectRatio="none" viewBox="0 0 100 100"><path d="M50 50 L22 25 M50 50 L78 25 M50 50 L22 75 M50 50 L78 75" stroke="var(--gold)" fill="none" vector-effect="non-scaling-stroke" style="stroke-width:3px"/></svg>
+  <div class="node" style="grid-column:1;grid-row:1"><b>1. Số gần đúng</b>Số đúng ${m(R`\overline a`)} (thường không biết)<br>số gần đúng ${m('a')}: số đo, số làm tròn</div>
+  <div class="node" style="grid-column:3;grid-row:1"><b>2. Sai số tuyệt đối</b>${m(R`\Delta_a=|a-\overline a|`)}<br>${m(R`\overline a=a\pm d\Leftrightarrow\overline a\in[a-d;\,a+d]`)}</div>
+  <div class="node c">SỐ GẦN ĐÚNG<br>VÀ SAI SỐ</div>
+  <div class="node" style="grid-column:1;grid-row:2"><b>3. Sai số tương đối</b>${m(R`\delta_a=\dfrac{\Delta_a}{|a|}\le\dfrac{d}{|a|}`)} (%)<br>nhỏ hơn ⇒ chính xác hơn</div>
+  <div class="node" style="grid-column:3;grid-row:2"><b>4. Quy tròn</b>sai số ≤ nửa đơn vị hàng làm tròn<br>hàng thấp nhất mà ${m('d')} &lt; 1 đơn vị</div>
+</div>`, note: 'Học sinh chép sơ đồ. Bấm ▶ sang Exit ticket.'});
+
+addSlide({label: 'Exit ticket', sec: 4, html: hd(4, 'Exit ticket · Kiểm tra nhanh') + R`
+<div class="qa tight" style="flex:0 0 auto">
+  <div class="q"><span>a) ${m(R`\overline a=3{,}14\pm0{,}02`)}. Đầu mút phải của đoạn chứa ${m(R`\overline a`)}:</span>${IN('ex', 'a', 140)}</div>
+  <div class="q"><span>b) Sai số tương đối của 250 ± 2 không vượt quá (%):</span>${IN('ex', 'b', 140)}</div>
+  <div class="q"><span>c) Số quy tròn của 4 736 512 ± 300:</span>${IN('ex', 'c', 200)}</div>
+  <div class="q"><span>d) Làm tròn 0,4572 đến hàng phần trăm:</span>${IN('ex', 'd', 140)}</div>
+</div>${FOOT('ex')}`, note: 'Trạm dừng cuối bài. a) 3,14 + 0,02 = 3,16. b) 2/250 = 0,8%. c) 300 < 1 000 ⇒ hàng nghìn: 4 737 000. d) chữ số sau hàng phần trăm là 7 ≥ 5 ⇒ 0,46.',
+  init(sec){ addStations(sec, this, [{id: 'ex', review: 'K04', items: [
+    {id: 'a', name: 'a)', ans: 3.16, review: 'K02', why: 'Đoạn [a − d; a + d].', diag: v => near(v, 3.12) ? 'Đó là đầu mút trái.' : null, sol: '3,16'},
+    {id: 'b', name: 'b)', ans: 0.8, tol: 0.001, review: 'K03', why: 'd : |a| rồi đổi sang phần trăm.', diag: v => near(v, 0.008) ? 'Đổi sang phần trăm: 0,8.' : null, sol: '2 : 250 = 0,8%'},
+    {id: 'c', name: 'c)', ans: 4737000, why: '300 < 1 000: làm tròn đến hàng nghìn.', diag: v => near(v, 4736500) ? 'Hàng trăm chưa được vì 300 không nhỏ hơn 100.' : near(v, 4736000) ? 'Chữ số ngay sau hàng nghìn là 5 ⇒ tăng 1.' : null, sol: '4 737 000'},
+    {id: 'd', name: 'd)', ans: 0.46, why: 'Chữ số ngay sau hàng phần trăm là 7 ≥ 5.', diag: v => near(v, 0.45) ? '7 ≥ 5 nên phải tăng chữ số hàng phần trăm.' : null, sol: '0,46'}]}]); }});
+
+addSlide({label: 'Bài tập về nhà', sec: 4, anchor: 'btvn', html: hd(4, 'Bài tập về nhà') + R`
+${de('5.1', 'Trong các số sau, những số nào là số gần đúng?', {items: [['a)', 'Cân một túi gạo cho kết quả là 10,2 kg.'], ['b)', 'Bán kính Trái Đất là 6 371 km.'], ['c)', 'Trái Đất quay một vòng quanh Mặt Trời mất 365 ngày.']], src: 'SGK tr.77', cls: 'sm xs'})}
+${de('5.2', 'Giải thích kết quả “Đo độ cao của một ngọn núi cho kết quả là 1 235 ± 5 m” và thực hiện làm tròn số gần đúng.', {src: 'SGK tr.77', cls: 'sm xs'})}
+${de('5.3', R`Sử dụng máy tính cầm tay tìm số gần đúng cho ${m(R`\sqrt[3]7`)} với độ chính xác 0,0005.`, {src: 'SGK tr.77', cls: 'sm xs'})}
+${de('5.4', 'Các nhà vật lí sử dụng ba phương pháp đo hằng số Hubble lần lượt cho kết quả như sau: 67,31 ± 0,96; 67,90 ± 0,55; 67,74 ± 0,46. Phương pháp nào chính xác nhất tính theo sai số tương đối?', {src: 'SGK tr.77', cls: 'sm xs'})}
+${de('5.5', R`An và Bình cùng tính chu vi của hình tròn bán kính 2 cm với hai kết quả: An: ${m(R`S_1=2\pi R\approx2\cdot3{,}14\cdot2=12{,}56`)} cm; Bình: ${m(R`S_2=2\pi R\approx2\cdot3{,}1\cdot2=12{,}4`)} cm.`, {items: [['a)', R`Hai giá trị tính được có phải là các số gần đúng không?`], ['b)', R`Giá trị nào chính xác hơn?`]], src: 'SGK tr.77', cls: 'sm xs'})}
+${de('5.6', 'Làm tròn số 8 316,4 đến hàng chục và 9,754 đến hàng phần trăm rồi tính sai số tuyệt đối của số quy tròn.', {src: 'SGK tr.77', cls: 'sm xs'})}`,
+  note: 'Đáp số (chỉ GV): 5.1 cả ba đều là số gần đúng. 5.2 độ cao thực thuộc [1 230; 1 240] m; d = 5 < 10 ⇒ làm tròn đến hàng chục: 1 240 m. 5.3 ∛7 = 1,91293… ≈ 1,913 (Fix 3; 0,0005 < 0,001). 5.4 0,96/67,31 ≈ 1,43%; 0,55/67,90 ≈ 0,81%; 0,46/67,74 ≈ 0,68% ⇒ phương pháp thứ ba. 5.5 a) có; b) An (3,14 gần π hơn 3,1). 5.6 8 320, sai số 3,6; 9,75, sai số 0,004.'});
+
+addSlide({label: 'Kết thúc', sec: -1, html: R`
+<div class="cover"><div>
+  <div class="avatar">${AVATAR}</div>
+  <p class="eb">Hẹn gặp lại ở Bài 13 · Các số đặc trưng đo xu thế trung tâm</p>
+  <h1 style="font-size:84px">Số gần đúng<span>và sai số</span></h1>
+  <p class="sig">Bài giảng <b>Mr Black NBK</b></p></div>
+  <div class="say"><div>Chép sơ đồ tổng kết vào vở.</div><div>Làm Bài tập 5.1 – 5.6 (đề ở slide trước).</div><div>Tìm trên bao bì ở nhà một số ghi dạng a ± d (khối lượng, thể tích…). Tính sai số tương đối của nó.</div>
+  <div class="row" style="border:0;background:none;padding:0"><button class="btn" type="button" data-go="sum">★ Sơ đồ bài học</button><button class="btn" type="button" data-go="start">↺ Về đầu bài</button></div></div>
+</div>`});
+
+/* ================= ĐIỀU HƯỚNG ================= */
+const secsEl = $('#secs'); SECS.forEach(t => { const s = document.createElement('span'); s.textContent = t; secsEl.appendChild(s); });
+function go(n, step = 0){
+  n = Math.max(0, Math.min(slides.length - 1, n));
+  spot(null);
+  slides[S.cur].el.hidden = true; S.cur = n; const s = slides[n]; s.el.hidden = false; s.el.classList.remove('fade'); void s.el.offsetWidth; s.el.classList.add('fade');
+  $('#nlabel').textContent = s.label; $('#ncount').textContent = `${n + 1} / ${slides.length}`;
+  $('#pbar').style.width = (n / (slides.length - 1) * 100) + '%'; $('#prev').disabled = n === 0;
+  [...secsEl.children].forEach((e, j) => { e.className = j === s.sec ? 'cur' : (j < s.sec ? 'done' : ''); });
+  secsEl.style.visibility = s.sec < 0 ? 'hidden' : 'visible';
+  $('#menu').hidden = true; modal.hidden = true; if (backTo < 0) backBtn.hidden = true; setStep(step === 'end' ? s.max : step);
+  voOnGo(step);
+}
+const fwd = () => { if (voInterceptFwd()) return; stepFwd(); };
+const stepFwd = () => { if (blocked()){ lockChip.classList.remove('shake'); void lockChip.offsetWidth; lockChip.classList.add('shake'); return; } const s = slides[S.cur]; if (S.step < s.max) setStep(S.step + 1); else go(S.cur + 1); };
+const back = () => { if (VO.phase !== 'rec') voStop(); if (S.step > 0) setStep(S.step - 1); else if (S.cur > 0) go(S.cur - 1, 'end'); };
+const goAnchor = a => { const k = slides.findIndex(s => s.anchor === a); if (k >= 0) go(k); };
+spotBox.addEventListener('click', e => { e.stopPropagation(); if (S.spot) stepFwd(); }, true);
+document.addEventListener('click', e => { const b = e.target.closest('[data-go]'); if (b) goAnchor(b.dataset.go); });
+$('#next').addEventListener('click', fwd); $('#prev').addEventListener('click', back);
+document.addEventListener('keydown', e => {
+  if (e.target.closest('input')) return;
+  if (['ArrowRight', 'PageDown', ' ', 'Enter'].includes(e.key) && !(e.key === 'Enter' && e.target.closest('button,[tabindex]'))){ fwd(); e.preventDefault(); }
+  else if (['ArrowLeft', 'PageUp'].includes(e.key)){ back(); e.preventDefault(); }
+  else if (e.key === 'Escape'){ $('#menu').hidden = true; if (!modal.hidden) closeModal(); else spot(null); }
+});
+(function(){ const mn = $('#menu'), g = h('<div class="mgrid"></div>'); mn.appendChild(g);
+  META.menu.forEach(([a, t]) => g.appendChild(h(`<button type="button" data-go="${a}">${t}</button>`))); })();
+$('#btn-menu').addEventListener('click', () => { $('#menu').hidden = !$('#menu').hidden; });
+$('#btn-fs').addEventListener('click', () => { try { if (document.fullscreenElement || document.webkitFullscreenElement) { const x = document.exitFullscreen || document.webkitExitFullscreen; const p = x.call(document); if (p && p.catch) p.catch(() => {}); } else { const r = document.documentElement, q = r.requestFullscreen || r.webkitRequestFullscreen; if (!q) { window.mbFsHint(); return; } const p = q.call(r); if (p && p.catch) p.catch(() => {}); } } catch (e) {} });
+document.addEventListener('fullscreenchange', () => setTimeout(fit, 60));
+$('#btn-gv').addEventListener('click', () => { if ($('#btn-gv').disabled) return; S.teacher = !S.teacher; document.body.classList.toggle('gv', S.teacher); $('#btn-gv').setAttribute('aria-pressed', String(S.teacher)); gateUI(); });
+let light = document.documentElement.getAttribute('data-mb') === 'light';
+const themeLabel = () => { $('#btn-theme').textContent = light ? 'Nền: Sáng' : 'Nền: Tối'; }; themeLabel();
+$('#btn-theme').addEventListener('click', () => { light = !light; if (light) document.documentElement.setAttribute('data-mb', 'light'); else document.documentElement.removeAttribute('data-mb'); themeLabel(); });
+
+/* ---------- WAudio: phát lời giảng nhúng sẵn (data URI) bằng Web Audio ---------- */
+const WA = {ctx: null, cache: {}};
+function waCtx(){
+  if (!WA.ctx){ const C = window.AudioContext || window.webkitAudioContext; if (!C) return null; WA.ctx = new C(); }
+  if (WA.ctx.state === 'suspended'){ try { WA.ctx.resume(); } catch (e) {} }
+  return WA.ctx;
+}
+function waDecode(uri){
+  if (WA.cache[uri]) return WA.cache[uri];
+  const c = waCtx(); if (!c) return Promise.reject(new Error('no-webaudio'));
+  const b64 = uri.slice(uri.indexOf(',') + 1), bin = atob(b64), u8 = new Uint8Array(bin.length);
+  for (let i = 0; i < bin.length; i++) u8[i] = bin.charCodeAt(i);
+  WA.cache[uri] = new Promise((ok, bad) => { const r = c.decodeAudioData(u8.buffer, ok, bad); if (r && r.then) r.then(ok, bad); });
+  return WA.cache[uri];
+}
+class WAudio {
+  constructor(){ this._src = ''; this.buf = null; this.node = null; this.off = 0; this.t0 = 0; this.paused = true; this.readyState = 0; this.L = {}; this._gen = 0; }
+  addEventListener(t, f, o){ (this.L[t] = this.L[t] || []).push({f, once: !!(o && o.once)}); }
+  _emit(t){ const ls = this.L[t] || []; this.L[t] = ls.filter(x => !x.once); ls.forEach(x => { try { x.f.call(this, {type: t}); } catch (e) { console.error(e); } }); }
+  get src(){ return this._src; }
+  set src(v){ this._stop(); this._src = v || ''; this.buf = null; this.readyState = 0; this.off = 0; this.paused = true; const g = ++this._gen; if (!v) return;
+    waDecode(v).then(b => { if (g !== this._gen) return; this.buf = b; this.readyState = 4; this._emit('loadedmetadata'); }).catch(e => console.error('Không giải mã được lời giảng', e)); }
+  get duration(){ return this.buf ? this.buf.duration : NaN; }
+  get currentTime(){ if (!this.paused && this.node && WA.ctx) return Math.min(this.duration || 0, this.off + (WA.ctx.currentTime - this.t0)); return this.off; }
+  set currentTime(t){ t = Math.max(0, +t || 0); const was = !this.paused; this._stop(); this.off = t; if (was) this._start(); }
+  _stop(){ if (this.node){ const n = this.node; this.node = null; n.onended = null; try { n.stop(); } catch (e) {} if (WA.ctx) this.off = Math.min(this.duration || 0, this.off + (WA.ctx.currentTime - this.t0)); } }
+  _start(){ const c = waCtx(); if (!c || !this.buf) return; if (this.off >= this.buf.duration - 0.01) this.off = 0;
+    const n = c.createBufferSource(); n.buffer = this.buf; n.connect(c.destination);
+    n.onended = () => { if (this.node !== n) return; this.node = null; this.off = this.buf.duration; this.paused = true; this._emit('ended'); };
+    this.node = n; this.t0 = c.currentTime; n.start(0, this.off); this.paused = false; }
+  play(){ const c = waCtx(); if (!c) return Promise.reject(Object.assign(new Error('no audio'), {name: 'NotSupportedError'}));
+    if (!this.paused) return Promise.resolve(); this.paused = false;
+    const go2 = () => new Promise(ok => { if (this.paused) return ok(); this.paused = true; this._start(); ok(); });
+    if (this.buf) return go2(); return new Promise((ok, bad) => this.addEventListener('loadedmetadata', () => go2().then(ok, bad), {once: true})); }
+  pause(){ if (this.paused) return; this._stop(); this.paused = true; }
+}
+
+/* ================= LỜI GIẢNG CỦA THẦY =================
+   Có audio: vào slide là phát A01; bước hiện theo mốc ▶; trạm dừng thì chờ, làm đúng phát A02; ghi vở chờ học sinh chạm.
+   Chưa có audio (bản này): bài giảng điều khiển hoàn toàn bằng ▶; thanh dưới ghi "🎙 Chưa gắn lời giảng". */
+const HAS_VO = Object.keys(VO_SRC).length > 0;
+const VO = {au: new WAudio(), started: false, auto: true, phase: 'idle', slide: -1, raf: 0, timer: 0, recT: null};
+const voKey = i => 'N' + String(i + 1).padStart(2, '0');
+const voData = () => VO_DATA[voKey(S.cur)] || {cues: [], dur: 0};
+const VO_MANUAL_END = new Set(slides.map((s, i) => ['Tổng kết', 'Kết thúc'].includes(s.label) ? voKey(i) : null).filter(Boolean));
+function voOverride(){ try { const v = localStorage.getItem(META.pkey + '-cues-' + voKey(S.cur)); return v ? JSON.parse(v) : null; } catch (e) { return null; } }
+const voCues = () => voOverride() || voData().cues;
+function voLoad(){ if (VO.slide !== S.cur){ VO.au.src = VO_SRC[voKey(S.cur)]; VO.slide = S.cur; } }
+function voPlayFrom(t, phase){
+  clearTimeout(VO.timer);
+  if (!VO_SRC[voKey(S.cur)]){ VO.phase = 'idle'; voUI(); return; }
+  voLoad(); VO.phase = phase;
+  const tok = VO.tok = (VO.tok || 0) + 1;
+  const start = () => { if (tok !== VO.tok) return; try { VO.au.currentTime = t; } catch (e) {} const p = VO.au.play(); if (p && p.catch) p.catch(() => { if (tok === VO.tok){ VO.phase = 'idle'; voUI(); } }); voLoop(); voUI(); };
+  if (VO.au.readyState >= 1) start(); else VO.au.addEventListener('loadedmetadata', start, {once: true});
+}
+function voStop(phase){ VO.tok = (VO.tok || 0) + 1; VO.au.pause(); cancelAnimationFrame(VO.raf); clearTimeout(VO.timer); VO.phase = phase || 'idle'; voUI(); }
+function voLoop(){
+  cancelAnimationFrame(VO.raf);
+  const tick = () => {
+    if (VO.au.paused) return;
+    const d = voData(), t = VO.au.currentTime;
+    if (VO.phase !== 'rec') voCues().forEach(c => { if (t >= c.t && c.step > S.step && !blocked()) setStep(c.step); });
+    if (VO.phase === 'a1' && d.a1End && t >= d.a1End){ if (blocked()){ VO.au.pause(); VO.phase = 'wait'; voUI(); return; } VO.au.currentTime = d.a2Start; VO.phase = 'a2'; }
+    VO.raf = requestAnimationFrame(tick);
+  };
+  VO.raf = requestAnimationFrame(tick);
+}
+VO.au.addEventListener('ended', () => { if (VO.phase === 'rec'){ voRecFinish(); return; } VO.phase = 'done'; voUI(); voNext(); });
+function voNext(){
+  clearTimeout(VO.timer);
+  if (!VO.started || !VO.auto || VO.phase !== 'done') return;
+  if (S.spot || blocked() || !modal.hidden || backTo >= 0) return;
+  const s = slides[S.cur];
+  if (S.step < s.max){ VO.timer = setTimeout(() => { if (VO.phase === 'done' && !S.spot && !blocked()) stepFwd(); }, 1200); return; }
+  if (VO_MANUAL_END.has(voKey(S.cur)) || S.cur === slides.length - 1) return;
+  VO.timer = setTimeout(() => { if (VO.phase === 'done' && !S.spot && !blocked() && modal.hidden) go(S.cur + 1); }, 1500);
+}
+function voAfterStep(){ if (VO.phase === 'done') voNext(); }
+function voOnGo(step){
+  VO.au.pause(); cancelAnimationFrame(VO.raf); clearTimeout(VO.timer); VO.phase = 'idle';
+  if (VO.skipNext){ VO.skipNext = false; voUI(); return; }
+  if (VO.started && VO.auto && (step !== 'end' || backTo >= 0)) voPlayFrom(0, 'a1'); else voUI();
+}
+function voInterceptFwd(){
+  if (VO.phase === 'rec'){ if (S.step >= slides[S.cur].max) return true; VO.recT.push({t: +VO.au.currentTime.toFixed(2), step: S.step + 1}); return false; }
+  if (VO.au.paused || !['a1', 'a2'].includes(VO.phase)) return false;
+  const t = VO.au.currentTime, c = voCues().find(c => c.step > S.step && c.t > t);
+  if (c && !blocked() && (VO.phase !== 'a1' || !voData().a1End || c.t < voData().a1End)){ VO.au.currentTime = c.t; setStep(c.step); return true; }
+  voStop('done'); return false;
+}
+document.addEventListener('station-done', () => { const d = voData(); if (!d.a2Start || !VO.started) return; if (VO.phase === 'wait' || (VO.auto && VO.phase !== 'a1')) voPlayFrom(d.a2Start, 'a2'); });
+const voBar = h(HAS_VO ? `<span class="vobar"><button class="nbtn" id="vo-play" type="button" title="Nghe / tạm dừng lời giảng">▶ Nghe</button><button class="nbtn" id="vo-replay" type="button" aria-label="Nghe lại slide này">↺</button><button class="nbtn" id="vo-auto" type="button" aria-pressed="true">Tự chạy: Bật</button><button class="nbtn" id="vo-rec" type="button">⏺ Chỉnh mốc</button></span>`
+  : `<span class="vobar"><span class="nomic" title="Bản thiết kế: chưa gắn file thu âm lời giảng">🎙 Chưa gắn lời giảng</span></span>`);
+$('#btn-menu').before(voBar);
+function voUI(){
+  if (!HAS_VO) return;
+  const playing = !VO.au.paused && VO.phase !== 'idle';
+  $('#vo-play').textContent = VO.phase === 'rec' ? '■ Xong' : playing ? '⏸ Dừng' : '▶ Nghe';
+  $('#vo-auto').textContent = 'Tự chạy: ' + (VO.auto ? 'Bật' : 'Tắt'); $('#vo-auto').setAttribute('aria-pressed', String(VO.auto));
+  $('#vo-rec').classList.toggle('on', VO.phase === 'rec');
+  document.body.classList.toggle('vo-on', playing);
+}
+if (HAS_VO){
+  $('#vo-play').addEventListener('click', () => {
+    VO.started = true;
+    if (VO.phase === 'rec'){ voRecFinish(); return; }
+    if (!VO.au.paused){ voStop(S.step >= slides[S.cur].max ? 'done' : 'idle'); return; }
+    const d = voData();
+    if (VO.phase === 'wait' && !blocked()){ voPlayFrom(d.a2Start, 'a2'); return; }
+    voPlayFrom(0, 'a1');
+  });
+  $('#vo-replay').addEventListener('click', () => { VO.started = true; go(S.cur, 0); if (!VO.auto) voPlayFrom(0, 'a1'); });
+  $('#vo-auto').addEventListener('click', () => { VO.auto = !VO.auto; VO.started = true; if (!VO.auto) clearTimeout(VO.timer); else voAfterStep(); voUI(); });
+  $('#vo-rec').addEventListener('click', () => { if (VO.phase === 'rec'){ voRecFinish(); return; } VO.started = true; go(S.cur, 0); voStop(); VO.recT = []; voPlayFrom(0, 'rec'); });
+}
+function voRecFinish(){
+  VO.au.pause(); cancelAnimationFrame(VO.raf);
+  const k = voKey(S.cur), marks = VO.recT || []; VO.phase = 'idle'; VO.recT = null; voUI();
+  const line = `${k}: ${marks.map(m0 => m0.t.toFixed(1)).join(', ') || '(chưa bấm mốc nào)'}`;
+  if (marks.length){ try { localStorage.setItem(META.pkey + '-cues-' + k, JSON.stringify(marks)); } catch (e) {} }
+  openModal(`<div class="tab">⏺ MỐC ▶ CỦA ${k}</div><h3>Đã ghi ${marks.length} mốc</h3><p>Gửi dòng sau cho Claude để áp dụng cho mọi học sinh:</p><pre>${line}</pre><div class="row" style="justify-content:flex-end"><button class="btn gold" type="button" data-a="close">Đóng</button></div>`);
+}
+document.addEventListener('pointerdown', () => { VO.started = true; }, {once: true, capture: true});
+/* bìa: nút bắt đầu, chọn phần học, học tiếp (tiến độ chỉ lưu trên trình duyệt đang dùng) */
+(function(){ const c = slides[0].el.querySelector('.cover > div'); if (!c) return;
+  const b = h('<button class="btn gold vostart" type="button">▶ Bắt đầu học</button>'); c.appendChild(b);
+  b.addEventListener('click', () => { if (!HAS_VO){ go(1); return; } VO.started = true; VO.auto = true; voPlayFrom(0, 'a1'); }); })();
+if (!HAS_VO){ const cv = slides[0].el.querySelector('.cover .cvr'); if (cv) cv.prepend(h('<p class="pending">🎙 Bản chờ hoàn thiện · lời giảng của thầy sẽ được bổ sung</p>')); }
+const PKEY = META.pkey + '-prog';
+const PROG = (() => { try { const v = JSON.parse(localStorage.getItem(PKEY) || '{}'); return {last: +v.last || 0, done: Array.isArray(v.done) ? v.done : []}; } catch (e) { return {last: 0, done: []}; } })();
+const progSave = () => { try { localStorage.setItem(PKEY, JSON.stringify(PROG)); } catch (e) {} };
+const stKeys = sec => slides.flatMap((s, i) => s.sec === sec && s.stations ? s.stations.map(t => i + ':' + t.id) : []);
+const cards = [];
+(function(){ const box = slides[0].el.querySelector('.parts'); if (!box) return;
+  META.parts.forEach((p, j) => { const k = slides.findIndex(s => s.anchor === p.a);
+    const c = h(`<button type="button" class="pcard"><span class="pn">Phần ${j + 1}</span><b>${p.t}</b><span class="pf"><span class="pst"></span>${p.need ? `<span class="pneed">${p.need}</span>` : ''}</span></button>`);
+    c.addEventListener('click', () => { if (HAS_VO){ VO.started = true; VO.auto = true; } go(k); }); box.appendChild(c); cards.push({c, p}); });
+  const cv = slides[0].el.querySelector('.cover > div');
+  const r = h('<button class="btn resume" type="button" hidden></button>'); cv.appendChild(r);
+  r.addEventListener('click', () => go(PROG.last)); cards.resume = r; })();
+function progUI(){
+  cards.forEach(({c, p}) => { const ks = stKeys(p.sec), d = ks.filter(k => PROG.done.includes(k)).length, all = d === ks.length && ks.length > 0;
+    c.classList.toggle('ok', all); c.querySelector('.pst').textContent = (all ? '✓ ' : '') + `${d}/${ks.length} trạm dừng`; });
+  const r = cards.resume; if (!r) return;
+  r.hidden = !(PROG.last > 1 && PROG.last < slides.length - 1);
+  if (!r.hidden) r.textContent = `↻ Học tiếp · ${slides[PROG.last].label}`;
+}
+document.addEventListener('station-done', e => { const k = S.cur + ':' + (e.detail && e.detail.id); if (!PROG.done.includes(k)){ PROG.done.push(k); progSave(); } progUI(); });
+const go0 = go; go = function(n, step){ go0(n, step); if (S.cur > 0){ PROG.last = S.cur; progSave(); } else progUI(); };
+backBtn.addEventListener('pointerdown', () => { VO.skipNext = true; });
+slides[0].el.hidden = false; go(0);
+window.__lesson = {go, slides, S, fwd, spot, blocked, VO, voData, setStep};
+})();
+
+</script>
+<script>
+/* iPhone/iPad: hướng dẫn toàn màn hình + nút về trang chủ khi mở như ứng dụng */
+window.mbFsHint = function(){
+  if (document.getElementById('mbfs')) return;
+  var d = document.createElement('div'); d.id = 'mbfs';
+  d.style.cssText = 'position:fixed;inset:0;z-index:100000;background:rgba(5,10,30,.72);display:flex;align-items:center;justify-content:center;padding:16px';
+  d.innerHTML = '<div style="max-width:520px;background:#fff;color:#14213d;border-radius:16px;padding:20px 22px;font:16px/1.5 -apple-system,Segoe UI,sans-serif;box-shadow:0 20px 60px rgba(0,0,0,.4)">'
+    + '<b style="font-size:18px">Xem toàn màn hình trên iPhone</b>'
+    + '<p style="margin:10px 0 6px"><b>Cách 1:</b> bấm biểu tượng <b>aA</b> hoặc <b>☰</b> bên trái địa chỉ web → chọn <b>Ẩn thanh công cụ</b>.</p>'
+    + '<p style="margin:6px 0 14px"><b>Cách 2:</b> bấm <b>Chia sẻ ⬆</b> → <b>Thêm vào MH chính</b>. Mở từ biểu tượng Mr Black trên màn hình chính sẽ luôn toàn màn hình.</p>'
+    + '<button type="button" style="font:inherit;font-weight:700;border:0;border-radius:10px;padding:8px 18px;background:#f5b301;color:#14213d">Đã hiểu</button></div>';
+  d.addEventListener('click', function(e){ if (e.target === d || e.target.tagName === 'BUTTON') d.remove(); });
+  document.body.appendChild(d);
+};
+(function(){
+  var sa = navigator.standalone || (window.matchMedia && matchMedia('(display-mode: standalone)').matches);
+  if (!sa) return;
+  var a = document.createElement('a'); a.href = '../'; a.textContent = '⌂'; a.title = 'Về trang chủ'; a.setAttribute('aria-label', 'Về trang chủ');
+  a.style.cssText = 'position:fixed;left:max(8px,env(safe-area-inset-left));bottom:max(8px,env(safe-area-inset-bottom));z-index:99999;width:38px;height:38px;border-radius:12px;background:rgba(0,0,0,.55);color:#fff;font:22px/38px sans-serif;text-align:center;text-decoration:none';
+  document.body.appendChild(a);
+})();
+</script>
+<script>
+/* Xoay máy: co giãn lại sân khấu nhiều nhịp sau khi xoay (iPhone/Android báo kích thước mới trễ, nhất là trang nặng) */
+(function(){
+  var last = '';
+  function refit(){ try { window.dispatchEvent(new Event('resize')); } catch (e) {} }
+  function burst(){ [0, 120, 300, 600, 1000, 1600].forEach(function(t){ setTimeout(refit, t); }); }
+  function check(){ var vv = window.visualViewport, k = (vv ? vv.width + 'x' + vv.height : innerWidth + 'x' + innerHeight); if (k !== last){ last = k; burst(); } }
+  window.addEventListener('orientationchange', burst);
+  try { if (screen.orientation && screen.orientation.addEventListener) screen.orientation.addEventListener('change', burst); } catch (e) {}
+  try { var mq = matchMedia('(orientation: portrait)'); if (mq.addEventListener) mq.addEventListener('change', burst); else if (mq.addListener) mq.addListener(burst); } catch (e) {}
+  try { if (window.ResizeObserver) new ResizeObserver(check).observe(document.documentElement); } catch (e) {}
+  document.addEventListener('visibilitychange', function(){ if (!document.hidden) burst(); });
+  window.addEventListener('pageshow', burst);
+})();
+</script>
+</body></html>
