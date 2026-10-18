@@ -242,6 +242,39 @@ button{font:inherit;color:inherit;cursor:pointer}
 footer{background:var(--stage-a);color:var(--st-muted);font-size:14px}
 footer .wrap{padding-block:20px;display:flex;flex-wrap:wrap;gap:8px 24px;justify-content:space-between}
 footer b{color:var(--st-text)}
+/* ---------- Học ngay: thẻ bài đã có ---------- */
+.lead-s{display:block;margin-top:6px;font-size:.86em;font-style:normal;color:var(--st-text);opacity:.8}
+.quick{background:var(--stage-a);color:var(--st-text);padding:14px 0 22px;border-top:1px solid rgba(255,200,61,.18)}
+.quick-top{display:flex;align-items:baseline;gap:12px;flex-wrap:wrap}
+.quick h2{margin:0;font-size:20px;font-weight:700;color:var(--gold);letter-spacing:.02em}
+.quick-n{font-size:13px;opacity:.75}
+.chips{display:flex;gap:8px;overflow-x:auto;padding:10px 0 4px;scrollbar-width:none;-webkit-overflow-scrolling:touch}
+.chips::-webkit-scrollbar{display:none}
+.chip{flex:0 0 auto;height:36px;padding:0 14px;border-radius:999px;border:1px solid rgba(180,192,226,.35);background:rgba(27,42,99,.55);color:var(--st-text);font:inherit;font-size:14px;font-weight:600;cursor:pointer}
+.chip[aria-selected="true"]{background:var(--gold);border-color:var(--gold);color:#0d1433}
+.chip:focus-visible{outline:3px solid var(--gold-2);outline-offset:2px}
+.cards{display:flex;gap:12px;overflow-x:auto;padding:10px 2px 6px;scroll-snap-type:x mandatory;scrollbar-width:thin;-webkit-overflow-scrolling:touch}
+.card{flex:0 0 clamp(200px,62vw,250px);scroll-snap-align:start;display:flex;flex-direction:column;border-radius:14px;overflow:hidden;background:#fff;color:var(--ink);text-decoration:none;border:0;padding:0;font:inherit;text-align:left;cursor:pointer;box-shadow:0 12px 24px -16px rgba(0,0,0,.7)}
+.card:focus-visible{outline:3px solid var(--gold);outline-offset:2px}
+.card .im{position:relative;aspect-ratio:16/9;background:#0a1230}
+.card .im img{width:100%;height:100%;object-fit:cover;display:block}
+.card .gr{position:absolute;left:8px;top:8px;padding:3px 8px;border-radius:7px;font-size:12px;font-weight:700;color:#fff;background:var(--c)}
+.card .fl{position:absolute;right:8px;top:8px;padding:3px 8px;border-radius:7px;font-size:11px;font-weight:700;color:#0d1433;background:var(--gold)}
+.card .tx{padding:10px 12px 12px;font-size:14px;line-height:1.35;font-weight:600}
+.card .tx small{display:block;margin-top:3px;font-size:12px;font-weight:500;color:var(--ink-2)}
+.cat small i{font-style:normal;opacity:.75}
+.mi .av{display:block;margin-top:2px;font-size:11px;font-weight:600;color:var(--ok)}
+.mi .av.no{color:var(--ink-2);font-weight:500}
+.lr.na{opacity:.55}
+.lr .sc{font-size:10px;font-weight:600;color:var(--ink-2)}
+.results .sc{margin-left:6px;font-size:11px;color:var(--ink-2)}
+@media (max-width:600px){
+  .hero .wrap{padding-block:18px 20px;gap:14px}
+  .badge{font-size:12px;padding:7px 12px;gap:8px;letter-spacing:.1em}
+  .hero h1{margin:12px 0 8px;font-size:25px}
+  .hero .lead{font-size:15px;margin-bottom:12px}
+  .mini-lh .t{font-size:12px}
+}
 </style>
 <script src="thong-ke.js" defer></script>
 </head>
@@ -252,7 +285,7 @@ footer b{color:var(--st-text)}
   <div class="wrap">
     <a class="brand" href="#top" aria-label="Mr Black – về đầu trang">
       <span class="logo" id="logo"></span>
-      <span><b>Mr Black</b><small>Toán 6 – 12 · HSA</small></span>
+      <span><b>Mr Black</b><small>Toán 6 – 12</small></span>
     </a>
     <nav class="topnav" aria-label="Điều hướng"><a class="tbtn" href="#hoc">Danh mục bài học</a></nav>
   </div>
@@ -262,8 +295,8 @@ footer b{color:var(--st-text)}
   <div class="wrap">
     <div>
       <div class="badge"><i></i>Miễn phí · Không cần đăng ký</div>
-      <h1>Học Toán từ <em>lớp 6</em> đến <em>lớp 12</em> và luyện thi <em>HSA</em></h1>
-      <p class="lead">Mỗi bài học <mark>đều có bài giảng</mark> thầy giảng, phần <mark>tự luyện có lời giải</mark>, <mark>phiếu bài tập</mark> để in và bài <mark>kiểm tra cuối bài</mark>.</p>
+      <h1>Học Toán từ <em>lớp 6</em> đến <em>lớp 12</em> cùng thầy</h1>
+      <p class="lead">Mỗi bài gồm <mark>bài giảng tương tác</mark>, <mark>tự luyện có lời giải</mark>, <mark>phiếu bài tập</mark> để in và bài <mark>kiểm tra cuối bài</mark>. <span class="lead-s" id="lead-s"></span></p>
       <div class="search" role="search">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-4-4"/></svg>
         <input id="q" type="search" autocomplete="off" placeholder="Tìm bài học, ví dụ: tích phân, vectơ…" aria-label="Tìm bài học" aria-controls="results">
@@ -287,12 +320,20 @@ footer b{color:var(--st-text)}
   </div>
 </section>
 
+<section class="quick" id="hoc-ngay" aria-labelledby="quick-h">
+  <div class="wrap">
+    <div class="quick-top"><h2 id="quick-h">Học ngay</h2><span class="quick-n" id="quick-n"></span></div>
+    <div class="chips" id="chips" role="tablist" aria-label="Chọn lớp"></div>
+    <div class="cards" id="cards"></div>
+  </div>
+</section>
+
 <section class="body" id="hoc">
   <div class="wrap">
     <aside class="side" id="side" aria-label="Danh mục bài học">
       <div class="cats-h">Danh mục</div>
       <div class="cats" id="cats"></div>
-      <div class="side-note">Rê chuột vào lớp → chương → bài. Bấm vào bài để học.</div>
+      <div class="side-note" id="side-note">Chạm vào lớp → chương → bài để học.</div>
     </aside>
     <div class="main" id="main" aria-live="polite"></div>
   </div>
@@ -972,6 +1013,9 @@ const LESSONS = ALL.filter(x => !x.review);                 // chỉ các bài h
 const lbl = x => x.review ? esc(x.title) : unit(x.course) + ' ' + x.n + '. ' + esc(x.title);   // nhãn đầy đủ, đã thoát HTML
 const unit = c => c.unit || 'Bài';
 const linksOf = key => LINKS[key] || {};
+const hasLinks = key => { const L = LINKS[key]; return !!(L && (L.giang || L.luyen || L.pdf || L.kiemtra)); };
+const AVAIL = ALL.filter(x => hasLinks(x.key));                   // mục đã có trên web
+const HOVER = matchMedia('(hover:hover) and (pointer:fine)').matches;   // máy có chuột
 const level = c => c.id === 'hsa' ? 'LUYỆN THI HSA' : (+c.short <= 9 ? 'TOÁN THCS' : 'TOÁN THPT');
 const state = { sel: null, done: new Set(store.get('mb-done', [])) };
 
@@ -980,13 +1024,14 @@ const state = { sel: null, done: new Set(store.get('mb-done', [])) };
    ===================================================================== */
 const m2 = $('#m2'), m3 = $('#m3'), tip = $('#tip'), side = $('#side');
 const menu = { cat: null, chap: null };          // lớp và chương đang mở
+const avl = c => LESSONS.filter(x => x.course === c && hasLinks(x.key)).length;
 function renderCats(){
   const selCourse = state.sel ? state.sel.split('-')[0] : '';
   $('#cats').innerHTML = COURSES.map(c => {
     const n = LESSONS.filter(x => x.course === c).length;
     return '<button class="cat' + (menu.cat === c.id ? ' on' : '') + (selCourse === c.id ? ' has-sel' : '') + '" type="button" style="--c:' + c.color + '" data-cat="' + c.id + '" aria-haspopup="true" aria-expanded="' + (menu.cat === c.id) + '">' +
       '<span class="tag' + (c.short.length > 2 ? ' sm' : '') + '">' + c.short + '</span>' +
-      '<span><b>' + (c.id === 'hsa' ? 'HSA' : 'TOÁN ' + c.short) + '</b><small>' + (n ? n + ' bài' : 'Sắp ra mắt') + '</small></span>' +
+      '<span><b>' + (c.id === 'hsa' ? 'HSA' : 'TOÁN ' + c.short) + '</b><small>' + (n ? avl(c) + '/' + n + ' bài đã có' : 'Sắp ra mắt') + '</small></span>' +
       '<span class="ar" aria-hidden="true">›</span></button>';
   }).join('');
 }
@@ -1014,7 +1059,8 @@ function openCat(id){
   m2.innerHTML = '<div class="menu-h">' + (id === 'hsa' ? 'Luyện thi HSA' : esc(c.name) + ' · ' + c.chapters.length + ' chương') + '</div>' +
     (c.chapters.length ? c.chapters.map((ch, i) => {
       const [head, ...rest] = ch.name.split('. ');
-      return '<button class="mi' + (ch === selChap ? ' has-sel' : '') + '" type="button" data-chap="' + i + '" aria-haspopup="true"><span><span class="cn">' + esc(head) + '</span>' + esc(rest.join('. ')) + '</span><span class="ar" aria-hidden="true">›</span></button>';
+      const k = ALL.filter(x => x.chapter === ch && hasLinks(x.key)).length;
+      return '<button class="mi' + (ch === selChap ? ' has-sel' : '') + '" type="button" data-chap="' + i + '" aria-haspopup="true"><span><span class="cn">' + esc(head) + '</span>' + esc(rest.join('. ')) + (k ? '<span class="av">' + k + ' mục đã có</span>' : '<span class="av no">Sắp có</span>') + '</span><span class="ar" aria-hidden="true">›</span></button>';
     }).join('') : '<div class="soon">' + (id === 'hsa' ? 'Các chuyên đề luyện thi HSA' : 'Bài học ' + esc(c.name)) + ' sắp ra mắt.</div>');
   place(m2, document.querySelector('.cat[data-cat="' + id + '"]'));
 }
@@ -1027,8 +1073,8 @@ function openChap(i){
   m3.style.setProperty('--c', c.color);
   m3.innerHTML = '<div class="menu-h">' + esc(ch.name.split('.')[0]) + '</div>' + ALL.filter(x => x.chapter === ch).map(x => {
     const key = x.key;
-    return '<label class="lr' + (x.review ? ' rv' : '') + '" data-key="' + key + '"><input type="radio" name="lesson" value="' + key + '" aria-label="' + lbl(x) + '"' + (state.sel === key ? ' checked' : '') + '>' +
-      '<span class="box">' + CHECK + '</span><span>' + (x.review ? esc(x.title) : unit(c) + ' ' + x.n) + '</span>' + (state.done.has(key) ? '<span class="dn">✓</span>' : '<span></span>') + '</label>';
+    return '<label class="lr' + (x.review ? ' rv' : '') + (hasLinks(key) ? '' : ' na') + '" data-key="' + key + '"><input type="radio" name="lesson" value="' + key + '" aria-label="' + lbl(x) + '"' + (state.sel === key ? ' checked' : '') + '>' +
+      '<span class="box">' + CHECK + '</span><span>' + (x.review ? esc(x.title) : unit(c) + ' ' + x.n) + '</span>' + (state.done.has(key) ? '<span class="dn">✓</span>' : (hasLinks(key) ? '<span></span>' : '<span class="sc">sắp có</span>')) + '</label>';
   }).join('');
   place(m3, item);
 }
@@ -1099,17 +1145,22 @@ function viewWelcome(){
     '<h2>Chào các em!</h2>' +
     '<div class="l1">Học Toán miễn phí từ lớp 6 đến lớp 12 cùng thầy.</div>' +
     '<div class="sys"><span class="lbl">Mỗi bài học =</span><span class="br" aria-hidden="true">{</span><ul>' +
-      '<li>Bài giảng <span>có giọng thầy</span></li><li>Luyện tập <span>có lời giải</span></li><li>Phiếu bài tập <span>PDF để in</span></li><li>Tự kiểm tra <span>cuối bài</span></li></ul></div>' +
+      '<li>Bài giảng <span>tương tác</span></li><li>Luyện tập <span>có lời giải</span></li><li>Phiếu bài tập <span>PDF để in</span></li><li>Tự kiểm tra <span>cuối bài</span></li></ul></div>' +
     '<ul class="steps-red">' +
-      '<li>+) Bước 1: Rê chuột vào <b>lớp của em</b> ở cột bên trái.</li>' +
-      '<li>+) Bước 2: Rê sang <b>chương</b>, rê vào <b>bài</b> để xem tên, bấm để chọn.</li>' +
-      '<li>+) Bước 3: Học lần lượt <b>4 ô</b> hiện ra ở đây.</li></ul>' +
+      (HOVER
+        ? '<li>+) Bước 1: Rê chuột vào <b>lớp của em</b> ở cột bên trái.</li>' +
+          '<li>+) Bước 2: Rê sang <b>chương</b>, rê vào <b>bài</b> để xem tên, bấm để chọn.</li>' +
+          '<li>+) Bước 3: Học lần lượt <b>4 ô</b> hiện ra ở đây.</li>'
+        : '<li>+) Cách nhanh: chạm một thẻ bài ở mục <b>Học ngay</b> phía trên.</li>' +
+          '<li>+) Hoặc chạm <b>lớp của em</b> ở Danh mục → chạm <b>chương</b> → chạm <b>bài</b>.</li>' +
+          '<li>+) Học lần lượt <b>4 ô</b> hiện ra.</li>') + '</ul>' +
+    '<div class="l1" style="font-size:.8em;margin-top:6px">Lời giảng của thầy đang được bổ sung dần cho từng bài.</div>' +
     '<div class="board-sign">Thầy Mr Black ✍</div>' +
     '</div></div>' +
     '<div class="stats">' +
       '<div class="stat"><b>' + grades + '</b><span>lớp: Toán 6 → Toán 12</span></div>' +
-      '<div class="stat"><b>' + LESSONS.length + '</b><span>bài học theo SGK</span></div>' +
-      '<div class="stat"><b>4</b><span>học liệu cho mỗi bài</span></div>' +
+      '<div class="stat"><b>' + AVAIL.filter(x => !x.review).length + '</b><span>bài học đã có trên web</span></div>' +
+      '<div class="stat"><b>' + AVAIL.filter(x => x.review).length + '</b><span>bài ôn tập chương</span></div>' +
       '<div class="stat"><b>0đ</b><span>miễn phí, không đăng ký</span></div>' +
     '</div>';
 }
@@ -1226,9 +1277,9 @@ q.addEventListener('input', () => {
   if (t.length < 2){ box.hidden = true; return; }
   const words = t.split(/\s+/);
   const hits = ALL.filter(x => { const s = norm(x.title + ' ' + x.chapter.name + ' ' + x.course.name); return words.every(w => s.includes(w)); })
-    .sort((a, b) => words.every(w => norm(b.title).includes(w)) - words.every(w => norm(a.title).includes(w))).slice(0, 12);   // khớp ngay tên bài/Ôn tập lên trước
+    .sort((a, b) => (hasLinks(b.key) - hasLinks(a.key)) || (words.every(w => norm(b.title).includes(w)) - words.every(w => norm(a.title).includes(w)))).slice(0, 12);   // khớp ngay tên bài/Ôn tập lên trước
   box.innerHTML = hits.length
-    ? hits.map(x => '<a href="#' + x.key + '" data-key="' + x.key + '"><span class="g">' + esc(x.course.name) + '</span><span>' + lbl(x) + '</span></a>').join('')
+    ? hits.map(x => '<a href="#' + x.key + '" data-key="' + x.key + '"><span class="g">' + esc(x.course.name) + '</span><span>' + lbl(x) + (hasLinks(x.key) ? '' : '<span class="sc">· sắp có</span>') + '</span></a>').join('')
     : '<div class="empty">Chưa tìm thấy bài phù hợp. Thử từ khóa khác, ví dụ "đạo hàm".</div>';
   box.hidden = false;
 });
@@ -1238,6 +1289,34 @@ q.addEventListener('keydown', e => {
   if (e.key === 'Enter'){ const a = box.querySelector('a[data-key]'); if (a){ box.hidden = true; q.value = ''; select(a.dataset.key, {scroll:true}); } }
 });
 document.addEventListener('click', e => { if (!e.target.closest('.search')) box.hidden = true; });
+
+/* Học ngay: thẻ bài đã có, chạm 1 lần là vào học */
+const HOT = ['lop12-bai6', 'lop11-bai5', 'lop12-bai11', 'lop6-bai16', 'lop11-bai12', 'lop12-bai7'];        // nhiều bạn học (Google Analytics 10–17/10)
+const NEW = ['lop12-bai18', 'lop12-bai19', 'lop12-ontap6', 'lop10-bai5', 'lop10-bai6', 'lop10-ontap3'];     // mới cập nhật
+const byKey = k => ALL.find(x => x.key === k);
+const chipList = [{id:'noibat', name:'Nổi bật'}].concat(COURSES.filter(c => AVAIL.some(x => x.course === c)).map(c => ({id:c.id, name:'Toán ' + c.short})));
+let chipSel = 'noibat';
+function card(x, flag){
+  const L = linksOf(x.key), img = L.anh && (L.anh.giang || L.anh.luyen);
+  return '<button class="card" type="button" data-key="' + x.key + '" style="--c:' + x.course.color + '">' +
+    '<span class="im">' + (img ? '<img alt="" loading="lazy" decoding="async" width="800" height="450" src="' + esc(img) + '">' : '') +
+    '<span class="gr">Toán ' + x.course.short + '</span>' + (flag ? '<span class="fl">' + flag + '</span>' : '') + '</span>' +
+    '<span class="tx">' + lbl(x) + '<small>' + esc(x.chapter.name.split('.')[0]) + '</small></span></button>';
+}
+function renderQuick(){
+  $('#chips').innerHTML = chipList.map(c => '<button class="chip" type="button" role="tab" data-chip="' + c.id + '" aria-selected="' + (c.id === chipSel) + '">' + c.name + '</button>').join('');
+  const items = chipSel === 'noibat'
+    ? HOT.map(k => [byKey(k), 'Nhiều bạn học']).concat(NEW.map(k => [byKey(k), 'Mới']))
+    : AVAIL.filter(x => x.course.id === chipSel).map(x => [x, '']);
+  $('#cards').innerHTML = items.filter(([x]) => x && hasLinks(x.key)).map(([x, f]) => card(x, f)).join('');
+  $('#cards').scrollLeft = 0;
+}
+$('#quick-n').textContent = 'Đang có ' + AVAIL.filter(x => !x.review).length + ' bài học và ' + AVAIL.filter(x => x.review).length + ' bài ôn tập chương';
+$('#lead-s').textContent = 'Hiện có ' + AVAIL.filter(x => !x.review).length + ' bài học, đang bổ sung thêm hằng tuần. Lời giảng của thầy đang được gắn dần vào từng bài.';
+if (HOVER) $('#side-note').textContent = 'Rê chuột vào lớp → chương → bài. Bấm vào bài để học.';
+$('#chips').addEventListener('click', e => { const b = e.target.closest('[data-chip]'); if (!b) return; chipSel = b.dataset.chip; renderQuick(); });
+$('#cards').addEventListener('click', e => { const b = e.target.closest('[data-key]'); if (b) select(b.dataset.key, {scroll:true}); });
+renderQuick();
 
 /* Khởi động: link dạng #lop12-bai6 mở thẳng bài; nếu không, mở lại bài xem gần nhất */
 const fromHash = location.hash.replace(/^#/, '');

@@ -1,6 +1,6 @@
 # Sổ quản lý website Mr Black NBK
 
-Cập nhật: 18/10/2026 (9h35)
+Cập nhật: 18/10/2026 (13h20)
 
 ## Địa chỉ và nơi lưu
 - **Website:** https://mrblackmath.github.io
@@ -130,7 +130,7 @@ Trong `index.html`, khối `LINKS` khai báo đường dẫn cho từng bài, kh
 ## Quy trình thêm một bài mới
 1. Thầy gửi các file mới nhất của bài.
 2. Claude kiểm tra nội dung và áp lớp sửa chung.
-3. Claude đặt tên file theo quy ước, cập nhật `LINKS` trong `index.html` và chụp slide 1 làm ảnh xem trước: lưu file `anh/<khoá>-<giang|luyen|kiemtra>.webp` (800×450, WebP chất lượng 80) rồi ghi đường dẫn vào khối `ANH`. KHÔNG nhúng ảnh base64 vào `index.html` (từ 17/10/2026, để trang chủ nhẹ).
+3. Claude đặt tên file theo quy ước, cập nhật `LINKS` trong `index.html` (bài mới đưa vào danh sách `NEW` của mục Học ngay, bỏ bài cũ nhất) và chụp slide 1 làm ảnh xem trước: lưu file `anh/<khoá>-<giang|luyen|kiemtra>.webp` (800×450, WebP chất lượng 80) rồi ghi đường dẫn vào khối `ANH`. KHÔNG nhúng ảnh base64 vào `index.html` (từ 17/10/2026, để trang chủ nhẹ).
 4. Gắn thẻ chia sẻ/tìm kiếm cho trang mới (giống các trang đã có): `<meta name="description">`, `canonical`, `og:title/description/url/image` (ảnh `anh/chia-se.jpg`), `twitter:card`; tiêu đề tab có "· Toán <lớp> · Mr Black"; thêm đường dẫn trang và phiếu PDF mới vào `sitemap.xml`.
 5. Claude thử trên khổ máy tính, điện thoại dọc và điện thoại ngang.
 6. Claude commit, mở Pull Request; thầy nhắn "gộp" thì gộp vào `main`.
@@ -149,6 +149,7 @@ Trong `index.html`, khối `LINKS` khai báo đường dẫn cho từng bài, kh
 - Mua và gắn tên miền mrblackmath.vn.
 
 ## Nhật ký
+- 18/10/2026 (13h20): Theo lời thầy ("làm 1-2-3"), sửa giao diện trang chủ (Pull Request): (1) ghi đúng tình trạng thật — bỏ "luyện thi HSA" khỏi tiêu đề và thanh trên, bỏ "đều có bài giảng thầy giảng"/"có giọng thầy" (mới 1/49 bài có giọng), thêm dòng "Hiện có N bài học… lời giảng của thầy đang được gắn dần"; danh mục lớp ghi "đã có/tổng" (vd 5/43 bài đã có), chương ghi "k mục đã có"/"Sắp có", bài chưa có mờ + "sắp có", tìm kiếm đưa bài đã có lên trước; thống kê bảng chào thay "230 bài học theo SGK" bằng số bài học và bài ôn tập đã có (tự tính từ `LINKS`); (2) mục mới "Học ngay" ngay dưới đầu trang: thẻ bài có ảnh slide 1, chạm 1 lần vào học; nút lọc "Nổi bật" (6 bài nhiều bạn học theo Google Analytics + 6 bài mới, danh sách `HOT`, `NEW` trong `index.html` — cập nhật khi có bài mới) và từng lớp; thu gọn phần đầu trang trên điện thoại để thẻ bài hiện ngay màn hình đầu; (3) hướng dẫn theo loại máy: điện thoại ghi "chạm", máy tính giữ "rê chuột". Thử điện thoại + máy tính: 0 lỗi JS, không tràn ngang, chạm thẻ mở đúng bài, nút lọc lớp đúng số bài.
 - 18/10/2026 (9h30): Báo cáo website. Trên web 62 mục = 49 bài học + 13 ôn tập chương (T6: 5 bài + ÔT C3, C4; T7: 5 bài; T8: 5 bài; T9: 7 bài + ÔT C4, C5; T10: 2 bài + ÔT C2, C3; T11: 11 bài + ÔT C2, C4, C5; T12: 14 bài + ÔT C3, C4, C5, C6); 1 bài có lời giảng (T6 Bài 16), 48 bài `chuaGiong`; 62/62 phiếu theo mẫu. Google Analytics từ khi mở web đến hết 17/10: 277 người dùng (280 người mới), 480 phiên, 703 lượt xem, thời gian tương tác TB 2 phút 44 giây/người, 18 lượt tải PDF; 7 ngày 11–17/10: 245 người dùng, 625 lượt xem; ngày 17/10: 19 người dùng. Nguồn (phiên): trực tiếp 237, mạng xã hội 231 (Zalo là chính), YouTube 6, Google 3. Thành phố (7 ngày): Hà Nội 195, TP HCM 22, Hải Phòng 16, Nha Trang 5. Trang xem nhiều: trang chủ 475 lượt (263 người, TB 33 giây); bài giảng T12 Bài 6: 73 lượt/47 người (TB 3 phút 53 giây); tự luyện T12 Bài 6: 19/11 (7 phút 21 giây); bài giảng T11 Bài 5: 12/6; kiểm tra T12 Bài 6: 10/7 (5 phút 44 giây); kiểm tra T11 Bài 12, bài giảng T12 Bài 11, kiểm tra T12 Bài 7, bài giảng T6 Bài 16: 8 lượt mỗi trang. Tỉ lệ quay lại sau 1 tuần: 22%. Thời gian thực 9h25: 4 người dùng/30 phút.
 - 18/10/2026 (9h35): Thầy nhắn "gộp" (9h03): đã gộp PR #19; web thật đã cập nhật (trang chủ bản nhẹ, sitemap, robots, phiếu theo mẫu). Đăng ký Google Search Console bằng tài khoản quangphonsn@gmail.com (trình duyệt tích hợp trên máy thầy): thuộc tính "Tiền tố URL" https://mrblackmath.github.io/; xác minh bằng Google Analytics không được (mã nạp qua `thong-ke.js`, không nằm thẳng trong trang chủ) → thêm tệp `googlef81bf90d3247f186.html` (PR #20, thầy nhắn "gộp" 9h14) → đã xác minh. Đã gửi `sitemap.xml` (lúc gửi Search Console báo "Không thể tìm nạp" — thường gặp với thuộc tính vừa xác minh, Google sẽ đọc lại; kiểm tra lại sau 1–2 ngày) và yêu cầu lập chỉ mục trang chủ. Xem tại search.google.com/search-console.
 - 18/10/2026 (9h20): Pull Request nhánh `claude/lam-nhe-web` (17–18/10) gồm 5 việc:
