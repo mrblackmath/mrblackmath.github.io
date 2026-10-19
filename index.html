@@ -972,6 +972,40 @@ const LINKS = {
     pdf:     'hoc-lieu/toan10-on-tap-chuong5-phieu-tu-luyen.pdf',   // phiếu 6 trang
     kiemtra: 'bai-hoc/toan10-on-tap-chuong5-kiem-tra.html'
   },
+  'lop10-bai15': {
+    giang:   'bai-hoc/toan10-bai15-bai-giang.html',
+    luyen:   'bai-hoc/toan10-bai15-luyen-tap.html',
+    pdf:     'hoc-lieu/toan10-bai15-phieu-tu-luyen.pdf',   // phiếu 6 trang
+    kiemtra: 'bai-hoc/toan10-bai15-kiem-tra.html',
+    chuaGiong: true
+  },
+  'lop10-bai16': {
+    giang:   'bai-hoc/toan10-bai16-bai-giang.html',
+    luyen:   'bai-hoc/toan10-bai16-luyen-tap.html',
+    pdf:     'hoc-lieu/toan10-bai16-phieu-tu-luyen.pdf',   // phiếu 6 trang
+    kiemtra: 'bai-hoc/toan10-bai16-kiem-tra.html',
+    chuaGiong: true
+  },
+  'lop10-bai17': {
+    giang:   'bai-hoc/toan10-bai17-bai-giang.html',
+    luyen:   'bai-hoc/toan10-bai17-luyen-tap.html',
+    pdf:     'hoc-lieu/toan10-bai17-phieu-tu-luyen.pdf',   // phiếu 6 trang
+    kiemtra: 'bai-hoc/toan10-bai17-kiem-tra.html',
+    chuaGiong: true
+  },
+  'lop10-bai18': {
+    giang:   'bai-hoc/toan10-bai18-bai-giang.html',
+    luyen:   'bai-hoc/toan10-bai18-luyen-tap.html',
+    pdf:     'hoc-lieu/toan10-bai18-phieu-tu-luyen.pdf',   // phiếu 6 trang
+    kiemtra: 'bai-hoc/toan10-bai18-kiem-tra.html',
+    chuaGiong: true
+  },
+  'lop10-ontap6': {
+    giang:   'bai-hoc/toan10-on-tap-chuong6-tong-hop.html',
+    luyen:   'bai-hoc/toan10-on-tap-chuong6-luyen-tap.html',
+    pdf:     'hoc-lieu/toan10-on-tap-chuong6-phieu-tu-luyen.pdf',   // phiếu 6 trang
+    kiemtra: 'bai-hoc/toan10-on-tap-chuong6-kiem-tra.html'
+  },
   'lop11-bai5': {
     giang:   'bai-hoc/toan11-bai5-bai-giang.html',   // Bài giảng tương tác (bản chờ gắn lời giảng, 33 slide)
     luyen:   'bai-hoc/toan11-bai5-luyen-tap.html',   // Tự luyện 14 nhiệm vụ + 1 thử thách
@@ -1294,6 +1328,11 @@ const ANH = {
   "lop10-bai13": {"giang": "anh/lop10-bai13-giang.webp", "luyen": "anh/lop10-bai13-luyen.webp", "kiemtra": "anh/lop10-bai13-kiemtra.webp"},
   "lop10-bai14": {"giang": "anh/lop10-bai14-giang.webp", "luyen": "anh/lop10-bai14-luyen.webp", "kiemtra": "anh/lop10-bai14-kiemtra.webp"},
   "lop10-ontap5": {"giang": "anh/lop10-ontap5-giang.webp", "luyen": "anh/lop10-ontap5-luyen.webp", "kiemtra": "anh/lop10-ontap5-kiemtra.webp"},
+  "lop10-bai15": {"giang": "anh/lop10-bai15-giang.webp", "luyen": "anh/lop10-bai15-luyen.webp", "kiemtra": "anh/lop10-bai15-kiemtra.webp"},
+  "lop10-bai16": {"giang": "anh/lop10-bai16-giang.webp", "luyen": "anh/lop10-bai16-luyen.webp", "kiemtra": "anh/lop10-bai16-kiemtra.webp"},
+  "lop10-bai17": {"giang": "anh/lop10-bai17-giang.webp", "luyen": "anh/lop10-bai17-luyen.webp", "kiemtra": "anh/lop10-bai17-kiemtra.webp"},
+  "lop10-bai18": {"giang": "anh/lop10-bai18-giang.webp", "luyen": "anh/lop10-bai18-luyen.webp", "kiemtra": "anh/lop10-bai18-kiemtra.webp"},
+  "lop10-ontap6": {"giang": "anh/lop10-ontap6-giang.webp", "luyen": "anh/lop10-ontap6-luyen.webp", "kiemtra": "anh/lop10-ontap6-kiemtra.webp"},
   "lop12-bai18": {"giang": "anh/lop12-bai18-giang.webp", "luyen": "anh/lop12-bai18-luyen.webp", "kiemtra": "anh/lop12-bai18-kiemtra.webp"},
   "lop12-bai19": {"giang": "anh/lop12-bai19-giang.webp", "luyen": "anh/lop12-bai19-luyen.webp", "kiemtra": "anh/lop12-bai19-kiemtra.webp"},
   "lop12-ontap6": {"giang": "anh/lop12-ontap6-giang.webp", "luyen": "anh/lop12-ontap6-luyen.webp", "kiemtra": "anh/lop12-ontap6-kiemtra.webp"}
@@ -1625,7 +1664,7 @@ document.addEventListener('click', e => { if (!e.target.closest('.search')) box.
 
 /* Học ngay: thẻ bài đã có, chạm 1 lần là vào học */
 const HOT = ['lop12-bai6', 'lop11-bai5', 'lop12-bai11', 'lop6-bai16', 'lop11-bai12', 'lop12-bai7'];        // nhiều bạn học (Google Analytics 10–17/10)
-const NEW = ['lop8-bai21', 'lop8-bai22', 'lop8-bai23', 'lop8-bai24', 'lop8-ontap6', 'lop8-ontap3'];     // mới cập nhật
+const NEW = ['lop10-bai15', 'lop10-bai16', 'lop10-bai17', 'lop10-bai18', 'lop10-ontap6', 'lop8-bai21'];     // mới cập nhật
 const byKey = k => ALL.find(x => x.key === k);
 const chipList = [{id:'noibat', name:'Nổi bật'}].concat(COURSES.filter(c => AVAIL.some(x => x.course === c)).map(c => ({id:c.id, name:'Toán ' + c.short})));
 let chipSel = 'noibat';
