@@ -1,6 +1,6 @@
 # Sổ quản lý website Mr Black NBK
 
-Cập nhật: 19/10/2026 (7h40)
+Cập nhật: 19/10/2026 (8h30)
 
 ## Địa chỉ và nơi lưu
 - **Website:** https://mrblackmath.github.io
@@ -88,6 +88,11 @@ Trong `index.html`, khối `LINKS` khai báo đường dẫn cho từng bài, kh
 | Toán 8 – Bài 19. Biểu diễn dữ liệu bằng bảng, biểu đồ | ✅ (bản chờ gắn lời giảng, 20 slide) | ✅ (18 nhiệm vụ + 1 thử thách) | ✅ (6 trang, bản HS, đã sửa 7 chỗ) | ✅ (16 câu, đề A/B) |
 | Toán 8 – Bài 20. Phân tích số liệu thống kê dựa vào biểu đồ | ✅ (bản chờ gắn lời giảng, 18 slide) | ✅ (16 nhiệm vụ + 1 thử thách) | ✅ (7 trang, bản HS, đã sửa 1 chỗ) | ✅ (14 câu, đề A/B) |
 | Toán 8 – Ôn tập Chương V. Dữ liệu và biểu đồ | ✅ Tổng hợp kiến thức (11 slide) | ✅ (23 nhiệm vụ + 1 thử thách) | ✅ (7 trang, bản HS, đã sửa 2 chỗ) | ✅ (20 câu, đề A/B) |
+| Toán 8 – Bài 21. Phân thức đại số | ✅ (bản chờ gắn lời giảng, 22 slide) | ✅ (17 nhiệm vụ + 1 thử thách) | ✅ (6 trang, bản HS, đã sửa 2 chỗ) | ✅ (14 câu, đề A/B) |
+| Toán 8 – Bài 22. Tính chất cơ bản của phân thức đại số | ✅ (bản chờ gắn lời giảng, 25 slide) | ✅ (17 nhiệm vụ + 1 thử thách) | ✅ (5 trang, bản HS, đã sửa 3 lỗi + 1 chỗ) | ✅ (15 câu, đề A/B) |
+| Toán 8 – Bài 23. Phép cộng và phép trừ phân thức đại số | ✅ (bản chờ gắn lời giảng, 26 slide) | ✅ (18 nhiệm vụ + 1 thử thách) | ✅ (6 trang, bản HS, đã sửa 3 chỗ) | ✅ (16 câu, đề A/B) |
+| Toán 8 – Bài 24. Phép nhân và phép chia phân thức đại số | ✅ (bản chờ gắn lời giảng, 18 slide) | ✅ (17 nhiệm vụ + 1 thử thách) | ✅ (5 trang, bản HS, đã sửa 2 chỗ) | ✅ (15 câu, đề A/B) |
+| Toán 8 – Ôn tập Chương VI. Phân thức đại số | ✅ Tổng hợp kiến thức (10 slide) | ✅ (22 nhiệm vụ + 1 thử thách) | ✅ (5 trang, bản HS, đã sửa 1 chỗ) | ✅ (20 câu, đề A/B) |
 | Toán 9 – Bài 11. Tỉ số lượng giác của góc nhọn | ✅ Bài giảng (chờ gắn lời giảng) | ✅ | ✅ (4 trang, bản HS) | ✅ |
 | Toán 9 – Bài 12. Một số hệ thức giữa cạnh, góc trong tam giác vuông và ứng dụng | ✅ Bài giảng (chờ gắn lời giảng) | ✅ | ✅ (4 trang, bản HS) | ✅ |
 | Toán 9 – Ôn tập Chương IV. Hệ thức lượng trong tam giác vuông | ✅ Tổng hợp kiến thức | ✅ | ✅ (4 trang, bản HS) | ✅ |
@@ -180,7 +185,7 @@ Trong `index.html`, khối `LINKS` khai báo đường dẫn cho từng bài, kh
 - Bài 6 – Toán 12: khi thầy gửi ghi âm, chỉ thay `bai-hoc/toan12-bai6-bai-giang.html` (giữ tên) và chụp lại ảnh xem trước bài giảng.
   - Khi gắn ghi âm xong: xoá dòng `chuaGiong: true` của `lop12-bai6` trong `LINKS` (index.html) để trang chủ ghi lại "Có giọng thầy giảng".
 - Bài 7–19 – Toán 12: khi có ghi âm thì thay bài giảng (giữ tên file), chụp lại ảnh xem trước và xoá `chuaGiong`.
-- Bài 7–19 – Toán 7; Bài 10–14, 18–20 – Toán 8; Bài 11–24 – Toán 9: khi có ghi âm thì thay bài giảng (giữ tên file), chụp lại ảnh xem trước và xoá `chuaGiong`.
+- Bài 7–19 – Toán 7; Bài 10–14, 18–24 – Toán 8; Bài 11–24 – Toán 9: khi có ghi âm thì thay bài giảng (giữ tên file), chụp lại ảnh xem trước và xoá `chuaGiong`.
 - Bài 5–7, 10–17 – Toán 11: khi có ghi âm thì thay bài giảng (giữ tên file), chụp lại ảnh xem trước và xoá `chuaGiong`.
 - Bài 17–22 – Toán 6: khi có ghi âm thì thay bài giảng (giữ tên file), chụp lại ảnh xem trước và xoá `chuaGiong`.
 - Bài 5–14 – Toán 10: khi có ghi âm thì thay bài giảng (giữ tên file), chụp lại ảnh xem trước và xoá `chuaGiong`.
@@ -188,6 +193,10 @@ Trong `index.html`, khối `LINKS` khai báo đường dẫn cho từng bài, kh
 - Mua và gắn tên miền mrblackmath.vn.
 
 ## Nhật ký
+- 19/10/2026 (8h30): Lô Toán 8 Chương VI từ gói `T8_Chuong6_TronBo.zip` (bản HS, lấy thẳng từ thư mục `D:\AI\BAIGIANGTUONGTACWEB\8`): Bài 21–24 (`lop8-bai21..24`, `chuaGiong`) và Ôn tập Chương VI (`lop8-ontap6`), qua Pull Request (nhánh `claude/toan8-chuong6`). Kiểm độc lập 5 phiếu GV (khoảng 330 ý; kiểm mọi phép rút gọn, đẳng thức phân thức, điều kiện xác định, giá trị bằng phân số chính xác trong Python): đề HS trùng GV, HS không lộ đáp án.
+  - LỖI (thầy đồng ý sửa 7h53, cả .tex HS + GV, đáp án giữ nguyên): B22 Phần I câu 11 có hai phương án đúng (D $(x^2-4)(x+2)$ = B) → hỏi "mẫu thức chung đơn giản nhất", D đổi thành $(x-2)^2(x+2)$; I.10, I.14, III.5 thêm "đơn giản nhất" (tránh nhiều đáp án); NC2.1 chiều rộng $3x$ > chiều dài $x+2$ → đổi vai: chiều dài $3x$ ($x>1$), hỏi chiều rộng.
+  - Sửa luôn (cả .tex HS + GV): B22 III.3 đáp án 88,32 quá 4 kí tự → làm tròn hàng phần mười (88,3); B21 NC1.1 bỏ nhãn vận tốc từng đoạn trên hình (lộ đáp án), NC2.3 viết lại đề độc lập (số liệu khác "tình huống mở đầu (SGK)"); B23 NC2.1 "lớn hơn vận tốc lúc đầu 30 km/h", hình mua vở chữ tràn khung (nới khung), hình tiến độ "sản phẩm" → "bộ"; B24 NC1.1 "hai cạnh" thay "chiều dài/chiều rộng" (với $x\ge 6$ chiều rộng lớn hơn chiều dài; đáp án giữ nguyên), NC2.5 nhãn "bức tường" bị nét đè, bỏ "Trở lại tình huống Vận dụng (SGK tr. 22)"; ÔT C6 Bài 21b diễn đạt; bỏ mọi cụm "(dạng Bài tập 6.x)", "(Bài tập 6.x)" treo trên đề. 5 phiếu theo mẫu duy nhất; XeLaTeX ×2: 0 lỗi, 0 thiếu kí tự, 0 Overfull, số trang giữ nguyên (HS 6, 5, 6, 5, 5).
+  - Áp lớp sửa chung cho 15 trang (bỏ thẻ `</head><body>` lặp; bỏ "Kết nối tri thức"/"KNTT"; không có link chéo). Ảnh xem trước 15 ô; `NEW` = T8 Bài 21, 22, 23, 24, ÔT C6, ÔT C3. Sitemap 421 địa chỉ. Thử 3 khổ màn hình (48 lượt kể cả trang chủ): 0 lỗi JS, 0 lỗi KaTeX, không tràn ngang, nút GV ẩn; 736 đường dẫn trong `index.html` và 421 địa chỉ sitemap đều có file. Trên web: 105 mục = 81 bài học + 24 ôn tập chương.
 - 19/10/2026 (7h40): Báo cáo truy cập (Google Analytics). 28 ngày đến hết 18/10: 355 người dùng (358 người mới), thời gian tương tác TB 3 phút 01 giây/người, 2 900 sự kiện. Ngày 18/10: 83 người dùng, 172 lượt xem, TB 3 phút 45 giây (17/10 chỉ 19 người dùng); trang chủ 122 lượt/80 người (TB 20 giây), các trang bài học 50 lượt trên 26 trang (bài giảng T12 Bài 13, T12 Bài 6: 5 lượt; T11 Bài 5: 4; T6 Bài 16, T7 Bài 8, T9 Bài 13: 3). Nguồn 28 ngày (người dùng lần đầu): Zalo 203 (+ chat.zalo.me 8), trực tiếp 132, Facebook 3, YouTube 3, Google 2, Bing 1. Thành phố: Hà Nội 273, Hải Phòng 30, TP HCM 24, Nha Trang 8, Cần Thơ 3. Thời gian thực 7h35: 0 người dùng/30 phút. Trên web: 100 mục = 77 bài học + 23 ôn tập chương.
 - 19/10/2026 (0h15): Liên kết thư mục `D:\AI\BAIGIANGTUONGTACWEB` trên máy thầy (thầy dặn 0h08). Đối chiếu toàn bộ thư mục với web: chỉ còn `8\T8_OnTapChuong3.zip` chưa lên (các gói lẻ T9 Bài 19–21, ÔT C6 đã nằm trong `T9_Chuong6_TronBo`; `6\BÀI 16`, `11\B5_C2_DAYSO` là bản cũ). Theo lời thầy ("có"), đưa Ôn tập Chương III – Toán 8 (`lop8-ontap3`), qua Pull Request (nhánh `claude/toan8-on-tap-chuong3`); thầy nhắn "gộp" (0h11) trước khi xong nên làm xong thì gộp luôn. Kiểm độc lập phiếu GV (25 bài, 74 ý tự luận; dựng toạ độ kiểm mọi số liệu và hình): không lỗi làm sai đáp án/đề; đề HS trùng GV, HS không lộ đáp án. Sửa luôn (cả .tex HS + GV): 5 nhãn hình bị nét đè (B5 O, B7 64°, B11 50°, B20 C, B24 120°). Phiếu theo mẫu duy nhất; XeLaTeX ×2: 0 lỗi, 0 Overfull, số trang giữ nguyên (HS 8). Áp lớp sửa chung cho 3 trang; ảnh xem trước; `NEW` = T8 ÔT C3, T7 Bài 17, 18, ÔT C5, T6 Bài 21, ÔT C5. Sitemap 401. Thử 3 khổ màn hình (12 lượt): 0 lỗi JS, không tràn ngang, nút GV ẩn; 701 đường dẫn trong `index.html` đều có file. Trên web: 100 mục = 77 bài học + 23 ôn tập chương. Đã gộp PR #30 (0h18), web thật đã cập nhật. Bảng theo dõi tiến độ (Dashboard "Tiến độ bài học Mr Black", https://claude.ai/artifact/3CJ7dDLsrnhVnNUJw8NwXy, ghim ở thanh bên Claude; lối tắt `D:\AI\BAIGIANGTUONGTACWEB\Tien do bai hoc Mr Black.url`): 100/293 mục; Claude cập nhật lại số liệu sau mỗi lô bài.
 - 19/10/2026 (0h05): Lô Toán 7 Chương V từ gói `T7_Chuong5_TronBo.zip` (bản HS): Bài 17, 18, 19 (`lop7-bai17..19`, `chuaGiong`) và Ôn tập Chương V (`lop7-ontap5`), qua Pull Request (nhánh `claude/toan7-chuong5`). Kiểm độc lập 4 phiếu GV (khoảng 200 ý; đọc góc mọi biểu đồ quạt và toạ độ mọi biểu đồ đoạn thẳng từ mã TikZ, tính lại bằng Python): không lỗi làm sai đáp án/đề; đề HS trùng GV, HS không lộ đáp án.
