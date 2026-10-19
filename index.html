@@ -722,6 +722,40 @@ const LINKS = {
     pdf:     'hoc-lieu/toan8-on-tap-chuong5-phieu-tu-luyen.pdf',   // phiếu 7 trang
     kiemtra: 'bai-hoc/toan8-on-tap-chuong5-kiem-tra.html'
   },
+  'lop8-bai21': {
+    giang:   'bai-hoc/toan8-bai21-bai-giang.html',
+    luyen:   'bai-hoc/toan8-bai21-luyen-tap.html',
+    pdf:     'hoc-lieu/toan8-bai21-phieu-tu-luyen.pdf',   // phiếu 6 trang
+    kiemtra: 'bai-hoc/toan8-bai21-kiem-tra.html',
+    chuaGiong: true
+  },
+  'lop8-bai22': {
+    giang:   'bai-hoc/toan8-bai22-bai-giang.html',
+    luyen:   'bai-hoc/toan8-bai22-luyen-tap.html',
+    pdf:     'hoc-lieu/toan8-bai22-phieu-tu-luyen.pdf',   // phiếu 5 trang
+    kiemtra: 'bai-hoc/toan8-bai22-kiem-tra.html',
+    chuaGiong: true
+  },
+  'lop8-bai23': {
+    giang:   'bai-hoc/toan8-bai23-bai-giang.html',
+    luyen:   'bai-hoc/toan8-bai23-luyen-tap.html',
+    pdf:     'hoc-lieu/toan8-bai23-phieu-tu-luyen.pdf',   // phiếu 6 trang
+    kiemtra: 'bai-hoc/toan8-bai23-kiem-tra.html',
+    chuaGiong: true
+  },
+  'lop8-bai24': {
+    giang:   'bai-hoc/toan8-bai24-bai-giang.html',
+    luyen:   'bai-hoc/toan8-bai24-luyen-tap.html',
+    pdf:     'hoc-lieu/toan8-bai24-phieu-tu-luyen.pdf',   // phiếu 5 trang
+    kiemtra: 'bai-hoc/toan8-bai24-kiem-tra.html',
+    chuaGiong: true
+  },
+  'lop8-ontap6': {
+    giang:   'bai-hoc/toan8-on-tap-chuong6-tong-hop.html',
+    luyen:   'bai-hoc/toan8-on-tap-chuong6-luyen-tap.html',
+    pdf:     'hoc-lieu/toan8-on-tap-chuong6-phieu-tu-luyen.pdf',   // phiếu 5 trang
+    kiemtra: 'bai-hoc/toan8-on-tap-chuong6-kiem-tra.html'
+  },
   'lop9-bai11': {
     giang:   'bai-hoc/toan9-bai11-bai-giang.html',
     luyen:   'bai-hoc/toan9-bai11-luyen-tap.html',
@@ -1201,6 +1235,11 @@ const ANH = {
   "lop8-bai19": {"giang": "anh/lop8-bai19-giang.webp", "luyen": "anh/lop8-bai19-luyen.webp", "kiemtra": "anh/lop8-bai19-kiemtra.webp"},
   "lop8-bai20": {"giang": "anh/lop8-bai20-giang.webp", "luyen": "anh/lop8-bai20-luyen.webp", "kiemtra": "anh/lop8-bai20-kiemtra.webp"},
   "lop8-ontap5": {"giang": "anh/lop8-ontap5-giang.webp", "luyen": "anh/lop8-ontap5-luyen.webp", "kiemtra": "anh/lop8-ontap5-kiemtra.webp"},
+  "lop8-bai21": {"giang": "anh/lop8-bai21-giang.webp", "luyen": "anh/lop8-bai21-luyen.webp", "kiemtra": "anh/lop8-bai21-kiemtra.webp"},
+  "lop8-bai22": {"giang": "anh/lop8-bai22-giang.webp", "luyen": "anh/lop8-bai22-luyen.webp", "kiemtra": "anh/lop8-bai22-kiemtra.webp"},
+  "lop8-bai23": {"giang": "anh/lop8-bai23-giang.webp", "luyen": "anh/lop8-bai23-luyen.webp", "kiemtra": "anh/lop8-bai23-kiemtra.webp"},
+  "lop8-bai24": {"giang": "anh/lop8-bai24-giang.webp", "luyen": "anh/lop8-bai24-luyen.webp", "kiemtra": "anh/lop8-bai24-kiemtra.webp"},
+  "lop8-ontap6": {"giang": "anh/lop8-ontap6-giang.webp", "luyen": "anh/lop8-ontap6-luyen.webp", "kiemtra": "anh/lop8-ontap6-kiemtra.webp"},
   "lop9-bai11": {"giang": "anh/lop9-bai11-giang.webp", "luyen": "anh/lop9-bai11-luyen.webp", "kiemtra": "anh/lop9-bai11-kiemtra.webp"},
   "lop9-bai12": {"giang": "anh/lop9-bai12-giang.webp", "luyen": "anh/lop9-bai12-luyen.webp", "kiemtra": "anh/lop9-bai12-kiemtra.webp"},
   "lop6-ontap4": {"giang": "anh/lop6-ontap4-giang.webp", "luyen": "anh/lop6-ontap4-luyen.webp", "kiemtra": "anh/lop6-ontap4-kiemtra.webp"},
@@ -1586,7 +1625,7 @@ document.addEventListener('click', e => { if (!e.target.closest('.search')) box.
 
 /* Học ngay: thẻ bài đã có, chạm 1 lần là vào học */
 const HOT = ['lop12-bai6', 'lop11-bai5', 'lop12-bai11', 'lop6-bai16', 'lop11-bai12', 'lop12-bai7'];        // nhiều bạn học (Google Analytics 10–17/10)
-const NEW = ['lop8-ontap3', 'lop7-bai17', 'lop7-bai18', 'lop7-ontap5', 'lop6-bai21', 'lop6-ontap5'];     // mới cập nhật
+const NEW = ['lop8-bai21', 'lop8-bai22', 'lop8-bai23', 'lop8-bai24', 'lop8-ontap6', 'lop8-ontap3'];     // mới cập nhật
 const byKey = k => ALL.find(x => x.key === k);
 const chipList = [{id:'noibat', name:'Nổi bật'}].concat(COURSES.filter(c => AVAIL.some(x => x.course === c)).map(c => ({id:c.id, name:'Toán ' + c.short})));
 let chipSel = 'noibat';
