@@ -1,6 +1,6 @@
 # Sổ quản lý website Mr Black NBK
 
-Cập nhật: 19/10/2026 (8h55)
+Cập nhật: 20/10/2026 (7h55)
 
 ## Địa chỉ và nơi lưu
 - **Website:** https://mrblackmath.github.io
@@ -198,6 +198,7 @@ Trong `index.html`, khối `LINKS` khai báo đường dẫn cho từng bài, kh
 - Mua và gắn tên miền mrblackmath.vn.
 
 ## Nhật ký
+- 20/10/2026 (7h55): Báo cáo truy cập (Google Analytics). 7 ngày 13–19/10: 271 người dùng (253 người mới), 662 lượt xem, 2 150 sự kiện, thời gian tương tác TB 3 phút 15 giây/người; so với 7 ngày trước đó: người dùng +95%, lượt xem +117%. Nguồn (người dùng lần đầu): Zalo 159 (+ chat.zalo.me 6), trực tiếp 100, YouTube 2, Google 1, Bing 1, Instagram 1. Thành phố: Hà Nội 210, Hải Phòng 25, TP HCM 15, Nha Trang 6, Cần Thơ 2. Trang xem nhiều 7 ngày: trang chủ 450 lượt (bản cũ 272 + bản mới 178); bài giảng T12 Bài 6: 24 lượt/20 người (TB 3 phút 19 giây); tự luyện T12 Bài 6: 13/6 (7 phút 15 giây); bài giảng T11 Bài 5: 12/6; kiểm tra T12 Bài 7: 11/6 (3 phút 33 giây); bài giảng T12 Bài 11: 8/4; kiểm tra T12 Bài 6: 8/5; kiểm tra T11 Bài 12: 7/5 (5 phút 50 giây). Riêng ngày 19/10 (Chủ nhật): 21 người dùng, 46 lượt xem (trang chủ 36; 9 trang bài học mỗi trang 1–2 lượt: T7 Bài 7, T9 Bài 11, T7 Bài 12, T6 Bài 17, T8 Bài 20, T10 Bài 7, kiểm tra T7 Bài 8, tự luyện T9 Bài 14) — thấp hơn hẳn 18/10 (83 người dùng). Trên web: 110 mục = 85 bài học + 25 ôn tập chương.
 - 19/10/2026 (8h55): Lô Toán 10 Chương VI từ thư mục `D:\AI\BAIGIANGTUONGTACWEB\10` (gói `T10B15.zip` … `T10B18.zip`, `T10C6.zip`; `T10_Chuong6.zip` chứa đúng 5 gói này, bản HS): Bài 15–18 (`lop10-bai15..18`, `chuaGiong`) và Ôn tập Chương VI (`lop10-ontap6`), qua Pull Request (nhánh `claude/toan10-chuong6`). Kiểm độc lập 5 phiếu GV (485 ý; giải lại mọi tập xác định, đỉnh parabol, xét dấu, bất phương trình, thử lại nghiệm phương trình chứa căn bằng Python; đối chiếu toạ độ mọi đồ thị TikZ với hàm số): đề HS trùng GV, HS không lộ đáp án.
   - LỖI (thầy đồng ý sửa 8h15, cả .tex HS + GV): B15 Nâng cao 2 câu 2 bảng giá taxi "từ km thứ 2 đến km thứ 10" và "từ km thứ 10 trở đi" chồng lấn km thứ 10 (243 hay 240) → "từ km thứ 11 trở đi", đáp án giữ 243.
   - Sửa luôn (cả .tex HS + GV): B15 II.9c "Luôn có f(0) < f(2)", NC2.4 bỏ "của Bài 15", nhãn đè II.6, NC2.1; B16 NC2.1 bỏ mốc 8 trên trục tung (lộ đáp số), NC2.2 "(không theo tỉ lệ)", II.6, NC1.2 đồ thị vẽ quá khung + nhãn đè; B17 NC2.3 "diện tích hình chữ nhật bao ngoài (gồm cả ảnh và viền)", NC1.1 bỏ nhãn "8 m" (lộ đáp số), nhãn đè II.3, NC1.5; B18 NC2.1 dời M khỏi chính giữa AH (lộ x = 30), nhãn M đè NC1.4, NC2.3; ÔT C6 NC1.3 bỏ nét đứt chỉ đỉnh, NC2.4 bỏ nét đứt h = 60 (lộ đáp số), nhãn đè II.2. 5 phiếu theo mẫu duy nhất; XeLaTeX ×2: 0 lỗi, 0 thiếu kí tự, 0 Overfull, số trang giữ nguyên (HS 6 cả 5 phiếu).
