@@ -1,6 +1,6 @@
 # Sổ quản lý website Mr Black NBK
 
-Cập nhật: 20/10/2026 (7h55)
+Cập nhật: 24/10/2026 (23h30)
 
 ## Địa chỉ và nơi lưu
 - **Website:** https://mrblackmath.github.io
@@ -47,6 +47,7 @@ Trong `index.html`, khối `LINKS` khai báo đường dẫn cho từng bài, kh
 - Mọi báo cáo gửi thầy luôn ghi tổng số bài đã có trên web, kể cả các bài Ôn tập chương (thầy dặn 11/10/2026).
 - Từ 11/10/2026 (chiều) mỗi lần đưa bài lên đều qua Pull Request; thầy nhắn "gộp" thì mới gộp vào `main`.
 - Mẫu phiếu luyện tập duy nhất (thầy chốt 17/10/2026): mọi phiếu theo `website/MAU-PHIEU-LUYEN-TAP.tex` trong Project (gốc là T12B11_Luyentaphs.tex): đầu phiếu logo MB + "Mr Black / TOÁN THPT" (lớp 6–9: "TOÁN THCS") bên trái, tên phiếu + "Created by Mr Black" ở giữa, vạch vàng; chân trang "Mr Black • TOÁN THPT/THCS"; thêm chữ chìm "MR BLACK" chéo giữa trang; "PHẦN NÂNG CAO", "HẾT" như mẫu. Bản đăng web KHÔNG có trang ĐÁP ÁN. Chỉ đổi hình thức, không thêm/bớt nội dung (không tự thêm Phần tự luận). Riêng T12 Bài 11 dùng bản mới CÓ Phần tự luận (thầy chốt 18/10/2026). Từ 18/10/2026 cả 62 phiếu đã theo mẫu; phiếu mới phải theo mẫu trước khi lên web.
+- Quy chuẩn cấu trúc phiếu (thầy chốt 21/10/2026): lớp 6–9 (THCS) gồm 4 phần tự luận "Phần A. Cơ bản – Củng cố", "Phần B. Thông hiểu – Vận dụng", "Phần C. Nâng cao", "Phần D. Dành cho học sinh giỏi"; lớp 10–12 (THPT) theo cấu trúc Phần I, II, III + PHẦN NÂNG CAO. Gói THCS mới làm theo kiểu trắc nghiệm THPT thì phải chuyển sang A–B–C–D trước khi lên web; phiếu thiếu Phần D thì bổ sung.
 - Khi kiểm phiếu thấy chỗ "nên sửa" (đáp án trả lời ngắn quá 4 kí tự, hình lộ đáp số, diễn đạt chưa chặt, hình sai tỉ lệ, nhãn đè…) thì sửa luôn cả .tex bản HS và GV, biên dịch lại, rồi báo trong báo cáo; không để thầy tự sửa (thầy dặn 11/10/2026). Lỗi làm sai đáp án/đề vẫn hỏi thầy trước khi sửa.
 
 ## Các bài đã có
@@ -59,9 +60,9 @@ Trong `index.html`, khối `LINKS` khai báo đường dẫn cho từng bài, kh
 | Toán 6 – Bài 20. Chu vi và diện tích của một số tứ giác đã học | ✅ (bản chờ gắn lời giảng, 20 slide) | ✅ (16 nhiệm vụ + 1 thử thách) | ✅ (2 trang, bản HS) | ✅ (12 câu) |
 | Toán 6 – Ôn tập Chương III. Số nguyên | ✅ Tổng hợp kiến thức | ✅ | ✅ (3 trang, bản HS) | ✅ |
 | Toán 6 – Ôn tập Chương IV. Một số hình phẳng trong thực tiễn | ✅ Tổng hợp kiến thức | ✅ | ✅ (4 trang, bản HS) | ✅ |
-| Toán 6 – Bài 21. Hình có trục đối xứng | ✅ (bản chờ gắn lời giảng, 16 slide) | ✅ (16 nhiệm vụ + 1 thử thách) | ✅ (3 trang, bản HS, đã sửa 4 chỗ) | ✅ (12 câu) |
-| Toán 6 – Bài 22. Hình có tâm đối xứng | ✅ (bản chờ gắn lời giảng, 15 slide) | ✅ (15 nhiệm vụ + 1 thử thách) | ✅ (3 trang, bản HS, đã sửa 4 chỗ) | ✅ (12 câu) |
-| Toán 6 – Ôn tập Chương V. Tính đối xứng của hình phẳng trong tự nhiên | ✅ Tổng hợp kiến thức | ✅ (18 nhiệm vụ + 1 thử thách) | ✅ (3 trang, bản HS, đã sửa 3 chỗ) | ✅ (16 câu) |
+| Toán 6 – Bài 21. Hình có trục đối xứng | ✅ (bản chờ gắn lời giảng, 16 slide) | ✅ (16 nhiệm vụ + 1 thử thách) | ✅ (3 trang, bản HS, có Phần D) | ✅ (12 câu) |
+| Toán 6 – Bài 22. Hình có tâm đối xứng | ✅ (bản chờ gắn lời giảng, 15 slide) | ✅ (15 nhiệm vụ + 1 thử thách) | ✅ (3 trang, bản HS, có Phần D) | ✅ (12 câu) |
+| Toán 6 – Ôn tập Chương V. Tính đối xứng của hình phẳng trong tự nhiên | ✅ Tổng hợp kiến thức | ✅ (18 nhiệm vụ + 1 thử thách) | ✅ (3 trang, bản HS, có Phần D) | ✅ (16 câu) |
 | Toán 7 – Bài 7. Tập hợp các số thực | ✅ Bài giảng (chờ gắn lời giảng) | ✅ | ✅ (3 trang, bản HS) | ✅ |
 | Toán 7 – Bài 8. Góc ở vị trí đặc biệt. Tia phân giác của một góc | ✅ Bài giảng (chờ gắn lời giảng) | ✅ | ✅ (4 trang, bản HS) | ✅ |
 | Toán 7 – Bài 9. Hai đường thẳng song song và dấu hiệu nhận biết | ✅ Bài giảng (chờ gắn lời giảng) | ✅ | ✅ (6 trang, bản HS) | ✅ |
@@ -78,21 +79,21 @@ Trong `index.html`, khối `LINKS` khai báo đường dẫn cho từng bài, kh
 | Toán 7 – Bài 18. Biểu đồ hình quạt tròn | ✅ (bản chờ gắn lời giảng, 26 slide) | ✅ (18 nhiệm vụ + 1 thử thách) | ✅ (7 trang, bản HS, đã sửa 3 chỗ) | ✅ (16 câu, đề A/B) |
 | Toán 7 – Bài 19. Biểu đồ đoạn thẳng | ✅ (bản chờ gắn lời giảng, 28 slide) | ✅ (18 nhiệm vụ + 1 thử thách) | ✅ (7 trang, bản HS) | ✅ (16 câu, đề A/B) |
 | Toán 7 – Ôn tập Chương V. Thu thập và biểu diễn dữ liệu | ✅ Tổng hợp kiến thức (18 slide) | ✅ (20 nhiệm vụ + 1 thử thách) | ✅ (6 trang, bản HS, đã sửa 1 chỗ) | ✅ (20 câu, đề A/B) |
-| Toán 8 – Bài 10. Tứ giác | ✅ Bài giảng (chờ gắn lời giảng) | ✅ | ✅ (6 trang, bản HS, đã sửa 1 lỗi) | ✅ |
-| Toán 8 – Bài 11. Hình thang cân | ✅ Bài giảng (chờ gắn lời giảng) | ✅ | ✅ (7 trang, bản HS) | ✅ |
-| Toán 8 – Bài 12. Hình bình hành | ✅ Bài giảng (chờ gắn lời giảng) | ✅ | ✅ (7 trang, bản HS) | ✅ |
-| Toán 8 – Bài 13. Hình chữ nhật | ✅ Bài giảng (chờ gắn lời giảng) | ✅ | ✅ (7 trang, bản HS) | ✅ |
-| Toán 8 – Bài 14. Hình thoi và hình vuông | ✅ Bài giảng (chờ gắn lời giảng) | ✅ | ✅ (7 trang, bản HS, đã sửa 1 lỗi) | ✅ |
-| Toán 8 – Ôn tập Chương III. Tứ giác | ✅ Tổng hợp kiến thức (14 slide) | ✅ (29 nhiệm vụ + 1 thử thách) | ✅ (8 trang, bản HS, đã sửa 5 nhãn hình) | ✅ (20 câu, đề A/B) |
-| Toán 8 – Bài 18. Thu thập và phân loại dữ liệu | ✅ (bản chờ gắn lời giảng, 15 slide) | ✅ (16 nhiệm vụ + 1 thử thách) | ✅ (5 trang, bản HS) | ✅ (15 câu, đề A/B) |
-| Toán 8 – Bài 19. Biểu diễn dữ liệu bằng bảng, biểu đồ | ✅ (bản chờ gắn lời giảng, 20 slide) | ✅ (18 nhiệm vụ + 1 thử thách) | ✅ (6 trang, bản HS, đã sửa 7 chỗ) | ✅ (16 câu, đề A/B) |
-| Toán 8 – Bài 20. Phân tích số liệu thống kê dựa vào biểu đồ | ✅ (bản chờ gắn lời giảng, 18 slide) | ✅ (16 nhiệm vụ + 1 thử thách) | ✅ (7 trang, bản HS, đã sửa 1 chỗ) | ✅ (14 câu, đề A/B) |
-| Toán 8 – Ôn tập Chương V. Dữ liệu và biểu đồ | ✅ Tổng hợp kiến thức (11 slide) | ✅ (23 nhiệm vụ + 1 thử thách) | ✅ (7 trang, bản HS, đã sửa 2 chỗ) | ✅ (20 câu, đề A/B) |
-| Toán 8 – Bài 21. Phân thức đại số | ✅ (bản chờ gắn lời giảng, 22 slide) | ✅ (17 nhiệm vụ + 1 thử thách) | ✅ (6 trang, bản HS, đã sửa 2 chỗ) | ✅ (14 câu, đề A/B) |
-| Toán 8 – Bài 22. Tính chất cơ bản của phân thức đại số | ✅ (bản chờ gắn lời giảng, 25 slide) | ✅ (17 nhiệm vụ + 1 thử thách) | ✅ (5 trang, bản HS, đã sửa 3 lỗi + 1 chỗ) | ✅ (15 câu, đề A/B) |
-| Toán 8 – Bài 23. Phép cộng và phép trừ phân thức đại số | ✅ (bản chờ gắn lời giảng, 26 slide) | ✅ (18 nhiệm vụ + 1 thử thách) | ✅ (6 trang, bản HS, đã sửa 3 chỗ) | ✅ (16 câu, đề A/B) |
-| Toán 8 – Bài 24. Phép nhân và phép chia phân thức đại số | ✅ (bản chờ gắn lời giảng, 18 slide) | ✅ (17 nhiệm vụ + 1 thử thách) | ✅ (5 trang, bản HS, đã sửa 2 chỗ) | ✅ (15 câu, đề A/B) |
-| Toán 8 – Ôn tập Chương VI. Phân thức đại số | ✅ Tổng hợp kiến thức (10 slide) | ✅ (22 nhiệm vụ + 1 thử thách) | ✅ (5 trang, bản HS, đã sửa 1 chỗ) | ✅ (20 câu, đề A/B) |
+| Toán 8 – Bài 10. Tứ giác | ✅ Bài giảng (chờ gắn lời giảng) | ✅ | ✅ (5 trang, bản HS, A–D tự luận) | ✅ |
+| Toán 8 – Bài 11. Hình thang cân | ✅ Bài giảng (chờ gắn lời giảng) | ✅ | ✅ (4 trang, bản HS, A–D tự luận) | ✅ |
+| Toán 8 – Bài 12. Hình bình hành | ✅ Bài giảng (chờ gắn lời giảng) | ✅ | ✅ (5 trang, bản HS, A–D tự luận) | ✅ |
+| Toán 8 – Bài 13. Hình chữ nhật | ✅ Bài giảng (chờ gắn lời giảng) | ✅ | ✅ (5 trang, bản HS, A–D tự luận) | ✅ |
+| Toán 8 – Bài 14. Hình thoi và hình vuông | ✅ Bài giảng (chờ gắn lời giảng) | ✅ | ✅ (5 trang, bản HS, A–D tự luận) | ✅ |
+| Toán 8 – Ôn tập Chương III. Tứ giác | ✅ Tổng hợp kiến thức (14 slide) | ✅ (29 nhiệm vụ + 1 thử thách) | ✅ (8 trang, bản HS, có Phần D) | ✅ (20 câu, đề A/B) |
+| Toán 8 – Bài 18. Thu thập và phân loại dữ liệu | ✅ (bản chờ gắn lời giảng, 15 slide) | ✅ (16 nhiệm vụ + 1 thử thách) | ✅ (5 trang, bản HS, A–D tự luận) | ✅ (15 câu, đề A/B) |
+| Toán 8 – Bài 19. Biểu diễn dữ liệu bằng bảng, biểu đồ | ✅ (bản chờ gắn lời giảng, 20 slide) | ✅ (18 nhiệm vụ + 1 thử thách) | ✅ (6 trang, bản HS, A–D tự luận) | ✅ (16 câu, đề A/B) |
+| Toán 8 – Bài 20. Phân tích số liệu thống kê dựa vào biểu đồ | ✅ (bản chờ gắn lời giảng, 18 slide) | ✅ (16 nhiệm vụ + 1 thử thách) | ✅ (7 trang, bản HS, A–D tự luận) | ✅ (14 câu, đề A/B) |
+| Toán 8 – Ôn tập Chương V. Dữ liệu và biểu đồ | ✅ Tổng hợp kiến thức (11 slide) | ✅ (23 nhiệm vụ + 1 thử thách) | ✅ (7 trang, bản HS, có Phần D) | ✅ (20 câu, đề A/B) |
+| Toán 8 – Bài 21. Phân thức đại số | ✅ (bản chờ gắn lời giảng, 22 slide) | ✅ (17 nhiệm vụ + 1 thử thách) | ✅ (4 trang, bản HS, A–D tự luận) | ✅ (14 câu, đề A/B) |
+| Toán 8 – Bài 22. Tính chất cơ bản của phân thức đại số | ✅ (bản chờ gắn lời giảng, 25 slide) | ✅ (17 nhiệm vụ + 1 thử thách) | ✅ (4 trang, bản HS, A–D tự luận) | ✅ (15 câu, đề A/B) |
+| Toán 8 – Bài 23. Phép cộng và phép trừ phân thức đại số | ✅ (bản chờ gắn lời giảng, 26 slide) | ✅ (18 nhiệm vụ + 1 thử thách) | ✅ (5 trang, bản HS, A–D tự luận) | ✅ (16 câu, đề A/B) |
+| Toán 8 – Bài 24. Phép nhân và phép chia phân thức đại số | ✅ (bản chờ gắn lời giảng, 18 slide) | ✅ (17 nhiệm vụ + 1 thử thách) | ✅ (4 trang, bản HS, A–D tự luận) | ✅ (15 câu, đề A/B) |
+| Toán 8 – Ôn tập Chương VI. Phân thức đại số | ✅ Tổng hợp kiến thức (10 slide) | ✅ (22 nhiệm vụ + 1 thử thách) | ✅ (5 trang, bản HS, có Phần D) | ✅ (20 câu, đề A/B) |
 | Toán 9 – Bài 11. Tỉ số lượng giác của góc nhọn | ✅ Bài giảng (chờ gắn lời giảng) | ✅ | ✅ (4 trang, bản HS) | ✅ |
 | Toán 9 – Bài 12. Một số hệ thức giữa cạnh, góc trong tam giác vuông và ứng dụng | ✅ Bài giảng (chờ gắn lời giảng) | ✅ | ✅ (4 trang, bản HS) | ✅ |
 | Toán 9 – Ôn tập Chương IV. Hệ thức lượng trong tam giác vuông | ✅ Tổng hợp kiến thức | ✅ | ✅ (4 trang, bản HS) | ✅ |
@@ -198,6 +199,9 @@ Trong `index.html`, khối `LINKS` khai báo đường dẫn cho từng bài, kh
 - Mua và gắn tên miền mrblackmath.vn.
 
 ## Nhật ký
+- 24/10/2026 (23h30): Theo lời thầy (21/10 "làm cả hai"; 24/10 "tiếp cho xong"), chuẩn hoá phiếu THCS, qua Pull Request (nhánh `claude/phieu-thcs-abcd`). Quét 59 phiếu lớp 6–9: 12 phiếu Toán 8 (Bài 10–14, 18–24) làm theo cấu trúc THPT (Phần I/II/III + Nâng cao) → chuyển sang A–B–C–D tự luận (giữ kiến thức, số liệu, hình; bỏ phương án nhiễu; câu đúng sai thành yêu cầu tính/chứng minh/giải thích; Phần D lấy bài khó nhất, một số ý tổng quát hoá/chứng minh viết thêm); 6 phiếu thiếu Phần D (T6 Bài 21, 22, ÔT C5; T8 ÔT C3, C5, C6) → bổ sung Phần D (2–3 bài/phiếu, viết mới), 3 phiếu ÔT T8 đổi tên phần theo kiểu lớp 6, 7, 9. Dựng lại từ .tex gốc trên máy thầy (`D:\AI\BAIGIANGTUONGTACWEB`) bằng bộ dựng phiếu mới (nội dung Python → .tex HS + GV theo mẫu duy nhất), áp lại mọi chỗ đã sửa trên web (so chữ từng từ .tex gốc với PDF web; thêm: T8 B10 viên gạch ghép quanh điểm O; B20 bỏ 9 chỗ "(Hình 5.x)"). Bản GV và mã nguồn lưu ở `D:\AI\BAIGIANGTUONGTACWEB\8\PhieuTHCS_ABCD\`.
+  - Kiểm định độc lập (3 lượt, khoảng 620 câu/ý + toàn bộ Phần D mới): 1 lỗi đáp án ở phần viết mới, đã sửa — T6 B22 D1 chữ số điện tử có tâm đối xứng là 0, 1, 2, 5, 8 (thiếu 1). Sửa luôn các chỗ nên sửa: B19 C5 hình đã ghi sẵn tỉ lệ → hỏi "kiểm tra lại các tỉ lệ"; B10 D3 "tứ giác lồi bất kì"; B13 C1d BD = 2,43 m (2,45 m mâu thuẫn với AB = 1 m, AD = 2,2 m, AC = 2,4 m; đáp án giữ nguyên); B20 câu Huế viết lại, ghi số trên cột biểu đồ phế liệu; B21 D2 bỏ nhãn vận tốc lộ đáp số, D3 đổi thành chứng minh x = 2 là giá trị duy nhất; B22 C2 đổi ô tô thành xe đạp, x = 9 (72 km, 12 km/h, 6 giờ — bản cũ 3 960 km, 60 giờ không thực tế), lời giải D2 không dùng bất phương trình; B23 tách ý, thêm đáp số thiếu, dời nhãn "Nhà"; B24 thống nhất "ki-lô-gam"; nhãn hình T6 ÔT C5 D1, T8 ÔT C3 Bài 27.
+  - 18 phiếu theo mẫu duy nhất (TOÁN THCS); XeLaTeX ×2: 0 lỗi, 0 thiếu kí tự, 0 Overfull. Số trang HS: T8 B10–14: 5, 4, 5, 5, 5; B18–24: 5, 6, 7, 4, 4, 5, 4; T6 B21, B22, ÔT C5: 3, 3, 3; T8 ÔT C3, C5, C6: 8, 7, 5. Sau khi gộp: 59/59 phiếu THCS đúng A–B–C–D. Trên web: 110 mục = 85 bài học + 25 ôn tập chương.
 - 20/10/2026 (7h55): Báo cáo truy cập (Google Analytics). 7 ngày 13–19/10: 271 người dùng (253 người mới), 662 lượt xem, 2 150 sự kiện, thời gian tương tác TB 3 phút 15 giây/người; so với 7 ngày trước đó: người dùng +95%, lượt xem +117%. Nguồn (người dùng lần đầu): Zalo 159 (+ chat.zalo.me 6), trực tiếp 100, YouTube 2, Google 1, Bing 1, Instagram 1. Thành phố: Hà Nội 210, Hải Phòng 25, TP HCM 15, Nha Trang 6, Cần Thơ 2. Trang xem nhiều 7 ngày: trang chủ 450 lượt (bản cũ 272 + bản mới 178); bài giảng T12 Bài 6: 24 lượt/20 người (TB 3 phút 19 giây); tự luyện T12 Bài 6: 13/6 (7 phút 15 giây); bài giảng T11 Bài 5: 12/6; kiểm tra T12 Bài 7: 11/6 (3 phút 33 giây); bài giảng T12 Bài 11: 8/4; kiểm tra T12 Bài 6: 8/5; kiểm tra T11 Bài 12: 7/5 (5 phút 50 giây). Riêng ngày 19/10 (Chủ nhật): 21 người dùng, 46 lượt xem (trang chủ 36; 9 trang bài học mỗi trang 1–2 lượt: T7 Bài 7, T9 Bài 11, T7 Bài 12, T6 Bài 17, T8 Bài 20, T10 Bài 7, kiểm tra T7 Bài 8, tự luyện T9 Bài 14) — thấp hơn hẳn 18/10 (83 người dùng). Trên web: 110 mục = 85 bài học + 25 ôn tập chương.
 - 19/10/2026 (8h55): Lô Toán 10 Chương VI từ thư mục `D:\AI\BAIGIANGTUONGTACWEB\10` (gói `T10B15.zip` … `T10B18.zip`, `T10C6.zip`; `T10_Chuong6.zip` chứa đúng 5 gói này, bản HS): Bài 15–18 (`lop10-bai15..18`, `chuaGiong`) và Ôn tập Chương VI (`lop10-ontap6`), qua Pull Request (nhánh `claude/toan10-chuong6`). Kiểm độc lập 5 phiếu GV (485 ý; giải lại mọi tập xác định, đỉnh parabol, xét dấu, bất phương trình, thử lại nghiệm phương trình chứa căn bằng Python; đối chiếu toạ độ mọi đồ thị TikZ với hàm số): đề HS trùng GV, HS không lộ đáp án.
   - LỖI (thầy đồng ý sửa 8h15, cả .tex HS + GV): B15 Nâng cao 2 câu 2 bảng giá taxi "từ km thứ 2 đến km thứ 10" và "từ km thứ 10 trở đi" chồng lấn km thứ 10 (243 hay 240) → "từ km thứ 11 trở đi", đáp án giữ 243.
