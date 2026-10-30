@@ -1,6 +1,6 @@
 # Sổ quản lý website Mr Black NBK
 
-Cập nhật: 30/10/2026 (17h25)
+Cập nhật: 30/10/2026 (18h20)
 
 ## Địa chỉ và nơi lưu
 - **Website:** https://mrblackmath.github.io
@@ -70,6 +70,11 @@ Trong `index.html`, khối `LINKS` khai báo đường dẫn cho từng bài, kh
 | Toán 6 – Bài 26. Phép nhân và phép chia phân số | ✅ (bản chờ gắn lời giảng) | ✅ | ✅ (2 trang, bản HS, A–D tự luận, đã sửa 2 hình) | ✅ |
 | Toán 6 – Bài 27. Hai bài toán về phân số | ✅ (bản chờ gắn lời giảng) | ✅ | ✅ (2 trang, bản HS, A–D tự luận, đã sửa 1 nhãn hình) | ✅ |
 | Toán 6 – Ôn tập Chương VI. Phân số | ✅ Tổng hợp kiến thức | ✅ | ✅ (2 trang, bản HS, A–D tự luận, đã sửa 4 chỗ) | ✅ |
+| Toán 6 – Bài 28. Số thập phân | ✅ (bản chờ gắn lời giảng) | ✅ | ✅ (2 trang, bản HS, A–D tự luận, đã sửa 5 chỗ) | ✅ |
+| Toán 6 – Bài 29. Tính toán với số thập phân | ✅ (bản chờ gắn lời giảng) | ✅ | ✅ (2 trang, bản HS, A–D tự luận, đã sửa 1 hình lộ đáp số + 1 chỗ) | ✅ |
+| Toán 6 – Bài 30. Làm tròn và ước lượng | ✅ (bản chờ gắn lời giảng) | ✅ | ✅ (2 trang, bản HS, A–D tự luận, đã sửa 3 chỗ) | ✅ |
+| Toán 6 – Bài 31. Một số bài toán về tỉ số và tỉ số phần trăm | ✅ (bản chờ gắn lời giảng) | ✅ | ✅ (2 trang, bản HS, A–D tự luận) | ✅ |
+| Toán 6 – Ôn tập Chương VII. Số thập phân | ✅ Tổng hợp kiến thức | ✅ | ✅ (2 trang, bản HS, A–D tự luận, đã sửa 1 hình) | ✅ |
 | Toán 7 – Bài 7. Tập hợp các số thực | ✅ Bài giảng (chờ gắn lời giảng) | ✅ | ✅ (3 trang, bản HS) | ✅ |
 | Toán 7 – Bài 8. Góc ở vị trí đặc biệt. Tia phân giác của một góc | ✅ Bài giảng (chờ gắn lời giảng) | ✅ | ✅ (4 trang, bản HS) | ✅ |
 | Toán 7 – Bài 9. Hai đường thẳng song song và dấu hiệu nhận biết | ✅ Bài giảng (chờ gắn lời giảng) | ✅ | ✅ (6 trang, bản HS) | ✅ |
@@ -92,6 +97,9 @@ Trong `index.html`, khối `LINKS` khai báo đường dẫn cho từng bài, kh
 | Toán 7 – Bài 27. Phép nhân đa thức một biến | ✅ (bản chờ gắn lời giảng) | ✅ | ✅ (2 trang, bản HS, A–D tự luận) | ✅ |
 | Toán 7 – Bài 28. Phép chia đa thức một biến | ✅ (bản chờ gắn lời giảng) | ✅ | ✅ (1 trang, bản HS, A–D tự luận, đã sửa 3 chỗ) | ✅ |
 | Toán 7 – Ôn tập Chương VII. Biểu thức đại số và đa thức một biến | ✅ Tổng hợp kiến thức | ✅ | ✅ (2 trang, bản HS, A–D tự luận, đã sửa 1 chỗ) | ✅ |
+| Toán 7 – Bài 29. Làm quen với biến cố | ✅ (bản chờ gắn lời giảng) | ✅ | ✅ (2 trang, bản HS, A–D tự luận) | ✅ |
+| Toán 7 – Bài 30. Làm quen với xác suất của biến cố | ✅ (bản chờ gắn lời giảng) | ✅ | ✅ (2 trang, bản HS, A–D tự luận, đã sửa 1 chỗ) | ✅ |
+| Toán 7 – Ôn tập Chương VIII. Làm quen với biến cố và xác suất của biến cố | ✅ Tổng hợp kiến thức | ✅ | ✅ (2 trang, bản HS, A–D tự luận) | ✅ |
 | Toán 8 – Bài 10. Tứ giác | ✅ Bài giảng (chờ gắn lời giảng) | ✅ | ✅ (5 trang, bản HS, A–D tự luận) | ✅ |
 | Toán 8 – Bài 11. Hình thang cân | ✅ Bài giảng (chờ gắn lời giảng) | ✅ | ✅ (4 trang, bản HS, A–D tự luận) | ✅ |
 | Toán 8 – Bài 12. Hình bình hành | ✅ Bài giảng (chờ gắn lời giảng) | ✅ | ✅ (5 trang, bản HS, A–D tự luận) | ✅ |
@@ -111,6 +119,12 @@ Trong `index.html`, khối `LINKS` khai báo đường dẫn cho từng bài, kh
 | Toán 8 – Bài 31. Cách tính xác suất của biến cố bằng tỉ số | ✅ (bản chờ gắn lời giảng) | ✅ | ✅ (2 trang, bản HS, A–D tự luận, đã sửa 2 hình) | ✅ |
 | Toán 8 – Bài 32. Mối liên hệ giữa xác suất thực nghiệm với xác suất và ứng dụng | ✅ (bản chờ gắn lời giảng) | ✅ | ✅ (2 trang, bản HS, A–D tự luận, đã sửa 2 chỗ) | ✅ |
 | Toán 8 – Ôn tập Chương VIII. Mở đầu về tính xác suất của biến cố | ✅ Tổng hợp kiến thức | ✅ | ✅ (3 trang, bản HS, A–D tự luận, đã sửa 1 hình lộ đáp số + 1 chỗ) | ✅ |
+| Toán 8 – Bài 33. Hai tam giác đồng dạng | ✅ (bản chờ gắn lời giảng) | ✅ | ✅ (2 trang, bản HS, A–D tự luận, đã sửa 1 nhãn hình) | ✅ |
+| Toán 8 – Bài 34. Ba trường hợp đồng dạng của hai tam giác | ✅ (bản chờ gắn lời giảng) | ✅ | ✅ (2 trang, bản HS, A–D tự luận, đã sửa 9 nhãn hình + 1 hình) | ✅ |
+| Toán 8 – Bài 35. Định lí Pythagore và ứng dụng | ✅ (bản chờ gắn lời giảng) | ✅ | ✅ (2 trang, bản HS, A–D tự luận, đã sửa 1 chỗ) | ✅ |
+| Toán 8 – Bài 36. Các trường hợp đồng dạng của hai tam giác vuông | ✅ (bản chờ gắn lời giảng) | ✅ | ✅ (2 trang, bản HS, A–D tự luận, đã sửa 1 chỗ) | ✅ |
+| Toán 8 – Bài 37. Hình đồng dạng | ✅ (bản chờ gắn lời giảng) | ✅ | ✅ (3 trang, bản HS, A–D tự luận, đã sửa 3 chỗ) | ✅ |
+| Toán 8 – Ôn tập Chương IX. Tam giác đồng dạng | ✅ Tổng hợp kiến thức | ✅ | ✅ (2 trang, bản HS, A–D tự luận, đã sửa 2 hình, 1 chỗ vượt lớp, 15 nhãn) | ✅ |
 | Toán 9 – Bài 11. Tỉ số lượng giác của góc nhọn | ✅ Bài giảng (chờ gắn lời giảng) | ✅ | ✅ (4 trang, bản HS) | ✅ |
 | Toán 9 – Bài 12. Một số hệ thức giữa cạnh, góc trong tam giác vuông và ứng dụng | ✅ Bài giảng (chờ gắn lời giảng) | ✅ | ✅ (4 trang, bản HS) | ✅ |
 | Toán 9 – Ôn tập Chương IV. Hệ thức lượng trong tam giác vuông | ✅ Tổng hợp kiến thức | ✅ | ✅ (4 trang, bản HS) | ✅ |
@@ -211,14 +225,18 @@ Trong `index.html`, khối `LINKS` khai báo đường dẫn cho từng bài, kh
 - Bài 6 – Toán 12: khi thầy gửi ghi âm, chỉ thay `bai-hoc/toan12-bai6-bai-giang.html` (giữ tên) và chụp lại ảnh xem trước bài giảng.
   - Khi gắn ghi âm xong: xoá dòng `chuaGiong: true` của `lop12-bai6` trong `LINKS` (index.html) để trang chủ ghi lại "Có giọng thầy giảng".
 - Bài 7–19 – Toán 12: khi có ghi âm thì thay bài giảng (giữ tên file), chụp lại ảnh xem trước và xoá `chuaGiong`.
-- Bài 7–19, 24–28 – Toán 7; Bài 10–14, 18–24, 30–32 – Toán 8; Bài 11–24 – Toán 9: khi có ghi âm thì thay bài giảng (giữ tên file), chụp lại ảnh xem trước và xoá `chuaGiong`.
+- Bài 7–19, 24–30 – Toán 7; Bài 10–14, 18–24, 30–37 – Toán 8; Bài 11–24 – Toán 9: khi có ghi âm thì thay bài giảng (giữ tên file), chụp lại ảnh xem trước và xoá `chuaGiong`.
 - Bài 5–7, 10–17 – Toán 11: khi có ghi âm thì thay bài giảng (giữ tên file), chụp lại ảnh xem trước và xoá `chuaGiong`.
-- Bài 17–27 – Toán 6: khi có ghi âm thì thay bài giảng (giữ tên file), chụp lại ảnh xem trước và xoá `chuaGiong`.
+- Bài 17–31 – Toán 6: khi có ghi âm thì thay bài giảng (giữ tên file), chụp lại ảnh xem trước và xoá `chuaGiong`.
 - Bài 5–18 – Toán 10: khi có ghi âm thì thay bài giảng (giữ tên file), chụp lại ảnh xem trước và xoá `chuaGiong`.
 - Bổ sung HSA.
 - Mua và gắn tên miền mrblackmath.vn.
 
 ## Nhật ký
+- 30/10/2026 (18h20): Lô thứ hai trong ngày (thầy nhắn "cập nhật tiếp" 17h38), gói mới trong `D:\AI\BAIGIANGTUONGTACWEB`: `6/T6_Chuong7_TronBo.zip`, `7/T7_Chuong8_TronBo.zip`, `8/T8_Chuong9.zip` → Toán 6 Bài 28–31 + Ôn tập Chương VII; Toán 7 Bài 29–30 + Ôn tập Chương VIII; Toán 8 Bài 33–37 + Ôn tập Chương IX (14 mục, 42 trang bản HS, 14 phiếu), qua Pull Request (nhánh `claude/lo-30-10-c7c8c9`). Bài thường `chuaGiong`. (Trong thư mục 7 có tệp `HSA02_CHECKPOINT_DAUVAO_LUOT2_v2026-10-30.md` — không phải gói bài, không đụng tới.)
+  - Phiếu: cả 14 phiếu theo "mẫu v2.0" (Phần I–IV) → mẫu duy nhất + A–B–C–D (`conv_phieu.py`); bỏ số hiệu bài SGK (11 chỗ ÔT T6 C7, 11 chỗ ÔT T8 C9, 1 chỗ T8 B37).
+  - Kiểm định độc lập 3 lượt (giải lại mọi ý bằng Python; dựng toạ độ mọi hình T8): 0 lỗi đáp số, 0 lỗi đề. Sửa luôn (HS + GV): T6 B29 B7 bỏ vạch chia lộ đáp số −0,75, B30 B10 "cả nhóm mang theo 2 va li" (tránh hiểu mỗi người 2 va li → đáp số ngược), hình 8 người, B6 phương án 598,85 → 59,895, B7 xe trên mặt cầu, B28 nhãn cm, kí tự ⇔ thiếu ở GV, B1 trình bày; ÔT C7 B13 "Hình minh hoạ (không theo tỉ lệ)"; T7 B30 B11b bi vàng cùng kích thước; T8 B35 B12 "tính từ giá trị đúng của AH"; B36 B8 "Mắt bạn Nam cách mặt đất 1,6 m"; B37 lời giải GV B2d, nhãn B13; ÔT C9 B2 vẽ lại đúng tỉ lệ (AC dài nhất), B10 hình An cao đúng 1,4 m, B14 làm tròn hàng phần trăm (bỏ trục căn thức — kiến thức lớp 9), lời giải GV B13 dùng Thalès trong tam giác (bỏ "Thalès đảo trong hình thang"), dòng HẾT không rơi sang trang 3; nhãn đè: T8 B33 (2), B34 (14), ÔT C9 (15). XeLaTeX ×2: 0 lỗi, 0 thiếu kí tự, 0 Overfull.
+  - Trang: như lô trước (`build_pages2.py`, `update_index2.py`); bỏ vỏ claude.ai (12 trang T8), thẻ lặp, "KNTT". Ảnh xem trước 42 ô; `NEW` = T6 ÔT C7, T7 ÔT C8, T8 ÔT C9, T6 B31, T7 B30, T8 B37. Thử 3 khổ màn hình (126 lượt + trang chủ): 0 lỗi JS, 0 lỗi KaTeX, không tràn ngang, nút GV ẩn; 980 đường dẫn trong `index.html`, 561 địa chỉ sitemap đều có file. Sau khi gộp: 140 mục = 109 bài học + 31 ôn tập chương.
 - 30/10/2026 (17h30): Lô 3 chương từ thư mục `D:\AI\BAIGIANGTUONGTACWEB` (gói thầy làm 29–30/10: `6/T6_Chuong6_TronBo.zip`, `7/T7_Chuong7_TronBo.zip`, `8/T8_Chuong8.zip` = `T8B30..32.zip` + `T8C8.zip`): Toán 6 Bài 23–27 + Ôn tập Chương VI; Toán 7 Bài 24–28 + Ôn tập Chương VII; Toán 8 Bài 30–32 + Ôn tập Chương VIII (16 mục, 48 trang bản HS, 16 phiếu), qua Pull Request (nhánh `claude/lo-30-10-c6c7c8`). Bài thường `chuaGiong`.
   - Phiếu: cả 16 phiếu làm theo "mẫu thương hiệu v2.0" (đầu phiếu khác mẫu, Phần I Củng cố / II Luyện tập / III Vận dụng / IV Thử thách) → chuyển về mẫu duy nhất (TOÁN THCS, Created by Mr Black, chân trang, chữ chìm) và đổi phần I→A, II→B, III→C, IV→D (giữ nguyên nội dung, đánh số Bài liên tục như gói). Công cụ: scratchpad `conv_phieu.py`.
   - Kiểm định độc lập 3 lượt (giải lại mọi ý bằng Python): 0 lỗi đáp số. 1 LỖI đề: T7 B26 Bài 9 ba cạnh x+2; 2x−1; 3x+4 không bao giờ tạo thành tam giác → đề xuất x+2; 2x+1; 3x−1 (x > 1), đáp số 6x+2; 20 cm (thầy đồng ý sửa 17h21). Sửa luôn (HS + GV): hình lộ đáp số T6 B23 B11 (vạch chia bể), B24 B9–B10 (ốc vít, mực nước), B26 B8 (đủ 5 chai), T8 ÔT C8 B13 (đủ 12 bi); T6 B26 B7 hình đúng tỉ lệ, m$^2$; B27 B8, ÔT C6 B12 nhãn đè; ÔT C6 B7 đổi tên B→C, B9 ốc cùng cỡ; bỏ số hiệu bài SGK (16 chỗ ÔT C6, 11 chỗ ÔT C8, 1 chỗ GV T8 B31); T7 B24 B3b "Thương của hiệu a−b và 3"; B28 B8 điều kiện x > 2 + nhãn đè, B10 diễn đạt; ÔT C7 B11 điều kiện x > 1; T8 B30 B3 (thẻ chữ cái khác nhau), B9c, kim vòng quay; B31 kim vòng quay, màu chú thích; B32 B1 nêu phép thử, B11c; ÔT C8 B7 mốc 60 giây. XeLaTeX ×2: 0 lỗi, 0 thiếu kí tự, 0 Overfull.
