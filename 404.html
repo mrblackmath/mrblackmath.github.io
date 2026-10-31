@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Mr Black đã chuyển sang www.mrblackmath.com</title>
+<script>
+(function(){
+  var p = location.pathname;
+  // Trang web mới (Cloudflare) dùng địa chỉ không đuôi .html; giữ nguyên đường dẫn, phần đuôi ?… và #…
+  var dich = "https://www.mrblackmath.com" + p + location.search + location.hash;
+  location.replace(dich);
+})();
+</script>
+<style>
+body{margin:0;min-height:100vh;display:grid;place-items:center;background:#070d24;color:#f5f7fc;font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;text-align:center;padding:16px}
+a{color:#ffc83d;font-weight:700}
+</style>
+</head>
+<body>
+<p>Web Mr Black đã chuyển sang địa chỉ mới.<br>
+Nếu trang không tự chuyển, bấm vào: <a id="lk" href="https://www.mrblackmath.com/">www.mrblackmath.com</a></p>
+<script>document.getElementById('lk').href="https://www.mrblackmath.com"+location.pathname+location.search+location.hash;</script>
+</body>
+</html>
