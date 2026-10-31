@@ -1,9 +1,5 @@
-# Mr Black – Toán 6 đến 12
+# mrblackmath.github.io
 
-Website học Toán miễn phí của **Mr Black NBK**: Toán 6 – Toán 12 và luyện thi HSA.
+Địa chỉ cũ của web Mr Black NBK. Từ 31/10/2026 web chạy tại **https://www.mrblackmath.com** (mã nguồn ở kho riêng tư `mrblackmath-web`, đăng qua Cloudflare Pages).
 
-🌐 **https://mrblackmath.github.io**
-
-- `index.html`: trang chủ, gồm mục lục và link học liệu trong khối `LINKS`.
-- `bai-hoc/`: bài giảng tương tác, luyện tập và tự kiểm tra (chỉ xem trực tuyến).
-- `hoc-lieu/`: phiếu bài tập PDF để học sinh tải về làm tay.
+Kho này chỉ còn trang chuyển hướng: mọi đường dẫn cũ (kể cả từng bài, từng phiếu) tự chuyển sang đúng trang trên tên miền mới. `googlef81bf90d3247f186.html` giữ lại để Google Search Console vẫn xác minh được địa chỉ cũ.
